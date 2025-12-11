@@ -5,6 +5,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import PrecisionSwap from "./pages/exercises/PrecisionSwap";
+import ExercisePlaceholder from "./pages/exercises/ExercisePlaceholder";
+import Progress from "./pages/Progress";
+import Settings from "./pages/Settings";
 
 const queryClient = new QueryClient();
 
@@ -12,10 +16,14 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
-      <Sonner />
+      <Sonner position="top-center" />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/exercise/precision-swap" element={<PrecisionSwap />} />
+          <Route path="/exercise/:exerciseId" element={<ExercisePlaceholder />} />
+          <Route path="/progress" element={<Progress />} />
+          <Route path="/settings" element={<Settings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

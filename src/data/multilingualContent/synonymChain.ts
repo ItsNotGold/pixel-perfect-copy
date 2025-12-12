@@ -1,0 +1,83 @@
+import { Language } from "@/contexts/LanguageContext";
+
+export interface SynonymChallenge {
+  id: string;
+  word: string;
+  commonSynonyms: string[];
+  rareSynonyms: string[];
+  timeLimit: number;
+}
+
+export const synonymChallengesMultilingual: Record<Language, SynonymChallenge[]> = {
+  en: [
+    { id: "en-1", word: "happy", commonSynonyms: ["joyful", "glad", "pleased", "content", "cheerful"], rareSynonyms: ["elated", "jubilant", "blissful", "ecstatic", "euphoric"], timeLimit: 30 },
+    { id: "en-2", word: "sad", commonSynonyms: ["unhappy", "upset", "down", "gloomy", "sorrowful"], rareSynonyms: ["melancholy", "despondent", "forlorn", "disconsolate", "woebegone"], timeLimit: 30 },
+    { id: "en-3", word: "big", commonSynonyms: ["large", "huge", "enormous", "giant", "massive"], rareSynonyms: ["colossal", "mammoth", "gargantuan", "immense", "titanic"], timeLimit: 30 },
+    { id: "en-4", word: "smart", commonSynonyms: ["clever", "intelligent", "bright", "sharp", "quick"], rareSynonyms: ["astute", "sagacious", "perspicacious", "erudite", "shrewd"], timeLimit: 30 },
+    { id: "en-5", word: "beautiful", commonSynonyms: ["pretty", "lovely", "gorgeous", "attractive", "stunning"], rareSynonyms: ["resplendent", "ravishing", "exquisite", "sublime", "pulchritudinous"], timeLimit: 30 },
+    { id: "en-6", word: "angry", commonSynonyms: ["mad", "upset", "furious", "irritated", "annoyed"], rareSynonyms: ["livid", "incensed", "irate", "wrathful", "apoplectic"], timeLimit: 30 },
+    { id: "en-7", word: "fast", commonSynonyms: ["quick", "rapid", "swift", "speedy", "hasty"], rareSynonyms: ["expeditious", "fleet", "mercurial", "brisk", "precipitate"], timeLimit: 30 },
+    { id: "en-8", word: "small", commonSynonyms: ["little", "tiny", "mini", "petite", "compact"], rareSynonyms: ["diminutive", "minuscule", "microscopic", "infinitesimal", "lilliputian"], timeLimit: 30 },
+    { id: "en-9", word: "strong", commonSynonyms: ["powerful", "tough", "sturdy", "robust", "mighty"], rareSynonyms: ["formidable", "indomitable", "stalwart", "potent", "herculean"], timeLimit: 30 },
+    { id: "en-10", word: "easy", commonSynonyms: ["simple", "basic", "effortless", "straightforward", "uncomplicated"], rareSynonyms: ["facile", "elementary", "undemanding", "painless", "child's play"], timeLimit: 30 },
+    { id: "en-11", word: "difficult", commonSynonyms: ["hard", "tough", "challenging", "complex", "complicated"], rareSynonyms: ["arduous", "laborious", "onerous", "formidable", "herculean"], timeLimit: 30 },
+    { id: "en-12", word: "cold", commonSynonyms: ["chilly", "cool", "freezing", "icy", "frosty"], rareSynonyms: ["frigid", "glacial", "arctic", "gelid", "nippy"], timeLimit: 30 },
+    { id: "en-13", word: "hot", commonSynonyms: ["warm", "burning", "boiling", "heated", "scorching"], rareSynonyms: ["sweltering", "sizzling", "torrid", "blistering", "sultry"], timeLimit: 30 },
+    { id: "en-14", word: "good", commonSynonyms: ["great", "nice", "fine", "excellent", "wonderful"], rareSynonyms: ["superb", "exemplary", "stellar", "impeccable", "superlative"], timeLimit: 30 },
+    { id: "en-15", word: "bad", commonSynonyms: ["terrible", "awful", "poor", "horrible", "dreadful"], rareSynonyms: ["abysmal", "atrocious", "deplorable", "execrable", "abominable"], timeLimit: 30 },
+    { id: "en-16", word: "old", commonSynonyms: ["ancient", "aged", "elderly", "vintage", "antique"], rareSynonyms: ["decrepit", "archaic", "venerable", "antiquated", "primordial"], timeLimit: 30 },
+    { id: "en-17", word: "new", commonSynonyms: ["fresh", "modern", "recent", "latest", "current"], rareSynonyms: ["novel", "nascent", "innovative", "cutting-edge", "newfangled"], timeLimit: 30 },
+    { id: "en-18", word: "important", commonSynonyms: ["significant", "crucial", "vital", "essential", "major"], rareSynonyms: ["paramount", "pivotal", "momentous", "consequential", "cardinal"], timeLimit: 30 },
+    { id: "en-19", word: "interesting", commonSynonyms: ["fascinating", "engaging", "captivating", "intriguing", "compelling"], rareSynonyms: ["riveting", "enthralling", "absorbing", "mesmerizing", "spellbinding"], timeLimit: 30 },
+    { id: "en-20", word: "scary", commonSynonyms: ["frightening", "terrifying", "creepy", "spooky", "horrifying"], rareSynonyms: ["harrowing", "bloodcurdling", "spine-chilling", "macabre", "eldritch"], timeLimit: 30 },
+    { id: "en-21", word: "funny", commonSynonyms: ["hilarious", "amusing", "comical", "humorous", "entertaining"], rareSynonyms: ["uproarious", "side-splitting", "droll", "farcical", "risible"], timeLimit: 30 },
+    { id: "en-22", word: "quiet", commonSynonyms: ["silent", "hushed", "still", "peaceful", "calm"], rareSynonyms: ["tranquil", "serene", "placid", "unperturbed", "halcyon"], timeLimit: 30 },
+    { id: "en-23", word: "loud", commonSynonyms: ["noisy", "booming", "thundering", "deafening", "blaring"], rareSynonyms: ["stentorian", "clamorous", "raucous", "strident", "vociferous"], timeLimit: 30 },
+    { id: "en-24", word: "rich", commonSynonyms: ["wealthy", "affluent", "prosperous", "well-off", "loaded"], rareSynonyms: ["opulent", "moneyed", "flush", "plutocratic", "pecunious"], timeLimit: 30 },
+    { id: "en-25", word: "poor", commonSynonyms: ["broke", "needy", "impoverished", "destitute", "penniless"], rareSynonyms: ["indigent", "penurious", "impecunious", "necessitous", "straitened"], timeLimit: 30 },
+  ],
+  fr: [
+    { id: "fr-1", word: "heureux", commonSynonyms: ["content", "joyeux", "ravi", "satisfait", "gai"], rareSynonyms: ["euphorique", "extatique", "comblé", "béat", "radieux"], timeLimit: 30 },
+    { id: "fr-2", word: "triste", commonSynonyms: ["malheureux", "déprimé", "abattu", "mélancolique", "chagriné"], rareSynonyms: ["accablé", "désespéré", "morose", "inconsolable", "éploré"], timeLimit: 30 },
+    { id: "fr-3", word: "grand", commonSynonyms: ["énorme", "immense", "géant", "vaste", "massif"], rareSynonyms: ["colossal", "gigantesque", "titanesque", "monumental", "gargantuesque"], timeLimit: 30 },
+    { id: "fr-4", word: "intelligent", commonSynonyms: ["malin", "brillant", "astucieux", "perspicace", "vif"], rareSynonyms: ["sagace", "ingénieux", "érudit", "avisé", "clairvoyant"], timeLimit: 30 },
+    { id: "fr-5", word: "beau", commonSynonyms: ["joli", "magnifique", "superbe", "sublime", "splendide"], rareSynonyms: ["resplendissant", "éblouissant", "ravissant", "somptueux", "exquis"], timeLimit: 30 },
+    { id: "fr-6", word: "fâché", commonSynonyms: ["en colère", "furieux", "irrité", "énervé", "agacé"], rareSynonyms: ["courroucé", "fulminant", "exaspéré", "outré", "ulcéré"], timeLimit: 30 },
+    { id: "fr-7", word: "rapide", commonSynonyms: ["vite", "prompt", "véloce", "agile", "pressé"], rareSynonyms: ["fulgurant", "expéditif", "leste", "preste", "diligent"], timeLimit: 30 },
+    { id: "fr-8", word: "petit", commonSynonyms: ["minuscule", "menu", "mignon", "réduit", "étroit"], rareSynonyms: ["infime", "microscopique", "lilliputien", "exigu", "ténu"], timeLimit: 30 },
+    { id: "fr-9", word: "fort", commonSynonyms: ["puissant", "robuste", "solide", "vigoureux", "costaud"], rareSynonyms: ["herculéen", "indomptable", "invincible", "formidable", "athlétique"], timeLimit: 30 },
+    { id: "fr-10", word: "facile", commonSynonyms: ["simple", "aisé", "évident", "élémentaire", "accessible"], rareSynonyms: ["enfantin", "rudimentaire", "commode", "abordable", "limpide"], timeLimit: 30 },
+    { id: "fr-11", word: "difficile", commonSynonyms: ["dur", "ardu", "compliqué", "complexe", "pénible"], rareSynonyms: ["laborieux", "épineux", "scabreux", "malaisé", "rébarbatif"], timeLimit: 30 },
+    { id: "fr-12", word: "froid", commonSynonyms: ["frais", "glacé", "gelé", "glacial", "grelottant"], rareSynonyms: ["frigorifique", "polaire", "sibérien", "hivernal", "transi"], timeLimit: 30 },
+    { id: "fr-13", word: "chaud", commonSynonyms: ["brûlant", "bouillant", "torride", "ardent", "tiède"], rareSynonyms: ["caniculaire", "suffocant", "étouffant", "incandescent", "tropical"], timeLimit: 30 },
+    { id: "fr-14", word: "bon", commonSynonyms: ["excellent", "formidable", "super", "génial", "agréable"], rareSynonyms: ["exquis", "délectable", "succulent", "savoureux", "impeccable"], timeLimit: 30 },
+    { id: "fr-15", word: "mauvais", commonSynonyms: ["terrible", "horrible", "affreux", "atroce", "médiocre"], rareSynonyms: ["exécrable", "abominable", "détestable", "infect", "lamentable"], timeLimit: 30 },
+    { id: "fr-16", word: "vieux", commonSynonyms: ["ancien", "âgé", "antique", "vétuste", "usé"], rareSynonyms: ["archaïque", "séculaire", "vénérable", "décrépit", "ancestral"], timeLimit: 30 },
+    { id: "fr-17", word: "nouveau", commonSynonyms: ["neuf", "récent", "moderne", "frais", "actuel"], rareSynonyms: ["novateur", "inédit", "avant-gardiste", "révolutionnaire", "naissant"], timeLimit: 30 },
+    { id: "fr-18", word: "important", commonSynonyms: ["crucial", "essentiel", "majeur", "capital", "vital"], rareSynonyms: ["primordial", "prépondérant", "déterminant", "fondamental", "cardinal"], timeLimit: 30 },
+    { id: "fr-19", word: "intéressant", commonSynonyms: ["captivant", "passionnant", "fascinant", "attrayant", "séduisant"], rareSynonyms: ["palpitant", "envoûtant", "électrisant", "subjuguant", "grisant"], timeLimit: 30 },
+    { id: "fr-20", word: "effrayant", commonSynonyms: ["terrifiant", "horrible", "épouvantable", "affreux", "angoissant"], rareSynonyms: ["glaçant", "cauchemardesque", "sinistre", "lugubre", "macabre"], timeLimit: 30 },
+  ],
+  es: [
+    { id: "es-1", word: "feliz", commonSynonyms: ["contento", "alegre", "dichoso", "satisfecho", "gozoso"], rareSynonyms: ["eufórico", "exultante", "radiante", "jubiloso", "beatífico"], timeLimit: 30 },
+    { id: "es-2", word: "triste", commonSynonyms: ["infeliz", "deprimido", "melancólico", "afligido", "abatido"], rareSynonyms: ["acongojado", "desconsolado", "apesadumbrado", "desolado", "taciturno"], timeLimit: 30 },
+    { id: "es-3", word: "grande", commonSynonyms: ["enorme", "gigante", "inmenso", "vasto", "masivo"], rareSynonyms: ["colosal", "titánico", "descomunal", "monumental", "gargantuesco"], timeLimit: 30 },
+    { id: "es-4", word: "inteligente", commonSynonyms: ["listo", "brillante", "astuto", "perspicaz", "agudo"], rareSynonyms: ["sagaz", "ingenioso", "erudito", "clarividente", "docto"], timeLimit: 30 },
+    { id: "es-5", word: "hermoso", commonSynonyms: ["bello", "bonito", "lindo", "precioso", "guapo"], rareSynonyms: ["deslumbrante", "espléndido", "exquisito", "radiante", "sublime"], timeLimit: 30 },
+    { id: "es-6", word: "enfadado", commonSynonyms: ["furioso", "enojado", "irritado", "molesto", "airado"], rareSynonyms: ["colérico", "iracundo", "indignado", "exasperado", "encrespado"], timeLimit: 30 },
+    { id: "es-7", word: "rápido", commonSynonyms: ["veloz", "ligero", "ágil", "pronto", "acelerado"], rareSynonyms: ["fulminante", "vertiginoso", "expedito", "raudo", "presuroso"], timeLimit: 30 },
+    { id: "es-8", word: "pequeño", commonSynonyms: ["chico", "diminuto", "minúsculo", "reducido", "corto"], rareSynonyms: ["ínfimo", "microscópico", "liliputiense", "exiguo", "menudo"], timeLimit: 30 },
+    { id: "es-9", word: "fuerte", commonSynonyms: ["poderoso", "robusto", "resistente", "vigoroso", "potente"], rareSynonyms: ["hercúleo", "formidable", "indomable", "recio", "fornido"], timeLimit: 30 },
+    { id: "es-10", word: "fácil", commonSynonyms: ["simple", "sencillo", "elemental", "accesible", "cómodo"], rareSynonyms: ["asequible", "llevadero", "factible", "hacedero", "pan comido"], timeLimit: 30 },
+    { id: "es-11", word: "difícil", commonSynonyms: ["duro", "complicado", "complejo", "arduo", "problemático"], rareSynonyms: ["peliagudo", "escabroso", "laborioso", "espinoso", "intrincado"], timeLimit: 30 },
+    { id: "es-12", word: "frío", commonSynonyms: ["helado", "gélido", "congelado", "glacial", "fresco"], rareSynonyms: ["álgido", "polar", "siberiano", "invernal", "aterido"], timeLimit: 30 },
+    { id: "es-13", word: "caliente", commonSynonyms: ["ardiente", "abrasador", "candente", "tórrido", "sofocante"], rareSynonyms: ["incandescente", "bochornoso", "tropical", "achicharrante", "canicular"], timeLimit: 30 },
+    { id: "es-14", word: "bueno", commonSynonyms: ["excelente", "estupendo", "genial", "fantástico", "maravilloso"], rareSynonyms: ["óptimo", "sublime", "excepcional", "eximio", "sobresaliente"], timeLimit: 30 },
+    { id: "es-15", word: "malo", commonSynonyms: ["terrible", "horrible", "pésimo", "fatal", "espantoso"], rareSynonyms: ["execrable", "abominable", "nefasto", "deplorable", "infame"], timeLimit: 30 },
+    { id: "es-16", word: "viejo", commonSynonyms: ["antiguo", "anciano", "añejo", "vetusto", "arcaico"], rareSynonyms: ["secular", "venerable", "decrépito", "ancestral", "antediluviano"], timeLimit: 30 },
+    { id: "es-17", word: "nuevo", commonSynonyms: ["reciente", "moderno", "fresco", "actual", "flamante"], rareSynonyms: ["novel", "innovador", "vanguardista", "inédito", "naciente"], timeLimit: 30 },
+    { id: "es-18", word: "importante", commonSynonyms: ["crucial", "esencial", "vital", "fundamental", "significativo"], rareSynonyms: ["trascendental", "cardinal", "primordial", "medular", "capital"], timeLimit: 30 },
+    { id: "es-19", word: "interesante", commonSynonyms: ["fascinante", "atractivo", "cautivador", "apasionante", "intrigante"], rareSynonyms: ["absorbente", "arrebatador", "hipnótico", "subyugante", "electrizante"], timeLimit: 30 },
+    { id: "es-20", word: "aterrador", commonSynonyms: ["terrorífico", "espantoso", "horrible", "horripilante", "pavoroso"], rareSynonyms: ["espeluznante", "escalofriante", "macabro", "siniestro", "dantesco"], timeLimit: 30 },
+  ],
+};

@@ -41,6 +41,7 @@ export type Database = {
           completed_at: string
           exercise_id: string
           id: string
+          language: string
           max_score: number
           score: number
           user_id: string
@@ -50,6 +51,7 @@ export type Database = {
           completed_at?: string
           exercise_id: string
           id?: string
+          language?: string
           max_score?: number
           score?: number
           user_id: string
@@ -59,6 +61,7 @@ export type Database = {
           completed_at?: string
           exercise_id?: string
           id?: string
+          language?: string
           max_score?: number
           score?: number
           user_id?: string
@@ -97,6 +100,7 @@ export type Database = {
           best_score: number
           exercise_id: string
           id: string
+          language: string
           last_completed_at: string | null
           times_completed: number
           user_id: string
@@ -105,6 +109,7 @@ export type Database = {
           best_score?: number
           exercise_id: string
           id?: string
+          language?: string
           last_completed_at?: string | null
           times_completed?: number
           user_id: string
@@ -113,6 +118,7 @@ export type Database = {
           best_score?: number
           exercise_id?: string
           id?: string
+          language?: string
           last_completed_at?: string | null
           times_completed?: number
           user_id?: string

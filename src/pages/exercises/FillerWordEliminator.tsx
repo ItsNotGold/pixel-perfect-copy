@@ -20,7 +20,7 @@ interface AIFeedback {
 
 export default function FillerWordEliminator() {
   const { language, speechLanguageCode } = useLanguage();
-  const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio } = useVoiceRecording();
+  const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio, audioUrl } = useVoiceRecording();
   
   const [currentTopic, setCurrentTopic] = useState("");
   const [isActive, setIsActive] = useState(false);
@@ -87,17 +87,44 @@ export default function FillerWordEliminator() {
   const analyzeTranscript = async () => {
     const text = useVoice ? voiceTranscript : manualTranscript;
     
-    // Local analysis
+    // Improved local analysis with better pattern matching
     const counts: Record<string, number> = {};
     let total = 0;
     const lowerText = text.toLowerCase();
 
     fillerWords.forEach((filler) => {
-      const regex = new RegExp(`\\b${filler}\\b`, "gi");
-      const matches = lowerText.match(regex);
-      if (matches) {
-        counts[filler] = matches.length;
-        total += matches.length;
+      let count = 0;
+      
+      // Create multiple patterns for better detection
+      const patterns = [
+        new RegExp(`\\b${filler}\\b`, "gi"), // exact word boundary
+        new RegExp(`\\b${filler}[s]?\\b`, "gi"), // with optional plural
+        new RegExp(`${filler}`, "gi"), // anywhere in text
+      ];
+      
+      // Special handling for common filler variations
+      if (filler === "uh") {
+        patterns.push(new RegExp("\\buhm?\\b", "gi"));
+        patterns.push(new RegExp("\\bah\\b", "gi"));
+      }
+      if (filler === "um") {
+        patterns.push(new RegExp("\\bum+h?\\b", "gi"));
+      }
+      if (filler === "hmm") {
+        patterns.push(new RegExp("\\bh+m+\\b", "gi"));
+        patterns.push(new RegExp("\\bhm+\\b", "gi"));
+      }
+      
+      patterns.forEach(pattern => {
+        const matches = lowerText.match(pattern);
+        if (matches) {
+          count += matches.length;
+        }
+      });
+      
+      if (count > 0) {
+        counts[filler] = count;
+        total += count;
       }
     });
 
@@ -285,6 +312,19 @@ export default function FillerWordEliminator() {
                 <span className="font-medium text-foreground">AI Feedback</span>
               </div>
               <p className="text-sm text-muted-foreground">{aiFeedback.feedback}</p>
+            </div>
+          )}
+
+          {isComplete && useVoice && audioUrl && (
+            <div className="mb-6 rounded-xl bg-muted/50 p-4 animate-slide-up">
+              <div className="flex items-center gap-2 mb-3">
+                <Play className="h-5 w-5 text-primary" />
+                <span className="font-medium text-foreground">Listen to Your Recording</span>
+              </div>
+              <audio controls className="w-full">
+                <source src={audioUrl} type="audio/webm" />
+                Your browser does not support the audio element.
+              </audio>
             </div>
           )}
 

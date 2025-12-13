@@ -9,15 +9,9 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Auth from "./pages/Auth";
 import PrecisionSwap from "./pages/exercises/PrecisionSwap";
-import RapidContextSwitch from "./pages/exercises/RapidContextSwitch";
 import FillerWordEliminator from "./pages/exercises/FillerWordEliminator";
-import OneMinuteTalks from "./pages/exercises/OneMinuteTalks";
 import ReverseDefinitions from "./pages/exercises/ReverseDefinitions";
-import NarrativePuzzle from "./pages/exercises/NarrativePuzzle";
-import ToneTransformer from "./pages/exercises/ToneTransformer";
 import SynonymSpeedChain from "./pages/exercises/SynonymSpeedChain";
-import QuestionCrafting from "./pages/exercises/QuestionCrafting";
-import RepairRephrase from "./pages/exercises/RepairRephrase";
 import WordIncorporation from "./pages/exercises/WordIncorporation";
 import Progress from "./pages/Progress";
 import Settings from "./pages/Settings";
@@ -36,15 +30,9 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/auth" element={<Auth />} />
               <Route path="/exercise/precision-swap" element={<PrecisionSwap />} />
-              <Route path="/exercise/rapid-context-switch" element={<RapidContextSwitch />} />
               <Route path="/exercise/filler-word-eliminator" element={<FillerWordEliminator />} />
-              <Route path="/exercise/one-minute-talks" element={<OneMinuteTalks />} />
               <Route path="/exercise/reverse-definitions" element={<ReverseDefinitions />} />
-              <Route path="/exercise/narrative-puzzle" element={<NarrativePuzzle />} />
-              <Route path="/exercise/tone-transformer" element={<ToneTransformer />} />
               <Route path="/exercise/synonym-speed-chain" element={<SynonymSpeedChain />} />
-              <Route path="/exercise/question-crafting" element={<QuestionCrafting />} />
-              <Route path="/exercise/repair-rephrase" element={<RepairRephrase />} />
               <Route path="/exercise/word-incorporation" element={<WordIncorporation />} />
               <Route path="/progress" element={<Progress />} />
               <Route path="/settings" element={<Settings />} />

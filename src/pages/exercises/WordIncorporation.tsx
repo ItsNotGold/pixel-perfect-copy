@@ -20,7 +20,7 @@ interface AIFeedback {
 
 export default function WordIncorporation() {
   const { language, speechLanguageCode } = useLanguage();
-  const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio } = useVoiceRecording();
+  const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio, audioUrl } = useVoiceRecording();
   
   const [currentPrompt, setCurrentPrompt] = useState<{ prompt: string; words: string[] } | null>(null);
   const [isActive, setIsActive] = useState(false);
@@ -293,6 +293,18 @@ export default function WordIncorporation() {
               {aiFeedback?.feedback && (
                 <div className="mt-4 p-4 bg-muted rounded-lg">
                   <p className="text-sm">{aiFeedback.feedback}</p>
+                </div>
+              )}
+              {audioUrl && (
+                <div className="mt-4 p-4 bg-muted/50 rounded-lg">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Play className="h-5 w-5 text-primary" />
+                    <span className="font-medium text-foreground">Listen to Your Recording</span>
+                  </div>
+                  <audio controls className="w-full">
+                    <source src={audioUrl} type="audio/webm" />
+                    Your browser does not support the audio element.
+                  </audio>
                 </div>
               )}
             </div>

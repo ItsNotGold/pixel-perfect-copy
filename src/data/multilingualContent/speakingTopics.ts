@@ -2,9 +2,21 @@ import { Language } from "@/contexts/LanguageContext";
 
 // Filler words by language
 export const fillerWordsMultilingual: Record<Language, string[]> = {
-  en: ["um", "uh", "like", "you know", "basically", "literally", "actually", "sort of", "kind of", "I mean", "right", "so", "well", "anyway", "honestly"],
-  fr: ["euh", "ben", "genre", "en fait", "du coup", "voilà", "quoi", "tu vois", "bah", "enfin", "bon", "alors", "donc", "bref", "vraiment"],
-  es: ["eh", "este", "pues", "o sea", "bueno", "como", "sabes", "entonces", "básicamente", "tipo", "digamos", "la verdad", "mira", "oye", "vale"],
+  en: [
+    "um", "uh", "uhm", "hmm", "hm", "er", "ah", "like", "you know", "I mean", "so", "well", "right", "okay", "alright", 
+    "basically", "literally", "actually", "sort of", "kind of", "anyway", "honestly", "totally", "really", "just", 
+    "kinda", "sorta", "y'know", "ya know", "see", "look", "listen", "and", "but", "or", "then", "now", "here", "there"
+  ],
+  fr: [
+    "euh", "ben", "heu", "hum", "genre", "en fait", "du coup", "voilà", "quoi", "tu vois", "bah", "enfin", "bon", 
+    "alors", "donc", "bref", "vraiment", "effectivement", "précisément", "exactement", "finalement", "évidemment", 
+    "naturellement", "simplement", "juste", "seulement", "mais", "et", "ou", "puis", "alors", "là", "ici"
+  ],
+  es: [
+    "eh", "este", "pues", "o sea", "bueno", "como", "sabes", "entonces", "básicamente", "tipo", "digamos", "la verdad", 
+    "mira", "oye", "vale", "vamos", "verás", "claro", "obvio", "exacto", "preciso", "simplemente", "solamente", 
+    "pero", "y", "o", "entonces", "ahora", "aquí", "allí"
+  ],
 };
 
 // Speaking topics by language

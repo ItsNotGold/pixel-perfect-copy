@@ -24,7 +24,7 @@ interface AIFeedback {
 
 export default function OneMinuteTalks() {
   const { language, speechLanguageCode } = useLanguage();
-  const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript } = useVoiceRecording();
+  const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio } = useVoiceRecording();
   
   const [currentTopic, setCurrentTopic] = useState<{ topic: string; category: string } | null>(null);
   const [isActive, setIsActive] = useState(false);
@@ -129,11 +129,12 @@ export default function OneMinuteTalks() {
     const score = Math.round(fluencyScore + diversityScore);
 
     if (user) {
+      const audioUrl = useVoice ? await saveAudio() : null;
       saveAttempt({
         exerciseId: "one-minute-talks",
         score: aiFeedback?.score || score,
         maxScore: 100,
-        answers: { transcript: text, stats: { wordCount, uniqueWords, avgWordLength } },
+        answers: { transcript: text, stats: { wordCount, uniqueWords, avgWordLength }, audioUrl },
       });
     }
 

@@ -9,7 +9,7 @@ export function ExerciseGrid() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 text-center">
           <h2 className="mb-4 font-display text-3xl text-foreground sm:text-4xl">
-            10 Powerful Exercises
+            11 Powerful Exercises
           </h2>
           <p className="text-lg text-muted-foreground">
             Each exercise targets a specific communication skill

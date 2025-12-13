@@ -20,7 +20,7 @@ interface AIFeedback {
 
 export default function FillerWordEliminator() {
   const { language, speechLanguageCode } = useLanguage();
-  const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript } = useVoiceRecording();
+  const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio } = useVoiceRecording();
   
   const [currentTopic, setCurrentTopic] = useState("");
   const [isActive, setIsActive] = useState(false);
@@ -135,11 +135,12 @@ export default function FillerWordEliminator() {
     const score = Math.max(0, 100 - total * 10);
     
     if (user) {
+      const audioUrl = useVoice ? await saveAudio() : null;
       saveAttempt({
         exerciseId: "filler-word-eliminator",
         score: aiFeedback?.score || score,
         maxScore: 100,
-        answers: { transcript: text, fillerCount: counts },
+        answers: { transcript: text, fillerCount: counts, audioUrl },
       });
     }
 

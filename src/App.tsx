@@ -18,6 +18,7 @@ import ToneTransformer from "./pages/exercises/ToneTransformer";
 import SynonymSpeedChain from "./pages/exercises/SynonymSpeedChain";
 import QuestionCrafting from "./pages/exercises/QuestionCrafting";
 import RepairRephrase from "./pages/exercises/RepairRephrase";
+import WordIncorporation from "./pages/exercises/WordIncorporation";
 import Progress from "./pages/Progress";
 import Settings from "./pages/Settings";
 
@@ -44,6 +45,7 @@ const App = () => (
               <Route path="/exercise/synonym-speed-chain" element={<SynonymSpeedChain />} />
               <Route path="/exercise/question-crafting" element={<QuestionCrafting />} />
               <Route path="/exercise/repair-rephrase" element={<RepairRephrase />} />
+              <Route path="/exercise/word-incorporation" element={<WordIncorporation />} />
               <Route path="/progress" element={<Progress />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="*" element={<NotFound />} />

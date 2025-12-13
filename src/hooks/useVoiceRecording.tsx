@@ -1,5 +1,7 @@
 import { useState, useRef, useCallback } from "react";
 import { toast } from "sonner";
+import { AssemblyAI } from 'assemblyai';
+import { supabase } from "@/integrations/supabase/client";
 
 // Type definitions for Web Speech API
 interface SpeechRecognitionEvent extends Event {
@@ -37,6 +39,8 @@ interface UseVoiceRecordingReturn {
   stopRecording: () => void;
   resetTranscript: () => void;
   audioBlob: Blob | null;
+  audioUrl: string | null;
+  saveAudio: () => Promise<string | null>;
 }
 
 export function useVoiceRecording(): UseVoiceRecordingReturn {
@@ -44,6 +48,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
   const [isProcessing, setIsProcessing] = useState(false);
   const [transcript, setTranscript] = useState("");
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
+  const [audioUrl, setAudioUrl] = useState<string | null>(null);
   
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
@@ -121,7 +126,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     }
   }, []);
 
-  const stopRecording = useCallback(() => {
+  const stopRecording = useCallback(async () => {
     setIsProcessing(true);
     
     if (recognitionRef.current) {
@@ -135,12 +140,69 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     }
     
     setIsRecording(false);
-    setIsProcessing(false);
-  }, []);
+    
+    // Wait for audioBlob to be set
+    setTimeout(async () => {
+      if (audioBlob) {
+        try {
+          const client = new AssemblyAI({
+            apiKey: import.meta.env.VITE_ASSEMBLYAI_API_KEY,
+          });
+          
+          const audioFile = new File([audioBlob], 'recording.webm', { type: 'audio/webm' });
+          
+          const uploadUrl = await client.files.upload(audioFile);
+          
+          const transcriptResponse = await client.transcripts.transcribe({
+            audio: uploadUrl,
+            punctuate: true,
+            format_text: true,
+          });
+          
+          if (transcriptResponse.status === 'completed') {
+            setTranscript(transcriptResponse.text || '');
+          } else {
+            toast.error('Transcription failed');
+          }
+        } catch (error) {
+          console.error('Transcription error:', error);
+          toast.error('Failed to transcribe audio');
+        }
+      }
+      setIsProcessing(false);
+    }, 100);
+  }, [audioBlob]);
+
+  const saveAudio = useCallback(async (): Promise<string | null> => {
+    if (!audioBlob) return null;
+    
+    try {
+      const fileName = `recording-${Date.now()}.webm`;
+      const { data, error } = await supabase.storage
+        .from('audio-recordings')
+        .upload(fileName, audioBlob, {
+          contentType: 'audio/webm',
+        });
+      
+      if (error) throw error;
+      
+      const { data: urlData } = supabase.storage
+        .from('audio-recordings')
+        .getPublicUrl(fileName);
+      
+      setAudioUrl(urlData.publicUrl);
+      return urlData.publicUrl;
+    } catch (error) {
+      console.error('Error saving audio:', error);
+      toast.error('Failed to save audio recording');
+      return null;
+    }
+  }, [audioBlob]);
 
   const resetTranscript = useCallback(() => {
     setTranscript("");
     setAudioBlob(null);
+    setAudioUrl(null);
   }, []);
 
   return {
@@ -151,5 +213,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     stopRecording,
     resetTranscript,
     audioBlob,
+    audioUrl,
+    saveAudio,
   };
 }

@@ -146,4 +146,16 @@ export const exercises: Exercise[] = [
     color: "from-lime-500 to-green-500",
     path: "/exercise/repair-rephrase",
   },
+  {
+    id: "word-incorporation",
+    number: 11,
+    title: "Word Incorporation",
+    shortTitle: "Word Incorporation",
+    goal: "Vocabulary integration + fluency",
+    mechanic: "Incorporate target words into spontaneous speech",
+    description: "Speak for 30 seconds while incorporating 5 progressively revealed words. Perfect for building natural vocabulary usage!",
+    icon: Target,
+    color: "from-purple-500 to-blue-500",
+    path: "/exercise/word-incorporation",
+  },
 ];

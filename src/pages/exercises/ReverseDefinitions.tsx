@@ -2,14 +2,24 @@ import { useState, useEffect } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { reverseDefinitions, ReverseDefinition } from "@/data/exerciseData";
+import { reverseDefinitionsMultilingual } from "@/data/multilingualContent";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { cn } from "@/lib/utils";
 import { BookOpen, ArrowRight, RotateCcw, Trophy, Lightbulb, CheckCircle2, XCircle, Zap } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
 
+interface ReverseDefinition {
+  id: string;
+  definition: string;
+  answer: string;
+  hints: string[];
+  difficulty: "easy" | "medium" | "hard";
+}
+
 export default function ReverseDefinitions() {
+  const { language } = useLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answer, setAnswer] = useState("");
   const [showResult, setShowResult] = useState(false);
@@ -22,9 +32,16 @@ export default function ReverseDefinitions() {
   const { saveAttempt } = useProgress();
 
   useEffect(() => {
-    const shuffled = [...reverseDefinitions].sort(() => Math.random() - 0.5);
+    const definitions = reverseDefinitionsMultilingual[language] || reverseDefinitionsMultilingual.en;
+    const shuffled = [...definitions].sort(() => Math.random() - 0.5);
     setShuffledChallenges(shuffled);
-  }, []);
+    setCurrentIndex(0);
+    setAnswer("");
+    setShowResult(false);
+    setShowHint(0);
+    setScore(0);
+    setStreak(0);
+  }, [language]);
 
   const currentChallenge = shuffledChallenges[currentIndex];
 
@@ -70,7 +87,8 @@ export default function ReverseDefinitions() {
   };
 
   const handleRestart = () => {
-    const shuffled = [...reverseDefinitions].sort(() => Math.random() - 0.5);
+    const definitions = reverseDefinitionsMultilingual[language] || reverseDefinitionsMultilingual.en;
+    const shuffled = [...definitions].sort(() => Math.random() - 0.5);
     setShuffledChallenges(shuffled);
     setCurrentIndex(0);
     setAnswer("");

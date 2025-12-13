@@ -2,44 +2,70 @@ import { useState, useEffect, useRef } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { fillerWords, speakingTopics } from "@/data/exerciseData";
-import { MessageCircle, Play, Square, RotateCcw, Trophy, AlertTriangle } from "lucide-react";
+import { fillerWordsMultilingual, speakingTopicsMultilingual } from "@/data/multilingualContent";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useVoiceRecording } from "@/hooks/useVoiceRecording";
+import { MessageCircle, Mic, MicOff, Play, Square, RotateCcw, Trophy, AlertTriangle, Loader2, Sparkles } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
+import { supabase } from "@/integrations/supabase/client";
+
+interface AIFeedback {
+  fillerWords: Record<string, number>;
+  totalFillers: number;
+  score: number;
+  feedback: string;
+}
 
 export default function FillerWordEliminator() {
+  const { language, speechLanguageCode } = useLanguage();
+  const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript } = useVoiceRecording();
+  
   const [currentTopic, setCurrentTopic] = useState("");
-  const [isRecording, setIsRecording] = useState(false);
-  const [transcript, setTranscript] = useState("");
+  const [isActive, setIsActive] = useState(false);
+  const [useVoice, setUseVoice] = useState(false);
+  const [manualTranscript, setManualTranscript] = useState("");
   const [timeLeft, setTimeLeft] = useState(60);
   const [fillerCount, setFillerCount] = useState<Record<string, number>>({});
   const [isComplete, setIsComplete] = useState(false);
   const [totalAttempts, setTotalAttempts] = useState(0);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [aiFeedback, setAiFeedback] = useState<AIFeedback | null>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const { user } = useAuth();
   const { saveAttempt } = useProgress();
 
+  const transcript = useVoice ? voiceTranscript : manualTranscript;
+  const fillerWords = fillerWordsMultilingual[language] || fillerWordsMultilingual.en;
+
   useEffect(() => {
     pickNewTopic();
-  }, []);
+  }, [language]);
 
   const pickNewTopic = () => {
-    const randomTopic = speakingTopics[Math.floor(Math.random() * speakingTopics.length)];
-    setCurrentTopic(randomTopic);
+    const topics = speakingTopicsMultilingual[language] || speakingTopicsMultilingual.en;
+    const randomTopic = topics[Math.floor(Math.random() * topics.length)];
+    setCurrentTopic(randomTopic.topic);
   };
 
-  const startRecording = () => {
-    setIsRecording(true);
+  const startSession = async () => {
+    setIsActive(true);
     setTimeLeft(60);
-    setTranscript("");
+    setManualTranscript("");
+    resetTranscript();
     setFillerCount({});
     setIsComplete(false);
+    setAiFeedback(null);
+
+    if (useVoice) {
+      await startVoice(speechLanguageCode);
+    }
 
     timerRef.current = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev <= 1) {
-          stopRecording();
+          stopSession();
           return 0;
         }
         return prev - 1;
@@ -47,22 +73,28 @@ export default function FillerWordEliminator() {
     }, 1000);
   };
 
-  const stopRecording = () => {
-    setIsRecording(false);
+  const stopSession = async () => {
+    setIsActive(false);
     if (timerRef.current) {
       clearInterval(timerRef.current);
     }
-    analyzeTranscript();
+    if (useVoice) {
+      stopVoice();
+    }
+    await analyzeTranscript();
   };
 
-  const analyzeTranscript = () => {
-    const text = transcript.toLowerCase();
+  const analyzeTranscript = async () => {
+    const text = useVoice ? voiceTranscript : manualTranscript;
+    
+    // Local analysis
     const counts: Record<string, number> = {};
     let total = 0;
+    const lowerText = text.toLowerCase();
 
     fillerWords.forEach((filler) => {
       const regex = new RegExp(`\\b${filler}\\b`, "gi");
-      const matches = text.match(regex);
+      const matches = lowerText.match(regex);
       if (matches) {
         counts[filler] = matches.length;
         total += matches.length;
@@ -73,14 +105,41 @@ export default function FillerWordEliminator() {
     setIsComplete(true);
     setTotalAttempts((prev) => prev + 1);
 
+    // Get AI analysis if there's content
+    if (text.trim().length >= 20) {
+      setIsAnalyzing(true);
+      try {
+        const { data, error } = await supabase.functions.invoke("evaluate-exercise", {
+          body: {
+            type: "filler-words",
+            language,
+            data: { transcript: text },
+          },
+        });
+
+        if (!error && data) {
+          setAiFeedback(data as AIFeedback);
+          // Use AI counts if available
+          if (data.fillerWords) {
+            setFillerCount(data.fillerWords);
+            total = data.totalFillers || total;
+          }
+        }
+      } catch (err) {
+        console.error("AI evaluation error:", err);
+      } finally {
+        setIsAnalyzing(false);
+      }
+    }
+
     const score = Math.max(0, 100 - total * 10);
     
     if (user) {
       saveAttempt({
         exerciseId: "filler-word-eliminator",
-        score,
+        score: aiFeedback?.score || score,
         maxScore: 100,
-        answers: { transcript, fillerCount: counts },
+        answers: { transcript: text, fillerCount: counts },
       });
     }
 
@@ -95,14 +154,16 @@ export default function FillerWordEliminator() {
 
   const handleRestart = () => {
     pickNewTopic();
-    setTranscript("");
+    setManualTranscript("");
+    resetTranscript();
     setFillerCount({});
     setIsComplete(false);
     setTimeLeft(60);
+    setAiFeedback(null);
   };
 
   const totalFillers = Object.values(fillerCount).reduce((a, b) => a + b, 0);
-  const score = Math.max(0, 100 - totalFillers * 10);
+  const score = aiFeedback?.score || Math.max(0, 100 - totalFillers * 10);
 
   return (
     <MainLayout>
@@ -112,7 +173,7 @@ export default function FillerWordEliminator() {
             <MessageCircle className="h-7 w-7 text-primary-foreground" />
           </div>
           <h1 className="mb-2 font-display text-3xl text-foreground">Filler Word Eliminator</h1>
-          <p className="text-muted-foreground">Practice speaking without fillers like "um" and "uh"</p>
+          <p className="text-muted-foreground">Practice speaking without fillers</p>
         </div>
 
         <div className="mb-8 flex items-center justify-center gap-6 animate-slide-up">
@@ -130,6 +191,23 @@ export default function FillerWordEliminator() {
         </div>
 
         <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
+          {/* Voice toggle */}
+          {!isActive && !isComplete && (
+            <div className="mb-6 flex justify-center">
+              <button
+                onClick={() => setUseVoice(!useVoice)}
+                className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all ${
+                  useVoice 
+                    ? "bg-primary text-primary-foreground" 
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                }`}
+              >
+                {useVoice ? <Mic className="h-4 w-4" /> : <MicOff className="h-4 w-4" />}
+                {useVoice ? "Voice Input On" : "Voice Input Off"}
+              </button>
+            </div>
+          )}
+
           <div className="mb-6 text-center">
             <div className="text-sm text-muted-foreground mb-2">Your topic:</div>
             <div className="inline-block rounded-xl bg-muted px-6 py-3">
@@ -142,22 +220,39 @@ export default function FillerWordEliminator() {
               {Math.floor(timeLeft / 60)}:{(timeLeft % 60).toString().padStart(2, "0")}
             </div>
             <div className="text-sm text-muted-foreground mt-1">
-              {isRecording ? "Recording..." : "Ready to start"}
+              {isActive ? (useVoice && isVoiceRecording ? "🔴 Recording..." : "Speaking...") : "Ready to start"}
             </div>
           </div>
 
           <div className="mb-6">
-            <label className="text-sm font-medium text-foreground mb-2 block">
-              Type what you would say (simulated speech):
-            </label>
-            <Textarea
-              placeholder="Start typing your response here... Include any filler words you might naturally use."
-              value={transcript}
-              onChange={(e) => setTranscript(e.target.value)}
-              disabled={!isRecording}
-              className="min-h-[150px]"
-            />
+            {useVoice ? (
+              <div className="min-h-[150px] rounded-lg border bg-muted/30 p-4">
+                <p className="text-foreground whitespace-pre-wrap">
+                  {voiceTranscript || (isActive ? "Start speaking..." : "Your speech will appear here...")}
+                </p>
+              </div>
+            ) : (
+              <>
+                <label className="text-sm font-medium text-foreground mb-2 block">
+                  Type what you would say:
+                </label>
+                <Textarea
+                  placeholder="Start typing your response here... Include any filler words you might naturally use."
+                  value={manualTranscript}
+                  onChange={(e) => setManualTranscript(e.target.value)}
+                  disabled={!isActive}
+                  className="min-h-[150px]"
+                />
+              </>
+            )}
           </div>
+
+          {isAnalyzing && (
+            <div className="mb-6 flex items-center justify-center gap-2 text-muted-foreground">
+              <Loader2 className="h-5 w-5 animate-spin" />
+              <span>Analyzing speech...</span>
+            </div>
+          )}
 
           {isComplete && (
             <div className="mb-6 rounded-xl bg-muted/50 p-4 animate-slide-up">
@@ -182,15 +277,25 @@ export default function FillerWordEliminator() {
             </div>
           )}
 
+          {aiFeedback?.feedback && (
+            <div className="mb-6 rounded-xl bg-primary/5 border border-primary/20 p-4 animate-slide-up">
+              <div className="flex items-center gap-2 mb-2">
+                <Sparkles className="h-5 w-5 text-primary" />
+                <span className="font-medium text-foreground">AI Feedback</span>
+              </div>
+              <p className="text-sm text-muted-foreground">{aiFeedback.feedback}</p>
+            </div>
+          )}
+
           <div className="flex gap-3">
-            {!isRecording && !isComplete && (
-              <Button variant="hero" size="lg" className="flex-1" onClick={startRecording}>
+            {!isActive && !isComplete && (
+              <Button variant="hero" size="lg" className="flex-1" onClick={startSession}>
                 <Play className="mr-2 h-4 w-4" />
-                Start Speaking
+                {useVoice ? "Start Recording" : "Start Speaking"}
               </Button>
             )}
-            {isRecording && (
-              <Button variant="destructive" size="lg" className="flex-1" onClick={stopRecording}>
+            {isActive && (
+              <Button variant="destructive" size="lg" className="flex-1" onClick={stopSession}>
                 <Square className="mr-2 h-4 w-4" />
                 Stop & Analyze
               </Button>

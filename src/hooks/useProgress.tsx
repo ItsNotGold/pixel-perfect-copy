@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "./useAuth";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { toast } from "sonner";
 import type { Json } from "@/integrations/supabase/types";
 
@@ -9,13 +10,17 @@ export interface ExerciseAttempt {
   score: number;
   maxScore: number;
   answers?: Record<string, unknown>;
+  language?: string;
 }
 
 export function useProgress() {
   const { user } = useAuth();
+  const { language } = useLanguage();
 
   const saveAttempt = useCallback(async (attempt: ExerciseAttempt) => {
     if (!user) return;
+
+    const lang = attempt.language || language;
 
     try {
       // Save the attempt
@@ -25,14 +30,16 @@ export function useProgress() {
         score: attempt.score,
         max_score: attempt.maxScore,
         answers: (attempt.answers || {}) as Json,
+        language: lang,
       }]);
 
-      // Update user progress
+      // Update user progress (per language)
       const { data: existingProgress } = await supabase
         .from("user_progress")
         .select("*")
         .eq("user_id", user.id)
         .eq("exercise_id", attempt.exerciseId)
+        .eq("language", lang)
         .maybeSingle();
 
       if (existingProgress) {
@@ -51,6 +58,7 @@ export function useProgress() {
           best_score: attempt.score,
           times_completed: 1,
           last_completed_at: new Date().toISOString(),
+          language: lang,
         }]);
       }
 

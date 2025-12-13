@@ -2,14 +2,24 @@ import { useState, useEffect, useRef } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { synonymChallenges, SynonymChallenge } from "@/data/exerciseData";
+import { synonymChallengesMultilingual } from "@/data/multilingualContent";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { cn } from "@/lib/utils";
 import { Link, Play, RotateCcw, Trophy, Zap, Clock, Star } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
 
+interface SynonymChallenge {
+  id: string;
+  word: string;
+  commonSynonyms: string[];
+  rareSynonyms: string[];
+  timeLimit: number;
+}
+
 export default function SynonymSpeedChain() {
+  const { language } = useLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentSynonym, setCurrentSynonym] = useState("");
@@ -25,9 +35,15 @@ export default function SynonymSpeedChain() {
   const { saveAttempt } = useProgress();
 
   useEffect(() => {
-    const shuffled = [...synonymChallenges].sort(() => Math.random() - 0.5);
+    const challenges = synonymChallengesMultilingual[language] || synonymChallengesMultilingual.en;
+    const shuffled = [...challenges].sort(() => Math.random() - 0.5);
     setShuffledChallenges(shuffled);
-  }, []);
+    setCurrentIndex(0);
+    setIsComplete(false);
+    setSynonymList([]);
+    setScore(0);
+    setTotalScore(0);
+  }, [language]);
 
   const currentChallenge = shuffledChallenges[currentIndex];
 
@@ -73,13 +89,11 @@ export default function SynonymSpeedChain() {
 
     const word = currentSynonym.toLowerCase().trim();
     
-    // Check if already added
     if (synonymList.includes(word)) {
       toast.error("Already added!");
       return;
     }
 
-    // Check if it's the target word
     if (word === currentChallenge.word.toLowerCase()) {
       toast.error("Can't use the target word!");
       return;
@@ -87,10 +101,9 @@ export default function SynonymSpeedChain() {
 
     setSynonymList((prev) => [...prev, word]);
 
-    // Calculate points
-    let points = 5; // Base points
+    let points = 5;
     if (currentChallenge.rareSynonyms.map((s) => s.toLowerCase()).includes(word)) {
-      points = 15; // Rare synonym bonus
+      points = 15;
       toast.success(`+${points} Rare word!`);
     } else if (currentChallenge.commonSynonyms.map((s) => s.toLowerCase()).includes(word)) {
       points = 10;
@@ -126,7 +139,8 @@ export default function SynonymSpeedChain() {
   };
 
   const handleRestart = () => {
-    const shuffled = [...synonymChallenges].sort(() => Math.random() - 0.5);
+    const challenges = synonymChallengesMultilingual[language] || synonymChallengesMultilingual.en;
+    const shuffled = [...challenges].sort(() => Math.random() - 0.5);
     setShuffledChallenges(shuffled);
     setCurrentIndex(0);
     setIsComplete(false);

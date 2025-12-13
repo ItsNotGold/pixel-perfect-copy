@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
-import { swapChallenges, SwapChallenge } from "@/data/precisionSwapData";
+import { swapChallengesMultilingual } from "@/data/multilingualContent";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useAuth } from "@/hooks/useAuth";
+import { useProgress } from "@/hooks/useProgress";
 import { cn } from "@/lib/utils";
 import { 
   Target, 
@@ -15,7 +18,20 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
+interface SwapChallenge {
+  id: string;
+  sentence: string;
+  targetWord: string;
+  targetWordIndex: number;
+  options: { word: string; score: number; feedback: string }[];
+  bestAnswer: string;
+  explanation: string;
+}
+
 export default function PrecisionSwap() {
+  const { language } = useLanguage();
+  const { user } = useAuth();
+  const { saveAttempt } = useProgress();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
@@ -25,10 +41,16 @@ export default function PrecisionSwap() {
   const [shuffledChallenges, setShuffledChallenges] = useState<SwapChallenge[]>([]);
 
   useEffect(() => {
-    // Shuffle challenges on mount
-    const shuffled = [...swapChallenges].sort(() => Math.random() - 0.5);
+    const challenges = swapChallengesMultilingual[language] || swapChallengesMultilingual.en;
+    const shuffled = [...challenges].sort(() => Math.random() - 0.5);
     setShuffledChallenges(shuffled);
-  }, []);
+    setCurrentIndex(0);
+    setSelectedOption(null);
+    setShowResult(false);
+    setScore(0);
+    setStreak(0);
+    setCompleted(0);
+  }, [language]);
 
   const currentChallenge = shuffledChallenges[currentIndex];
 
@@ -49,19 +71,13 @@ export default function PrecisionSwap() {
       if (option.score >= 85) {
         setStreak((prev) => prev + 1);
         if (option.score === 100) {
-          toast.success("Perfect choice!", {
-            description: option.feedback,
-          });
+          toast.success("Perfect choice!", { description: option.feedback });
         } else {
-          toast.success("Great choice!", {
-            description: option.feedback,
-          });
+          toast.success("Great choice!", { description: option.feedback });
         }
       } else {
         setStreak(0);
-        toast.info("Good try!", {
-          description: option.feedback,
-        });
+        toast.info("Good try!", { description: option.feedback });
       }
     }
     
@@ -74,7 +90,13 @@ export default function PrecisionSwap() {
       setSelectedOption(null);
       setShowResult(false);
     } else {
-      // Game complete
+      if (user) {
+        saveAttempt({
+          exerciseId: "precision-swap",
+          score,
+          maxScore: shuffledChallenges.length * 100,
+        });
+      }
       toast.success("Exercise Complete!", {
         description: `Final score: ${score}. Completed: ${completed + 1} challenges.`,
       });
@@ -82,7 +104,8 @@ export default function PrecisionSwap() {
   };
 
   const handleRestart = () => {
-    const shuffled = [...swapChallenges].sort(() => Math.random() - 0.5);
+    const challenges = swapChallengesMultilingual[language] || swapChallengesMultilingual.en;
+    const shuffled = [...challenges].sort(() => Math.random() - 0.5);
     setShuffledChallenges(shuffled);
     setCurrentIndex(0);
     setSelectedOption(null);
@@ -161,7 +184,6 @@ export default function PrecisionSwap() {
   return (
     <MainLayout>
       <div className="mx-auto max-w-3xl px-6 py-12">
-        {/* Header */}
         <div className="mb-8 text-center animate-fade-in">
           <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 shadow-lg">
             <Target className="h-7 w-7 text-primary-foreground" />
@@ -170,7 +192,6 @@ export default function PrecisionSwap() {
           <p className="text-muted-foreground">Replace vague words with precise alternatives</p>
         </div>
 
-        {/* Stats Bar */}
         <div className="mb-8 grid grid-cols-3 gap-4 animate-slide-up">
           <div className="rounded-xl glass p-4 text-center">
             <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
@@ -194,9 +215,7 @@ export default function PrecisionSwap() {
           </div>
         </div>
 
-        {/* Challenge Card */}
         <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
-          {/* Progress Bar */}
           <div className="mb-6 h-2 overflow-hidden rounded-full bg-muted">
             <div
               className="h-full gradient-hero transition-all duration-500"
@@ -204,14 +223,12 @@ export default function PrecisionSwap() {
             />
           </div>
 
-          {/* Sentence Display */}
           <div className="mb-8 rounded-xl bg-muted/50 p-6 text-center">
             <p className="text-xl leading-relaxed text-foreground">
               {renderSentence()}
             </p>
           </div>
 
-          {/* Options Grid */}
           <div className="mb-6 grid grid-cols-2 gap-3">
             {currentChallenge?.options.map((option) => (
               <button
@@ -240,7 +257,6 @@ export default function PrecisionSwap() {
             ))}
           </div>
 
-          {/* Explanation (shown after selection) */}
           {showResult && currentChallenge && (
             <div className="mb-6 rounded-xl bg-primary/5 border border-primary/20 p-4 animate-slide-up">
               <div className="flex items-start gap-3">
@@ -257,7 +273,6 @@ export default function PrecisionSwap() {
             </div>
           )}
 
-          {/* Action Buttons */}
           <div className="flex gap-3">
             {!showResult ? (
               <Button
@@ -291,25 +306,6 @@ export default function PrecisionSwap() {
               </Button>
             )}
           </div>
-        </div>
-
-        {/* Tips Section */}
-        <div className="mt-8 rounded-xl glass p-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          <h3 className="mb-3 font-display text-lg text-foreground">Tips for Precision</h3>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2">
-              <span className="text-primary">•</span>
-              Look for words that convey specific meaning, not just intensity
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-primary">•</span>
-              Strong verbs often replace adverb + verb combinations
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-primary">•</span>
-              Consider the context and tone when choosing alternatives
-            </li>
-          </ul>
         </div>
       </div>
     </MainLayout>

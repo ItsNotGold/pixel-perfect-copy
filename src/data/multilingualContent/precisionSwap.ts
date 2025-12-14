@@ -19,7 +19,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
   en: [
     {
       id: "en-1",
-      sentence: "She had a very big problem.",
+      sentence: "A system outage caused a big problem that threatened the project's deadline.",
       targetWord: "big",
       targetWordIndex: 4,
       options: [
@@ -33,7 +33,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-2",
-      sentence: "The meeting was very good.",
+      sentence: "The meeting resulted in several clear action items and measurable outcomes.",
       targetWord: "good",
       targetWordIndex: 4,
       options: [
@@ -75,9 +75,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-5",
-      sentence: "She is a very smart person.",
+      sentence: "She solved the complex proof with shrewd insight, showing she's a smart person.",
       targetWord: "smart",
-      targetWordIndex: 4,
+      targetWordIndex: 10,
       options: [
         { word: "brilliant", score: 85, feedback: "Good intensity! Shows exceptional intelligence." },
         { word: "astute", score: 100, feedback: "Excellent! Implies shrewd judgment and perception." },
@@ -89,9 +89,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-6",
-      sentence: "The weather was very cold.",
+      sentence: "A sudden blizzard left the town cold and streets impassable.",
       targetWord: "cold",
-      targetWordIndex: 4,
+      targetWordIndex: 6,
       options: [
         { word: "frigid", score: 100, feedback: "Perfect! Conveys extreme cold vividly." },
         { word: "chilly", score: 60, feedback: "Actually less intense than 'very cold'." },
@@ -117,9 +117,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-8",
-      sentence: "The movie was very boring.",
+      sentence: "Long stretches without plot or character development made the movie boring.",
       targetWord: "boring",
-      targetWordIndex: 4,
+      targetWordIndex: 9,
       options: [
         { word: "tedious", score: 95, feedback: "Excellent! Implies tiresome repetition." },
         { word: "dull", score: 60, feedback: "Similar to boring - not much improvement." },
@@ -131,9 +131,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-9",
-      sentence: "She felt very happy about the news.",
+      sentence: "She felt elated when the funding for her project was approved.",
       targetWord: "happy",
-      targetWordIndex: 3,
+      targetWordIndex: 2,
       options: [
         { word: "elated", score: 100, feedback: "Perfect! Conveys intense joy." },
         { word: "pleased", score: 50, feedback: "Less intense than 'very happy'." },
@@ -145,9 +145,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-10",
-      sentence: "The test was very hard.",
+      sentence: "The final exam's complex problems made the test hard for most students.",
       targetWord: "hard",
-      targetWordIndex: 4,
+      targetWordIndex: 5,
       options: [
         { word: "grueling", score: 100, feedback: "Perfect! Implies exhausting difficulty." },
         { word: "challenging", score: 70, feedback: "Good but slightly positive connotation." },
@@ -159,9 +159,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-11",
-      sentence: "He gave a very long speech.",
+      sentence: "He gave a long speech that seemed to cover every minor detail without end.",
       targetWord: "long",
-      targetWordIndex: 4,
+      targetWordIndex: 3,
       options: [
         { word: "interminable", score: 100, feedback: "Perfect! Suggests it felt endless." },
         { word: "lengthy", score: 60, feedback: "Similar to 'long' - not much improvement." },
@@ -173,9 +173,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-12",
-      sentence: "The house was very old.",
+      sentence: "The house's creaking floors and peeling paint showed it was old and in need of repair.",
       targetWord: "old",
-      targetWordIndex: 4,
+      targetWordIndex: 3,
       options: [
         { word: "ancient", score: 95, feedback: "Strong! Suggests great age." },
         { word: "decrepit", score: 100, feedback: "Perfect! Adds decay and deterioration." },
@@ -187,9 +187,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-13",
-      sentence: "She spoke in a very quiet voice.",
+      sentence: "She whispered her reply so softly only a few could hear her.",
       targetWord: "quiet",
-      targetWordIndex: 5,
+      targetWordIndex: 0,
       options: [
         { word: "whispered", score: 100, feedback: "Perfect verb substitution!" },
         { word: "hushed", score: 90, feedback: "Excellent! Creates atmosphere." },
@@ -201,9 +201,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-14",
-      sentence: "The view was very beautiful.",
+      sentence: "Snow-capped peaks and a glassy lake made the view breathtaking.",
       targetWord: "beautiful",
-      targetWordIndex: 4,
+      targetWordIndex: 5,
       options: [
         { word: "breathtaking", score: 100, feedback: "Perfect! Physical reaction implied." },
         { word: "stunning", score: 90, feedback: "Strong impact!" },
@@ -215,9 +215,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-15",
-      sentence: "He ran very fast.",
+      sentence: "He sprinted past the finish line, beating the clock.",
       targetWord: "fast",
-      targetWordIndex: 3,
+      targetWordIndex: 0,
       options: [
         { word: "sprinted", score: 100, feedback: "Perfect verb choice!" },
         { word: "bolted", score: 95, feedback: "Excellent! Suggests sudden speed." },
@@ -229,7 +229,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-16",
-      sentence: "The music was very loud.",
+      sentence: "The speakers were blasting so loud the windows vibrated.",
       targetWord: "loud",
       targetWordIndex: 4,
       options: [
@@ -243,9 +243,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-17",
-      sentence: "She was very tired.",
+      sentence: "After the 12-hour shift, she felt exhausted and could barely stand.",
       targetWord: "tired",
-      targetWordIndex: 3,
+      targetWordIndex: 2,
       options: [
         { word: "exhausted", score: 100, feedback: "Perfect! Complete depletion." },
         { word: "fatigued", score: 80, feedback: "Good, slightly clinical." },
@@ -257,9 +257,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-18",
-      sentence: "The story was very scary.",
+      sentence: "The sudden shadow and eerie noises made the story truly scary.",
       targetWord: "scary",
-      targetWordIndex: 4,
+      targetWordIndex: 6,
       options: [
         { word: "terrifying", score: 100, feedback: "Perfect! Maximum fear." },
         { word: "creepy", score: 70, feedback: "Different tone - unsettling vs. frightening." },
@@ -271,9 +271,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-19",
-      sentence: "He was very angry.",
+      sentence: "He was furious when he saw the damage to his car.",
       targetWord: "angry",
-      targetWordIndex: 3,
+      targetWordIndex: 2,
       options: [
         { word: "furious", score: 100, feedback: "Perfect! Intense rage." },
         { word: "irritated", score: 40, feedback: "Much weaker than 'very angry'." },
@@ -285,9 +285,9 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-20",
-      sentence: "The water was very clear.",
+      sentence: "The lake's crystalline water let you see the stones on the bottom.",
       targetWord: "clear",
-      targetWordIndex: 4,
+      targetWordIndex: 2,
       options: [
         { word: "crystalline", score: 100, feedback: "Perfect! Gem-like clarity." },
         { word: "transparent", score: 80, feedback: "Good but clinical." },
@@ -299,7 +299,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-60",
-      sentence: "After the audit, the board concluded this was a very serious compliance issue.",
+      sentence: "After the audit, the board concluded this was a serious compliance issue.",
       targetWord: "serious",
       targetWordIndex: 8,
       options: [
@@ -313,7 +313,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-60a",
-      sentence: "The security breach represented a very serious threat to customer data and trust.",
+      sentence: "The security breach represented a serious threat to customer data and trust.",
       targetWord: "serious",
       targetWordIndex: 4,
       options: [
@@ -327,7 +327,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-61",
-      sentence: "The proposal was very weak and failed to address core risks.",
+      sentence: "The proposal was weak and failed to address core risks.",
       targetWord: "weak",
       targetWordIndex: 3,
       options: [
@@ -341,7 +341,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-61a",
-      sentence: "Given the assumptions and missing data, the plan felt very weak to the reviewers.",
+      sentence: "Given the assumptions and missing data, the plan felt weak to the reviewers.",
       targetWord: "weak",
       targetWordIndex: 5,
       options: [
@@ -355,7 +355,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-62",
-      sentence: "The policy is very vague about responsibilities and caused confusion.",
+      sentence: "The policy is vague about responsibilities and caused confusion.",
       targetWord: "vague",
       targetWordIndex: 3,
       options: [
@@ -369,7 +369,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-62a",
-      sentence: "When asked for guidance, the manager's instructions were very vague and unhelpful.",
+      sentence: "When asked for guidance, the manager's instructions were vague and unhelpful.",
       targetWord: "vague",
       targetWordIndex: 5,
       options: [
@@ -383,7 +383,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-63",
-      sentence: "The team's performance was very inconsistent from sprint to sprint.",
+      sentence: "The team's performance was inconsistent from sprint to sprint.",
       targetWord: "inconsistent",
       targetWordIndex: 3,
       options: [
@@ -397,7 +397,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-63a",
-      sentence: "Despite effort, results were very inconsistent across different modules.",
+      sentence: "Despite effort, results were inconsistent across different modules.",
       targetWord: "inconsistent",
       targetWordIndex: 5,
       options: [
@@ -411,7 +411,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-64",
-      sentence: "The candidate gave a very confident presentation about their skills.",
+      sentence: "The candidate gave a confident presentation about their skills.",
       targetWord: "confident",
       targetWordIndex: 3,
       options: [
@@ -425,7 +425,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-64a",
-      sentence: "He answered every question in a very confident manner, impressing the panel.",
+      sentence: "He answered every question in a confident manner, impressing the panel.",
       targetWord: "confident",
       targetWordIndex: 6,
       options: [
@@ -439,7 +439,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-65",
-      sentence: "The design is very simple, which helped users understand it quickly.",
+      sentence: "The design is simple, which helped users understand it quickly.",
       targetWord: "simple",
       targetWordIndex: 3,
       options: [
@@ -453,7 +453,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-65a",
-      sentence: "Because the interface is very simple, new users completed tasks faster.",
+      sentence: "Because the interface is simple, new users completed tasks faster.",
       targetWord: "simple",
       targetWordIndex: 4,
       options: [
@@ -468,7 +468,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     // Additional contextualized variants to increase rotation and avoid memorization
     {
       id: "en-1a",
-      sentence: "A major outage left customers stranded and the CEO called it a very big problem for the business.",
+      sentence: "A major outage left customers stranded and the CEO called it a big problem for the business.",
       targetWord: "big",
       targetWordIndex: 9,
       options: [
@@ -482,7 +482,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-1b",
-      sentence: "The data breach was a very big problem that risked exposing thousands of user records.",
+      sentence: "The data breach was a big problem that risked exposing thousands of user records.",
       targetWord: "big",
       targetWordIndex: 4,
       options: [
@@ -496,7 +496,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-1c",
-      sentence: "After multiple failed launches this quarter, investors called it a very big problem for the roadmap.",
+      sentence: "After multiple failed launches this quarter, investors called it a big problem for the roadmap.",
       targetWord: "big",
       targetWordIndex: 8,
       options: [
@@ -510,7 +510,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-2a",
-      sentence: "The meeting produced clear action items and measurable outcomes, so it was a very good meeting.",
+      sentence: "The meeting produced clear action items and measurable outcomes, so it was a good meeting.",
       targetWord: "good",
       targetWordIndex: 8,
       options: [
@@ -524,7 +524,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-2b",
-      sentence: "We finished the sprint with clear progress and next steps — overall, the meeting was very good.",
+      sentence: "We finished the sprint with clear progress and next steps — overall, the meeting was good.",
       targetWord: "good",
       targetWordIndex: 9,
       options: [
@@ -538,7 +538,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-2c",
-      sentence: "Given the decisions we reached and the risks we mitigated, the meeting was very good for the project.",
+      sentence: "Given the decisions we reached and the risks we mitigated, the meeting was good for the project.",
       targetWord: "good",
       targetWordIndex: 8,
       options: [
@@ -594,7 +594,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-4a",
-      sentence: "The leftovers were so spoiled they were a very bad meal for the guests.",
+      sentence: "The leftovers were so spoiled they made for a bad meal for the guests.",
       targetWord: "bad",
       targetWordIndex: 6,
       options: [
@@ -608,7 +608,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-4b",
-      sentence: "The soup tasted so off it was more than bad — the chef called it a very bad outcome for service.",
+      sentence: "The soup tasted so off it was more than bad — the chef called it a bad outcome for service.",
       targetWord: "bad",
       targetWordIndex: 6,
       options: [
@@ -622,7 +622,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "en-4c",
-      sentence: "Guests sent the dish back immediately — it was a very bad example of the restaurant's standards.",
+      sentence: "Guests sent the dish back immediately — it was a bad example of the restaurant's standards.",
       targetWord: "bad",
       targetWordIndex: 5,
       options: [
@@ -635,10 +635,348 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
       explanation: "'Inedible' best communicates the food's unacceptable quality.",
     },
   ],
+  es: [
+    {
+      id: "es-1a",
+      sentence: "Una gran avería dejó a los clientes varados y la dirección la calificó como un problema grave para la empresa.",
+      targetWord: "grave",
+      targetWordIndex: 12,
+      options: [
+        { word: "serio", score: 90, feedback: "Buen uso — muestra importancia." },
+        { word: "crítico", score: 100, feedback: "Perfecto — implica urgencia y consecuencias severas." },
+        { word: "grande", score: 30, feedback: "Demasiado cercano a 'gran' sin impacto." },
+        { word: "urgente", score: 85, feedback: "Buena elección — añade sensación de urgencia." },
+      ],
+      bestAnswer: "crítico",
+      explanation: "'Crítico' enfatiza la amenaza inmediata para el negocio.",
+    },
+    {
+      id: "es-1b",
+      sentence: "La fuga de datos fue un problema grave que puso en riesgo miles de registros de usuarios.",
+      targetWord: "grave",
+      targetWordIndex: 3,
+      options: [
+        { word: "serio", score: 90, feedback: "Buen uso — muestra importancia." },
+        { word: "crítico", score: 100, feedback: "Perfecto — implica urgencia y consecuencias severas." },
+        { word: "grande", score: 30, feedback: "Demasiado literal — sin impacto cualitativo." },
+        { word: "urgente", score: 85, feedback: "Buena — añade prisa pero menos gravedad." },
+      ],
+      bestAnswer: "crítico",
+      explanation: "'Crítico' encaja debido al daño reputacional y legal potencial.",
+    },
+    {
+      id: "es-1c",
+      sentence: "Tras varios lanzamientos fallidos este trimestre, los inversores lo llamaron un problema grave para la hoja de ruta.",
+      targetWord: "grave",
+      targetWordIndex: 10,
+      options: [
+        { word: "serio", score: 90, feedback: "Buen uso — indica importancia." },
+        { word: "crítico", score: 100, feedback: "Perfecto — subraya urgencia y consecuencias." },
+        { word: "grande", score: 30, feedback: "Demasiado literal — sin matiz." },
+        { word: "apremiante", score: 85, feedback: "Bueno — sugiere urgencia pero menos severidad." },
+      ],
+      bestAnswer: "crítico",
+      explanation: "'Crítico' señala una amenaza urgente para la hoja de ruta y objetivos.",
+    },
+    {
+      id: "es-2a",
+      sentence: "La reunión produjo acciones claras y resultados medibles, por lo que fue una reunión productiva.",
+      targetWord: "productiva",
+      targetWordIndex: 10,
+      options: [
+        { word: "productiva", score: 100, feedback: "Perfecto — señala resultados concretos." },
+        { word: "agradable", score: 20, feedback: "Demasiado vago — describe el tono, no el resultado." },
+        { word: "constructiva", score: 90, feedback: "Fuerte — enfatiza retroalimentación útil." },
+        { word: "fructífera", score: 85, feedback: "Buena — implica resultados tangibles." },
+      ],
+      bestAnswer: "productiva",
+      explanation: "'Productiva' enfatiza los resultados y acciones concretas.",
+    },
+    {
+      id: "es-2b",
+      sentence: "Terminamos el sprint con progreso claro y siguientes pasos — en general, la reunión fue productiva.",
+      targetWord: "productiva",
+      targetWordIndex: 12,
+      options: [
+        { word: "productiva", score: 100, feedback: "Perfecto — señala resultados concretos." },
+        { word: "agradable", score: 20, feedback: "Demasiado vago." },
+        { word: "constructiva", score: 90, feedback: "Fuerte — retroalimentación útil." },
+        { word: "fructífera", score: 85, feedback: "Buena — implica resultados." },
+      ],
+      bestAnswer: "productiva",
+      explanation: "'Productiva' transmite que la reunión avanzó el proyecto.",
+    },
+    {
+      id: "es-2c",
+      sentence: "Dadas las decisiones que tomamos y los riesgos mitigados, la reunión fue productiva para el proyecto.",
+      targetWord: "productiva",
+      targetWordIndex: 8,
+      options: [
+        { word: "productiva", score: 100, feedback: "Perfecto — señala resultados concretos." },
+        { word: "agradable", score: 20, feedback: "Demasiado vago." },
+        { word: "constructiva", score: 90, feedback: "Fuerte — útil y orientada." },
+        { word: "fructífera", score: 85, feedback: "Buena — resultados tangibles." },
+      ],
+      bestAnswer: "productiva",
+      explanation: "'Productiva' es la mejor opción dado el contexto de decisiones tomadas.",
+    },
+    {
+      id: "es-3a",
+      sentence: "Avanzó con paso pesado por la nieve hasta la cabaña, exhausto por el trabajo del día.",
+      targetWord: "pesado",
+      targetWordIndex: 2,
+      options: [
+        { word: "arrastró", score: 95, feedback: "Gran verbo: muestra cansancio." },
+        { word: "cojeó", score: 90, feedback: "Vivo — sugiere arrastre de pies." },
+        { word: "anduvo lento", score: 85, feedback: "Sugiere ritmo lento pero sin fatiga." },
+        { word: "se movió", score: 25, feedback: "Demasiado genérico." },
+      ],
+      bestAnswer: "arrastró",
+      explanation: "'Arrastró' implica movimiento lento y agotamiento.",
+    },
+    {
+      id: "es-3b",
+      sentence: "Con una mochila pesada, caminó despacio y avanzó con dificultad hacia el inicio del sendero.",
+      targetWord: "despacio",
+      targetWordIndex: 3,
+      options: [
+        { word: "arrastró", score: 95, feedback: "Gran verbo: esfuerzo y resistencia." },
+        { word: "cojeó", score: 90, feedback: "Vivo — arrastre de pies." },
+        { word: "anduvo lento", score: 85, feedback: "Más pausado que fatigado." },
+        { word: "se movió", score: 25, feedback: "Demasiado genérico." },
+      ],
+      bestAnswer: "arrastró",
+      explanation: "'Arrastró' capta el movimiento laborioso con carga.",
+    },
+    {
+      id: "es-3c",
+      sentence: "Tras un largo turno, avanzó con dificultad por el pasillo hasta su coche.",
+      targetWord: "dificultad",
+      targetWordIndex: 3,
+      options: [
+        { word: "arrastró", score: 95, feedback: "Gran verbo: muestra cansancio." },
+        { word: "cojeó", score: 90, feedback: "Vivo — sugiere arrastre." },
+        { word: "anduvo lento", score: 85, feedback: "Más tranquilo que fatigado." },
+        { word: "se movió", score: 25, feedback: "Demasiado genérico." },
+      ],
+      bestAnswer: "arrastró",
+      explanation: "'Arrastró' comunica cansancio y lentitud.",
+    },
+    {
+      id: "es-4a",
+      sentence: "Las sobras estaban tan echadas a perder que resultaron en una mala comida para los invitados.",
+      targetWord: "mala",
+      targetWordIndex: 6,
+      options: [
+        { word: "incomible", score: 100, feedback: "Perfecto — indica que no se puede comer." },
+        { word: "decepcionante", score: 80, feedback: "Buena — matiz emocional." },
+        { word: "horrible", score: 50, feedback: "Mejor que 'mala' pero vago." },
+        { word: "repugnante", score: 90, feedback: "Fuerte — reacción visceral." },
+      ],
+      bestAnswer: "incomible",
+      explanation: "'Incomible' describe con precisión comida no apta para consumo.",
+    },
+    {
+      id: "es-4b",
+      sentence: "La sopa sabía tan mala que resultó en un resultado pésimo para el servicio.",
+      targetWord: "mala",
+      targetWordIndex: 4,
+      options: [
+        { word: "incomible", score: 100, feedback: "Perfecto — no apta para comer." },
+        { word: "decepcionante", score: 80, feedback: "Buena — con matiz emocional." },
+        { word: "horrible", score: 50, feedback: "Mejor que 'mala' pero vago." },
+        { word: "repugnante", score: 90, feedback: "Fuerte — reacción visceral." },
+      ],
+      bestAnswer: "incomible",
+      explanation: "'Incomible' indica que el plato no podía servirse.",
+    },
+    {
+      id: "es-4c",
+      sentence: "Los clientes devolvieron el plato de inmediato — fue un pésimo ejemplo de los estándares del restaurante.",
+      targetWord: "pésimo",
+      targetWordIndex: 6,
+      options: [
+        { word: "incomible", score: 100, feedback: "Perfecto — no apto para consumo." },
+        { word: "decepcionante", score: 80, feedback: "Buena — matiz emocional." },
+        { word: "horrible", score: 50, feedback: "Mejor que 'malo' pero vago." },
+        { word: "repugnante", score: 90, feedback: "Fuerte — reacción visceral." },
+      ],
+      bestAnswer: "incomible",
+      explanation: "'Incomible' comunica la calidad inaceptable de la comida.",
+    },
+    {
+      id: "es-60",
+      sentence: "Tras la auditoría, la junta concluyó que era un problema serio de cumplimiento.",
+      targetWord: "serio",
+      targetWordIndex: 7,
+      options: [
+        { word: "grave", score: 100, feedback: "Perfecto — enfatiza severidad." },
+        { word: "notable", score: 30, feedback: "Demasiado leve." },
+        { word: "sustancial", score: 40, feedback: "Implica tamaño, no peligro." },
+        { word: "significativo", score: 60, feedback: "Aceptable pero menos urgente." },
+      ],
+      bestAnswer: "grave",
+      explanation: "'Grave' señala alta severidad y posibles consecuencias.",
+    },
+    {
+      id: "es-60a",
+      sentence: "La brecha de seguridad representó una amenaza seria para los datos y la confianza de los clientes.",
+      targetWord: "seria",
+      targetWordIndex: 4,
+      options: [
+        { word: "grave", score: 100, feedback: "Perfecto — enfatiza daño potencial." },
+        { word: "notable", score: 30, feedback: "Demasiado débil." },
+        { word: "sustancial", score: 40, feedback: "Cuantitativo, no cualitativo." },
+        { word: "significativa", score: 60, feedback: "Mejor que 'notable' pero más suave." },
+      ],
+      bestAnswer: "grave",
+      explanation: "'Grave' es la mejor opción por el posible perjuicio resultante.",
+    },
+    {
+      id: "es-61",
+      sentence: "La propuesta era débil y no abordó los riesgos principales.",
+      targetWord: "débil",
+      targetWordIndex: 3,
+      options: [
+        { word: "defectuosa", score: 100, feedback: "Perfecto — indica problemas de diseño." },
+        { word: "frágil", score: 30, feedback: "Metáfora física, no ideal." },
+        { word: "insustancial", score: 70, feedback: "Buena — carece de peso." },
+        { word: "inadecuada", score: 90, feedback: "Fuerte — no cumple requisitos." },
+      ],
+      bestAnswer: "defectuosa",
+      explanation: "'Defectuosa' destaca problemas conceptuales en la propuesta.",
+    },
+    {
+      id: "es-61a",
+      sentence: "Dadas las suposiciones y los datos faltantes, el plan resultó débil para los revisores.",
+      targetWord: "débil",
+      targetWordIndex: 6,
+      options: [
+        { word: "defectuosa", score: 100, feedback: "Perfecto — problemas fundamentales." },
+        { word: "frágil", score: 30, feedback: "Menos preciso." },
+        { word: "insustancial", score: 70, feedback: "Buena — falta evidencia." },
+        { word: "inadecuada", score: 90, feedback: "Fuerte — no suficiente." },
+      ],
+      bestAnswer: "defectuosa",
+      explanation: "'Defectuosa' captura las suposiciones y lagunas del plan.",
+    },
+    {
+      id: "es-62",
+      sentence: "La política es confusa sobre las responsabilidades y causó malentendidos.",
+      targetWord: "confusa",
+      targetWordIndex: 3,
+      options: [
+        { word: "ambiguo", score: 100, feedback: "Perfecto — significa falta de claridad." },
+        { word: "amplio", score: 30, feedback: "Demasiado general." },
+        { word: "general", score: 50, feedback: "Leve — falta especificidad." },
+        { word: "poco claro", score: 80, feedback: "Buena — sencilla pero menos exacta." },
+      ],
+      bestAnswer: "ambiguo",
+      explanation: "'Ambiguo' describe con precisión la falta de claridad.",
+    },
+    {
+      id: "es-62a",
+      sentence: "Cuando se pidió orientación, las instrucciones del gerente fueron confusas e inútiles.",
+      targetWord: "confusas",
+      targetWordIndex: 6,
+      options: [
+        { word: "ambiguas", score: 100, feedback: "Perfecto — claramente falta claridad." },
+        { word: "amplias", score: 30, feedback: "Demasiado generales." },
+        { word: "generales", score: 50, feedback: "Relacionado pero impreciso." },
+        { word: "poco claras", score: 80, feedback: "Buena — menos exacta." },
+      ],
+      bestAnswer: "ambiguas",
+      explanation: "'Ambiguas' capta la falta de detalle práctico.",
+    },
+    {
+      id: "es-63",
+      sentence: "El rendimiento del equipo fue inconsistente de sprint a sprint.",
+      targetWord: "inconsistente",
+      targetWordIndex: 3,
+      options: [
+        { word: "errático", score: 100, feedback: "Perfecto — variación impredecible." },
+        { word: "desigual", score: 70, feedback: "Buena — variación en calidad." },
+        { word: "variable", score: 50, feedback: "Descriptivo pero menos fuerte." },
+        { word: "esporádico", score: 80, feedback: "Buena — irregular." },
+      ],
+      bestAnswer: "errático",
+      explanation: "'Errático' enfatiza la imprevisibilidad.",
+    },
+    {
+      id: "es-63a",
+      sentence: "A pesar del esfuerzo, los resultados fueron inconsistentes entre diferentes módulos.",
+      targetWord: "inconsistentes",
+      targetWordIndex: 5,
+      options: [
+        { word: "erráticos", score: 100, feedback: "Perfecto — rendimiento impredecible." },
+        { word: "desiguales", score: 70, feedback: "Buena — calidad variable." },
+        { word: "variables", score: 50, feedback: "Descriptivo pero menos contundente." },
+        { word: "esporádicos", score: 80, feedback: "Buena — patrón irregular." },
+      ],
+      bestAnswer: "erráticos",
+      explanation: "'Erráticos' comunica la falta de rendimiento fiable.",
+    },
+    {
+      id: "es-64",
+      sentence: "El candidato dio una presentación segura sobre sus habilidades.",
+      targetWord: "segura",
+      targetWordIndex: 3,
+      options: [
+        { word: "confiado", score: 100, feedback: "Perfecto — sereno y seguro." },
+        { word: "arrogante", score: 30, feedback: "Tono negativo — implica arrogancia." },
+        { word: "cómodo", score: 50, feedback: "Neutral — menos enfático." },
+        { word: "compuesto", score: 90, feedback: "Excelente — sereno y centrado." },
+      ],
+      bestAnswer: "confiado",
+      explanation: "'Confiado' implica competencia sin arrogancia.",
+    },
+    {
+      id: "es-64a",
+      sentence: "Respondió a cada pregunta con seguridad, impresionando al jurado.",
+      targetWord: "seguridad",
+      targetWordIndex: 5,
+      options: [
+        { word: "confiado", score: 100, feedback: "Perfecto — sereno y convincente." },
+        { word: "arrogante", score: 30, feedback: "Demasiado negativo." },
+        { word: "cómodo", score: 50, feedback: "Adecuado pero no enfático." },
+        { word: "compuesto", score: 90, feedback: "Gran — estable bajo presión." },
+      ],
+      bestAnswer: "confiado",
+      explanation: "'Confiado' es el ajuste más adecuado por su competencia." 
+    },
+    {
+      id: "es-65",
+      sentence: "El diseño es simple, lo que ayudó a los usuarios a entenderlo rápidamente.",
+      targetWord: "simple",
+      targetWordIndex: 2,
+      options: [
+        { word: "intuitivo", score: 100, feedback: "Perfecto — fácil de usar." },
+        { word: "soso", score: 30, feedback: "Demasiado simple — falta matiz." },
+        { word: "minimalista", score: 80, feedback: "Bueno — sin desorden." },
+        { word: "directo", score: 90, feedback: "Excelente — fácil de seguir." },
+      ],
+      bestAnswer: "intuitivo",
+      explanation: "'Intuitivo' transmite que el usuario necesita poca instrucción.",
+    },
+    {
+      id: "es-65a",
+      sentence: "Porque la interfaz es simple, los usuarios nuevos completaron las tareas más rápido.",
+      targetWord: "simple",
+      targetWordIndex: 3,
+      options: [
+        { word: "intuitiva", score: 100, feedback: "Perfecto — implica facilidad de uso." },
+        { word: "sosa", score: 30, feedback: "Demasiado básica." },
+        { word: "minimal", score: 80, feedback: "Buena — diseño limpio." },
+        { word: "sencilla", score: 90, feedback: "Excelente — fácil de navegar." },
+      ],
+      bestAnswer: "intuitiva",
+      explanation: "'Intuitiva' conecta la simplicidad con la usabilidad y rapidez.",
+    },
+  ],
   fr: [
     {
       id: "fr-1",
-      sentence: "Elle avait un très gros problème.",
+      sentence: "Elle avait un gros problème.",
       targetWord: "gros",
       targetWordIndex: 4,
       options: [
@@ -652,7 +990,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-2",
-      sentence: "La réunion était très bonne.",
+      sentence: "La réunion était bonne.",
       targetWord: "bonne",
       targetWordIndex: 4,
       options: [
@@ -680,7 +1018,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-4",
-      sentence: "La nourriture était vraiment mauvaise.",
+      sentence: "La nourriture était mauvaise.",
       targetWord: "mauvaise",
       targetWordIndex: 4,
       options: [
@@ -694,7 +1032,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-5",
-      sentence: "Elle est très intelligente.",
+      sentence: "Elle est intelligente.",
       targetWord: "intelligente",
       targetWordIndex: 3,
       options: [
@@ -708,7 +1046,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-6",
-      sentence: "Il faisait très froid.",
+      sentence: "Il faisait froid.",
       targetWord: "froid",
       targetWordIndex: 3,
       options: [
@@ -722,7 +1060,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-7",
-      sentence: "Il a pris une décision très rapide.",
+      sentence: "Il a pris une décision rapide.",
       targetWord: "rapide",
       targetWordIndex: 5,
       options: [
@@ -736,7 +1074,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-8",
-      sentence: "Le film était très ennuyeux.",
+      sentence: "Le film était ennuyeux.",
       targetWord: "ennuyeux",
       targetWordIndex: 4,
       options: [
@@ -750,7 +1088,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-9",
-      sentence: "Elle était très contente de la nouvelle.",
+      sentence: "Elle était contente de la nouvelle.",
       targetWord: "contente",
       targetWordIndex: 3,
       options: [
@@ -764,7 +1102,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-10",
-      sentence: "L'examen était très difficile.",
+      sentence: "L'examen était difficile.",
       targetWord: "difficile",
       targetWordIndex: 4,
       options: [
@@ -778,7 +1116,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-11",
-      sentence: "Il a fait un très long discours.",
+      sentence: "Il a fait un long discours.",
       targetWord: "long",
       targetWordIndex: 5,
       options: [
@@ -792,7 +1130,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-12",
-      sentence: "La maison était très vieille.",
+      sentence: "La maison était vieille.",
       targetWord: "vieille",
       targetWordIndex: 4,
       options: [
@@ -806,7 +1144,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-13",
-      sentence: "Elle parlait d'une voix très douce.",
+      sentence: "Elle parlait d'une voix douce.",
       targetWord: "douce",
       targetWordIndex: 6,
       options: [
@@ -820,7 +1158,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-14",
-      sentence: "La vue était très belle.",
+      sentence: "La vue était belle.",
       targetWord: "belle",
       targetWordIndex: 4,
       options: [
@@ -834,7 +1172,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-15",
-      sentence: "Il courait très vite.",
+      sentence: "Il courait vite.",
       targetWord: "vite",
       targetWordIndex: 3,
       options: [
@@ -848,7 +1186,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-16",
-      sentence: "La musique était très forte.",
+      sentence: "La musique était forte.",
       targetWord: "forte",
       targetWordIndex: 4,
       options: [
@@ -862,7 +1200,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-17",
-      sentence: "Elle était très fatiguée.",
+      sentence: "Elle était fatiguée.",
       targetWord: "fatiguée",
       targetWordIndex: 3,
       options: [
@@ -876,7 +1214,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-18",
-      sentence: "L'histoire était très effrayante.",
+      sentence: "L'histoire était effrayante.",
       targetWord: "effrayante",
       targetWordIndex: 4,
       options: [
@@ -890,7 +1228,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-19",
-      sentence: "Il était très en colère.",
+      sentence: "Il était en colère.",
       targetWord: "en colère",
       targetWordIndex: 3,
       options: [
@@ -920,7 +1258,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
   es: [
     {
       id: "es-1",
-      sentence: "Ella tenía un problema muy grande.",
+      sentence: "Ella tenía un problema grande.",
       targetWord: "grande",
       targetWordIndex: 5,
       options: [
@@ -934,7 +1272,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "es-2",
-      sentence: "La reunión fue muy buena.",
+      sentence: "La reunión fue buena.",
       targetWord: "buena",
       targetWordIndex: 4,
       options: [
@@ -962,7 +1300,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "es-4",
-      sentence: "La comida estaba muy mala.",
+      sentence: "La comida estaba mala.",
       targetWord: "mala",
       targetWordIndex: 4,
       options: [
@@ -976,7 +1314,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "es-5",
-      sentence: "Ella es muy inteligente.",
+      sentence: "Ella es inteligente.",
       targetWord: "inteligente",
       targetWordIndex: 3,
       options: [
@@ -990,7 +1328,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "es-6",
-      sentence: "Hacía mucho frío.",
+      sentence: "Hacía frío.",
       targetWord: "frío",
       targetWordIndex: 3,
       options: [
@@ -1004,7 +1342,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "es-7",
-      sentence: "Tomó una decisión muy rápida.",
+      sentence: "Tomó una decisión rápida.",
       targetWord: "rápida",
       targetWordIndex: 5,
       options: [
@@ -1018,7 +1356,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "es-8",
-      sentence: "La película era muy aburrida.",
+      sentence: "La película era aburrida.",
       targetWord: "aburrida",
       targetWordIndex: 4,
       options: [
@@ -1032,7 +1370,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "es-9",
-      sentence: "Estaba muy contenta con la noticia.",
+      sentence: "Estaba contenta con la noticia.",
       targetWord: "contenta",
       targetWordIndex: 3,
       options: [
@@ -1046,7 +1384,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "es-10",
-      sentence: "El examen fue muy difícil.",
+      sentence: "El examen fue difícil.",
       targetWord: "difícil",
       targetWordIndex: 4,
       options: [

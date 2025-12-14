@@ -288,5 +288,82 @@ export const wordIncorporationPrompts: Record<Language, WordIncorporationPrompt[
       prompt: "Habla de las relaciones personales",
       words: ["confianza", "comunicación", "apoyo", "comprensión", "conexión"]
     }
+    ,
+    {
+      prompt: "Habla de un libro reciente que disfrutaste",
+      words: ["trama", "personajes", "tema", "perspicaz", "recomendar"]
+    },
+    {
+      prompt: "Describe cómo planificas un viaje",
+      words: ["itinerario", "presupuesto", "alojamiento", "turismo", "transporte"]
+    },
+    {
+      prompt: "Discute tu enfoque para aprender nuevas habilidades",
+      words: ["práctica", "retroalimentación", "constancia", "recursos", "paciencia"]
+    },
+    {
+      prompt: "Habla de una comida memorable",
+      words: ["sabor", "presentación", "ingredientes", "ambiente", "servicio"]
+    },
+    {
+      prompt: "Describe cómo manejas los conflictos",
+      words: ["diálogo", "compromiso", "respeto", "escucha", "resolución"]
+    },
+    {
+      prompt: "Discute cómo gestionas tus finanzas",
+      words: ["ahorro", "presupuesto", "inversión", "deuda", "metas"]
+    },
+    {
+      prompt: "Habla de una tecnología sin la que no podrías vivir",
+      words: ["dispositivo", "conectividad", "utilidad", "dependencia", "innovación"]
+    },
+    {
+      prompt: "Describe un evento comunitario al que asististe",
+      words: ["voluntariado", "asistencia", "organización", "alcance", "impacto"]
+    },
+    {
+      prompt: "Discute tu forma favorita de mantenerte activo",
+      words: ["entrenamiento", "rutina", "motivación", "resistencia", "recuperación"]
+    },
+    {
+      prompt: "Habla de una meta que alcanzaste recientemente",
+      words: ["planificación", "hito", "esfuerzo", "celebración", "reflexión"]
+    },
+    {
+      prompt: "Describe el papel del trabajo en equipo en un proyecto",
+      words: ["colaboración", "responsabilidad", "comunicación", "roles", "confianza"]
+    },
+    {
+      prompt: "Discute cómo mantienes el equilibrio entre trabajo y vida",
+      words: ["límites", "prioridades", "tiempo", "autocuidado", "flexibilidad"]
+    },
+    {
+      prompt: "Habla de una invención que cambió el mundo",
+      words: ["innovación", "impacto", "adopción", "escala", "legado"]
+    },
+    {
+      prompt: "Describe cómo te preparas para entrevistas",
+      words: ["investigación", "práctica", "confianza", "preguntas", "seguimiento"]
+    },
+    {
+      prompt: "Discute una tradición cultural que disfrutes",
+      words: ["ritual", "celebración", "significado", "costumbres", "patrimonio"]
+    },
+    {
+      prompt: "Habla sobre estrategias para mantener la concentración",
+      words: ["distracción", "prioridad", "técnica", "horario", "constancia"]
+    },
+    {
+      prompt: "Describe una experiencia de voluntariado",
+      words: ["servicio", "comunidad", "aprendizaje", "empatía", "contribución"]
+    },
+    {
+      prompt: "Discute la importancia de la higiene del sueño",
+      words: ["rutina", "entorno", "restaurador", "consistencia", "calidad"]
+    },
+    {
+      prompt: "Habla sobre una lección que aprendiste del fracaso",
+      words: ["aprendizaje", "resiliencia", "ajuste", "crecimiento", "perspectiva"]
+    }
   ]
 };

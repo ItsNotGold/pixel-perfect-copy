@@ -39,15 +39,15 @@ export default function WordIncorporation() {
 
   const transcript = voiceTranscript;
 
-  useEffect(() => {
-    pickNewPrompt();
-  }, [language, pickNewPrompt]);
-
   const pickNewPrompt = useCallback(() => {
     const prompts = wordIncorporationPrompts[language] || wordIncorporationPrompts.en;
     const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
     setCurrentPrompt(randomPrompt);
   }, [language]);
+
+  useEffect(() => {
+    pickNewPrompt();
+  }, [language, pickNewPrompt]);
 
   const startSession = async () => {
     setIsActive(true);

@@ -34,7 +34,8 @@ export default function ReverseDefinitions() {
   useEffect(() => {
     const definitions = reverseDefinitionsMultilingual[language] || reverseDefinitionsMultilingual.en;
     const shuffled = [...definitions].sort(() => Math.random() - 0.5);
-    setShuffledChallenges(shuffled);
+    const desiredCount = 10;
+    setShuffledChallenges(shuffled.slice(0, desiredCount));
     setCurrentIndex(0);
     setAnswer("");
     setShowResult(false);
@@ -89,7 +90,8 @@ export default function ReverseDefinitions() {
   const handleRestart = () => {
     const definitions = reverseDefinitionsMultilingual[language] || reverseDefinitionsMultilingual.en;
     const shuffled = [...definitions].sort(() => Math.random() - 0.5);
-    setShuffledChallenges(shuffled);
+    const desiredCount = 10;
+    setShuffledChallenges(shuffled.slice(0, desiredCount));
     setCurrentIndex(0);
     setAnswer("");
     setShowResult(false);

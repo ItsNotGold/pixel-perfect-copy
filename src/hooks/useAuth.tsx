@@ -37,6 +37,22 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => subscription.unsubscribe();
   }, []);
 
+  useEffect(() => {
+    // Ensure a profile row exists for signed-in users
+    const upsertProfile = async () => {
+      if (!user) return;
+      try {
+        await supabase.from('profiles').upsert({
+          user_id: user.id,
+          display_name: user.user_metadata?.display_name || null,
+        });
+      } catch (err) {
+        console.error('Failed to upsert profile', err);
+      }
+    };
+    upsertProfile();
+  }, [user]);
+
   const signUp = async (email: string, password: string, displayName?: string) => {
     const redirectUrl = `${window.location.origin}/`;
     const { error } = await supabase.auth.signUp({

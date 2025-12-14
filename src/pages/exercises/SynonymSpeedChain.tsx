@@ -37,7 +37,8 @@ export default function SynonymSpeedChain() {
   useEffect(() => {
     const challenges = synonymChallengesMultilingual[language] || synonymChallengesMultilingual.en;
     const shuffled = [...challenges].sort(() => Math.random() - 0.5);
-    setShuffledChallenges(shuffled);
+    const desiredCount = 5;
+    setShuffledChallenges(shuffled.slice(0, desiredCount));
     setCurrentIndex(0);
     setIsComplete(false);
     setSynonymList([]);
@@ -141,7 +142,8 @@ export default function SynonymSpeedChain() {
   const handleRestart = () => {
     const challenges = synonymChallengesMultilingual[language] || synonymChallengesMultilingual.en;
     const shuffled = [...challenges].sort(() => Math.random() - 0.5);
-    setShuffledChallenges(shuffled);
+    const desiredCount = 5;
+    setShuffledChallenges(shuffled.slice(0, desiredCount));
     setCurrentIndex(0);
     setIsComplete(false);
     setSynonymList([]);

@@ -30,6 +30,7 @@ export function useProgress() {
         score: attempt.score,
         max_score: attempt.maxScore,
         answers: (attempt.answers || {}) as Json,
+        completed_at: new Date().toISOString(),
         language: lang,
       }]);
 

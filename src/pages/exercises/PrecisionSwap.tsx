@@ -43,7 +43,8 @@ export default function PrecisionSwap() {
   useEffect(() => {
     const challenges = swapChallengesMultilingual[language] || swapChallengesMultilingual.en;
     const shuffled = [...challenges].sort(() => Math.random() - 0.5);
-    setShuffledChallenges(shuffled);
+    const desiredCount = 10;
+    setShuffledChallenges(shuffled.slice(0, desiredCount));
     setCurrentIndex(0);
     setSelectedOption(null);
     setShowResult(false);
@@ -106,7 +107,8 @@ export default function PrecisionSwap() {
   const handleRestart = () => {
     const challenges = swapChallengesMultilingual[language] || swapChallengesMultilingual.en;
     const shuffled = [...challenges].sort(() => Math.random() - 0.5);
-    setShuffledChallenges(shuffled);
+    const desiredCount = 10;
+    setShuffledChallenges(shuffled.slice(0, desiredCount));
     setCurrentIndex(0);
     setSelectedOption(null);
     setShowResult(false);

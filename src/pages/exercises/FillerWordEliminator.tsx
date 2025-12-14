@@ -174,6 +174,8 @@ export default function FillerWordEliminator() {
         answers: { transcript: text, fillerCount: counts, audioUrl },
       });
       if (!res || !res.success) toast.error("Failed to save progress");
+    }
+
     if (total === 0) {
       toast.success("Perfect! No filler words detected!");
     } else if (total <= 3) {

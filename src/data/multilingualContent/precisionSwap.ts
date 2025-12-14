@@ -1022,7 +1022,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
       targetWord: "mauvaise",
       targetWordIndex: 4,
       options: [
-        { word: "immangeable", score: 100, feedback: "Parfait ! Précis." }
+        { word: "immangeable", score: 100, feedback: "Parfait ! Précis." },
         { word: "décevante", score: 80, feedback: "Bon ! Ajoute une dimension émotionnelle." },
         { word: "horrible", score: 50, feedback: "Mieux que 'mauvaise' mais vague." },
         { word: "répugnante", score: 90, feedback: "Fort ! Réaction viscérale." },
@@ -1163,7 +1163,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
       targetWordIndex: 4,
       options: [
         { word: "époustouflante", score: 100, feedback: "Parfait ! Réaction physique." },
-        { word: "magnifique", score: 85, feedback: "Bon choix !" }
+        { word: "magnifique", score: 85, feedback: "Bon choix !" },
         { word: "jolie", score: 30, feedback: "Plus faible." },
         { word: "spectaculaire", score: 95, feedback: "Excellent ! Grande échelle." },
       ],

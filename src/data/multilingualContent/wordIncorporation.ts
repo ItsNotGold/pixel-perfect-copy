@@ -130,7 +130,8 @@ export const wordIncorporationPrompts: Record<Language, WordIncorporationPrompt[
     ,
     {
       prompt: "Talk about a recent book you enjoyed",
-      words: ["plot", "characters", "theme", "insightful", "recommend"]n+    },
+      words: ["plot", "characters", "theme", "insightful", "recommend"]
+    },
     {
       prompt: "Describe how you plan a trip",
       words: ["itinerary", "budget", "accommodation", "sightseeing", "transport"]

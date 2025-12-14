@@ -80,7 +80,32 @@ export default function Progress() {
   const totalScore = exerciseProgress.reduce((sum, p) => sum + (p.best_score || 0), 0);
   const exercisesCompleted = exerciseProgress.reduce((sum, p) => sum + (p.times_completed || 0), 0);
   const currentStreak = streaks?.current_streak || 0;
-  const daysActive = Array.from(new Set(recentAttempts.map((a: any) => new Date(a.completed_at).toISOString().split("T")[0]))).length;
+  const daysActive = Array.from(
+    new Set(
+      recentAttempts.map((a: any) =>
+        new Date(a.completed_at).toISOString().split("T")[0]
+      )
+    )
+  ).length;
+
+  const totalExercises = exercises.length;
+  const todayStr = new Date().toISOString().split("T")[0];
+  const attemptsByDay = recentAttempts.reduce(
+    (map: Record<string, Set<string>>, attempt: any) => {
+      const day = new Date(attempt.completed_at).toISOString().split("T")[0];
+      if (!map[day]) {
+        map[day] = new Set<string>();
+      }
+      map[day].add(attempt.exercise_id);
+      return map;
+    },
+    {} as Record<string, Set<string>>
+  );
+
+  const todaysCompletedCount = attemptsByDay[todayStr]?.size ?? 0;
+  const daysFullyCompleted = (Object.values(attemptsByDay) as Set<string>[]).filter(
+    (set) => totalExercises > 0 && set.size >= totalExercises
+  ).length;
 
   return (
     <MainLayout>

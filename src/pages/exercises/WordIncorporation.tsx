@@ -184,7 +184,7 @@ export default function WordIncorporation() {
 
     if (user) {
       const audioUrl = await saveAudio();
-      saveAttempt({
+      const res = await saveAttempt({
         exerciseId: "word-incorporation",
         score: aiFeedback?.score || score,
         maxScore: 100,
@@ -196,6 +196,7 @@ export default function WordIncorporation() {
           audioUrl,
         },
       });
+      if (!res || !res.success) toast.error("Failed to save progress");
     }
 
     if (wordsUsed.length === currentPrompt.words.length) {

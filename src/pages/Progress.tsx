@@ -58,7 +58,9 @@ export default function Progress() {
       }
     };
     load();
-    return () => { mounted = false };
+    const onUpdate = () => { load(); };
+    window.addEventListener?.("progress-updated", onUpdate as any);
+    return () => { mounted = false; window.removeEventListener?.("progress-updated", onUpdate as any); };
   }, [user]);
 
   if (!user) {
@@ -80,7 +82,14 @@ export default function Progress() {
   const totalScore = exerciseProgress.reduce((sum, p) => sum + (p.best_score || 0), 0);
   const exercisesCompleted = exerciseProgress.reduce((sum, p) => sum + (p.times_completed || 0), 0);
   const currentStreak = streaks?.current_streak || 0;
-  const daysActive = Array.from(new Set(recentAttempts.map((a: any) => new Date(a.completed_at).toISOString().split("T")[0]))).length;
+  const daysActive = Array.from(new Set(recentAttempts.map((a: any) => {
+    const d = new Date(a.completed_at);
+    return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+  }))).length;
+
+  const todaysCompletedCount = data?.todaysCompletedCount || 0;
+  const totalExercises = data?.totalExercises || exercises.length;
+  const daysFullyCompleted = data?.daysFullyCompleted || 0;
 
   return (
     <MainLayout>

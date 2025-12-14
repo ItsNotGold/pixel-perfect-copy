@@ -1022,7 +1022,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
       targetWord: "mauvaise",
       targetWordIndex: 4,
       options: [
-        { word: "immangeable", score: 100, feedback: "Parfait ! Très précis." },
+        { word: "immangeable", score: 100, feedback: "Parfait ! Précis." }
         { word: "décevante", score: 80, feedback: "Bon ! Ajoute une dimension émotionnelle." },
         { word: "horrible", score: 50, feedback: "Mieux que 'mauvaise' mais vague." },
         { word: "répugnante", score: 90, feedback: "Fort ! Réaction viscérale." },
@@ -1056,7 +1056,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
         { word: "frigorifiant", score: 90, feedback: "Fort ! Qui fait frissonner." },
       ],
       bestAnswer: "glacial",
-      explanation: "'Glacial' capture 'très froid' en un seul mot puissant.",
+      explanation: "'Glacial' capture le froid extrême en un seul mot puissant.",
     },
     {
       id: "fr-7",
@@ -1154,7 +1154,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
         { word: "murmurait", score: 95, feedback: "Génial ! Ajoute l'intimité." },
       ],
       bestAnswer: "chuchotait",
-      explanation: "'Elle chuchotait' remplace 'parlait d'une voix très douce' de façon concise.",
+      explanation: "'Elle chuchotait' remplace 'parlait à voix basse' de façon concise.",
     },
     {
       id: "fr-14",
@@ -1163,12 +1163,12 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
       targetWordIndex: 4,
       options: [
         { word: "époustouflante", score: 100, feedback: "Parfait ! Réaction physique." },
-        { word: "magnifique", score: 85, feedback: "Très bon !" },
+        { word: "magnifique", score: 85, feedback: "Bon choix !" }
         { word: "jolie", score: 30, feedback: "Plus faible." },
         { word: "spectaculaire", score: 95, feedback: "Excellent ! Grande échelle." },
       ],
       bestAnswer: "époustouflante",
-      explanation: "'Époustouflante' capture l'intensité de 'très belle'.",
+      explanation: "'Époustouflante' capture l'intensité de 'belle'.", 
     },
     {
       id: "fr-15",
@@ -1182,7 +1182,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
         { word: "filait", score: 90, feedback: "Bon ! Implique l'urgence." },
       ],
       bestAnswer: "sprintait",
-      explanation: "'Sprintait' remplace 'courait très vite' par un verbe précis.",
+      explanation: "'Sprintait' remplace 'courait vite' par un verbe précis.",
     },
     {
       id: "fr-16",
@@ -1210,7 +1210,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
         { word: "vannée", score: 80, feedback: "Familier mais efficace." },
       ],
       bestAnswer: "épuisée",
-      explanation: "'Épuisée' capture parfaitement 'très fatiguée'.",
+      explanation: "'Épuisée' capture parfaitement une grande fatigue.",
     },
     {
       id: "fr-18",
@@ -1224,7 +1224,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
         { word: "angoissante", score: 80, feedback: "Bon ! Cause de l'angoisse." },
       ],
       bestAnswer: "terrifiante",
-      explanation: "'Terrifiante' correspond à l'intensité de 'très effrayante'.",
+      explanation: "'Terrifiante' correspond à une peur intense.",
     },
     {
       id: "fr-19",
@@ -1242,7 +1242,7 @@ export const swapChallengesMultilingual: Record<Language, SwapChallenge[]> = {
     },
     {
       id: "fr-20",
-      sentence: "L'eau était très claire.",
+      sentence: "L'eau était limpide.",
       targetWord: "claire",
       targetWordIndex: 4,
       options: [

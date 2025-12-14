@@ -77,11 +77,12 @@ export default function ReverseDefinitions() {
       setShowHint(0);
     } else {
       if (user) {
-        saveAttempt({
+        const res = await saveAttempt({
           exerciseId: "reverse-definitions",
           score,
           maxScore: shuffledChallenges.length * 200,
         });
+        if (!res || !res.success) toast.error("Failed to save progress");
       }
       toast.success("Exercise Complete!", { description: `Final score: ${score}` });
     }

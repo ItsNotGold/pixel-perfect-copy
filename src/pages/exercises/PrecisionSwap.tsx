@@ -106,11 +106,12 @@ export default function PrecisionSwap() {
       setShowResult(false);
     } else {
       if (user) {
-        saveAttempt({
+        const res = await saveAttempt({
           exerciseId: "precision-swap",
           score,
           maxScore: shuffledChallenges.length * 100,
         });
+        if (!res || !res.success) toast.error("Failed to save progress");
       }
       toast.success("Exercise Complete!", {
         description: `Final score: ${score}. Completed: ${completed + 1} challenges.`,

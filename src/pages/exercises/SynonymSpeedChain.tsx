@@ -129,11 +129,12 @@ export default function SynonymSpeedChain() {
       setScore(0);
     } else {
       if (user) {
-        saveAttempt({
+        const res = await saveAttempt({
           exerciseId: "synonym-speed-chain",
           score: totalScore,
           maxScore: shuffledChallenges.length * 100,
         });
+        if (!res || !res.success) toast.error("Failed to save progress");
       }
       toast.success("Exercise Complete!", { description: `Final score: ${totalScore}` });
     }

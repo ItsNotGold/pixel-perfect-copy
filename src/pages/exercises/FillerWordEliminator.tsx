@@ -167,14 +167,13 @@ export default function FillerWordEliminator() {
     
     if (user) {
       const audioUrl = useVoice ? await saveAudio() : null;
-      saveAttempt({
+      const res = await saveAttempt({
         exerciseId: "filler-word-eliminator",
         score: aiFeedback?.score || score,
         maxScore: 100,
         answers: { transcript: text, fillerCount: counts, audioUrl },
       });
-    }
-
+      if (!res || !res.success) toast.error("Failed to save progress");
     if (total === 0) {
       toast.success("Perfect! No filler words detected!");
     } else if (total <= 3) {

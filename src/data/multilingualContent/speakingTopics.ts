@@ -5,7 +5,8 @@ export const fillerWordsMultilingual: Record<Language, string[]> = {
   en: [
     "um", "uh", "uhm", "hmm", "hm", "er", "ah", "like", "you know", "I mean", "so", "well", "right", "okay", "alright", 
     "basically", "literally", "actually", "sort of", "kind of", "anyway", "honestly", "totally", "really", "just", 
-    "kinda", "sorta", "y'know", "ya know", "see", "look", "listen", "and", "but", "or", "then", "now", "here", "there"
+    "kinda", "sorta", "y'know", "ya know", "see", "look", "listen", "and", "but", "or", "then", "now", "here", "there",
+    "you know what I mean", "lemme", "I guess", "I suppose", "I think", "I feel like", "if that makes sense", "to be honest", "so yeah", "right?"
   ],
   fr: [
     "euh", "ben", "heu", "hum", "genre", "en fait", "du coup", "voilà", "quoi", "tu vois", "bah", "enfin", "bon", 
@@ -15,7 +16,7 @@ export const fillerWordsMultilingual: Record<Language, string[]> = {
   es: [
     "eh", "este", "pues", "o sea", "bueno", "como", "sabes", "entonces", "básicamente", "tipo", "digamos", "la verdad", 
     "mira", "oye", "vale", "vamos", "verás", "claro", "obvio", "exacto", "preciso", "simplemente", "solamente", 
-    "pero", "y", "o", "entonces", "ahora", "aquí", "allí"
+    "pero", "y", "o", "entonces", "ahora", "aquí", "allí", "¿sabes?", "o sea que", "digamos que", "como que", "¿me entiendes?", "es decir"
   ],
 };
 
@@ -118,6 +119,14 @@ export const speakingTopicsMultilingual: Record<Language, SpeakingTopic[]> = {
     { topic: "Discutez des avantages du bénévolat", category: "Communauté" },
     { topic: "Décrivez votre carrière idéale dans 10 ans", category: "Carrière" },
     { topic: "Parlez d'une décision difficile que vous avez prise", category: "Développement personnel" },
+    { topic: "Décrivez un hobby que vous aimeriez reprendre", category: "Personnel" },
+    { topic: "Expliquez une chose que vous changeriez dans votre ville", category: "Société" },
+    { topic: "Parlez d'une fois où vous avez aidé quelqu'un", category: "Communauté" },
+    { topic: "Décrivez une technologie qui vous impressionne", category: "Tech" },
+    { topic: "Expliquez comment vous gérez le stress", category: "Santé" },
+    { topic: "Parlez d'une compétence que vous maîtrisez", category: "Compétences" },
+    { topic: "Décrivez un plat régional que vous aimez", category: "Cuisine" },
+    { topic: "Discutez d'un événement historique qui vous intéresse", category: "Culture" },
   ],
   es: [
     { topic: "Describe tu fin de semana ideal", category: "Estilo de vida" },
@@ -150,5 +159,13 @@ export const speakingTopicsMultilingual: Record<Language, SpeakingTopic[]> = {
     { topic: "Discute los beneficios del voluntariado", category: "Comunidad" },
     { topic: "Describe tu carrera ideal en 10 años", category: "Carrera" },
     { topic: "Habla sobre una decisión difícil que tomaste", category: "Crecimiento personal" },
+    { topic: "Describe un hobby que querrías retomar", category: "Personal" },
+    { topic: "Explica algo que cambiarías en tu ciudad", category: "Sociedad" },
+    { topic: "Habla de una vez que ayudaste a alguien", category: "Comunidad" },
+    { topic: "Describe una tecnología que te impresiona", category: "Tecnología" },
+    { topic: "Explica cómo manejas el estrés", category: "Salud" },
+    { topic: "Habla de una habilidad que dominas", category: "Habilidades" },
+    { topic: "Describe un plato regional que te guste", category: "Comida" },
+    { topic: "Discute un evento histórico que te interese", category: "Cultura" },
   ],
 };

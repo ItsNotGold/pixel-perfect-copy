@@ -40,11 +40,25 @@ export default function PrecisionSwap() {
   const [completed, setCompleted] = useState(0);
   const [shuffledChallenges, setShuffledChallenges] = useState<SwapChallenge[]>([]);
 
+  const pickShuffled = (items: SwapChallenge[], desiredCount: number, storageKey: string) => {
+    const shuffled = [...items].sort(() => Math.random() - 0.5);
+    try {
+      const lastId = localStorage.getItem(storageKey);
+      if (lastId && shuffled.length > 1 && shuffled[0].id === lastId) {
+        const idx = shuffled.findIndex((c) => c.id !== lastId);
+        if (idx > 0) [shuffled[0], shuffled[idx]] = [shuffled[idx], shuffled[0]];
+      }
+      localStorage.setItem(storageKey, shuffled[0]?.id || "");
+    } catch {
+      // ignore storage errors
+    }
+    return shuffled.slice(0, desiredCount);
+  };
+
   useEffect(() => {
     const challenges = swapChallengesMultilingual[language] || swapChallengesMultilingual.en;
-    const shuffled = [...challenges].sort(() => Math.random() - 0.5);
     const desiredCount = 10;
-    setShuffledChallenges(shuffled.slice(0, desiredCount));
+    setShuffledChallenges(pickShuffled(challenges, desiredCount, `precision-swap-last-${language}`));
     setCurrentIndex(0);
     setSelectedOption(null);
     setShowResult(false);
@@ -106,9 +120,8 @@ export default function PrecisionSwap() {
 
   const handleRestart = () => {
     const challenges = swapChallengesMultilingual[language] || swapChallengesMultilingual.en;
-    const shuffled = [...challenges].sort(() => Math.random() - 0.5);
     const desiredCount = 10;
-    setShuffledChallenges(shuffled.slice(0, desiredCount));
+    setShuffledChallenges(pickShuffled(challenges, desiredCount, `precision-swap-last-${language}`));
     setCurrentIndex(0);
     setSelectedOption(null);
     setShowResult(false);
@@ -229,9 +242,6 @@ export default function PrecisionSwap() {
             <p className="text-xl leading-relaxed text-foreground">
               {renderSentence()}
             </p>
-            {!showResult && currentChallenge?.explanation && (
-              <p className="mt-3 text-sm text-muted-foreground">Context: {currentChallenge.explanation}</p>
-            )}
           </div>
 
           <div className="mb-6 grid grid-cols-2 gap-3">

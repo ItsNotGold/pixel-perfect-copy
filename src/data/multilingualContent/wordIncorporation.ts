@@ -127,6 +127,82 @@ export const wordIncorporationPrompts: Record<Language, WordIncorporationPrompt[
       prompt: "Discuss the importance of mental health",
       words: ["wellness", "support", "awareness", "resilience", "balance"]
     }
+    ,
+    {
+      prompt: "Talk about a recent book you enjoyed",
+      words: ["plot", "characters", "theme", "insightful", "recommend"]n+    },
+    {
+      prompt: "Describe how you plan a trip",
+      words: ["itinerary", "budget", "accommodation", "sightseeing", "transport"]
+    },
+    {
+      prompt: "Discuss your approach to learning new skills",
+      words: ["practice", "feedback", "consistency", "resources", "patience"]
+    },
+    {
+      prompt: "Talk about a memorable meal",
+      words: ["flavor", "presentation", "ingredients", "ambience", "service"]
+    },
+    {
+      prompt: "Describe how you handle conflict",
+      words: ["dialogue", "compromise", "respect", "listening", "resolution"]
+    },
+    {
+      prompt: "Discuss how you manage your finances",
+      words: ["saving", "budget", "investment", "debt", "goals"]
+    },
+    {
+      prompt: "Talk about a technology you can't live without",
+      words: ["device", "connectivity", "utility", "dependence", "innovation"]
+    },
+    {
+      prompt: "Describe a community event you attended",
+      words: ["volunteering", "attendance", "organization", "outreach", "impact"]
+    },
+    {
+      prompt: "Discuss your favorite way to stay active",
+      words: ["workout", "routine", "motivation", "endurance", "recovery"]
+    },
+    {
+      prompt: "Talk about a goal you achieved recently",
+      words: ["planning", "milestone", "effort", "celebration", "reflection"]
+    },
+    {
+      prompt: "Describe the role of teamwork in a project",
+      words: ["collaboration", "responsibility", "communication", "roles", "trust"]
+    },
+    {
+      prompt: "Discuss how you maintain work-life balance",
+      words: ["boundaries", "priorities", "time", "self-care", "flexibility"]
+    },
+    {
+      prompt: "Talk about an invention that changed the world",
+      words: ["innovation", "impact", "adoption", "scale", "legacy"]
+    },
+    {
+      prompt: "Describe how you prepare for interviews",
+      words: ["research", "practice", "confidence", "questions", "follow-up"]
+    },
+    {
+      prompt: "Discuss a cultural tradition you enjoy",
+      words: ["ritual", "celebration", "meaning", "customs", "heritage"]
+    },
+    {
+      prompt: "Talk about strategies for staying focused",
+      words: ["distraction", "priority", "technique", "schedule", "consistency"]
+    },
+    {
+      prompt: "Describe a volunteer experience",
+      words: ["service", "community", "learning", "empathy", "contribution"]
+    },
+    {
+      prompt: "Discuss the importance of sleep hygiene",
+      words: ["routine", "environment", "restorative", "consistency", "quality"]
+    },
+    {
+      prompt: "Talk about a lesson you learned from failure",
+      words: ["insight", "resilience", "adjustment", "growth", "perspective"]
+    }
   ],
   fr: [
     {

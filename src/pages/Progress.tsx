@@ -8,7 +8,6 @@ import { useProgress } from "@/hooks/useProgress";
 import { useAuth } from "@/hooks/useAuth";
 
 function Sparkline({ values = [] }: { values: number[] }) {
-  // Render a simple sparkline SVG from 0-100 values
   const w = 100;
   const h = 28;
   if (!values.length) {
@@ -58,9 +57,7 @@ export default function Progress() {
       }
     };
     load();
-    const onUpdate = () => { load(); };
-    window.addEventListener?.("progress-updated", onUpdate as any);
-    return () => { mounted = false; window.removeEventListener?.("progress-updated", onUpdate as any); };
+    return () => { mounted = false };
   }, [user]);
 
   if (!user) {
@@ -82,16 +79,6 @@ export default function Progress() {
   const totalScore = exerciseProgress.reduce((sum, p) => sum + (p.best_score || 0), 0);
   const exercisesCompleted = exerciseProgress.reduce((sum, p) => sum + (p.times_completed || 0), 0);
   const currentStreak = streaks?.current_streak || 0;
-<<<<<<< HEAD
-  const daysActive = Array.from(new Set(recentAttempts.map((a: any) => {
-    const d = new Date(a.completed_at);
-    return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
-  }))).length;
-
-  const todaysCompletedCount = data?.todaysCompletedCount || 0;
-  const totalExercises = data?.totalExercises || exercises.length;
-  const daysFullyCompleted = data?.daysFullyCompleted || 0;
-=======
   const daysActive = Array.from(
     new Set(
       recentAttempts.map((a: any) =>
@@ -118,7 +105,6 @@ export default function Progress() {
   const daysFullyCompleted = (Object.values(attemptsByDay) as Set<string>[]).filter(
     (set) => totalExercises > 0 && set.size >= totalExercises
   ).length;
->>>>>>> d9938d114820244a252ddf911c7ed54d92984795
 
   return (
     <MainLayout>

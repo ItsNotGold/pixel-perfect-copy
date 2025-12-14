@@ -1,9 +1,26 @@
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
-import { Bell, Volume2, Clock, Moon, User, Shield } from "lucide-react";
+import { Bell, Volume2, Clock, User } from "lucide-react";
+import { useSettings } from "@/hooks/useSettings";
+import { useEffect, useState } from "react";
+import { useAuth } from "@/hooks/useAuth";
+import { useToast } from "@/hooks/use-toast";
+import { useNavigate } from "react-router-dom";
 
 export default function Settings() {
+  const { user } = useAuth();
+  const navigate = useNavigate();
+  const { settings, setSettings, save, loading } = useSettings();
+  const { toast } = useToast();
+
+  const update = async (mutator: (s: typeof settings) => typeof settings) => {
+    const next = mutator(settings);
+    setSettings(next);
+    const { error } = await save(next);
+    if (error) toast({ title: "Failed to save settings" });
+  };
+
   return (
     <MainLayout>
       <div className="mx-auto max-w-2xl px-6 py-12">
@@ -28,7 +45,7 @@ export default function Settings() {
                   <div className="font-medium text-foreground">Daily Reminders</div>
                   <div className="text-sm text-muted-foreground">Get notified to practice</div>
                 </div>
-                <Switch />
+                <Switch checked={settings.practice.dailyReminders} onCheckedChange={(v) => update((s) => ({ ...s, practice: { ...s.practice, dailyReminders: v } }))} />
               </div>
               
               <div className="flex items-center justify-between">
@@ -36,7 +53,7 @@ export default function Settings() {
                   <div className="font-medium text-foreground">Timer Sounds</div>
                   <div className="text-sm text-muted-foreground">Audio cues during exercises</div>
                 </div>
-                <Switch defaultChecked />
+                <Switch checked={settings.practice.timerSounds} onCheckedChange={(v) => update((s) => ({ ...s, practice: { ...s.practice, timerSounds: v } }))} />
               </div>
             </div>
           </div>
@@ -54,7 +71,7 @@ export default function Settings() {
                   <div className="font-medium text-foreground">Sound Effects</div>
                   <div className="text-sm text-muted-foreground">Feedback sounds for actions</div>
                 </div>
-                <Switch defaultChecked />
+                <Switch checked={settings.audio.soundEffects} onCheckedChange={(v) => update((s) => ({ ...s, audio: { ...s.audio, soundEffects: v } }))} />
               </div>
               
               <div className="flex items-center justify-between">
@@ -62,7 +79,7 @@ export default function Settings() {
                   <div className="font-medium text-foreground">Voice Feedback</div>
                   <div className="text-sm text-muted-foreground">Read feedback aloud</div>
                 </div>
-                <Switch />
+                <Switch checked={settings.audio.voiceFeedback} onCheckedChange={(v) => update((s) => ({ ...s, audio: { ...s.audio, voiceFeedback: v } }))} />
               </div>
             </div>
           </div>
@@ -80,7 +97,7 @@ export default function Settings() {
                   <div className="font-medium text-foreground">Streak Reminders</div>
                   <div className="text-sm text-muted-foreground">Don't lose your streak!</div>
                 </div>
-                <Switch defaultChecked />
+                <Switch checked={settings.notifications.streakReminders} onCheckedChange={(v) => update((s) => ({ ...s, notifications: { ...s.notifications, streakReminders: v } }))} />
               </div>
               
               <div className="flex items-center justify-between">
@@ -88,7 +105,7 @@ export default function Settings() {
                   <div className="font-medium text-foreground">Achievement Alerts</div>
                   <div className="text-sm text-muted-foreground">Celebrate your wins</div>
                 </div>
-                <Switch defaultChecked />
+                <Switch checked={settings.notifications.achievementAlerts} onCheckedChange={(v) => update((s) => ({ ...s, notifications: { ...s.notifications, achievementAlerts: v } }))} />
               </div>
             </div>
           </div>
@@ -101,11 +118,11 @@ export default function Settings() {
             </h2>
             
             <p className="mb-4 text-sm text-muted-foreground">
-              Create an account to sync your progress across devices and unlock more features.
+              {user ? "Manage your account and sync your settings across devices." : "Create an account to sync your progress across devices and unlock more features."}
             </p>
-            
-            <Button variant="hero" size="lg" className="w-full">
-              Create Account
+
+            <Button variant="hero" size="lg" className="w-full" onClick={() => navigate(user ? "/account" : "/auth")}>
+              {user ? "Manage Account" : "Create Account"}
             </Button>
           </div>
         </div>

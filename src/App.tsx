@@ -16,6 +16,7 @@ import WordIncorporation from "./pages/exercises/WordIncorporation";
 import Progress from "./pages/Progress";
 import ExerciseStats from "./pages/ExerciseStats";
 import Settings from "./pages/Settings";
+import ManageAccount from "./pages/ManageAccount";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => (
               <Route path="/exercise/:id/stats" element={<ExerciseStats />} />
               <Route path="/progress" element={<Progress />} />
               <Route path="/settings" element={<Settings />} />
+              <Route path="/account" element={<ManageAccount />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

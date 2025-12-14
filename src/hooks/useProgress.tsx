@@ -141,21 +141,83 @@ export function useProgress() {
 
   const getProgress = useCallback(async () => {
     if (!user) return null;
-
-    const [progressResult, streakResult, achievementsResult, attemptsResult] = await Promise.all([
+    const [progressResult, streakResult, achievementsResult] = await Promise.all([
       supabase.from("user_progress").select("*").eq("user_id", user.id),
       supabase.from("user_streaks").select("*").eq("user_id", user.id).maybeSingle(),
       supabase.from("achievements").select("*").eq("user_id", user.id),
-      supabase.from("exercise_attempts").select("*").eq("user_id", user.id).order("completed_at", { ascending: false }).limit(50),
     ]);
+
+    // Compute today's completion and historical full-days count
+    const allExercises = (await import("@/data/exercises")).exercises;
+    const totalExercises = allExercises.length;
+
+    // Local start of today and tomorrow (to keep day boundaries in user's local time)
+    const startOfToday = new Date();
+    startOfToday.setHours(0, 0, 0, 0);
+    const startOfTomorrow = new Date(startOfToday.getTime() + 24 * 60 * 60 * 1000);
+
+    const todayIso = startOfToday.toISOString();
+    const tomorrowIso = startOfTomorrow.toISOString();
+
+    const todayRes = await supabase
+      .from("exercise_attempts")
+      .select("exercise_id, completed_at")
+      .eq("user_id", user.id)
+      .gte("completed_at", todayIso)
+      .lt("completed_at", tomorrowIso);
+
+    const todaysUnique = new Set((todayRes.data || []).map((r: any) => r.exercise_id));
+
+    // Fetch past year attempts to compute days where all exercises were completed
+    const start365 = new Date(startOfToday.getTime() - 365 * 24 * 60 * 60 * 1000).toISOString();
+    const historyRes = await supabase
+      .from("exercise_attempts")
+      .select("exercise_id, completed_at")
+      .eq("user_id", user.id)
+      .gte("completed_at", start365)
+      .order("completed_at", { ascending: true });
+
+    const attempts = historyRes.data || [];
+    const daysMap: Record<string, Set<string>> = {};
+    attempts.forEach((a: any) => {
+      const localDate = new Date(a.completed_at).toISOString().split("T")[0];
+      daysMap[localDate] = daysMap[localDate] || new Set();
+      daysMap[localDate].add(a.exercise_id);
+    });
+
+    let daysFullyCompleted = 0;
+    for (const d of Object.keys(daysMap)) {
+      if ((daysMap[d] && daysMap[d].size) >= totalExercises) daysFullyCompleted += 1;
+    }
 
     return {
       exerciseProgress: progressResult.data || [],
       streaks: streakResult.data,
       achievements: achievementsResult.data || [],
-      recentAttempts: attemptsResult.data || [],
+      todaysCompletedCount: todaysUnique.size,
+      totalExercises,
+      daysFullyCompleted,
     };
   }, [user]);
+
+  const getExerciseAttempts = useCallback(async (exerciseId: string, timeframe: "all" | "90" | "30" | "7" | "1" = "all") => {
+    if (!user) return [];
+
+    let query = supabase.from("exercise_attempts").select("*").eq("user_id", user.id).eq("exercise_id", exerciseId).order("completed_at", { ascending: true });
+
+    if (timeframe !== "all") {
+      const days = parseInt(timeframe, 10);
+      const start = new Date();
+      start.setHours(0, 0, 0, 0);
+      const since = new Date(start.getTime() - days * 24 * 60 * 60 * 1000).toISOString();
+      query = query.gte("completed_at", since);
+    }
+
+    const res = await query;
+    return res.data || [];
+  }, [user]);
+
+  return { saveAttempt, getProgress, getExerciseAttempts };
 
   return { saveAttempt, getProgress };
 }

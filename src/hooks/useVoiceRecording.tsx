@@ -35,6 +35,7 @@ interface UseVoiceRecordingReturn {
   isRecording: boolean;
   isProcessing: boolean;
   transcript: string;
+  rawTranscript: string;
   startRecording: (languageCode?: string) => Promise<void>;
   stopRecording: () => void;
   resetTranscript: () => void;
@@ -47,6 +48,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
   const [isRecording, setIsRecording] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
   const [transcript, setTranscript] = useState("");
+  const [rawTranscript, setRawTranscript] = useState("");
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   
@@ -102,7 +104,10 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
             interim += result[0].transcript;
           }
         }
-        setTranscript(finalTranscript + interim);
+        // Keep raw/interim transcript for better detection of disfluencies
+        const raw = (finalTranscript + interim).trim();
+        setRawTranscript(raw);
+        setTranscript(raw); // keep transcript populated while processing
       };
       
       recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
@@ -153,14 +158,19 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
           
           const uploadUrl = await client.files.upload(audioFile);
           
+          // Ask ASR to preserve disfluencies where possible and punctuate
           const transcriptResponse = await client.transcripts.transcribe({
             audio: uploadUrl,
             punctuate: true,
             format_text: true,
+            disfluencies: true,
           });
           
           if (transcriptResponse.status === 'completed') {
-            setTranscript(transcriptResponse.text || '');
+            // Merge processed transcript with raw interim transcript to preserve filler detections
+            const processed = transcriptResponse.text || '';
+            const merged = [processed, rawTranscript].filter(Boolean).join(' ');
+            setTranscript(merged);
           } else {
             toast.error('Transcription failed');
           }
@@ -209,6 +219,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     isRecording,
     isProcessing,
     transcript,
+    rawTranscript,
     startRecording,
     stopRecording,
     resetTranscript,

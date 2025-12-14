@@ -72,15 +72,14 @@ export default function Progress() {
   }
 
   const exerciseProgress = (data?.exerciseProgress || []) as any[];
+  const recentAttempts = (data?.recentAttempts || []) as any[];
   const streaks = data?.streaks || null;
   const achievements = data?.achievements || [];
 
   const totalScore = exerciseProgress.reduce((sum, p) => sum + (p.best_score || 0), 0);
   const exercisesCompleted = exerciseProgress.reduce((sum, p) => sum + (p.times_completed || 0), 0);
   const currentStreak = streaks?.current_streak || 0;
-  const todaysCompletedCount = data?.todaysCompletedCount || 0;
-  const totalExercises = data?.totalExercises || 0;
-  const daysFullyCompleted = data?.daysFullyCompleted || 0;
+  const daysActive = Array.from(new Set(recentAttempts.map((a: any) => new Date(a.completed_at).toISOString().split("T")[0]))).length;
 
   return (
     <MainLayout>
@@ -126,28 +125,18 @@ export default function Progress() {
           </div>
         </div>
 
-        {/* Daily Completion Progress */}
+        {/* Exercise Progress */}
         <div className="rounded-2xl glass p-6 animate-scale-in" style={{ animationDelay: "0.1s" }}>
-          <h2 className="mb-6 font-display text-xl text-foreground">Daily Completion</h2>
+          <h2 className="mb-6 font-display text-xl text-foreground">Exercise Progress</h2>
 
-          <div className="mb-4">
-            <div className="flex items-center justify-between mb-2">
-              <div className="text-sm font-medium">Today's progress</div>
-              <div className="text-sm font-medium">{todaysCompletedCount}/{totalExercises} Exercises</div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="flex-1 h-3 overflow-hidden rounded-full bg-muted">
-                <div className={cn("h-full rounded-full transition-all duration-500 bg-gradient-to-r from-emerald-500 to-teal-500")} style={{ width: `${(totalExercises ? (todaysCompletedCount / totalExercises) * 100 : 0)}%` }} />
-              </div>
-              <div className="text-sm text-muted-foreground">Completed days: <span className="font-medium text-foreground">{daysFullyCompleted}</span></div>
-            </div>
-          </div>
+          <div className="space-y-4">
+            {exercises.map((exercise) => {
+              const attempts = recentAttempts.filter((a: any) => a.exercise_id === exercise.id);
+              const scores = attempts.slice(0, 10).reverse().map((a: any) => Math.round((a.score / a.max_score) * 100));
+              const percent = attempts.length ? Math.max(...scores) : 0;
 
-          <div className="mt-4">
-            <div className="mb-3 text-sm text-muted-foreground">Click an exercise to view detailed stats</div>
-            <div className="space-y-2">
-              {exercises.map((exercise) => (
-                <a key={exercise.id} href={`/exercise/${exercise.id}/stats`} className="flex items-center gap-4 rounded-xl p-4 hover:bg-muted/50">
+              return (
+                <div key={exercise.id} className="flex items-center gap-4 rounded-xl p-4 hover:bg-muted/50">
                   <div className={cn("flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br", exercise.color)}>
                     {(() => {
                       const Icon = exercise.icon as any;
@@ -157,17 +146,49 @@ export default function Progress() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between mb-1">
                       <span className="font-medium text-foreground truncate">{exercise.shortTitle}</span>
-                      <span className="text-sm text-muted-foreground">Attempts: {exerciseProgress.find((p: any) => p.exercise_id === exercise.id)?.times_completed || 0}</span>
+                      <span className="text-sm text-muted-foreground">{percent}%</span>
                     </div>
-                    <div className="text-sm text-muted-foreground">Click to view attempts and a score graph</div>
+                    <div className="flex items-center gap-3">
+                      <div className="flex-1 h-2 overflow-hidden rounded-full bg-muted">
+                        <div className={cn("h-full rounded-full transition-all duration-500 bg-gradient-to-r", exercise.color)} style={{ width: `${percent}%` }} />
+                      </div>
+                      <div className="w-28">
+                        <Sparkline values={scores} />
+                      </div>
+                    </div>
                   </div>
-                </a>
-              ))}
-            </div>
+                </div>
+              );
+            })}
           </div>
         </div>
 
-        {/* Recent attempts removed per new UX */}
+        {/* Recent Attempts */}
+        <div className="mt-6 rounded-2xl glass p-6">
+          <h2 className="mb-4 font-display text-lg text-foreground">Recent Attempts</h2>
+          {recentAttempts.length === 0 ? (
+            <div className="text-sm text-muted-foreground">No attempts yet. Try an exercise to start tracking progress.</div>
+          ) : (
+            <div className="space-y-2">
+              {recentAttempts.map((attempt: any) => {
+                const exercise = exercises.find((e) => e.id === attempt.exercise_id);
+                const pct = Math.round((attempt.score / attempt.max_score) * 100);
+                return (
+                  <div key={attempt.id} className="flex items-center justify-between gap-4">
+                    <div className="flex items-center gap-3">
+                      <div className="text-sm font-medium">{exercise?.shortTitle || attempt.exercise_id}</div>
+                      <div className="text-xs text-muted-foreground">{new Date(attempt.completed_at).toLocaleString()}</div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="text-sm font-medium">{pct}%</div>
+                      <div className="text-xs text-muted-foreground">{attempt.score}/{attempt.max_score}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
       </div>
     </MainLayout>
   );

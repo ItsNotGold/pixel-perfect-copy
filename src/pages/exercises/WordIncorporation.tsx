@@ -20,7 +20,7 @@ interface AIFeedback {
 
 export default function WordIncorporation() {
   const { language, speechLanguageCode } = useLanguage();
-  const { isRecording: isVoiceRecording, transcript: voiceTranscript, rawTranscript: rawVoiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio, audioUrl } = useVoiceRecording();
+  const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio, audioUrl } = useVoiceRecording();
   
   const [currentPrompt, setCurrentPrompt] = useState<{ prompt: string; words: string[] } | null>(null);
   const [isActive, setIsActive] = useState(false);
@@ -112,9 +112,7 @@ export default function WordIncorporation() {
   };
 
   const analyzeTranscript = async () => {
-    const processedText = transcript.toLowerCase();
-    const rawText = (rawVoiceTranscript || "").toLowerCase();
-    const text = `${processedText} ${rawText}`.trim();
+    const text = transcript.toLowerCase();
     
     if (!currentPrompt) return;
 
@@ -122,26 +120,9 @@ export default function WordIncorporation() {
     const wordsUsed: string[] = [];
     const wordsMissed: string[] = [];
 
-    // Helper to escape regex special chars
-    const escapeRegex = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-
     currentPrompt.words.forEach((word) => {
-      const w = word.toLowerCase();
-      const patterns = [
-        new RegExp(`\\b${escapeRegex(w)}\\b`, "i"), // exact
-        new RegExp(`\\b${escapeRegex(w)}s?\\b`, "i"), // plural
-        new RegExp(`\\b${escapeRegex(w)}(ing|ed|ly|'s)?\\b`, "i"), // common suffixes
-        new RegExp(`${escapeRegex(w)}`, "i"), // anywhere (fallback)
-      ];
-
-      let found = false;
-      patterns.forEach((pattern) => {
-        if (pattern.test(text)) {
-          found = true;
-        }
-      });
-
-      if (found) {
+      const regex = new RegExp(`\\b${word.toLowerCase()}\\b`, "i");
+      if (regex.test(text)) {
         wordsUsed.push(word);
       } else {
         wordsMissed.push(word);
@@ -166,14 +147,7 @@ export default function WordIncorporation() {
         });
 
         if (!error && data) {
-          const result = data as AIFeedback;
-          setAiFeedback(result);
-          // If AI provides word-level results, prefer those for accuracy
-          if (result.wordsUsed && result.wordsUsed.length > 0) {
-            // override local detection
-            wordsUsed.splice(0, wordsUsed.length, ...result.wordsUsed);
-            wordsMissed.splice(0, wordsMissed.length, ...result.wordsMissed);
-          }
+          setAiFeedback(data as AIFeedback);
         }
       } catch (err) {
         console.error("AI evaluation error:", err);
@@ -188,12 +162,12 @@ export default function WordIncorporation() {
         exerciseId: "word-incorporation",
         score: aiFeedback?.score || score,
         maxScore: 100,
-        answers: {
-          transcript: text,
+        answers: { 
+          transcript: text, 
           targetWords: currentPrompt.words,
           wordsUsed,
           wordsMissed,
-          audioUrl,
+          audioUrl 
         },
       });
     }

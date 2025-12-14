@@ -114,10 +114,6 @@ export default function FillerWordEliminator() {
         patterns.push(new RegExp("\\bh+m+\\b", "gi"));
         patterns.push(new RegExp("\\bhm+\\b", "gi"));
       }
-      if (filler === "er") {
-        patterns.push(new RegExp("\\ber+r?\\b", "gi"));
-        patterns.push(new RegExp("\\ber\\b", "gi"));
-      }
       
       patterns.forEach(pattern => {
         const matches = lowerText.match(pattern);

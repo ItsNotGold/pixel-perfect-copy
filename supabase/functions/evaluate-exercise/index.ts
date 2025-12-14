@@ -70,14 +70,6 @@ Theme: ${data.theme}
 User's story: "${data.story}"`;
         break;
 
-            case "word-incorporation":
-        systemPrompt = `You are a speech coach evaluating whether the user incorporated a list of target words into their spoken response in ${langName}.
-      For each target word, determine if it was used (including reasonable morphological variations like plurals, -ing, -ed, or common contractions) and return which words were used and which were missed.
-      Return JSON: { score: number (0-100), wordsUsed: string[], wordsMissed: string[], feedback: string }`;
-        userPrompt = `Target words: ${data.targetWords.join(", ")}
-      Transcript: "${data.transcript}"`;
-        break;
-
       case "one-minute-talk":
         systemPrompt = `You are a speech coach analyzing a one-minute talk in ${langName}.
 Evaluate the content for: coherence, vocabulary richness, topic relevance, and overall fluency.

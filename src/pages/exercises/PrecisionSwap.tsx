@@ -43,6 +43,7 @@ export default function PrecisionSwap() {
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
   const [completed, setCompleted] = useState(0);
+  const [attemptSaved, setAttemptSaved] = useState(false);
   const [shuffledChallenges, setShuffledChallenges] = useState<SwapChallenge[]>([]);
 
   const pickShuffled = (items: SwapChallenge[], desiredCount: number, storageKey: string) => {
@@ -70,6 +71,7 @@ export default function PrecisionSwap() {
     setScore(0);
     setStreak(0);
     setCompleted(0);
+    setAttemptSaved(false);
   }, [language]);
 
   const currentChallenge = shuffledChallenges[currentIndex];
@@ -107,7 +109,16 @@ export default function PrecisionSwap() {
       }
     }
     
-    setCompleted((prev) => prev + 1);
+    const newCompleted = completed + 1;
+    setCompleted(newCompleted);
+
+    // If this was the final challenge, save the aggregated attempt
+    if (user && newCompleted >= shuffledChallenges.length && !attemptSaved) {
+      const finalScore = score + (option?.score || 0);
+      saveAttempt({ exerciseId: "precision-swap", score: finalScore, maxScore: shuffledChallenges.length * 100 }).then((res) => {
+        if (res && res.success) setAttemptSaved(true);
+      });
+    }
   };
 
   const handleNext = async () => {
@@ -116,13 +127,14 @@ export default function PrecisionSwap() {
       setSelectedOption(null);
       setShowResult(false);
     } else {
-      if (user) {
+      if (user && !attemptSaved) {
         const res = await saveAttempt({
           exerciseId: "precision-swap",
           score,
           maxScore: shuffledChallenges.length * 100,
         });
         if (!res || !res.success) toast.error("Failed to save progress");
+        else setAttemptSaved(true);
       }
       toast.success("Exercise Complete!", {
         description: `Final score: ${score}. Completed: ${completed + 1} challenges.`,
@@ -140,6 +152,7 @@ export default function PrecisionSwap() {
     setScore(0);
     setStreak(0);
     setCompleted(0);
+    setAttemptSaved(false);
   };
 
   const renderSentence = () => {

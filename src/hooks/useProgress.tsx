@@ -32,7 +32,12 @@ export function useProgress() {
     }
 
     const { data } = await query;
-    return data || [];
+    const rows = data || [];
+    // normalize percent for each attempt to make UI calculations consistent
+    return rows.map((r: any) => ({
+      ...r,
+      percent: r.max_score && r.max_score > 0 ? Math.round((r.score / r.max_score) * 100) : 0,
+    }));
   }, [user]);
 
   const getProgress = useCallback(async () => {
@@ -72,8 +77,33 @@ export function useProgress() {
 
     const daysFullyCompleted = Object.values(dayMap).filter((s) => s.size >= totalExercises).length;
 
+    // aggregate progress rows across languages so each exercise is represented once
+    const rawProgress = progressResult.data || [];
+    // compute best percent per exercise from recent attempts to help normalize legacy user_progress values
+    const attempts = recentAttempts || [];
+    const bestFromAttempts: Record<string, number> = {};
+    for (const a of attempts) {
+      const id = a.exercise_id;
+      const percent = a.max_score && a.max_score > 0 ? Math.round((a.score / a.max_score) * 100) : 0;
+      bestFromAttempts[id] = Math.max(bestFromAttempts[id] || 0, percent);
+    }
+    const aggregated: Record<string, any> = {};
+    for (const p of rawProgress) {
+      const id = p.exercise_id;
+      if (!aggregated[id]) {
+        aggregated[id] = { ...p };
+      } else {
+        // take max best_score across languages, sum times_completed
+        aggregated[id].best_score = Math.max(aggregated[id].best_score || 0, p.best_score || 0, bestFromAttempts[id] || 0);
+        aggregated[id].times_completed = (aggregated[id].times_completed || 0) + (p.times_completed || 0);
+        if (!aggregated[id].last_completed_at || new Date(p.last_completed_at) > new Date(aggregated[id].last_completed_at)) {
+          aggregated[id].last_completed_at = p.last_completed_at;
+        }
+      }
+    }
+
     return {
-      exerciseProgress: progressResult.data || [],
+      exerciseProgress: Object.values(aggregated),
       streaks: streakResult.data,
       achievements: achievementsResult.data || [],
       recentAttempts,
@@ -100,6 +130,9 @@ export function useProgress() {
         language: lang,
       }]).select().single();
 
+      // compute percent for this attempt
+      const percent = attempt.maxScore && attempt.maxScore > 0 ? Math.round((attempt.score / attempt.maxScore) * 100) : 0;
+
       // Update user progress (per language)
       const { data: existingProgress } = await supabase
         .from("user_progress")
@@ -113,7 +146,7 @@ export function useProgress() {
         await supabase
           .from("user_progress")
           .update({
-            best_score: Math.max(existingProgress.best_score || 0, attempt.score),
+            best_score: Math.max(existingProgress.best_score || 0, percent),
             times_completed: (existingProgress.times_completed || 0) + 1,
             last_completed_at: new Date().toISOString(),
           })
@@ -122,7 +155,7 @@ export function useProgress() {
         await supabase.from("user_progress").insert([{
           user_id: user.id,
           exercise_id: attempt.exerciseId,
-          best_score: attempt.score,
+          best_score: percent,
           times_completed: 1,
           last_completed_at: new Date().toISOString(),
           language: lang,

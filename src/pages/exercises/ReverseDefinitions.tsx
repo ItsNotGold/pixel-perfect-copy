@@ -30,6 +30,7 @@ export default function ReverseDefinitions() {
   const [isCorrect, setIsCorrect] = useState(false);
   const [showHint, setShowHint] = useState(0);
   const [score, setScore] = useState(0);
+  const [attemptSaved, setAttemptSaved] = useState(false);
   const [streak, setStreak] = useState(0);
   const [shuffledChallenges, setShuffledChallenges] = useState<ReverseDefinition[]>([]);
   const { user } = useAuth();
@@ -47,6 +48,7 @@ export default function ReverseDefinitions() {
     setShowHint(0);
     setScore(0);
     setStreak(0);
+    setAttemptSaved(false);
   }, [language]);
 
   const currentChallenge = shuffledChallenges[currentIndex];
@@ -63,7 +65,8 @@ export default function ReverseDefinitions() {
     const baseScore = correct ? 100 : 0;
     const earnedScore = Math.max(0, Math.round(baseScore * difficultyMultiplier[currentChallenge.difficulty] - hintPenalty));
 
-    setScore((prev) => prev + earnedScore);
+    const finalScore = score + earnedScore;
+    setScore(finalScore);
 
     if (correct) {
       setStreak((prev) => prev + 1);
@@ -76,6 +79,12 @@ export default function ReverseDefinitions() {
       if (settings?.audio?.soundEffects) playFail();
       if (settings?.audio?.voiceFeedback) speak(`Not quite. The answer was ${currentChallenge.answer}`);
     }
+    // if this was the last question, save aggregated attempt
+    if (user && currentIndex === shuffledChallenges.length - 1 && !attemptSaved) {
+      saveAttempt({ exerciseId: "reverse-definitions", score: finalScore, maxScore: shuffledChallenges.length * 200 }).then((res) => {
+        if (res && res.success) setAttemptSaved(true);
+      });
+    }
   };
 
   const handleNext = async () => {
@@ -85,13 +94,14 @@ export default function ReverseDefinitions() {
       setShowResult(false);
       setShowHint(0);
     } else {
-      if (user) {
+      if (user && !attemptSaved) {
         const res = await saveAttempt({
           exerciseId: "reverse-definitions",
           score,
           maxScore: shuffledChallenges.length * 200,
         });
         if (!res || !res.success) toast.error("Failed to save progress");
+        else setAttemptSaved(true);
       }
       toast.success("Exercise Complete!", { description: `Final score: ${score}` });
     }
@@ -108,6 +118,7 @@ export default function ReverseDefinitions() {
     setShowHint(0);
     setScore(0);
     setStreak(0);
+    setAttemptSaved(false);
   };
 
   const handleHint = () => {

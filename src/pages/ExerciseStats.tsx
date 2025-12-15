@@ -64,7 +64,7 @@ export default function ExerciseStats() {
     </MainLayout>
   );
 
-  const scores = attempts.map(a => Math.round((a.score / (a.max_score || 1)) * 100));
+  const scores = attempts.map(a => (typeof a.percent === 'number' ? a.percent : Math.round((a.score / (a.max_score || 1)) * 100)));
 
   return (
     <MainLayout>
@@ -94,9 +94,9 @@ export default function ExerciseStats() {
             <div key={a.id} className="rounded-xl p-4 bg-muted/50 flex items-center justify-between">
               <div>
                 <div className="font-medium">{new Date(a.completed_at).toLocaleString()}</div>
-                <div className="text-sm text-muted-foreground">Score: {a.score}/{a.max_score}</div>
+                  <div className="text-sm text-muted-foreground">Score: {a.score}/{a.max_score}</div>
               </div>
-              <div className="text-sm text-muted-foreground">{Math.round((a.score / (a.max_score || 1)) * 100)}%</div>
+                <div className="text-sm text-muted-foreground">{(typeof a.percent === 'number' ? a.percent : Math.round((a.score / (a.max_score || 1)) * 100))}%</div>
             </div>
           ))}
         </div>

@@ -32,6 +32,7 @@ export default function SynonymSpeedChain() {
   const [score, setScore] = useState(0);
   const [totalScore, setTotalScore] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
+  const [attemptSaved, setAttemptSaved] = useState(false);
   const [shuffledChallenges, setShuffledChallenges] = useState<SynonymChallenge[]>([]);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -49,6 +50,7 @@ export default function SynonymSpeedChain() {
     setSynonymList([]);
     setScore(0);
     setTotalScore(0);
+    setAttemptSaved(false);
   }, [language]);
 
   const currentChallenge = shuffledChallenges[currentIndex];
@@ -84,7 +86,15 @@ export default function SynonymSpeedChain() {
       clearInterval(timerRef.current);
     }
     setIsComplete(true);
-    setTotalScore((prev) => prev + score);
+    const newTotal = totalScore + score;
+    setTotalScore(newTotal);
+
+    // If this was the final round for the series, save the aggregated attempt
+    if (user && currentIndex === shuffledChallenges.length - 1 && !attemptSaved) {
+      saveAttempt({ exerciseId: "synonym-speed-chain", score: newTotal, maxScore: shuffledChallenges.length * 100 }).then((res) => {
+        if (res && res.success) setAttemptSaved(true);
+      });
+    }
 
     if (score >= 50) {
       toast.success("Excellent vocabulary!");
@@ -143,13 +153,14 @@ export default function SynonymSpeedChain() {
       setSynonymList([]);
       setScore(0);
     } else {
-      if (user) {
+      if (user && !attemptSaved) {
         const res = await saveAttempt({
           exerciseId: "synonym-speed-chain",
           score: totalScore,
           maxScore: shuffledChallenges.length * 100,
         });
         if (!res || !res.success) toast.error("Failed to save progress");
+        else setAttemptSaved(true);
       }
       toast.success("Exercise Complete!", { description: `Final score: ${totalScore}` });
     }

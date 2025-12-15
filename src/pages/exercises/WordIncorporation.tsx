@@ -226,159 +226,161 @@ export default function WordIncorporation() {
 
   return (
     <MainLayout>
-      <div className="mx-auto max-w-4xl px-6 py-12">
-        <div className="mb-8 text-center animate-fade-in">
-          <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-500 to-blue-500 shadow-lg">
-            <Target className="h-7 w-7 text-primary-foreground" />
+      <ExerciseGate exerciseId="word-incorporation">
+        <div className="mx-auto max-w-4xl px-6 py-12">
+          <div className="mb-8 text-center animate-fade-in">
+            <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-500 to-blue-500 shadow-lg">
+              <Target className="h-7 w-7 text-primary-foreground" />
+            </div>
+            <h1 className="mb-2 font-display text-3xl text-foreground">Word Incorporation</h1>
+            <p className="text-muted-foreground">Incorporate specific words into your speech</p>
           </div>
-          <h1 className="mb-2 font-display text-3xl text-foreground">Word Incorporation</h1>
-          <p className="text-muted-foreground">Incorporate specific words into your speech</p>
-        </div>
 
-        <div className="mb-8 flex items-center justify-center gap-6 animate-slide-up">
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
-              <Trophy className="h-5 w-5" />
-              {isComplete ? score : "--"}
+          <div className="mb-8 flex items-center justify-center gap-6 animate-slide-up">
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
+                <Trophy className="h-5 w-5" />
+                {isComplete ? score : "--"}
+              </div>
+              <div className="text-xs text-muted-foreground">Score</div>
             </div>
-            <div className="text-xs text-muted-foreground">Score</div>
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="text-2xl font-bold text-foreground">{totalAttempts}</div>
+              <div className="text-xs text-muted-foreground">Attempts</div>
+            </div>
           </div>
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="text-2xl font-bold text-foreground">{totalAttempts}</div>
-            <div className="text-xs text-muted-foreground">Attempts</div>
-          </div>
-        </div>
 
-        <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
-          {/* Progress bar */}
-          {isActive && (
-            <div className="mb-6">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-medium">Time Remaining</span>
-                <span className="text-sm text-muted-foreground">{timeLeft}s</span>
-              </div>
-              <Progress value={progress} className="h-2" />
-            </div>
-          )}
-
-          {/* Initial prompt */}
-          {currentPrompt && !isActive && !isComplete && (
-            <div className="mb-6 text-center">
-              <h3 className="text-xl font-semibold mb-4">{currentPrompt.prompt}</h3>
-              <p className="text-muted-foreground">
-                You will have 30 seconds to speak. Words will appear one by one - incorporate them naturally into your speech.
-              </p>
-            </div>
-          )}
-
-          {/* Word display during exercise */}
-          {isActive && currentWordIndex >= 0 && currentWordIndex < (currentPrompt?.words.length || 0) && (
-            <div className="mb-6 text-center">
-              <div className="text-3xl font-bold text-primary mb-2">
-                {currentPrompt?.words[currentWordIndex]}
-              </div>
-              <div className="text-sm text-muted-foreground">
-                Time left for this word: {wordDisplayTime}s
-              </div>
-              <div className="text-xs text-muted-foreground mt-2">
-                Word {currentWordIndex + 1} of {currentPrompt?.words.length}
-              </div>
-            </div>
-          )}
-
-          {/* Results */}
-          {isComplete && currentPrompt && (
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold mb-4 text-center">Results</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <h4 className="font-medium text-green-600 flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4" />
-                    Words Used ({wordsUsed.length})
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {wordsUsed.map((word, index) => (
-                      <span key={index} className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
-                        {word}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="font-medium text-red-600 flex items-center gap-2">
-                    <XCircle className="h-4 w-4" />
-                    Words Missed ({wordsMissed.length})
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {wordsMissed.map((word, index) => (
-                      <span key={index} className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">
-                        {word}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              {aiFeedback?.feedback && (
-                <div className="mt-4 p-4 bg-muted rounded-lg">
-                  <p className="text-sm">{aiFeedback.feedback}</p>
-                </div>
-              )}
-              {audioUrl && (
-                <div className="mt-4 p-4 bg-muted/50 rounded-lg">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Play className="h-5 w-5 text-primary" />
-                    <span className="font-medium text-foreground">Listen to Your Recording</span>
-                  </div>
-                  <audio controls className="w-full">
-                    <source src={audioUrl} type="audio/webm" />
-                    Your browser does not support the audio element.
-                  </audio>
-                </div>
-              )}
-            </div>
-          )}
-
-          {/* Controls */}
-          <div className="flex justify-center gap-4">
-            {!isActive && !isComplete && (
-              <Button onClick={startSession} size="lg" className="gap-2">
-                <Play className="h-5 w-5" />
-                Start Exercise
-              </Button>
-            )}
-
+          <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
+            {/* Progress bar */}
             {isActive && (
-              <Button onClick={stopSession} variant="destructive" size="lg" className="gap-2">
-                <Square className="h-5 w-5" />
-                Stop Early
-              </Button>
+              <div className="mb-6">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-sm font-medium">Time Remaining</span>
+                  <span className="text-sm text-muted-foreground">{timeLeft}s</span>
+                </div>
+                <Progress value={progress} className="h-2" />
+              </div>
             )}
 
-            {isComplete && (
-              <Button onClick={handleRestart} size="lg" className="gap-2">
-                <RotateCcw className="h-5 w-5" />
-                Try Again
-              </Button>
+            {/* Initial prompt */}
+            {currentPrompt && !isActive && !isComplete && (
+              <div className="mb-6 text-center">
+                <h3 className="text-xl font-semibold mb-4">{currentPrompt.prompt}</h3>
+                <p className="text-muted-foreground">
+                  You will have 30 seconds to speak. Words will appear one by one - incorporate them naturally into your speech.
+                </p>
+              </div>
+            )}
+
+            {/* Word display during exercise */}
+            {isActive && currentWordIndex >= 0 && currentWordIndex < (currentPrompt?.words.length || 0) && (
+              <div className="mb-6 text-center">
+                <div className="text-3xl font-bold text-primary mb-2">
+                  {currentPrompt?.words[currentWordIndex]}
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  Time left for this word: {wordDisplayTime}s
+                </div>
+                <div className="text-xs text-muted-foreground mt-2">
+                  Word {currentWordIndex + 1} of {currentPrompt?.words.length}
+                </div>
+              </div>
+            )}
+
+            {/* Results */}
+            {isComplete && currentPrompt && (
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold mb-4 text-center">Results</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <h4 className="font-medium text-green-600 flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4" />
+                      Words Used ({wordsUsed.length})
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {wordsUsed.map((word, index) => (
+                        <span key={index} className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                          {word}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-medium text-red-600 flex items-center gap-2">
+                      <XCircle className="h-4 w-4" />
+                      Words Missed ({wordsMissed.length})
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {wordsMissed.map((word, index) => (
+                        <span key={index} className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">
+                          {word}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                {aiFeedback?.feedback && (
+                  <div className="mt-4 p-4 bg-muted rounded-lg">
+                    <p className="text-sm">{aiFeedback.feedback}</p>
+                  </div>
+                )}
+                {audioUrl && (
+                  <div className="mt-4 p-4 bg-muted/50 rounded-lg">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Play className="h-5 w-5 text-primary" />
+                      <span className="font-medium text-foreground">Listen to Your Recording</span>
+                    </div>
+                    <audio controls className="w-full">
+                      <source src={audioUrl} type="audio/webm" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Controls */}
+            <div className="flex justify-center gap-4">
+              {!isActive && !isComplete && (
+                <Button onClick={startSession} size="lg" className="gap-2">
+                  <Play className="h-5 w-5" />
+                  Start Exercise
+                </Button>
+              )}
+
+              {isActive && (
+                <Button onClick={stopSession} variant="destructive" size="lg" className="gap-2">
+                  <Square className="h-5 w-5" />
+                  Stop Early
+                </Button>
+              )}
+
+              {isComplete && (
+                <Button onClick={handleRestart} size="lg" className="gap-2">
+                  <RotateCcw className="h-5 w-5" />
+                  Try Again
+                </Button>
+              )}
+            </div>
+
+            {/* Recording indicator */}
+            {isVoiceRecording && (
+              <div className="mt-4 flex items-center justify-center gap-2 text-red-500">
+                <Mic className="h-5 w-5 animate-pulse" />
+                <span className="text-sm font-medium">Recording...</span>
+              </div>
+            )}
+
+            {/* Analyzing indicator */}
+            {isAnalyzing && (
+              <div className="mt-4 flex items-center justify-center gap-2 text-blue-500">
+                <Loader2 className="h-5 w-5 animate-spin" />
+                <span className="text-sm font-medium">Analyzing your speech...</span>
+              </div>
             )}
           </div>
-
-          {/* Recording indicator */}
-          {isVoiceRecording && (
-            <div className="mt-4 flex items-center justify-center gap-2 text-red-500">
-              <Mic className="h-5 w-5 animate-pulse" />
-              <span className="text-sm font-medium">Recording...</span>
-            </div>
-          )}
-
-          {/* Analyzing indicator */}
-          {isAnalyzing && (
-            <div className="mt-4 flex items-center justify-center gap-2 text-blue-500">
-              <Loader2 className="h-5 w-5 animate-spin" />
-              <span className="text-sm font-medium">Analyzing your speech...</span>
-            </div>
-          )}
         </div>
-      </div>
+      </ExerciseGate>
     </MainLayout>
   );
 }

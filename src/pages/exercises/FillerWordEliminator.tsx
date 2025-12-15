@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { fillerWordsMultilingual, speakingTopicsMultilingual } from "@/data/multilingualContent";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useVoiceRecording } from "@/hooks/useVoiceRecording";
+import { ExerciseGate } from "@/components/ExerciseGate";
 import { MessageCircle, Mic, MicOff, Play, Square, RotateCcw, Trophy, AlertTriangle, Loader2, Sparkles } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
@@ -199,6 +200,7 @@ export default function FillerWordEliminator() {
   const score = aiFeedback?.score || Math.max(0, 100 - totalFillers * 10);
 
   return (
+    <ExerciseGate exerciseId="filler-word-eliminator">
     <MainLayout>
       <div className="mx-auto max-w-3xl px-6 py-12">
         <div className="mb-8 text-center animate-fade-in">
@@ -367,5 +369,6 @@ export default function FillerWordEliminator() {
         </div>
       </div>
     </MainLayout>
+    </ExerciseGate>
   );
 }

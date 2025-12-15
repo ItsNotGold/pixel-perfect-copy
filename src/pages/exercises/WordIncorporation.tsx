@@ -5,6 +5,7 @@ import { Progress } from "@/components/ui/progress";
 import { wordIncorporationPrompts } from "@/data/multilingualContent";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useVoiceRecording } from "@/hooks/useVoiceRecording";
+import { ExerciseGate } from "@/components/ExerciseGate";
 import { Mic, MicOff, Play, Square, RotateCcw, Trophy, Clock, Target, Sparkles, Loader2, CheckCircle, XCircle } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";

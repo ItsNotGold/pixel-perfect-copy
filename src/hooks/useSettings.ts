@@ -48,14 +48,17 @@ export function useSettings() {
 
     (async () => {
       try {
-        const { data, error } = await supabase
+        // Using any to work around types not being regenerated yet
+        const result = await (supabase as any)
           .from("user_settings")
           .select("settings")
           .eq("user_id", user.id)
           .single();
-        if (!error && data?.settings) {
-          setSettings((s) => ({ ...s, ...data.settings }));
-          localStorage.setItem(LOCAL_KEY, JSON.stringify({ ...settings, ...data.settings }));
+        
+        if (!result.error && result.data?.settings) {
+          const settingsData = result.data.settings as SettingsShape;
+          setSettings((s) => ({ ...s, ...settingsData }));
+          localStorage.setItem(LOCAL_KEY, JSON.stringify({ ...settings, ...settingsData }));
         }
       } catch (err) {
         console.error("Failed to load settings", err);
@@ -73,10 +76,11 @@ export function useSettings() {
     if (!user) return { error: null };
 
     try {
-      const { error } = await supabase
+      // Using any to work around types not being regenerated yet
+      const result = await (supabase as any)
         .from("user_settings")
         .upsert({ user_id: user.id, settings: next }, { onConflict: "user_id" });
-      return { error };
+      return { error: result.error };
     } catch (err) {
       console.error("Failed to save settings", err);
       return { error: err };

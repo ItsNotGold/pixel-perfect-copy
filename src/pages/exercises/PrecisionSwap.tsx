@@ -5,6 +5,7 @@ import { swapChallengesMultilingual } from "@/data/multilingualContent";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
+import { ExerciseGate } from "@/components/ExerciseGate";
 import { cn } from "@/lib/utils";
 import { 
   Target, 
@@ -99,7 +100,7 @@ export default function PrecisionSwap() {
     setCompleted((prev) => prev + 1);
   };
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (currentIndex < shuffledChallenges.length - 1) {
       setCurrentIndex((prev) => prev + 1);
       setSelectedOption(null);
@@ -198,6 +199,7 @@ export default function PrecisionSwap() {
   };
 
   return (
+    <ExerciseGate exerciseId="precision-swap">
     <MainLayout>
       <div className="mx-auto max-w-3xl px-6 py-12">
         <div className="mb-8 text-center animate-fade-in">
@@ -325,5 +327,6 @@ export default function PrecisionSwap() {
         </div>
       </div>
     </MainLayout>
+    </ExerciseGate>
   );
 }

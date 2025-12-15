@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { synonymChallengesMultilingual } from "@/data/multilingualContent";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ExerciseGate } from "@/components/ExerciseGate";
 import { cn } from "@/lib/utils";
 import { Link, Play, RotateCcw, Trophy, Zap, Clock, Star } from "lucide-react";
 import { toast } from "sonner";
@@ -121,7 +122,7 @@ export default function SynonymSpeedChain() {
     }
   };
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (currentIndex < shuffledChallenges.length - 1) {
       setCurrentIndex((prev) => prev + 1);
       setIsComplete(false);
@@ -163,6 +164,7 @@ export default function SynonymSpeedChain() {
   }
 
   return (
+    <ExerciseGate exerciseId="synonym-speed-chain">
     <MainLayout>
       <div className="mx-auto max-w-3xl px-6 py-12">
         <div className="mb-8 text-center animate-fade-in">
@@ -306,5 +308,6 @@ export default function SynonymSpeedChain() {
         </div>
       </div>
     </MainLayout>
+    </ExerciseGate>
   );
 }

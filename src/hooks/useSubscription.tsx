@@ -50,7 +50,7 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
         .single();
 
       if (profile?.display_name) {
-        const { data: adminUser } = await supabase
+        const { data: adminUser } = await (supabase as any)
           .from("admin_users")
           .select("id")
           .eq("display_name", profile.display_name)

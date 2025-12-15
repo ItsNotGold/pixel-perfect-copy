@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { reverseDefinitionsMultilingual } from "@/data/multilingualContent";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ExerciseGate } from "@/components/ExerciseGate";
 import { cn } from "@/lib/utils";
 import { BookOpen, ArrowRight, RotateCcw, Trophy, Lightbulb, CheckCircle2, XCircle, Zap } from "lucide-react";
 import { toast } from "sonner";
@@ -69,7 +70,7 @@ export default function ReverseDefinitions() {
     }
   };
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (currentIndex < shuffledChallenges.length - 1) {
       setCurrentIndex((prev) => prev + 1);
       setAnswer("");
@@ -127,6 +128,7 @@ export default function ReverseDefinitions() {
   };
 
   return (
+    <ExerciseGate exerciseId="reverse-definitions">
     <MainLayout>
       <div className="mx-auto max-w-3xl px-6 py-12">
         <div className="mb-8 text-center animate-fade-in">
@@ -255,5 +257,6 @@ export default function ReverseDefinitions() {
         </div>
       </div>
     </MainLayout>
+    </ExerciseGate>
   );
 }

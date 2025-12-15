@@ -5,7 +5,8 @@ import { Input } from "@/components/ui/input";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { useToast } from "@/hooks/use-toast";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import { Crown } from "lucide-react";
 
 export default function ManageAccount() {
   const { user } = useAuth();
@@ -56,7 +57,7 @@ export default function ManageAccount() {
     try {
       // delete profile & settings rows then sign out
       await supabase.from("profiles").delete().eq("user_id", user.id);
-      await supabase.from("user_settings").delete().eq("user_id", user.id);
+      await (supabase.from("user_settings" as any) as any).delete().eq("user_id", user.id);
       await supabase.auth.signOut();
       toast({ title: "Account removed" });
       navigate("/");
@@ -97,6 +98,22 @@ export default function ManageAccount() {
               Delete Account
             </Button>
           </div>
+        </div>
+
+        {/* Subscription Link */}
+        <div className="mt-6 rounded-2xl glass p-6">
+          <div className="flex items-center gap-3 mb-3">
+            <Crown className="h-5 w-5 text-primary" />
+            <h2 className="font-display text-xl">Subscription</h2>
+          </div>
+          <p className="text-sm text-muted-foreground mb-4">
+            Manage your subscription plan and unlock unlimited exercise attempts.
+          </p>
+          <Link to="/subscription">
+            <Button variant="outline" className="w-full">
+              Manage Subscription
+            </Button>
+          </Link>
         </div>
       </div>
     </MainLayout>

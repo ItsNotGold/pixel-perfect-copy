@@ -8,6 +8,9 @@ import { ExerciseGate } from "@/components/ExerciseGate";
 import { cn } from "@/lib/utils";
 import { BookOpen, ArrowRight, RotateCcw, Trophy, Lightbulb, CheckCircle2, XCircle, Zap } from "lucide-react";
 import { toast } from "sonner";
+import { useSettings } from "@/hooks/useSettings";
+import { playSuccess, playFail } from "@/lib/audio";
+import { speak } from "@/lib/tts";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
 
@@ -31,6 +34,7 @@ export default function ReverseDefinitions() {
   const [shuffledChallenges, setShuffledChallenges] = useState<ReverseDefinition[]>([]);
   const { user } = useAuth();
   const { saveAttempt } = useProgress();
+  const { settings } = useSettings();
 
   useEffect(() => {
     const definitions = reverseDefinitionsMultilingual[language] || reverseDefinitionsMultilingual.en;
@@ -64,9 +68,13 @@ export default function ReverseDefinitions() {
     if (correct) {
       setStreak((prev) => prev + 1);
       toast.success("Correct!", { description: `+${earnedScore} points` });
+      if (settings?.audio?.soundEffects) playSuccess();
+      if (settings?.audio?.voiceFeedback) speak(`Correct. +${earnedScore} points`);
     } else {
       setStreak(0);
       toast.error("Not quite!", { description: `The answer was: ${currentChallenge.answer}` });
+      if (settings?.audio?.soundEffects) playFail();
+      if (settings?.audio?.voiceFeedback) speak(`Not quite. The answer was ${currentChallenge.answer}`);
     }
   };
 

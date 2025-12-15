@@ -11,6 +11,9 @@ import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
 import { supabase } from "@/integrations/supabase/client";
+import { useSettings } from "@/hooks/useSettings";
+import { playTick, playDing } from "@/lib/audio";
+import { speak } from "@/lib/tts";
 
 interface AIFeedback {
   score: number;
@@ -37,6 +40,7 @@ export default function WordIncorporation() {
   const wordTimerRef = useRef<NodeJS.Timeout | null>(null);
   const { user } = useAuth();
   const { saveAttempt } = useProgress();
+  const { settings } = useSettings();
 
   const transcript = voiceTranscript;
 
@@ -68,7 +72,11 @@ export default function WordIncorporation() {
           stopSession();
           return 0;
         }
-        return prev - 1;
+        const next = prev - 1;
+        if (settings?.practice?.timerSounds && next <= 5) {
+          try { playTick(); } catch {}
+        }
+        return next;
       });
     }, 1000);
 
@@ -110,6 +118,8 @@ export default function WordIncorporation() {
     }
     await stopVoice();
     await analyzeTranscript();
+    if (settings?.audio?.soundEffects) playDing();
+    if (settings?.audio?.voiceFeedback) speak("Exercise complete. Check your results.");
   };
 
   const analyzeTranscript = async () => {

@@ -1,6 +1,7 @@
 import { MainLayout } from "@/components/layout/MainLayout";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
 import { exercises } from "@/data/exercises";
 
@@ -28,6 +29,7 @@ function Sparkline({ values = [] }: { values: number[] }) {
 export default function ExerciseStats() {
   const { id } = useParams();
   const { getExerciseAttempts } = useProgress();
+  const { user } = useAuth();
   const [timeframe, setTimeframe] = useState<number | 'all'>(30);
   const [attempts, setAttempts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
@@ -44,7 +46,11 @@ export default function ExerciseStats() {
       }
     };
     load();
-    const onUpdate = () => load();
+    const onUpdate = (e?: Event) => {
+      const detail = (e as CustomEvent)?.detail;
+      if (detail && detail.userId && detail.userId !== user?.id) return;
+      load();
+    };
     window.addEventListener?.("progress-updated", onUpdate as any);
     return () => { mounted = false; window.removeEventListener?.("progress-updated", onUpdate as any); };
   }, [id, timeframe]);

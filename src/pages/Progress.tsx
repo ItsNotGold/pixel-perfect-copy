@@ -57,7 +57,19 @@ export default function Progress() {
       }
     };
     load();
-    return () => { mounted = false };
+    const onUpdate = async (e?: Event) => {
+      const detail = (e as CustomEvent)?.detail;
+      if (detail && detail.userId && detail.userId !== user?.id) return;
+      if (!user) return;
+      setLoading(true);
+      const res = await getProgress();
+      if (!mounted) return;
+      setData(res);
+      setLoading(false);
+    };
+
+    window.addEventListener?.("progress-updated", onUpdate as any);
+    return () => { mounted = false; window.removeEventListener?.("progress-updated", onUpdate as any); };
   }, [user]);
 
   if (!user) {

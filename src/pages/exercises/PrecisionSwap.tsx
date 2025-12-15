@@ -18,6 +18,9 @@ import {
   Zap
 } from "lucide-react";
 import { toast } from "sonner";
+import { useSettings } from "@/hooks/useSettings";
+import { playSuccess, playFail } from "@/lib/audio";
+import { speak } from "@/lib/tts";
 
 interface SwapChallenge {
   id: string;
@@ -33,6 +36,7 @@ export default function PrecisionSwap() {
   const { language } = useLanguage();
   const { user } = useAuth();
   const { saveAttempt } = useProgress();
+  const { settings } = useSettings();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
@@ -88,12 +92,18 @@ export default function PrecisionSwap() {
         setStreak((prev) => prev + 1);
         if (option.score === 100) {
           toast.success("Perfect choice!", { description: option.feedback });
+          if (settings?.audio?.soundEffects) playSuccess();
+          if (settings?.audio?.voiceFeedback) speak(option.feedback, language);
         } else {
           toast.success("Great choice!", { description: option.feedback });
+          if (settings?.audio?.soundEffects) playSuccess();
+          if (settings?.audio?.voiceFeedback) speak(option.feedback, language);
         }
       } else {
         setStreak(0);
         toast.info("Good try!", { description: option.feedback });
+        if (settings?.audio?.soundEffects) playFail();
+        if (settings?.audio?.voiceFeedback) speak(option.feedback, language);
       }
     }
     

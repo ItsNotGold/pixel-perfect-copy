@@ -6,6 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/hooks/useAuth";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { SubscriptionProvider } from "@/hooks/useSubscription";
+import { useEffect } from "react";
+import { useSettings } from "@/hooks/useSettings";
+import { useProgress } from "@/hooks/useProgress";
+import { useAuth } from "@/hooks/useAuth";
+import { toast } from "sonner";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Auth from "./pages/Auth";
@@ -30,6 +35,7 @@ const App = () => (
           <TooltipProvider>
             <Toaster />
             <Sonner position="top-center" />
+          <SettingsReminders />
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Index />} />
@@ -54,4 +60,32 @@ const App = () => (
   </QueryClientProvider>
 );
 
+function SettingsReminders() {
+  const { user } = useAuth();
+  const { settings } = useSettings();
+  const { getProgress } = useProgress();
+
+  useEffect(() => {
+    (async () => {
+      if (!user || !settings) return;
+      try {
+        const progress = await getProgress();
+        const todays = progress?.todaysCompletedCount || 0;
+        const streak = progress?.streaks?.current_streak || 0;
+
+        if (settings.practice?.dailyReminders && todays === 0) {
+          toast("Time to practice! Complete an exercise to keep your streak.");
+        }
+
+        if (settings.notifications?.streakReminders && streak > 0 && todays === 0) {
+          toast(`You have a ${streak}-day streak — practice today to keep it!`);
+        }
+      } catch (err) {
+        // ignore
+      }
+    })();
+  }, [user, settings]);
+
+  return null;
+}
 export default App;

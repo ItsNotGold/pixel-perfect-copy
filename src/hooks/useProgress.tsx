@@ -3,6 +3,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "./useAuth";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { toast } from "sonner";
+import { useSettings } from "@/hooks/useSettings";
 import type { Json } from "@/integrations/supabase/types";
 import { exercises } from "@/data/exercises";
 
@@ -17,6 +18,7 @@ export interface ExerciseAttempt {
 export function useProgress() {
   const { user } = useAuth();
   const { language } = useLanguage();
+  const { settings } = useSettings();
 
   const getExerciseAttempts = useCallback(async (exerciseId: string, timeframeDays: number | 'all' = 'all') => {
     if (!user) return [] as any[];
@@ -111,8 +113,8 @@ export function useProgress() {
         await supabase
           .from("user_progress")
           .update({
-            best_score: Math.max(existingProgress.best_score, attempt.score),
-            times_completed: existingProgress.times_completed + 1,
+            best_score: Math.max(existingProgress.best_score || 0, attempt.score),
+            times_completed: (existingProgress.times_completed || 0) + 1,
             last_completed_at: new Date().toISOString(),
           })
           .eq("id", existingProgress.id);
@@ -182,7 +184,6 @@ export function useProgress() {
 
   const checkAchievements = useCallback(async (streak: number, totalCompleted: number) => {
     if (!user) return;
-
     const achievements: string[] = [];
 
     if (totalCompleted === 1) achievements.push("first_exercise");
@@ -210,14 +211,16 @@ export function useProgress() {
           streak_30: "Monthly Master",
         };
 
-        toast.success("Achievement Unlocked!", {
-          description: achievementNames[achievement],
-        });
+        if (!settings || settings.notifications?.achievementAlerts) {
+          toast.success("Achievement Unlocked!", {
+            description: achievementNames[achievement],
+          });
+        }
       } catch {
         // Achievement already exists, ignore
       }
     }
-  }, [user]);
+  }, [user, settings]);
 
   return { saveAttempt, getProgress, getExerciseAttempts };
 }

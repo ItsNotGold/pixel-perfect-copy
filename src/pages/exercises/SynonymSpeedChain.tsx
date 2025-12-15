@@ -10,6 +10,9 @@ import { Link, Play, RotateCcw, Trophy, Zap, Clock, Star } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
+import { useSettings } from "@/hooks/useSettings";
+import { playTick, playDing } from "@/lib/audio";
+import { speak } from "@/lib/tts";
 
 interface SynonymChallenge {
   id: string;
@@ -34,6 +37,7 @@ export default function SynonymSpeedChain() {
   const inputRef = useRef<HTMLInputElement>(null);
   const { user } = useAuth();
   const { saveAttempt } = useProgress();
+  const { settings } = useSettings();
 
   useEffect(() => {
     const challenges = synonymChallengesMultilingual[language] || synonymChallengesMultilingual.en;
@@ -62,7 +66,12 @@ export default function SynonymSpeedChain() {
           endRound();
           return 0;
         }
-        return prev - 1;
+        const next = prev - 1;
+        // play tick on last 5 seconds if enabled
+        if (settings?.practice?.timerSounds && next <= 5) {
+          try { playTick(); } catch {}
+        }
+        return next;
       });
     }, 1000);
 
@@ -79,10 +88,15 @@ export default function SynonymSpeedChain() {
 
     if (score >= 50) {
       toast.success("Excellent vocabulary!");
+      if (settings?.audio?.soundEffects) playDing();
+      if (settings?.audio?.voiceFeedback) speak("Excellent vocabulary!");
     } else if (score >= 30) {
       toast.success("Good job!");
+      if (settings?.audio?.soundEffects) playDing();
+      if (settings?.audio?.voiceFeedback) speak("Good job!");
     } else {
       toast.info("Keep building your vocabulary!");
+      if (settings?.audio?.voiceFeedback) speak("Keep building your vocabulary!");
     }
   };
 

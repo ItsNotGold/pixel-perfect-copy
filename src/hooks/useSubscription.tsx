@@ -66,17 +66,27 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
       }
 
       // Check Stripe subscription via edge function
-      const { data, error } = await supabase.functions.invoke("check-subscription");
+      try {
+        const session = await supabase.auth.getSession();
+        const token = session?.data?.session?.access_token;
+        const invokeOptions: any = {};
+        if (token) invokeOptions.headers = { Authorization: `Bearer ${token}` };
 
-      if (error) {
-        console.error("Error checking subscription:", error);
-        setIsSubscribed(false);
-        setPlanType("free");
-      } else if (data?.subscribed) {
-        setIsSubscribed(true);
-        setPlanType(data.plan_type || "monthly");
-        setSubscriptionEnd(data.subscription_end || null);
-      } else {
+        const { data, error } = await supabase.functions.invoke("check-subscription", invokeOptions as any);
+        if (error) {
+          console.error("Error checking subscription (function):", error);
+          setIsSubscribed(false);
+          setPlanType("free");
+        } else if (data?.subscribed) {
+          setIsSubscribed(true);
+          setPlanType(data.plan_type || "monthly");
+          setSubscriptionEnd(data.subscription_end || null);
+        } else {
+          setIsSubscribed(false);
+          setPlanType("free");
+        }
+      } catch (err) {
+        console.error("Subscription function failed:", err);
         setIsSubscribed(false);
         setPlanType("free");
       }

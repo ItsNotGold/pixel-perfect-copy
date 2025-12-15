@@ -100,6 +100,29 @@ export function useProgress() {
       progressMap[p.exercise_id] = existing;
     }
 
+    // Also inspect raw attempts to ensure best_score and times_completed are correct (repair legacy/scale issues)
+    const { data: allAttemptsData } = await supabase.from("exercise_attempts").select("*").eq("user_id", user.id);
+    const attemptsAll = (allAttemptsData || []).map((r: any) => ({
+      ...r,
+      score: typeof r.score === 'string' ? parseFloat(r.score) : r.score,
+      max_score: typeof r.max_score === 'string' ? parseFloat(r.max_score) : r.max_score,
+    }));
+
+    const attemptsCountMap: Record<string, number> = {};
+    const bestPercentMap: Record<string, number> = {};
+    for (const a of attemptsAll) {
+      attemptsCountMap[a.exercise_id] = (attemptsCountMap[a.exercise_id] || 0) + 1;
+      const percent = Math.round(((a.score || 0) / (a.max_score || 1)) * 100);
+      bestPercentMap[a.exercise_id] = Math.max(bestPercentMap[a.exercise_id] || 0, percent);
+    }
+
+    for (const [exerciseId, counts] of Object.entries(attemptsCountMap)) {
+      const existing = progressMap[exerciseId] || { exercise_id: exerciseId, times_completed: 0, best_score: 0, last_completed_at: null, languages: [] };
+      existing.times_completed = Math.max(existing.times_completed || 0, counts);
+      existing.best_score = Math.max(existing.best_score || 0, bestPercentMap[exerciseId] || 0);
+      progressMap[exerciseId] = existing;
+    }
+
     const exerciseProgress = Object.values(progressMap);
 
     return {

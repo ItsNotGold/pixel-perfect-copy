@@ -31,6 +31,7 @@ export default function ReverseDefinitions() {
   const [showHint, setShowHint] = useState(0);
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
+  const [attemptSaved, setAttemptSaved] = useState(false);
   const [shuffledChallenges, setShuffledChallenges] = useState<ReverseDefinition[]>([]);
   const { user } = useAuth();
   const { saveAttempt } = useProgress();
@@ -92,12 +93,19 @@ export default function ReverseDefinitions() {
           maxScore: shuffledChallenges.length * 200,
         });
         if (!res || !res.success) toast.error("Failed to save progress");
+        else setAttemptSaved(true);
       }
       toast.success("Exercise Complete!", { description: `Final score: ${score}` });
     }
   };
 
   const handleRestart = () => {
+    if (isComplete && user && !attemptSaved) {
+      saveAttempt({ exerciseId: "reverse-definitions", score, maxScore: shuffledChallenges.length * 200 }).then((res) => {
+        if (!res || !res.success) toast.error("Failed to save progress");
+        else setAttemptSaved(true);
+      });
+    }
     const definitions = reverseDefinitionsMultilingual[language] || reverseDefinitionsMultilingual.en;
     const shuffled = [...definitions].sort(() => Math.random() - 0.5);
     const desiredCount = 10;
@@ -108,6 +116,7 @@ export default function ReverseDefinitions() {
     setShowHint(0);
     setScore(0);
     setStreak(0);
+    setAttemptSaved(false);
   };
 
   const handleHint = () => {

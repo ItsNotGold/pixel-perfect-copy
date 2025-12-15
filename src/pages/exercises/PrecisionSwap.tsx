@@ -43,7 +43,6 @@ export default function PrecisionSwap() {
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
   const [completed, setCompleted] = useState(0);
-  const [attemptSaved, setAttemptSaved] = useState(false);
   const [shuffledChallenges, setShuffledChallenges] = useState<SwapChallenge[]>([]);
 
   const pickShuffled = (items: SwapChallenge[], desiredCount: number, storageKey: string) => {
@@ -124,7 +123,6 @@ export default function PrecisionSwap() {
           maxScore: shuffledChallenges.length * 100,
         });
         if (!res || !res.success) toast.error("Failed to save progress");
-        else setAttemptSaved(true);
       }
       toast.success("Exercise Complete!", {
         description: `Final score: ${score}. Completed: ${completed + 1} challenges.`,
@@ -133,13 +131,6 @@ export default function PrecisionSwap() {
   };
 
   const handleRestart = () => {
-    // If the previous run reached completion but save didn't happen, try to save now
-    if (isComplete && user && !attemptSaved) {
-      saveAttempt({ exerciseId: "precision-swap", score, maxScore: shuffledChallenges.length * 100 }).then((res) => {
-        if (!res || !res.success) toast.error("Failed to save progress");
-        else setAttemptSaved(true);
-      });
-    }
     const challenges = swapChallengesMultilingual[language] || swapChallengesMultilingual.en;
     const desiredCount = 10;
     setShuffledChallenges(pickShuffled(challenges, desiredCount, `precision-swap-last-${language}`));
@@ -149,7 +140,6 @@ export default function PrecisionSwap() {
     setScore(0);
     setStreak(0);
     setCompleted(0);
-    setAttemptSaved(false);
   };
 
   const renderSentence = () => {

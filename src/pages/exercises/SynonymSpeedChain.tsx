@@ -33,7 +33,6 @@ export default function SynonymSpeedChain() {
   const [totalScore, setTotalScore] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
   const [shuffledChallenges, setShuffledChallenges] = useState<SynonymChallenge[]>([]);
-  const [attemptSaved, setAttemptSaved] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const { user } = useAuth();
@@ -151,19 +150,12 @@ export default function SynonymSpeedChain() {
           maxScore: shuffledChallenges.length * 100,
         });
         if (!res || !res.success) toast.error("Failed to save progress");
-        else setAttemptSaved(true);
       }
       toast.success("Exercise Complete!", { description: `Final score: ${totalScore}` });
     }
   };
 
   const handleRestart = () => {
-    if (isComplete && user && !attemptSaved) {
-      saveAttempt({ exerciseId: "synonym-speed-chain", score: totalScore, maxScore: shuffledChallenges.length * 100 }).then((res) => {
-        if (!res || !res.success) toast.error("Failed to save progress");
-        else setAttemptSaved(true);
-      });
-    }
     const challenges = synonymChallengesMultilingual[language] || synonymChallengesMultilingual.en;
     const shuffled = [...challenges].sort(() => Math.random() - 0.5);
     const desiredCount = 5;
@@ -173,7 +165,6 @@ export default function SynonymSpeedChain() {
     setSynonymList([]);
     setScore(0);
     setTotalScore(0);
-    setAttemptSaved(false);
   };
 
   if (shuffledChallenges.length === 0) {

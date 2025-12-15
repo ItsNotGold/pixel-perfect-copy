@@ -64,7 +64,7 @@ export default function ExerciseStats() {
     </MainLayout>
   );
 
-  const scores = attempts.map(a => typeof a.percent === 'number' ? a.percent : Math.round(((typeof a.score === 'string' ? parseFloat(a.score) : a.score) / ((typeof a.max_score === 'string' ? parseFloat(a.max_score) : a.max_score) || 1)) * 100));
+  const scores = attempts.map(a => Math.round((a.score / (a.max_score || 1)) * 100));
 
   return (
     <MainLayout>

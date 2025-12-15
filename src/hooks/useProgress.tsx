@@ -32,7 +32,13 @@ export function useProgress() {
     }
 
     const { data } = await query;
-    return data || [];
+    const parsed = (data || []).map((r: any) => ({
+      ...r,
+      score: typeof r.score === 'string' ? parseFloat(r.score) : r.score,
+      max_score: typeof r.max_score === 'string' ? parseFloat(r.max_score) : r.max_score,
+      percent: Math.round(((typeof r.score === 'string' ? parseFloat(r.score) : r.score) / (typeof r.max_score === 'string' ? parseFloat(r.max_score) : r.max_score || 1)) * 100),
+    }));
+    return parsed;
   }, [user]);
 
   const getProgress = useCallback(async () => {
@@ -49,7 +55,11 @@ export function useProgress() {
       supabase.from("exercise_attempts").select("*").eq("user_id", user.id).gte("completed_at", new Date(Date.now() - 365 * 24 * 60 * 60 * 1000).toISOString()),
     ]);
 
-    const recentAttempts = attemptsResult.data || [];
+    const recentAttempts = (attemptsResult.data || []).map((r: any) => ({
+      ...r,
+      score: typeof r.score === 'string' ? parseFloat(r.score) : r.score,
+      max_score: typeof r.max_score === 'string' ? parseFloat(r.max_score) : r.max_score,
+    }));
 
     // compute today's completed distinct exercises (local day)
     const today = new Date();
@@ -61,7 +71,11 @@ export function useProgress() {
     const todaysCompletedCount = todaysExerciseIds.size;
 
     // days fully completed in the past year
-    const attempts365 = lastYearAttempts.data || [];
+    const attempts365 = (lastYearAttempts.data || []).map((r: any) => ({
+      ...r,
+      score: typeof r.score === 'string' ? parseFloat(r.score) : r.score,
+      max_score: typeof r.max_score === 'string' ? parseFloat(r.max_score) : r.max_score,
+    }));
     const dayMap: Record<string, Set<string>> = {};
     for (const a of attempts365) {
       const d = new Date(a.completed_at);
@@ -72,8 +86,24 @@ export function useProgress() {
 
     const daysFullyCompleted = Object.values(dayMap).filter((s) => s.size >= totalExercises).length;
 
+    // Aggregate user_progress rows by exercise_id to present consistent counts across languages
+    const rawProgressRows = progressResult.data || [];
+    const progressMap: Record<string, any> = {};
+    for (const p of rawProgressRows) {
+      const existing = progressMap[p.exercise_id] || { exercise_id: p.exercise_id, times_completed: 0, best_score: 0, last_completed_at: null, languages: [] };
+      existing.times_completed = (existing.times_completed || 0) + (p.times_completed || 0);
+      existing.best_score = Math.max(existing.best_score || 0, (p.best_score || 0));
+      if (!existing.last_completed_at || new Date(p.last_completed_at) > new Date(existing.last_completed_at)) {
+        existing.last_completed_at = p.last_completed_at;
+      }
+      existing.languages = Array.from(new Set([...(existing.languages || []), p.language]));
+      progressMap[p.exercise_id] = existing;
+    }
+
+    const exerciseProgress = Object.values(progressMap);
+
     return {
-      exerciseProgress: progressResult.data || [],
+      exerciseProgress,
       streaks: streakResult.data,
       achievements: achievementsResult.data || [],
       recentAttempts,
@@ -84,13 +114,13 @@ export function useProgress() {
   }, [user]);
 
   const saveAttempt = useCallback(async (attempt: ExerciseAttempt) => {
-    if (!user) return;
+    if (!user) return { success: false, error: 'not-signed-in' };
 
     const lang = attempt.language || language;
 
     try {
-      // Save the attempt
-      const { data: inserted } = await supabase.from("exercise_attempts").insert([{
+      // Insert attempt row
+      const { data: inserted, error: insertErr } = await supabase.from('exercise_attempts').insert([{
         user_id: user.id,
         exercise_id: attempt.exerciseId,
         score: attempt.score,
@@ -100,87 +130,66 @@ export function useProgress() {
         language: lang,
       }]).select().single();
 
-      // Update user progress (per language)
+      if (insertErr) {
+        console.error('Failed to insert attempt', insertErr);
+        return { success: false, error: insertErr };
+      }
+
+      // Update or create user_progress with percent-normalized best_score
       const { data: existingProgress } = await supabase
-        .from("user_progress")
-        .select("*")
-        .eq("user_id", user.id)
-        .eq("exercise_id", attempt.exerciseId)
-        .eq("language", lang)
+        .from('user_progress')
+        .select('*')
+        .eq('user_id', user.id)
+        .eq('exercise_id', attempt.exerciseId)
+        .eq('language', lang)
         .maybeSingle();
 
+      const attemptPercent = Math.round(((attempt.score || 0) / (attempt.maxScore || 1)) * 100);
+
       if (existingProgress) {
-        await supabase
-          .from("user_progress")
-          .update({
-            best_score: Math.max(existingProgress.best_score || 0, attempt.score),
-            times_completed: (existingProgress.times_completed || 0) + 1,
-            last_completed_at: new Date().toISOString(),
-          })
-          .eq("id", existingProgress.id);
-      } else {
-        await supabase.from("user_progress").insert([{
-          user_id: user.id,
-          exercise_id: attempt.exerciseId,
-          best_score: attempt.score,
-          times_completed: 1,
+        await supabase.from('user_progress').update({
+          best_score: Math.max(existingProgress.best_score || 0, attemptPercent),
+          times_completed: (existingProgress.times_completed || 0) + 1,
           last_completed_at: new Date().toISOString(),
-          language: lang,
-        }]);
+        }).eq('id', existingProgress.id);
+      } else {
+        await supabase.from('user_progress').insert([{ user_id: user.id, exercise_id: attempt.exerciseId, best_score: attemptPercent, times_completed: 1, last_completed_at: new Date().toISOString(), language: lang }]);
       }
 
       // Update streaks
-      const today = new Date().toISOString().split("T")[0];
-      const { data: streakData } = await supabase
-        .from("user_streaks")
-        .select("*")
-        .eq("user_id", user.id)
-        .maybeSingle();
+      const today = new Date().toISOString().split('T')[0];
+      const { data: streakData } = await supabase.from('user_streaks').select('*').eq('user_id', user.id).maybeSingle();
 
       if (streakData) {
         const lastActivity = streakData.last_activity_date;
-        const yesterday = new Date(Date.now() - 86400000).toISOString().split("T")[0];
-        
+        const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
         let newStreak = streakData.current_streak;
-        if (lastActivity === yesterday) {
-          newStreak = streakData.current_streak + 1;
-        } else if (lastActivity !== today) {
-          newStreak = 1;
-        }
+        if (lastActivity === yesterday) newStreak = streakData.current_streak + 1;
+        else if (lastActivity !== today) newStreak = 1;
 
-        await supabase
-          .from("user_streaks")
-          .update({
-            current_streak: newStreak,
-            longest_streak: Math.max(streakData.longest_streak, newStreak),
-            last_activity_date: today,
-            total_exercises_completed: streakData.total_exercises_completed + 1,
-          })
-          .eq("user_id", user.id);
+        await supabase.from('user_streaks').update({
+          current_streak: newStreak,
+          longest_streak: Math.max(streakData.longest_streak, newStreak),
+          last_activity_date: today,
+          total_exercises_completed: streakData.total_exercises_completed + 1,
+        }).eq('user_id', user.id);
 
-        // Check for achievements
         checkAchievements(newStreak, streakData.total_exercises_completed + 1);
       } else {
-        // create streak row for new users
-        await supabase.from("user_streaks").insert([{ user_id: user.id, current_streak: 1, longest_streak: 1, last_activity_date: today, total_exercises_completed: 1 }]);
+        await supabase.from('user_streaks').insert([{ user_id: user.id, current_streak: 1, longest_streak: 1, last_activity_date: today, total_exercises_completed: 1 }]);
         checkAchievements(1, 1);
       }
 
-      // Return inserted attempt and updated progress so callers can refresh UI
       const progress = await getProgress();
-      try {
-        if (typeof window !== "undefined") {
-          window.dispatchEvent(new CustomEvent("progress-updated", { detail: { userId: user.id } }));
-        }
-      } catch {
-        // ignore
-      }
+      try { if (typeof window !== 'undefined') window.dispatchEvent(new CustomEvent('progress-updated', { detail: { userId: user.id } })); } catch {}
+
       return { success: true, attempt: inserted || null, progress };
     } catch (error) {
-      console.error("Error saving progress:", error);
+      console.error('Error saving progress:', error);
       return { success: false, error };
     }
-  }, [user]);
+  }, [user, language]);
+
 
   const checkAchievements = useCallback(async (streak: number, totalCompleted: number) => {
     if (!user) return;

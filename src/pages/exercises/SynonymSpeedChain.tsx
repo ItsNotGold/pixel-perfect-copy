@@ -189,150 +189,155 @@ export default function SynonymSpeedChain() {
   }
 
   return (
-    <ExerciseGate exerciseId="synonym-speed-chain">
     <MainLayout>
-      <div className="mx-auto max-w-3xl px-6 py-12">
-        <div className="mb-8 text-center animate-fade-in">
-          <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 shadow-lg">
-            <Link className="h-7 w-7 text-primary-foreground" />
+      <ExerciseGate exerciseId="synonym-speed-chain">
+        <div className="mx-auto max-w-3xl px-6 py-12">
+          <div className="mb-8 text-center animate-fade-in">
+            <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 shadow-lg">
+              <Link className="h-7 w-7 text-primary-foreground" />
+            </div>
+            <h1 className="mb-2 font-display text-3xl text-foreground">Synonym Speed Chain</h1>
+            <p className="text-muted-foreground">Race against the clock to list synonyms</p>
           </div>
-          <h1 className="mb-2 font-display text-3xl text-foreground">Synonym Speed Chain</h1>
-          <p className="text-muted-foreground">Race against the clock to list synonyms</p>
-        </div>
 
-        <div className="mb-8 grid grid-cols-3 gap-4 animate-slide-up">
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
-              <Trophy className="h-5 w-5" />
-              {totalScore}
+          <div className="mb-8 grid grid-cols-3 gap-4 animate-slide-up">
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
+                <Trophy className="h-5 w-5" />
+                {totalScore}
+              </div>
+              <div className="text-xs text-muted-foreground">Total</div>
             </div>
-            <div className="text-xs text-muted-foreground">Total</div>
-          </div>
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="flex items-center justify-center gap-2 text-2xl font-bold text-accent">
-              <Zap className="h-5 w-5" />
-              {score}
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="flex items-center justify-center gap-2 text-2xl font-bold text-accent">
+                <Zap className="h-5 w-5" />
+                {score}
+              </div>
+              <div className="text-xs text-muted-foreground">Round</div>
             </div>
-            <div className="text-xs text-muted-foreground">Round</div>
-          </div>
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="text-2xl font-bold text-foreground">
-              {currentIndex + 1}/{shuffledChallenges.length}
-            </div>
-            <div className="text-xs text-muted-foreground">Word</div>
-          </div>
-        </div>
-
-        <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
-          <div className="mb-6 text-center">
-            <div className="text-sm text-muted-foreground mb-2">Find synonyms for:</div>
-            <div className="inline-block rounded-xl bg-gradient-to-br from-orange-500 to-red-500 px-8 py-4">
-              <span className="text-3xl font-bold text-white">{currentChallenge?.word}</span>
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="text-2xl font-bold text-foreground">
+                {currentIndex + 1}/{shuffledChallenges.length}
+              </div>
+              <div className="text-xs text-muted-foreground">Word</div>
             </div>
           </div>
 
-          {isPlaying && (
+          <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
             <div className="mb-6 text-center">
-              <div className={cn(
-                "text-5xl font-bold tabular-nums",
-                timeLeft <= 10 ? "text-destructive animate-pulse" : "text-foreground"
-              )}>
-                {timeLeft}
-              </div>
-              <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground mt-1">
-                <Clock className="h-4 w-4" />
-                seconds remaining
+              <div className="text-sm text-muted-foreground mb-2">Find synonyms for:</div>
+              <div className="inline-block rounded-xl bg-gradient-to-br from-orange-500 to-red-500 px-8 py-4">
+                <span className="text-3xl font-bold text-white">{currentChallenge?.word}</span>
               </div>
             </div>
-          )}
 
-          {isPlaying && (
-            <div className="mb-6">
-              <div className="flex gap-2">
-                <Input
-                  ref={inputRef}
-                  placeholder="Type a synonym and press Enter..."
-                  value={currentSynonym}
-                  onChange={(e) => setCurrentSynonym(e.target.value)}
-                  onKeyDown={handleKeyDown}
-                  className="flex-1"
-                />
-                <Button onClick={addSynonym} disabled={!currentSynonym.trim()}>
-                  Add
-                </Button>
+            {isPlaying && (
+              <div className="mb-6 text-center">
+                <div
+                  className={cn(
+                    "text-5xl font-bold tabular-nums",
+                    timeLeft <= 10 ? "text-destructive animate-pulse" : "text-foreground"
+                  )}
+                >
+                  {timeLeft}
+                </div>
+                <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground mt-1">
+                  <Clock className="h-4 w-4" />
+                  seconds remaining
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
-          {synonymList.length > 0 && (
-            <div className="mb-6">
-              <div className="text-sm text-muted-foreground mb-2">Your synonyms:</div>
-              <div className="flex flex-wrap gap-2">
-                {synonymList.map((word, idx) => {
-                  const isRare = currentChallenge?.rareSynonyms.map((s) => s.toLowerCase()).includes(word);
-                  return (
-                    <span
-                      key={idx}
-                      className={cn(
-                        "rounded-full px-3 py-1 text-sm font-medium",
-                        isRare
-                          ? "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300"
-                          : "bg-muted text-foreground"
-                      )}
-                    >
-                      {isRare && <Star className="inline h-3 w-3 mr-1" />}
+            {isPlaying && (
+              <div className="mb-6">
+                <div className="flex gap-2">
+                  <Input
+                    ref={inputRef}
+                    placeholder="Type a synonym and press Enter..."
+                    value={currentSynonym}
+                    onChange={(e) => setCurrentSynonym(e.target.value)}
+                    onKeyDown={handleKeyDown}
+                    className="flex-1"
+                  />
+                  <Button onClick={addSynonym} disabled={!currentSynonym.trim()}>
+                    Add
+                  </Button>
+                </div>
+              </div>
+            )}
+
+            {synonymList.length > 0 && (
+              <div className="mb-6">
+                <div className="text-sm text-muted-foreground mb-2">Your synonyms:</div>
+                <div className="flex flex-wrap gap-2">
+                  {synonymList.map((word, idx) => {
+                    const isRare = currentChallenge?.rareSynonyms.map((s) => s.toLowerCase()).includes(word);
+                    return (
+                      <span
+                        key={idx}
+                        className={cn(
+                          "rounded-full px-3 py-1 text-sm font-medium",
+                          isRare
+                            ? "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300"
+                            : "bg-muted text-foreground"
+                        )}
+                      >
+                        {isRare && <Star className="inline h-3 w-3 mr-1" />}
+                        {word}
+                      </span>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {isComplete && currentChallenge && (
+              <div className="mb-6 rounded-xl bg-muted/50 p-4 animate-slide-up">
+                <div className="text-sm font-medium text-foreground mb-2">Example synonyms:</div>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {currentChallenge.commonSynonyms.map((word) => (
+                    <span key={word} className="rounded-full bg-muted px-3 py-1 text-sm text-muted-foreground">
                       {word}
                     </span>
-                  );
-                })}
+                  ))}
+                </div>
+                <div className="text-sm font-medium text-amber-600 dark:text-amber-400 mb-2">Rare synonyms (bonus!):</div>
+                <div className="flex flex-wrap gap-2">
+                  {currentChallenge.rareSynonyms.map((word) => (
+                    <span
+                      key={word}
+                      className="rounded-full bg-amber-100 dark:bg-amber-900/30 px-3 py-1 text-sm text-amber-700 dark:text-amber-300"
+                    >
+                      <Star className="inline h-3 w-3 mr-1" />
+                      {word}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
-          {isComplete && currentChallenge && (
-            <div className="mb-6 rounded-xl bg-muted/50 p-4 animate-slide-up">
-              <div className="text-sm font-medium text-foreground mb-2">Example synonyms:</div>
-              <div className="flex flex-wrap gap-2 mb-3">
-                {currentChallenge.commonSynonyms.map((word) => (
-                  <span key={word} className="rounded-full bg-muted px-3 py-1 text-sm text-muted-foreground">
-                    {word}
-                  </span>
-                ))}
-              </div>
-              <div className="text-sm font-medium text-amber-600 dark:text-amber-400 mb-2">Rare synonyms (bonus!):</div>
-              <div className="flex flex-wrap gap-2">
-                {currentChallenge.rareSynonyms.map((word) => (
-                  <span key={word} className="rounded-full bg-amber-100 dark:bg-amber-900/30 px-3 py-1 text-sm text-amber-700 dark:text-amber-300">
-                    <Star className="inline h-3 w-3 mr-1" />
-                    {word}
-                  </span>
-                ))}
-              </div>
+            <div className="flex gap-3">
+              {!isPlaying && !isComplete && (
+                <Button variant="hero" size="lg" className="flex-1" onClick={startRound}>
+                  <Play className="mr-2 h-4 w-4" />
+                  Start Round
+                </Button>
+              )}
+              {isComplete && currentIndex < shuffledChallenges.length - 1 && (
+                <Button variant="hero" size="lg" className="flex-1" onClick={handleNext}>
+                  Next Word
+                </Button>
+              )}
+              {isComplete && currentIndex === shuffledChallenges.length - 1 && (
+                <Button variant="accent" size="lg" className="flex-1" onClick={handleRestart}>
+                  <RotateCcw className="mr-2 h-4 w-4" />
+                  Play Again
+                </Button>
+              )}
             </div>
-          )}
-
-          <div className="flex gap-3">
-            {!isPlaying && !isComplete && (
-              <Button variant="hero" size="lg" className="flex-1" onClick={startRound}>
-                <Play className="mr-2 h-4 w-4" />
-                Start Round
-              </Button>
-            )}
-            {isComplete && currentIndex < shuffledChallenges.length - 1 && (
-              <Button variant="hero" size="lg" className="flex-1" onClick={handleNext}>
-                Next Word
-              </Button>
-            )}
-            {isComplete && currentIndex === shuffledChallenges.length - 1 && (
-              <Button variant="accent" size="lg" className="flex-1" onClick={handleRestart}>
-                <RotateCcw className="mr-2 h-4 w-4" />
-                Play Again
-              </Button>
-            )}
           </div>
         </div>
-      </div>
+      </ExerciseGate>
     </MainLayout>
-    </ExerciseGate>
   );
 }

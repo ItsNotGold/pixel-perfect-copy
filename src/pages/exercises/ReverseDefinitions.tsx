@@ -147,135 +147,137 @@ export default function ReverseDefinitions() {
   };
 
   return (
-    <ExerciseGate exerciseId="reverse-definitions">
     <MainLayout>
-      <div className="mx-auto max-w-3xl px-6 py-12">
-        <div className="mb-8 text-center animate-fade-in">
-          <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg">
-            <BookOpen className="h-7 w-7 text-primary-foreground" />
-          </div>
-          <h1 className="mb-2 font-display text-3xl text-foreground">Reverse Definitions</h1>
-          <p className="text-muted-foreground">Read the definition, guess the word</p>
-        </div>
-
-        <div className="mb-8 grid grid-cols-3 gap-4 animate-slide-up">
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
-              <Trophy className="h-5 w-5" />
-              {score}
+      <ExerciseGate exerciseId="reverse-definitions">
+        <div className="mx-auto max-w-3xl px-6 py-12">
+          <div className="mb-8 text-center animate-fade-in">
+            <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg">
+              <BookOpen className="h-7 w-7 text-primary-foreground" />
             </div>
-            <div className="text-xs text-muted-foreground">Score</div>
+            <h1 className="mb-2 font-display text-3xl text-foreground">Reverse Definitions</h1>
+            <p className="text-muted-foreground">Read the definition, guess the word</p>
           </div>
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="flex items-center justify-center gap-2 text-2xl font-bold text-accent">
-              <Zap className="h-5 w-5" />
-              {streak}
+
+          <div className="mb-8 grid grid-cols-3 gap-4 animate-slide-up">
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
+                <Trophy className="h-5 w-5" />
+                {score}
+              </div>
+              <div className="text-xs text-muted-foreground">Score</div>
             </div>
-            <div className="text-xs text-muted-foreground">Streak</div>
-          </div>
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="text-2xl font-bold text-foreground">
-              {currentIndex + 1}/{shuffledChallenges.length}
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="flex items-center justify-center gap-2 text-2xl font-bold text-accent">
+                <Zap className="h-5 w-5" />
+                {streak}
+              </div>
+              <div className="text-xs text-muted-foreground">Streak</div>
             </div>
-            <div className="text-xs text-muted-foreground">Progress</div>
-          </div>
-        </div>
-
-        <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
-          <div className="mb-6 h-2 overflow-hidden rounded-full bg-muted">
-            <div
-              className="h-full gradient-hero transition-all duration-500"
-              style={{ width: `${((currentIndex + 1) / shuffledChallenges.length) * 100}%` }}
-            />
-          </div>
-
-          <div className="mb-2 flex items-center justify-center">
-            <span className={cn("rounded-full px-3 py-1 text-xs font-medium", getDifficultyColor(currentChallenge?.difficulty || ""))}>
-              {currentChallenge?.difficulty?.toUpperCase()}
-            </span>
-          </div>
-
-          <div className="mb-8 text-center rounded-xl bg-muted/50 p-6">
-            <p className="text-lg text-foreground italic">"{currentChallenge?.definition}"</p>
-          </div>
-
-          {showHint > 0 && currentChallenge && (
-            <div className="mb-4 space-y-2">
-              {currentChallenge.hints.slice(0, showHint).map((hint, idx) => (
-                <div key={idx} className="flex items-center gap-2 text-sm text-muted-foreground bg-primary/5 rounded-lg px-3 py-2">
-                  <Lightbulb className="h-4 w-4 text-amber-500" />
-                  {hint}
-                </div>
-              ))}
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="text-2xl font-bold text-foreground">
+                {currentIndex + 1}/{shuffledChallenges.length}
+              </div>
+              <div className="text-xs text-muted-foreground">Progress</div>
             </div>
-          )}
-
-          <div className="mb-6">
-            <Input
-              placeholder="Type your answer..."
-              value={answer}
-              onChange={(e) => setAnswer(e.target.value)}
-              disabled={showResult}
-              className="text-center text-lg"
-              onKeyDown={(e) => e.key === "Enter" && !showResult && handleSubmit()}
-            />
           </div>
 
-          {showResult && currentChallenge && (
-            <div className={cn(
-              "mb-6 rounded-xl p-4 flex items-center gap-3 animate-slide-up",
-              isCorrect ? "bg-emerald-50 dark:bg-emerald-900/20" : "bg-rose-50 dark:bg-rose-900/20"
-            )}>
-              {isCorrect ? (
-                <CheckCircle2 className="h-6 w-6 text-emerald-500" />
-              ) : (
-                <XCircle className="h-6 w-6 text-rose-500" />
-              )}
-              <div>
-                <div className="font-medium text-foreground">
-                  {isCorrect ? "Correct!" : `The answer was: ${currentChallenge.answer}`}
+          <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
+            <div className="mb-6 h-2 overflow-hidden rounded-full bg-muted">
+              <div
+                className="h-full gradient-hero transition-all duration-500"
+                style={{ width: `${((currentIndex + 1) / shuffledChallenges.length) * 100}%` }}
+              />
+            </div>
+
+            <div className="mb-2 flex items-center justify-center">
+              <span className={cn("rounded-full px-3 py-1 text-xs font-medium", getDifficultyColor(currentChallenge?.difficulty || ""))}>
+                {currentChallenge?.difficulty?.toUpperCase()}
+              </span>
+            </div>
+
+            <div className="mb-8 text-center rounded-xl bg-muted/50 p-6">
+              <p className="text-lg text-foreground italic">"{currentChallenge?.definition}"</p>
+            </div>
+
+            {showHint > 0 && currentChallenge && (
+              <div className="mb-4 space-y-2">
+                {currentChallenge.hints.slice(0, showHint).map((hint, idx) => (
+                  <div key={idx} className="flex items-center gap-2 text-sm text-muted-foreground bg-primary/5 rounded-lg px-3 py-2">
+                    <Lightbulb className="h-4 w-4 text-amber-500" />
+                    {hint}
+                  </div>
+                ))}
+              </div>
+            )}
+
+            <div className="mb-6">
+              <Input
+                placeholder="Type your answer..."
+                value={answer}
+                onChange={(e) => setAnswer(e.target.value)}
+                disabled={showResult}
+                className="text-center text-lg"
+                onKeyDown={(e) => e.key === "Enter" && !showResult && handleSubmit()}
+              />
+            </div>
+
+            {showResult && currentChallenge && (
+              <div
+                className={cn(
+                  "mb-6 rounded-xl p-4 flex items-center gap-3 animate-slide-up",
+                  isCorrect ? "bg-emerald-50 dark:bg-emerald-900/20" : "bg-rose-50 dark:bg-rose-900/20"
+                )}
+              >
+                {isCorrect ? (
+                  <CheckCircle2 className="h-6 w-6 text-emerald-500" />
+                ) : (
+                  <XCircle className="h-6 w-6 text-rose-500" />
+                )}
+                <div>
+                  <div className="font-medium text-foreground">
+                    {isCorrect ? "Correct!" : `The answer was: ${currentChallenge.answer}`}
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
-
-          <div className="flex gap-3">
-            {!showResult ? (
-              <>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  onClick={handleHint}
-                  disabled={showHint >= (currentChallenge?.hints.length || 0)}
-                >
-                  <Lightbulb className="mr-2 h-4 w-4" />
-                  Hint ({currentChallenge?.hints.length - showHint})
-                </Button>
-                <Button
-                  variant="hero"
-                  size="lg"
-                  className="flex-1"
-                  onClick={handleSubmit}
-                  disabled={!answer.trim()}
-                >
-                  Check Answer
-                </Button>
-              </>
-            ) : currentIndex < shuffledChallenges.length - 1 ? (
-              <Button variant="hero" size="lg" className="flex-1" onClick={handleNext}>
-                Next Word
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            ) : (
-              <Button variant="accent" size="lg" className="flex-1" onClick={handleRestart}>
-                <RotateCcw className="mr-2 h-4 w-4" />
-                Play Again
-              </Button>
             )}
+
+            <div className="flex gap-3">
+              {!showResult ? (
+                <>
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    onClick={handleHint}
+                    disabled={showHint >= (currentChallenge?.hints.length || 0)}
+                  >
+                    <Lightbulb className="mr-2 h-4 w-4" />
+                    Hint ({currentChallenge?.hints.length - showHint})
+                  </Button>
+                  <Button
+                    variant="hero"
+                    size="lg"
+                    className="flex-1"
+                    onClick={handleSubmit}
+                    disabled={!answer.trim()}
+                  >
+                    Check Answer
+                  </Button>
+                </>
+              ) : currentIndex < shuffledChallenges.length - 1 ? (
+                <Button variant="hero" size="lg" className="flex-1" onClick={handleNext}>
+                  Next Word
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              ) : (
+                <Button variant="accent" size="lg" className="flex-1" onClick={handleRestart}>
+                  <RotateCcw className="mr-2 h-4 w-4" />
+                  Play Again
+                </Button>
+              )}
+            </div>
           </div>
         </div>
-      </div>
+      </ExerciseGate>
     </MainLayout>
-    </ExerciseGate>
   );
 }

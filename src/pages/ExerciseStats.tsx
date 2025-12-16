@@ -5,23 +5,63 @@ import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
 import { exercises } from "@/data/exercises";
 
-function Sparkline({ values = [] }: { values: number[] }) {
-  const w = 300;
-  const h = 60;
-  if (!values.length) return <div className="text-sm text-muted-foreground">No attempts yet</div>;
+function AttemptChart({ attempts = [] }: { attempts: any[] }) {
+  if (!attempts.length) return <div className="text-sm text-muted-foreground">No attempts yet</div>;
 
-  const max = Math.max(...values, 100);
-  const min = Math.min(...values, 0);
-  const range = max - min || 1;
+  const w = 560;
+  const h = 200;
+  const margin = { top: 12, right: 12, bottom: 36, left: 36 };
+  const innerW = w - margin.left - margin.right;
+  const innerH = h - margin.top - margin.bottom;
+
+  const values = attempts.map((a) => (typeof a.percent === 'number' ? a.percent : Math.round((a.score / (a.max_score || 1)) * 100)));
+  const n = values.length;
+
   const points = values.map((v, i) => {
-    const x = (i / (values.length - 1 || 1)) * w;
-    const y = h - ((v - min) / range) * h;
-    return `${x},${y}`;
-  }).join(" ");
+    const x = margin.left + (n === 1 ? innerW / 2 : (i / (n - 1)) * innerW);
+    const y = margin.top + (1 - v / 100) * innerH;
+    return { x, y, v, i };
+  });
+
+  const yGrid = [0, 25, 50, 75, 100];
 
   return (
-    <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`}>
-      <polyline points={points} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+    <svg width="100%" viewBox={`0 0 ${w} ${h}`} className="overflow-visible">
+      {/* Y grid lines and labels */}
+      {yGrid.map((g) => {
+        const y = margin.top + (1 - g / 100) * innerH;
+        return (
+          <g key={g}>
+            <line x1={margin.left} x2={margin.left + innerW} y1={y} y2={y} stroke="currentColor" strokeOpacity={0.06} />
+            <text x={8} y={y + 4} fontSize={11} fill="currentColor" opacity={0.6}>{g}%</text>
+          </g>
+        );
+      })}
+
+      {/* X axis labels */}
+      {points.map((p, idx) => (
+        <text key={idx} x={p.x} y={h - 6} fontSize={11} fill="currentColor" opacity={0.7} textAnchor="middle">
+          {new Date(attempts[idx].completed_at).toLocaleDateString()}
+        </text>
+      ))}
+
+      {/* Line */}
+      <polyline
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        points={points.map((p) => `${p.x},${p.y}`).join(" ")}
+      />
+
+      {/* Points */}
+      {points.map((p, idx) => (
+        <g key={idx}>
+          <circle cx={p.x} cy={p.y} r={4} fill="white" stroke="currentColor" strokeWidth={1} />
+          <title>{`${new Date(attempts[idx].completed_at).toLocaleString()} — ${p.v}%`}</title>
+        </g>
+      ))}
     </svg>
   );
 }
@@ -64,7 +104,6 @@ export default function ExerciseStats() {
     </MainLayout>
   );
 
-  const scores = attempts.map(a => (typeof a.percent === 'number' ? a.percent : Math.round((a.score / (a.max_score || 1)) * 100)));
 
   return (
     <MainLayout>
@@ -86,7 +125,7 @@ export default function ExerciseStats() {
 
         <div className="rounded-2xl glass p-6 mb-6">
           <div className="mb-4 text-sm text-muted-foreground">Score history</div>
-          <Sparkline values={scores} />
+          <AttemptChart attempts={attempts} />
         </div>
 
         <div className="space-y-2">

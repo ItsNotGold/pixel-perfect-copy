@@ -124,7 +124,10 @@ export default function Progress() {
         {/* Header */}
         <div className="mb-8 text-center animate-fade-in">
           <h1 className="mb-2 font-display text-3xl text-foreground">Your Progress</h1>
-          <p className="text-muted-foreground">Track your communication journey</p>
+          <div className="flex items-center justify-center gap-3">
+            <p className="text-muted-foreground">Track your communication journey</p>
+            <Link to="/achievements" className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1 text-sm font-medium">Achievements</Link>
+          </div>
         </div>
 
         {/* Main Stats */}

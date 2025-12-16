@@ -102,7 +102,7 @@ export function useProgress() {
       }
     }
 
-    return {
+    const result = {
       exerciseProgress: Object.values(aggregated),
       streaks: streakResult.data,
       achievements: achievementsResult.data || [],
@@ -111,6 +111,15 @@ export function useProgress() {
       totalExercises,
       daysFullyCompleted,
     };
+
+    // attempt to award any achievements based on current progress (idempotent)
+    try {
+      await awardAchievements(result);
+    } catch (err) {
+      // ignore errors during passive award
+    }
+
+    return result;
   }, [user]);
 
   const saveAttempt = useCallback(async (attempt: ExerciseAttempt) => {
@@ -201,6 +210,13 @@ export function useProgress() {
 
       // Return inserted attempt and updated progress so callers can refresh UI
       const progress = await getProgress();
+
+      // Award achievements based on the newly computed progress (per-exercise thresholds, total, days, streaks)
+      try {
+        await awardAchievements(progress);
+      } catch (err) {
+        console.error("Error awarding achievements:", err);
+      }
       try {
         if (typeof window !== "undefined") {
           window.dispatchEvent(new CustomEvent("progress-updated", { detail: { userId: user.id } }));
@@ -215,6 +231,64 @@ export function useProgress() {
     }
   }, [user]);
 
+  // Award achievements based on the user's current progress
+  const awardAchievements = useCallback(async (progress: any) => {
+    if (!user) return;
+
+    // Build a set of achievement types to attempt awarding
+    const toAward: string[] = [];
+
+    // Per-exercise achievements
+    const exerciseBest: Record<string, number> = {};
+    for (const p of progress.exerciseProgress || []) {
+      exerciseBest[p.exercise_id] = p.best_score || 0;
+    }
+
+    for (const [exerciseId, best] of Object.entries(exerciseBest)) {
+      if (best >= 60) toAward.push(`exercise:${exerciseId}:bronze`);
+      if (best >= 80) toAward.push(`exercise:${exerciseId}:silver`);
+      if (best >= 95) toAward.push(`exercise:${exerciseId}:gold`);
+    }
+
+    // Total score achievements (percent of max)
+    const totalMax = (progress.totalExercises || exercises.length) * 100;
+    const totalSum = (progress.exerciseProgress || []).reduce((s: number, p: any) => s + (p.best_score || 0), 0);
+    const totalPct = totalMax > 0 ? totalSum / totalMax : 0;
+    if (totalPct >= 0.25) toAward.push("total:bronze");
+    if (totalPct >= 0.6) toAward.push("total:silver");
+    if (totalPct >= 0.9) toAward.push("total:gold");
+
+    // Days fully completed
+    const days = progress.daysFullyCompleted || 0;
+    if (days >= 1) toAward.push("days:1");
+    if (days >= 7) toAward.push("days:7");
+    if (days >= 30) toAward.push("days:30");
+
+    // Streak achievements
+    const streak = progress.streaks?.current_streak || 0;
+    if (streak >= 3) toAward.push("streak:3");
+    if (streak >= 7) toAward.push("streak:7");
+    if (streak >= 30) toAward.push("streak:30");
+
+    // Insert achievements (ignore duplicates)
+    for (const achievement of toAward) {
+      try {
+        await supabase.from("achievements").insert([{ user_id: user.id, achievement_type: achievement }]);
+        const names: Record<string, string> = {};
+        names["total:gold"] = "Total Score — Gold";
+        names["total:silver"] = "Total Score — Silver";
+        names["total:bronze"] = "Total Score — Bronze";
+
+        if (!settings || settings.notifications?.achievementAlerts) {
+          toast.success("Achievement Unlocked!", { description: names[achievement] || achievement });
+        }
+      } catch (e) {
+        // already exists or failed, ignore
+      }
+    }
+  }, [user, settings]);
+
+  // Backwards-compatible wrapper used elsewhere
   const checkAchievements = useCallback(async (streak: number, totalCompleted: number) => {
     if (!user) return;
     const achievements: string[] = [];
@@ -229,11 +303,7 @@ export function useProgress() {
 
     for (const achievement of achievements) {
       try {
-        await supabase.from("achievements").insert([{
-          user_id: user.id,
-          achievement_type: achievement,
-        }]);
-        
+        await supabase.from("achievements").insert([{ user_id: user.id, achievement_type: achievement }]);
         const achievementNames: Record<string, string> = {
           first_exercise: "First Steps",
           ten_exercises: "Getting Started",

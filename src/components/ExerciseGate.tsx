@@ -5,6 +5,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Lock, Crown } from "lucide-react";
 import { MainLayout } from "@/components/layout/MainLayout";
+import { LanguageSelector } from "@/components/LanguageSelector";
 
 interface ExerciseGateProps {
   exerciseId: string;
@@ -57,28 +58,29 @@ export function ExerciseGate({ exerciseId, children }: ExerciseGateProps) {
 
   if (canAccess === false) {
     return (
-      <MainLayout>
-        <div className="flex flex-col items-center justify-center min-h-[60vh] px-6">
-          <div className="max-w-md text-center">
+      <div className="min-h-screen gradient-surface">
+        <div className="fixed top-4 right-4 z-50">
+          <LanguageSelector />
+        </div>
+
+        <main className="min-h-screen px-6">
+          <div className="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center text-center">
             <div className="mb-6 inline-flex h-20 w-20 items-center justify-center rounded-full bg-muted">
               <Lock className="h-10 w-10 text-muted-foreground" />
             </div>
             <h1 className="mb-3 font-display text-2xl text-foreground">Daily Limit Reached</h1>
-            <p className="text-muted-foreground mb-6">
+            <p className="mb-6 text-muted-foreground">
               You've used your free attempt for this exercise today. Upgrade to Premium for unlimited access to all exercises!
             </p>
-            <div className="space-y-3">
+            <div className="w-full space-y-3">
               <Button
                 className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90"
                 onClick={() => navigate("/subscription")}
               >
-                <Crown className="h-4 w-4 mr-2" />
+                <Crown className="mr-2 h-4 w-4" />
                 Upgrade to Premium
               </Button>
-              <Button
-                variant="outline"
-                className="w-full"
-                onClick={() => navigate("/")}
+              <Button variant="outline" className="w-full" onClick={() => navigate("/")}
               >
                 Try Another Exercise
               </Button>
@@ -87,8 +89,8 @@ export function ExerciseGate({ exerciseId, children }: ExerciseGateProps) {
               Free users can attempt each exercise once per day. Premium unlocks unlimited attempts.
             </p>
           </div>
-        </div>
-      </MainLayout>
+        </main>
+      </div>
     );
   }
 

@@ -66,9 +66,23 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
       }
 
       // Check Stripe subscription via edge function
-      const { data, error } = await supabase.functions.invoke("check-subscription");
+      // Use the user's access token so the edge function can identify the Supabase user
+      const { data: sessionData } = await supabase.auth.getSession();
+      const token = sessionData?.session?.access_token;
+      if (!token) {
+        console.warn("No access token available for subscription check");
+        setIsSubscribed(false);
+        setPlanType("free");
+        setLoading(false);
+        return;
+      }
+
+      const { data, error } = await supabase.functions.invoke("check-subscription", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
 
       if (error) {
+        // If the edge function returns 401, the token might be invalid/expired — don't crash the app
         console.error("Error checking subscription:", error);
         setIsSubscribed(false);
         setPlanType("free");

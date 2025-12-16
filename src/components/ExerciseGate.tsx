@@ -58,33 +58,35 @@ export function ExerciseGate({ exerciseId, children }: ExerciseGateProps) {
   if (canAccess === false) {
     return (
       <MainLayout>
-        <div className="mx-auto max-w-lg px-6 py-16 text-center">
-          <div className="mb-6 inline-flex h-20 w-20 items-center justify-center rounded-full bg-muted">
-            <Lock className="h-10 w-10 text-muted-foreground" />
+        <div className="flex flex-col items-center justify-center min-h-[60vh] px-6">
+          <div className="max-w-md text-center">
+            <div className="mb-6 inline-flex h-20 w-20 items-center justify-center rounded-full bg-muted">
+              <Lock className="h-10 w-10 text-muted-foreground" />
+            </div>
+            <h1 className="mb-3 font-display text-2xl text-foreground">Daily Limit Reached</h1>
+            <p className="text-muted-foreground mb-6">
+              You've used your free attempt for this exercise today. Upgrade to Premium for unlimited access to all exercises!
+            </p>
+            <div className="space-y-3">
+              <Button
+                className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90"
+                onClick={() => navigate("/subscription")}
+              >
+                <Crown className="h-4 w-4 mr-2" />
+                Upgrade to Premium
+              </Button>
+              <Button
+                variant="outline"
+                className="w-full"
+                onClick={() => navigate("/")}
+              >
+                Try Another Exercise
+              </Button>
+            </div>
+            <p className="mt-6 text-xs text-muted-foreground">
+              Free users can attempt each exercise once per day. Premium unlocks unlimited attempts.
+            </p>
           </div>
-          <h1 className="mb-3 font-display text-2xl text-foreground">Daily Limit Reached</h1>
-          <p className="text-muted-foreground mb-6">
-            You've used your free attempt for this exercise today. Upgrade to Premium for unlimited access to all exercises!
-          </p>
-          <div className="space-y-3">
-            <Button
-              className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90"
-              onClick={() => navigate("/subscription")}
-            >
-              <Crown className="h-4 w-4 mr-2" />
-              Upgrade to Premium
-            </Button>
-            <Button
-              variant="outline"
-              className="w-full"
-              onClick={() => navigate("/")}
-            >
-              Try Another Exercise
-            </Button>
-          </div>
-          <p className="mt-6 text-xs text-muted-foreground">
-            Free users can attempt each exercise once per day. Premium unlocks unlimited attempts.
-          </p>
         </div>
       </MainLayout>
     );

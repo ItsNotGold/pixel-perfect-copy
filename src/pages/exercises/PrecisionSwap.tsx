@@ -222,134 +222,114 @@ export default function PrecisionSwap() {
   };
 
   return (
-    <ExerciseGate exerciseId="precision-swap">
     <MainLayout>
-      <div className="mx-auto max-w-3xl px-6 py-12">
-        <div className="mb-8 text-center animate-fade-in">
-          <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 shadow-lg">
-            <Target className="h-7 w-7 text-primary-foreground" />
-          </div>
-          <h1 className="mb-2 font-display text-3xl text-foreground">Precision Swap</h1>
-          <p className="text-muted-foreground">Replace vague words with precise alternatives</p>
-        </div>
-
-        <div className="mb-8 grid grid-cols-3 gap-4 animate-slide-up">
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
-              <Trophy className="h-5 w-5" />
-              {score}
+      <ExerciseGate exerciseId="precision-swap">
+        <div className="mx-auto max-w-3xl px-6 py-12">
+          <div className="mb-8 text-center animate-fade-in">
+            <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 shadow-lg">
+              <Target className="h-7 w-7 text-primary-foreground" />
             </div>
-            <div className="text-xs text-muted-foreground">Score</div>
+            <h1 className="mb-2 font-display text-3xl text-foreground">Precision Swap</h1>
+            <p className="text-muted-foreground">Replace vague words with precise alternatives</p>
           </div>
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="flex items-center justify-center gap-2 text-2xl font-bold text-accent">
-              <Zap className="h-5 w-5" />
-              {streak}
+
+          <div className="mb-8 grid grid-cols-3 gap-4 animate-slide-up">
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
+                <Trophy className="h-5 w-5" />
+                {score}
+              </div>
+              <div className="text-xs text-muted-foreground">Score</div>
             </div>
-            <div className="text-xs text-muted-foreground">Streak</div>
-          </div>
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="text-2xl font-bold text-foreground">
-              {completed}/{shuffledChallenges.length}
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="flex items-center justify-center gap-2 text-2xl font-bold text-accent">
+                <Zap className="h-5 w-5" />
+                {streak}
+              </div>
+              <div className="text-xs text-muted-foreground">Streak</div>
             </div>
-            <div className="text-xs text-muted-foreground">Completed</div>
-          </div>
-        </div>
-
-        <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
-          <div className="mb-6 h-2 overflow-hidden rounded-full bg-muted">
-            <div
-              className="h-full gradient-hero transition-all duration-500"
-              style={{ width: `${((currentIndex + 1) / shuffledChallenges.length) * 100}%` }}
-            />
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="text-2xl font-bold text-foreground">
+                {completed}/{shuffledChallenges.length}
+              </div>
+              <div className="text-xs text-muted-foreground">Completed</div>
+            </div>
           </div>
 
-          <div className="mb-8 rounded-xl bg-muted/50 p-6 text-center">
-            <p className="text-xl leading-relaxed text-foreground">
-              {renderSentence()}
-            </p>
-          </div>
+          <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
+            <div className="mb-6 h-2 overflow-hidden rounded-full bg-muted">
+              <div
+                className="h-full gradient-hero transition-all duration-500"
+                style={{ width: `${((currentIndex + 1) / shuffledChallenges.length) * 100}%` }}
+              />
+            </div>
 
-          <div className="mb-6 grid grid-cols-2 gap-3">
-            {currentChallenge?.options.map((option) => (
-              <button
-                key={option.word}
-                onClick={() => handleSelect(option.word)}
-                disabled={showResult}
-                className={cn(
-                  "relative rounded-xl border-2 p-4 text-left transition-all duration-200",
-                  getOptionStyle(option.word)
-                )}
-              >
-                <span className="font-medium text-foreground">{option.word}</span>
-                
-                {showResult && (
-                  <span className="absolute right-3 top-1/2 -translate-y-1/2">
-                    {option.score === 100 ? (
-                      <CheckCircle2 className="h-5 w-5 text-emerald-500" />
-                    ) : option.score >= 85 ? (
-                      <Sparkles className="h-5 w-5 text-amber-500" />
-                    ) : selectedOption === option.word ? (
-                      <XCircle className="h-5 w-5 text-amber-500" />
-                    ) : null}
-                  </span>
-                )}
-              </button>
-            ))}
-          </div>
+            <div className="mb-8 rounded-xl bg-muted/50 p-6 text-center">
+              <p className="text-xl leading-relaxed text-foreground">{renderSentence()}</p>
+            </div>
 
-          {showResult && currentChallenge && (
-            <div className="mb-6 rounded-xl bg-primary/5 border border-primary/20 p-4 animate-slide-up">
-              <div className="flex items-start gap-3">
-                <Sparkles className="mt-0.5 h-5 w-5 text-primary shrink-0" />
-                <div>
-                  <div className="font-medium text-foreground mb-1">
-                    Best answer: <span className="text-primary">{currentChallenge.bestAnswer}</span>
+            <div className="mb-6 grid grid-cols-2 gap-3">
+              {currentChallenge?.options.map((option) => (
+                <button
+                  key={option.word}
+                  onClick={() => handleSelect(option.word)}
+                  disabled={showResult}
+                  className={cn(
+                    "relative rounded-xl border-2 p-4 text-left transition-all duration-200",
+                    getOptionStyle(option.word)
+                  )}
+                >
+                  <span className="font-medium text-foreground">{option.word}</span>
+
+                  {showResult && (
+                    <span className="absolute right-3 top-1/2 -translate-y-1/2">
+                      {option.score === 100 ? (
+                        <CheckCircle2 className="h-5 w-5 text-emerald-500" />
+                      ) : option.score >= 85 ? (
+                        <Sparkles className="h-5 w-5 text-amber-500" />
+                      ) : selectedOption === option.word ? (
+                        <XCircle className="h-5 w-5 text-amber-500" />
+                      ) : null}
+                    </span>
+                  )}
+                </button>
+              ))}
+            </div>
+
+            {showResult && currentChallenge && (
+              <div className="mb-6 rounded-xl bg-primary/5 border border-primary/20 p-4 animate-slide-up">
+                <div className="flex items-start gap-3">
+                  <Sparkles className="mt-0.5 h-5 w-5 text-primary shrink-0" />
+                  <div>
+                    <div className="font-medium text-foreground mb-1">
+                      Best answer: <span className="text-primary">{currentChallenge.bestAnswer}</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">{currentChallenge.explanation}</p>
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    {currentChallenge.explanation}
-                  </p>
                 </div>
               </div>
-            </div>
-          )}
-
-          <div className="flex gap-3">
-            {!showResult ? (
-              <Button
-                variant="hero"
-                size="lg"
-                className="flex-1"
-                onClick={handleSubmit}
-                disabled={!selectedOption}
-              >
-                Check Answer
-              </Button>
-            ) : currentIndex < shuffledChallenges.length - 1 ? (
-              <Button
-                variant="hero"
-                size="lg"
-                className="flex-1"
-                onClick={handleNext}
-              >
-                Next Challenge
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            ) : (
-              <Button
-                variant="accent"
-                size="lg"
-                className="flex-1"
-                onClick={handleRestart}
-              >
-                <RotateCcw className="mr-2 h-4 w-4" />
-                Play Again
-              </Button>
             )}
+
+            <div className="flex gap-3">
+              {!showResult ? (
+                <Button variant="hero" size="lg" className="flex-1" onClick={handleSubmit} disabled={!selectedOption}>
+                  Check Answer
+                </Button>
+              ) : currentIndex < shuffledChallenges.length - 1 ? (
+                <Button variant="hero" size="lg" className="flex-1" onClick={handleNext}>
+                  Next Challenge
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              ) : (
+                <Button variant="accent" size="lg" className="flex-1" onClick={handleRestart}>
+                  <RotateCcw className="mr-2 h-4 w-4" />
+                  Play Again
+                </Button>
+              )}
+            </div>
           </div>
         </div>
-      </div>
+      </ExerciseGate>
     </MainLayout>
-    </ExerciseGate>
   );
 }

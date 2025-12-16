@@ -200,175 +200,173 @@ export default function FillerWordEliminator() {
   const score = aiFeedback?.score || Math.max(0, 100 - totalFillers * 10);
 
   return (
-    <ExerciseGate exerciseId="filler-word-eliminator">
     <MainLayout>
-      <div className="mx-auto max-w-3xl px-6 py-12">
-        <div className="mb-8 text-center animate-fade-in">
-          <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-rose-500 to-pink-500 shadow-lg">
-            <MessageCircle className="h-7 w-7 text-primary-foreground" />
-          </div>
-          <h1 className="mb-2 font-display text-3xl text-foreground">Filler Word Eliminator</h1>
-          <p className="text-muted-foreground">Practice speaking without fillers</p>
-        </div>
-
-        <div className="mb-8 flex items-center justify-center gap-6 animate-slide-up">
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
-              <Trophy className="h-5 w-5" />
-              {isComplete ? score : "--"}
+      <ExerciseGate exerciseId="filler-word-eliminator">
+        <div className="mx-auto max-w-3xl px-6 py-12">
+          <div className="mb-8 text-center animate-fade-in">
+            <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-rose-500 to-pink-500 shadow-lg">
+              <MessageCircle className="h-7 w-7 text-primary-foreground" />
             </div>
-            <div className="text-xs text-muted-foreground">Score</div>
-          </div>
-          <div className="rounded-xl glass p-4 text-center">
-            <div className="text-2xl font-bold text-foreground">{totalAttempts}</div>
-            <div className="text-xs text-muted-foreground">Attempts</div>
-          </div>
-        </div>
-
-        <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
-          {/* Voice toggle */}
-          {!isActive && !isComplete && (
-            <div className="mb-6 flex justify-center">
-              <button
-                onClick={() => setUseVoice(!useVoice)}
-                className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all ${
-                  useVoice 
-                    ? "bg-primary text-primary-foreground" 
-                    : "bg-muted text-muted-foreground hover:bg-muted/80"
-                }`}
-              >
-                {useVoice ? <Mic className="h-4 w-4" /> : <MicOff className="h-4 w-4" />}
-                {useVoice ? "Voice Input On" : "Voice Input Off"}
-              </button>
-            </div>
-          )}
-
-          <div className="mb-6 text-center">
-            <div className="text-sm text-muted-foreground mb-2">Your topic:</div>
-            <div className="inline-block rounded-xl bg-muted px-6 py-3">
-              <span className="text-lg font-medium text-foreground">{currentTopic}</span>
-            </div>
+            <h1 className="mb-2 font-display text-3xl text-foreground">Filler Word Eliminator</h1>
+            <p className="text-muted-foreground">Practice speaking without fillers</p>
           </div>
 
-          <div className="mb-6 text-center">
-            <div className={`text-5xl font-bold tabular-nums ${timeLeft <= 10 ? "text-destructive" : "text-foreground"}`}>
-              {Math.floor(timeLeft / 60)}:{(timeLeft % 60).toString().padStart(2, "0")}
-            </div>
-            <div className="text-sm text-muted-foreground mt-1">
-              {isActive ? (useVoice && isVoiceRecording ? "🔴 Recording..." : "Speaking...") : "Ready to start"}
-            </div>
-          </div>
-
-          <div className="mb-6">
-            {useVoice ? (
-              <div className="min-h-[150px] rounded-lg border bg-muted/30 p-4">
-                <p className="text-foreground whitespace-pre-wrap">
-                  {voiceTranscript || (isActive ? "Start speaking..." : "Your speech will appear here...")}
-                </p>
+          <div className="mb-8 flex items-center justify-center gap-6 animate-slide-up">
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
+                <Trophy className="h-5 w-5" />
+                {isComplete ? score : "--"}
               </div>
-            ) : (
-              <>
-                <label className="text-sm font-medium text-foreground mb-2 block">
-                  Type what you would say:
-                </label>
-                <Textarea
-                  placeholder="Start typing your response here... Include any filler words you might naturally use."
-                  value={manualTranscript}
-                  onChange={(e) => setManualTranscript(e.target.value)}
-                  disabled={!isActive}
-                  className="min-h-[150px]"
-                />
-              </>
+              <div className="text-xs text-muted-foreground">Score</div>
+            </div>
+            <div className="rounded-xl glass p-4 text-center">
+              <div className="text-2xl font-bold text-foreground">{totalAttempts}</div>
+              <div className="text-xs text-muted-foreground">Attempts</div>
+            </div>
+          </div>
+
+          <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
+            {/* Voice toggle */}
+            {!isActive && !isComplete && (
+              <div className="mb-6 flex justify-center">
+                <button
+                  onClick={() => setUseVoice(!useVoice)}
+                  className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all ${
+                    useVoice
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-muted text-muted-foreground hover:bg-muted/80"
+                  }`}
+                >
+                  {useVoice ? <Mic className="h-4 w-4" /> : <MicOff className="h-4 w-4" />}
+                  {useVoice ? "Voice Input On" : "Voice Input Off"}
+                </button>
+              </div>
             )}
-          </div>
 
-          {isAnalyzing && (
-            <div className="mb-6 flex items-center justify-center gap-2 text-muted-foreground">
-              <Loader2 className="h-5 w-5 animate-spin" />
-              <span>Analyzing speech...</span>
-            </div>
-          )}
-
-          {isComplete && (
-            <div className="mb-6 rounded-xl bg-muted/50 p-4 animate-slide-up">
-              <div className="flex items-center gap-2 mb-3">
-                <AlertTriangle className="h-5 w-5 text-amber-500" />
-                <span className="font-medium text-foreground">Filler Words Detected:</span>
+            <div className="mb-6 text-center">
+              <div className="text-sm text-muted-foreground mb-2">Your topic:</div>
+              <div className="inline-block rounded-xl bg-muted px-6 py-3">
+                <span className="text-lg font-medium text-foreground">{currentTopic}</span>
               </div>
-              {totalFillers === 0 ? (
-                <p className="text-emerald-600 dark:text-emerald-400">No filler words found! Excellent!</p>
-              ) : (
-                <div className="flex flex-wrap gap-2">
-                  {Object.entries(fillerCount).map(([word, count]) => (
-                    <span
-                      key={word}
-                      className="inline-flex items-center gap-1 rounded-full bg-amber-100 dark:bg-amber-900/30 px-3 py-1 text-sm text-amber-800 dark:text-amber-200"
-                    >
-                      "{word}" × {count}
-                    </span>
-                  ))}
+            </div>
+
+            <div className="mb-6 text-center">
+              <div className={`text-5xl font-bold tabular-nums ${timeLeft <= 10 ? "text-destructive" : "text-foreground"}`}>
+                {Math.floor(timeLeft / 60)}:{(timeLeft % 60).toString().padStart(2, "0")}
+              </div>
+              <div className="text-sm text-muted-foreground mt-1">
+                {isActive ? (useVoice && isVoiceRecording ? "🔴 Recording..." : "Speaking...") : "Ready to start"}
+              </div>
+            </div>
+
+            <div className="mb-6">
+              {useVoice ? (
+                <div className="min-h-[150px] rounded-lg border bg-muted/30 p-4">
+                  <p className="text-foreground whitespace-pre-wrap">
+                    {voiceTranscript || (isActive ? "Start speaking..." : "Your speech will appear here...")}
+                  </p>
                 </div>
+              ) : (
+                <>
+                  <label className="text-sm font-medium text-foreground mb-2 block">Type what you would say:</label>
+                  <Textarea
+                    placeholder="Start typing your response here... Include any filler words you might naturally use."
+                    value={manualTranscript}
+                    onChange={(e) => setManualTranscript(e.target.value)}
+                    disabled={!isActive}
+                    className="min-h-[150px]"
+                  />
+                </>
               )}
             </div>
-          )}
 
-          {aiFeedback?.feedback && (
-            <div className="mb-6 rounded-xl bg-primary/5 border border-primary/20 p-4 animate-slide-up">
-              <div className="flex items-center gap-2 mb-2">
-                <Sparkles className="h-5 w-5 text-primary" />
-                <span className="font-medium text-foreground">AI Feedback</span>
+            {isAnalyzing && (
+              <div className="mb-6 flex items-center justify-center gap-2 text-muted-foreground">
+                <Loader2 className="h-5 w-5 animate-spin" />
+                <span>Analyzing speech...</span>
               </div>
-              <p className="text-sm text-muted-foreground">{aiFeedback.feedback}</p>
-            </div>
-          )}
-
-          {isComplete && useVoice && audioUrl && (
-            <div className="mb-6 rounded-xl bg-muted/50 p-4 animate-slide-up">
-              <div className="flex items-center gap-2 mb-3">
-                <Play className="h-5 w-5 text-primary" />
-                <span className="font-medium text-foreground">Listen to Your Recording</span>
-              </div>
-              <audio controls className="w-full">
-                <source src={audioUrl} type="audio/webm" />
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          )}
-
-          <div className="flex gap-3">
-            {!isActive && !isComplete && (
-              <Button variant="hero" size="lg" className="flex-1" onClick={startSession}>
-                <Play className="mr-2 h-4 w-4" />
-                {useVoice ? "Start Recording" : "Start Speaking"}
-              </Button>
             )}
-            {isActive && (
-              <Button variant="destructive" size="lg" className="flex-1" onClick={stopSession}>
-                <Square className="mr-2 h-4 w-4" />
-                Stop & Analyze
-              </Button>
-            )}
+
             {isComplete && (
-              <Button variant="accent" size="lg" className="flex-1" onClick={handleRestart}>
-                <RotateCcw className="mr-2 h-4 w-4" />
-                Try Again
-              </Button>
+              <div className="mb-6 rounded-xl bg-muted/50 p-4 animate-slide-up">
+                <div className="flex items-center gap-2 mb-3">
+                  <AlertTriangle className="h-5 w-5 text-amber-500" />
+                  <span className="font-medium text-foreground">Filler Words Detected:</span>
+                </div>
+                {totalFillers === 0 ? (
+                  <p className="text-emerald-600 dark:text-emerald-400">No filler words found! Excellent!</p>
+                ) : (
+                  <div className="flex flex-wrap gap-2">
+                    {Object.entries(fillerCount).map(([word, count]) => (
+                      <span
+                        key={word}
+                        className="inline-flex items-center gap-1 rounded-full bg-amber-100 dark:bg-amber-900/30 px-3 py-1 text-sm text-amber-800 dark:text-amber-200"
+                      >
+                        "{word}" × {count}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
             )}
-          </div>
-        </div>
 
-        <div className="mt-8 rounded-xl glass p-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          <h3 className="mb-3 font-display text-lg text-foreground">Filler Words to Avoid</h3>
-          <div className="flex flex-wrap gap-2">
-            {fillerWords.map((word) => (
-              <span key={word} className="rounded-full bg-muted px-3 py-1 text-sm text-muted-foreground">
-                {word}
-              </span>
-            ))}
+            {aiFeedback?.feedback && (
+              <div className="mb-6 rounded-xl bg-primary/5 border border-primary/20 p-4 animate-slide-up">
+                <div className="flex items-center gap-2 mb-2">
+                  <Sparkles className="h-5 w-5 text-primary" />
+                  <span className="font-medium text-foreground">AI Feedback</span>
+                </div>
+                <p className="text-sm text-muted-foreground">{aiFeedback.feedback}</p>
+              </div>
+            )}
+
+            {isComplete && useVoice && audioUrl && (
+              <div className="mb-6 rounded-xl bg-muted/50 p-4 animate-slide-up">
+                <div className="flex items-center gap-2 mb-3">
+                  <Play className="h-5 w-5 text-primary" />
+                  <span className="font-medium text-foreground">Listen to Your Recording</span>
+                </div>
+                <audio controls className="w-full">
+                  <source src={audioUrl} type="audio/webm" />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            )}
+
+            <div className="flex gap-3">
+              {!isActive && !isComplete && (
+                <Button variant="hero" size="lg" className="flex-1" onClick={startSession}>
+                  <Play className="mr-2 h-4 w-4" />
+                  {useVoice ? "Start Recording" : "Start Speaking"}
+                </Button>
+              )}
+              {isActive && (
+                <Button variant="destructive" size="lg" className="flex-1" onClick={stopSession}>
+                  <Square className="mr-2 h-4 w-4" />
+                  Stop & Analyze
+                </Button>
+              )}
+              {isComplete && (
+                <Button variant="accent" size="lg" className="flex-1" onClick={handleRestart}>
+                  <RotateCcw className="mr-2 h-4 w-4" />
+                  Try Again
+                </Button>
+              )}
+            </div>
+          </div>
+
+          <div className="mt-8 rounded-xl glass p-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <h3 className="mb-3 font-display text-lg text-foreground">Filler Words to Avoid</h3>
+            <div className="flex flex-wrap gap-2">
+              {fillerWords.map((word) => (
+                <span key={word} className="rounded-full bg-muted px-3 py-1 text-sm text-muted-foreground">
+                  {word}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </ExerciseGate>
     </MainLayout>
-    </ExerciseGate>
   );
 }

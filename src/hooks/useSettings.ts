@@ -18,6 +18,10 @@ export type SettingsShape = {
   appearance?: {
     theme: "light" | "dark";
   };
+  profile?: {
+    selectedBadges?: string[];
+    bio?: string;
+  };
 };
 
 export const DEFAULT_SETTINGS: SettingsShape = {
@@ -25,6 +29,7 @@ export const DEFAULT_SETTINGS: SettingsShape = {
   audio: { soundEffects: true, voiceFeedback: false },
   notifications: { streakReminders: true, achievementAlerts: true },
   appearance: { theme: "light" },
+  profile: { selectedBadges: [], bio: "" },
 };
 
 const LOCAL_KEY = "verbflow_settings";

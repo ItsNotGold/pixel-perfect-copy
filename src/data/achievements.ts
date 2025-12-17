@@ -93,3 +93,26 @@ export const TOTAL_THRESHOLDS = { bronze: 0.25, silver: 0.6, gold: 0.9 };
 export const DAYS_THRESHOLDS = { "days:1": 1, "days:7": 7, "days:30": 30 };
 
 export default achievementDefs;
+
+export type AchievementLevel = "bronze" | "silver" | "gold" | null;
+
+export function parseAchievementId(id: string) {
+  // e.g. exercise:precision-swap:gold or total:gold or days:7
+  const parts = id.split(":");
+  return { namespace: parts[0] || null, key: parts[1] || null, level: parts[2] || null };
+}
+
+export const LEVEL_ORDER: AchievementLevel[] = ["bronze", "silver", "gold"];
+
+export function highestLevelFromTypes(types: string[]) {
+  // Given ['exercise:precision-swap:bronze', 'exercise:precision-swap:silver'] -> 'silver'
+  const levels: Set<string> = new Set();
+  for (const t of types) {
+    const p = parseAchievementId(t);
+    if (p.level) levels.add(p.level);
+  }
+  if (levels.has("gold")) return "gold" as AchievementLevel;
+  if (levels.has("silver")) return "silver" as AchievementLevel;
+  if (levels.has("bronze")) return "bronze" as AchievementLevel;
+  return null;
+}

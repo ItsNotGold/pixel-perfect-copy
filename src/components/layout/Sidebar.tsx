@@ -12,6 +12,8 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/hooks/useAuth";
+import { useSettings } from "@/hooks/useSettings";
+import { parseAchievementId } from "@/data/achievements";
 
 import { Avatar } from "@/components/ui/avatar";
 
@@ -19,6 +21,23 @@ export function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const location = useLocation();
   const { user, signOut } = useAuth();
+  const { settings } = useSettings();
+  const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
+
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      if (!user) return;
+      try {
+        const { data } = await (supabase as any).from('profiles').select('avatar_url').eq('user_id', user.id).maybeSingle();
+        if (!mounted) return;
+        setAvatarUrl(data?.avatar_url || null);
+      } catch (err) {
+        // ignore
+      }
+    })();
+    return () => { mounted = false; };
+  }, [user]);
 
   return (
     <aside
@@ -138,11 +157,25 @@ export function Sidebar() {
               <div className="flex items-center gap-3">
                 <Link to="/account" className="flex items-center gap-3 flex-1">
                   <Avatar className="h-8 w-8">
-                    <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center text-sm">{user?.user_metadata?.display_name?.[0] || user?.email?.[0]}</div>
+                    {avatarUrl ? (
+                      <img src={avatarUrl} alt="avatar" className="h-8 w-8 rounded-full object-cover" />
+                    ) : (
+                      <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center text-sm">{user?.user_metadata?.display_name?.[0] || user?.email?.[0]}</div>
+                    )}
                   </Avatar>
                   {!isCollapsed && (
                     <div className="flex-1 min-w-0">
                       <div className="text-sm font-medium truncate">{user.user_metadata?.display_name || user.email}</div>
+                      {settings?.profile?.selectedBadges?.length ? (
+                        <div className="mt-1 flex items-center gap-2">
+                          {settings.profile.selectedBadges.slice(0, 3).map((id) => {
+                            const p = parseAchievementId(id);
+                            const level = p.level || '';
+                            const color = level === 'gold' ? 'bg-yellow-300' : level === 'silver' ? 'bg-slate-300' : level === 'bronze' ? 'bg-amber-300' : 'bg-muted';
+                            return <div key={id} className={`h-4 w-4 rounded-full ${color} ring-1 ring-offset-1`} title={id} />;
+                          })}
+                        </div>
+                      ) : null}
                     </div>
                   )}
                 </Link>

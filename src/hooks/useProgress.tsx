@@ -79,13 +79,26 @@ export function useProgress() {
 
     // aggregate progress rows across languages so each exercise is represented once
     const rawProgress = progressResult.data || [];
-    // compute best percent per exercise from recent attempts to help normalize legacy user_progress values
-    const attempts = recentAttempts || [];
+    // compute best percent per exercise from ALL attempts to avoid missing older high scores
     const bestFromAttempts: Record<string, number> = {};
-    for (const a of attempts) {
-      const id = a.exercise_id;
-      const percent = a.max_score && a.max_score > 0 ? Math.round((a.score / a.max_score) * 100) : 0;
-      bestFromAttempts[id] = Math.max(bestFromAttempts[id] || 0, percent);
+    try {
+      const { data: allAttempts } = await supabase
+        .from("exercise_attempts")
+        .select("exercise_id, score, max_score")
+        .eq("user_id", user.id);
+      for (const a of (allAttempts || [])) {
+        const id = a.exercise_id;
+        const percent = a.max_score && a.max_score > 0 ? Math.round((a.score / a.max_score) * 100) : 0;
+        bestFromAttempts[id] = Math.max(bestFromAttempts[id] || 0, percent);
+      }
+    } catch (err) {
+      // Fallback to recent attempts when an error occurs
+      const attempts = recentAttempts || [];
+      for (const a of attempts) {
+        const id = a.exercise_id;
+        const percent = a.max_score && a.max_score > 0 ? Math.round((a.score / a.max_score) * 100) : 0;
+        bestFromAttempts[id] = Math.max(bestFromAttempts[id] || 0, percent);
+      }
     }
     const aggregated: Record<string, any> = {};
     for (const p of rawProgress) {

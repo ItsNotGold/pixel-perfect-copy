@@ -70,7 +70,7 @@ export function ExerciseGate({ exerciseId, children }: ExerciseGateProps) {
             </div>
             <h1 className="mb-3 font-display text-2xl text-foreground">Daily Limit Reached</h1>
             <p className="mb-6 text-muted-foreground">
-              You've used your free attempt for this exercise today. Upgrade to Premium for unlimited access to all exercises!
+              You've used your free attempts for this exercise today. Upgrade to Premium for unlimited access to all exercises!
             </p>
             <div className="w-full space-y-3">
               <Button
@@ -86,7 +86,7 @@ export function ExerciseGate({ exerciseId, children }: ExerciseGateProps) {
               </Button>
             </div>
             <p className="mt-6 text-xs text-muted-foreground">
-              Free users can attempt each exercise once per day. Premium unlocks unlimited attempts.
+              Free users can attempt each exercise up to 5 times per day. Premium unlocks unlimited attempts.
             </p>
           </div>
         </main>

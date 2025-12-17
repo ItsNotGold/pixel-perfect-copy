@@ -125,13 +125,15 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
     return count || 0;
   };
 
+  const MAX_FREE_ATTEMPTS_PER_EXERCISE = 5;
+
   const canAttemptExercise = async (exerciseId: string): Promise<boolean> => {
     // Premium users and admins can always attempt
     if (isSubscribed || isAdmin) return true;
 
-    // Free users: check if they've already attempted this exercise today
+    // Free users: check attempts today and allow up to MAX_FREE_ATTEMPTS_PER_EXERCISE
     const count = await getTodayAttemptCount(exerciseId);
-    return count < 1;
+    return count < MAX_FREE_ATTEMPTS_PER_EXERCISE;
   };
 
   useEffect(() => {

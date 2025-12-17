@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VerbFlow - Master Communication Skills</title>
-    <meta name="description" content="Transform your communication skills with 10 interactive exercises. Build vocabulary, eliminate filler words, sharpen word choice, and become a confident communicator." />
+      <meta name="description" content="Transform your communication skills with 5 interactive exercises. Build vocabulary agility and become a confident communicator." />
     <meta name="author" content="VerbFlow" />
 
     <meta property="og:title" content="VerbFlow - Master Communication Skills" />
-    <meta property="og:description" content="Transform your communication skills with 10 interactive exercises. Build vocabulary agility and become a confident communicator." />
+    <meta property="og:description" content="Transform your communication skills with 5 interactive exercises. Build vocabulary agility and become a confident communicator." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
@@ -17,6 +17,26 @@
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
     <link rel="canonical" href="https://verbflow.app" />
+      <!-- Prevent theme flicker on initial load by applying saved preference or system preference before React hydrates -->
+      <script>
+        (function() {
+          try {
+            var local = localStorage.getItem('verbflow_settings');
+            var theme = null;
+            if (local) {
+              try { theme = JSON.parse(local)?.appearance?.theme; } catch (e) { theme = null; }
+            }
+            if (theme === 'dark') { document.documentElement.classList.add('dark'); return; }
+            if (theme === 'light') { document.documentElement.classList.remove('dark'); return; }
+            // system
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              document.documentElement.classList.add('dark');
+            }
+          } catch (e) {
+            // ignore
+          }
+        })();
+      </script>
   </head>
 
   <body>

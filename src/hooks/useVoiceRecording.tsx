@@ -67,9 +67,34 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
       }
 
       // Request microphone permission
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        toast.error("Microphone capture is not supported in this browser.");
+        return;
+      }
+
+      let stream: MediaStream;
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      } catch (err: any) {
+        // Show a clearer error message based on the error
+        if (err && (err.name === "NotAllowedError" || err.name === "SecurityError")) {
+          toast.error("Microphone access denied. Please allow microphone permissions in your browser.");
+        } else if (err && (err.name === "NotFoundError" || err.name === "DevicesNotFoundError")) {
+          toast.error("No microphone found. Please connect a microphone and try again.");
+        } else {
+          toast.error("Unable to access microphone. Check device settings and try again.");
+        }
+        console.error("getUserMedia error:", err);
+        return;
+      }
       
       // Set up MediaRecorder for audio capture
+      if (typeof MediaRecorder === "undefined") {
+        toast.error("Recording is not supported in this browser.");
+        stream.getTracks().forEach((t) => t.stop());
+        return;
+      }
+
       const mediaRecorder = new MediaRecorder(stream);
       mediaRecorderRef.current = mediaRecorder;
       chunksRef.current = [];
@@ -123,15 +148,24 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
         recognitionRef.current = null;
       }
       
-      // Start both recording and recognition
+      // Start the recorder and recognition (if available)
       mediaRecorder.start();
-      recognition.start();
+      if (recognitionRef.current) {
+        try { recognitionRef.current.start(); } catch (e) { console.warn('Speech recognition start failed', e); }
+      }
       setIsRecording(true);
       setTranscript("");
       
     } catch (error) {
       console.error("Error starting recording:", error);
-      toast.error("Failed to start recording. Please check microphone permissions.");
+      // Provide more actionable messages for common failure modes
+      if (error && (error as any).name === "NotAllowedError") {
+        toast.error("Microphone access denied. Please enable microphone permissions in your browser and reload the page.");
+      } else if (error && (error as any).name === "NotFoundError") {
+        toast.error("No microphone found. Connect a microphone and try again.");
+      } else {
+        toast.error("Failed to start recording. Check microphone permissions and try again.");
+      }
     }
   }, []);
 

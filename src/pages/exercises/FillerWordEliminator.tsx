@@ -37,8 +37,40 @@ export default function FillerWordEliminator() {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [aiFeedback, setAiFeedback] = useState<AIFeedback | null>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const playbackRef = useRef<HTMLAudioElement | null>(null);
+  const blobUrlRef = useRef<string | null>(null);
   const { user } = useAuth();
   const { saveAttempt } = useProgress();
+
+  // Helper to play a segment from the recorded audio (prefer uploaded audioUrl, fallback to local blob)
+  const playSegment = (start: number, end: number) => {
+    const src = audioUrl ?? (audioBlob ? (blobUrlRef.current ?? (blobUrlRef.current = URL.createObjectURL(audioBlob))) : null);
+    if (!src) {
+      toast.error("No audio available to play segment. Record or save your audio first.");
+      return;
+    }
+
+    let audioEl = playbackRef.current;
+    if (!audioEl) {
+      audioEl = new Audio(src);
+      playbackRef.current = audioEl;
+    } else if (audioEl.src !== src) {
+      audioEl.src = src;
+    }
+
+    // Safely seek and play for the duration of the segment
+    try {
+      audioEl.currentTime = Math.max(0, start);
+    } catch (e) {
+      console.warn("Failed to set audio currentTime", e);
+    }
+    audioEl.play();
+    const durationMs = Math.max(50, Math.round((end - start) * 1000));
+    setTimeout(() => {
+      audioEl.pause();
+    }, durationMs + 100);
+  };
+
 
   const transcript = useVoice ? voiceTranscript : manualTranscript;
   const fillerWords = fillerWordsMultilingual[language] || fillerWordsMultilingual.en;
@@ -368,7 +400,16 @@ export default function FillerWordEliminator() {
                         <div className="text-sm font-medium text-foreground">{p.type}</div>
                         <div className="text-xs text-muted-foreground">{p.start?.toFixed?.(2) ?? p.start}s → {p.end?.toFixed?.(2) ?? p.end}s ({Math.round((p.end - p.start || p.duration || 0) * 1000)} ms)</div>
                       </div>
-                      <div className="text-xs text-muted-foreground">conf: {p.confidence ?? "-"}</div>
+                      <div className="flex items-center gap-3">
+                        <button
+                          onClick={() => playSegment(p.start || 0, p.end || (p.start || 0) + (p.duration || 0.4))}
+                          className="inline-flex items-center justify-center rounded-full p-2 bg-muted/60 hover:bg-muted"
+                          aria-label={`Play segment starting at ${p.start}s`}
+                        >
+                          <Play className="h-4 w-4" />
+                        </button>
+                        <div className="text-xs text-muted-foreground">conf: {p.confidence ?? "-"}</div>
+                      </div>
                     </div>
                   ))}
                 </div>

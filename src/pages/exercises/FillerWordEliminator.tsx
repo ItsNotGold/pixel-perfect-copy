@@ -33,7 +33,7 @@ export default function FillerWordEliminator() {
   const [totalAttempts, setTotalAttempts] = useState(0);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [aiFeedback, setAiFeedback] = useState<AIFeedback | null>(null);
-  const timerRef = useRef<number | null>(null);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
   const { user } = useAuth();
   const { saveAttempt } = useProgress();
 
@@ -63,7 +63,7 @@ export default function FillerWordEliminator() {
       await startVoice(speechLanguageCode);
     }
 
-    timerRef.current = window.setInterval(() => {
+    timerRef.current = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev <= 1) {
           stopSession();

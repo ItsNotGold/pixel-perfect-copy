@@ -34,7 +34,7 @@ export default function SynonymSpeedChain() {
   const [isComplete, setIsComplete] = useState(false);
   const [attemptSaved, setAttemptSaved] = useState(false);
   const [shuffledChallenges, setShuffledChallenges] = useState<SynonymChallenge[]>([]);
-  const timerRef = useRef<number | null>(null);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const { user } = useAuth();
   const { saveAttempt } = useProgress();
@@ -62,7 +62,7 @@ export default function SynonymSpeedChain() {
     setScore(0);
     setTimeLeft(currentChallenge?.timeLimit || 30);
 
-    timerRef.current = window.setInterval(() => {
+    timerRef.current = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev <= 1) {
           endRound();

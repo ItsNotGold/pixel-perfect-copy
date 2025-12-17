@@ -1,19 +1,18 @@
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
-import { Bell, Volume2, Clock, User, Moon } from "lucide-react";
+import { Bell, Volume2, Clock, User } from "lucide-react";
 import { useSettings } from "@/hooks/useSettings";
+import { useEffect, useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
 import { useToast } from "@/hooks/use-toast";
 import { useNavigate } from "react-router-dom";
-import { useTheme } from "next-themes";
 
 export default function Settings() {
   const { user } = useAuth();
   const navigate = useNavigate();
-  const { settings, setSettings, save } = useSettings();
+  const { settings, setSettings, save, loading } = useSettings();
   const { toast } = useToast();
-  const { theme, setTheme } = useTheme();
 
   const update = async (mutator: (s: typeof settings) => typeof settings) => {
     const next = mutator(settings);
@@ -33,29 +32,8 @@ export default function Settings() {
 
         {/* Settings Sections */}
         <div className="space-y-6">
-          {/* Appearance */}
-          <div className="rounded-2xl glass p-6 animate-slide-up">
-            <h2 className="mb-4 font-display text-lg text-foreground flex items-center gap-2">
-              <Moon className="h-5 w-5 text-primary" />
-              Appearance
-            </h2>
-            
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="font-medium text-foreground">Dark Mode</div>
-                  <div className="text-sm text-muted-foreground">Switch between light and dark themes</div>
-                </div>
-                <Switch 
-                  checked={theme === "dark"} 
-                  onCheckedChange={(checked) => setTheme(checked ? "dark" : "light")} 
-                />
-              </div>
-            </div>
-          </div>
-
           {/* Practice Settings */}
-          <div className="rounded-2xl glass p-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+          <div className="rounded-2xl glass p-6 animate-slide-up">
             <h2 className="mb-4 font-display text-lg text-foreground flex items-center gap-2">
               <Clock className="h-5 w-5 text-primary" />
               Practice Settings
@@ -81,7 +59,7 @@ export default function Settings() {
           </div>
 
           {/* Audio Settings */}
-          <div className="rounded-2xl glass p-6 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+          <div className="rounded-2xl glass p-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
             <h2 className="mb-4 font-display text-lg text-foreground flex items-center gap-2">
               <Volume2 className="h-5 w-5 text-primary" />
               Audio
@@ -107,7 +85,7 @@ export default function Settings() {
           </div>
 
           {/* Notifications */}
-          <div className="rounded-2xl glass p-6 animate-slide-up" style={{ animationDelay: "0.3s" }}>
+          <div className="rounded-2xl glass p-6 animate-slide-up" style={{ animationDelay: "0.2s" }}>
             <h2 className="mb-4 font-display text-lg text-foreground flex items-center gap-2">
               <Bell className="h-5 w-5 text-primary" />
               Notifications
@@ -133,7 +111,7 @@ export default function Settings() {
           </div>
 
           {/* Account Section (Placeholder) */}
-          <div className="rounded-2xl glass p-6 animate-slide-up" style={{ animationDelay: "0.4s" }}>
+          <div className="rounded-2xl glass p-6 animate-slide-up" style={{ animationDelay: "0.3s" }}>
             <h2 className="mb-4 font-display text-lg text-foreground flex items-center gap-2">
               <User className="h-5 w-5 text-primary" />
               Account

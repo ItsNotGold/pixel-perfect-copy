@@ -36,8 +36,8 @@ export default function WordIncorporation() {
   const [totalAttempts, setTotalAttempts] = useState(0);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [aiFeedback, setAiFeedback] = useState<AIFeedback | null>(null);
-  const timerRef = useRef<number | null>(null);
-  const wordTimerRef = useRef<number | null>(null);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const wordTimerRef = useRef<NodeJS.Timeout | null>(null);
   const { user } = useAuth();
   const { saveAttempt } = useProgress();
   const { settings } = useSettings();
@@ -66,7 +66,7 @@ export default function WordIncorporation() {
     await startVoice(speechLanguageCode);
 
     // Start main timer
-    timerRef.current = window.setInterval(() => {
+    timerRef.current = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev <= 1) {
           stopSession();
@@ -91,7 +91,7 @@ export default function WordIncorporation() {
       const nextIndex = prev + 1;
       if (nextIndex < currentPrompt.words.length) {
         setWordDisplayTime(6); // 6 seconds per word
-        wordTimerRef.current = window.setInterval(() => {
+        wordTimerRef.current = setInterval(() => {
           setWordDisplayTime((time) => {
             if (time <= 1) {
               clearInterval(wordTimerRef.current!);

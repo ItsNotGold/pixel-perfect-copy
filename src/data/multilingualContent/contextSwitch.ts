@@ -1,14 +1,8 @@
-import { Language } from "@/contexts/LanguageContext";
+// Context switch content removed — cleaned up as part of canonical exercise consolidation.
+// This file remained for historical reasons; its content is no longer used.
 
-export interface ContextSwitchChallenge {
-  id: string;
-  targetWord: string;
-  contexts: { name: string; hint: string }[];
-  exampleAnswers: Record<string, string>;
-}
+export {};
 
-export const contextSwitchChallengesMultilingual: Record<Language, ContextSwitchChallenge[]> = {
-  en: [
     {
       id: "en-1",
       targetWord: "spark",

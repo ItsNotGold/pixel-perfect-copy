@@ -14,7 +14,9 @@ function AttemptChart({ attempts = [] }: { attempts: any[] }) {
   const innerW = w - margin.left - margin.right;
   const innerH = h - margin.top - margin.bottom;
 
-  const values = attempts.map((a) => (typeof a.percent === 'number' ? a.percent : Math.round((a.score / (a.max_score || 1)) * 100)));
+  // ensure older attempts are on the left and newer attempts on the right
+  const series = attempts.slice().reverse();
+  const values = series.map((a) => (typeof a.percent === 'number' ? a.percent : Math.round((a.score / (a.max_score || 1)) * 100)));
   const n = values.length;
 
   const points = values.map((v, i) => {
@@ -41,7 +43,7 @@ function AttemptChart({ attempts = [] }: { attempts: any[] }) {
       {/* X axis labels */}
       {points.map((p, idx) => (
         <text key={idx} x={p.x} y={h - 6} fontSize={11} fill="currentColor" opacity={0.7} textAnchor="middle">
-          {new Date(attempts[idx].completed_at).toLocaleDateString()}
+          {new Date(series[idx].completed_at).toLocaleDateString()}
         </text>
       ))}
 
@@ -59,7 +61,7 @@ function AttemptChart({ attempts = [] }: { attempts: any[] }) {
       {points.map((p, idx) => (
         <g key={idx}>
           <circle cx={p.x} cy={p.y} r={4} fill="white" stroke="currentColor" strokeWidth={1} />
-          <title>{`${new Date(attempts[idx].completed_at).toLocaleString()} — ${p.v}%`}</title>
+          <title>{`${new Date(series[idx].completed_at).toLocaleString()} — ${p.v}%`}</title>
         </g>
       ))}
     </svg>
@@ -73,6 +75,7 @@ export default function ExerciseStats() {
   const [timeframe, setTimeframe] = useState<number | 'all'>(30);
   const [attempts, setAttempts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [expandedAttempt, setExpandedAttempt] = useState<string | null>(null);
 
   useEffect(() => {
     let mounted = true;
@@ -129,15 +132,41 @@ export default function ExerciseStats() {
         </div>
 
         <div className="space-y-2">
-          {attempts.map((a) => (
-            <div key={a.id} className="rounded-xl p-4 bg-muted/50 flex items-center justify-between">
-              <div>
-                <div className="font-medium">{new Date(a.completed_at).toLocaleString()}</div>
-                  <div className="text-sm text-muted-foreground">Score: {a.score}/{a.max_score}</div>
+          {attempts.map((a) => {
+            const hasAudio = !!a.answers?.audioUrl;
+            const isExpanded = expandedAttempt === a.id;
+            return (
+              <div key={a.id} className="rounded-xl p-4 bg-muted/50">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="font-medium">{new Date(a.completed_at).toLocaleString()}</div>
+                    <div className="text-sm text-muted-foreground">Score: {a.score}/{a.max_score}</div>
+                  </div>
+                  <div className="ml-4 text-right">
+                    <div className="text-sm text-muted-foreground">{(typeof a.percent === 'number' ? a.percent : Math.round((a.score / (a.max_score || 1)) * 100))}%</div>
+                    {hasAudio && (
+                      <button onClick={() => setExpandedAttempt(isExpanded ? null : a.id)} className="mt-2 text-sm text-primary underline">
+                        {isExpanded ? 'Hide recording' : 'Show recording'}
+                      </button>
+                    )}
+                  </div>
+                </div>
+
+                {isExpanded && hasAudio && (
+                  <div className="mt-4">
+                    <div className="font-medium text-foreground">Recorded audio</div>
+                    <audio controls className="w-full mt-2">
+                      <source src={a.answers.audioUrl} type="audio/webm" />
+                      Your browser does not support the audio element.
+                    </audio>
+                    <div className="mt-2 text-sm">
+                      <a href={a.answers.audioUrl} className="underline text-primary" download target="_blank" rel="noreferrer">Download recording</a>
+                    </div>
+                  </div>
+                )}
               </div>
-                <div className="text-sm text-muted-foreground">{(typeof a.percent === 'number' ? a.percent : Math.round((a.score / (a.max_score || 1)) * 100))}%</div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </MainLayout>

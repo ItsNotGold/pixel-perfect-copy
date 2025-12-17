@@ -90,8 +90,10 @@ export function useProgress() {
     const aggregated: Record<string, any> = {};
     for (const p of rawProgress) {
       const id = p.exercise_id;
+      // Ensure best score considers recent attempts (even when there's only a single row)
+      const candidateBest = Math.max(p.best_score || 0, bestFromAttempts[id] || 0);
       if (!aggregated[id]) {
-        aggregated[id] = { ...p };
+        aggregated[id] = { ...p, best_score: candidateBest, times_completed: p.times_completed || 0 };
       } else {
         // take max best_score across languages, sum times_completed
         aggregated[id].best_score = Math.max(aggregated[id].best_score || 0, p.best_score || 0, bestFromAttempts[id] || 0);
@@ -99,6 +101,13 @@ export function useProgress() {
         if (!aggregated[id].last_completed_at || new Date(p.last_completed_at) > new Date(aggregated[id].last_completed_at)) {
           aggregated[id].last_completed_at = p.last_completed_at;
         }
+      }
+    }
+
+    // Also include exercises that have attempts but no user_progress row yet
+    for (const [exId, b] of Object.entries(bestFromAttempts)) {
+      if (!aggregated[exId]) {
+        aggregated[exId] = { exercise_id: exId, best_score: b, times_completed: 0 };
       }
     }
 

@@ -107,7 +107,10 @@ def transcribe_with_whisper(wav_path: str, lang: str = "en") -> Dict[str, Any]:
         audio = whisperx.load_audio(wav_path)
         # Use initial_prompt to encourage retention of filler words
         initial_prompt = "Umm, uh, let me think... like, yeah. I mean, well, basically."
-        result = res.transcribe(audio, initial_prompt=initial_prompt)
+        # WhisperX load_audio uses ffmpeg, we already have a clean wav.
+        # Ensure we don't suppress specific tokens if possible, but WhisperX handles alignment well.
+        result = res.transcribe(audio, batch_size=4, initial_prompt=initial_prompt)
+
 
         # align
         model_a, metadata = whisperx.load_align_model(language_code=lang, device=device)
@@ -126,7 +129,22 @@ def transcribe_with_whisper(wav_path: str, lang: str = "en") -> Dict[str, Any]:
         m = whisper.load_model("small")
         # Use initial_prompt to encourage retention of filler words
         initial_prompt = "Umm, uh, let me think... like, yeah. I mean, well, basically."
-        r = m.transcribe(wav_path, language=lang, initial_prompt=initial_prompt)
+        # Tune parameters for sensitivity:
+        # beam_size=5 -> better search
+        # condition_on_previous_text=False -> prevents loops/hallucinations from silence
+        # temperature fallback -> tries to get better result
+        # no_speech_threshold=0.4 -> slightly more aggressive at keeping speech? No, higher is stricter. 
+        # Default is 0.6. If logprob < -1.0 and no_speech_prob > 0.6, it skips.
+        # Let's relax it by setting no_speech_threshold=0.7 or just let it be.
+        r = m.transcribe(
+            wav_path, 
+            language=lang, 
+            initial_prompt=initial_prompt,
+            beam_size=5,
+            condition_on_previous_text=False,
+            temperature=(0.0, 0.2, 0.4, 0.6, 0.8, 1.0)
+        )
+
 
         transcript = r["text"]
         # word timestamps not available reliably; return tokens with None timestamps

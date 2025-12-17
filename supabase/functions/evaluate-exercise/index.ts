@@ -13,14 +13,18 @@ serve(async (req) => {
   try {
     const { type, data, language } = await req.json();
     const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
-    
+
+    // Scoped variable to hold raw analysis if we run it
+    let analysisRaw = null;
+
+
     if (!LOVABLE_API_KEY) {
       throw new Error("LOVABLE_API_KEY is not configured");
     }
 
     let systemPrompt = "";
     let userPrompt = "";
-    
+
     const langName = language === "fr" ? "French" : language === "es" ? "Spanish" : "English";
 
     switch (type) {
@@ -95,13 +99,43 @@ Theme: ${data.theme}
 User's story: "${data.story}"`;
         break;
 
-            case "word-incorporation":
+      case "word-incorporation":
+        // Call local analyzer if available to get better transcript
+        let effectiveTranscript = data.transcript;
+        let analysisRaw = null;
+
+        const LOCAL_ANALYZER_URL_WI = Deno.env.get("LOCAL_AUDIO_ANALYZER_URL");
+        if (LOCAL_ANALYZER_URL_WI && data?.audioUrl) {
+          try {
+            console.log("Calling local analyzer for word-incorporation...");
+            const resp = await fetch(`${LOCAL_ANALYZER_URL_WI.replace(/\/$/, "")}/analyze`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ audio_url: data.audioUrl, language }),
+            });
+            if (resp.ok) {
+              const parsed = await resp.json();
+              if (parsed.transcript && parsed.transcript.length > effectiveTranscript.length) {
+                effectiveTranscript = parsed.transcript;
+                console.log("Used backend transcript:", effectiveTranscript);
+              }
+              analysisRaw = parsed;
+            }
+          } catch (err) {
+            console.error("Local analyzer failed for word-incorporation", err);
+          }
+        }
+
         systemPrompt = `You are a speech coach evaluating whether the user incorporated a list of target words into their spoken response in ${langName}.
       For each target word, determine if it was used (including reasonable morphological variations like plurals, -ing, -ed, or common contractions) and return which words were used and which were missed.
       Return JSON: { score: number (0-100), wordsUsed: string[], wordsMissed: string[], feedback: string }`;
         userPrompt = `Target words: ${data.targetWords.join(", ")}
-      Transcript: "${data.transcript}"`;
+      Transcript: "${effectiveTranscript}"`;
+
+        // We will attach _raw to the final response later if we can, but the response comes from LLM.
+        // We need to merge it.
         break;
+
 
       case "one-minute-talk":
         systemPrompt = `You are a speech coach analyzing a one-minute talk in ${langName}.
@@ -144,7 +178,7 @@ User's sentences: ${JSON.stringify(data.sentences)}`;
     if (!response.ok) {
       const errorText = await response.text();
       console.error("AI gateway error:", response.status, errorText);
-      
+
       if (response.status === 429) {
         return new Response(JSON.stringify({ error: "Rate limit exceeded. Please try again later." }), {
           status: 429,
@@ -162,7 +196,7 @@ User's sentences: ${JSON.stringify(data.sentences)}`;
 
     const result = await response.json();
     const content = result.choices?.[0]?.message?.content;
-    
+
     let evaluation;
     try {
       evaluation = JSON.parse(content);
@@ -170,9 +204,10 @@ User's sentences: ${JSON.stringify(data.sentences)}`;
       evaluation = { score: 50, feedback: content };
     }
 
-    return new Response(JSON.stringify(evaluation), {
+    return new Response(JSON.stringify({ ...evaluation, _raw: analysisRaw }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
+
 
   } catch (error) {
     console.error("Evaluation error:", error);

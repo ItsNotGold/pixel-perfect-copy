@@ -185,14 +185,10 @@ export default function WordIncorporation() {
           body: {
             type: "word-incorporation",
             language,
-            body: {
-              type: "word-incorporation",
-              language,
-              data: { transcript: text, targetWords: currentPrompt.words, audioUrl: audioUrlOverride },
-            },
-
+            data: { transcript: text, targetWords: currentPrompt.words, audioUrl: audioUrlOverride },
           },
         });
+
 
         if (!error && data) {
           const result = data as AIFeedback;

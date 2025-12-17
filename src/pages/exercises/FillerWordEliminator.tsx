@@ -197,14 +197,10 @@ export default function FillerWordEliminator() {
             body: {
               type: "filler-words",
               language,
-              body: {
-                type: "filler-words",
-                language,
-                data: { transcript: text, audioUrl: currentAudioUrl },
-              },
-
+              data: { transcript: text, audioUrl: currentAudioUrl },
             },
           }),
+
           8000
         );
 

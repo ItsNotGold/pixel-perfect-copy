@@ -50,14 +50,17 @@ def download_and_convert(url: str) -> str:
     out_path = tmp.name
     tmp.close()
 
-    # use ffmpeg to download and convert
+    # use ffmpeg to download and convert with normalization
+    # loudnorm ensures consistent volume, important for both whisper and energy-based detection
     cmd = [
         "ffmpeg", "-y", "-i", url,
+        "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
         "-ar", "16000", "-ac", "1", "-vn",
         out_path
     ]
     subprocess.check_call(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     return out_path
+
 
 
 # VAD segmentation (returns list of (start_s, end_s) voiced segments)
@@ -360,8 +363,15 @@ def analyze():
                 "source": "mfa",
             })
         # add frame-based detections if they don't overlap existing phonetic detections
+        def get_start(node):
+            return node.get('start', node.get('start_time', 0))
+        
+        def get_end(node):
+            return node.get('end', node.get('end_time', 0))
+
         def overlaps(a, b):
-            return not (a['end_time'] <= b['start'] or a['start_time'] >= b['end'])
+            return not (get_end(a) <= get_start(b) or get_start(a) >= get_end(b))
+
 
         for f in frame_phonetic:
             conflict = False

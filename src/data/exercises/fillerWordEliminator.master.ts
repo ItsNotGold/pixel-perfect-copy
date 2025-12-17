@@ -21,7 +21,7 @@ export const fillerWordEliminatorMaster: ExerciseMaster<FillerWordEliminatorCont
                     details: "Speak for 30-60 seconds about the topic below. The app will track common filler words like 'um', 'uh', 'like', and 'you know'.",
                     tips: ["Pause instead of filling the silence", "speak slowly"]
                 },
-                targetWords: [
+                targetFillerWords: [
                     "um", "uh", "uhm", "hmm", "hm", "er", "ah", "like", "you know", "I mean", "so", "well", "right", "okay", "alright",
                     "basically", "literally", "actually", "sort of", "kind of", "anyway", "honestly", "totally", "really", "just",
                     "kinda", "sorta", "y'know", "ya know", "see", "look", "listen", "and", "but", "or", "then", "now", "here", "there",
@@ -94,7 +94,7 @@ export const fillerWordEliminatorMaster: ExerciseMaster<FillerWordEliminatorCont
                     intro: "Parlez sans mots de remplissage.",
                     details: "Parlez pendant 30 à 60 secondes. L'application détectera les mots superflus comme 'euh', 'ben', etc."
                 },
-                targetWords: [
+                targetFillerWords: [
                     "euh", "ben", "heu", "hum", "genre", "en fait", "du coup", "voilà", "quoi", "tu vois", "bah", "enfin", "bon",
                     "alors", "donc", "bref", "vraiment", "effectivement", "précisément", "exactement", "finalement", "évidemment",
                     "naturellement", "simplement", "juste", "seulement", "mais", "et", "ou", "puis", "alors", "là", "ici"
@@ -145,7 +145,7 @@ export const fillerWordEliminatorMaster: ExerciseMaster<FillerWordEliminatorCont
                     intro: "Habla sin muletillas.",
                     details: "Habla durante 30-60 segundos. La aplicación detectará muletillas como 'eh', 'este', etc."
                 },
-                targetWords: [
+                targetFillerWords: [
                     "eh", "este", "pues", "o sea", "bueno", "como", "sabes", "entonces", "básicamente", "tipo", "digamos", "la verdad",
                     "mira", "oye", "vale", "vamos", "verás", "claro", "obvio", "exacto", "preciso", "simplemente", "solamente",
                     "pero", "y", "o", "entonces", "ahora", "aquí", "allí", "¿sabes?", "o sea que", "digamos que", "como que", "¿me entiendes?", "es decir"

@@ -136,15 +136,17 @@ export function Sidebar() {
           <div className="px-3 py-3">
             {user ? (
               <div className="flex items-center gap-3">
-                <Avatar className="h-8 w-8">
-                  <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center text-sm">{user?.user_metadata?.display_name?.[0] || user?.email?.[0]}</div>
-                </Avatar>
-                {!isCollapsed && (
-                  <div className="flex-1 min-w-0">
-                    <div className="text-sm font-medium truncate">{user.user_metadata?.display_name || user.email}</div>
-                    <button onClick={() => signOut()} className="text-xs text-muted-foreground hover:underline">Sign out</button>
-                  </div>
-                )}
+                <Link to="/account" className="flex items-center gap-3 flex-1">
+                  <Avatar className="h-8 w-8">
+                    <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center text-sm">{user?.user_metadata?.display_name?.[0] || user?.email?.[0]}</div>
+                  </Avatar>
+                  {!isCollapsed && (
+                    <div className="flex-1 min-w-0">
+                      <div className="text-sm font-medium truncate">{user.user_metadata?.display_name || user.email}</div>
+                    </div>
+                  )}
+                </Link>
+                {!isCollapsed && <button onClick={() => signOut()} className="text-xs text-muted-foreground hover:underline">Sign out</button>}
               </div>
             ) : (
               <Link to="/auth" className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium hover:bg-sidebar-accent/50">

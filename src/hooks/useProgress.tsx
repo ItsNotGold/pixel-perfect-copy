@@ -270,20 +270,27 @@ export function useProgress() {
     if (streak >= 7) toAward.push("streak:7");
     if (streak >= 30) toAward.push("streak:30");
 
-    // Insert achievements (ignore duplicates)
+    // Insert achievements (only when not already unlocked)
     for (const achievement of toAward) {
       try {
-        await supabase.from("achievements").insert([{ user_id: user.id, achievement_type: achievement }]);
+        const { data: exists } = await supabase.from("achievements").select("id, created_at").eq("user_id", user.id).eq("achievement_type", achievement).maybeSingle();
+        if (exists) continue;
+
+        const { data: inserted } = await supabase.from("achievements").insert([{ user_id: user.id, achievement_type: achievement }]).select().single();
+
         const names: Record<string, string> = {};
         names["total:gold"] = "Total Score — Gold";
         names["total:silver"] = "Total Score — Silver";
         names["total:bronze"] = "Total Score — Bronze";
 
         if (!settings || settings.notifications?.achievementAlerts) {
-          toast.success("Achievement Unlocked!", { description: names[achievement] || achievement });
+          // only notify when the achievement was just inserted
+          if (inserted) {
+            toast.success("Achievement Unlocked!", { description: names[achievement] || achievement });
+          }
         }
       } catch (e) {
-        // already exists or failed, ignore
+        // insertion failed, ignore
       }
     }
   }, [user, settings]);
@@ -303,7 +310,9 @@ export function useProgress() {
 
     for (const achievement of achievements) {
       try {
-        await supabase.from("achievements").insert([{ user_id: user.id, achievement_type: achievement }]);
+        const { data: exists } = await supabase.from("achievements").select("id, created_at").eq("user_id", user.id).eq("achievement_type", achievement).maybeSingle();
+        if (exists) continue;
+        const { data: inserted } = await supabase.from("achievements").insert([{ user_id: user.id, achievement_type: achievement }]).select().single();
         const achievementNames: Record<string, string> = {
           first_exercise: "First Steps",
           ten_exercises: "Getting Started",
@@ -315,12 +324,14 @@ export function useProgress() {
         };
 
         if (!settings || settings.notifications?.achievementAlerts) {
-          toast.success("Achievement Unlocked!", {
-            description: achievementNames[achievement],
-          });
+          if (inserted) {
+            toast.success("Achievement Unlocked!", {
+              description: achievementNames[achievement],
+            });
+          }
         }
       } catch {
-        // Achievement already exists, ignore
+        // Achievement already exists or failed, ignore
       }
     }
   }, [user, settings]);

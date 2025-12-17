@@ -147,22 +147,28 @@ export default function SynonymSpeedChain() {
   };
 
   const handleNext = async () => {
+    // Accumulate current round's score into total even when user clicks Next manually
+    setTotalScore((prev) => prev + score);
+
     if (currentIndex < shuffledChallenges.length - 1) {
       setCurrentIndex((prev) => prev + 1);
       setIsComplete(false);
       setSynonymList([]);
       setScore(0);
     } else {
+      // Ensure the final total includes the last round's points
+      const finalTotal = totalScore + score;
       if (user && !attemptSaved) {
         const res = await saveAttempt({
           exerciseId: "synonym-speed-chain",
-          score: totalScore,
+          score: finalTotal,
           maxScore: shuffledChallenges.length * 100,
         });
         if (!res || !res.success) toast.error("Failed to save progress");
         else setAttemptSaved(true);
       }
-      toast.success("Exercise Complete!", { description: `Final score: ${totalScore}` });
+      toast.success("Exercise Complete!", { description: `Final score: ${finalTotal}` });
+      setTotalScore(finalTotal);
     }
   };
 

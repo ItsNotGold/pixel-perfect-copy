@@ -131,57 +131,72 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     }
   }, []);
 
-  const stopRecording = useCallback(async () => {
+  const stopRecording = useCallback(async (): Promise<void> => {
     setIsProcessing(true);
-    
+
     if (recognitionRef.current) {
       recognitionRef.current.stop();
       recognitionRef.current = null;
     }
-    
+
+    // Stop the media recorder and wait for onstop to set audioBlob
     if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") {
-      mediaRecorderRef.current.stop();
-      mediaRecorderRef.current = null;
-    }
-    
-    setIsRecording(false);
-    
-    // Wait for audioBlob to be set
-    setTimeout(async () => {
-      if (audioBlob) {
-        try {
-          const client = new AssemblyAI({
-            apiKey: import.meta.env.VITE_ASSEMBLYAI_API_KEY,
-          });
-          
-          const audioFile = new File([audioBlob], 'recording.webm', { type: 'audio/webm' });
-          
-          const uploadUrl = await client.files.upload(audioFile);
-          
-          // Ask ASR to preserve disfluencies where possible and punctuate
-          const transcriptResponse = await client.transcripts.transcribe({
-            audio: uploadUrl,
-            punctuate: true,
-            format_text: true,
-            disfluencies: true,
-          });
-          
-          if (transcriptResponse.status === 'completed') {
-            // Merge processed transcript with raw interim transcript to preserve filler detections
-            const processed = transcriptResponse.text || '';
-            const merged = [processed, rawTranscript].filter(Boolean).join(' ');
-            setTranscript(merged);
-          } else {
-            toast.error('Transcription failed');
-          }
-        } catch (error) {
-          console.error('Transcription error:', error);
-          toast.error('Failed to transcribe audio');
-        }
+      try {
+        const recorder = mediaRecorderRef.current;
+        await new Promise<void>((resolve) => {
+          recorder.onstop = () => {
+            const blob = new Blob(chunksRef.current, { type: "audio/webm" });
+            setAudioBlob(blob);
+            resolve();
+          };
+          recorder.stop();
+        });
+      } catch (err) {
+        console.error("Error stopping recorder:", err);
+      } finally {
+        mediaRecorderRef.current = null;
       }
-      setIsProcessing(false);
-    }, 100);
-  }, [audioBlob]);
+    }
+
+    setIsRecording(false);
+
+    // Small delay to allow audioBlob state to update before processing
+    await new Promise((r) => setTimeout(r, 100));
+
+    if (audioBlob) {
+      try {
+        const client = new AssemblyAI({
+          apiKey: import.meta.env.VITE_ASSEMBLYAI_API_KEY,
+        });
+
+        const audioFile = new File([audioBlob], 'recording.webm', { type: 'audio/webm' });
+
+        const uploadUrl = await client.files.upload(audioFile);
+
+        // Ask ASR to preserve disfluencies where possible and punctuate
+        const transcriptResponse = await client.transcripts.transcribe({
+          audio: uploadUrl,
+          punctuate: true,
+          format_text: true,
+          disfluencies: true,
+        });
+
+        if (transcriptResponse.status === 'completed') {
+          // Merge processed transcript with raw interim transcript to preserve filler detections
+          const processed = transcriptResponse.text || '';
+          const merged = [processed, rawTranscript].filter(Boolean).join(' ');
+          setTranscript(merged);
+        } else {
+          toast.error('Transcription failed');
+        }
+      } catch (error) {
+        console.error('Transcription error:', error);
+        toast.error('Failed to transcribe audio');
+      }
+    }
+
+    setIsProcessing(false);
+  }, [audioBlob, rawTranscript]);
 
   const saveAudio = useCallback(async (): Promise<string | null> => {
     if (!audioBlob) return null;

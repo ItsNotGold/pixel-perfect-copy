@@ -88,8 +88,8 @@ export default function Progress() {
   const streaks = data?.streaks || null;
   const achievements = data?.achievements || [];
 
-  const totalScore = exerciseProgress.reduce((sum, p) => sum + (p.best_score || 0), 0);
-  const exercisesCompleted = exerciseProgress.reduce((sum, p) => sum + (p.times_completed || 0), 0);
+  const totalScore = exerciseProgress.reduce((sum, p) => sum + (Number(p.best_score) || 0), 0);
+  const exercisesCompleted = exerciseProgress.reduce((sum, p) => sum + (Number(p.times_completed) || 0), 0);
   const currentStreak = streaks?.current_streak || 0;
   const daysActive = Array.from(
     new Set(

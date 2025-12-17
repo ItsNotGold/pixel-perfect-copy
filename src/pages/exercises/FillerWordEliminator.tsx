@@ -80,7 +80,8 @@ export default function FillerWordEliminator() {
       clearInterval(timerRef.current);
     }
     if (useVoice) {
-      stopVoice();
+      // Ensure recording is fully stopped and processed before analyzing/saving
+      await stopVoice();
     }
     await analyzeTranscript();
   };

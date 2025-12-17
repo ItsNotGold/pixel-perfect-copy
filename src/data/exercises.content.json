@@ -56,7 +56,7 @@
       "goal": "Vocabulary integration + fluency",
       "mechanic": "Incorporate target words into spontaneous speech",
       "description": "Speak for 30 seconds while incorporating 5 progressively revealed words. Perfect for building natural vocabulary usage!",
-      "icon": "Target",
+      "icon": "Feather",
       "color": "from-purple-500 to-blue-500",
       "path": "/exercise/word-incorporation"
     }

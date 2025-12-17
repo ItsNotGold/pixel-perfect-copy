@@ -184,6 +184,23 @@ export default function WordIncorporation() {
             // override local detection
             wordsUsed.splice(0, wordsUsed.length, ...result.wordsUsed);
             wordsMissed.splice(0, wordsMissed.length, ...result.wordsMissed);
+          } else if ((data as any)?._raw) {
+            // If a local audio analyzer returned structured word timestamps or tokens, use them to improve detection
+            const raw = (data as any)._raw;
+            if (raw.words && Array.isArray(raw.words) && raw.words.length > 0) {
+              // build a simple set of tokens from the analyzer
+              const tokenTexts = raw.words.map((w: any) => (w.word || "").toLowerCase());
+              const used: string[] = [];
+              const missed: string[] = [];
+              currentPrompt.words.forEach((word) => {
+                const w = word.toLowerCase();
+                // exact or substring match against tokens
+                const found = tokenTexts.some((t: string) => t === w || t.includes(w) || w.includes(t));
+                if (found) used.push(word); else missed.push(word);
+              });
+              wordsUsed.splice(0, wordsUsed.length, ...used);
+              wordsMissed.splice(0, wordsMissed.length, ...missed);
+            }
           }
         }
       } catch (err) {
@@ -273,11 +290,12 @@ export default function WordIncorporation() {
             )}
 
             {/* Initial prompt */}
-            {currentPrompt && !isActive && !isComplete && (
+              {currentPrompt && !isComplete && (!isActive || (isActive && currentWordIndex < 0)) && (
               <div className="mb-6 text-center">
                 <h3 className="text-xl font-semibold mb-4">{currentPrompt.prompt}</h3>
                 <p className="text-muted-foreground">
-                  You will have 30 seconds to speak. Words will appear one by one - incorporate them naturally into your speech.
+                      You will have 30 seconds to speak. Words will appear one by one - incorporate them naturally into your speech.
+                      This exercise also uses audio-based detection (phonetic and token-level) when available to more accurately detect whether you used a target word.
                 </p>
               </div>
             )}

@@ -7,7 +7,7 @@
       "shortTitle": "Filler Eliminator",
       "goal": "Reduce fillers, improve clarity",
       "mechanic": "Speak for 30-60 seconds while the app tracks fillers",
-      "description": "Eliminate 'um', 'uh', 'like', and 'you know' from your speech. Track your progress and earn badges!",
+      "description": "Eliminate 'um', 'uh', 'like', and 'you know' from your speech. The exercise uses audio-based phonetic detection (nasal hums, prolonged vowels, breathy hesitations) in addition to transcript analysis. Track your progress and earn badges!",
       "icon": "MessageCircle",
       "color": "from-rose-500 to-pink-500",
       "path": "/exercise/filler-word-eliminator"
@@ -55,7 +55,7 @@
       "shortTitle": "Word Incorporation",
       "goal": "Vocabulary integration + fluency",
       "mechanic": "Incorporate target words into spontaneous speech",
-      "description": "Speak for 30 seconds while incorporating 5 progressively revealed words. Perfect for building natural vocabulary usage!",
+      "description": "Speak for 30 seconds while incorporating 5 progressively revealed words. The exercise uses audio-based detection when available to more accurately detect used words. Perfect for building natural vocabulary usage!",
       "icon": "Feather",
       "color": "from-purple-500 to-blue-500",
       "path": "/exercise/word-incorporation"

@@ -14,10 +14,12 @@ import { useProgress } from "@/hooks/useProgress";
 import { supabase } from "@/integrations/supabase/client";
 
 interface AIFeedback {
-  fillerWords: Record<string, number>;
-  totalFillers: number;
-  score: number;
-  feedback: string;
+  fillerWords?: Record<string, number>;
+  totalFillers?: number;
+  score?: number;
+  feedback?: string;
+  // raw analyzer payload when available (phonetic detections, lexical with timestamps, etc.)
+  _raw?: any;
 }
 
 export default function FillerWordEliminator() {
@@ -173,6 +175,8 @@ export default function FillerWordEliminator() {
               });
               setFillerCount(counts);
               total = raw.total_filler_count || raw.total_filler_count === 0 ? raw.total_filler_count : total;
+              // also attach raw to AI feedback for UI rendering
+              setAiFeedback((prev) => ({ ...(prev as any), _raw: raw }));
             } else if (data.fillerWords) {
               setFillerCount(data.fillerWords);
               total = data.totalFillers || total;
@@ -333,6 +337,30 @@ export default function FillerWordEliminator() {
                     ))}
                   </div>
                 )}
+              </div>
+            )}
+
+            {/* Phonetic detections (from local audio analyzer) */}
+            {aiFeedback?._raw?.phonetic_fillers && aiFeedback._raw.phonetic_fillers.length > 0 && (
+              <div className="mb-6 rounded-xl bg-muted/40 p-4 animate-slide-up">
+                <div className="flex items-center gap-2 mb-3">
+                  <AlertTriangle className="h-5 w-5 text-amber-500" />
+                  <span className="font-medium text-foreground">Phonetic Fillers Detected (audio-based)</span>
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  These detections are made directly from the audio waveform (nasal hums, prolonged vowels, breathy hesitations) and count as first-class events.
+                </div>
+                <div className="mt-3 grid gap-2">
+                  {aiFeedback._raw.phonetic_fillers.map((p: any, idx: number) => (
+                    <div key={idx} className="flex items-center justify-between rounded-md bg-muted p-2">
+                      <div>
+                        <div className="text-sm font-medium text-foreground">{p.type}</div>
+                        <div className="text-xs text-muted-foreground">{p.start?.toFixed?.(2) ?? p.start}s → {p.end?.toFixed?.(2) ?? p.end}s ({Math.round((p.end - p.start || p.duration || 0) * 1000)} ms)</div>
+                      </div>
+                      <div className="text-xs text-muted-foreground">conf: {p.confidence ?? "-"}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
 

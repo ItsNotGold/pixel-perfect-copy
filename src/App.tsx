@@ -11,6 +11,7 @@ import { useSettings } from "@/hooks/useSettings";
 import { useProgress } from "@/hooks/useProgress";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "sonner";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Auth from "./pages/Auth";
@@ -30,35 +31,37 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <AuthProvider>
-      <SubscriptionProvider>
-        <LanguageProvider>
-          <TooltipProvider>
-            <Toaster />
-            <Sonner position="top-center" />
-          <SettingsReminders />
-            <BrowserRouter>
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/auth" element={<Auth />} />
-                <Route path="/exercise/precision-swap" element={<PrecisionSwap />} />
-                <Route path="/exercise/filler-word-eliminator" element={<FillerWordEliminator />} />
-                <Route path="/exercise/reverse-definitions" element={<ReverseDefinitions />} />
-                <Route path="/exercise/synonym-speed-chain" element={<SynonymSpeedChain />} />
-                <Route path="/exercise/word-incorporation" element={<WordIncorporation />} />
-                <Route path="/exercise/:id/stats" element={<ExerciseStats />} />
-                <Route path="/progress" element={<Progress />} />
-                <Route path="/achievements" element={<Achievements />} />
-                <Route path="/settings" element={<Settings />} />
-                <Route path="/account" element={<ManageAccount />} />
-                <Route path="/subscription" element={<Subscription />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </BrowserRouter>
-          </TooltipProvider>
-        </LanguageProvider>
-      </SubscriptionProvider>
-    </AuthProvider>
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <AuthProvider>
+        <SubscriptionProvider>
+          <LanguageProvider>
+            <TooltipProvider>
+              <Toaster />
+              <Sonner position="top-center" />
+              <SettingsReminders />
+              <BrowserRouter>
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  <Route path="/auth" element={<Auth />} />
+                  <Route path="/exercise/precision-swap" element={<PrecisionSwap />} />
+                  <Route path="/exercise/filler-word-eliminator" element={<FillerWordEliminator />} />
+                  <Route path="/exercise/reverse-definitions" element={<ReverseDefinitions />} />
+                  <Route path="/exercise/synonym-speed-chain" element={<SynonymSpeedChain />} />
+                  <Route path="/exercise/word-incorporation" element={<WordIncorporation />} />
+                  <Route path="/exercise/:id/stats" element={<ExerciseStats />} />
+                  <Route path="/progress" element={<Progress />} />
+                  <Route path="/achievements" element={<Achievements />} />
+                  <Route path="/settings" element={<Settings />} />
+                  <Route path="/account" element={<ManageAccount />} />
+                  <Route path="/subscription" element={<Subscription />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </BrowserRouter>
+            </TooltipProvider>
+          </LanguageProvider>
+        </SubscriptionProvider>
+      </AuthProvider>
+    </ThemeProvider>
   </QueryClientProvider>
 );
 

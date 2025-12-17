@@ -1,9 +1,11 @@
 import { MainLayout } from "@/components/layout/MainLayout";
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
 import { exercises } from "@/data/exercises";
+import { Play } from "lucide-react";
+
 
 function AttemptChart({ attempts = [] }: { attempts: any[] }) {
   if (!attempts.length) return <div className="text-sm text-muted-foreground">No attempts yet</div>;
@@ -76,6 +78,7 @@ export default function ExerciseStats() {
   const [attempts, setAttempts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [expandedAttempt, setExpandedAttempt] = useState<string | null>(null);
+  const audioRefs = useRef<Record<string, HTMLAudioElement | null>>({});
 
   useEffect(() => {
     let mounted = true;
@@ -107,6 +110,13 @@ export default function ExerciseStats() {
     </MainLayout>
   );
 
+  const seekTo = (attemptId: string, time: number) => {
+    const el = audioRefs.current[attemptId];
+    if (el) {
+      el.currentTime = Math.max(0, time);
+      el.play();
+    }
+  };
 
   return (
     <MainLayout>
@@ -135,6 +145,9 @@ export default function ExerciseStats() {
           {attempts.map((a) => {
             const hasAudio = !!a.answers?.audioUrl;
             const isExpanded = expandedAttempt === a.id;
+            const raw = a.answers?._raw;
+            const phoneticFillers = raw?.phonetic_fillers || [];
+
             return (
               <div key={a.id} className="rounded-xl p-4 bg-muted/50">
                 <div className="flex items-center justify-between">
@@ -153,12 +166,37 @@ export default function ExerciseStats() {
                 </div>
 
                 {isExpanded && hasAudio && (
-                  <div className="mt-4">
+                  <div className="mt-4 animate-slide-up">
                     <div className="font-medium text-foreground">Recorded audio</div>
-                    <audio controls className="w-full mt-2">
+                    <audio
+                      ref={(el) => (audioRefs.current[a.id] = el)}
+                      controls
+                      className="w-full mt-2"
+                    >
                       <source src={a.answers.audioUrl} type="audio/webm" />
                       Your browser does not support the audio element.
                     </audio>
+
+                    {/* Render phonetic fillers if present */}
+                    {phoneticFillers.length > 0 && (
+                      <div className="mt-4">
+                        <div className="text-sm font-medium mb-2 text-amber-600 dark:text-amber-400">Detected Phonetic Fillers</div>
+                        <div className="flex flex-wrap gap-2">
+                          {phoneticFillers.map((p: any, idx: number) => (
+                            <button
+                              key={idx}
+                              onClick={() => seekTo(a.id, p.start)}
+                              className="inline-flex items-center gap-1 rounded-full bg-amber-100 dark:bg-amber-900/30 px-3 py-1 text-xs text-amber-800 dark:text-amber-200 hover:bg-amber-200 dark:hover:bg-amber-900/50 transition-colors"
+                              title={`Click to play at ${p.start}s`}
+                            >
+                              <Play className="h-3 w-3" />
+                              {p.type} ({Math.round((p.end - p.start) * 1000)}ms)
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
                     <div className="mt-2 text-sm">
                       <a href={a.answers.audioUrl} className="underline text-primary" download target="_blank" rel="noreferrer">Download recording</a>
                     </div>
@@ -172,3 +210,4 @@ export default function ExerciseStats() {
     </MainLayout>
   );
 }
+

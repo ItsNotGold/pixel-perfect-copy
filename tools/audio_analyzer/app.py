@@ -31,6 +31,8 @@ except Exception:
 
 # Simple spectral helpers
 import librosa
+from phonetic_detector import detect_phonetic_fillers_frame_based
+
 
 app = Flask(__name__)
 
@@ -100,7 +102,10 @@ def transcribe_with_whisper(wav_path: str, lang: str = "en") -> Dict[str, Any]:
         device = "cpu"
         res = whisperx.load_model(model, device=device)
         audio = whisperx.load_audio(wav_path)
-        result = res.transcribe(audio)
+        # Use initial_prompt to encourage retention of filler words
+        initial_prompt = "Umm, uh, let me think... like, yeah. I mean, well, basically."
+        result = res.transcribe(audio, initial_prompt=initial_prompt)
+
         # align
         model_a, metadata = whisperx.load_align_model(language_code=lang, device=device)
         result_aligned = whisperx.align(result, model_a, metadata, audio, device)
@@ -116,7 +121,10 @@ def transcribe_with_whisper(wav_path: str, lang: str = "en") -> Dict[str, Any]:
         return {"transcript": transcript, "words": words}
     elif HAS_WHISPER:
         m = whisper.load_model("small")
-        r = m.transcribe(wav_path, language=lang)
+        # Use initial_prompt to encourage retention of filler words
+        initial_prompt = "Umm, uh, let me think... like, yeah. I mean, well, basically."
+        r = m.transcribe(wav_path, language=lang, initial_prompt=initial_prompt)
+
         transcript = r["text"]
         # word timestamps not available reliably; return tokens with None timestamps
         return {"transcript": transcript, "words": []}
@@ -258,111 +266,12 @@ def detect_phonetic_fillers_from_phonemes(phonemes: List[Dict[str, Any]]) -> Lis
 
 # Frame-level phonetic filler detection per spec
 
-def detect_phonetic_fillers_frame_based(wav_path: str) -> List[Dict[str, Any]]:
-    """Detect phonetic fillers directly from the waveform using frame-level features.
-    Frame size: 25 ms, hop: 10 ms. Computes RMS, ZCR, F0 (via yin), voicing_prob (harmonic energy ratio), spectral flatness, MFCCs.
-    Returns list of {start_time, end_time, duration_ms, category, confidence}.
+def detect_phonetic_fillers_frame_based_wrapper(wav_path: str) -> List[Dict[str, Any]]:
     """
-    y, sr = librosa.load(wav_path, sr=16000)
-    frame_ms = 25
-    hop_ms = 10
-    frame_length = int(sr * frame_ms / 1000)
-    hop_length = int(sr * hop_ms / 1000)
+    Wrapper around the standalone phonetic_detector module.
+    """
+    return detect_phonetic_fillers_frame_based(wav_path)
 
-    # Mandatory features
-    rms = librosa.feature.rms(y=y, frame_length=frame_length, hop_length=hop_length)[0]  # shape (n_frames,)
-    zcr = librosa.feature.zero_crossing_rate(y, frame_length=frame_length, hop_length=hop_length)[0]
-    spec_flat = librosa.feature.spectral_flatness(y=y, n_fft=frame_length, hop_length=hop_length)[0]
-    mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13, n_fft=frame_length, hop_length=hop_length)
-
-    # F0 estimation per frame via YIN
-    try:
-        f0 = librosa.yin(y, fmin=50, fmax=500, frame_length=frame_length, hop_length=hop_length)
-    except Exception:
-        # fallback: zeros
-        f0 = np.full_like(rms, np.nan)
-
-    # voicing probability estimate: harmonic energy ratio
-    try:
-        y_harmonic = librosa.effects.harmonic(y)
-        harmonic_rms = librosa.feature.rms(y=y_harmonic, frame_length=frame_length, hop_length=hop_length)[0]
-        voicing_prob = np.clip(harmonic_rms / (rms + 1e-9), 0.0, 1.0)
-    except Exception:
-        voicing_prob = np.where(~np.isnan(f0), 1.0, 0.0)
-
-    n_frames = len(rms)
-
-    # median speech energy: median of frames where voicing_prob > 0.5, otherwise median of all RMS
-    voiced_mask = voicing_prob > 0.5
-    if np.any(voiced_mask):
-        median_speech_energy = float(np.median(rms[voiced_mask]))
-    else:
-        median_speech_energy = float(np.median(rms))
-
-    # phonetic hesitation frame definition
-    hesitation_mask = (voicing_prob > 0.6) & (rms < (median_speech_energy * 0.8)) & (spec_flat > 0.3) & (zcr < 0.05)
-
-    # aggregate consecutive frames into segments
-    segments: List[Dict[str, Any]] = []
-    i = 0
-    while i < n_frames:
-        if not hesitation_mask[i]:
-            i += 1
-            continue
-        j = i
-        while j + 1 < n_frames and hesitation_mask[j + 1]:
-            j += 1
-        # compute start/end in seconds
-        start_time = (i * hop_length) / sr
-        end_time = ((j * hop_length) + frame_length) / sr
-        duration_ms = (end_time - start_time) * 1000.0
-        # valid filler if duration between 180ms and 2000ms
-        if duration_ms >= 180 and duration_ms <= 2000:
-            # classify
-            # MFCC variance
-            mfcc_seg = mfcc[:, i:j+1]
-            mfcc_var = float(np.mean(np.var(mfcc_seg, axis=1))) if mfcc_seg.size > 0 else float('inf')
-            # f0 std in segment (use frames where f0 is finite)
-            f0_seg = f0[i:j+1]
-            f0_vals = f0_seg[~np.isnan(f0_seg)]
-            f0_std = float(np.std(f0_vals)) if f0_vals.size > 0 else float('nan')
-            # spectral flatness average and voicing prob average
-            spec_flat_seg = float(np.mean(spec_flat[i:j+1]))
-            voicing_avg = float(np.mean(voicing_prob[i:j+1]))
-
-            category = None
-            # priority: nasal hum, prolonged vowel, breathy
-            if mfcc_var < 15:
-                category = "nasal_hum"
-            elif not np.isnan(f0_std) and f0_std < 20:
-                category = "prolonged_vowel"
-            elif spec_flat_seg > 0.45 and (voicing_avg >= 0.3 and voicing_avg <= 0.6):
-                category = "breathy_hesitation"
-            else:
-                # fallback classification: choose most likely
-                if mfcc_var < 25:
-                    category = "nasal_hum"
-                elif not np.isnan(f0_std) and f0_std < 40:
-                    category = "prolonged_vowel"
-                else:
-                    category = "breathy_hesitation"
-
-            # confidence from voicing_avg and duration weighting
-            dur_weight = min(1.0, (duration_ms / 1000.0))
-            confidence = float(np.clip(0.6 * voicing_avg + 0.4 * dur_weight, 0.0, 1.0))
-
-            segments.append({
-                "start_time": round(start_time, 3),
-                "end_time": round(end_time, 3),
-                "duration_ms": round(duration_ms, 1),
-                "category": category,
-                "confidence": round(confidence, 3),
-                "mfcc_var": round(mfcc_var, 3),
-                "f0_std": round(f0_std, 3) if not np.isnan(f0_std) else None,
-                "voicing_avg": round(voicing_avg, 3),
-            })
-        i = j + 1
-    return segments
 
 
 # Detect non-lexical fillers via VAD + spectral heuristics (kept as fallback/enrichment)
@@ -435,7 +344,8 @@ def analyze():
         nonlex = detect_non_lexical_fillers(wav, vad_segs)
 
         # Frame-based phonetic detection (strict per spec)
-        frame_phonetic = detect_phonetic_fillers_frame_based(wav)
+        frame_phonetic = detect_phonetic_fillers_frame_based_wrapper(wav)
+
 
         # Merge phonetic detections, prefer phoneme-based when overlapping
         phonetic_fillers = []

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { exercises } from "@/data/exercises";
 import { cn } from "@/lib/utils";
@@ -13,6 +13,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/hooks/useAuth";
 import { useSettings } from "@/hooks/useSettings";
+import { supabase } from "@/integrations/supabase/client";
 import { parseAchievementId } from "@/data/achievements";
 
 import { Avatar } from "@/components/ui/avatar";

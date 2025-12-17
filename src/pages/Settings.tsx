@@ -122,10 +122,29 @@ export default function Settings() {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <div className="font-medium text-foreground">Dark Mode</div>
-                  <div className="text-sm text-muted-foreground">Toggle a darker color palette</div>
+                  <div className="font-medium text-foreground">Theme</div>
+                  <div className="text-sm text-muted-foreground">Follow device preference or pick a theme</div>
                 </div>
-                <Switch checked={settings.appearance?.theme === "dark"} onCheckedChange={(v) => update((s) => ({ ...s, appearance: { theme: v ? "dark" : "light" } }))} />
+                <div className="flex items-center gap-2">
+                  <button
+                    className={"rounded-md px-3 py-1 text-sm " + (settings.appearance?.theme === "system" ? "bg-primary text-primary-foreground" : "bg-transparent text-muted-foreground")}
+                    onClick={() => update((s) => ({ ...s, appearance: { theme: "system" } }))}
+                  >
+                    System
+                  </button>
+                  <button
+                    className={"rounded-md px-3 py-1 text-sm " + (settings.appearance?.theme === "light" ? "bg-primary text-primary-foreground" : "bg-transparent text-muted-foreground")}
+                    onClick={() => update((s) => ({ ...s, appearance: { theme: "light" } }))}
+                  >
+                    Light
+                  </button>
+                  <button
+                    className={"rounded-md px-3 py-1 text-sm " + (settings.appearance?.theme === "dark" ? "bg-primary text-primary-foreground" : "bg-transparent text-muted-foreground")}
+                    onClick={() => update((s) => ({ ...s, appearance: { theme: "dark" } }))}
+                  >
+                    Dark
+                  </button>
+                </div>
               </div>
             </div>
           </div>

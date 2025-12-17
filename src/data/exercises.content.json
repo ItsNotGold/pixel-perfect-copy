@@ -1,0 +1,123 @@
+{
+  "exercises": [
+    {
+      "id": "filler-word-eliminator",
+      "number": 1,
+      "title": "Filler Word Eliminator",
+      "shortTitle": "Filler Eliminator",
+      "goal": "Reduce fillers, improve clarity",
+      "mechanic": "Speak for 30-60 seconds while the app tracks fillers",
+      "description": "Eliminate 'um', 'uh', 'like', and 'you know' from your speech. Track your progress and earn badges!",
+      "icon": "MessageCircle",
+      "color": "from-rose-500 to-pink-500",
+      "path": "/exercise/filler-word-eliminator"
+    },
+    {
+      "id": "precision-swap",
+      "number": 2,
+      "title": "Precision Swap",
+      "shortTitle": "Precision Swap",
+      "goal": "Sharpen word choice",
+      "mechanic": "Replace vague words with precise alternatives",
+      "description": "Transform bland sentences into powerful ones by swapping weak words for stronger, more precise alternatives.",
+      "icon": "Target",
+      "color": "from-emerald-500 to-teal-500",
+      "path": "/exercise/precision-swap"
+    },
+    {
+      "id": "reverse-definitions",
+      "number": 3,
+      "title": "Reverse Definitions",
+      "shortTitle": "Reverse Definitions",
+      "goal": "Deepen word understanding",
+      "mechanic": "App gives definition, you guess the word",
+      "description": "Read the definition, guess the word. Master vocabulary through spaced repetition and word mastery levels.",
+      "icon": "BookOpen",
+      "color": "from-blue-500 to-cyan-500",
+      "path": "/exercise/reverse-definitions"
+    },
+    {
+      "id": "synonym-speed-chain",
+      "number": 4,
+      "title": "Synonym Speed Chain",
+      "shortTitle": "Synonym Chain",
+      "goal": "Rapid lexical retrieval",
+      "mechanic": "Generate synonyms within a time limit",
+      "description": "Race against the clock to list as many synonyms as possible. Rare words score more points!",
+      "icon": "Link",
+      "color": "from-orange-500 to-red-500",
+      "path": "/exercise/synonym-speed-chain"
+    },
+    {
+      "id": "word-incorporation",
+      "number": 5,
+      "title": "Word Incorporation",
+      "shortTitle": "Word Incorporation",
+      "goal": "Vocabulary integration + fluency",
+      "mechanic": "Incorporate target words into spontaneous speech",
+      "description": "Speak for 30 seconds while incorporating 5 progressively revealed words. Perfect for building natural vocabulary usage!",
+      "icon": "Target",
+      "color": "from-purple-500 to-blue-500",
+      "path": "/exercise/word-incorporation"
+    }
+  ],
+
+  "precisionSwap": {
+    "en": [
+      {
+        "id": "1",
+        "sentence": "She had a very big problem.",
+        "targetWord": "big",
+        "targetWordIndex": 4,
+        "options": [
+          { "word": "serious", "score": 90, "feedback": "Excellent! 'Serious' conveys gravity and importance." },
+          { "word": "critical", "score": 100, "feedback": "Perfect! 'Critical' implies urgency and significance." },
+          { "word": "large", "score": 30, "feedback": "Too similar to 'big' - try something more impactful." },
+          { "word": "pressing", "score": 85, "feedback": "Great choice! 'Pressing' adds urgency." }
+        ],
+        "bestAnswer": "critical",
+        "explanation": "'Critical' is the strongest choice because it implies both urgency and potential consequences."
+      },
+      {
+        "id": "2",
+        "sentence": "The meeting was very good.",
+        "targetWord": "good",
+        "targetWordIndex": 4,
+        "options": [
+          { "word": "productive", "score": 100, "feedback": "Excellent! 'Productive' is specific and meaningful." },
+          { "word": "nice", "score": 20, "feedback": "Too vague - similar problem as 'good'." },
+          { "word": "constructive", "score": 90, "feedback": "Strong choice! Shows positive outcomes." },
+          { "word": "fruitful", "score": 85, "feedback": "Good! Implies tangible results." }
+        ],
+        "bestAnswer": "productive",
+        "explanation": "'Productive' precisely describes what made the meeting valuable - things got accomplished."
+      }
+    ]
+  },
+
+  "reverseDefinitions": {
+    "en": [
+      { "id": "en-1", "definition": "A feeling of great happiness and triumph", "answer": "elation", "hints": ["Starts with 'e'", "Has 7 letters"], "difficulty": "medium" },
+      { "id": "en-2", "definition": "Speaking or writing in a clear and effective way", "answer": "articulate", "hints": ["Starts with 'a'", "Can be verb or adjective"], "difficulty": "medium" }
+    ],
+    "fr": [
+      { "id": "fr-1", "definition": "Un sentiment de grande joie et de triomphe", "answer": "allégresse", "hints": ["Commence par 'a'", "10 lettres"], "difficulty": "medium" }
+    ],
+    "es": [
+      { "id": "es-1", "definition": "Un sentimiento de gran alegría y triunfo", "answer": "júbilo", "hints": ["Empieza con 'j'", "6 letras"], "difficulty": "medium" }
+    ]
+  },
+
+  "synonymChain": {
+    "en": [
+      { "id": "en-1", "word": "happy", "commonSynonyms": ["joyful", "glad", "pleased", "content", "cheerful"], "rareSynonyms": ["elated", "jubilant", "blissful", "ecstatic", "euphoric"], "timeLimit": 30 },
+      { "id": "en-2", "word": "sad", "commonSynonyms": ["unhappy", "upset", "down", "gloomy", "sorrowful"], "rareSynonyms": ["melancholy", "despondent", "forlorn", "disconsolate", "woebegone"], "timeLimit": 30 }
+    ],
+    "fr": [
+      { "id": "fr-1", "word": "heureux", "commonSynonyms": ["content", "joyeux", "ravi", "satisfait", "gai"], "rareSynonyms": ["euphorique", "extatique", "comblé", "béat", "radieux"], "timeLimit": 30 }
+    ],
+    "es": [
+      { "id": "es-1", "word": "feliz", "commonSynonyms": ["contento", "alegre", "dichoso", "satisfecho", "gozoso"], "rareSynonyms": ["eufórico", "exultante", "radiante", "jubiloso", "beatífico"], "timeLimit": 30 }
+    ]
+  }
+}

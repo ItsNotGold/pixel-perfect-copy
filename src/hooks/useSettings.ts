@@ -16,7 +16,7 @@ export type SettingsShape = {
     achievementAlerts: boolean;
   };
   appearance?: {
-    theme: "light" | "dark";
+    theme: "light" | "dark" | "system";
   };
   profile?: {
     selectedBadges?: string[];
@@ -28,7 +28,7 @@ export const DEFAULT_SETTINGS: SettingsShape = {
   practice: { dailyReminders: false, timerSounds: true },
   audio: { soundEffects: true, voiceFeedback: false },
   notifications: { streakReminders: true, achievementAlerts: true },
-  appearance: { theme: "light" },
+  appearance: { theme: "system" },
   profile: { selectedBadges: [], bio: "" },
 };
 
@@ -78,13 +78,45 @@ export function useSettings() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
-  // Apply theme to document root when settings change
+  // Apply theme to document root when settings change. Supports 'system' to follow device/browser preference.
   useEffect(() => {
     try {
-      const theme = settings.appearance?.theme || "light";
-      if (typeof document !== "undefined") {
-        document.documentElement.classList.toggle("dark", theme === "dark");
+      const theme = settings.appearance?.theme || "system";
+
+      const apply = (value: string) => {
+        if (typeof document === "undefined") return;
+        if (value === "system") {
+          const prefersDark = typeof window !== "undefined" && (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.classList.toggle("dark", Boolean(prefersDark));
+        } else {
+          document.documentElement.classList.toggle("dark", value === "dark");
+        }
+      };
+
+      apply(theme);
+
+      // Listen to changes only when theme === 'system'
+      const mql = typeof window !== "undefined" ? window.matchMedia?.("(prefers-color-scheme: dark)") : null;
+      const listener = (e: MediaQueryListEvent | MediaQueryList) => {
+        // Only respond when user preference is system
+        if ((settings.appearance?.theme || "system") !== "system") return;
+        const matches = 'matches' in e ? e.matches : (mql ? mql.matches : false);
+        if (typeof document !== "undefined") document.documentElement.classList.toggle("dark", Boolean(matches));
+      };
+
+      if (mql && (mql as any).addEventListener) {
+        (mql as any).addEventListener("change", listener);
+      } else if (mql && (mql as any).addListener) {
+        (mql as any).addListener(listener);
       }
+
+      return () => {
+        if (mql && (mql as any).removeEventListener) {
+          (mql as any).removeEventListener("change", listener);
+        } else if (mql && (mql as any).removeListener) {
+          (mql as any).removeListener(listener);
+        }
+      };
     } catch (err) {
       // ignore
     }

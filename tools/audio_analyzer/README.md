@@ -12,6 +12,12 @@ Prereqs (install these on your system):
 - A Vosk model (download and set VOSK_MODEL_PATH env var) - small model works for tests
 - Optional: whisperx and its dependencies (these can be heavy: torch, etc.)
 - Optional: MFA / OpenSMILE (not required; pipeline will fall back to heuristics if absent)
+  - Environment variables (optional):
+    - `MFA_BIN`: path to `mfa` executable (if not on PATH)
+    - `MFA_DICT`: path to pronunciation dictionary used by MFA
+    - `MFA_ACOUSTIC_MODEL`: path to MFA acoustic model
+    - `OPENSMILE_BIN`: path to `SMILExtract` if you wish to extract voice-quality features
+
 
 Quickstart (venv):
 
@@ -38,7 +44,9 @@ Output format (example):
 ```
 {
   "transcript": "...",
+  "words": [ { word, start, end } ],
   "lexical_fillers": [{"word":"um","start":1.23,"end":1.35}],
+  "phonetic_fillers": [{"type":"sustained_vowel","phoneme":"AH","start":2.0,"end":2.45,"duration":0.45}],
   "non_lexical_fillers": [{"type":"mmm","start":2.00,"end":2.15}],
   "total_filler_count": 3,
   "filler_duration_total": 1.12

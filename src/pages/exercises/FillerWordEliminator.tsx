@@ -166,8 +166,13 @@ export default function FillerWordEliminator() {
               // map lexical counts
               const counts: Record<string, number> = {};
               (raw.lexical_fillers || []).forEach((f: any) => counts[f.word] = (counts[f.word] || 0) + 1);
+              // include phonetic fillers counts by type as first-class
+              (raw.phonetic_fillers || []).forEach((p: any) => {
+                const key = `(phonetic) ${p.type}${p.phoneme ? `:${p.phoneme}` : ""}`;
+                counts[key] = (counts[key] || 0) + 1;
+              });
               setFillerCount(counts);
-              total = raw.total_filler_count || total;
+              total = raw.total_filler_count || raw.total_filler_count === 0 ? raw.total_filler_count : total;
             } else if (data.fillerWords) {
               setFillerCount(data.fillerWords);
               total = data.totalFillers || total;

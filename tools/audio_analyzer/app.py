@@ -161,7 +161,102 @@ def detect_lexical_fillers(words_ts: List[Dict[str, Any]], language: str) -> Lis
     return found
 
 
-# Detect non-lexical fillers via VAD + spectral heuristics
+# Optional MFA-based phoneme alignment helpers
+
+def run_mfa_alignment(wav_path: str, transcript: str, language: str = "en") -> List[Dict[str, Any]]:
+    """Run Montreal Forced Aligner (if available) to get phoneme-level alignments.
+    Expects environment vars MFA_BIN, MFA_DICT and MFA_ACOUSTIC_MODEL to be set (optional).
+    Returns list of {'phoneme': str, 'start': float, 'end': float}
+    """
+    try:
+        import shutil
+        from textgrid import TextGrid
+    except Exception:
+        return []
+
+    mfa_bin = os.getenv("MFA_BIN", shutil.which("mfa") or "")
+    mfa_dict = os.getenv("MFA_DICT")
+    mfa_acoustic = os.getenv("MFA_ACOUSTIC_MODEL")
+
+    if not mfa_bin or not mfa_dict or not mfa_acoustic:
+        return []
+
+    tmpdir = tempfile.mkdtemp()
+    try:
+        # write wav and transcript in corpus format
+        base = os.path.join(tmpdir, "corpus")
+        os.makedirs(base, exist_ok=True)
+        # transcript expected in a .lab file with same basename as wav
+        # Copy wav to corpus with a stable name
+        wav_basename = "audio.wav"
+        wav_dst = os.path.join(base, wav_basename)
+        subprocess.check_call(["cp", wav_path, wav_dst])
+        lab_path = os.path.join(base, "audio.lab")
+        with open(lab_path, "w", encoding="utf-8") as f:
+            f.write(transcript.strip() + "\n")
+
+        out_dir = os.path.join(tmpdir, "mfa_out")
+        cmd = [mfa_bin, "align", base, mfa_dict, mfa_acoustic, out_dir, "--clean", "--quiet"]
+        subprocess.check_call(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+        # read resulting TextGrid
+        tg_path = os.path.join(out_dir, "audio.TextGrid")
+        if not os.path.exists(tg_path):
+            return []
+
+        tg = TextGrid.fromFile(tg_path)
+        phonemes = []
+        # find phones tier
+        for tier in tg.tiers:
+            if tier.name.lower().startswith("phones") or tier.name.lower().startswith("phone"):
+                for interval in tier.intervals:
+                    label = interval.mark.strip()
+                    if label:
+                        phonemes.append({"phoneme": label, "start": interval.minTime, "end": interval.maxTime})
+                break
+        return phonemes
+    except Exception:
+        return []
+    finally:
+        try:
+            subprocess.call(["rm", "-rf", tmpdir])
+        except Exception:
+            pass
+
+
+# Detect phonetic fillers from MFA phoneme alignments
+
+def detect_phonetic_fillers_from_phonemes(phonemes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    fillers = []
+    # simple vowel set and nasal set based on common ARPAbet/IPA labels in MFA outputs
+    vowel_labels = set(["AA","AE","AH","AO","AW","AY","EH","ER","EY","IH","IY","OW","OY","UH","UW","AH0","AA0","AH1","AH2"])
+    nasal_labels = set(["M","N","NG"])
+
+    i = 0
+    while i < len(phonemes):
+        p = phonemes[i]
+        ph = p.get("phoneme", "").upper()
+        dur = p.get("end", 0) - p.get("start", 0)
+        if ph in vowel_labels and dur >= 0.2:
+            fillers.append({"type": "sustained_vowel", "phoneme": ph, "start": p.get("start"), "end": p.get("end"), "duration": round(dur, 3)})
+        # repeated nasals (mmm, nnn) aggregation
+        if ph in nasal_labels and dur >= 0.08:
+            # aggregate consecutive same or other nasals
+            j = i
+            start = p.get("start")
+            end = p.get("end")
+            while j + 1 < len(phonemes) and phonemes[j+1].get("phoneme", "").upper() in nasal_labels:
+                end = phonemes[j+1].get("end")
+                j += 1
+            total_dur = end - start
+            if total_dur >= 0.12:
+                fillers.append({"type": "nasal_hum", "phoneme": "{"+",".join([phonemes[k].get('phoneme') for k in range(i, j+1)])+"}", "start": start, "end": end, "duration": round(total_dur,3)})
+            i = j
+        i += 1
+    return fillers
+
+
+# Detect non-lexical fillers via VAD + spectral heuristics (kept as fallback/enrichment)
 
 def detect_non_lexical_fillers(wav_path: str, vad_segs: List[Dict[str, float]]) -> List[Dict[str, Any]]:
     y, sr = librosa.load(wav_path, sr=16000)
@@ -178,7 +273,7 @@ def detect_non_lexical_fillers(wav_path: str, vad_segs: List[Dict[str, float]]) 
             spec_cent = np.mean(librosa.feature.spectral_centroid(yseg+1e-9, sr=sr)) if yseg.size>0 else 0
             # heuristics: low centroid & low zcr -> hum / nasal / mmm
             if spec_cent < 2000 and zcr < 0.1:
-                candidates.append({"type": "short_hum", "start": start_s, "end": end_s})
+                candidates.append({"type": "short_hum", "start": start_s, "end": end_s, "duration": round(end_s-start_s,3)})
         elif dur >= 0.12 and dur <= 1.5:
             # longer voiced region in silence: could be long filler or sustained vowel
             start_s = seg['start']
@@ -188,9 +283,8 @@ def detect_non_lexical_fillers(wav_path: str, vad_segs: List[Dict[str, float]]) 
             f0 = np.mean(librosa.yin(yseg+1e-9, fmin=50, fmax=500)) if yseg.size>0 else 0
             # if f0 present and sustained, consider long filler
             if not np.isnan(f0) and f0 > 50 and (end_s - start_s) > 0.25:
-                candidates.append({"type": "long_voiced_fill", "start": start_s, "end": end_s})
+                candidates.append({"type": "long_voiced_fill", "start": start_s, "end": end_s, "duration": round(end_s-start_s,3)})
     return candidates
-
 
 @app.route("/analyze", methods=["POST"])
 def analyze():
@@ -217,15 +311,53 @@ def analyze():
         # Lexical fillers
         lexical = detect_lexical_fillers(words, language)
 
-        # Non-lexical fillers
+        # MFA phoneme alignments (optional)
+        phonemes = []
+        try:
+            phonemes = run_mfa_alignment(wav, transcript, language)
+        except Exception:
+            phonemes = []
+
+        phonetic_from_phonemes = []
+        if phonemes:
+            phonetic_from_phonemes = detect_phonetic_fillers_from_phonemes(phonemes)
+
+        # Non-lexical fillers (VAD + heuristics fallback/enrichment)
         nonlex = detect_non_lexical_fillers(wav, vad_segs)
 
-        total_count = len(lexical) + len(nonlex)
-        total_duration = sum([(f.get("end", 0) - f.get("start", 0)) for f in lexical]) + sum([n.get("end", 0) - n.get("start", 0) for n in nonlex])
+        # Merge phonetic detections, prefer phoneme-based when overlapping
+        phonetic_fillers = []
+        # start with phoneme detections
+        for p in phonetic_from_phonemes:
+            phonetic_fillers.append({
+                "type": p.get("type"),
+                "phoneme": p.get("phoneme"),
+                "start": p.get("start"),
+                "end": p.get("end"),
+                "duration": p.get("duration"),
+                "source": "mfa",
+            })
+        # add non-lexical heuristics if they don't overlap existing phonetic detections
+        def overlaps(a, b):
+            return not (a['end'] <= b['start'] or a['start'] >= b['end'])
+
+        for n in nonlex:
+            conflict = False
+            for p in phonetic_fillers:
+                if overlaps(n, p):
+                    conflict = True
+                    break
+            if not conflict:
+                phonetic_fillers.append({"type": n.get("type"), "start": n.get("start"), "end": n.get("end"), "duration": n.get("duration"), "source": "heuristic"})
+
+        total_count = len(lexical) + len(phonetic_fillers)
+        total_duration = sum([(f.get("end", 0) - f.get("start", 0)) for f in lexical]) + sum([n.get("end", 0) - n.get("start", 0) for n in phonetic_fillers])
 
         result = {
             "transcript": transcript,
+            "words": words,
             "lexical_fillers": lexical,
+            "phonetic_fillers": phonetic_fillers,
             "non_lexical_fillers": nonlex,
             "total_filler_count": total_count,
             "filler_duration_total": round(float(total_duration), 3),

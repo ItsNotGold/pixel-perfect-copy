@@ -204,6 +204,7 @@ export default function FillerWordEliminator() {
     } else {
       toast.info(`You used ${total} filler words. Keep practicing!`);
     }
+    }
   };
 
   const handleRestart = () => {

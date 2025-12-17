@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { synonymChallengesMultilingual } from "@/data/multilingualContent";
+import { synonymSpeedChainMaster } from "@/data/exercises/synonymSpeedChain.master";
+import { SynonymChallenge } from "@/data/types";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ExerciseGate } from "@/components/ExerciseGate";
 import { cn } from "@/lib/utils";
@@ -14,13 +15,7 @@ import { useSettings } from "@/hooks/useSettings";
 import { playTick, playDing } from "@/lib/audio";
 import { speak } from "@/lib/tts";
 
-interface SynonymChallenge {
-  id: string;
-  word: string;
-  commonSynonyms: string[];
-  rareSynonyms: string[];
-  timeLimit: number;
-}
+
 
 export default function SynonymSpeedChain() {
   const { language } = useLanguage();
@@ -41,7 +36,8 @@ export default function SynonymSpeedChain() {
   const { settings } = useSettings();
 
   useEffect(() => {
-    const challenges = synonymChallengesMultilingual[language] || synonymChallengesMultilingual.en;
+    const content = synonymSpeedChainMaster.content.multilingual[language] || synonymSpeedChainMaster.content.multilingual.en;
+    const challenges = content.challenges;
     const shuffled = [...challenges].sort(() => Math.random() - 0.5);
     const desiredCount = 5;
     setShuffledChallenges(shuffled.slice(0, desiredCount));
@@ -71,7 +67,7 @@ export default function SynonymSpeedChain() {
         const next = prev - 1;
         // play tick on last 5 seconds if enabled
         if (settings?.practice?.timerSounds && next <= 5) {
-          try { playTick(); } catch {}
+          try { playTick(); } catch { }
         }
         return next;
       });
@@ -114,7 +110,7 @@ export default function SynonymSpeedChain() {
     if (!currentSynonym.trim() || !currentChallenge) return;
 
     const word = currentSynonym.toLowerCase().trim();
-    
+
     if (synonymList.includes(word)) {
       toast.error("Already added!");
       return;
@@ -173,7 +169,8 @@ export default function SynonymSpeedChain() {
   };
 
   const handleRestart = () => {
-    const challenges = synonymChallengesMultilingual[language] || synonymChallengesMultilingual.en;
+    const content = synonymSpeedChainMaster.content.multilingual[language] || synonymSpeedChainMaster.content.multilingual.en;
+    const challenges = content.challenges;
     const shuffled = [...challenges].sort(() => Math.random() - 0.5);
     const desiredCount = 5;
     setShuffledChallenges(shuffled.slice(0, desiredCount));

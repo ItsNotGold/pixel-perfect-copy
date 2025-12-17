@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { fillerWordsMultilingual, speakingTopicsMultilingual } from "@/data/multilingualContent";
+import { fillerWordEliminatorMaster } from "@/data/exercises/fillerWordEliminator.master";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useVoiceRecording } from "@/hooks/useVoiceRecording";
 import { withTimeout } from "@/lib/asyncUtils";
@@ -73,14 +73,15 @@ export default function FillerWordEliminator() {
 
 
   const transcript = useVoice ? voiceTranscript : manualTranscript;
-  const fillerWords = fillerWordsMultilingual[language] || fillerWordsMultilingual.en;
+  const content = fillerWordEliminatorMaster.content.multilingual[language] || fillerWordEliminatorMaster.content.multilingual.en;
+  const fillerWords = content.targetFillerWords;
 
   useEffect(() => {
     pickNewTopic();
   }, [language]);
 
   const pickNewTopic = () => {
-    const topics = speakingTopicsMultilingual[language] || speakingTopicsMultilingual.en;
+    const topics = content.topics;
     const randomTopic = topics[Math.floor(Math.random() * topics.length)];
     setCurrentTopic(randomTopic.topic);
   };

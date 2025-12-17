@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { reverseDefinitionsMultilingual } from "@/data/multilingualContent";
+import { reverseDefinitionsMaster } from "@/data/exercises/reverseDefinitions.master";
+import { ReverseDefinition } from "@/data/types";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ExerciseGate } from "@/components/ExerciseGate";
 import { cn } from "@/lib/utils";
@@ -14,13 +15,7 @@ import { speak } from "@/lib/tts";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
 
-interface ReverseDefinition {
-  id: string;
-  definition: string;
-  answer: string;
-  hints: string[];
-  difficulty: "easy" | "medium" | "hard";
-}
+
 
 export default function ReverseDefinitions() {
   const { language } = useLanguage();
@@ -38,7 +33,8 @@ export default function ReverseDefinitions() {
   const { settings } = useSettings();
 
   useEffect(() => {
-    const definitions = reverseDefinitionsMultilingual[language] || reverseDefinitionsMultilingual.en;
+    const content = reverseDefinitionsMaster.content.multilingual[language] || reverseDefinitionsMaster.content.multilingual.en;
+    const definitions = content.questions;
     const shuffled = [...definitions].sort(() => Math.random() - 0.5);
     const desiredCount = 10;
     setShuffledChallenges(shuffled.slice(0, desiredCount));
@@ -108,7 +104,8 @@ export default function ReverseDefinitions() {
   };
 
   const handleRestart = () => {
-    const definitions = reverseDefinitionsMultilingual[language] || reverseDefinitionsMultilingual.en;
+    const content = reverseDefinitionsMaster.content.multilingual[language] || reverseDefinitionsMaster.content.multilingual.en;
+    const definitions = content.questions;
     const shuffled = [...definitions].sort(() => Math.random() - 0.5);
     const desiredCount = 10;
     setShuffledChallenges(shuffled.slice(0, desiredCount));

@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
-import { swapChallengesMultilingual } from "@/data/multilingualContent";
+import { precisionSwapMaster } from "@/data/exercises/precisionSwap.master";
+import { SwapChallenge } from "@/data/types";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
@@ -22,15 +23,7 @@ import { useSettings } from "@/hooks/useSettings";
 import { playSuccess, playFail } from "@/lib/audio";
 import { speak } from "@/lib/tts";
 
-interface SwapChallenge {
-  id: string;
-  sentence: string;
-  targetWord: string;
-  targetWordIndex: number;
-  options: { word: string; score: number; feedback: string }[];
-  bestAnswer: string;
-  explanation: string;
-}
+
 
 export default function PrecisionSwap() {
   const { language } = useLanguage();
@@ -62,7 +55,8 @@ export default function PrecisionSwap() {
   };
 
   useEffect(() => {
-    const challenges = swapChallengesMultilingual[language] || swapChallengesMultilingual.en;
+    const content = precisionSwapMaster.content.multilingual[language] || precisionSwapMaster.content.multilingual.en;
+    const challenges = content.questions;
     const desiredCount = 10;
     setShuffledChallenges(pickShuffled(challenges, desiredCount, `precision-swap-last-${language}`));
     setCurrentIndex(0);
@@ -143,7 +137,8 @@ export default function PrecisionSwap() {
   };
 
   const handleRestart = () => {
-    const challenges = swapChallengesMultilingual[language] || swapChallengesMultilingual.en;
+    const content = precisionSwapMaster.content.multilingual[language] || precisionSwapMaster.content.multilingual.en;
+    const challenges = content.questions;
     const desiredCount = 10;
     setShuffledChallenges(pickShuffled(challenges, desiredCount, `precision-swap-last-${language}`));
     setCurrentIndex(0);

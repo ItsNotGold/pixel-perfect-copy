@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { wordIncorporationPrompts } from "@/data/multilingualContent";
+import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useVoiceRecording } from "@/hooks/useVoiceRecording";
 import { ExerciseGate } from "@/components/ExerciseGate";
@@ -45,7 +45,8 @@ export default function WordIncorporation() {
   const transcript = voiceTranscript;
 
   const pickNewPrompt = useCallback(() => {
-    const prompts = wordIncorporationPrompts[language] || wordIncorporationPrompts.en;
+    const content = wordIncorporationMaster.content.multilingual[language] || wordIncorporationMaster.content.multilingual.en;
+    const prompts = content.prompts;
     const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
     setCurrentPrompt(randomPrompt);
   }, [language]);

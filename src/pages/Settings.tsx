@@ -2,6 +2,7 @@ import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Bell, Volume2, Clock, User } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useSettings } from "@/hooks/useSettings";
 import { useEffect, useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
@@ -111,6 +112,24 @@ export default function Settings() {
           </div>
 
           {/* Account Section (Placeholder) */}
+          {/* Appearance */}
+          <div className="rounded-2xl glass p-6 animate-slide-up" style={{ animationDelay: "0.3s" }}>
+            <h2 className="mb-4 font-display text-lg text-foreground flex items-center gap-2">
+              <Moon className="h-5 w-5 text-primary" />
+              Appearance
+            </h2>
+
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <div className="font-medium text-foreground">Dark Mode</div>
+                  <div className="text-sm text-muted-foreground">Toggle a darker color palette</div>
+                </div>
+                <Switch checked={settings.appearance?.theme === "dark"} onCheckedChange={(v) => update((s) => ({ ...s, appearance: { theme: v ? "dark" : "light" } }))} />
+              </div>
+            </div>
+          </div>
+
           <div className="rounded-2xl glass p-6 animate-slide-up" style={{ animationDelay: "0.3s" }}>
             <h2 className="mb-4 font-display text-lg text-foreground flex items-center gap-2">
               <User className="h-5 w-5 text-primary" />

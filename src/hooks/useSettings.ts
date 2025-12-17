@@ -15,12 +15,16 @@ export type SettingsShape = {
     streakReminders: boolean;
     achievementAlerts: boolean;
   };
+  appearance?: {
+    theme: "light" | "dark";
+  };
 };
 
 export const DEFAULT_SETTINGS: SettingsShape = {
   practice: { dailyReminders: false, timerSounds: true },
   audio: { soundEffects: true, voiceFeedback: false },
   notifications: { streakReminders: true, achievementAlerts: true },
+  appearance: { theme: "light" },
 };
 
 const LOCAL_KEY = "verbflow_settings";
@@ -68,6 +72,18 @@ export function useSettings() {
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
+
+  // Apply theme to document root when settings change
+  useEffect(() => {
+    try {
+      const theme = settings.appearance?.theme || "light";
+      if (typeof document !== "undefined") {
+        document.documentElement.classList.toggle("dark", theme === "dark");
+      }
+    } catch (err) {
+      // ignore
+    }
+  }, [settings.appearance?.theme]);
 
   const save = async (next: SettingsShape) => {
     setSettings(next);

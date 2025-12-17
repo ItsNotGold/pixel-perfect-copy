@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { achievementDefs } from "@/data/achievements";
+import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
 export default function Achievements() {
   const { user } = useAuth();
@@ -40,26 +41,36 @@ export default function Achievements() {
         {loading ? (
           <div className="text-muted-foreground">Loading...</div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {achievementDefs.map((a) => {
               const isUnlocked = Boolean(unlocked[a.id]);
               const unlockedAt = unlocked[a.id]?.created_at;
-              const level = a.id.includes(':gold') ? 'gold' : a.id.includes(':silver') ? 'silver' : a.id.includes(':bronze') ? 'bronze' : null;
-              const color = level === 'gold' ? 'bg-yellow-400 text-yellow-900' : level === 'silver' ? 'bg-slate-300 text-slate-900' : level === 'bronze' ? 'bg-amber-300 text-amber-900' : 'bg-primary/10 text-foreground';
+              const level = a.id.includes(":gold") ? "gold" : a.id.includes(":silver") ? "silver" : a.id.includes(":bronze") ? "bronze" : null;
+              const color = level === "gold" ? "from-yellow-300 to-yellow-200 text-yellow-900" : level === "silver" ? "from-slate-200 to-slate-100 text-slate-900" : level === "bronze" ? "from-amber-200 to-amber-100 text-amber-900" : "from-primary to-accent text-foreground";
 
               return (
-                <div key={a.id} className={`rounded-xl p-4 ${isUnlocked ? 'bg-white dark:bg-gray-800 shadow-sm' : 'bg-muted/50'}`}>
-                  <div className="flex items-center gap-3">
-                    <div className={`h-12 w-12 shrink-0 rounded-full flex items-center justify-center shadow-md ${color}`}>
-                      {level === 'gold' ? '🥇' : level === 'silver' ? '🥈' : level === 'bronze' ? '🥉' : '🏅'}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="font-medium text-foreground truncate">{a.title}</div>
-                      <div className="text-sm text-muted-foreground truncate">{a.description}</div>
-                    </div>
-                    <div className="ml-2 text-xs text-muted-foreground">{isUnlocked ? `Unlocked${unlockedAt ? ` • ${new Date(unlockedAt).toLocaleDateString()}` : ''}` : 'Locked'}</div>
+                <Dialog key={a.id}>
+                  <div className="flex items-center justify-center">
+                    <DialogTrigger asChild>
+                      <button className={`group relative flex h-28 w-28 flex-col items-center justify-center rounded-full p-2 transition-transform hover:scale-105 focus:outline-none ${isUnlocked ? 'ring-2 ring-offset-2 ring-primary/30' : 'opacity-60'}`}>
+                        <div className={`absolute -inset-0.5 rounded-full bg-gradient-to-br ${color} blur-sm opacity-30`}></div>
+                        <div className={`relative z-10 flex h-full w-full flex-col items-center justify-center rounded-full bg-background p-3 ${isUnlocked ? 'shadow-lg' : 'border border-muted/30'}`}>
+                          <div className="text-sm font-semibold text-center px-2">{a.title}</div>
+                        </div>
+                      </button>
+                    </DialogTrigger>
                   </div>
-                </div>
+
+                  <DialogContent>
+                    <DialogTitle>{a.title}</DialogTitle>
+                    <DialogDescription>
+                      <div className="mb-4 text-sm text-muted-foreground">{a.description}</div>
+                      <div className="text-sm">
+                        Status: {isUnlocked ? <span className="font-medium text-foreground">Unlocked{unlockedAt ? ` • ${new Date(unlockedAt).toLocaleDateString()}` : ''}</span> : <span className="text-muted-foreground">Locked</span>}
+                      </div>
+                    </DialogDescription>
+                  </DialogContent>
+                </Dialog>
               );
             })}
           </div>

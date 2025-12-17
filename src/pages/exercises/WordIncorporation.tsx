@@ -24,7 +24,7 @@ interface AIFeedback {
 
 export default function WordIncorporation() {
   const { language, speechLanguageCode } = useLanguage();
-  const { isRecording: isVoiceRecording, transcript: voiceTranscript, rawTranscript: rawVoiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio, audioUrl } = useVoiceRecording();
+  const { isRecording: isVoiceRecording, transcript: voiceTranscript, rawTranscript: rawVoiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio, audioUrl, audioBlob } = useVoiceRecording();
   
   const [currentPrompt, setCurrentPrompt] = useState<{ prompt: string; words: string[] } | null>(null);
   const [isActive, setIsActive] = useState(false);
@@ -396,6 +396,17 @@ export default function WordIncorporation() {
               <div className="mt-4 flex items-center justify-center gap-2 text-red-500">
                 <Mic className="h-5 w-5 animate-pulse" />
                 <span className="text-sm font-medium">Recording...</span>
+              </div>
+            )}
+
+            {/* Local playback so user can listen to their recording */}
+            {audioBlob && (
+              <div className="mt-4 p-4 rounded-lg bg-muted/10">
+                <div className="mb-2 text-sm font-medium">Play your recording</div>
+                <audio controls className="w-full">
+                  <source src={URL.createObjectURL(audioBlob)} type={audioBlob.type || "audio/webm"} />
+                  Your browser does not support audio playback.
+                </audio>
               </div>
             )}
 

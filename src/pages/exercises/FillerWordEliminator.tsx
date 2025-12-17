@@ -24,7 +24,7 @@ interface AIFeedback {
 
 export default function FillerWordEliminator() {
   const { language, speechLanguageCode } = useLanguage();
-  const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio, audioUrl } = useVoiceRecording();
+  const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio, audioUrl, audioBlob } = useVoiceRecording();
   
   const [currentTopic, setCurrentTopic] = useState("");
   const [isActive, setIsActive] = useState(false);
@@ -309,6 +309,17 @@ export default function FillerWordEliminator() {
                 </>
               )}
             </div>
+
+            {/* Playback of local recording (user can listen to themselves) */}
+            {audioBlob && (
+              <div className="mb-6 rounded-lg bg-muted/10 p-4">
+                <div className="mb-2 text-sm font-medium text-foreground">Listen to your recording</div>
+                <audio controls className="w-full">
+                  <source src={URL.createObjectURL(audioBlob)} type={audioBlob.type || "audio/webm"} />
+                  Your browser does not support audio playback.
+                </audio>
+              </div>
+            )}
 
             {isAnalyzing && (
               <div className="mb-6 flex items-center justify-center gap-2 text-muted-foreground">

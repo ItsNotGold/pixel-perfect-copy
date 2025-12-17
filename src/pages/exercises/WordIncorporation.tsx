@@ -116,14 +116,23 @@ export default function WordIncorporation() {
     if (wordTimerRef.current) {
       clearInterval(wordTimerRef.current);
     }
-    const blob = await stopVoice();
-    await analyzeTranscript(blob);
+    const { blob, transcript } = await stopVoice();
+
+    // upload immediately for analysis
+    let url: string | null = null;
+    if (blob) {
+      url = await saveAudio(blob);
+    }
+
+    await analyzeTranscript(transcript, url);
     if (settings?.audio?.soundEffects) playDing();
+
     if (settings?.audio?.voiceFeedback) speak("Exercise complete. Check your results.");
   };
 
-  const analyzeTranscript = async (blob: Blob | null = null) => {
-    const processedText = transcript.toLowerCase();
+  const analyzeTranscript = async (transcriptOverride?: string, audioUrlOverride?: string | null) => {
+    const processedText = (transcriptOverride || transcript).toLowerCase();
+
 
     const rawText = (rawVoiceTranscript || "").toLowerCase();
     const text = `${processedText} ${rawText}`.trim();
@@ -173,7 +182,12 @@ export default function WordIncorporation() {
           body: {
             type: "word-incorporation",
             language,
-            data: { transcript: text, targetWords: currentPrompt.words },
+            body: {
+              type: "word-incorporation",
+              language,
+              data: { transcript: text, targetWords: currentPrompt.words, audioUrl: audioUrlOverride },
+            },
+
           },
         });
 
@@ -212,7 +226,9 @@ export default function WordIncorporation() {
     }
 
     if (user) {
-      const audioUrl = await saveAudio(blob);
+      // Audio likely already uploaded in stopSession. Use the override URL if present.
+      const finalUrl = audioUrlOverride ?? (await saveAudio());
+
       const res = await saveAttempt({
         exerciseId: "word-incorporation",
         score: aiFeedback?.score || score,
@@ -222,8 +238,9 @@ export default function WordIncorporation() {
           targetWords: currentPrompt.words,
           wordsUsed,
           wordsMissed,
-          audioUrl,
+          audioUrl: finalUrl,
         },
+
       });
       if (!res || !res.success) toast.error("Failed to save progress");
     }

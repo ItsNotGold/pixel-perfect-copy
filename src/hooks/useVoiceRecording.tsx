@@ -37,7 +37,7 @@ interface UseVoiceRecordingReturn {
   transcript: string;
   rawTranscript: string;
   startRecording: (languageCode?: string) => Promise<void>;
-  stopRecording: () => Promise<Blob | null>;
+  stopRecording: () => Promise<{ blob: Blob | null; transcript: string }>;
   resetTranscript: () => void;
   audioBlob: Blob | null;
   audioUrl: string | null;
@@ -171,8 +171,9 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
   }, []);
 
 
-  const stopRecording = useCallback(async (): Promise<Blob | null> => {
+  const stopRecording = useCallback(async (): Promise<{ blob: Blob | null; transcript: string }> => {
     setIsProcessing(true);
+
 
 
     if (recognitionRef.current) {
@@ -215,8 +216,10 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
 
     // If we have a recorded blob (from the recorder), try to transcribe it using the configured service
     // Use the local recorded blob variable instead of referencing the possibly-stale state value
+    let finalTranscriptVal = rawTranscript;
     if (recordedBlob) {
       try {
+
         // Only attempt AssemblyAI if an API key is configured
         const apiKey = import.meta.env.VITE_ASSEMBLYAI_API_KEY;
         if (apiKey) {
@@ -237,12 +240,16 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
             const processed = transcriptResponse.text || '';
             const merged = [processed, rawTranscript].filter(Boolean).join(' ');
             setTranscript(merged);
+            finalTranscriptVal = merged;
           } else {
+
             toast.error('Transcription failed');
           }
         } else {
           // No remote ASR configured — keep the raw transcript captured by the Web Speech API
           setTranscript(rawTranscript);
+          finalTranscriptVal = rawTranscript;
+
         }
       } catch (error) {
         console.error('Transcription error:', error);
@@ -254,8 +261,9 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     }
 
     setIsProcessing(false);
-    return recordedBlob;
+    return { blob: recordedBlob, transcript: finalTranscriptVal };
   }, [audioBlob, rawTranscript]);
+
 
 
   const saveAudio = useCallback(async (blobOverride?: Blob | null): Promise<string | null> => {

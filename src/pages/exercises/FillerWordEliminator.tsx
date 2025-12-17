@@ -116,13 +116,23 @@ export default function FillerWordEliminator() {
     }
     if (useVoice) {
       // Ensure recording is fully stopped and processed before analyzing/saving
-      await stopVoice();
+      const { blob, transcript } = await stopVoice();
+      // immediately upload for analysis
+      let url: string | null = null;
+      if (blob) {
+        url = await saveAudio(blob);
+      }
+      await analyzeTranscript(transcript, url);
+    } else {
+      await analyzeTranscript();
     }
-    await analyzeTranscript();
+
   };
 
-  const analyzeTranscript = async () => {
-    const text = useVoice ? voiceTranscript : manualTranscript;
+  const analyzeTranscript = async (transcriptOverride?: string, audioUrlOverride?: string | null) => {
+    const text = useVoice ? (transcriptOverride ?? voiceTranscript) : manualTranscript;
+    const currentAudioUrl = audioUrlOverride ?? audioUrl;
+
 
     // Improved local analysis with better pattern matching
     const counts: Record<string, number> = {};
@@ -183,7 +193,12 @@ export default function FillerWordEliminator() {
             body: {
               type: "filler-words",
               language,
-              data: { transcript: text, audioUrl },
+              body: {
+                type: "filler-words",
+                language,
+                data: { transcript: text, audioUrl: currentAudioUrl },
+              },
+
             },
           }),
           8000
@@ -242,13 +257,20 @@ export default function FillerWordEliminator() {
       const finalScore = evaluatedScore ?? aiFeedback?.score ?? Math.max(0, 100 - total * 10);
 
       if (user) {
-        const audioUrl = useVoice ? await saveAudio() : null;
+        // Audio already uploaded if useVoice was true and we got here from stopSession
+        // But if user pressed stop manually, we might have already uploaded.
+        // If audioUrlOverride is present, use it. Otherwise call saveAudio if needed (e.g. manual stop but not uploaded yet?)
+        // Actually saveAudio is idempotent-ish if we pass blob, but here we don't have blob in scope easily unless we passed it.
+        // Simply using currentAudioUrl should be enough if uploaded.
+        const finalUrl = currentAudioUrl ?? (useVoice ? await saveAudio() : null);
+
         const res = await saveAttempt({
           exerciseId: "filler-word-eliminator",
           score: finalScore,
           maxScore: 100,
-          answers: { transcript: text, fillerCount: counts, audioUrl },
+          answers: { transcript: text, fillerCount: counts, audioUrl: finalUrl },
         });
+
         if (!res || !res.success) toast.error("Failed to save progress");
       }
 

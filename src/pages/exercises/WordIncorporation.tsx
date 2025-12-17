@@ -6,7 +6,7 @@ import { wordIncorporationPrompts } from "@/data/multilingualContent";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useVoiceRecording } from "@/hooks/useVoiceRecording";
 import { ExerciseGate } from "@/components/ExerciseGate";
-import { Mic, MicOff, Play, Square, RotateCcw, Trophy, Clock, Target, Sparkles, Loader2, CheckCircle, XCircle } from "lucide-react";
+import { Mic, MicOff, Play, Square, RotateCcw, Trophy, Clock, Feather, Sparkles, Loader2, CheckCircle, XCircle } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
@@ -240,7 +240,7 @@ export default function WordIncorporation() {
         <div className="mx-auto max-w-4xl px-6 py-12">
           <div className="mb-8 text-center animate-fade-in">
             <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-500 to-blue-500 shadow-lg">
-              <Target className="h-7 w-7 text-primary-foreground" />
+              <Feather className="h-7 w-7 text-primary-foreground" />
             </div>
             <h1 className="mb-2 font-display text-3xl text-foreground">Word Incorporation</h1>
             <p className="text-muted-foreground">Incorporate specific words into your speech</p>

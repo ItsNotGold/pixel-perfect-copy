@@ -137,6 +137,10 @@ export default function WordIncorporation() {
     const rawText = (rawVoiceTranscript || "").toLowerCase();
     const text = `${processedText} ${rawText}`.trim();
 
+    // We will update this if backend provides a better one
+    let effectiveTranscript = text;
+
+
     if (!currentPrompt) return;
 
     // Check which words were used
@@ -146,28 +150,27 @@ export default function WordIncorporation() {
     // Helper to escape regex special chars
     const escapeRegex = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-    currentPrompt.words.forEach((word) => {
-      const w = word.toLowerCase();
-      const patterns = [
-        new RegExp(`\\b${escapeRegex(w)}\\b`, "i"), // exact
-        new RegExp(`\\b${escapeRegex(w)}s?\\b`, "i"), // plural
-        new RegExp(`\\b${escapeRegex(w)}(ing|ed|ly|'s)?\\b`, "i"), // common suffixes
-        new RegExp(`${escapeRegex(w)}`, "i"), // anywhere (fallback)
-      ];
-
-      let found = false;
-      patterns.forEach((pattern) => {
-        if (pattern.test(text)) {
-          found = true;
-        }
+    // Function to re-calculate words based on a new transcript
+    const recalculateWords = (newTranscript: string) => {
+      // clear existing arrays (mutation for this scope references, though we should ideally use new arrays but logic below relies on these variables)
+      wordsUsed.length = 0;
+      wordsMissed.length = 0;
+      currentPrompt.words.forEach((word) => {
+        const w = word.toLowerCase();
+        const patterns = [
+          new RegExp(`\\b${escapeRegex(w)}\\b`, "i"),
+          new RegExp(`\\b${escapeRegex(w)}s?\\b`, "i"),
+          new RegExp(`\\b${escapeRegex(w)}(ing|ed|ly|'s)?\\b`, "i"),
+          new RegExp(`${escapeRegex(w)}`, "i"),
+        ];
+        let found = false;
+        patterns.forEach((pattern) => { if (pattern.test(newTranscript.toLowerCase())) found = true; });
+        if (found) wordsUsed.push(word); else wordsMissed.push(word);
       });
+    };
 
-      if (found) {
-        wordsUsed.push(word);
-      } else {
-        wordsMissed.push(word);
-      }
-    });
+    // Initial calculation based on the current effective transcript
+    recalculateWords(effectiveTranscript);
 
     const score = Math.round((wordsUsed.length / currentPrompt.words.length) * 100);
 
@@ -200,8 +203,15 @@ export default function WordIncorporation() {
             wordsUsed.splice(0, wordsUsed.length, ...result.wordsUsed);
             wordsMissed.splice(0, wordsMissed.length, ...result.wordsMissed);
           } else if ((data as any)?._raw) {
-            // If a local audio analyzer returned structured word timestamps or tokens, use them to improve detection
             const raw = (data as any)._raw;
+            // CHECK 1: If backend transcript is better, use it!
+            if (raw.transcript && raw.transcript.length > effectiveTranscript.length) {
+              effectiveTranscript = raw.transcript;
+              // Re-run detection on the BETTER transcript
+              recalculateWords(effectiveTranscript);
+            }
+
+            // CHECK 2: If we have explicit word tokens, use those too
             if (raw.words && Array.isArray(raw.words) && raw.words.length > 0) {
               // build a simple set of tokens from the analyzer
               const tokenTexts = raw.words.map((w: any) => (w.word || "").toLowerCase());
@@ -213,10 +223,12 @@ export default function WordIncorporation() {
                 const found = tokenTexts.some((t: string) => t === w || t.includes(w) || w.includes(t));
                 if (found) used.push(word); else missed.push(word);
               });
-              wordsUsed.splice(0, wordsUsed.length, ...used);
-              wordsMissed.splice(0, wordsMissed.length, ...missed);
+              // merge results (union of local detection on better transcript AND token detection)
+              // actually safe to just take the union of 'found'
+              used.forEach(u => { if (!wordsUsed.includes(u)) { wordsUsed.push(u); wordsMissed.splice(wordsMissed.indexOf(u), 1); } });
             }
           }
+
         }
       } catch (err) {
         console.error("AI evaluation error:", err);
@@ -231,10 +243,11 @@ export default function WordIncorporation() {
 
       const res = await saveAttempt({
         exerciseId: "word-incorporation",
-        score: aiFeedback?.score || score,
+        score: aiFeedback?.score || Math.round((wordsUsed.length / currentPrompt.words.length) * 100),
         maxScore: 100,
         answers: {
-          transcript: text,
+          transcript: effectiveTranscript,
+
           targetWords: currentPrompt.words,
           wordsUsed,
           wordsMissed,
@@ -253,6 +266,7 @@ export default function WordIncorporation() {
       toast.info(`You used ${wordsUsed.length}/${currentPrompt.words.length} words. Keep practicing!`);
     }
   };
+
 
   const handleRestart = () => {
     pickNewPrompt();

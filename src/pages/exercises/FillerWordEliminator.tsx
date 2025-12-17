@@ -139,6 +139,10 @@ export default function FillerWordEliminator() {
     let total = 0;
     const lowerText = text.toLowerCase();
 
+    // Track if we get a better transcript from backend to use for saving
+    let finalTranscriptForSaving = text;
+
+
     fillerWords.forEach((filler) => {
       let count = 0;
 
@@ -212,6 +216,18 @@ export default function FillerWordEliminator() {
             // If _raw is present (local analyzer), it includes total_filler_count and arrays
             if (data._raw) {
               const raw = data._raw;
+
+              // If backend provides a better transcript, use it!
+              if (raw.transcript && raw.transcript.length > text.length) {
+                // Update the text variable for saving. 
+                // Note: we can't easily update the 'transcript' const in this scope for the immediate save, 
+                // but we can update the state for UI and use a local var for saving.
+                if (!useVoice) setManualTranscript(raw.transcript);
+                // For voice, we can't update 'voiceTranscript' hook state directly easily without a setter, 
+                // but we can assume the backend transcript is the source of truth for the 'answer'.
+                finalTranscriptForSaving = raw.transcript;
+              }
+
               // map lexical counts
               const counts: Record<string, number> = {};
               (raw.lexical_fillers || []).forEach((f: any) => counts[f.word] = (counts[f.word] || 0) + 1);
@@ -237,7 +253,9 @@ export default function FillerWordEliminator() {
               total = raw.total_filler_count || raw.total_filler_count === 0 ? raw.total_filler_count : total;
               // also attach raw to AI feedback for UI rendering
               setAiFeedback((prev) => ({ ...(prev as any), _raw: raw }));
+
             } else if (data.fillerWords) {
+
               setFillerCount(data.fillerWords);
               total = data.totalFillers || total;
             }
@@ -256,6 +274,15 @@ export default function FillerWordEliminator() {
 
       const finalScore = evaluatedScore ?? aiFeedback?.score ?? Math.max(0, 100 - total * 10);
 
+      // Check if we have an updated transcript from the inner logic (hacky way via return, or we specifically extract it in state).
+      // Since we didn't refactor extract logic fully, let's just grab from aiFeedback if set, but state updates are async.
+      // Better: let's re-read data._raw.transcript if possible. 
+      // Actually, simplest is to trust that if aiFeedback._raw.transcript exists, we use it.
+      // But aiFeedback state update hasn't rendered yet. 
+      // Let's rely on the fact that if we got data._raw.transcript, we should strictly use it for saving.
+
+      const savedTranscript = finalTranscriptForSaving;
+
       if (user) {
         // Audio already uploaded if useVoice was true and we got here from stopSession
         // But if user pressed stop manually, we might have already uploaded.
@@ -268,8 +295,9 @@ export default function FillerWordEliminator() {
           exerciseId: "filler-word-eliminator",
           score: finalScore,
           maxScore: 100,
-          answers: { transcript: text, fillerCount: counts, audioUrl: finalUrl },
+          answers: { transcript: savedTranscript, fillerCount: counts, audioUrl: finalUrl },
         });
+
 
         if (!res || !res.success) toast.error("Failed to save progress");
       }

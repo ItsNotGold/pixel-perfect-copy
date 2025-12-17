@@ -16,4 +16,5 @@ Backwards compatibility
 
 Notes
 - If you edit `exercises.content.json`, you will need to rebuild the app (e.g., `npm run dev` / `npm run build`) to see changes in the running app because JSON is bundled.
+- The loader will prefer the JSON content for a language only if that JSON content has at least as many entries as the legacy content (to avoid accidental accidental truncation from a smaller JSON set). If your JSON intentionally replaces the legacy data, ensure you include a full set for that language.
 - If you want runtime-editable content without rebuilding, consider adding a remote content source (CMS or storage) and switching the loader to fetch at runtime. I can help with that if desired.

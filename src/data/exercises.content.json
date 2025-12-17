@@ -65,8 +65,8 @@
   "precisionSwap": {
     "en": [
       {
-        "id": "1",
-        "sentence": "She had a very big problem.",
+        "id": "en-1",
+        "sentence": "A system outage caused a big problem that threatened the project's deadline.",
         "targetWord": "big",
         "targetWordIndex": 4,
         "options": [
@@ -79,8 +79,8 @@
         "explanation": "'Critical' is the strongest choice because it implies both urgency and potential consequences."
       },
       {
-        "id": "2",
-        "sentence": "The meeting was very good.",
+        "id": "en-2",
+        "sentence": "The meeting resulted in several clear action items and measurable outcomes.",
         "targetWord": "good",
         "targetWordIndex": 4,
         "options": [
@@ -90,34 +90,234 @@
           { "word": "fruitful", "score": 85, "feedback": "Good! Implies tangible results." }
         ],
         "bestAnswer": "productive",
-        "explanation": "'Productive' precisely describes what made the meeting valuable - things got accomplished."
+        "explanation": "'Productive' precisely describes what made the meeting valuable."
+      },
+      {
+        "id": "en-3",
+        "sentence": "He walked slowly to the door.",
+        "targetWord": "slowly",
+        "targetWordIndex": 2,
+        "options": [
+          { "word": "trudged", "score": 95, "feedback": "Great verb choice! Shows weariness or reluctance." },
+          { "word": "shuffled", "score": 90, "feedback": "Vivid! Implies dragging feet." },
+          { "word": "ambled", "score": 85, "feedback": "Nice! Suggests a leisurely, unhurried pace." },
+          { "word": "moved", "score": 25, "feedback": "Too generic - loses the 'slowly' meaning entirely." }
+        ],
+        "bestAnswer": "trudged",
+        "explanation": "Using a strong verb like 'trudged' replaces both 'walked' and 'slowly' with one vivid word."
+      },
+      {
+        "id": "en-4",
+        "sentence": "The food was really bad.",
+        "targetWord": "bad",
+        "targetWordIndex": 4,
+        "options": [
+          { "word": "inedible", "score": 100, "feedback": "Perfect! Very specific about the quality." },
+          { "word": "disappointing", "score": 80, "feedback": "Good! Adds an emotional dimension." },
+          { "word": "terrible", "score": 50, "feedback": "Better than 'bad' but still quite vague." },
+          { "word": "revolting", "score": 90, "feedback": "Strong! Conveys a visceral reaction." }
+        ],
+        "bestAnswer": "inedible",
+        "explanation": "'Inedible' tells us exactly how bad the food was."
+      },
+      {
+        "id": "en-5",
+        "sentence": "She solved the complex proof with shrewd insight, showing she's a smart person.",
+        "targetWord": "smart",
+        "targetWordIndex": 10,
+        "options": [
+          { "word": "brilliant", "score": 85, "feedback": "Good intensity! Shows exceptional intelligence." },
+          { "word": "astute", "score": 100, "feedback": "Excellent! Implies shrewd judgment and perception." },
+          { "word": "clever", "score": 60, "feedback": "Similar to 'smart' - try something more specific." },
+          { "word": "intelligent", "score": 50, "feedback": "Valid but still quite general." }
+        ],
+        "bestAnswer": "astute",
+        "explanation": "'Astute' is more specific - it describes someone with keen insight."
+      },
+      {
+        "id": "en-6",
+        "sentence": "A sudden blizzard left the town cold and streets impassable.",
+        "targetWord": "cold",
+        "targetWordIndex": 6,
+        "options": [
+          { "word": "frigid", "score": 100, "feedback": "Perfect! Conveys extreme cold vividly." },
+          { "word": "chilly", "score": 60, "feedback": "Actually less intense than 'very cold'." },
+          { "word": "bitter", "score": 95, "feedback": "Excellent! 'Bitter cold' is evocative." },
+          { "word": "cool", "score": 20, "feedback": "Much weaker than the original." }
+        ],
+        "bestAnswer": "frigid",
+        "explanation": "'Frigid' captures 'very cold' in a single, powerful word."
+      },
+      {
+        "id": "en-7",
+        "sentence": "He made a quick decision.",
+        "targetWord": "quick",
+        "targetWordIndex": 3,
+        "options": [
+          { "word": "hasty", "score": 85, "feedback": "Good! Implies speed, possibly too fast." },
+          { "word": "snap", "score": 100, "feedback": "Perfect! 'Snap decision' is idiomatic and vivid." },
+          { "word": "rapid", "score": 70, "feedback": "Okay, but doesn't add much nuance." },
+          { "word": "impulsive", "score": 90, "feedback": "Strong! Adds psychological dimension." }
+        ],
+        "bestAnswer": "snap",
+        "explanation": "'Snap decision' is a powerful collocation."
+      },
+      {
+        "id": "en-8",
+        "sentence": "Long stretches without plot or character development made the movie boring.",
+        "targetWord": "boring",
+        "targetWordIndex": 9,
+        "options": [
+          { "word": "tedious", "score": 95, "feedback": "Excellent! Implies tiresome repetition." },
+          { "word": "dull", "score": 60, "feedback": "Similar to boring - not much improvement." },
+          { "word": "mind-numbing", "score": 100, "feedback": "Perfect! Vivid and emphatic." },
+          { "word": "uninteresting", "score": 40, "feedback": "Actually weaker than 'boring'." }
+        ],
+        "bestAnswer": "mind-numbing",
+        "explanation": "'Mind-numbing' captures the intensity of 'very boring' perfectly."
+      },
+      {
+        "id": "en-9",
+        "sentence": "She felt elated when the funding for her project was approved.",
+        "targetWord": "happy",
+        "targetWordIndex": 2,
+        "options": [
+          { "word": "elated", "score": 100, "feedback": "Perfect! Conveys intense joy." },
+          { "word": "pleased", "score": 50, "feedback": "Less intense than 'very happy'." },
+          { "word": "thrilled", "score": 95, "feedback": "Excellent! Shows excitement." },
+          { "word": "glad", "score": 40, "feedback": "Too weak for 'very happy'." }
+        ],
+        "bestAnswer": "elated",
+        "explanation": "'Elated' perfectly captures the heightened emotion."
+      },
+      {
+        "id": "en-10",
+        "sentence": "The final exam's complex problems made the test hard for most students.",
+        "targetWord": "hard",
+        "targetWordIndex": 5,
+        "options": [
+          { "word": "grueling", "score": 100, "feedback": "Perfect! Implies exhausting difficulty." },
+          { "word": "challenging", "score": 70, "feedback": "Good but slightly positive connotation." },
+          { "word": "tough", "score": 50, "feedback": "Similar intensity to 'hard'." },
+          { "word": "demanding", "score": 85, "feedback": "Strong! Shows high requirements." }
+        ],
+        "bestAnswer": "grueling",
+        "explanation": "'Grueling' conveys extreme difficulty and effort required."
+      }
+    ],
+    "fr": [
+      {
+        "id": "fr-1",
+        "sentence": "Elle avait un gros problème.",
+        "targetWord": "gros",
+        "targetWordIndex": 4,
+        "options": [
+          { "word": "sérieux", "score": 90, "feedback": "Excellent ! 'Sérieux' transmet la gravité." },
+          { "word": "majeur", "score": 100, "feedback": "Parfait ! 'Majeur' implique importance et urgence." },
+          { "word": "grand", "score": 30, "feedback": "Trop similaire à 'gros'." },
+          { "word": "pressant", "score": 85, "feedback": "Bon choix ! Ajoute l'urgence." }
+        ],
+        "bestAnswer": "majeur",
+        "explanation": "'Majeur' est le meilleur choix car il implique l'importance et les conséquences."
+      },
+      {
+        "id": "fr-2",
+        "sentence": "La réunion était bonne.",
+        "targetWord": "bonne",
+        "targetWordIndex": 4,
+        "options": [
+          { "word": "productive", "score": 100, "feedback": "Excellent ! Précis et significatif." },
+          { "word": "agréable", "score": 40, "feedback": "Trop vague - même problème que 'bonne'." },
+          { "word": "constructive", "score": 90, "feedback": "Fort ! Montre des résultats positifs." },
+          { "word": "fructueuse", "score": 85, "feedback": "Bien ! Implique des résultats tangibles." }
+        ],
+        "bestAnswer": "productive",
+        "explanation": "'Productive' décrit précisément ce qui a rendu la réunion précieuse."
+      }
+    ],
+    "es": [
+      {
+        "id": "es-1",
+        "sentence": "Porque la interfaz es simple, los usuarios nuevos completaron las tareas más rápido.",
+        "targetWord": "simple",
+        "targetWordIndex": 3,
+        "options": [
+          { "word": "intuitiva", "score": 100, "feedback": "Perfecto — implica facilidad de uso." },
+          { "word": "sosa", "score": 30, "feedback": "Demasiado básica." },
+          { "word": "minimal", "score": 80, "feedback": "Buena — diseño limpio." },
+          { "word": "sencilla", "score": 90, "feedback": "Excelente — fácil de navegar." }
+        ],
+        "bestAnswer": "intuitiva",
+        "explanation": "'Intuitiva' conecta la simplicidad con la usabilidad y rapidez."
       }
     ]
   },
 
+
   "reverseDefinitions": {
     "en": [
       { "id": "en-1", "definition": "A feeling of great happiness and triumph", "answer": "elation", "hints": ["Starts with 'e'", "Has 7 letters"], "difficulty": "medium" },
-      { "id": "en-2", "definition": "Speaking or writing in a clear and effective way", "answer": "articulate", "hints": ["Starts with 'a'", "Can be verb or adjective"], "difficulty": "medium" }
+      { "id": "en-2", "definition": "Speaking or writing in a clear and effective way", "answer": "articulate", "hints": ["Starts with 'a'", "Can be verb or adjective"], "difficulty": "medium" },
+      { "id": "en-3", "definition": "A person who doubts or questions everything", "answer": "skeptic", "hints": ["Starts with 's'", "Greek origin"], "difficulty": "easy" },
+      { "id": "en-4", "definition": "Existing everywhere at the same time", "answer": "ubiquitous", "hints": ["Starts with 'u'", "Latin origin"], "difficulty": "hard" },
+      { "id": "en-5", "definition": "To make something seem less important than it is", "answer": "understate", "hints": ["Compound word", "Opposite of exaggerate"], "difficulty": "easy" },
+      { "id": "en-6", "definition": "A temporary state of mind or feeling", "answer": "mood", "hints": ["4 letters", "Very common word"], "difficulty": "easy" },
+      { "id": "en-7", "definition": "The ability to understand and share feelings of another", "answer": "empathy", "hints": ["Starts with 'e'", "Often confused with sympathy"], "difficulty": "medium" },
+      { "id": "en-8", "definition": "Extremely idealistic; unrealistic and impractical", "answer": "quixotic", "hints": ["From literature", "Starts with 'q'"], "difficulty": "hard" },
+      { "id": "en-9", "definition": "Brief and to the point", "answer": "concise", "hints": ["Starts with 'c'", "Opposite of verbose"], "difficulty": "medium" },
+      { "id": "en-10", "definition": "A strong feeling of dislike or disapproval", "answer": "aversion", "hints": ["Starts with 'a'", "Often paired with 'to'"], "difficulty": "medium" },
+      { "id": "en-11", "definition": "The quality of being honest and having strong moral principles", "answer": "integrity", "hints": ["Starts with 'i'", "9 letters"], "difficulty": "medium" },
+      { "id": "en-12", "definition": "To make something easier to understand", "answer": "simplify", "hints": ["Starts with 's'", "Ends with 'fy'"], "difficulty": "easy" },
+      { "id": "en-13", "definition": "A person who loves and supports their country", "answer": "patriot", "hints": ["Starts with 'p'", "7 letters"], "difficulty": "easy" },
+      { "id": "en-14", "definition": "The study of the mind and behavior", "answer": "psychology", "hints": ["Greek roots", "Starts with 'p'"], "difficulty": "medium" },
+      { "id": "en-15", "definition": "Extremely hungry", "answer": "ravenous", "hints": ["Starts with 'r'", "Like a raven"], "difficulty": "medium" },
+      { "id": "en-16", "definition": "To prove something wrong or false", "answer": "disprove", "hints": ["Starts with 'd'", "Prefix 'dis-'"], "difficulty": "easy" },
+      { "id": "en-17", "definition": "A person who can speak multiple languages", "answer": "polyglot", "hints": ["Greek origin", "Starts with 'p'"], "difficulty": "hard" },
+      { "id": "en-18", "definition": "Happening by chance rather than design", "answer": "serendipitous", "hints": ["13 letters", "Positive connotation"], "difficulty": "hard" },
+      { "id": "en-19", "definition": "To officially end or cancel something", "answer": "abolish", "hints": ["Starts with 'a'", "7 letters"], "difficulty": "medium" },
+      { "id": "en-20", "definition": "A long speech by one person in a play", "answer": "monologue", "hints": ["Prefix 'mono-'", "Theater term"], "difficulty": "medium" }
     ],
     "fr": [
-      { "id": "fr-1", "definition": "Un sentiment de grande joie et de triomphe", "answer": "allégresse", "hints": ["Commence par 'a'", "10 lettres"], "difficulty": "medium" }
+      { "id": "fr-1", "definition": "Un sentiment de grande joie et de triomphe", "answer": "allégresse", "hints": ["Commence par 'a'", "10 lettres"], "difficulty": "medium" },
+      { "id": "fr-2", "definition": "S'exprimer de manière claire et efficace", "answer": "articulé", "hints": ["Commence par 'a'", "Peut être adjectif ou verbe"], "difficulty": "medium" },
+      { "id": "fr-3", "definition": "Personne qui doute ou questionne tout", "answer": "sceptique", "hints": ["Commence par 's'", "Origine grecque"], "difficulty": "easy" }
     ],
     "es": [
-      { "id": "es-1", "definition": "Un sentimiento de gran alegría y triunfo", "answer": "júbilo", "hints": ["Empieza con 'j'", "6 letras"], "difficulty": "medium" }
+      { "id": "es-1", "definition": "Un sentimiento de gran alegría y triunfo", "answer": "júbilo", "hints": ["Empieza con 'j'", "6 letras"], "difficulty": "medium" },
+      { "id": "es-2", "definition": "Expresarse de manera clara y efectiva", "answer": "articulado", "hints": ["Empieza con 'a'", "Puede ser adjetivo o verbo"], "difficulty": "medium" }
     ]
   },
 
   "synonymChain": {
     "en": [
       { "id": "en-1", "word": "happy", "commonSynonyms": ["joyful", "glad", "pleased", "content", "cheerful"], "rareSynonyms": ["elated", "jubilant", "blissful", "ecstatic", "euphoric"], "timeLimit": 30 },
-      { "id": "en-2", "word": "sad", "commonSynonyms": ["unhappy", "upset", "down", "gloomy", "sorrowful"], "rareSynonyms": ["melancholy", "despondent", "forlorn", "disconsolate", "woebegone"], "timeLimit": 30 }
+      { "id": "en-2", "word": "sad", "commonSynonyms": ["unhappy", "upset", "down", "gloomy", "sorrowful"], "rareSynonyms": ["melancholy", "despondent", "forlorn", "disconsolate", "woebegone"], "timeLimit": 30 },
+      { "id": "en-3", "word": "big", "commonSynonyms": ["large", "huge", "enormous", "giant", "massive"], "rareSynonyms": ["colossal", "mammoth", "gargantuan", "immense", "titanic"], "timeLimit": 30 },
+      { "id": "en-4", "word": "smart", "commonSynonyms": ["clever", "intelligent", "bright", "sharp", "quick"], "rareSynonyms": ["astute", "sagacious", "perspicacious", "erudite", "shrewd"], "timeLimit": 30 },
+      { "id": "en-5", "word": "beautiful", "commonSynonyms": ["pretty", "lovely", "gorgeous", "attractive", "stunning"], "rareSynonyms": ["resplendent", "ravishing", "exquisite", "sublime", "pulchritudinous"], "timeLimit": 30 },
+      { "id": "en-6", "word": "angry", "commonSynonyms": ["mad", "upset", "furious", "irritated", "annoyed"], "rareSynonyms": ["livid", "incensed", "irate", "wrathful", "apoplectic"], "timeLimit": 30 },
+      { "id": "en-7", "word": "fast", "commonSynonyms": ["quick", "rapid", "swift", "speedy", "hasty"], "rareSynonyms": ["expeditious", "fleet", "mercurial", "brisk", "precipitate"], "timeLimit": 30 },
+      { "id": "en-8", "word": "small", "commonSynonyms": ["little", "tiny", "mini", "petite", "compact"], "rareSynonyms": ["diminutive", "minuscule", "microscopic", "infinitesimal", "lilliputian"], "timeLimit": 30 },
+      { "id": "en-9", "word": "strong", "commonSynonyms": ["powerful", "tough", "sturdy", "robust", "mighty"], "rareSynonyms": ["formidable", "indomitable", "stalwart", "potent", "herculean"], "timeLimit": 30 },
+      { "id": "en-10", "word": "easy", "commonSynonyms": ["simple", "basic", "effortless", "straightforward", "uncomplicated"], "rareSynonyms": ["facile", "elementary", "undemanding", "painless", "child's play"], "timeLimit": 30 },
+      { "id": "en-11", "word": "difficult", "commonSynonyms": ["hard", "tough", "challenging", "complex", "complicated"], "rareSynonyms": ["arduous", "laborious", "onerous", "formidable", "herculean"], "timeLimit": 30 },
+      { "id": "en-12", "word": "cold", "commonSynonyms": ["chilly", "cool", "freezing", "icy", "frosty"], "rareSynonyms": ["frigid", "glacial", "arctic", "gelid", "nippy"], "timeLimit": 30 },
+      { "id": "en-13", "word": "hot", "commonSynonyms": ["warm", "burning", "boiling", "heated", "scorching"], "rareSynonyms": ["sweltering", "sizzling", "torrid", "blistering", "sultry"], "timeLimit": 30 },
+      { "id": "en-14", "word": "good", "commonSynonyms": ["great", "nice", "fine", "excellent", "wonderful"], "rareSynonyms": ["superb", "exemplary", "stellar", "impeccable", "superlative"], "timeLimit": 30 },
+      { "id": "en-15", "word": "bad", "commonSynonyms": ["terrible", "awful", "poor", "horrible", "dreadful"], "rareSynonyms": ["abysmal", "atrocious", "deplorable", "execrable", "abominable"], "timeLimit": 30 },
+      { "id": "en-16", "word": "old", "commonSynonyms": ["ancient", "aged", "elderly", "vintage", "antique"], "rareSynonyms": ["decrepit", "archaic", "venerable", "antiquated", "primordial"], "timeLimit": 30 },
+      { "id": "en-17", "word": "new", "commonSynonyms": ["fresh", "modern", "recent", "latest", "current"], "rareSynonyms": ["novel", "nascent", "innovative", "cutting-edge", "newfangled"], "timeLimit": 30 },
+      { "id": "en-18", "word": "important", "commonSynonyms": ["significant", "crucial", "vital", "essential", "major"], "rareSynonyms": ["paramount", "pivotal", "momentous", "consequential", "cardinal"], "timeLimit": 30 },
+      { "id": "en-19", "word": "interesting", "commonSynonyms": ["fascinating", "engaging", "captivating", "intriguing", "compelling"], "rareSynonyms": ["riveting", "enthralling", "absorbing", "mesmerizing", "spellbinding"], "timeLimit": 30 },
+      { "id": "en-20", "word": "scary", "commonSynonyms": ["frightening", "terrifying", "creepy", "spooky", "horrifying"], "rareSynonyms": ["harrowing", "bloodcurdling", "spine-chilling", "macabre", "eldritch"], "timeLimit": 30 }
     ],
     "fr": [
-      { "id": "fr-1", "word": "heureux", "commonSynonyms": ["content", "joyeux", "ravi", "satisfait", "gai"], "rareSynonyms": ["euphorique", "extatique", "comblé", "béat", "radieux"], "timeLimit": 30 }
+      { "id": "fr-1", "word": "heureux", "commonSynonyms": ["content", "joyeux", "ravi", "satisfait", "gai"], "rareSynonyms": ["euphorique", "extatique", "comblé", "béat", "radieux"], "timeLimit": 30 },
+      { "id": "fr-2", "word": "triste", "commonSynonyms": ["malheureux", "déprimé", "abattu", "mélancolique", "chagriné"], "rareSynonyms": ["accablé", "désespéré", "morose", "inconsolable", "éploré"], "timeLimit": 30 }
     ],
     "es": [
-      { "id": "es-1", "word": "feliz", "commonSynonyms": ["contento", "alegre", "dichoso", "satisfecho", "gozoso"], "rareSynonyms": ["eufórico", "exultante", "radiante", "jubiloso", "beatífico"], "timeLimit": 30 }
+      { "id": "es-1", "word": "feliz", "commonSynonyms": ["contento", "alegre", "dichoso", "satisfecho", "gozoso"], "rareSynonyms": ["eufórico", "exultante", "radiante", "jubiloso", "beatífico"], "timeLimit": 30 },
+      { "id": "es-2", "word": "triste", "commonSynonyms": ["infeliz", "deprimido", "melancólico", "afligido", "abatido"], "rareSynonyms": ["acongojado", "desconsolado", "apesadumbrado", "desolado", "taciturno"], "timeLimit": 30 }
     ]
   }
 }

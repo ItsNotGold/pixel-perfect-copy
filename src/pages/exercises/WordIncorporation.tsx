@@ -25,7 +25,7 @@ interface AIFeedback {
 export default function WordIncorporation() {
   const { language, speechLanguageCode } = useLanguage();
   const { isRecording: isVoiceRecording, transcript: voiceTranscript, rawTranscript: rawVoiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio, audioUrl, audioBlob } = useVoiceRecording();
-  
+
   const [currentPrompt, setCurrentPrompt] = useState<{ prompt: string; words: string[] } | null>(null);
   const [isActive, setIsActive] = useState(false);
   const [useVoice, setUseVoice] = useState(true); // Force voice for this exercise
@@ -74,7 +74,7 @@ export default function WordIncorporation() {
         }
         const next = prev - 1;
         if (settings?.practice?.timerSounds && next <= 5) {
-          try { playTick(); } catch {}
+          try { playTick(); } catch { }
         }
         return next;
       });
@@ -116,17 +116,18 @@ export default function WordIncorporation() {
     if (wordTimerRef.current) {
       clearInterval(wordTimerRef.current);
     }
-    await stopVoice();
-    await analyzeTranscript();
+    const blob = await stopVoice();
+    await analyzeTranscript(blob);
     if (settings?.audio?.soundEffects) playDing();
     if (settings?.audio?.voiceFeedback) speak("Exercise complete. Check your results.");
   };
 
-  const analyzeTranscript = async () => {
+  const analyzeTranscript = async (blob: Blob | null = null) => {
     const processedText = transcript.toLowerCase();
+
     const rawText = (rawVoiceTranscript || "").toLowerCase();
     const text = `${processedText} ${rawText}`.trim();
-    
+
     if (!currentPrompt) return;
 
     // Check which words were used
@@ -211,7 +212,7 @@ export default function WordIncorporation() {
     }
 
     if (user) {
-      const audioUrl = await saveAudio();
+      const audioUrl = await saveAudio(blob);
       const res = await saveAttempt({
         exerciseId: "word-incorporation",
         score: aiFeedback?.score || score,
@@ -290,12 +291,12 @@ export default function WordIncorporation() {
             )}
 
             {/* Initial prompt */}
-              {currentPrompt && !isComplete && (!isActive || (isActive && currentWordIndex < 0)) && (
+            {currentPrompt && !isComplete && (!isActive || (isActive && currentWordIndex < 0)) && (
               <div className="mb-6 text-center">
                 <h3 className="text-xl font-semibold mb-4">{currentPrompt.prompt}</h3>
                 <p className="text-muted-foreground">
-                      You will have 30 seconds to speak. Words will appear one by one - incorporate them naturally into your speech.
-                      This exercise also uses audio-based detection (phonetic and token-level) when available to more accurately detect whether you used a target word.
+                  You will have 30 seconds to speak. Words will appear one by one - incorporate them naturally into your speech.
+                  This exercise also uses audio-based detection (phonetic and token-level) when available to more accurately detect whether you used a target word.
                 </p>
               </div>
             )}

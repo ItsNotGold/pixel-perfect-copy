@@ -25,7 +25,7 @@ interface AIFeedback {
 export default function FillerWordEliminator() {
   const { language, speechLanguageCode } = useLanguage();
   const { isRecording: isVoiceRecording, transcript: voiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio, audioUrl, audioBlob } = useVoiceRecording();
-  
+
   const [currentTopic, setCurrentTopic] = useState("");
   const [isActive, setIsActive] = useState(false);
   const [useVoice, setUseVoice] = useState(false);
@@ -123,7 +123,7 @@ export default function FillerWordEliminator() {
 
   const analyzeTranscript = async () => {
     const text = useVoice ? voiceTranscript : manualTranscript;
-    
+
     // Improved local analysis with better pattern matching
     const counts: Record<string, number> = {};
     let total = 0;
@@ -131,14 +131,14 @@ export default function FillerWordEliminator() {
 
     fillerWords.forEach((filler) => {
       let count = 0;
-      
+
       // Create multiple patterns for better detection
       const patterns = [
         new RegExp(`\\b${filler}\\b`, "gi"), // exact word boundary
         new RegExp(`\\b${filler}[s]?\\b`, "gi"), // with optional plural
         new RegExp(`${filler}`, "gi"), // anywhere in text
       ];
-      
+
       // Special handling for common filler variations
       if (filler === "uh") {
         patterns.push(new RegExp("\\buhm?\\b", "gi"));
@@ -155,14 +155,14 @@ export default function FillerWordEliminator() {
         patterns.push(new RegExp("\\ber+r?\\b", "gi"));
         patterns.push(new RegExp("\\ber\\b", "gi"));
       }
-      
+
       patterns.forEach(pattern => {
         const matches = lowerText.match(pattern);
         if (matches) {
           count += matches.length;
         }
       });
-      
+
       if (count > 0) {
         counts[filler] = count;
         total += count;
@@ -200,10 +200,23 @@ export default function FillerWordEliminator() {
               // map lexical counts
               const counts: Record<string, number> = {};
               (raw.lexical_fillers || []).forEach((f: any) => counts[f.word] = (counts[f.word] || 0) + 1);
-              // include phonetic fillers counts by type as first-class
+
+              // Map phonetic types to target filler words
+              const PHONETIC_MAPPING: Record<string, string> = {
+                "nasal_hum": "um",
+                "prolonged_vowel": "uh",
+                "breathy_hesitation": "uh",
+              };
+
+              // include phonetic fillers counts
               (raw.phonetic_fillers || []).forEach((p: any) => {
-                const key = `(phonetic) ${p.type}${p.phoneme ? `:${p.phoneme}` : ""}`;
-                counts[key] = (counts[key] || 0) + 1;
+                const target = PHONETIC_MAPPING[p.type];
+                if (target) {
+                  counts[target] = (counts[target] || 0) + 1;
+                } else {
+                  const key = `(phonetic) ${p.type}`;
+                  counts[key] = (counts[key] || 0) + 1;
+                }
               });
               setFillerCount(counts);
               total = raw.total_filler_count || raw.total_filler_count === 0 ? raw.total_filler_count : total;
@@ -213,6 +226,7 @@ export default function FillerWordEliminator() {
               setFillerCount(data.fillerWords);
               total = data.totalFillers || total;
             }
+
           }
         }
       } catch (err: any) {
@@ -225,26 +239,26 @@ export default function FillerWordEliminator() {
         setIsAnalyzing(false);
       }
 
-    const finalScore = evaluatedScore ?? aiFeedback?.score ?? Math.max(0, 100 - total * 10);
-    
-    if (user) {
-      const audioUrl = useVoice ? await saveAudio() : null;
-      const res = await saveAttempt({
-        exerciseId: "filler-word-eliminator",
-        score: finalScore,
-        maxScore: 100,
-        answers: { transcript: text, fillerCount: counts, audioUrl },
-      });
-      if (!res || !res.success) toast.error("Failed to save progress");
-    }
+      const finalScore = evaluatedScore ?? aiFeedback?.score ?? Math.max(0, 100 - total * 10);
 
-    if (total === 0) {
-      toast.success("Perfect! No filler words detected!");
-    } else if (total <= 3) {
-      toast.success("Great job! Only a few fillers.");
-    } else {
-      toast.info(`You used ${total} filler words. Keep practicing!`);
-    }
+      if (user) {
+        const audioUrl = useVoice ? await saveAudio() : null;
+        const res = await saveAttempt({
+          exerciseId: "filler-word-eliminator",
+          score: finalScore,
+          maxScore: 100,
+          answers: { transcript: text, fillerCount: counts, audioUrl },
+        });
+        if (!res || !res.success) toast.error("Failed to save progress");
+      }
+
+      if (total === 0) {
+        toast.success("Perfect! No filler words detected!");
+      } else if (total <= 3) {
+        toast.success("Great job! Only a few fillers.");
+      } else {
+        toast.info(`You used ${total} filler words. Keep practicing!`);
+      }
     }
   };
 
@@ -258,7 +272,7 @@ export default function FillerWordEliminator() {
     setAiFeedback(null);
   };
 
-  const totalFillers = Object.values(fillerCount).reduce((a, b) => a + b, 0);
+  const totalFillers = Object.values(fillerCount).reduce((a: number, b: number) => a + b, 0);
   const score = aiFeedback?.score || Math.max(0, 100 - totalFillers * 10);
 
   return (
@@ -293,11 +307,10 @@ export default function FillerWordEliminator() {
               <div className="mb-6 flex justify-center">
                 <button
                   onClick={() => setUseVoice(!useVoice)}
-                  className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all ${
-                    useVoice
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-muted text-muted-foreground hover:bg-muted/80"
-                  }`}
+                  className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all ${useVoice
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                    }`}
                 >
                   {useVoice ? <Mic className="h-4 w-4" /> : <MicOff className="h-4 w-4" />}
                   {useVoice ? "Voice Input On" : "Voice Input Off"}

@@ -37,11 +37,12 @@ interface UseVoiceRecordingReturn {
   transcript: string;
   rawTranscript: string;
   startRecording: (languageCode?: string) => Promise<void>;
-  stopRecording: () => void;
+  stopRecording: () => Promise<Blob | null>;
   resetTranscript: () => void;
   audioBlob: Blob | null;
   audioUrl: string | null;
-  saveAudio: () => Promise<string | null>;
+  saveAudio: (blobOverride?: Blob | null) => Promise<string | null>;
+
 }
 
 export function useVoiceRecording(): UseVoiceRecordingReturn {
@@ -51,7 +52,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
   const [rawTranscript, setRawTranscript] = useState("");
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
-  
+
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
   const recognitionRef = useRef<SpeechRecognitionType | null>(null);
@@ -60,7 +61,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     try {
       // Check for browser support
       const SpeechRecognitionConstructor = window.SpeechRecognition || window.webkitSpeechRecognition || null;
-      
+
       if (!SpeechRecognitionConstructor) {
         // Allow recording even when SpeechRecognition is unavailable — we can still provide audio playback and uploads
         toast.warn("Speech recognition not supported in this browser. Recording will still work, but transcript features will be limited.");
@@ -87,7 +88,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
         console.error("getUserMedia error:", err);
         return;
       }
-      
+
       // Set up MediaRecorder for audio capture
       if (typeof MediaRecorder === "undefined") {
         toast.error("Recording is not supported in this browser.");
@@ -98,19 +99,19 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
       const mediaRecorder = new MediaRecorder(stream);
       mediaRecorderRef.current = mediaRecorder;
       chunksRef.current = [];
-      
+
       mediaRecorder.ondataavailable = (e) => {
         if (e.data.size > 0) {
           chunksRef.current.push(e.data);
         }
       };
-      
+
       mediaRecorder.onstop = () => {
         const blob = new Blob(chunksRef.current, { type: "audio/webm" });
         setAudioBlob(blob);
         stream.getTracks().forEach(track => track.stop());
       };
-      
+
       // Set up Speech Recognition only when available
       if (SpeechRecognitionConstructor) {
         const recognition = new SpeechRecognitionConstructor();
@@ -147,7 +148,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
       } else {
         recognitionRef.current = null;
       }
-      
+
       // Start the recorder and recognition (if available)
       mediaRecorder.start();
       if (recognitionRef.current) {
@@ -155,7 +156,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
       }
       setIsRecording(true);
       setTranscript("");
-      
+
     } catch (error) {
       console.error("Error starting recording:", error);
       // Provide more actionable messages for common failure modes
@@ -169,8 +170,10 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     }
   }, []);
 
-  const stopRecording = useCallback(async (): Promise<void> => {
+
+  const stopRecording = useCallback(async (): Promise<Blob | null> => {
     setIsProcessing(true);
+
 
     if (recognitionRef.current) {
       recognitionRef.current.stop();
@@ -251,25 +254,28 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     }
 
     setIsProcessing(false);
+    return recordedBlob;
   }, [audioBlob, rawTranscript]);
 
-  const saveAudio = useCallback(async (): Promise<string | null> => {
-    if (!audioBlob) return null;
-    
+
+  const saveAudio = useCallback(async (blobOverride?: Blob | null): Promise<string | null> => {
+    const blobToSave = blobOverride || audioBlob;
+    if (!blobToSave) return null;
+
     try {
       const fileName = `recording-${Date.now()}.webm`;
       const { data, error } = await supabase.storage
         .from('audio-recordings')
-        .upload(fileName, audioBlob, {
+        .upload(fileName, blobToSave, {
           contentType: 'audio/webm',
         });
-      
+
       if (error) throw error;
-      
+
       const { data: urlData } = supabase.storage
         .from('audio-recordings')
         .getPublicUrl(fileName);
-      
+
       setAudioUrl(urlData.publicUrl);
       return urlData.publicUrl;
     } catch (error) {
@@ -278,6 +284,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
       return null;
     }
   }, [audioBlob]);
+
 
   const resetTranscript = useCallback(() => {
     setTranscript("");

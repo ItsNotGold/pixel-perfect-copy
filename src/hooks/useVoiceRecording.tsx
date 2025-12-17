@@ -59,11 +59,11 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
   const startRecording = useCallback(async (languageCode: string = "en-US") => {
     try {
       // Check for browser support
-      const SpeechRecognitionConstructor = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const SpeechRecognitionConstructor = window.SpeechRecognition || window.webkitSpeechRecognition || null;
       
       if (!SpeechRecognitionConstructor) {
-        toast.error("Speech recognition not supported in this browser. Please use Chrome or Edge.");
-        return;
+        // Allow recording even when SpeechRecognition is unavailable — we can still provide audio playback and uploads
+        toast.warn("Speech recognition not supported in this browser. Recording will still work, but transcript features will be limited.");
       }
 
       // Request microphone permission
@@ -86,38 +86,42 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
         stream.getTracks().forEach(track => track.stop());
       };
       
-      // Set up Speech Recognition
-      const recognition = new SpeechRecognitionConstructor();
-      recognition.continuous = true;
-      recognition.interimResults = true;
-      recognition.lang = languageCode;
-      
-      let finalTranscript = "";
-      
-      recognition.onresult = (event: SpeechRecognitionEvent) => {
-        let interim = "";
-        for (let i = event.resultIndex; i < event.results.length; i++) {
-          const result = event.results[i];
-          if (result.isFinal) {
-            finalTranscript += result[0].transcript + " ";
-          } else {
-            interim += result[0].transcript;
+      // Set up Speech Recognition only when available
+      if (SpeechRecognitionConstructor) {
+        const recognition = new SpeechRecognitionConstructor();
+        recognition.continuous = true;
+        recognition.interimResults = true;
+        recognition.lang = languageCode;
+
+        let finalTranscript = "";
+
+        recognition.onresult = (event: SpeechRecognitionEvent) => {
+          let interim = "";
+          for (let i = event.resultIndex; i < event.results.length; i++) {
+            const result = event.results[i];
+            if (result.isFinal) {
+              finalTranscript += result[0].transcript + " ";
+            } else {
+              interim += result[0].transcript;
+            }
           }
-        }
-        // Keep raw/interim transcript for better detection of disfluencies
-        const raw = (finalTranscript + interim).trim();
-        setRawTranscript(raw);
-        setTranscript(raw); // keep transcript populated while processing
-      };
-      
-      recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
-        console.error("Speech recognition error:", event.error);
-        if (event.error === "not-allowed") {
-          toast.error("Microphone access denied. Please allow microphone access.");
-        }
-      };
-      
-      recognitionRef.current = recognition;
+          // Keep raw/interim transcript for better detection of disfluencies
+          const raw = (finalTranscript + interim).trim();
+          setRawTranscript(raw);
+          setTranscript(raw); // keep transcript populated while processing
+        };
+
+        recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
+          console.error("Speech recognition error:", event.error);
+          if (event.error === "not-allowed") {
+            toast.error("Microphone access denied. Please allow microphone access.");
+          }
+        };
+
+        recognitionRef.current = recognition;
+      } else {
+        recognitionRef.current = null;
+      }
       
       // Start both recording and recognition
       mediaRecorder.start();
@@ -139,17 +143,29 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
       recognitionRef.current = null;
     }
 
-    // Stop the media recorder and wait for onstop to set audioBlob
+    // Stop the media recorder and wait for onstop to resolve with the blob
+    let recordedBlob: Blob | null = null;
     if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") {
       try {
         const recorder = mediaRecorderRef.current;
-        await new Promise<void>((resolve) => {
+        recordedBlob = await new Promise<Blob | null>((resolve) => {
           recorder.onstop = () => {
-            const blob = new Blob(chunksRef.current, { type: "audio/webm" });
-            setAudioBlob(blob);
-            resolve();
+            try {
+              const blob = new Blob(chunksRef.current, { type: "audio/webm" });
+              // update state for UI playback
+              setAudioBlob(blob);
+              resolve(blob);
+            } catch (err) {
+              console.error("Error creating audio blob:", err);
+              resolve(null);
+            }
           };
-          recorder.stop();
+          try {
+            recorder.stop();
+          } catch (err) {
+            console.error("Error stopping recorder:", err);
+            resolve(null);
+          }
         });
       } catch (err) {
         console.error("Error stopping recorder:", err);
@@ -160,39 +176,44 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
 
     setIsRecording(false);
 
-    // Small delay to allow audioBlob state to update before processing
-    await new Promise((r) => setTimeout(r, 100));
-
-    if (audioBlob) {
+    // If we have a recorded blob (from the recorder), try to transcribe it using the configured service
+    // Use the local recorded blob variable instead of referencing the possibly-stale state value
+    if (recordedBlob) {
       try {
-        const client = new AssemblyAI({
-          apiKey: import.meta.env.VITE_ASSEMBLYAI_API_KEY,
-        });
+        // Only attempt AssemblyAI if an API key is configured
+        const apiKey = import.meta.env.VITE_ASSEMBLYAI_API_KEY;
+        if (apiKey) {
+          const client = new AssemblyAI({ apiKey });
+          const audioFile = new File([recordedBlob], 'recording.webm', { type: 'audio/webm' });
+          const uploadUrl = await client.files.upload(audioFile);
 
-        const audioFile = new File([audioBlob], 'recording.webm', { type: 'audio/webm' });
+          // Ask ASR to preserve disfluencies where possible and punctuate
+          const transcriptResponse = await client.transcripts.transcribe({
+            audio: uploadUrl,
+            punctuate: true,
+            format_text: true,
+            disfluencies: true,
+          });
 
-        const uploadUrl = await client.files.upload(audioFile);
-
-        // Ask ASR to preserve disfluencies where possible and punctuate
-        const transcriptResponse = await client.transcripts.transcribe({
-          audio: uploadUrl,
-          punctuate: true,
-          format_text: true,
-          disfluencies: true,
-        });
-
-        if (transcriptResponse.status === 'completed') {
-          // Merge processed transcript with raw interim transcript to preserve filler detections
-          const processed = transcriptResponse.text || '';
-          const merged = [processed, rawTranscript].filter(Boolean).join(' ');
-          setTranscript(merged);
+          if (transcriptResponse.status === 'completed') {
+            // Merge processed transcript with raw interim transcript to preserve filler detections
+            const processed = transcriptResponse.text || '';
+            const merged = [processed, rawTranscript].filter(Boolean).join(' ');
+            setTranscript(merged);
+          } else {
+            toast.error('Transcription failed');
+          }
         } else {
-          toast.error('Transcription failed');
+          // No remote ASR configured — keep the raw transcript captured by the Web Speech API
+          setTranscript(rawTranscript);
         }
       } catch (error) {
         console.error('Transcription error:', error);
-        toast.error('Failed to transcribe audio');
+        // Don't surface a toast for transcription errors in order to keep recording flow smooth
       }
+    } else {
+      // If there was no recorded blob, fall back to whatever transcript we have
+      setTranscript(rawTranscript);
     }
 
     setIsProcessing(false);

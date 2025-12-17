@@ -88,7 +88,7 @@ export default function Progress() {
   const streaks = data?.streaks || null;
   const achievements = data?.achievements || [];
 
-  const totalScore = exerciseProgress.reduce((sum, p) => sum + (Number(p.best_score) || 0), 0);
+  // totalScore removed — we no longer surface a global total score
   const exercisesCompleted = exerciseProgress.reduce((sum, p) => sum + (Number(p.times_completed) || 0), 0);
   const currentStreak = streaks?.current_streak || 0;
   const daysActive = Array.from(
@@ -130,16 +130,8 @@ export default function Progress() {
           </div>
         </div>
 
-        {/* Main Stats */}
-        <div className="mb-8 grid grid-cols-2 lg:grid-cols-4 gap-4 animate-slide-up">
-          <div className="rounded-2xl glass p-6 text-center">
-            <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-              <Trophy className="h-6 w-6 text-primary" />
-            </div>
-            <div className="text-3xl font-bold text-foreground">{totalScore}</div>
-            <div className="text-sm text-muted-foreground">Total Score</div>
-          </div>
-
+        {/* Main Stats (Total Score removed) */}
+        <div className="mb-8 grid grid-cols-2 lg:grid-cols-3 gap-4 animate-slide-up">
           <div className="rounded-2xl glass p-6 text-center">
             <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10">
               <Flame className="h-6 w-6 text-accent" />

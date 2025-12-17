@@ -15,7 +15,7 @@ export function HeroSection() {
         {/* Badge */}
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary animate-fade-in">
           <Sparkles className="h-4 w-4" />
-          <span>10 exercises to master communication</span>
+          <span>5 exercises to master communication</span>
         </div>
 
         {/* Headline */}
@@ -45,9 +45,9 @@ export function HeroSection() {
         </div>
 
         {/* Stats */}
-        <div className="mt-12 grid grid-cols-3 gap-6 animate-slide-up" style={{ animationDelay: "0.3s" }}>
+          <div className="mt-12 grid grid-cols-3 gap-6 animate-slide-up" style={{ animationDelay: "0.3s" }}>
           <div className="rounded-xl glass p-4">
-            <div className="font-display text-3xl text-primary">10</div>
+            <div className="font-display text-3xl text-primary">5</div>
             <div className="text-sm text-muted-foreground">Unique Exercises</div>
           </div>
           <div className="rounded-xl glass p-4">

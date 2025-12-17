@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden px-6 py-16 lg:py-24">
+    <section className="relative overflow-hidden px-6 py-20 lg:py-32 bg-noise">
       {/* Background Decoration */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute left-1/4 top-0 h-72 w-72 rounded-full bg-primary/10 blur-3xl animate-pulse-slow" />
-        <div className="absolute right-1/4 bottom-0 h-96 w-96 rounded-full bg-accent/10 blur-3xl animate-pulse-slow" style={{ animationDelay: "2s" }} />
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute left-1/4 top-0 h-[500px] w-[500px] rounded-full bg-primary/5 blur-[100px] animate-pulse-slow" />
+        <div className="absolute right-1/4 bottom-0 h-[600px] w-[600px] rounded-full bg-accent/5 blur-[120px] animate-pulse-slow" style={{ animationDelay: "2s" }} />
       </div>
 
       <div className="mx-auto max-w-4xl text-center">
@@ -45,7 +45,7 @@ export function HeroSection() {
         </div>
 
         {/* Stats */}
-          <div className="mt-12 grid grid-cols-3 gap-6 animate-slide-up" style={{ animationDelay: "0.3s" }}>
+        <div className="mt-12 grid grid-cols-3 gap-6 animate-slide-up" style={{ animationDelay: "0.3s" }}>
           <div className="rounded-xl glass p-4">
             <div className="font-display text-3xl text-primary">5</div>
             <div className="text-sm text-muted-foreground">Unique Exercises</div>

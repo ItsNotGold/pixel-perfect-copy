@@ -42,8 +42,8 @@ export function HowItWorksSection() {
             return (
               <div
                 key={step.title}
-                className="group relative rounded-2xl glass p-6 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="group relative rounded-2xl glass p-6 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 animate-fade-up opacity-0 relative"
+                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: "forwards" }}
               >
                 {/* Step Number */}
                 <div className="absolute -top-3 -left-3 flex h-8 w-8 items-center justify-center rounded-full gradient-hero text-sm font-bold text-primary-foreground shadow-glow">

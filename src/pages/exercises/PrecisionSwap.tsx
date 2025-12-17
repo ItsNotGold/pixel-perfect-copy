@@ -7,12 +7,12 @@ import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
 import { ExerciseGate } from "@/components/ExerciseGate";
 import { cn } from "@/lib/utils";
-import { 
-  Target, 
-  ArrowRight, 
-  RotateCcw, 
-  Sparkles, 
-  CheckCircle2, 
+import {
+  Target,
+  ArrowRight,
+  RotateCcw,
+  Sparkles,
+  CheckCircle2,
   XCircle,
   Trophy,
   Zap
@@ -86,10 +86,10 @@ export default function PrecisionSwap() {
 
     setShowResult(true);
     const option = currentChallenge.options.find((o) => o.word === selectedOption);
-    
+
     if (option) {
       setScore((prev) => prev + option.score);
-      
+
       if (option.score >= 85) {
         setStreak((prev) => prev + 1);
         if (option.score === 100) {
@@ -108,7 +108,7 @@ export default function PrecisionSwap() {
         if (settings?.audio?.voiceFeedback) speak(option.feedback, language);
       }
     }
-    
+
     const newCompleted = completed + 1;
     setCompleted(newCompleted);
 
@@ -157,7 +157,7 @@ export default function PrecisionSwap() {
 
   const renderSentence = () => {
     if (!currentChallenge) return null;
-    
+
     const words = currentChallenge.sentence.split(" ");
     return words.map((word, index) => {
       const cleanWord = word.replace(/[.,!?]/g, "");
@@ -165,10 +165,10 @@ export default function PrecisionSwap() {
       const isTarget = cleanWord.toLowerCase() === currentChallenge.targetWord.toLowerCase();
 
       if (isTarget) {
-        const replacement = showResult && selectedOption 
-          ? selectedOption 
+        const replacement = showResult && selectedOption
+          ? selectedOption
           : currentChallenge.targetWord;
-        
+
         return (
           <span key={index}>
             <span
@@ -275,7 +275,7 @@ export default function PrecisionSwap() {
                   onClick={() => handleSelect(option.word)}
                   disabled={showResult}
                   className={cn(
-                    "relative rounded-xl border-2 p-4 text-left transition-all duration-200",
+                    "relative rounded-xl border-2 p-4 text-left transition-all duration-200 active:scale-[0.98] hover:shadow-md",
                     getOptionStyle(option.word)
                   )}
                 >

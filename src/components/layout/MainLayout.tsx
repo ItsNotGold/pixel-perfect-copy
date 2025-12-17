@@ -10,6 +10,8 @@ interface MainLayoutProps {
   className?: string;
 }
 
+import { PageTransition } from "@/components/PageTransition";
+
 export function MainLayout({ children, className }: MainLayoutProps) {
   const location = useLocation();
   const match = location.pathname.match(/^\/exercise\/(?<id>[^/]+)/);
@@ -24,7 +26,9 @@ export function MainLayout({ children, className }: MainLayoutProps) {
         </div>
       )}
       <main className={cn("ml-64 min-h-screen transition-all duration-300", className)}>
-        {children}
+        <PageTransition>
+          {children}
+        </PageTransition>
       </main>
     </div>
   );

@@ -398,21 +398,21 @@ export default function WordIncorporation() {
             {/* Controls */}
             <div className="flex justify-center gap-4">
               {!isActive && !isComplete && (
-                <Button onClick={startSession} size="lg" className="gap-2">
+                <Button onClick={startSession} size="xl" variant="hero" className="gap-2 shadow-glow">
                   <Play className="h-5 w-5" />
                   Start Exercise
                 </Button>
               )}
 
               {isActive && (
-                <Button onClick={stopSession} variant="destructive" size="lg" className="gap-2">
-                  <Square className="h-5 w-5" />
+                <Button onClick={stopSession} variant="destructive" size="lg" className="gap-2 shadow-lg hover:shadow-xl transition-all">
+                  <Square className="h-5 w-5 fill-current" />
                   Stop Early
                 </Button>
               )}
 
               {isComplete && (
-                <Button onClick={handleRestart} size="lg" className="gap-2">
+                <Button onClick={handleRestart} size="lg" variant="outline" className="gap-2">
                   <RotateCcw className="h-5 w-5" />
                   Try Again
                 </Button>
@@ -421,9 +421,15 @@ export default function WordIncorporation() {
 
             {/* Recording indicator */}
             {isVoiceRecording && (
-              <div className="mt-4 flex items-center justify-center gap-2 text-red-500">
-                <Mic className="h-5 w-5 animate-pulse" />
-                <span className="text-sm font-medium">Recording...</span>
+              <div className="mt-8 flex flex-col items-center justify-center gap-3 animate-fade-in">
+                <div className="relative flex h-16 w-16 items-center justify-center">
+                  <div className="absolute inset-0 animate-ping rounded-full bg-destructive/20" />
+                  <div className="absolute inset-0 animate-pulse rounded-full bg-destructive/10" />
+                  <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-destructive text-destructive-foreground shadow-lg">
+                    <Mic className="h-6 w-6" />
+                  </div>
+                </div>
+                <span className="text-sm font-medium text-destructive animate-pulse">Recording active...</span>
               </div>
             )}
 

@@ -25,6 +25,31 @@ serve(async (req) => {
 
     switch (type) {
       case "filler-words":
+        // If we have an external local analyzer URL configured and an audio URL was provided, call it
+        const LOCAL_ANALYZER_URL = Deno.env.get("LOCAL_AUDIO_ANALYZER_URL");
+        if (LOCAL_ANALYZER_URL && data?.audioUrl) {
+          try {
+            const resp = await fetch(`${LOCAL_ANALYZER_URL.replace(/\/$/, "")}/analyze`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ audio_url: data.audioUrl, language }),
+            });
+            if (resp.ok) {
+              const parsed = await resp.json();
+              // Map analyzer keys to expected return format for legacy callers
+              // computed score heuristic: 100 - (total_filler_count * 10) with floor 0
+              const score = Math.max(0, 100 - (parsed.total_filler_count || 0) * 10);
+              const fillerWordsMap: Record<string, number> = {};
+              (parsed.lexical_fillers || []).forEach((f: any) => fillerWordsMap[f.word] = (fillerWordsMap[f.word] || 0) + 1);
+              const result = { fillerWords: fillerWordsMap, totalFillers: parsed.total_filler_count || 0, score, feedback: "Detailed analysis available", _raw: parsed };
+              return new Response(JSON.stringify(result), { headers: { ...corsHeaders, "Content-Type": "application/json" } });
+            }
+          } catch (err) {
+            console.error("Local analyzer failed", err);
+            // fallthrough to text-only analysis
+          }
+        }
+
         systemPrompt = `You are a speech coach analyzing spoken text for filler words. Analyze the transcript and identify filler words.
 For ${langName}, common filler words include: ${getFillerWords(language).join(", ")}.
 Return a JSON object with: { fillerWords: { word: count }, totalFillers: number, score: number (0-100, where 100 is no fillers), feedback: string }`;

@@ -146,23 +146,26 @@ export default function FillerWordEliminator() {
           body: {
             type: "filler-words",
             language,
-            data: { transcript: text },
+            data: { transcript: text, audioUrl },
           },
         });
 
         if (!error && data) {
           setAiFeedback(data as AIFeedback);
-          // Use AI counts if available
-          if (data.fillerWords) {
-            setFillerCount(data.fillerWords);
-            total = data.totalFillers || total;
-          }
-        }
-      } catch (err) {
-        console.error("AI evaluation error:", err);
-      } finally {
-        setIsAnalyzing(false);
-      }
+          // Prefer analyzer's structured output if provided
+          if (data.fillerWords || data._raw) {
+            // If _raw is present (local analyzer), it includes total_filler_count and arrays
+            if (data._raw) {
+              const raw = data._raw;
+              // map lexical counts
+              const counts: Record<string, number> = {};
+              (raw.lexical_fillers || []).forEach((f: any) => counts[f.word] = (counts[f.word] || 0) + 1);
+              setFillerCount(counts);
+              total = raw.total_filler_count || total;
+            } else if (data.fillerWords) {
+              setFillerCount(data.fillerWords);
+              total = data.totalFillers || total;
+            }
     }
 
     const score = Math.max(0, 100 - total * 10);

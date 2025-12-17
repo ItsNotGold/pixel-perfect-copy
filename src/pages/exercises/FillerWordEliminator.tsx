@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { fillerWordsMultilingual, speakingTopicsMultilingual } from "@/data/multilingualContent";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useVoiceRecording } from "@/hooks/useVoiceRecording";
+import { withTimeout } from "@/lib/asyncUtils";
 import { ExerciseGate } from "@/components/ExerciseGate";
 import { MessageCircle, Mic, MicOff, Play, Square, RotateCcw, Trophy, AlertTriangle, Loader2, Sparkles } from "lucide-react";
 import { toast } from "sonner";
@@ -141,17 +142,22 @@ export default function FillerWordEliminator() {
     // Get AI analysis if there's content
     if (text.trim().length >= 20) {
       setIsAnalyzing(true);
+      let evaluatedScore: number | null = null;
       try {
-        const { data, error } = await supabase.functions.invoke("evaluate-exercise", {
-          body: {
-            type: "filler-words",
-            language,
-            data: { transcript: text, audioUrl },
-          },
-        });
+        const { data, error } = await withTimeout(
+          supabase.functions.invoke("evaluate-exercise", {
+            body: {
+              type: "filler-words",
+              language,
+              data: { transcript: text, audioUrl },
+            },
+          }),
+          8000
+        );
 
         if (!error && data) {
           setAiFeedback(data as AIFeedback);
+          evaluatedScore = (data as any)?.score ?? evaluatedScore;
           // Prefer analyzer's structured output if provided
           if (data.fillerWords || data._raw) {
             // If _raw is present (local analyzer), it includes total_filler_count and arrays
@@ -166,15 +172,25 @@ export default function FillerWordEliminator() {
               setFillerCount(data.fillerWords);
               total = data.totalFillers || total;
             }
-    }
+          }
+        }
+      } catch (err: any) {
+        if (err?.name === "TimeoutError") {
+          toast.error("Analysis timed out. Try again or save without AI evaluation.");
+        } else {
+          console.error("AI evaluation error:", err);
+        }
+      } finally {
+        setIsAnalyzing(false);
+      }
 
-    const score = Math.max(0, 100 - total * 10);
+    const finalScore = evaluatedScore ?? aiFeedback?.score ?? Math.max(0, 100 - total * 10);
     
     if (user) {
       const audioUrl = useVoice ? await saveAudio() : null;
       const res = await saveAttempt({
         exerciseId: "filler-word-eliminator",
-        score: aiFeedback?.score || score,
+        score: finalScore,
         maxScore: 100,
         answers: { transcript: text, fillerCount: counts, audioUrl },
       });

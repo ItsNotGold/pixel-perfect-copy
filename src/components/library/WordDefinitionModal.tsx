@@ -19,20 +19,10 @@ interface WordDefinitionModalProps {
 
 export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps) {
     const { language } = useLanguage();
-    const { getWordDetails, loading: libraryLoading } = useLibrary();
-    const [details, setDetails] = useState<any>(null);
-    const [loading, setLoading] = useState(false);
+    const { getWordDetails } = useLibrary();
 
-    useEffect(() => {
-        if (word) {
-            setLoading(true);
-            getWordDetails(word, language)
-                .then(setDetails)
-                .finally(() => setLoading(false));
-        } else {
-            setDetails(null);
-        }
-    }, [word, language, getWordDetails]);
+    // Pure, synchronous O(1) lookup
+    const details = word ? getWordDetails(word, language) : null;
 
     return (
         <Dialog open={!!word} onOpenChange={(open) => !open && onClear()}>
@@ -51,18 +41,13 @@ export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps)
                         <div className="flex items-center gap-2 text-sm font-bold text-primary/80 uppercase tracking-wider">
                             <BookOpen className="w-4 h-4" /> Meaning
                         </div>
-                        {loading ? (
-                            <div className="space-y-2">
-                                <Skeleton className="h-4 w-full" />
-                                <Skeleton className="h-4 w-3/4" />
-                            </div>
-                        ) : details ? (
+                        {details ? (
                             <p className="text-lg leading-relaxed text-foreground/90 font-medium">
                                 {details.definition}
                             </p>
                         ) : (
                             <p className="text-muted-foreground italic">
-                                No definition found for this word in {language.toUpperCase()}.
+                                Definition not available yet for "{word}" in {language.toUpperCase()}.
                             </p>
                         )}
                     </section>
@@ -71,9 +56,7 @@ export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps)
                         <div className="flex items-center gap-2 text-sm font-bold text-primary/80 uppercase tracking-wider">
                             <Quote className="w-4 h-4" /> Example
                         </div>
-                        {loading ? (
-                            <Skeleton className="h-4 w-full" />
-                        ) : details ? (
+                        {details ? (
                             <p className="text-base italic leading-relaxed text-muted-foreground">
                                 "{details.example}"
                             </p>

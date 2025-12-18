@@ -68,22 +68,28 @@ export function useLibrary() {
         }
     }, [user]);
 
-    const updateExercise = async (exerciseId: string, language: SupportedLanguage, updatedLanguageContent: any, targetIsGlobal: boolean) => {
+    const updateExercise = useCallback(async (exerciseId: string, language: SupportedLanguage, updatedLanguageContent: any, targetIsGlobal: boolean) => {
         if (!user) throw new Error("Authentication required. Please sign in to save changes.");
         if (targetIsGlobal && !isAdmin) throw new Error("Unauthorized. Only administrators can modify global standard content.");
         if (!targetIsGlobal && !isPremium) throw new Error("Premium required. Please upgrade your plan to save personal content overrides.");
 
         setLoading(true);
         try {
-            const userId = targetIsGlobal ? null : user.id;
-
             // 1. Fetch existing override for this SPECIFIC exercise and user
-            // We store all language overrides in one JSON object per (user, exercise) pair
+            // In the new schema, user_id is NOT NULL, so global overrides (user_id = null)
+            // are actually not supported in the exact table definition requested by the user
+            // "user_id uuid NOT NULL REFERENCES auth.users(id)"
+            // HOWEVER, the user also requested: "Admins can SELECT/INSERT/UPDATE all rows"
+            // We will stick to the user's EXACT schema: user_id is NOT NULL.
+            // If they want global overrides, we would need a special admin user ID or a different table.
+
+            const userId = user.id;
+
             const { data: existing, error: fetchError } = await supabase
                 .from("exercise_overrides" as any)
                 .select("*")
                 .eq("exercise_id", exerciseId)
-                .filter("user_id", userId === null ? "is" : "eq", userId)
+                .eq("user_id", userId)
                 .maybeSingle();
 
             if (fetchError) {
@@ -95,24 +101,18 @@ export function useLibrary() {
             newContent[language] = updatedLanguageContent;
 
             // 2. Upsert the merged content
-            // The table should have a UNIQUE constraint on (user_id, exercise_id) or a primary key that includes both.
-            // If targetIsGlobal is true, user_id is null.
             const upsertData: any = {
+                user_id: userId,
                 exercise_id: exerciseId,
+                language: language, // Added language column as per exact schema
                 content: newContent,
                 updated_at: new Date().toISOString()
             };
 
-            if (userId !== null) {
-                upsertData.user_id = userId;
-            } else {
-                upsertData.user_id = null; // Explicitly set null for global
-            }
-
             const { error: upsertError } = await supabase
                 .from("exercise_overrides" as any)
                 .upsert(upsertData, {
-                    onConflict: 'user_id,exercise_id' // This is the most logical constraint
+                    onConflict: 'user_id,exercise_id'
                 });
 
             if (upsertError) {
@@ -125,7 +125,7 @@ export function useLibrary() {
         } finally {
             setLoading(false);
         }
-    };
+    }, [user, isAdmin, isPremium]);
 
     const resetExercise = async (exerciseId: string, targetIsGlobal: boolean) => {
         if (!user) throw new Error("Authentication required.");
@@ -152,11 +152,10 @@ export function useLibrary() {
         }
     };
 
-    const getWordDetails = async (word: string, language: string): Promise<WordDetails | null> => {
+    const getWordDetails = useCallback((word: string, language: string): WordDetails | null => {
         const lowerWord = word.toLowerCase().trim();
         const lowerLang = language.toLowerCase();
 
-        // 1. Try local dictionary first (New source of truth)
         const localEntry = (WORD_DEFINITIONS as any)[lowerLang]?.[lowerWord];
         if (localEntry) {
             return {
@@ -170,22 +169,8 @@ export function useLibrary() {
             } as WordDetails;
         }
 
-        // 2. Fallback to Supabase
-        try {
-            const { data, error } = await supabase
-                .from("word_details" as any)
-                .select("*")
-                .eq("word", lowerWord)
-                .eq("language", lowerLang)
-                .maybeSingle();
-
-            if (data) return data as WordDetails;
-        } catch (e) {
-            console.warn("Supabase word_details fetch failed, no local entry found either.", e);
-        }
-
         return null;
-    };
+    }, []);
 
     const saveWordDetails = async (wordDetails: Partial<WordDetails>) => {
         if (!isAdmin) throw new Error("Admin required to update dictionary.");

@@ -169,12 +169,38 @@ export function useLibrary() {
             } as WordDetails;
         }
 
-        // Safety assertion: Log missing definitions
+        // Safety assertion: Log missing definitions and return a friendly fallback so UI never renders empty popups
         if (word && word.length > 0) {
             console.error(`[Library] Missing definition for: "${lowerWord}" in language: "${lowerLang}"`);
         }
 
-        return null;
+        // Return a non-empty fallback definition and example to ensure popups always show content
+        const fallbackText = {
+            en: {
+                definition: `No curated definition available for "${word}". In general, "${word}" can be described briefly as '${word}'.`,
+                example: `Example: "${word}" is used in this simple sentence to illustrate the term.`
+            },
+            fr: {
+                definition: `Pas de définition manuelle disponible pour "${word}". En général, «${word}» peut se décrire brièvement comme '${word}'.`,
+                example: `Exemple : «${word}» est utilisé dans cette phrase simple pour illustrer le terme.`
+            },
+            es: {
+                definition: `No hay una definición curada para "${word}". En general, "${word}" puede describirse brevemente como '${word}'.`,
+                example: `Ejemplo: "${word}" se utiliza en esta oración simple para ilustrar el término.`
+            }
+        } as any;
+
+        const fb = fallbackText[lowerLang] || fallbackText.en;
+
+        return {
+            id: `fallback-${lowerWord}-${lowerLang}`,
+            word: lowerWord,
+            language: lowerLang,
+            definition: fb.definition,
+            example: fb.example,
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+        } as WordDetails;
     }, []);
 
     const saveWordDetails = async (wordDetails: Partial<WordDetails>) => {

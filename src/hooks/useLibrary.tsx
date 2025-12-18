@@ -14,7 +14,7 @@ import { fillerWordEliminatorMaster } from "@/data/exercises/fillerWordEliminato
 import { reverseDefinitionsMaster } from "@/data/exercises/reverseDefinitions.master";
 import { synonymSpeedChainMaster } from "@/data/exercises/synonymSpeedChain.master";
 import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";
-import { resolveLocalDefinition } from "@/data/dictionary";
+import { WORD_DEFINITIONS } from "@/data/wordDefinitions";
 
 const MASTER_DATA: Record<string, ExerciseMaster<any>> = {
     "precision-swap": precisionSwapMaster,
@@ -77,39 +77,51 @@ export function useLibrary() {
         try {
             const userId = targetIsGlobal ? null : user.id;
 
-            // 1. Fetch existing override to ensure we don't wipe other languages
+            // 1. Fetch existing override for this SPECIFIC exercise and user
+            // We store all language overrides in one JSON object per (user, exercise) pair
             const { data: existing, error: fetchError } = await supabase
                 .from("exercise_overrides" as any)
                 .select("*")
                 .eq("exercise_id", exerciseId)
-                .filter(targetIsGlobal ? "user_id" : "user_id", targetIsGlobal ? "is" : "eq", userId)
+                .filter("user_id", userId === null ? "is" : "eq", userId)
                 .maybeSingle();
 
             if (fetchError) {
-                throw new Error(`Failed to check existing overrides: ${fetchError.message}. Ensure the 'exercise_overrides' table exists.`);
+                console.error("Fetch error during update:", fetchError);
+                throw new Error(`Failed to check existing overrides: ${fetchError.message}`);
             }
 
             const newContent = existing?.content || {};
             newContent[language] = updatedLanguageContent;
 
             // 2. Upsert the merged content
+            // The table should have a UNIQUE constraint on (user_id, exercise_id) or a primary key that includes both.
+            // If targetIsGlobal is true, user_id is null.
+            const upsertData: any = {
+                exercise_id: exerciseId,
+                content: newContent,
+                updated_at: new Date().toISOString()
+            };
+
+            if (userId !== null) {
+                upsertData.user_id = userId;
+            } else {
+                upsertData.user_id = null; // Explicitly set null for global
+            }
+
             const { error: upsertError } = await supabase
                 .from("exercise_overrides" as any)
-                .upsert({
-                    user_id: userId,
-                    exercise_id: exerciseId,
-                    content: newContent,
-                    updated_at: new Date().toISOString()
-                }, {
-                    onConflict: targetIsGlobal ? "exercise_id" : "user_id,exercise_id"
+                .upsert(upsertData, {
+                    onConflict: 'user_id,exercise_id' // This is the most logical constraint
                 });
 
             if (upsertError) {
-                throw new Error(`Supabase error: ${upsertError.message}. Check database RLS policies and table structure.`);
+                console.error("Upsert error:", upsertError);
+                throw new Error(`Failed to save changes: ${upsertError.message}`);
             }
         } catch (err: any) {
             console.error("Save failed:", err);
-            throw err; // Re-throw to be handled by the UI
+            throw err;
         } finally {
             setLoading(false);
         }
@@ -141,22 +153,38 @@ export function useLibrary() {
     };
 
     const getWordDetails = async (word: string, language: string): Promise<WordDetails | null> => {
-        // 1. Try Supabase first
+        const lowerWord = word.toLowerCase().trim();
+        const lowerLang = language.toLowerCase();
+
+        // 1. Try local dictionary first (New source of truth)
+        const localEntry = (WORD_DEFINITIONS as any)[lowerLang]?.[lowerWord];
+        if (localEntry) {
+            return {
+                id: `local-${lowerWord}-${lowerLang}`,
+                word: lowerWord,
+                language: lowerLang,
+                definition: localEntry.definition,
+                example: localEntry.example,
+                created_at: new Date().toISOString(),
+                updated_at: new Date().toISOString()
+            } as WordDetails;
+        }
+
+        // 2. Fallback to Supabase
         try {
             const { data, error } = await supabase
                 .from("word_details" as any)
                 .select("*")
-                .eq("word", word.toLowerCase().trim())
-                .eq("language", language)
+                .eq("word", lowerWord)
+                .eq("language", lowerLang)
                 .maybeSingle();
 
             if (data) return data as WordDetails;
         } catch (e) {
-            // Ignore Supabase error and fall back to local
+            console.warn("Supabase word_details fetch failed, no local entry found either.", e);
         }
 
-        // 2. Fallback to local dictionary
-        return resolveLocalDefinition(word, language);
+        return null;
     };
 
     const saveWordDetails = async (wordDetails: Partial<WordDetails>) => {

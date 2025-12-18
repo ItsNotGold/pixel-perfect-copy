@@ -1,22 +1,19 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useLibrary } from "@/hooks/useLibrary";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
     ArrowLeft,
     Edit3,
     Save,
-    Trash2,
-    BookOpen,
-    Info,
     CheckCircle2,
     X,
     Target,
     MessageCircle,
-    Link as LinkIcon,
+    BookOpen,
     Mic
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -24,6 +21,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { WordDefinitionModal } from "@/components/library/WordDefinitionModal";
 import { toast } from "sonner";
 import { Skeleton } from "@/components/ui/skeleton";
+import { LanguageSelector } from "@/components/LanguageSelector";
 
 export default function QuestionDetailPage() {
     const { exerciseId, questionId } = useParams();
@@ -43,25 +41,30 @@ export default function QuestionDetailPage() {
         setLoading(true);
         try {
             const data = await getMergerExerciseContent(exerciseId, language);
+            if (!data) {
+                setContent(null);
+                setQuestion(null);
+                return;
+            }
             setContent(data);
 
             let found: any = null;
             if (exerciseId === "filler-word-eliminator") {
                 const index = parseInt(questionId.split("-")[1]);
-                found = { prompt: data.topics[index], id: questionId };
+                found = data.topics?.[index] ? { prompt: data.topics[index], id: questionId } : null;
             } else if (exerciseId === "precision-swap") {
-                found = data.questions.find((q: any) => q.id === questionId);
+                found = data.questions?.find((q: any) => q.id === questionId);
             } else if (exerciseId === "reverse-definitions") {
-                found = data.questions.find((q: any) => q.id === questionId);
+                found = data.questions?.find((q: any) => q.id === questionId);
             } else if (exerciseId === "synonym-speed-chain") {
-                found = data.challenges.find((c: any) => c.id === questionId);
+                found = data.challenges?.find((c: any) => c.id === questionId);
             } else if (exerciseId === "word-incorporation") {
                 const index = parseInt(questionId.split("-")[1]);
-                found = { ...data.prompts[index], id: questionId };
+                found = data.prompts?.[index] ? { ...data.prompts[index], id: questionId } : null;
             }
 
             setQuestion(found);
-            setEditedQuestion(JSON.parse(JSON.stringify(found)));
+            setEditedQuestion(found ? JSON.parse(JSON.stringify(found)) : null);
         } catch (error) {
             console.error("Failed to load question details:", error);
         } finally {
@@ -99,19 +102,23 @@ export default function QuestionDetailPage() {
             toast.success("Changes saved successfully");
             setEditMode(false);
             loadData();
-        } catch (error) {
-            toast.error("Failed to save changes");
+        } catch (error: any) {
+            toast.error(error.message || "Failed to save changes");
         }
     };
 
     const renderContent = () => {
         if (loading) return (
             <div className="space-y-4">
-                <Skeleton className="h-40 w-full" />
-                <Skeleton className="h-20 w-full" />
+                {Array.from({ length: 3 }).map((_, i) => <Skeleton key={i} className="h-20 w-full rounded-xl" />)}
             </div>
         );
-        if (!question) return <div>Question not found</div>;
+        if (!question) return (
+            <div className="text-center py-20 bg-muted/20 rounded-3xl border-2 border-dashed">
+                <p className="text-muted-foreground">Content not found for this language ({language.toUpperCase()}).</p>
+                <Button variant="link" onClick={() => navigate(`/library/${exerciseId}`)}>Back to List</Button>
+            </div>
+        );
 
         switch (exerciseId) {
             case "precision-swap":
@@ -169,8 +176,8 @@ export default function QuestionDetailPage() {
                     <Card
                         key={idx}
                         className={`cursor-pointer transition-all border-2 ${!editMode && opt.word === question.bestAnswer
-                                ? "bg-primary/5 border-primary/50 shadow-md ring-1 ring-primary/20"
-                                : "hover:bg-accent border-transparent"
+                            ? "bg-primary/5 border-primary/50 shadow-md ring-1 ring-primary/20"
+                            : "hover:bg-accent border-transparent"
                             }`}
                         onClick={() => !editMode && setSelectedWord(opt.word)}
                     >
@@ -446,9 +453,10 @@ export default function QuestionDetailPage() {
                     <ArrowLeft className="w-4 h-4" /> Back to List
                 </Button>
 
-                <div className="flex gap-2">
+                <div className="flex items-center gap-4">
+                    <LanguageSelector />
                     {!editMode ? (
-                        (isPremium || isAdmin) && (
+                        (isPremium || isAdmin) && question && (
                             <Button onClick={() => setEditMode(true)} className="gap-2 shadow-lg hover:shadow-primary/20">
                                 <Edit3 className="w-4 h-4" /> Edit Content
                             </Button>
@@ -476,12 +484,11 @@ export default function QuestionDetailPage() {
 
             <div className="mb-10">
                 <div className="flex items-center gap-3 mb-1">
-                    <Badge variant="outline" className="text-[10px] uppercase font-bold tracking-tighter opacity-60">
-                        {question?.id}
-                    </Badge>
-                    <Badge className="bg-primary/10 text-primary border-primary/20 text-[10px] uppercase font-bold">
-                        {language}
-                    </Badge>
+                    {question?.id && (
+                        <Badge variant="outline" className="text-[10px] uppercase font-bold tracking-tighter opacity-60">
+                            {question.id}
+                        </Badge>
+                    )}
                 </div>
                 <h2 className="text-4xl font-extrabold tracking-tight">
                     {editMode ? "Editing Question" : "Question Details"}

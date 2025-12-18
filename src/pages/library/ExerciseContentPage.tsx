@@ -9,10 +9,8 @@ import {
     ArrowLeft,
     Plus,
     RotateCcw,
-    Edit2,
     ChevronRight,
     Search,
-    Globe
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import {
@@ -27,6 +25,7 @@ import {
     AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Skeleton } from "@/components/ui/skeleton";
+import { LanguageSelector } from "@/components/LanguageSelector";
 
 const EXERCISE_TITLES: Record<string, string> = {
     "filler-word-eliminator": "Filler Word Eliminator",
@@ -74,11 +73,11 @@ export default function ExerciseContentPage() {
 
     const getItems = () => {
         if (!content) return [];
-        if (exerciseId === "filler-word-eliminator") return content.topics.map((t: string, i: number) => ({ id: `topic-${i}`, preview: t }));
-        if (exerciseId === "precision-swap") return content.questions.map((q: any) => ({ id: q.id, preview: q.sentence }));
-        if (exerciseId === "reverse-definitions") return content.questions.map((q: any) => ({ id: q.id, preview: q.definition }));
-        if (exerciseId === "synonym-speed-chain") return content.challenges.map((c: any) => ({ id: c.id, preview: c.word }));
-        if (exerciseId === "word-incorporation") return content.prompts.map((p: any, i: number) => ({ id: `prompt-${i}`, preview: p.prompt }));
+        if (exerciseId === "filler-word-eliminator") return content.topics?.map((t: string, i: number) => ({ id: `topic-${i}`, preview: t })) || [];
+        if (exerciseId === "precision-swap") return content.questions?.map((q: any) => ({ id: q.id, preview: q.sentence })) || [];
+        if (exerciseId === "reverse-definitions") return content.questions?.map((q: any) => ({ id: q.id, preview: q.definition })) || [];
+        if (exerciseId === "synonym-speed-chain") return content.challenges?.map((c: any) => ({ id: c.id, preview: c.word })) || [];
+        if (exerciseId === "word-incorporation") return content.prompts?.map((p: any, i: number) => ({ id: `prompt-${i}`, preview: p.prompt })) || [];
         return [];
     };
 
@@ -96,7 +95,8 @@ export default function ExerciseContentPage() {
                         <ArrowLeft className="w-4 h-4" /> Back to Library
                     </Button>
 
-                    <div className="flex gap-2">
+                    <div className="flex items-center gap-4">
+                        <LanguageSelector />
                         {(isPremium || isAdmin) && (
                             <AlertDialog>
                                 <AlertDialogTrigger asChild>
@@ -136,9 +136,6 @@ export default function ExerciseContentPage() {
                 <div>
                     <div className="flex items-center gap-3 mb-2">
                         <h1 className="text-3xl font-bold">{EXERCISE_TITLES[exerciseId || ""] || "Exercise"}</h1>
-                        <Badge variant="secondary" className="gap-1.5 uppercase text-[10px] tracking-wider font-bold">
-                            <Globe className="w-3 h-3" /> {language}
-                        </Badge>
                     </div>
                     <p className="text-muted-foreground text-lg">
                         {content?.instructions?.intro || "Browse and manage the full content list for this exercise."}
@@ -161,6 +158,11 @@ export default function ExerciseContentPage() {
                     Array.from({ length: 5 }).map((_, i) => (
                         <Skeleton key={i} className="h-20 w-full rounded-xl" />
                     ))
+                ) : !content ? (
+                    <div className="text-center py-20 border-2 border-dashed rounded-3xl">
+                        <p className="text-muted-foreground">This exercise is not yet available in {language.toUpperCase()}.</p>
+                        {isAdmin && <Button variant="outline" className="mt-4">Add {language.toUpperCase()} Content</Button>}
+                    </div>
                 ) : filteredItems.length > 0 ? (
                     filteredItems.map((item) => (
                         <Card

@@ -9,19 +9,7 @@ import {
     Mic,
     ArrowLeft
 } from "lucide-react";
-
-const EXERCISES = [
-    {
-        id: "precision-swap",
-        title: "Filler Word Eliminator", // Wait, the prompt says Filler Word Eliminator is #1
-        // Actually the IDs and titles in the prompt are:
-        // 1. Filler Word Eliminator
-        // 2. Precision Swap
-        // 3. Reverse Definitions
-        // 4. Synonym Speed Chain
-        // 5. Word Incorporation
-    },
-];
+import { LanguageSelector } from "@/components/LanguageSelector";
 
 const libraryExercises = [
     { id: "filler-word-eliminator", title: "Filler Word Eliminator", icon: MessageCircle, description: "Master the art of speaking without fillers." },
@@ -36,11 +24,14 @@ export default function LibraryPage() {
 
     return (
         <div className="container mx-auto py-12 px-4 max-w-6xl">
-            <div className="flex items-center gap-4 mb-8">
-                <Button variant="ghost" size="icon" onClick={() => navigate("/")}>
-                    <ArrowLeft className="w-5 h-5" />
-                </Button>
-                <h1 className="text-4xl font-bold tracking-tight">Content Library</h1>
+            <div className="flex items-center justify-between mb-8">
+                <div className="flex items-center gap-4">
+                    <Button variant="ghost" size="icon" onClick={() => navigate("/")}>
+                        <ArrowLeft className="w-5 h-5" />
+                    </Button>
+                    <h1 className="text-4xl font-bold tracking-tight">Content Library</h1>
+                </div>
+                <LanguageSelector />
             </div>
 
             <p className="text-muted-foreground mb-12 max-w-2xl text-lg">

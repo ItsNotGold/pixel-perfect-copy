@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Relentless Badge">
+  <title>Relentless</title>
+  <defs>
+    <linearGradient id="g12" x1="0" x2="1">
+      <stop offset="0" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="144" height="144" rx="20" fill="url(#g12)" />
+  <g fill="#fff" transform="translate(36,40)">
+    <path d="M14 86c34-8 54-44 62-66 0-2 0-4-2-5-2-1-6 0-8 2-10 10-30 48-48 68-4 4 0 6 4 1z"/>
+  </g>
+</svg>

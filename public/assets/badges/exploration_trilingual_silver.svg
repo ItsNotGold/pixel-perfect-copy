@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" width="140" height="140" role="img" aria-label="Polyglot Primer Badge">
+  <title>Polyglot Primer</title>
+  <circle cx="70" cy="70" r="64" fill="#7C3AED" />
+  <g transform="translate(24,34)" fill="#fff">
+    <rect x="0" y="0" width="28" height="18" rx="2"/>
+    <rect x="36" y="0" width="28" height="18" rx="2"/>
+    <rect x="72" y="0" width="28" height="18" rx="2"/>
+  </g>
+</svg>

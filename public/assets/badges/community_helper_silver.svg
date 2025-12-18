@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" width="140" height="140" role="img" aria-label="Community Helper Badge">
+  <title>Community Helper</title>
+  <rect x="8" y="8" width="124" height="124" rx="18" fill="#F97316"/>
+  <g transform="translate(36,36)" fill="#fff">
+    <path d="M12 40c6-8 18-16 36-8c12 6 18 14 18 20c0 8-8 12-16 12c-8 0-20-8-28-12c-6-2-10-6-10-12z"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Pinpoint Pro Badge">
+  <title>Pinpoint Pro</title>
+  <defs>
+    <linearGradient id="g7" x1="0" x2="1">
+      <stop offset="0" stop-color="#FF7043"/>
+      <stop offset="1" stop-color="#A54724"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="104" height="104" rx="18" fill="url(#g7)" />
+  <g transform="translate(22,22)" fill="#fff">
+    <path d="M26 8 L26 30" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="26" cy="26" r="8" fill="#fff" opacity="0.9"/>
+  </g>
+</svg>

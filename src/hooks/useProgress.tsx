@@ -322,6 +322,34 @@ export function useProgress() {
     if (!user) return;
     const achievements: string[] = [];
 
+    // Badge unlocks: call the unlock-badge function via helper
+    try {
+      // Import helper lazily to avoid cycles
+      const { unlockBadge } = await import("@/lib/badgeUtils");
+
+      if (totalCompleted === 1) {
+        await unlockBadge("completion_first_step_bronze");
+      }
+      if (totalCompleted === 10) {
+        await unlockBadge("completion_committed_silver");
+      }
+      if (totalCompleted === 100) {
+        await unlockBadge("completion_marathon_gold");
+      }
+
+      if (streak === 7) {
+        await unlockBadge("streak_daily_week_bronze");
+      }
+      if (streak === 30) {
+        await unlockBadge("streak_monthly_consistency_silver");
+      }
+      if (streak === 100) {
+        await unlockBadge("streak_relentless_gold");
+      }
+    } catch (err) {
+      // ignore badge unlocking errors; not critical
+    }
+
     if (totalCompleted === 1) achievements.push("first_exercise");
     if (totalCompleted === 10) achievements.push("ten_exercises");
     if (totalCompleted === 50) achievements.push("fifty_exercises");

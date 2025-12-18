@@ -5,556 +5,201 @@ export interface WordDefinition {
 
 export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = {
     en: {
-        // Precision Swap
-        "compelling": {
-            definition: "Evoking interest, attention, or admiration in a powerfully irresistible way.",
-            example: "The project manager gave a compelling presentation that impressed the board."
-        },
-        "monstrous": {
-            definition: "Having the ugly or frightening appearance of a monster; giant in size.",
-            example: "The sudden storm caused monstrous waves that crashed against the harbor wall."
-        },
-        "venerable": {
-            definition: "Accorded a great deal of respect, especially because of age, wisdom, or character.",
-            example: "The old library was filled with venerable books and historic manuscripts."
-        },
-        "glacial": {
-            definition: "Extremely cold, as if resulting from a glacier.",
-            example: "After the long hike, the water from the mountain stream tasted glacial."
-        },
-        "imperceptible": {
-            definition: "So slight, gradual, or subtle as not to be perceived.",
-            example: "The detective noticed an imperceptible crack in the window that everyone else missed."
-        },
-        "sublime": {
-            definition: "Of such excellence, grandeur, or beauty as to inspire great admiration and awe.",
-            example: "The sunset over the desert was a sublime sight to behold."
-        },
-        "instantaneous": {
-            definition: "Occurring or done in an instant or instantly.",
-            example: "The athlete showed an instantaneous reaction to the starting pistol."
-        },
-        "ominous": {
-            definition: "Giving the impression that something bad or unpleasant is going to happen.",
-            example: "The empty hallway felt ominous in the middle of the night."
-        },
-        "piping": {
-            definition: "Specifically used in 'piping hot', meaning very hot (as if water is piping from a kettle).",
-            example: "The chef prepared piping hot soup that was perfect for the winter evening."
-        },
-        "ingenious": {
-            definition: "Clever, original, and inventive.",
-            example: "His ingenious strategy led the company to record profits."
-        },
-        "piercing": {
-            definition: "Having a sharp or high-pitched sound that is easily heard.",
-            example: "The child let out a piercing cry when she saw the puppy."
-        },
-        "sequestered": {
-            definition: "Isolated and hidden away; secluded.",
-            example: "They found a sequestered spot in the park to read their books away from the crowd."
-        },
-        "responsive": {
-            definition: "Reacting quickly and positively; in computing, an interface that reacts fast to user input.",
-            example: "The new software update made the application very responsive on older computers."
-        },
-        "commanding": {
-            definition: "Having an air of authority; impressive and influential.",
-            example: "He has a commanding personality that usually dominates the room."
-        },
-        "lucid": {
-            definition: "Expressed clearly; easy to understand.",
-            example: "The teacher gave a lucid explanation of the complex theorem."
-        },
-        "formidable": {
-            definition: "Inspiring fear or respect through being impressively large, powerful, or intense.",
-            example: "Writing a novel is a formidable task that requires years of dedication."
-        },
-        "picturesque": {
-            definition: "Visually attractive, especially in a quaint or charming way.",
-            example: "The valley was very picturesque in the morning mist."
-        },
-        "myriad": {
-            definition: "A countless or extremely great number.",
-            example: "The old car made myriad strange noises as it climbed the hill."
-        },
-        "prosperous": {
-            definition: "Successful in material terms; flourishing financially.",
-            example: "The company faces a prosperous future after the merger."
-        },
-        "flimsy": {
-            definition: "Lacking in strength, substance, or credibility.",
-            example: "He gave a flimsy excuse for missing the meeting."
-        },
-        "towering": {
-            definition: "Extremely tall, especially in comparison with the surroundings.",
-            example: "The mountain peak was hidden by towering clouds."
-        },
-        "mercurial": {
-            definition: "Subject to sudden or unpredictable changes of mood or mind; also moving very quickly.",
-            example: "The dancer's movements were mercurial and graceful."
-        },
-        "dilapidated": {
-            definition: "In a state of disrepair or ruin as a result of age or neglect.",
-            example: "The old bridge was finally demolished after years of sitting dilapidated."
-        },
-        "pin-drop": {
-            definition: "Used to describe a place that is so quiet you could hear a pin drop.",
-            example: "The room was pin-drop silent during the final exam."
-        },
-        "inclement": {
-            definition: "Unpleasantly cold or wet weather.",
-            example: "The inclement weather forced them to cancel the outdoor concert."
-        },
-        "diminutive": {
-            definition: "Extremely or unusually small.",
-            example: "The diminutive kitten was found shivering in the rain."
-        },
-        "substantial": {
-            definition: "Of considerable importance, size, or worth.",
-            example: "The company reported a substantial increase in year-over-year revenue."
-        },
-        "radiant": {
-            definition: "Sending out light; shining or glowing brightly.",
-            example: "The bright moonlight reflected off the lake in a radiant glow."
-        },
-        "eloquent": {
-            definition: "Fluent or persuasive in speaking or writing.",
-            example: "She has an eloquent way of explaining complicated topics."
-        },
-        "gale-force": {
-            definition: "Relating to winds of great strength (gales).",
-            example: "The gale-force wind nearly knocked him over."
-        },
-        "elementary": {
-            definition: "Relating to the most basic aspects of a subject; straightforward.",
-            example: "The task was elementary for someone with her years of experience."
-        },
-        "melancholy": {
-            definition: "A feeling of pensive sadness, typically with no obvious cause.",
-            example: "He felt melancholy after watching the emotional documentary."
-        },
-        "fleet-footed": {
-            definition: "Able to run fast.",
-            example: "The fleet-footed runner won the gold medal."
-        },
-        "immaculate": {
-            definition: "Perfectly clean, neat, or tidy; free from flaws.",
-            example: "The kitchen was immaculate after hours of scrubbing."
-        },
-        "elderly": {
-            definition: "Showing signs of old age; a respectful term for old people.",
-            example: "The elderly man told stories about his long and adventurous youth."
-        },
-        "unfathomable": {
-            definition: "Incapable of being fully explored or understood; extremely deep.",
-            example: "The dark forest was full of unfathomable mysteries."
-        },
-        "astute": {
-            definition: "Having or showing an ability to accurately assess situations and turn this to one's advantage.",
-            example: "He made an astute comment that changed the direction of the debate."
-        },
-        "contemporary": {
-            definition: "Belonging to or occurring in the present; modern.",
-            example: "The contemporary building stands out clearly in the city skyline."
-        },
-        "abundant": {
-            definition: "Existing or available in large quantities; plentiful.",
-            example: "There were abundant flowers blooming in the garden this spring."
-        },
-        "congested": {
-            definition: "So crowded with traffic or people as to hinder freedom of movement.",
-            example: "The congested traffic made him late for his important meeting."
-        },
-        "striking": {
-            definition: "Attractively unusual or extreme; making a strong impression.",
-            example: "She has a striking face that immediately attracts attention."
-        },
-        "impacted": {
-            definition: "Pressed firmly together or packed down tightly.",
-            example: "The impacted ground was difficult to dig into for the new garden."
-        },
-        "ethereal": {
-            definition: "Extremely delicate and light in a way that seems out of this world.",
-            example: "The ethereal music helped him drift into a peaceful sleep."
-        },
-        "scorching": {
-            definition: "Very hot; burning.",
-            example: "The scorching desert sun beat down on the weary travelers."
-        },
-        "deafening": {
-            definition: "So loud as to make it impossible to hear anything else.",
-            example: "The deafening explosion could be heard for miles around."
-        },
-        "biting": {
-            definition: "Extremely cold; also sharp and cutting.",
-            example: "The biting wind made the branches sway and crack."
-        },
-        "precocious": {
-            definition: "Having developed certain abilities or inclinations at an earlier age than is usual.",
-            example: "The precocious puppy learned the trick in just five minutes."
-        },
-        "ramshackle": {
-            definition: "In a state of severe disrepair; house that is old and broken.",
-            example: "The old house was ramshackle and needed expensive repairs."
-        },
-        "peerless": {
-            definition: "Unequaled; unrivaled.",
-            example: "The surgeon performed a peerless operation under intense pressure."
-        },
-        "excruciating": {
-            definition: "Intensely painful.",
-            example: "The runner felt excruciating pain in his leg during the final sprint."
-        },
-        "crystalline": {
-            definition: "Very clear; pure as crystal.",
-            example: "The crystalline water in the mountain lake was beautiful to see."
-        },
-        "meteoric": {
-            definition: "Very rapid and successful.",
-            example: "The meteoric growth of the startup surprised the cautious investors."
-        },
-        "incandescent": {
-            definition: "Emitting light as a result of being heated; also extremely bright.",
-            example: "The incandescent light from the lighthouse guided the ships home."
-        },
-        "balmy": {
-            definition: "Pleasantly warm weather.",
-            example: "The balmy breeze made the summer afternoon pleasant for everyone."
-        },
-        "happy": {
-            definition: "Feeling or showing pleasure or contentment.",
-            example: "She was happy to see her old friends again."
-        },
-        "sad": {
-            definition: "Feeling or showing sorrow; unhappy.",
-            example: "He felt sad after the movie ended."
-        },
-        "big": {
-            definition: "Of considerable size, extent, or intensity.",
-            example: "They live in a big house near the park."
-        },
-        "smart": {
-            definition: "Having or showing a quick-witted intelligence.",
-            example: "She is a smart student who always asks good questions."
-        },
-        "beautiful": {
-            definition: "Pleasing the senses or mind aesthetically.",
-            example: "The flowers in the garden are beautiful."
-        },
-        "angry": {
-            definition: "Feeling or showing strong annoyance, displeasure, or hostility.",
-            example: "He was angry because his flight was canceled."
-        },
-        "fast": {
-            definition: "Moving or capable of moving at high speed.",
-            example: "The new train is very fast."
-        },
-        "small": {
-            definition: "Of a size that is less than normal or usual.",
-            example: "The kitten is still very small."
-        },
-        "strong": {
-            definition: "Having the power to move heavy weights or perform other physically demanding tasks.",
-            example: "The athlete is very strong and can lift heavy weights."
-        },
-        "easy": {
-            definition: "Achieved without great effort; presenting few difficulties.",
-            example: "The test was surprisingly easy."
-        },
-        "difficult": {
-            definition: "Needing much effort or skill to accomplish, deal with, or understand.",
-            example: "Solving the puzzle was quite difficult."
-        },
-        "cold": {
-            definition: "Of or at a low or relatively low temperature.",
-            example: "It's very cold outside today."
-        },
-        "hot": {
-            definition: "Having a high degree of heat or a high temperature.",
-            example: "The soup is still very hot."
-        },
-        "good": {
-            definition: "To be desired or approved of; of high quality.",
-            example: "This is a good book that I highly recommend."
-        },
-        "bad": {
-            definition: "Of poor quality or low standard; not good.",
-            example: "The weather was bad all weekend."
-        },
-        "old": {
-            definition: "Having lived for a long time; no longer young.",
-            example: "The old building has a lot of history."
-        },
-        "new": {
-            definition: "Not existing before; made, introduced, or discovered recently or now for the first time.",
-            example: "I bought a new car last week."
-        },
-        "important": {
-            definition: "Of great value; having a great effect or influence.",
-            example: "It is important to drink enough water every day."
-        },
-        "interesting": {
-            definition: "Arousing curiosity or interest; holding or catching the attention.",
-            example: "The documentary was very interesting."
-        },
-        "scary": {
-            definition: "Causing fear or alarm; frightening.",
-            example: "The dark forest looked scary at night."
-        },
-        "funny": {
-            definition: "Causing laughter or amusement; humorous.",
-            example: "He told a funny story that made everyone laugh."
-        },
-        "quiet": {
-            definition: "Making little or no noise.",
-            example: "The library is usually very quiet."
-        },
-        "loud": {
-            definition: "Producing or capable of producing much noise; easily heard.",
-            example: "The music at the concert was very loud."
-        },
-        "rich": {
-            definition: "Having a great deal of money or assets; wealthy.",
-            example: "He became rich after selling his company."
-        },
-        "poor": {
-            definition: "Lacking sufficient money to live at a standard considered comfortable or normal in a society.",
-            example: "The charity helps poor families in the area."
-        },
-        "brave": {
-            definition: "Ready to face and endure danger or pain; showing courage.",
-            example: "The firefighter was very brave."
-        },
-        "calm": {
-            definition: "Not showing or feeling nervousness, anger, or other strong emotions.",
-            example: "She stayed calm during the emergency."
-        },
-        "bright": {
-            definition: "Giving out or reflecting a lot of light; shining.",
-            example: "The sun is very bright today."
-        },
-        "timid": {
-            definition: "Showing a lack of courage or confidence; easily frightened.",
-            example: "The timid dog hid behind the sofa."
-        },
-        "dangerous": {
-            definition: "Able or likely to cause harm or injury.",
-            example: "It is dangerous to walk alone at night in that area."
+        "wise": {
+            definition: "Having or showing experience, knowledge, and good judgment.",
+            example: "The director made a wise decision to postpone the launch."
         },
         "clear": {
             definition: "Easy to perceive, understand, or interpret.",
             example: "The instructions were clear and easy to follow."
         },
-        "dirty": {
-            definition: "Covered or marked with an unclean substance.",
-            example: "His shoes were dirty after playing in the mud."
+        "beautiful": {
+            definition: "Pleasing the senses or mind aesthetically.",
+            example: "The sunrise over the mountains was truly beautiful."
         },
-        "helpful": {
-            definition: "Giving or ready to give help.",
-            example: "The staff were very helpful and friendly."
+        "large": {
+            definition: "Of considerable size, extent, or capacity.",
+            example: "They live in a large house at the end of the street."
         },
-        "thin": {
-            definition: "Having opposite surfaces or sides close together; of little thickness or depth.",
-            example: "The paper is very thin."
+        "expedited": {
+            definition: "To make an action or process happen sooner or be accomplished more quickly.",
+            example: "We requested an expedited delivery for the urgent documents."
         },
-        "brilliant": {
-            definition: "Exceptionally clever or talented.",
-            example: "She came up with a brilliant solution to the problem."
+        "ancestral": {
+            definition: "Of, belonging to, or inherited from an ancestor or ancestors.",
+            example: "The family gathered at their ancestral home for the holidays."
         },
-        "cheap": {
-            definition: "Low in price, especially in relation to similar items or services.",
-            example: "This store sells cheap groceries."
+        "monstrous": {
+            definition: "Having the ugly or frightening appearance of a monster; giant in size.",
+            example: "A monstrous wave crashed against the tiny boat."
         },
-        "friendly": {
-            definition: "Kind and pleasant.",
-            example: "The neighbors are very friendly."
+        "venerable": {
+            definition: "Accorded a great deal of respect, especially because of age, wisdom, or character.",
+            example: "The venerable professor was celebrated for his decades of research."
         },
-        "honest": {
-            definition: "Free of deceit and untruthfulness; sincere.",
-            example: "He gave an honest answer to the question."
+        "glacial": {
+            definition: "Extremely cold; suggestive of a glacier.",
+            example: "The wind blowing off the lake was glacial."
         },
-        "silent": {
-            definition: "Not making or accompanied by any sound.",
-            example: "The room was silent after he left."
+        "imperceptible": {
+            definition: "So slight, gradual, or subtle as not to be perceived.",
+            example: "The change in temperature was almost imperceptible."
         },
-        "warm": {
-            definition: "Of or at a fairly or comfortably high temperature.",
-            example: "It's a warm day today."
+        "sublime": {
+            definition: "Of such excellence, grandeur, or beauty as to inspire great admiration and awe.",
+            example: "The performance of the orchestra was absolutely sublime."
         },
-        "transparent": {
-            definition: "Allowing light to pass through so that objects behind can be distinctly seen.",
-            example: "The glass is perfectly transparent."
+        "instantaneous": {
+            definition: "Occurring or done in an instant or instantly.",
+            example: "The athlete showed an instantaneous reaction to the starting signal."
         },
-        "efficient": {
-            definition: "Achieving maximum productivity with minimum wasted effort or expense.",
-            example: "The new system is much more efficient."
+        "ominous": {
+            definition: "Giving the impression that something bad or unpleasant is going to happen.",
+            example: "The dark, heavy clouds looked ominous."
         },
-        "fragile": {
-            definition: "Easily broken or damaged.",
-            example: "Be careful with that vase, it's very fragile."
+        "ingenious": {
+            definition: "Clever, original, and inventive.",
+            example: "He came up with an ingenious solution to the power outage."
         },
-        "curious": {
-            definition: "Eager to know or learn something.",
-            example: "Children are naturally curious about the world."
+        "sequestered": {
+            definition: "Isolated and hidden away; secluded.",
+            example: "The cabin was sequestered in a remote corner of the forest."
         },
-        "morning": {
-            definition: "The period of time between midnight and noon, especially from sunrise to noon.",
-            example: "I usually go for a run in the morning."
+        "formidable": {
+            definition: "Inspiring fear or respect through being impressively large, powerful, or intense.",
+            example: "The team faced a formidable opponent in the finals."
         },
-        "breakfast": {
-            definition: "The first meal of the day, typically eaten in the morning.",
-            example: "I had eggs and toast for breakfast."
+        "picturesque": {
+            definition: "Visually attractive, especially in a quaint or charming way.",
+            example: "The village was famous for its picturesque streets and colorful houses."
         },
-        "commute": {
-            definition: "Travel some distance between one's home and place of work on a regular basis.",
-            example: "Her daily commute takes about an hour."
+        "prosperous": {
+            definition: "Successful in material terms; flourishing financially.",
+            example: "The company enjoyed a prosperous year despite the economic downturn."
         },
-        "work": {
-            definition: "Activity involving mental or physical effort done in order to achieve a purpose or result.",
-            example: "He is going to work now."
+        "mercurial": {
+            definition: "Subject to sudden or unpredictable changes of mood or mind.",
+            example: "Her mercurial temperament made her difficult to work with."
         },
-        "lunch": {
-            definition: "A meal eaten in the middle of the day, typically one that is lighter or less formal than an evening meal.",
-            example: "We had lunch at a small cafe."
+        "dilapidated": {
+            definition: "In a state of disrepair or ruin as a result of age or neglect.",
+            example: "They bought a dilapidated farmhouse and planned to renovate it."
         },
-        "passionate": {
-            definition: "Showing or caused by strong feelings or a strong belief.",
-            example: "She is passionate about music."
+        "inclement": {
+            definition: "Unpleasantly cold or wet weather.",
+            example: "The match was cancelled due to inclement weather."
         },
-        "creative": {
-            definition: "Relating to or involving the imagination or original ideas, especially in the production of an artistic work.",
-            example: "He has a very creative mind."
+        "diminutive": {
+            definition: "Extremely or unusually small.",
+            example: "The kitten was a diminutive creature that could fit in a teacup."
         },
-        "relaxing": {
-            definition: "Reducing tension or anxiety.",
-            example: "A warm bath can be very relaxing."
+        "radiant": {
+            definition: "Sending out light; shining or glowing brightly.",
+            example: "She gave him a radiant smile that lit up the room."
         },
-        "rewarding": {
-            definition: "Providing satisfaction; worthwhile.",
-            example: "Teaching can be a very rewarding career."
+        "eloquent": {
+            definition: "Fluent or persuasive in speaking or writing.",
+            example: "His eloquent speech moved many people in the audience."
         },
-        "knowledge": {
-            definition: "Facts, information, and skills acquired by a person through experience or education.",
-            example: "Reading books is a great way to gain knowledge."
+        "melancholy": {
+            definition: "A feeling of pensive sadness, typically with no obvious cause.",
+            example: "He felt a wave of melancholy as he looked at old photographs."
         },
-        "skills": {
-            definition: "The ability to do something well; expertise.",
-            example: "She has excellent communication skills."
+        "immaculate": {
+            definition: "Perfectly clean, neat, or tidy; free from flaws.",
+            example: "The kitchen was immaculate after a day of deep cleaning."
         },
-        "future": {
-            definition: "The time or a period of time following the moment of speaking or writing.",
-            example: "No one knows what the future holds."
+        "astute": {
+            definition: "Having or showing an ability to accurately assess situations and turn this to one's advantage.",
+            example: "His astute observations helped the company avoid a major mistake."
         },
-        "connectivity": {
-            definition: "The state or quality of being connected.",
-            example: "The new office has great internet connectivity."
+        "contemporary": {
+            definition: "Living or occurring at the same time; modern.",
+            example: "She enjoys reading contemporary fiction from diverse authors."
         },
-        "influence": {
-            definition: "The capacity to have an effect on the character, development, or behavior of someone or something.",
-            example: "Her parents had a big influence on her career choice."
+        "ethereal": {
+            definition: "Extremely delicate and light in a way that seems too perfect for this world.",
+            example: "The ethereal music floating through the hall was very calming."
         },
-
-        // Reverse Definitions / Synonyms / Incorporation Words
-        "approve": {
-            definition: "To officially agree to or accept something.",
-            example: "The manager approved the proposal after a careful review."
+        "scorching": {
+            definition: "Very hot; burning.",
+            example: "The scorching desert sun beat down on the travelers."
+        },
+        "deafening": {
+            definition: "So loud as to make it impossible to hear anything else.",
+            example: "The roar of the engines was deafening."
+        },
+        "precocious": {
+            definition: "Having developed certain abilities or inclinations at an earlier age than is usual.",
+            example: "The precocious child could play complex sonatas on the piano."
+        },
+        "peerless": {
+            definition: "Unequalled; unrivalled.",
+            example: "The surgeon was known for his peerless technique and precision."
+        },
+        "crystalline": {
+            definition: "Very clear; transparent.",
+            example: "The water in the mountain stream was crystalline."
+        },
+        "incandescent": {
+            definition: "Emitting light as a result of being heated; extremely bright.",
+            example: "The incandescent lights of the city could be seen for miles."
+        },
+        "balmy": {
+            definition: "Pleasantly warm weather.",
+            example: "It was a balmy summer evening, perfect for a walk."
         },
         "elation": {
             definition: "A feeling of great happiness and triumph.",
             example: "She was filled with elation after winning the first prize."
         },
-        "meticulous": {
-            definition: "Showing great attention to detail; very careful and precise.",
-            example: "He was meticulous in his preparation for the audit."
-        },
-        "resilient": {
-            definition: "Able to withstand or recover quickly from difficult conditions.",
-            example: "The community showed how resilient it was after the storm."
-        },
-        "unprecedented": {
-            definition: "Never done or known before.",
-            example: "The company achieved unprecedented success this quarter."
-        },
-        "ubiquitous": {
-            definition: "Present, appearing, or found everywhere.",
-            example: "Cell phones have become ubiquitous in modern society."
-        },
-        "mitigate": {
-            definition: "To make less severe, serious, or painful.",
-            example: "The new measures were designed to mitigate the risks."
-        },
-        "paradigm": {
-            definition: "A typical example or pattern of something; a model.",
-            example: "The new theory created a paradigm shift in the field of science."
-        },
-        "ephemeral": {
-            definition: "Lasting for a very short time.",
-            example: "The beauty of the sunset was ephemeral but unforgettable."
-        },
-        "ambiguity": {
-            definition: "The quality of being open to more than one interpretation; inexactness.",
-            example: "The wording of the law avoids any ambiguity."
-        },
-        "innovation": {
-            definition: "The action or process of innovating; a new method, idea, or product.",
-            example: "Innovation is key to staying ahead in the market."
-        },
-        "sustainability": {
-            definition: "The ability to be maintained at a certain rate or level.",
-            example: "The company's focus on sustainability has improved its reputation."
-        },
-        "collaboration": {
-            definition: "The action of working with someone to produce or create something.",
-            example: "Collaboration between departments led to a better product."
-        },
-        "perspective": {
-            definition: "A particular attitude toward or way of regarding something; a point of view.",
-            example: "Getting a new perspective can help you solve the problem."
-        },
-        "strategic": {
-            definition: "Relating to the identification of long-term or overall aims and interests and the means of achieving them.",
-            example: "The CEO made a strategic decision to expand into global markets."
-        },
-        "promising": {
-            definition: "Showing signs of future success.",
-            example: "The promising young athlete was recruited by several top teams."
-        },
-        "impervious": {
-            definition: "Not allowing fluid to pass through; also, unable to be affected by.",
-            example: "The new roof is impervious to rain."
-        },
-        "unyielding": {
-            definition: "Not giving way to pressure; hard or solid.",
-            example: "He remained unyielding in his decision despite the protests."
-        },
-        "frolicking": {
-            definition: "Playing or moving about in a cheerful and lively way.",
-            example: "The lambs were frolicking in the meadow."
-        },
         "articulate": {
-            definition: "Having or showing the ability to speak fluently and coherently.",
-            example: "She is an articulate speaker who can explain complex ideas simply."
+            definition: "Having the ability to speak fluently and coherently.",
+            example: "He find it difficult to articulate his feelings in words."
         },
         "skeptic": {
             definition: "A person inclined to question or doubt all accepted opinions.",
-            example: "A skeptic might doubt the claims made by the advertisement."
+            example: "A skeptic might doubt the claims made by the salesman."
+        },
+        "ubiquitous": {
+            definition: "Present, appearing, or found everywhere.",
+            example: "Smartphones have become ubiquitous in modern society."
         },
         "understate": {
-            definition: "To describe or represent something as being smaller or less important than it really is.",
-            example: "The reporter tried to understate the scale of the disaster."
+            definition: "To describe or represent something as being less important than it actually is.",
+            example: "The report tended to understate the severity of the crisis."
+        },
+        "mood": {
+            definition: "A temporary state of mind or feeling.",
+            example: "He was in a good mood after receiving the promotion."
+        },
+        "empathy": {
+            definition: "The ability to understand and share the feelings of another.",
+            example: "She showed great empathy toward her friend who was going through a hard time."
         },
         "quixotic": {
             definition: "Exceedingly idealistic; unrealistic and impractical.",
-            example: "His quixotic quest for world peace was admired but considered impossible."
+            example: "His quixotic quest for world peace was admired but considered impossible by many."
+        },
+        "concise": {
+            definition: "Giving a lot of information clearly and in a few words; brief but comprehensive.",
+            example: "The summary was concise and easy to read."
         },
         "aversion": {
             definition: "A strong dislike or disinclination.",
-            example: "I have an aversion to seafood."
+            example: "He has a strong aversion to public speaking."
         },
         "integrity": {
             definition: "The quality of being honest and having strong moral principles.",
             example: "He is a man of great integrity who always keeps his word."
+        },
+        "simplify": {
+            definition: "Make something simpler or easier to do or understand.",
+            example: "We need to simplify the process to make it more efficient."
+        },
+        "patriot": {
+            definition: "A person who vigorously supports their country and is prepared to defend it.",
+            example: "He was remembered as a patriot who served his country bravely."
         },
         "psychology": {
             definition: "The scientific study of the human mind and its functions.",
@@ -565,143 +210,198 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "I was ravenous after the long hike."
         },
         "disprove": {
-            definition: "Prove that (something) is false.",
-            example: "New evidence was found to disprove the theory."
+            definition: "Prove that something is false.",
+            example: "The new evidence helped to disprove his original theory."
         },
         "polyglot": {
             definition: "Knowing or using several languages.",
-            example: "The polyglot was able to translate between four different languages."
+            example: "A polyglot can communicate with people from many different countries."
         },
         "serendipitous": {
             definition: "Occurring or discovered by chance in a happy or beneficial way.",
-            example: "Our meeting was serendipitous, as we both needed a new business partner."
+            example: "Their meeting was serendipitous, leading to a long partnership."
+        },
+        "abolish": {
+            definition: "Formally put an end to a system, practice, or institution.",
+            example: "The government voted to abolish the outdated law."
         },
         "monologue": {
             definition: "A long speech by one actor in a play or movie.",
             example: "The actor delivered a powerful monologue at the end of the first act."
         },
+        "minimum": {
+            definition: "The least or smallest amount or quantity possible.",
+            example: "The minimum age for voting is eighteen."
+        },
+        "proclaim": {
+            definition: "Announce officially or publicly.",
+            example: "The king will proclaim the new law tomorrow morning."
+        },
+        "ephemeral": {
+            definition: "Lasting for a very short time.",
+            example: "Fame can be ephemeral, so enjoy it while it lasts."
+        },
         "rhetoric": {
             definition: "The art of effective or persuasive speaking or writing.",
-            example: "The politician's rhetoric was intended to inspire the crowd."
+            example: "His rhetoric was intended to inspire the crowd."
         },
         "dehumanize": {
-            definition: "Deprive of positive human qualities.",
-            example: "War can dehumanize both the soldiers and the civilians."
+            definition: "Deprive of human qualities, personality, or dignity.",
+            example: "The propaganda aimed to dehumanize the enemy."
         },
         "entrepreneur": {
-            definition: "A person who organizes and operates a business or businesses.",
-            example: "She is a successful entrepreneur who has started three companies."
+            definition: "A person who organizes and operates a business or businesses. accompanied by risk.",
+            example: "As a young entrepreneur, she started her own tech company."
         },
         "irreverent": {
             definition: "Showing a lack of respect for people or things that are generally taken seriously.",
-            example: "The comedian's irreverent jokes were popular with the audience."
+            example: "His irreverent sense of humor often poked fun at authority figures."
         },
         "repudiate": {
             definition: "Refuse to accept or be associated with.",
-            example: "The candidate was quick to repudiate the extremist group's support."
+            example: "The minister was quick to repudiate the allegations of corruption."
         },
         "teenager": {
             definition: "A person aged between 13 and 19 years.",
-            example: "The teenager was excited to get his driver's license."
+            example: "Being a teenager is a time of many changes and self-discovery."
+        },
+        "enhance": {
+            definition: "Intensify, increase, or further improve the quality, value, or extent of.",
+            example: "The new lighting will enhance the beauty of the room."
+        },
+        "ardent": {
+            definition: "Enthusiastic or passionate.",
+            example: "She is an ardent supporter of environmental conservation."
+        },
+        "fallacy": {
+            definition: "A mistaken belief, especially one based on unsound argument.",
+            example: "The idea that vitamin C prevents colds is a common fallacy."
         },
         "annihilate": {
             definition: "Destroy utterly; obliterate.",
-            example: "The army moved in to annihilate the enemy forces."
+            example: "The army was sent to annihilate the enemy forces."
         },
         "astronomer": {
             definition: "An expert in or student of astronomy.",
-            example: "The astronomer used a telescope to study the distant stars."
+            example: "The astronomer spent his nights observing the distant galaxies."
         },
         "invincible": {
             definition: "Too powerful to be defeated or overcome.",
             example: "The team seemed invincible after winning ten games in a row."
         },
         "abdicate": {
-            definition: "Renounce one's throne or fail to fulfill a duty or responsibility.",
-            example: "The king decided to abdicate the throne in favor of his daughter."
+            definition: "Renounce one's throne or fail to fulfill a duty.",
+            example: "The king decided to abdicate in favor of his son."
         },
         "anonymity": {
             definition: "The condition of being anonymous.",
-            example: "The whistleblower requested anonymity to protect their identity."
+            example: "The donor wished to maintain his anonymity."
         },
         "antonym": {
             definition: "A word opposite in meaning to another.",
-            example: "'Hot' is an antonym of 'cold'."
+            example: "'Hot' is the antonym of 'cold'."
+        },
+        "claustrophobia": {
+            definition: "Extreme or irrational fear of confined places.",
+            example: "He couldn't ride the elevator because of his claustrophobia."
         },
         "canonize": {
-            definition: "Officially declare (a dead person) to be a saint.",
-            example: "The church decided to canonize the priest for his life of service."
+            definition: "Officially declare a dead person to be a saint.",
+            example: "The church decided to canonize the woman for her lifelong service to the poor."
         },
         "epigram": {
             definition: "A pithy saying or remark expressing an idea in a clever and amusing way.",
-            example: "The writer was known for her witty epigrams."
+            example: "He was famous for his witty epigrams about modern life."
         },
         "manifesto": {
-            definition: "A public declaration of policy and aims.",
-            example: "The group published a manifesto outlining their goals."
+            definition: "A public declaration of policy and aims, especially one issued before an election.",
+            example: "The party published its manifesto detailing their plans for education reform."
         },
         "undermine": {
-            definition: "Erode the base or foundation of; lessen the effectiveness, power, or ability of.",
-            example: "Constant criticism can undermine a person's confidence."
+            definition: "Lessen the effectiveness, power, or ability of, especially gradually or insidiously.",
+            example: "His constant criticism began to undermine her confidence."
         },
         "aesthetic": {
             definition: "Concerned with beauty or the appreciation of beauty.",
-            example: "The building was designed with a modern aesthetic."
+            example: "The building has a clean, minimalist aesthetic."
         },
         "epidemic": {
             definition: "A widespread occurrence of an infectious disease in a community at a particular time.",
-            example: "The city worked hard to control the flu epidemic."
+            example: "The flu epidemic spread rapidly through the city."
+        },
+        "lucid": {
+            definition: "Expressed clearly; easy to understand.",
+            example: "She gave a lucid account of the events that had taken place."
         },
         "abridge": {
-            definition: "Shorten (a piece of writing) without losing the sense.",
-            example: "The movie was an abridged version of the long novel."
+            definition: "Shorten a piece of writing without losing the sense.",
+            example: "They decided to abridge the novel for a younger audience."
         },
         "affable": {
             definition: "Friendly, good-natured, or easy to talk to.",
-            example: "The new neighbor was very affable and welcoming."
+            example: "The host was very affable and made everyone feel welcome."
+        },
+        "minuscule": {
+            definition: "Extremely small; tiny.",
+            example: "He noticed a minuscule crack in the glass."
+        },
+        "advocate": {
+            definition: "A person who publicly supports or recommends a particular cause or policy.",
+            example: "She is a strong advocate for children's rights."
         },
         "ennui": {
             definition: "A feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement.",
-            example: "He was filled with ennui during the long summer break."
+            example: "He suffered from a sense of ennui during the long summer vacation."
         },
         "placate": {
-            definition: "Make (someone) less angry or hostile.",
-            example: "They tried to placate the angry customer with a refund."
+            definition: "Make someone less angry or hostile.",
+            example: "They tried to placate the angry protestors with promises of reform."
         },
         "iconoclast": {
             definition: "A person who attacks cherished beliefs or institutions.",
-            example: "The artist was an iconoclast who challenged traditional styles."
+            example: "As an iconoclast, he enjoyed challenging traditional artistic norms."
         },
         "denounce": {
             definition: "Publicly declare to be wrong or evil.",
-            example: "Leaders around the world moved to denounce the act of violence."
+            example: "The world leaders gathered to denounce the acts of terrorism."
         },
         "vivacious": {
             definition: "Attractively lively and animated.",
-            example: "She has a vivacious personality that lights up the room."
+            example: "Her vivacious personality made her the center of attention at every party."
         },
         "benefactor": {
             definition: "A person who gives money or other help to a person or cause.",
-            example: "The anonymous benefactor donated a million dollars to the hospital."
+            example: "The library was built thanks to a generous benefactor."
         },
         "pliant": {
-            definition: "Pliable; easily influenced.",
-            example: "The young student was pliant and eager to learn."
+            definition: "Easily influenced or directed; yielding.",
+            example: "The young student was pliant and followed the teacher's instructions perfectly."
         },
         "chaos": {
             definition: "Complete disorder and confusion.",
-            example: "The scene after the accident was one of total chaos."
+            example: "The sudden storm caused chaos in the city streets."
         },
         "proliferate": {
             definition: "Increase rapidly in numbers; multiply.",
-            example: "New businesses began to proliferate in the developing neighborhood."
+            example: "Digital devices continue to proliferate in our daily lives."
         }
     },
     fr: {
-        // Precision Swap
         "judicieuse": {
             definition: "Prise avec bon sens et justesse de jugement.",
             example: "La directrice a pris une décision judicieuse pour l'entreprise."
+        },
+        "original": {
+            definition: "Qui est au début d'une suite, qui n'est pas une copie.",
+            example: "Nous avons retrouvé le manuscrit original dans les archives."
+        },
+        "congruent": {
+            definition: "Qui convient exactement à une situation ou à un objet.",
+            example: "Cette solution est congruente avec nos objectifs à long terme."
+        },
+        "ancestral": {
+            definition: "Qui est transmis par les ancêtres depuis de longues générations.",
+            example: "Ce vieux mur de pierre fait partie du patrimoine ancestral du village."
         },
         "impétueux": {
             definition: "Qui a un mouvement vif, violent et rapide.",
@@ -711,33 +411,21 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Trés mince, trés fine, ou d'une intensité trés faible.",
             example: "Une lueur ténue filtrait sous la porte de la chambre."
         },
-        "transcendant": {
-            definition: "Qui s'élève au-dessus d'un certain niveau ou d'une certaine norme.",
-            example: "Cette oeuvre musicale a un caractère transcendant."
-        },
         "séculaire": {
-            definition: "Qui dure depuis un siècle, ou qui se produit tous les siècles.",
+            definition: "Qui dure depuis un siècle, ou qui est trés ancien.",
             example: "Le château séculaire domine majestueusement toute la vallée."
         },
         "astucieux": {
-            definition: "Qui manifeste de l'astuce, de l'habileté et de l'ingéniosité.",
+            definition: "Qui manifeste de l'habileté et de l'ingéniosité.",
             example: "Il a trouvé un moyen astucieux de résoudre ce problème complexe."
         },
         "limpide": {
             definition: "D'une clarté parfaite, qui laisse passer la lumière sans obstacle.",
             example: "L'eau de la source était si limpide qu'on voyait le moindre caillou."
         },
-        "fracassant": {
-            definition: "Qui produit un bruit violent, comme si quelque chose se brisait.",
-            example: "L'explosion a fait un bruit fracassant qui a réveillé tout le quartier."
-        },
         "infime": {
             definition: "Extrêmement petit, situé au bas de l'échelle.",
-            example: "Même une erreur infime peut avoir de lourdes conséquences ici."
-        },
-        "alléchante": {
-            definition: "Qui tente, qui attire par une apparence agréable.",
-            example: "L'odeur alléchante de la cuisine nous a ouvert l'appétit."
+            example: "Même une erreur infime peut avoir de lourdes conséquences."
         },
         "interminable": {
             definition: "Qui n'en finit pas, ou qui paraît excessivement long.",
@@ -756,7 +444,7 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "L'eau glaciale de la rivière nous a saisis dès les premiers pas."
         },
         "imposant": {
-            definition: "Qui en impose par son aspect, par son grandeur, par son masse.",
+            definition: "Qui en impose par son aspect, sa grandeur ou sa masse.",
             example: "Le nouveau bâtiment est vraiment imposant vu de l'extérieur."
         },
         "suave": {
@@ -764,224 +452,228 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Une musique suave jouait doucement en arrière-plan."
         },
         "novateur": {
-            definition: "Qui introduit des nouveautés, des changements positifs.",
+            definition: "Qui introduit des nouveautés ou des changements positifs.",
             example: "C'est un projet novateur qui bouscule les habitudes du secteur."
         },
-        "fluet": {
-            definition: "Mince, grêle, de constitution délicate.",
-            example: "Le petit ruisseau au débit fluet serpentait entre les rochers."
-        },
         "diluvienne": {
-            definition: "Qui a le caractère d'un déluge, pluie extrêmement abondante.",
+            definition: "Qui a le caractère d'un déluge; extrêmement abondante.",
             example: "Une pluie diluvienne s'est abattue sur la ville pendant des heures."
         },
         "bienveillant": {
-            definition: "Qui manifeste de la bonté, de la gentillesse et de la compréhension.",
+            definition: "Qui manifeste de la bonté et de la compréhension.",
             example: "Il a toujours eu un regard bienveillant sur mon travail."
         },
-        "éblouissante": {
-            definition: "Qui éblouit par son éclat, sa lumière ou sa splendeur.",
-            example: "Une lumière éblouissante provenait de la scène."
-        },
-        "archaïque": {
-            definition: "Qui est d'une époque très ancienne, qui n'est plus d'usage.",
-            example: "Le vieux manuscrit était écrit dans une langue archaïque."
-        },
         "imperturbable": {
-            definition: "Que rien ne peut troubler, agiter ou déranger.",
+            definition: "Que rien ne peut troubler ou déranger.",
             example: "Le silence imperturbable de la nuit régnait sur le village."
         },
         "panoramique": {
             definition: "Qui offre une vue étendue dans toutes les directions.",
-            example: "La vue panoramique depuis le sommet était tout simplement époustouflante."
+            example: "La vue panoramique depuis le sommet était époustouflante."
         },
         "subtil": {
-            definition: "Qui a une finesse d'esprit, qui est délicat à percevoir.",
+            definition: "Qui a une finesse délicate à percevoir.",
             example: "Il y a un changement subtil dans l'air ce matin."
         },
-        "accablante": {
-            definition: "Qui accable par sa force, son poids ou son intensité.",
-            example: "La chaleur accablante nous empêchait de sortir cet après-midi."
-        },
         "intrépide": {
-            definition: "Qui ne craint pas le danger, qui est d'un courage exemplaire.",
+            definition: "Qui ne craint pas le danger; d'un courage exemplaire.",
             example: "Le jeune héros s'est montré intrépide face aux obstacles."
         },
         "diaphane": {
-            definition: "Qui laisse passer la lumière à travers sa masse, translucide.",
-            example: "La lumière diaphane de la lune filtrait à travers les nuages fins."
-        },
-        "tonitruant": {
-            definition: "Qui fait un bruit de tonnerre, extrêmement sonore.",
-            example: "Un tonnerre tonitruant a retenti juste au-dessus de nous."
-        },
-        "chétive": {
-            definition: "De faible constitution, qui paraît fragile et malingre.",
-            example: "Une fleur chétive essayait de pousser entre les pavés."
+            definition: "Qui laisse passer la lumière, translucide.",
+            example: "La lumière diaphane de la lune filtrait à travers les nuages."
         },
         "ravissante": {
-            definition: "Qui cause un ravissement, d'une grande beauté ou trés agréable.",
+            definition: "D'une grande beauté ou trés agréable.",
             example: "Cette nouvelle est tout simplement ravissante, je suis ravi !"
         },
         "fastidieux": {
             definition: "Qui cause de l'ennui par sa lenteur ou sa monotonie.",
             example: "Le nettoyage du jardin s'est avéré être une tâche fastidieuse."
         },
-        "exigeant": {
-            definition: "Qui demande beaucoup de soin, d'efforts ou d'attention.",
-            example: "C'est un poste exigeant qui nécessite une grande rigueur."
-        },
         "immaculé": {
             definition: "D'une pureté parfaite, sans aucune tache.",
             example: "La neige fraîche offrait un paysage immaculé au lever du jour."
         },
-        "cinglante": {
-            definition: "Qui est trés vif et piquant (comme un coup de fouet).",
-            example: "L'eau cinglante de la mer nous a réveillés instantanément."
-        },
         "somptueux": {
-            definition: "Qui est d'une richesse magnifique, d'un luxe éclatant.",
+            definition: "D'une richesse magnifique, d'un luxe éclatant.",
             example: "Le dîner a été servi dans un cadre somptueux."
         },
         "lénifiante": {
-            definition: "Qui calme, qui apaise la douleur ou l'inquiétude.",
-            example: "Une musique lénifiante passait à la radio pour détendre les auditeurs."
-        },
-        "pionnier": {
-            definition: "Qui est le premier à ouvrir une voie, à introduire une idée nouvelle.",
-            example: "C'est un travail pionnier dans le domaine de l'intelligence artificielle."
+            definition: "Qui calme ou apaise la douleur ou l'inquiétude.",
+            example: "Une musique lénifiante passait pour détendre les auditeurs."
         },
         "minuscule": {
             definition: "De taille trés réduite, trés petit.",
             example: "Un insecte minuscule se promenait sur la table."
         },
-        "vigoureuse": {
-            definition: "Qui a de la force, de l'énergie et de la vitalité.",
-            example: "La plante a eu une croissance vigoureuse grâce à l'engrais."
-        },
         "courtois": {
-            definition: "Qui est d'une politesse raffinée et élégante.",
+            definition: "D'une politesse raffinée et élégante.",
             example: "Il s'est montré trés courtois envers tous les invités."
         },
         "scintillante": {
-            definition: "Qui brille par intermittence, avec des éclats de lumière.",
+            definition: "Qui brille avec des éclats de lumière intermittents.",
             example: "L'eau de mer était scintillante sous les rayons du soleil."
         },
         "délabré": {
             definition: "Qui est en trés mauvais état, qui tombe en ruine.",
-            example: "Ils habitent dans un appartement délabré qui aurait besoin de travaux."
+            example: "Ils habitent dans un bâtiment délabré qui aurait besoin de travaux."
         },
         "sépulcral": {
-            definition: "Qui évoque la tombe, d'un silence ou d'une tristesse lugubre.",
+            definition: "Qui évoque la tombe; d'un silence lugubre.",
             example: "Le silence sépulcral de la grotte nous a un peu effrayés."
         },
         "féerique": {
-            definition: "Qui appartient au monde des fées, merveilleux et magique.",
+            definition: "Merveilleux et magique, comme le monde des fées.",
             example: "Le décor du spectacle était vraiment féerique."
         },
         "dérisoire": {
-            definition: "Si petit ou insignifiant qu'il en est ridicule.",
-            example: "Il a reçu une somme dérisoire pour tout son travail acharné."
+            definition: "Si petit qu'il en est insignifiant ou ridicule.",
+            example: "Il a reçu une somme dérisoire pour tout son travail."
         },
         "irrésistible": {
-            definition: "À quoi on ne peut pas résister, trés puissant.",
+            definition: "À quoi on ne peut pas résister; trés puissant.",
             example: "Il a un charme irrésistible qui séduit tout le monde."
         },
         "orgueilleux": {
-            definition: "Qui a une trés haute opinion de soi-même, fier.",
+            definition: "Qui a une trés haute opinion de soi-même; fier.",
             example: "C'est un homme orgueilleux qui n'admet jamais ses erreurs."
-        },
-        "estompée": {
-            definition: "Dont les contours ou l'intensité ont été atténués.",
-            example: "La lumière estompée du soir donnait une ambiance calme aux rues."
-        },
-        "assourdissant": {
-            definition: "Qui fait un bruit si fort qu'il empêche d'entendre.",
-            example: "Le vacarme des travaux est devenu assourdissant."
         },
         "radieux": {
             definition: "Qui rayonne de joie, de lumière ou de bonheur.",
             example: "Il affichait un sourire radieux après sa victoire."
         },
-        "médiéval": {
-            definition: "Qui date du Moyen Âge.",
-            example: "La ville possède encore des remparts médiévaux trés bien conservés."
-        },
-        "religieux": {
-            definition: "Qui manifeste un grand respect, un silence profond (au sens figuré).",
-            example: "Un silence religieux s'est installé dans la salle de conférence."
-        },
-        "luxuriante": {
-            definition: "Qui pousse avec une abondance excessive et magnifique.",
-            example: "La jungle offre une végétation luxuriante et colorée."
-        },
-        "insigne": {
-            definition: "Remarquable par sa valeur morale ou son importance.",
-            example: "Elle a accompli un geste insigne en sauvant cet enfant."
-        },
-        "massive": {
-            definition: "Qui forme une masse importante, compacte et lourde.",
-            example: "Une forte demande massive a entraîné la rupture des stocks."
-        },
         "éloquent": {
-            definition: "Qui a de l'éloquence, qui parle avec facilité et persuasion.",
-            example: "Il a fait un discours éloquent qui a convaincu toute l'assemblée."
+            definition: "Qui parle avec facilité et persuasion.",
+            example: "Il a fait un discours éloquent qui a convaincu l'assemblée."
         },
         "sceptique": {
             definition: "Qui doute, qui ne croit pas facilement.",
             example: "Il reste sceptique face à ces nouvelles promesses."
         },
-        "euphémisme": {
-            definition: "Expression atténuée d'une notion dont l'expression directe aurait quelque chose de déplaisant.",
-            example: "'Il nous a quittés' est un euphémisme pour dire qu'il est mort."
+        "intégrité": {
+            definition: "Qualité d'une personne honnête et fidèle à ses principes.",
+            example: "Son intégrité est reconnue par tous ses collègues."
+        },
+        "psychologie": {
+            definition: "Étude scientifique de l'esprit et des comportements.",
+            example: "Elle étudie la psychologie de l'enfant à l'université."
+        },
+        "entrepreneur": {
+            definition: "Personne qui crée ou dirige une entreprise.",
+            example: "C'est un jeune entrepreneur qui a lancé sa startup."
+        },
+        "allégresse": {
+            definition: "Un sentiment de joie vive et légère.",
+            example: "L'annonce de la paix a été accueillie avec allégresse."
+        },
+        "articulé": {
+            definition: "Qui s'exprime de manière claire et nette.",
+            example: "Il a présenté un argument bien articulé."
+        },
+        "omniprésent": {
+            definition: "Qui est présent partout en même temps.",
+            example: "La technologie est devenue omniprésente dans nos vies."
+        },
+        "minimiser": {
+            definition: "Réduire l'importance ou la valeur de quelque chose.",
+            example: "Il ne faut pas minimiser les risques de cette opération."
+        },
+        "humeur": {
+            definition: "État d'esprit ou disposition d'esprit du moment.",
+            example: "Elle est de bonne humeur ce matin."
+        },
+        "empathie": {
+            definition: "Capacité de s'identifier à autrui et de ressentir ce qu'il ressent.",
+            example: "Il a fait preuve de beaucoup d'empathie envers les victimes."
         },
         "chimérique": {
             definition: "Qui est imaginaire, sans fondement réel.",
             example: "Il poursuit des projets chimériques qui n'aboutiront jamais."
         },
-        "infaillible": {
-            definition: "Qui ne peut se tromper, qui est certain d'arriver.",
-            example: "Il a une méthode infaillible pour gagner à ce jeu."
+        "concis": {
+            definition: "Qui exprime beaucoup de choses en peu de mots.",
+            example: "Son rapport était concis et trés instructif."
         },
-        "versatile": {
-            definition: "Qui change facilement d'opinion, qui est inconstant.",
-            example: "C'est un politicien versatile qui s'adapte à l'opinion publique."
+        "aversion": {
+            definition: "Fort dégoût ou répulsion pour quelque chose.",
+            example: "J'ai une aversion particulière pour les mensonges."
         },
-        "intégrité": {
-            definition: "Qualité d'une personne honnête et dont les principes sont au-dessus de tout reproche.",
-            example: "Son intégrité est reconnue par tous ses collègues."
+        "simplifier": {
+            definition: "Rendre plus simple ou plus facile à comprendre.",
+            example: "Nous devons simplifier les procédures administratives."
         },
-        "psychologie": {
-            definition: "Étude scientifique des faits psychiques et des comportements.",
-            example: "Elle étudie la psychologie de l'enfant à l'université."
+        "patriote": {
+            definition: "Personne qui aime sa patrie et cherche à la servir.",
+            example: "Il se considère comme un patriote dévoué à son pays."
         },
-        "serendipité": {
-            definition: "Fait de trouver autre chose que ce que l'on cherchait, de façon fortuite.",
-            example: "La découverte de la pénicilline est un exemple célèbre de serendipité."
+        "affamé": {
+            definition: "Qui a trés faim.",
+            example: "Le randonneur était affamé après sa longue marche."
         },
-        "soliloque": {
+        "réfuter": {
+            definition: "Démontrer la fausseté d'une affirmation par des preuves.",
+            example: "L'avocat a réussi à réfuter les témoignages de l'accusation."
+        },
+        "polyglotte": {
+            definition: "Personne qui parle plusieurs langues.",
+            example: "En tant que polyglotte, elle travaille comme interprète internationale."
+        },
+        "fortuit": {
+            definition: "Qui arrive par hasard, de manière imprévue.",
+            example: "Leur rencontre a été fortuite mais déterminante."
+        },
+        "abolir": {
+            definition: "Supprimer officiellement une loi, une coutume ou une institution.",
+            example: "Le pays a décidé d'abolir la peine de mort il y a longtemps."
+        },
+        "monologue": {
             definition: "Discours d'une personne qui se parle à elle-même.",
-            example: "L'acteur commence la pièce par un long soliloque."
+            example: "L'acteur commence la pièce par un long monologue."
+        },
+        "minimum": {
+            definition: "La plus petite quantité ou valeur possible.",
+            example: "Le salaire minimum a été augmenté cette année."
+        },
+        "proclamer": {
+            definition: "Annoncer officiellement et publiquement.",
+            example: "Le président va proclamer l'état d'urgence."
+        },
+        "éphémère": {
+            definition: "Qui dure trés peu de temps.",
+            example: "La beauté du coucher de soleil est éphémère mais marquante."
+        },
+        "rhétorique": {
+            definition: "L'art de bien parler pour convaincre.",
+            example: "Son discours était plein de figures de rhétorique."
         },
         "déshumaniser": {
             definition: "Faire perdre son caractère humain à quelqu'un ou quelque chose.",
-            example: "Le travail à la chaîne peut déshumaniser les ouvriers."
-        },
-        "entrepreneur": {
-            definition: "Personne qui crée ou dirige une entreprise.",
-            example: "C'est un jeune entrepreneur qui a lancé sa startup l'année dernière."
+            example: "La guerre tend à déshumaniser les soldats et les civils."
         },
         "irrévérencieux": {
-            definition: "Qui manque de respect envers quelqu'un ou quelque chose de respectable.",
-            example: "Il a eu un comportement irrévérencieux lors de la cérémonie officielle."
+            definition: "Qui manque de respect envers ce qui est considéré comme respectable.",
+            example: "Il a eu un comportement irrévérencieux lors de la cérémonie."
         },
         "répudier": {
-            definition: "Rejeter, refuser d'admettre.",
+            definition: "Rejeter, refuser d'admettre ou de reconnaître.",
             example: "Le chef du parti a dû répudier les propos de son adjoint."
         },
         "adolescent": {
-            definition: "Jeune personne dans la période de la vie entre l'enfance et l'âge adulte.",
-            example: "L'adolescent rêve de devenir astronaute."
+            definition: "Jeune personne dans la période entre l'enfance et l'âge adulte.",
+            example: "L'adolescent rêve de parcourir le monde."
+        },
+        "améliorer": {
+            definition: "Rendre meilleur, augmenter la qualité.",
+            example: "Nous cherchons à améliorer les performances graphiques de l'application."
+        },
+        "fervent": {
+            definition: "Qui a une ardeur, une passion vive pour quelque chose.",
+            example: "C'est un fervent défenseur des droits de l'homme."
+        },
+        "sophisme": {
+            definition: "Raisonnement qui n'est faux qu'en apparence, destiné à tromper.",
+            example: "Son argument n'était qu'un sophisme pour éviter la question."
         },
         "anéantir": {
             definition: "Réduire à rien, détruire complètement.",
@@ -989,398 +681,765 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
         },
         "astronome": {
             definition: "Scientifique qui étudie les astres et l'univers.",
-            example: "L'astronome observe les étoiles à travers son télescope."
+            example: "L'astronome observe les étoiles avec son télescope."
+        },
+        "invincible": {
+            definition: "Que l'on ne peut pas vaincre ou surmonter.",
+            example: "L'équipe s'est montrée invincible tout au long du tournoi."
         },
         "abdiquer": {
-            definition: "Renoncer au pouvoir suprême.",
+            definition: "Renoncer au pouvoir suprême ou à une fonction.",
             example: "Le roi a décidé d'abdiquer en faveur de son fils."
         },
         "anonymat": {
-            definition: "État d'une personne ou d'une chose qui n'est pas nommée.",
-            example: "Le donateur a souhaité garder l'anonymat."
+            definition: "État d'une personne dont le nom est inconnu.",
+            example: "Le donateur a souhaité garder l'anonymat pour son geste."
         },
         "antonyme": {
             definition: "Mot qui a un sens opposé à un autre.",
             example: "'Grand' est l'antonyme de 'petit'."
         },
+        "claustrophobie": {
+            definition: "Peur des espaces clos ou confinés.",
+            example: "Sa claustrophobie l'empêche de prendre l'ascenseur."
+        },
         "canoniser": {
-            definition: "Inscrire au catalogue des saints.",
-            example: "L'Église a décidé de canoniser ce prêtre pour son dévouement."
-        },
-        "épigramme": {
-            definition: "Petit poème satirique se terminant par un trait piquant.",
-            example: "Il a écrit une épigramme contre son rival littéraire."
-        },
-        "manifeste": {
-            definition: "Déclaration publique de principes ou de volonté.",
-            example: "Le groupe d'artistes a publié un manifeste pour son nouveau mouvement."
-        },
-        "esthétique": {
-            definition: "Qui concerne la beauté, le sentiment du beau.",
-            example: "Ce bâtiment a une grande valeur esthétique."
-        },
-        "apaiser": {
-            definition: "Calmer, ramener à la paix.",
-            example: "Il a essayé d'apaiser la colère de son ami."
-        },
-        "iconoclaste": {
-            definition: "Qui cherche à détruire tout ce qui est traditionnel.",
-            example: "C'est un artiste iconoclaste qui brise tous les codes."
-        },
-        "vivace": {
-            definition: "Qui a beaucoup de vitalité, qui dure longtemps.",
-            example: "Il a gardé un souvenir vivace de son enfance à la campagne."
-        },
-        "proliférer": {
-            definition: "Se multiplier rapidement.",
-            example: "Les algues commencent à proliférer dans le lac à cause de la chaleur."
+            definition: "Mettre quelqu'un au rang des saints.",
+            example: "L'Église a décidé de canoniser ce prêtre pour ses miracles."
         }
     },
     es: {
-        // Precision Swap
         "imponente": {
-            definition: "Que causa una gran impresión de majestad, poder o tamaño.",
-            example: "El imponente palacio se alzaba sobre la colina, dominando el paisaje."
+            definition: "Que causa una gran impresión o respeto por su tamaño, fuerza o majestad.",
+            example: "La cordillera de los Andes es realmente imponente desde el avión."
         },
         "deslumbrante": {
-            definition: "Que causa una impresión muy fuerte o deja ciego por su luz intensa.",
-            example: "La luz deslumbrante del sol se reflejaba con fuerza en la nieve."
+            definition: "Que brilla mucho o causa una gran admiración por su belleza o lujo.",
+            example: "La actriz lució un vestido deslumbrante en la alfombra roja."
         },
         "ilegible": {
-            definition: "Que no se puede leer, ya sea por estar mal escrito o deteriorado.",
-            example: "El viejo pergamino era casi ilegible debido a la humedad."
+            definition: "Que no se puede leer, generalmente por estar mal escrito.",
+            example: "Su letra es tan difícil que el mensaje resultó ilegible."
         },
         "apacible": {
-            definition: "Relajado, tranquilo y libre de preocupaciones o ruidos.",
-            example: "Pasaron una tarde apacible junto al lago, disfrutando del silencio."
+            definition: "Que es tranquilo, agradable y exento de agitación.",
+            example: "Disfrutamos de un paseo apacible por la orilla del lago."
         },
         "suculenta": {
-            definition: "Que es muy sabroso, jugoso y nutritivo.",
-            example: "Nos sirvieron una suculenta cena que nos dejó completamente satisfechos."
+            definition: "Que es jugoso, sabroso y nutritivo.",
+            example: "Nos sirvieron una cena suculenta tras el largo viaje."
         },
         "revelador": {
-            definition: "Que descubre algo que estaba oculto o que da información clave.",
-            example: "El detective encontró un dato revelador que cambió el curso de la investigación."
+            definition: "Que revela o descubre algo que estaba oculto o no se sabía.",
+            example: "El estudio arrojó datos reveladores sobre el cambio climático."
         },
         "devastadora": {
-            definition: "Que causa una gran destrucción o un daño muy profundo.",
-            example: "La tormenta fue devastadora y dejó a miles de personas sin hogar."
+            definition: "Que causa una destrucción total o un daño muy grande.",
+            example: "La tormenta tuvo consecuencias devastadoras para las cosechas."
         },
         "intrépido": {
-            definition: "Que no teme al peligro y actúa con gran valor y determinación.",
-            example: "El intrépido explorador se adentró en la selva sin dudarlo."
+            definition: "Que no teme al peligro y actúa con valentía y decisión.",
+            example: "El intrépido explorador se adentró en la selva virgen."
         },
         "sublime": {
-            definition: "De una excelencia, belleza o grandeza excepcionales que inspiran asombro.",
-            example: "La interpretación de la orquesta fue absolutamente sublime."
+            definition: "De una elevación, belleza o excelencia extraordinarias.",
+            example: "La interpretación del pianista fue sencillamente sublime."
         },
         "garrafal": {
-            definition: "Que es muy grande, especialmente cuando se refiere a un error.",
-            example: "Cometió un error garrafal al olvidar firmar el contrato a tiempo."
+            definition: "Que es muy grande o grave, especialmente referido a un error.",
+            example: "Cometer ese fallo en la final fue un error garrafal."
         },
         "panorámica": {
-            definition: "Que permite ver una amplia extensión de terreno desde un punto alto.",
-            example: "Desde la cima de la montaña teníamos una vista panorámica del valle."
+            definition: "Que ofrece una visión amplia y total de un paisaje o entorno.",
+            example: "Desde la terraza del hotel se tiene una vista panorámica de la ciudad."
         },
         "imperturbable": {
-            definition: "Que no se deja alterar, conmover o perturbar por nada.",
-            example: "Mantuvo un silencio imperturbable durante toda la reunión."
+            definition: "Que no se altera ni se perturba ante ninguna situación.",
+            example: "A pesar del ruido, él permaneció imperturbable leyendo su libro."
         },
         "alentadora": {
-            definition: "Que infunde ánimo, esperanza o valor.",
-            example: "Recibimos una noticia alentadora sobre el estado de salud de mi abuelo."
+            definition: "Que infunde aliento, ánimo o esperanza.",
+            example: "Recibimos una noticia alentadora sobre la salud de nuestro abuelo."
         },
         "agotador": {
-            definition: "Que consume todas las energías y causa un gran cansancio.",
-            example: "Fue un día agotador de trabajo bajo el sol intenso."
+            definition: "Que cansa mucho o agota las fuerzas por completo.",
+            example: "Subir la montaña fue un ejercicio agotador pero gratificante."
         },
         "arduo": {
-            definition: "Que es muy difícil y requiere mucho esfuerzo y dedicación.",
-            example: "La reconstrucción del puente será un trabajo arduo de varios meses."
+            definition: "Que es muy difícil, costoso y requiere mucho esfuerzo.",
+            example: "La reconstrucción del puente fue un trabajo arduo de varios meses."
         },
         "despejado": {
-            definition: "Libre de nubes, obstáculos o confusiones.",
-            example: "El cielo estaba completamente despejado tras la fuerte tormenta."
+            definition: "Que está libre de nubes, obstáculos o confusiones.",
+            example: "El cielo quedó despejado tras la lluvia del mediodía."
         },
         "gélida": {
-            definition: "Que es extremadamente fría, hasta el punto de congelar.",
-            example: "El agua gélida del río nos cortó la respiración al entrar."
+            definition: "Que es extremadamente frío, como el hielo.",
+            example: "El viento soplaba de forma gélida en la cumbre de la montaña."
         },
         "suntuoso": {
             definition: "Que es magnífico, lujoso y extremadamente costoso.",
-            example: "Asistieron a un baile suntuoso en el salón más grande de la ciudad."
+            example: "El palacio contaba con salones de un estilo suntuoso."
         },
         "sedante": {
-            definition: "Que tiene la propiedad de calmar, tranquilizar o inducir el sueño.",
-            example: "La música suave tenía un efecto sedante en el bebé inquieto."
+            definition: "Que tiene la propiedad de calmar o tranquilizar físicamente.",
+            example: "El médico le recetó un jarabe de efecto sedante para la tos."
         },
         "revolucionario": {
-            definition: "Que produce un cambio profundo, radical y novedoso.",
-            example: "El nuevo invento resultó ser un avance revolucionario para la medicina."
+            definition: "Que produce un cambio profundo y radical en algo.",
+            example: "Internet ha sido un invento revolucionario para las comunicaciones."
         },
         "minúsculo": {
-            definition: "Que es de un tamaño extremadamente pequeño.",
-            example: "Encontraron un insecto minúsculo que nunca antes habían visto."
+            definition: "Que es de un tamaño muy pequeño, insignificante.",
+            example: "Encontraron un minúsculo rastro de ADN en la escena."
         },
         "impetuosa": {
-            definition: "Que tiene mucha fuerza, viveza o rapidez en su movimiento.",
-            example: "La impetuosa brisa movía las ramas con gran energía."
+            definition: "Que actúa con mucha fuerza, viveza y rapidez.",
+            example: "La corriente impetuosa del río arrastraba todo a su paso."
         },
         "atento": {
-            definition: "Que muestra cortesía, amabilidad y cuidado por los demás.",
-            example: "El anfitrión fue muy atento con todos sus invitados desde que llegaron."
+            definition: "Que pone atención en lo que hace o escucha; cortés.",
+            example: "El guía fue muy atento con todos los turistas del grupo."
         },
         "fulgurante": {
-            definition: "Que brilla de forma intensa, vibrante y repentina.",
-            example: "Vimos un resplandor fulgurante en el horizonte durante la noche."
+            definition: "Que brilla de forma intensa y momentánea; rápido.",
+            example: "Tuvo una carrera fulgurante y llegó a la fama en pocos meses."
         },
         "ruinoso": {
-            definition: "Que está en un estado de mucha decadencia o a punto de caerse.",
-            example: "El viejo edificio estaba en un estado ruinoso y peligroso."
+            definition: "Que está en estado de ruina o causa grandes pérdidas económicas.",
+            example: "El negocio resultó ser ruinoso para los inversores."
         },
         "solemne": {
-            definition: "Que se celebra con gran ceremonia o que inspira un profundo respeto.",
-            example: "Se guardó un minuto de silencio solemne en memoria de los caídos."
+            definition: "Que se celebra con mucha pompa, seriedad y formalidad.",
+            example: "El acto de graduación fue una ceremonia muy solemne."
         },
         "conmovedora": {
-            definition: "Que provoca una emoción fuerte de ternura, tristeza o alegría.",
-            example: "La película cuenta una historia conmovedora que hizo llorar a todos."
+            definition: "Que causa una emoción profunda y tierna.",
+            example: "La película cuenta una historia conmovedora sobre la amistad."
         },
         "irrisorio": {
-            definition: "Tan pequeño o insignificante que causa risa o desprecio.",
-            example: "Le ofrecieron un pago irrisorio por un trabajo de ocho horas."
+            definition: "Que de tan pequeño o escaso resulta ridículo.",
+            example: "Le ofrecieron un sueldo irrisorio por un trabajo de diez horas."
         },
         "irresistible": {
-            definition: "A lo que no se puede oponer resistencia por su gran fuerza o atractivo.",
-            example: "Había un aroma irresistible saliendo de la panadería esa mañana."
+            definition: "A lo que no se puede resistir o que atrae con mucha fuerza.",
+            example: "El postre de chocolate era sencillamente irresistible."
         },
         "ferviente": {
-            definition: "Que muestra un entusiasmo, pasión o ardor muy intensos.",
-            example: "Es un ferviente defensor de los derechos de los animales."
+            definition: "Que tiene un entusiasmo o pasión muy vivos por algo.",
+            example: "Es un ferviente admirador de la música clásica."
         },
         "vibrante": {
-            definition: "Que vibra o que es muy intenso, vivo y lleno de energía.",
-            example: "El amanecer pintó el cielo con colores vibrantes y hermosos."
+            definition: "Que vibra o que transmite mucha emoción y energía.",
+            example: "El público disfrutó de un concierto vibrante y lleno de ritmo."
         },
         "centenario": {
-            definition: "Que tiene cien o más años de antigüedad.",
-            example: "El centenario roble es el símbolo de nuestra plaza principal."
+            definition: "Que tiene cien años o más; muy antiguo.",
+            example: "El roble centenario es el símbolo más querido del pueblo."
         },
         "absoluto": {
-            definition: "Que es completo, total y no admite excepciones ni dudas.",
-            example: "Se hizo un silencio absoluto cuando el director entró en la sala."
+            definition: "Que es total, completo y no admite limitaciones.",
+            example: "Hubo un silencio absoluto cuando el líder comenzó a hablar."
         },
         "impecable": {
-            definition: "Que no tiene ninguna falta, error o defecto; perfecto.",
-            example: "La organización del congreso fue simplemente impecable."
+            definition: "Que no tiene ninguna mancha, falta o defecto.",
+            example: "Su presentación fue impecable y no recibió ninguna crítica."
         },
         "frágil": {
-            definition: "Que se rompe con facilidad o que es débil y delicado físicamente.",
-            example: "El nido del pájaro parecía muy frágil ante el fuerte viento."
+            definition: "Que se rompe con facilidad o que es débil y delicado.",
+            example: "Este jarrón es muy frágil, hay que moverlo con cuidado."
         },
-        "persistente": {
-            definition: "Que se mantiene constante por un largo tiempo sin detenerse.",
-            example: "La lluvia persistente acabó inundando los sótanos de la zona baja."
+        "persistent": {
+            definition: "Que dura por largo tiempo o que se mantiene firme.",
+            example: "La lluvia persistente acabó por inundar el sótano."
         },
         "metódico": {
-            definition: "Que sigue un método o sistema con gran orden y regularidad.",
-            example: "Es un hombre muy metódico en su forma de organizar el trabajo."
+            definition: "Que sigue un método o un orden de forma estricta.",
+            example: "Es un investigador metódico que no deja nada al azar."
         },
         "tenue": {
-            definition: "Que es muy delgado, fino o que tiene poca intensidad.",
-            example: "Una luz tenue se filtraba por la rendija de la puerta cerrada."
+            definition: "Que es muy débil, suave o poco intenso.",
+            example: "Una luz tenue iluminaba el pasillo durante la noche."
         },
         "experimentado": {
-            definition: "Que tiene mucha experiencia y habilidad en una actividad.",
-            example: "El experimentado marinero sabía leer las señales de la tormenta."
+            definition: "Que tiene mucha experiencia en una labor o campo.",
+            example: "Contrataron a un piloto experimentado para la nueva ruta."
         },
         "sereno": {
-            definition: "Que es tranquilo, apacible y libre de cualquier agitación.",
-            example: "Mantuvo un semblante sereno a pesar de las malas noticias."
+            definition: "Que está tranquilo y no se deja llevar por las emociones.",
+            example: "A pesar de la crisis, se mantuvo sereno y tomó buenas decisiones."
         },
         "exquisita": {
-            definition: "De una calidad, refinamiento o sabor extraordinarios.",
-            example: "La pintura en el techo de la capilla es una pieza exquisita."
+            definition: "Que es de una calidad, refinamiento o sabor superior.",
+            example: "La comida en este restaurante es realmente exquisita."
         },
         "ambiguo": {
-            definition: "Que puede entenderse de varias formas o que admite dudas.",
-            example: "El mensaje del contrato era ambiguo y causó problemas legales."
+            definition: "Que puede entenderse de varias formas o que es poco claro.",
+            example: "Su respuesta fue tan ambigua que no supimos qué pensar."
         },
         "encarnizada": {
-            definition: "Que es muy violento, feroz y se hace con mucha determinación.",
-            example: "Hubo una lucha encarnizada por el control de la empresa."
+            definition: "Que es muy violento, cruel o hecho con mucha saña.",
+            example: "Los dos equipos mantuvieron una lucha encarnizada por el título."
         },
         "opulento": {
-            definition: "Que posee una gran riqueza, abundancia y lujo excesivo.",
-            example: "Viven en un barrio opulento rodeado de mansiones y parques."
+            definition: "Que tiene mucha riqueza o que muestra un lujo excesivo.",
+            example: "Vive en un barrio opulento rodeado de grandes mansiones."
         },
         "fulminante": {
-            definition: "Que es muy rápido, repentino y de efecto inmediato y potente.",
-            example: "El rayo tuvo un efecto fulminante en el viejo árbol del patio."
+            definition: "Que ocurre de forma súbita y con gran rapidez y efecto.",
+            example: "Recibió un despido fulminante tras el incidente de ayer."
         },
         "polvoriento": {
-            definition: "Que está cubierto de polvo por falta de uso o limpieza.",
-            example: "Encontraron los expedientes en un rincón polvoriento del sótano."
+            definition: "Que está cubierto de polvo o tiene mucho polvo.",
+            example: "Encontramos el libro en un estante polvoriento del sótano."
         },
         "idílico": {
-            definition: "Que es ideal, perfecto y produce una gran paz o felicidad.",
-            example: "Pasaron sus vacaciones en un lugar idílico frente al mar azul."
+            definition: "Que es perfecto, hermoso y transmite una paz ideal.",
+            example: "Pasamos las vacaciones en un caserío idílico en el campo."
         },
         "radiante": {
-            definition: "Que brilla intensamente o que refleja una gran felicidad.",
-            example: "La novia lucía radiante con su vestido blanco al caminar al altar."
+            definition: "Que brilla de forma intensa o que muestra mucha alegría.",
+            example: "La novia estaba radiante mientras caminaba hacia el altar."
         },
         "angosto": {
-            definition: "Que es estrecho o que tiene poco espacio lateral.",
-            example: "El pasillo de la casa antigua era demasiado angosto para dos personas."
+            definition: "Que es estrecho o tiene poco espacio de sobra.",
+            example: "El coche apenas podía pasar por aquel callejón tan angosto."
         },
         "asfixiante": {
-            definition: "Que dificulta la respiración o que produce una opresión insoportable.",
-            example: "El calor dentro del coche sin aire era realmente asfixiante."
+            definition: "Que dificulta la respiración o produce agobio y opresión.",
+            example: "Hacía un calor asfixiante dentro de la habitación sin aire."
         },
         "canicular": {
-            definition: "Relativo al período del año de más calor (la canícula).",
-            example: "Eran los días caniculares de agosto y no se podía estar en la calle."
+            definition: "Relativo al período de mayor calor durante el verano.",
+            example: "Estamos sufriendo un calor canicular que no deja salir a la calle."
         },
         "milenario": {
-            definition: "Que tiene mil o más años de antigüedad.",
-            example: "El puente milenario sigue en uso después de tantos siglos."
+            definition: "Que tiene mil años o más; que pertenece a una época remota.",
+            example: "Las pirámides son un monumento milenario de la humanidad."
         },
         "laborioso": {
             definition: "Que requiere mucho trabajo, tiempo y esfuerzo constante.",
-            example: "Ha sido un proceso laborioso pero los resultados valen la pena."
+            example: "La preparación del festival fue un proceso laborioso de meses."
         },
         "magistral": {
-            definition: "Hecho con maestría, habilidad o conocimiento superior.",
+            definition: "Hecho con la habilidad y el saber de un maestro.",
             example: "Dio una conferencia magistral que dejó a todos impresionados."
         },
         "abrupto": {
-            definition: "Repentino, inesperado o que tiene una pendiente muy pronunciada.",
-            example: "El cambio abrupto de temperatura nos tomó por sorpresa."
+            definition: "Que es escarpado o que sucede de forma repentina e inesperada.",
+            example: "Hubo un cambio abrupto en la política de la empresa."
         },
         "copiosa": {
-            definition: "Que es muy abundante o numeroso.",
-            example: "Hubo una nevada copiosa que bloqueó todas las salidas del pueblo."
+            definition: "Que es muy abundante o numerosa.",
+            example: "Tras el examen, disfrutamos de una comida copiosa para celebrar."
         },
         "sagaz": {
             definition: "Que es astuto, inteligente y difícil de engañar.",
-            example: "Es un abogado sagaz que siempre encuentra el punto débil del rival."
+            example: "Un detective sagaz siempre nota los detalles más pequeños."
         },
         "elocuente": {
-            definition: "Que tiene elocuencia; que habla con fluidez y persuasión.",
-            example: "Hizo un discurso elocuente que convenció a toda la audiencia."
+            definition: "Que tiene la facultad de hablar con fluidez y persuasión.",
+            example: "Hizo un discurso elocuente que convenció a los indecisos."
         },
         "escéptico": {
-            definition: "Que duda o no cree en ciertas cosas; incrédulo.",
-            example: "Soy un poco escéptico sobre la eficacia de este nuevo método."
+            definition: "Que duda o no cree en lo que se le dice sin pruebas.",
+            example: "Soy escéptico sobre la veracidad de esos rumores en redes."
         },
         "atenuar": {
-            definition: "Hacer menos intenso, grave o severo algo.",
-            example: "Trataron de atenuar la gravedad de la situación con buenas noticias."
+            definition: "Disminuir la intensidad, fuerza o gravedad de algo.",
+            example: "Pusieron cortinas para atenuar la luz directa del sol."
         },
         "quijotesco": {
-            definition: "Propio de Don Quijote; idealista, desinteresado y poco práctico.",
-            example: "Se embarcó en una aventura quijotesca para salvar el bosque."
+            definition: "Que es idealista y desinteresado hasta lo poco práctico.",
+            example: "Persigue un sueño quijotesco de acabar con la pobreza mundial."
         },
         "aversión": {
-            definition: "Sentimiento de rechazo o asco hacia alguien o algo.",
-            example: "Siento una gran aversión por las serpientes."
+            definition: "Sentimiento de rechazo o asco profundo hacia algo.",
+            example: "Siento una gran aversion por la comida demasiado picante."
         },
         "integridad": {
-            definition: "Calidad de ser honesto, justo y tener fuertes principios morales.",
-            example: "Es una mujer de gran integridad que nunca aceptaría un soborno."
+            definition: "Calidad de recto, honesto e incorruptible.",
+            example: "Su integridad moral es un ejemplo para toda la oficina."
         },
         "psicología": {
-            definition: "Ciencia que estudia los procesos mentales y el comportamiento humano.",
-            example: "Estudió psicología para entender mejor a las personas."
+            definition: "Ciencia que estudia los procesos mentales y la conducta.",
+            example: "La psicología nos ayuda a entender mejor nuestras emociones."
         },
         "desmentir": {
-            definition: "Demostrar que algo no es verdad; contradecir una afirmación.",
-            example: "El ministro tuvo que desmentir los rumores de su renuncia."
+            definition: "Demostrar que algo que se ha dicho no es verdad.",
+            example: "El ministro tuvo que salir a desmentir las acusaciones falsas."
         },
         "serendipia": {
-            definition: "Descubrimiento afortunado e inesperado que se realiza cuando se busca otra cosa distinta.",
-            example: "El hallazgo del tesoro fue una pura serendipia."
+            definition: "Hallazgo afortunado e inesperado que se produce por azar.",
+            example: "El descubrimiento de la penicilina fue una clara serendipia."
         },
         "monólogo": {
-            definition: "Discurso que mantiene una persona consigo misma o ante un público sin interlocutor.",
-            example: "El actor interpretó un monólogo impresionante al final de la obra."
+            definition: "Discurso que mantiene una persona consigo misma o para otros.",
+            example: "La obra termina con un conmovedor monólogo del protagonista."
         },
         "retórica": {
-            definition: "Arte de hablar o escribir de forma elegante y persuasiva.",
-            example: "Su discurso estaba lleno de una retórica vacía de contenido real."
+            definition: "Arte de expresarse con corrección y eficacia para conmover.",
+            example: "Sus palabras tenían mucha retórica pero poco contenido real."
         },
         "deshumanizar": {
-            definition: "Quitar lo que es propio de la naturaleza humana; hacer menos humano.",
-            example: "La guerra tiende a deshumanizar a los soldados y civiles."
+            definition: "Privar a alguien o algo de sus caracteres humanos.",
+            example: "Ciertas instituciones tienden a deshumanizar a los usuarios."
         },
         "emprendedor": {
-            definition: "Persona que inicia y lleva a cabo planes de negocio.",
-            example: "Es un joven emprendedor que ha fundado tres empresas tecnológicas."
+            definition: "Persona que inicia con resolución acciones dificultosas o negocios.",
+            example: "Es un emprendedor nato que ya ha montado tres empresas."
         },
         "irreverente": {
-            definition: "Que no muestra el respeto que se debe a las personas o cosas sagradas o dignas de él.",
-            example: "Su humor irreverente a veces ofende a las personas más tradicionales."
+            definition: "Que falta al respeto a lo que se considera sagrado o serio.",
+            example: "Esa comedia tiene un tono irreverente que gusta a los jóvenes."
         },
         "repudiar": {
-            definition: "Rechazar algo, no aceptarlo o no querer tener relación con ello.",
+            definition: "Rechazar algo, no aceptarlo o no reconocerlo legalmente.",
             example: "La sociedad debe repudiar cualquier acto de violencia."
         },
         "adolescente": {
-            definition: "Persona joven que está en la etapa entre la infancia y la edad adulta.",
-            example: "El adolescente está buscando su propio camino en la vida."
+            definition: "Persona que está en la etapa entre la niñez y la edad adulta.",
+            example: "A esa edad, el adolescente busca su propia identidad."
         },
         "aniquilar": {
-            definition: "Destruir por completo algo o alguien.",
-            example: "La plaga amenazaba con aniquilar toda la cosecha del año."
+            definition: "Destruir a alguien o algo por completo, reducir a la nada.",
+            example: "La bomba atómica puede aniquilar ciudades enteras en un segundo."
         },
         "astrónomo": {
-            definition: "Científico que se dedica al estudio de los astros y del universo.",
-            example: "El astrónomo descubrió un nuevo planeta en una galaxia lejana."
+            definition: "Persona que se dedica profesionalmente a la astronomía.",
+            example: "El astrónomo descubrió un nuevo planeta fuera del sistema solar."
         },
         "abdicar": {
-            definition: "Renunciar un rey o un príncipe a su cargo o soberanía.",
-            example: "El monarca decidió abdicar en favor de su hijo mayor."
+            definition: "Renunciar un rey o príncipe a su trono o dignidad real.",
+            example: "El rey decidió abdicar para dejar paso a su hija mayor."
         },
         "anonimato": {
-            definition: "Cualidad de ser anónimo; estado de no ser conocido por el nombre.",
-            example: "El autor prefirió publicar su libro desde el anonimato."
+            definition: "Estado de la persona que oculta su nombre o no es conocida.",
+            example: "El autor de la carta prefirió mantenerse en el anonimato."
         },
         "antónimo": {
-            definition: "Palabra que tiene un significado opuesto al de otra.",
-            example: "'Triste' es el antónimo de 'feliz'."
+            definition: "Palabra que tiene un significado opuesto a otra.",
+            example: "'Oscuro' es el antónimo perfecto de 'claro'."
         },
         "canonizar": {
-            definition: "Declarar oficialmente santo a una persona ya muerta.",
-            example: "El Papa decidió canonizar a la monja por sus obras de caridad."
+            definition: "Declarar santo a un difunto por parte de la Iglesia.",
+            example: "El proceso para canonizar al obispo duró varias décadas."
         },
         "epigrama": {
-            definition: "Frase breve e ingeniosa, frecuentemente satírica o burlesca.",
-            example: "El poeta era famoso por sus epigramas mordaces contra el poder."
+            definition: "Composición poética breve que expresa un pensamiento agudo.",
+            example: "Escribió un epigrama burlón sobre la vida en la corte real."
         },
         "manifiesto": {
-            definition: "Escrito en el que se hace pública una declaración de principios o intenciones.",
-            example: "El grupo de intelectuales firmó un manifiesto por la paz."
+            definition: "Documento en el que una persona o grupo declara sus ideas.",
+            example: "Los artistas publicaron un manifiesto contra la censura."
         },
         "estético": {
-            definition: "Perteneciente o relativo a la percepción o apreciación de la belleza.",
-            example: "El diseño del coche es impecable desde un punto de vista estético."
+            definition: "Relativo al arte, a la belleza o a la percepción de la misma.",
+            example: "La decoración busca un equilibrio estético y funcional."
         },
         "apaciguar": {
-            definition: "Poner en paz, sosegar o calmar a alguien o algo.",
-            example: "Intentaron apaciguar los ánimos antes de que la reunión empeorara."
+            definition: "Poner en paz, sosiego o calma a quien estaba excitado.",
+            example: "Trató de apaciguar los ánimos antes de que la discusión fuera a más."
         },
         "iconoclasta": {
-            definition: "Que rechaza los valores o instituciones tradicionales.",
-            example: "Fue un artista iconoclasta que rompió con todas las reglas de su época."
+            definition: "Persona que rechaza las normas establecidas o las imágenes sagradas.",
+            example: "Siempre fue un espíritu iconoclasta que desafiaba a los críticos."
         },
         "vivaz": {
-            definition: "Que tiene mucha viveza, energía o agilidad.",
-            example: "Es un niño muy vivaz y curioso que siempre está preguntando cosas."
+            definition: "Que es vivo, alegre, con mucha energía e ingenio.",
+            example: "Era un niño vivaz que no paraba de hacer preguntas curiosas."
         },
         "proliferar": {
-            definition: "Multiplicarse o aumentar rápidamente.",
-            example: "Las noticias falsas tienden a proliferar rápidamente en las redes sociales."
+            definition: "Multiplicarse o aumentar rápidamente el número de algo.",
+            example: "Las tiendas de bajo coste han empezado a proliferar por el centro."
+        },
+        "penetrante": {
+            definition: "Que penetra o tiene capacidad para introducirse en algo.",
+            example: "La luz penetrante del faro se veía incluso a través de la niebla."
+        },
+        "emblemático": {
+            definition: "Que sirve de emblema o es representativo de algo.",
+            example: "La Torre Eiffel es el monumento más emblemático de París."
+        },
+        "sepulcral": {
+            definition: "Propio de la sepultura o relativo a ella; triste o lúgubre.",
+            example: "Un silencio sepulcral reinó en la sala tras conocer la noticia."
+        },
+        "inestimable": {
+            definition: "Que no puede ser valorado o cuyo valor es muy grande.",
+            example: "Su ayuda durante la mudanza fue de un valor inestimable."
+        },
+        "diminuto": {
+            definition: "Extremadamente pequeño.",
+            example: "Un diminuto grano de arena entró en mi ojo y me molestaba."
+        },
+        "férrea": {
+            definition: "Que es de hierro o tiene sus propiedades; duro, firme.",
+            example: "Mantenía una disciplina férrea con sus alumnos de esgrima."
+        },
+        "despiadado": {
+            definition: "Que no siente piedad ni compasión, muy cruel.",
+            example: "El dictador se mostró despiadado con quienes lo cuestionaban."
+        },
+        "cegadora": {
+            definition: "Que priva de la vista por ser demasiado intensa.",
+            example: "La luz cegadora de la nieve nos obligó a usar gafas de sol."
+        },
+        "arcano": {
+            definition: "Secreto, recóndito o muy difícil de conocer.",
+            example: "Era un saber arcano transmitido solo de maestros a discípulos."
+        },
+        "prodigiosa": {
+            definition: "Que es extraordinario, maravilloso o fuera de lo común.",
+            example: "Tiene una memoria prodigiosa para recordar fechas antiguas."
+        },
+        "remoto": {
+            definition: "Que está muy lejos en el espacio o en el tiempo.",
+            example: "Viven en un pueblo remoto al que solo se llega en mula."
+        },
+        "omnipresente": {
+            definition: "Que está presente en todas partes al mismo tiempo.",
+            example: "La publicidad es hoy en día un fenómeno omnipresente."
+        },
+        "íntegro": {
+            definition: "Que es recto, honesto y de principios firmes.",
+            example: "Es un juez íntegro cuya imparcialidad nadie pone en duda."
+        },
+        "efímera": {
+            definition: "Que dura muy poco tiempo, pasajero.",
+            example: "La fama en la tele suele ser efímera si no tienes talento real."
+        },
+        "anacrónico": {
+            definition: "Que es propio de otra época o que no corresponde a su tiempo.",
+            example: "Ese modo de pensar resulta anacrónico en el siglo veintiuno."
+        },
+        "armonioso": {
+            definition: "Que tiene armonía, proporción y correspondencia.",
+            example: "El conjunto de las voces creaba un efecto armonioso y bello."
+        },
+        "embriagadora": {
+            definition: "Que trastorna o cautiva los sentidos como una bebida fuerte.",
+            example: "La fragancia de los jazmines era sencillamente embriagadora."
+        },
+        "simbólico": {
+            definition: "Que sirve de símbolo o representa algo de forma abstracta.",
+            example: "Le entregaron una llave de oro como gesto simbólico de bienvenida."
+        },
+        "inexpugnable": {
+            definition: "Que no se puede tomar por las armas o vencer.",
+            example: "La fortaleza estaba situada en un risco inexpugnable."
+        },
+        "erudito": {
+            definition: "Que tiene amplios conocimientos en diversas materias.",
+            example: "El profesor es un erudito en historia del arte renacentista."
+        },
+        "fosforescente": {
+            definition: "Que emite luz en la oscuridad después de haber estado expuesto.",
+            example: "Las manecillas del reloj son fosforescentes para ver la hora de noche."
+        },
+        "emérito": {
+            definition: "Jubilado que mantiene sus honores o cargos tras retirarse.",
+            example: "Fue nombrado profesor emérito de la universidad tras cuarenta años."
+        },
+        "sosegado": {
+            definition: "Tranquilo, apacible, libre de agitación o turbación.",
+            example: "Lleva una vida sosegada en su pequeña casa de la playa."
+        },
+        "fatal": {
+            definition: "Que es inevitable, desgraciado o que causa la muerte.",
+            example: "Aquel error en el diseño de los frenos resultó fatal."
+        },
+        "inquebrantable": {
+            definition: "Que no se puede romper, doblegar o torcer.",
+            example: "Mantenía una fe inquebrantable en que todo saldría bien."
+        },
+        "veloz": {
+            definition: "Que se mueve con mucha rapidez para desplazarse.",
+            example: "El guepardo es el animal terrestre más veloz del mundo."
+        },
+        "incandescente": {
+            definition: "Que emite luz propia por estar a una temperatura muy elevada.",
+            example: "El metal incandescente brillaba intensamente en la forja."
+        },
+        "vetusto": {
+            definition: "Extremadamente viejo, antiguo y a menudo deteriorado.",
+            example: "Encontramos el baúl en un rincón vetusto del desván."
+        },
+        "reflexivo": {
+            definition: "Que tiende a pensar detenidamente antes de actuar.",
+            example: "Es un joven reflexivo que nunca toma decisiones a la ligera."
+        },
+        "altruista": {
+            definition: "Que procura el bien ajeno de forma desinteresada.",
+            example: "Su labor altruista en el comedor social es admirable."
+        },
+        "indefenso": {
+            definition: "Que no tiene medios para defenderse por sí mismo.",
+            example: "El animal herido estaba indefenso en mitad del bosque."
+        },
+        "diestro": {
+            definition: "Que tiene mucha habilidad o destreza manual o física.",
+            example: "Es muy diestro manejando el bisturí en microcirugía."
+        },
+        "ancestral": {
+            definition: "Perteneciente a los antepasados o de épocas muy remotas.",
+            example: "Siguen practicando ritos ancestrales que datan de siglos atrás."
+        },
+        "amortiguado": {
+            definition: "Que ha sido suavizado o disminuido en su intensidad.",
+            example: "El sonido de sus pasos llegaba amortiguado por la moqueta."
+        },
+        "angelical": {
+            definition: "Propio de los ángeles, puro, inocente y muy bello.",
+            example: "Tenía una mirada angelical que inspiraba ternura a todos."
+        },
+        "pavorosa": {
+            definition: "Que causa pavor, mucho espanto o miedo extremo.",
+            example: "La escena del incendio fue verdaderamente pavorosa."
+        },
+        "omnisciente": {
+            definition: "Que conoce todas las cosas reales y posibles.",
+            example: "En las novelas clásicas, es común encontrar un narrador omnisciente."
+        },
+        "concentrada": {
+            definition: "Que se ha reunido en un solo punto o tiene mucha intensidad.",
+            example: "La luz concentrada del láser puede cortar materiales duros."
+        },
+        "fortuito": {
+            definition: "Que sucede de casualidad, sin haber sido planeado.",
+            example: "Fue un encuentro fortuito en la parada del autobús."
+        },
+        "resplandeciente": {
+            definition: "Que despide rayos de luz o brilla muchísimo.",
+            example: "Al abrir la caja, vimos el oro resplandeciente bajo la lámpara."
+        },
+        "inédito": {
+            definition: "Que aún no ha sido publicado o es completamente nuevo.",
+            example: "Han encontrado un poema inédito del famoso escritor."
+        },
+        "creativa": {
+            definition: "Que tiene capacidad para crear o inventar cosas nuevas.",
+            example: "Es una mente creativa que siempre encuentra soluciones originales."
+        },
+        "minucioso": {
+            definition: "Que se hace con mucho detenimiento, detalle y precisión.",
+            example: "Realizó un minucioso estudio de todos los gastos mensuales."
+        },
+        "determinante": {
+            definition: "Que decide, resuelve o establece algo de forma definitiva.",
+            example: "Su voto fue determinante para la aprobación del nuevo proyecto."
+        },
+        "impenetrable": {
+            definition: "Que no se puede atravesar o que es imposible de conocer.",
+            example: "Se escondieron en una zona de bosque impenetrable por la maleza."
+        },
+        "artificial": {
+            definition: "Hecho por el ser humano y no por la naturaleza.",
+            example: "Usaron césped artificial para cubrir la terraza del piso."
+        },
+        "obsoleto": {
+            definition: "Que ha dejado de usarse por ser antiguo o poco adecuado.",
+            example: "Este sistema operativo ya es obsoleto y no recibe actualizaciones."
+        },
+        "previsora": {
+            definition: "Que previene y se prepara para el futuro o dificultades.",
+            example: "Es una persona previsora que siempre viaja con un botiquín."
+        },
+        "sutil": {
+            definition: "Delicado, fino y difícil de percibir a simple vista.",
+            example: "Hay un aroma sutil a vainilla en toda la pastelería."
+        },
+        "torrencial": {
+            definition: "Que cae con mucha fuerza y en gran abundancia.",
+            example: "La lluvia torrencial colapsó el tráfico en toda la ciudad."
+        },
+        "estoico": {
+            definition: "Que soporta el dolor o la desgracia con fortaleza y calma.",
+            example: "Se mostró estoico ante las críticas y siguió con su labor."
+        },
+        "centelleante": {
+            definition: "Que brilla emitiendo destellos rápidos e intermitentes.",
+            example: "Las estrellas centelleantes decoraban el cielo oscuro de invierno."
+        },
+        "enfermo": {
+            definition: "Que padece una alteración de la salud o mal funcionamiento.",
+            example: "El roble estaba enfermo y por eso tuvieron que talarlo."
+        },
+        "fotogénica": {
+            definition: "Que resulta atractiva o sale muy bien en las fotografías.",
+            example: "Es una ciudad muy fotogénica con sus canales y puentes."
+        },
+        "crucial": {
+            definition: "Que es decisivo o fundamental para el desarrollo de algo.",
+            example: "Este es un momento crucial para el futuro de nuestra especie."
+        },
+        "desorbitada": {
+            definition: "Que es excesiva, desmesurada o está fuera de control.",
+            example: "Pagaron una cantidad desorbitada por aquel cuadro antiguo."
+        },
+        "rasante": {
+            definition: "Que pasa rozando una superficie o muy cerca de ella.",
+            example: "El avión hizo un vuelo rasante sobre la pista de aterrizaje."
+        },
+        "clasificado": {
+            definition: "Que ha sido ordenado por categorías o es secreto oficial.",
+            example: "El documento está clasificado como secreto de seguridad nacional."
+        },
+        "letárgico": {
+            definition: "Que padece letargo, modorra o una inactividad profunda.",
+            example: "Se sentía letárgico después de la comida tan copiosa."
+        },
+        "celestial": {
+            definition: "Relativo al cielo o que es sumamente hermoso y divino.",
+            example: "La música celestial del arpa nos dejó a todos embobados."
+        },
+        "imperceptible": {
+            definition: "Tan débil o sutil que apenas se puede percibir con los sentidos.",
+            example: "El movimiento de la aguja era casi imperceptible para el ojo."
+        },
+        "violenta": {
+            definition: "Que se hace con mucha fuerza, ímpetu o agresividad extrema.",
+            example: "Hubo una explosión violenta que rompió todos los cristales."
+        },
+        "hilarante": {
+            definition: "Que causa tal risa que no se puede parar de reír.",
+            example: "Contó una anécdota hilarante sobre su primer día de trabajo."
+        },
+        "diáfana": {
+            definition: "Limpia, clara y que deja pasar la luz sin obstáculos.",
+            example: "La luz diáfana de la mañana entraba alegremente por el balcón."
+        },
+        "venerable": {
+            definition: "Que merece respeto por su edad, virtudes o dignidad.",
+            example: "Es un venerable anciano que conoce todas las leyendas del lugar."
+        },
+        "monumental": {
+            definition: "Relativo al monumento o que es de una grandeza extraordinaria.",
+            example: "El atasco en la entrada de la ciudad fue verdaderamente monumental."
+        },
+        "matiz": {
+            definition: "Rasgo poco perceptible que da un carácter particular a algo.",
+            example: "Esa palabra tiene un matiz de ironía que no todos captaron."
+        },
+        "implacable": {
+            definition: "Que no se puede aplacar, suavizar o que no tiene piedad.",
+            example: "El paso del tiempo es implacable con la belleza física."
+        },
+        "magnánimo": {
+            definition: "Que tiene nobleza de espíritu y generosidad superior.",
+            example: "Fue un gesto magnánimo perdonar la deuda a su antiguo rival."
+        },
+        "puntera": {
+            definition: "Luz dirigida y muy precisa; o que está en la vanguardia.",
+            example: "Utilizan tecnología puntera para el diagnóstico de enfermedades."
+        },
+        "aséptico": {
+            definition: "Libre de infección o, figuradamente, neutro y sin emociones.",
+            example: "Había un silencio aséptico en el pasillo del hospital moderno."
+        },
+        "despreciable": {
+            definition: "Que no merece atención; o que es digno de desprecio moral.",
+            example: "Consideraron que aquel era un incidente despreciable y sin riesgo."
+        },
+        "austera": {
+            definition: "Severa, rigurosa y carente de adornos o lujos innecesarios.",
+            example: "Lleva una vida austera dedicada por entero a sus estudios."
+        },
+        "incondicional": {
+            definition: "Que no pone condiciones, absoluto y sin límites.",
+            example: "Siempre ha contado con el apoyo incondicional de su familia."
+        },
+        "providencial": {
+            definition: "Que sucede de forma inesperada y afortunada para salvar algo.",
+            example: "Su llegada fue providencial para evitar que el fuego se extendiera."
+        },
+        "comprometedor": {
+            definition: "Que puede poner a alguien en una situación difícil o de riesgo.",
+            example: "Encontraron un documento comprometedor en el cajón del despacho."
+        },
+        "hierático": {
+            definition: "De estilo solemne, rígido y sagrado, propio de lo antiguo.",
+            example: "El busto egipcio mostraba una expresión hierática y distante."
+        },
+        "perceptiva": {
+            definition: "Relativo a la percepción o con gran capacidad para percibir.",
+            example: "Tiene una mirada perceptiva que capta los estados de ánimo ajenos."
+        },
+        "sustancial": {
+            definition: "Que es importante, fundamental o tiene mucho valor real.",
+            example: "Hubo una mejora sustancial en los beneficios de este semestre."
+        },
+        "inclemente": {
+            definition: "Que no tiene clemencia, severo y riguroso físicamente.",
+            example: "Soportamos un clima inclemente durante toda la expedición al polo."
+        },
+        "riguroso": {
+            definition: "Que es muy exacto, preciso y severo en el cumplimiento.",
+            example: "Pasó un control riguroso de seguridad antes de entrar al recinto."
+        },
+        "rotundo": {
+            definition: "Que es claro, definitivo y no deja lugar a dudas ni precisiones.",
+            example: "La respuesta del público fue un éxito rotundo para la banda."
+        },
+        "oscilante": {
+            definition: "Que se mueve de un lado a otro o que varía constantemente.",
+            example: "La llama oscilante de la vela proyectaba sombras en la pared."
+        },
+        "iluminado": {
+            definition: "Que tiene mucha luz o, en arte, con adornos de colores u oro.",
+            example: "El manuscrito iluminado es una de las joyas de la biblioteca."
+        },
+        "sesgado": {
+            definition: "Que presenta una visión parcial, inclinada o no objetiva.",
+            example: "El artículo periodístico ofrecía un enfoque sesgado de los hechos."
+        },
+        "ciclópea": {
+            definition: "De una magnitud o fuerza colosal, propia de los cíclopes.",
+            example: "Fue una tarea ciclópea reconstruir la ciudad tras el terremoto."
+        },
+        "fugaz": {
+            definition: "Que dura un instante y desaparece muy rápidamente.",
+            example: "Vimos cruzar una estrella fugaz y todos pedimos un deseo."
+        },
+        "señorial": {
+            definition: "Que tiene aire de nobleza, distinción o solemnidad elegante.",
+            example: "Vivía en una casa señorial en el centro histórico de la ciudad."
+        },
+        "sobrecogedor": {
+            definition: "Que causa una fuerte impresión de respeto, asombro o miedo.",
+            example: "El estruendo de la catarata era verdaderamente sobrecogedor."
+        },
+        "microscópico": {
+            definition: "Tan pequeño que solo se puede ver con un microscopio.",
+            example: "Detectaron un daño microscópico en la estructura del chip."
+        },
+        "tenaz": {
+            definition: "Que se mantiene firme en sus propósitos o se resiste a romperse.",
+            example: "Es un luchador tenaz que nunca se rinde ante las adversidades."
+        },
+        "potentado": {
+            definition: "Persona que tiene una gran riqueza, poder e influencia social.",
+            example: "El potentado compró toda la isla para construir su residencia."
+        },
+        "lumínica": {
+            definition: "Relativo a la luz en su aspecto técnico o físico.",
+            example: "La potencia lumínica de los nuevos ledes es muy superior."
+        },
+        "cartográfico": {
+            definition: "Relativo a la cartografía o a la elaboración de mapas.",
+            example: "Utilizaron un antiguo mapa cartográfico para localizar la mina."
+        },
+        "místico": {
+            definition: "Relativo a la mística, a lo sagrado o al recogimiento espiritual.",
+            example: "Había un silencio místico en el interior del antiguo monasterio."
+        },
+        "ornamental": {
+            definition: "Que sirve de adorno o decoración, sin tener utilidad práctica.",
+            example: "Pusieron varias plantas ornamentales para alegrar la entrada."
+        },
+        "vertiginosa": {
+            definition: "Que causa vértigo por su gran rapidez o altura.",
+            example: "La tecnología avanza a una velocidad vertiginosa cada día."
         }
     }
 };

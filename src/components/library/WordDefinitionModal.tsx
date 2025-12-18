@@ -1,0 +1,90 @@
+import { useState, useEffect } from "react";
+import {
+    Dialog,
+    DialogContent,
+    DialogHeader,
+    DialogTitle,
+    DialogDescription,
+} from "@/components/ui/dialog";
+import { useLibrary } from "@/hooks/useLibrary";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Skeleton } from "@/components/ui/skeleton";
+import { Badge } from "@/components/ui/badge";
+import { BookOpen, Quote } from "lucide-react";
+
+interface WordDefinitionModalProps {
+    word: string | null;
+    onClear: () => void;
+}
+
+export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps) {
+    const { language } = useLanguage();
+    const { getWordDetails, loading: libraryLoading } = useLibrary();
+    const [details, setDetails] = useState<any>(null);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        if (word) {
+            setLoading(true);
+            getWordDetails(word, language)
+                .then(setDetails)
+                .finally(() => setLoading(false));
+        } else {
+            setDetails(null);
+        }
+    }, [word, language, getWordDetails]);
+
+    return (
+        <Dialog open={!!word} onOpenChange={(open) => !open && onClear()}>
+            <DialogContent className="sm:max-w-[425px] overflow-hidden">
+                <DialogHeader className="pb-4">
+                    <Badge variant="outline" className="w-fit mb-2 uppercase tracking-widest text-[10px] opacity-70">
+                        Dictionary Definition
+                    </Badge>
+                    <DialogTitle className="text-3xl font-bold tracking-tight first-letter:uppercase">
+                        {word}
+                    </DialogTitle>
+                </DialogHeader>
+
+                <div className="space-y-6">
+                    <section className="space-y-3">
+                        <div className="flex items-center gap-2 text-sm font-bold text-primary/80 uppercase tracking-wider">
+                            <BookOpen className="w-4 h-4" /> Meaning
+                        </div>
+                        {loading ? (
+                            <div className="space-y-2">
+                                <Skeleton className="h-4 w-full" />
+                                <Skeleton className="h-4 w-3/4" />
+                            </div>
+                        ) : details ? (
+                            <p className="text-lg leading-relaxed text-foreground/90 font-medium">
+                                {details.definition}
+                            </p>
+                        ) : (
+                            <p className="text-muted-foreground italic">
+                                No definition found for this word in {language.toUpperCase()}.
+                            </p>
+                        )}
+                    </section>
+
+                    <section className="space-y-3 p-4 bg-muted/50 rounded-2xl border border-muted-foreground/10">
+                        <div className="flex items-center gap-2 text-sm font-bold text-primary/80 uppercase tracking-wider">
+                            <Quote className="w-4 h-4" /> Example
+                        </div>
+                        {loading ? (
+                            <Skeleton className="h-4 w-full" />
+                        ) : details ? (
+                            <p className="text-base italic leading-relaxed text-muted-foreground">
+                                "{details.example}"
+                            </p>
+                        ) : (
+                            <p className="text-muted-foreground italic text-sm">
+                                No example available.
+                            </p>
+                        )}
+                    </section>
+                </div>
+            </DialogContent>
+        </Dialog>
+    );
+}

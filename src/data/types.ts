@@ -130,3 +130,22 @@ export interface ExerciseMaster<T extends ExerciseContent> {
     metadata: ExerciseMetadata;
     content: T;
 }
+
+export interface ExerciseOverride {
+    id: string;
+    user_id: string | null;
+    exercise_id: string;
+    content: any; // Generic object to store the overridden part of the exercise content
+    created_at: string;
+    updated_at: string;
+}
+
+export interface WordDetails {
+    id: string;
+    word: string;
+    language: string;
+    definition: string;
+    example: string;
+    created_at: string;
+    updated_at: string;
+}

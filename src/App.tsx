@@ -25,9 +25,6 @@ import Settings from "./pages/Settings";
 import ManageAccount from "./pages/ManageAccount";
 import Subscription from "./pages/Subscription";
 import Achievements from "./pages/Achievements";
-import LibraryPage from "./pages/library/LibraryPage";
-import ExerciseContentPage from "./pages/library/ExerciseContentPage";
-import QuestionDetailPage from "./pages/library/QuestionDetailPage";
 
 const queryClient = new QueryClient();
 
@@ -55,9 +52,6 @@ const App = () => (
                 <Route path="/settings" element={<Settings />} />
                 <Route path="/account" element={<ManageAccount />} />
                 <Route path="/subscription" element={<Subscription />} />
-                <Route path="/library" element={<LibraryPage />} />
-                <Route path="/library/:exerciseId" element={<ExerciseContentPage />} />
-                <Route path="/library/:exerciseId/:questionId" element={<QuestionDetailPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </BrowserRouter>

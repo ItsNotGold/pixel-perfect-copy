@@ -169,6 +169,11 @@ export function useLibrary() {
             } as WordDetails;
         }
 
+        // Safety assertion: Log missing definitions
+        if (word && word.length > 0) {
+            console.error(`[Library] Missing definition for: "${lowerWord}" in language: "${lowerLang}"`);
+        }
+
         return null;
     }, []);
 

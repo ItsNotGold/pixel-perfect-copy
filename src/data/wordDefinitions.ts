@@ -515,6 +515,186 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
         "strategic": {
             definition: "Relating to the identification of long-term or overall aims and interests and the means of achieving them.",
             example: "The CEO made a strategic decision to expand into global markets."
+        },
+        "promising": {
+            definition: "Showing signs of future success.",
+            example: "The promising young athlete was recruited by several top teams."
+        },
+        "impervious": {
+            definition: "Not allowing fluid to pass through; also, unable to be affected by.",
+            example: "The new roof is impervious to rain."
+        },
+        "unyielding": {
+            definition: "Not giving way to pressure; hard or solid.",
+            example: "He remained unyielding in his decision despite the protests."
+        },
+        "frolicking": {
+            definition: "Playing or moving about in a cheerful and lively way.",
+            example: "The lambs were frolicking in the meadow."
+        },
+        "articulate": {
+            definition: "Having or showing the ability to speak fluently and coherently.",
+            example: "She is an articulate speaker who can explain complex ideas simply."
+        },
+        "skeptic": {
+            definition: "A person inclined to question or doubt all accepted opinions.",
+            example: "A skeptic might doubt the claims made by the advertisement."
+        },
+        "understate": {
+            definition: "To describe or represent something as being smaller or less important than it really is.",
+            example: "The reporter tried to understate the scale of the disaster."
+        },
+        "quixotic": {
+            definition: "Exceedingly idealistic; unrealistic and impractical.",
+            example: "His quixotic quest for world peace was admired but considered impossible."
+        },
+        "aversion": {
+            definition: "A strong dislike or disinclination.",
+            example: "I have an aversion to seafood."
+        },
+        "integrity": {
+            definition: "The quality of being honest and having strong moral principles.",
+            example: "He is a man of great integrity who always keeps his word."
+        },
+        "psychology": {
+            definition: "The scientific study of the human mind and its functions.",
+            example: "She decided to study psychology at university."
+        },
+        "ravenous": {
+            definition: "Extremely hungry.",
+            example: "I was ravenous after the long hike."
+        },
+        "disprove": {
+            definition: "Prove that (something) is false.",
+            example: "New evidence was found to disprove the theory."
+        },
+        "polyglot": {
+            definition: "Knowing or using several languages.",
+            example: "The polyglot was able to translate between four different languages."
+        },
+        "serendipitous": {
+            definition: "Occurring or discovered by chance in a happy or beneficial way.",
+            example: "Our meeting was serendipitous, as we both needed a new business partner."
+        },
+        "monologue": {
+            definition: "A long speech by one actor in a play or movie.",
+            example: "The actor delivered a powerful monologue at the end of the first act."
+        },
+        "rhetoric": {
+            definition: "The art of effective or persuasive speaking or writing.",
+            example: "The politician's rhetoric was intended to inspire the crowd."
+        },
+        "dehumanize": {
+            definition: "Deprive of positive human qualities.",
+            example: "War can dehumanize both the soldiers and the civilians."
+        },
+        "entrepreneur": {
+            definition: "A person who organizes and operates a business or businesses.",
+            example: "She is a successful entrepreneur who has started three companies."
+        },
+        "irreverent": {
+            definition: "Showing a lack of respect for people or things that are generally taken seriously.",
+            example: "The comedian's irreverent jokes were popular with the audience."
+        },
+        "repudiate": {
+            definition: "Refuse to accept or be associated with.",
+            example: "The candidate was quick to repudiate the extremist group's support."
+        },
+        "teenager": {
+            definition: "A person aged between 13 and 19 years.",
+            example: "The teenager was excited to get his driver's license."
+        },
+        "annihilate": {
+            definition: "Destroy utterly; obliterate.",
+            example: "The army moved in to annihilate the enemy forces."
+        },
+        "astronomer": {
+            definition: "An expert in or student of astronomy.",
+            example: "The astronomer used a telescope to study the distant stars."
+        },
+        "invincible": {
+            definition: "Too powerful to be defeated or overcome.",
+            example: "The team seemed invincible after winning ten games in a row."
+        },
+        "abdicate": {
+            definition: "Renounce one's throne or fail to fulfill a duty or responsibility.",
+            example: "The king decided to abdicate the throne in favor of his daughter."
+        },
+        "anonymity": {
+            definition: "The condition of being anonymous.",
+            example: "The whistleblower requested anonymity to protect their identity."
+        },
+        "antonym": {
+            definition: "A word opposite in meaning to another.",
+            example: "'Hot' is an antonym of 'cold'."
+        },
+        "canonize": {
+            definition: "Officially declare (a dead person) to be a saint.",
+            example: "The church decided to canonize the priest for his life of service."
+        },
+        "epigram": {
+            definition: "A pithy saying or remark expressing an idea in a clever and amusing way.",
+            example: "The writer was known for her witty epigrams."
+        },
+        "manifesto": {
+            definition: "A public declaration of policy and aims.",
+            example: "The group published a manifesto outlining their goals."
+        },
+        "undermine": {
+            definition: "Erode the base or foundation of; lessen the effectiveness, power, or ability of.",
+            example: "Constant criticism can undermine a person's confidence."
+        },
+        "aesthetic": {
+            definition: "Concerned with beauty or the appreciation of beauty.",
+            example: "The building was designed with a modern aesthetic."
+        },
+        "epidemic": {
+            definition: "A widespread occurrence of an infectious disease in a community at a particular time.",
+            example: "The city worked hard to control the flu epidemic."
+        },
+        "abridge": {
+            definition: "Shorten (a piece of writing) without losing the sense.",
+            example: "The movie was an abridged version of the long novel."
+        },
+        "affable": {
+            definition: "Friendly, good-natured, or easy to talk to.",
+            example: "The new neighbor was very affable and welcoming."
+        },
+        "ennui": {
+            definition: "A feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement.",
+            example: "He was filled with ennui during the long summer break."
+        },
+        "placate": {
+            definition: "Make (someone) less angry or hostile.",
+            example: "They tried to placate the angry customer with a refund."
+        },
+        "iconoclast": {
+            definition: "A person who attacks cherished beliefs or institutions.",
+            example: "The artist was an iconoclast who challenged traditional styles."
+        },
+        "denounce": {
+            definition: "Publicly declare to be wrong or evil.",
+            example: "Leaders around the world moved to denounce the act of violence."
+        },
+        "vivacious": {
+            definition: "Attractively lively and animated.",
+            example: "She has a vivacious personality that lights up the room."
+        },
+        "benefactor": {
+            definition: "A person who gives money or other help to a person or cause.",
+            example: "The anonymous benefactor donated a million dollars to the hospital."
+        },
+        "pliant": {
+            definition: "Pliable; easily influenced.",
+            example: "The young student was pliant and eager to learn."
+        },
+        "chaos": {
+            definition: "Complete disorder and confusion.",
+            example: "The scene after the accident was one of total chaos."
+        },
+        "proliferate": {
+            definition: "Increase rapidly in numbers; multiply.",
+            example: "New businesses began to proliferate in the developing neighborhood."
         }
     },
     fr: {
@@ -746,6 +926,114 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
         "éloquent": {
             definition: "Qui a de l'éloquence, qui parle avec facilité et persuasion.",
             example: "Il a fait un discours éloquent qui a convaincu toute l'assemblée."
+        },
+        "sceptique": {
+            definition: "Qui doute, qui ne croit pas facilement.",
+            example: "Il reste sceptique face à ces nouvelles promesses."
+        },
+        "euphémisme": {
+            definition: "Expression atténuée d'une notion dont l'expression directe aurait quelque chose de déplaisant.",
+            example: "'Il nous a quittés' est un euphémisme pour dire qu'il est mort."
+        },
+        "chimérique": {
+            definition: "Qui est imaginaire, sans fondement réel.",
+            example: "Il poursuit des projets chimériques qui n'aboutiront jamais."
+        },
+        "infaillible": {
+            definition: "Qui ne peut se tromper, qui est certain d'arriver.",
+            example: "Il a une méthode infaillible pour gagner à ce jeu."
+        },
+        "versatile": {
+            definition: "Qui change facilement d'opinion, qui est inconstant.",
+            example: "C'est un politicien versatile qui s'adapte à l'opinion publique."
+        },
+        "intégrité": {
+            definition: "Qualité d'une personne honnête et dont les principes sont au-dessus de tout reproche.",
+            example: "Son intégrité est reconnue par tous ses collègues."
+        },
+        "psychologie": {
+            definition: "Étude scientifique des faits psychiques et des comportements.",
+            example: "Elle étudie la psychologie de l'enfant à l'université."
+        },
+        "serendipité": {
+            definition: "Fait de trouver autre chose que ce que l'on cherchait, de façon fortuite.",
+            example: "La découverte de la pénicilline est un exemple célèbre de serendipité."
+        },
+        "soliloque": {
+            definition: "Discours d'une personne qui se parle à elle-même.",
+            example: "L'acteur commence la pièce par un long soliloque."
+        },
+        "déshumaniser": {
+            definition: "Faire perdre son caractère humain à quelqu'un ou quelque chose.",
+            example: "Le travail à la chaîne peut déshumaniser les ouvriers."
+        },
+        "entrepreneur": {
+            definition: "Personne qui crée ou dirige une entreprise.",
+            example: "C'est un jeune entrepreneur qui a lancé sa startup l'année dernière."
+        },
+        "irrévérencieux": {
+            definition: "Qui manque de respect envers quelqu'un ou quelque chose de respectable.",
+            example: "Il a eu un comportement irrévérencieux lors de la cérémonie officielle."
+        },
+        "répudier": {
+            definition: "Rejeter, refuser d'admettre.",
+            example: "Le chef du parti a dû répudier les propos de son adjoint."
+        },
+        "adolescent": {
+            definition: "Jeune personne dans la période de la vie entre l'enfance et l'âge adulte.",
+            example: "L'adolescent rêve de devenir astronaute."
+        },
+        "anéantir": {
+            definition: "Réduire à rien, détruire complètement.",
+            example: "L'armée a réussi à anéantir les forces ennemies."
+        },
+        "astronome": {
+            definition: "Scientifique qui étudie les astres et l'univers.",
+            example: "L'astronome observe les étoiles à travers son télescope."
+        },
+        "abdiquer": {
+            definition: "Renoncer au pouvoir suprême.",
+            example: "Le roi a décidé d'abdiquer en faveur de son fils."
+        },
+        "anonymat": {
+            definition: "État d'une personne ou d'une chose qui n'est pas nommée.",
+            example: "Le donateur a souhaité garder l'anonymat."
+        },
+        "antonyme": {
+            definition: "Mot qui a un sens opposé à un autre.",
+            example: "'Grand' est l'antonyme de 'petit'."
+        },
+        "canoniser": {
+            definition: "Inscrire au catalogue des saints.",
+            example: "L'Église a décidé de canoniser ce prêtre pour son dévouement."
+        },
+        "épigramme": {
+            definition: "Petit poème satirique se terminant par un trait piquant.",
+            example: "Il a écrit une épigramme contre son rival littéraire."
+        },
+        "manifeste": {
+            definition: "Déclaration publique de principes ou de volonté.",
+            example: "Le groupe d'artistes a publié un manifeste pour son nouveau mouvement."
+        },
+        "esthétique": {
+            definition: "Qui concerne la beauté, le sentiment du beau.",
+            example: "Ce bâtiment a une grande valeur esthétique."
+        },
+        "apaiser": {
+            definition: "Calmer, ramener à la paix.",
+            example: "Il a essayé d'apaiser la colère de son ami."
+        },
+        "iconoclaste": {
+            definition: "Qui cherche à détruire tout ce qui est traditionnel.",
+            example: "C'est un artiste iconoclaste qui brise tous les codes."
+        },
+        "vivace": {
+            definition: "Qui a beaucoup de vitalité, qui dure longtemps.",
+            example: "Il a gardé un souvenir vivace de son enfance à la campagne."
+        },
+        "proliférer": {
+            definition: "Se multiplier rapidement.",
+            example: "Les algues commencent à proliférer dans le lac à cause de la chaleur."
         }
     },
     es: {
@@ -977,6 +1265,122 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
         "sagaz": {
             definition: "Que es astuto, inteligente y difícil de engañar.",
             example: "Es un abogado sagaz que siempre encuentra el punto débil del rival."
+        },
+        "elocuente": {
+            definition: "Que tiene elocuencia; que habla con fluidez y persuasión.",
+            example: "Hizo un discurso elocuente que convenció a toda la audiencia."
+        },
+        "escéptico": {
+            definition: "Que duda o no cree en ciertas cosas; incrédulo.",
+            example: "Soy un poco escéptico sobre la eficacia de este nuevo método."
+        },
+        "atenuar": {
+            definition: "Hacer menos intenso, grave o severo algo.",
+            example: "Trataron de atenuar la gravedad de la situación con buenas noticias."
+        },
+        "quijotesco": {
+            definition: "Propio de Don Quijote; idealista, desinteresado y poco práctico.",
+            example: "Se embarcó en una aventura quijotesca para salvar el bosque."
+        },
+        "aversión": {
+            definition: "Sentimiento de rechazo o asco hacia alguien o algo.",
+            example: "Siento una gran aversión por las serpientes."
+        },
+        "integridad": {
+            definition: "Calidad de ser honesto, justo y tener fuertes principios morales.",
+            example: "Es una mujer de gran integridad que nunca aceptaría un soborno."
+        },
+        "psicología": {
+            definition: "Ciencia que estudia los procesos mentales y el comportamiento humano.",
+            example: "Estudió psicología para entender mejor a las personas."
+        },
+        "desmentir": {
+            definition: "Demostrar que algo no es verdad; contradecir una afirmación.",
+            example: "El ministro tuvo que desmentir los rumores de su renuncia."
+        },
+        "serendipia": {
+            definition: "Descubrimiento afortunado e inesperado que se realiza cuando se busca otra cosa distinta.",
+            example: "El hallazgo del tesoro fue una pura serendipia."
+        },
+        "monólogo": {
+            definition: "Discurso que mantiene una persona consigo misma o ante un público sin interlocutor.",
+            example: "El actor interpretó un monólogo impresionante al final de la obra."
+        },
+        "retórica": {
+            definition: "Arte de hablar o escribir de forma elegante y persuasiva.",
+            example: "Su discurso estaba lleno de una retórica vacía de contenido real."
+        },
+        "deshumanizar": {
+            definition: "Quitar lo que es propio de la naturaleza humana; hacer menos humano.",
+            example: "La guerra tiende a deshumanizar a los soldados y civiles."
+        },
+        "emprendedor": {
+            definition: "Persona que inicia y lleva a cabo planes de negocio.",
+            example: "Es un joven emprendedor que ha fundado tres empresas tecnológicas."
+        },
+        "irreverente": {
+            definition: "Que no muestra el respeto que se debe a las personas o cosas sagradas o dignas de él.",
+            example: "Su humor irreverente a veces ofende a las personas más tradicionales."
+        },
+        "repudiar": {
+            definition: "Rechazar algo, no aceptarlo o no querer tener relación con ello.",
+            example: "La sociedad debe repudiar cualquier acto de violencia."
+        },
+        "adolescente": {
+            definition: "Persona joven que está en la etapa entre la infancia y la edad adulta.",
+            example: "El adolescente está buscando su propio camino en la vida."
+        },
+        "aniquilar": {
+            definition: "Destruir por completo algo o alguien.",
+            example: "La plaga amenazaba con aniquilar toda la cosecha del año."
+        },
+        "astrónomo": {
+            definition: "Científico que se dedica al estudio de los astros y del universo.",
+            example: "El astrónomo descubrió un nuevo planeta en una galaxia lejana."
+        },
+        "abdicar": {
+            definition: "Renunciar un rey o un príncipe a su cargo o soberanía.",
+            example: "El monarca decidió abdicar en favor de su hijo mayor."
+        },
+        "anonimato": {
+            definition: "Cualidad de ser anónimo; estado de no ser conocido por el nombre.",
+            example: "El autor prefirió publicar su libro desde el anonimato."
+        },
+        "antónimo": {
+            definition: "Palabra que tiene un significado opuesto al de otra.",
+            example: "'Triste' es el antónimo de 'feliz'."
+        },
+        "canonizar": {
+            definition: "Declarar oficialmente santo a una persona ya muerta.",
+            example: "El Papa decidió canonizar a la monja por sus obras de caridad."
+        },
+        "epigrama": {
+            definition: "Frase breve e ingeniosa, frecuentemente satírica o burlesca.",
+            example: "El poeta era famoso por sus epigramas mordaces contra el poder."
+        },
+        "manifiesto": {
+            definition: "Escrito en el que se hace pública una declaración de principios o intenciones.",
+            example: "El grupo de intelectuales firmó un manifiesto por la paz."
+        },
+        "estético": {
+            definition: "Perteneciente o relativo a la percepción o apreciación de la belleza.",
+            example: "El diseño del coche es impecable desde un punto de vista estético."
+        },
+        "apaciguar": {
+            definition: "Poner en paz, sosegar o calmar a alguien o algo.",
+            example: "Intentaron apaciguar los ánimos antes de que la reunión empeorara."
+        },
+        "iconoclasta": {
+            definition: "Que rechaza los valores o instituciones tradicionales.",
+            example: "Fue un artista iconoclasta que rompió con todas las reglas de su época."
+        },
+        "vivaz": {
+            definition: "Que tiene mucha viveza, energía o agilidad.",
+            example: "Es un niño muy vivaz y curioso que siempre está preguntando cosas."
+        },
+        "proliferar": {
+            definition: "Multiplicarse o aumentar rápidamente.",
+            example: "Las noticias falsas tienden a proliferar rápidamente en las redes sociales."
         }
     }
 };

@@ -1,6 +1,5 @@
-// AUTO-GENERATED file - Complete word definitions
-// Generated: 2025-12-18T23:15:39.539975Z
-
+// AUTO-GENERATED DICTIONARY (strict lexicographic generation)
+// Generated: 2025-12-18T23:42:28.404764Z
 export interface WordDefinition {
     definition: string;
     example: string;
@@ -9,9332 +8,8488 @@ export interface WordDefinition {
 export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = {
     en: {
         "abatido": {
-            definition: "Abatido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'abatido' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word abatido when describing a common situation."
         },
         "abattu": {
-            definition: "Abattu: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'abattu' when discussing everyday topics."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word abattu when describing a common situation."
         },
         "abdicate": {
-            definition: "Renounce one's throne; fail to fulfill a duty.",
-            example: "The king decided to abdicate in favor of his son."
+            definition: "To formally give up a position of power or responsibility, especially a throne or authority.",
+            example: "The monarch decided to abdicate in favor of his heir."
         },
         "abolish": {
-            definition: "To abolish.",
-            example: "The new law will abolish outdated regulations that slowed business growth."
+            definition: "To officially end or stop a law, system, or practice so it is no longer used.",
+            example: "The committee recommended abolish-ing outdated regulations to modernize the code."
         },
         "abominable": {
-            definition: "Capable of being abomin.",
-            example: "The conditions in the abandoned building were abominable."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word abominable when describing a common situation."
         },
         "abordable": {
-            definition: "Capable of being abord.",
-            example: "People often used the word 'abordable' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word abordable when describing a common situation."
         },
         "abrasador": {
-            definition: "Abrasador: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'abrasador' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word abrasador when describing a common situation."
         },
         "abridge": {
-            definition: "Abridge: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'abridge' when discussing everyday topics."
+            definition: "To shorten a text while keeping the core meaning intact.",
+            example: "The editor decided to abridge the long article for publication."
         },
         "abrupt": {
-            definition: "Sudden and unexpected.",
-            example: "People often used the word 'abrupt' when discussing everyday topics."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word abrupt when describing a common situation."
         },
         "absorbente": {
-            definition: "Absorbente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'absorbente' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word absorbente when describing a common situation."
         },
         "absorbing": {
-            definition: "Being or performing the action of absorbing or causing that action to happen.",
-            example: "People often used the word 'absorbing' when discussing everyday topics."
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Absorbing every day helped him improve quickly."
         },
         "abundant": {
-            definition: "Existing in large quantities; plentiful.",
-            example: "After the rains, the fields were abundant with wildflowers."
+            definition: "Existing in large quantities; more than enough.",
+            example: "Wildflowers were abundant in the fields after the rain."
         },
         "abysmal": {
-            definition: "Abysmal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'abysmal' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word abysmal when describing a common situation."
         },
         "accablé": {
-            definition: "Accablé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'accablé' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word accablé when describing a common situation."
         },
         "accelerated": {
-            definition: "Accelerated: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'accelerated' when discussing everyday topics."
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word accelerated when describing a common situation."
         },
         "accesible": {
-            definition: "Accesible: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'accesible' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word accesible when describing a common situation."
         },
         "accessible": {
-            definition: "Accessible: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'accessible' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word accessible when describing a common situation."
         },
         "acción": {
-            definition: "Acción: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'acción' when discussing everyday topics."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word acción when describing a common situation."
         },
         "accommodation": {
-            definition: "The act or process of accommodaing.",
-            example: "People often used the word 'accommodation' when discussing everyday topics."
+            definition: "An act, process, or result related to accommoda, describing a specific action or condition.",
+            example: "The decision came after a lengthy accommodation process that changed the plan."
         },
         "acelerado": {
-            definition: "Acelerado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'acelerado' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word acelerado when describing a common situation."
         },
         "achicharrante": {
-            definition: "Achicharrante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'achicharrante' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word achicharrante when describing a common situation."
         },
         "achievement": {
-            definition: "Achievement: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'achievement' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word achievement when describing a common situation."
         },
         "acongojado": {
-            definition: "Acongojado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'acongojado' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word acongojado when describing a common situation."
         },
         "acrid": {
-            definition: "Acrid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'acrid' when discussing everyday topics."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word acrid when describing a common situation."
         },
         "action": {
-            definition: "The act or process of acing.",
-            example: "People often used the word 'action' when discussing everyday topics."
+            definition: "An act, process, or result related to ac, describing a specific action or condition.",
+            example: "The decision came after a lengthy action process that changed the plan."
         },
         "active": {
-            definition: "Having the quality of being act.",
-            example: "People often used the word 'active' when discussing everyday topics."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word active when describing a common situation."
         },
         "actual": {
-            definition: "Actual: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'actual' when discussing everyday topics."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word actual when describing a common situation."
         },
         "actuel": {
-            definition: "Actuel: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'actuel' when discussing everyday topics."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word actuel when describing a common situation."
         },
         "adamantine": {
-            definition: "Adamantine: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'adamantine' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word adamantine when describing a common situation."
         },
         "adaptación": {
-            definition: "Adaptación: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'adaptación' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word adaptación when describing a common situation."
         },
         "adaptation": {
-            definition: "The act or process of adaptaing.",
-            example: "People often used the word 'adaptation' when discussing everyday topics."
-        },
-        "adept": {
-            definition: "Very skilled or proficient at something.",
-            example: "She is an adept programmer who can solve complex problems quickly."
+            definition: "An act, process, or result related to adapta, describing a specific action or condition.",
+            example: "The decision came after a lengthy adaptation process that changed the plan."
         },
         "adjustment": {
-            definition: "Adjustment: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'adjustment' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word adjustment when describing a common situation."
         },
         "adopción": {
-            definition: "Adopción: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'adopción' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word adopción when describing a common situation."
         },
         "adoption": {
-            definition: "The act or process of adoping.",
-            example: "People often used the word 'adoption' when discussing everyday topics."
+            definition: "An act, process, or result related to adop, describing a specific action or condition.",
+            example: "The decision came after a lengthy adoption process that changed the plan."
         },
         "advantageous": {
-            definition: "Having the quality of being advantag.",
-            example: "People often used the word 'advantageous' when discussing everyday topics."
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word advantageous when describing a common situation."
         },
         "adventure": {
-            definition: "Adventure: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'adventure' when discussing everyday topics."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word adventure when describing a common situation."
         },
         "advocate": {
-            definition: "To advocate.",
-            example: "People often used the word 'advocate' when discussing everyday topics."
+            definition: "To publicly support or argue in favor of a cause, policy, or group.",
+            example: "She advocates for access to affordable healthcare."
         },
         "aesthetic": {
-            definition: "Concerned with beauty or the appreciation of beauty.",
-            example: "The new cafe has a very modern and clean aesthetic."
-        },
-        "affable": {
-            definition: "Capable of being aff.",
-            example: "People often used the word 'affable' when discussing everyday topics."
-        },
-        "affluent": {
-            definition: "Having a lot of money; wealthy.",
-            example: "People often used the word 'affluent' when discussing everyday topics."
-        },
-        "affordable": {
-            definition: "Capable of being afford.",
-            example: "People often used the word 'affordable' when discussing everyday topics."
-        },
-        "affreux": {
-            definition: "Affreux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'affreux' when discussing everyday topics."
-        },
-        "afligido": {
-            definition: "Afligido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'afligido' when discussing everyday topics."
-        },
-        "agacé": {
-            definition: "Agacé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'agacé' when discussing everyday topics."
-        },
-        "age-old": {
-            definition: "Age-old: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'age-old' when discussing everyday topics."
-        },
-        "aged": {
-            definition: "Aged: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'aged' when discussing everyday topics."
-        },
-        "agile": {
-            definition: "Able to move quickly and easily.",
-            example: "People often used the word 'agile' when discussing everyday topics."
-        },
-        "agréable": {
-            definition: "Capable of being agré.",
-            example: "People often used the word 'agréable' when discussing everyday topics."
-        },
-        "agudo": {
-            definition: "Agudo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'agudo' when discussing everyday topics."
-        },
-        "ahorro": {
-            definition: "Ahorro: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ahorro' when discussing everyday topics."
-        },
-        "airado": {
-            definition: "Airado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'airado' when discussing everyday topics."
-        },
-        "aisé": {
-            definition: "Aisé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'aisé' when discussing everyday topics."
-        },
-        "ajuste": {
-            definition: "Ajuste: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ajuste' when discussing everyday topics."
-        },
-        "alcance": {
-            definition: "Alcance: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'alcance' when discussing everyday topics."
-        },
-        "alegre": {
-            definition: "Alegre: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'alegre' when discussing everyday topics."
-        },
-        "almuerzo": {
-            definition: "Almuerzo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'almuerzo' when discussing everyday topics."
-        },
-        "alojamiento": {
-            definition: "Alojamiento: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'alojamiento' when discussing everyday topics."
-        },
-        "altruistic": {
-            definition: "Showing a disinterested and selfless concern for others.",
-            example: "Her altruistic acts helped many people in the local community."
-        },
-        "ambición": {
-            definition: "Ambición: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ambición' when discussing everyday topics."
-        },
-        "ambience": {
-            definition: "Ambience: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ambience' when discussing everyday topics."
-        },
-        "ambiente": {
-            definition: "Ambiente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ambiente' when discussing everyday topics."
-        },
-        "ambition": {
-            definition: "The act or process of ambiing.",
-            example: "People often used the word 'ambition' when discussing everyday topics."
-        },
-        "amiable": {
-            definition: "Capable of being ami.",
-            example: "People often used the word 'amiable' when discussing everyday topics."
-        },
-        "amicable": {
-            definition: "Capable of being amic.",
-            example: "People often used the word 'amicable' when discussing everyday topics."
-        },
-        "amusing": {
-            definition: "Being or performing the action of amusing or causing that action to happen.",
-            example: "People often used the word 'amusing' when discussing everyday topics."
-        },
-        "anachronistic": {
-            definition: "Belonging or appropriate to a period other than that in which it exists.",
-            example: "Using a typewriter in a modern office can seem anachronistic."
-        },
-        "ancestral": {
-            definition: "Of, belonging to, or inherited from an ancestor.",
-            example: "They visited their ancestral home in the countryside."
-        },
-        "anciano": {
-            definition: "Anciano: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'anciano' when discussing everyday topics."
-        },
-        "ancien": {
-            definition: "Ancien: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ancien' when discussing everyday topics."
-        },
-        "ancient": {
-            definition: "Very old; belonging to a distant past.",
-            example: "They explored an ancient ruin hidden in the forest."
-        },
-        "angelic": {
-            definition: "Relating to angels; exceptionally beautiful or kind.",
-            example: "The child had an angelic face that melted everyone's hearts."
-        },
-        "angoissant": {
-            definition: "Angoissant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'angoissant' when discussing everyday topics."
-        },
-        "angry": {
-            definition: "Feeling or showing strong displeasure or hostility.",
-            example: "People often used the word 'angry' when discussing everyday topics."
-        },
-        "annihilate": {
-            definition: "To annihilate.",
-            example: "The army vowed to annihilate the enemy's supply line."
-        },
-        "annoyed": {
-            definition: "Annoyed: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'annoyed' when discussing everyday topics."
-        },
-        "anonymity": {
-            definition: "The condition of being anonymous; unknown name.",
-            example: "The whistleblower requested total anonymity for their protection."
-        },
-        "antediluvian": {
-            definition: "Antediluvian: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'antediluvian' when discussing everyday topics."
-        },
-        "antediluviano": {
-            definition: "Antediluviano: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'antediluviano' when discussing everyday topics."
-        },
-        "antiguo": {
-            definition: "Antiguo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'antiguo' when discussing everyday topics."
-        },
-        "antiquarian": {
-            definition: "Antiquarian: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'antiquarian' when discussing everyday topics."
-        },
-        "antiquated": {
-            definition: "Antiquated: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'antiquated' when discussing everyday topics."
-        },
-        "antique": {
-            definition: "Antique: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'antique' when discussing everyday topics."
-        },
-        "antonym": {
-            definition: "A word opposite in meaning to another.",
-            example: "'Hot' is the antonym of 'cold'."
-        },
-        "apasionado": {
-            definition: "Apasionado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'apasionado' when discussing everyday topics."
-        },
-        "apasionante": {
-            definition: "Apasionante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'apasionante' when discussing everyday topics."
-        },
-        "apesadumbrado": {
-            definition: "Apesadumbrado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'apesadumbrado' when discussing everyday topics."
-        },
-        "apollonian": {
-            definition: "Apollonian: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'apollonian' when discussing everyday topics."
-        },
-        "apoplectic": {
-            definition: "Apoplectic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'apoplectic' when discussing everyday topics."
-        },
-        "apoyo": {
-            definition: "Apoyo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'apoyo' when discussing everyday topics."
-        },
-        "apparent": {
-            definition: "Apparent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'apparent' when discussing everyday topics."
-        },
-        "appreciation": {
-            definition: "The act or process of appreciaing.",
-            example: "People often used the word 'appreciation' when discussing everyday topics."
-        },
-        "approachable": {
-            definition: "Capable of being approach.",
-            example: "People often used the word 'approachable' when discussing everyday topics."
-        },
-        "aprendizaje": {
-            definition: "Aprendizaje: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'aprendizaje' when discussing everyday topics."
-        },
-        "arcaico": {
-            definition: "Arcaico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'arcaico' when discussing everyday topics."
-        },
-        "arcane": {
-            definition: "Understood by few; mysterious or secret.",
-            example: "He spent years studying arcane rituals from ancient texts."
-        },
-        "archaic": {
-            definition: "Archaic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'archaic' when discussing everyday topics."
-        },
-        "archaïque": {
-            definition: "Archaïque: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'archaïque' when discussing everyday topics."
-        },
-        "arctic": {
-            definition: "Arctic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'arctic' when discussing everyday topics."
-        },
-        "ardent": {
-            definition: "Very enthusiastic or passionate.",
-            example: "People often used the word 'ardent' when discussing everyday topics."
-        },
-        "ardiente": {
-            definition: "Ardiente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ardiente' when discussing everyday topics."
-        },
-        "ardu": {
-            definition: "Ardu: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ardu' when discussing everyday topics."
-        },
-        "arduo": {
-            definition: "Arduo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'arduo' when discussing everyday topics."
-        },
-        "arduous": {
-            definition: "Having the quality of being ard.",
-            example: "People often used the word 'arduous' when discussing everyday topics."
-        },
-        "aromatic": {
-            definition: "Having a pleasant and distinctive smell.",
-            example: "People often used the word 'aromatic' when discussing everyday topics."
-        },
-        "arrebatador": {
-            definition: "Arrebatador: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'arrebatador' when discussing everyday topics."
-        },
-        "articulate": {
-            definition: "Able to express ideas clearly and effectively in speech or writing.",
-            example: "People often used the word 'articulate' when discussing everyday topics."
-        },
-        "artificial": {
-            definition: "Made or produced by human beings rather than occurring naturally.",
-            example: "The museum used artificial light to preserve the delicate paintings."
-        },
-        "aseptic": {
-            definition: "Free from contamination caused by harmful bacteria or viruses.",
-            example: "The surgery was performed in a strictly aseptic environment."
-        },
-        "asequible": {
-            definition: "Asequible: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'asequible' when discussing everyday topics."
-        },
-        "asistencia": {
-            definition: "Asistencia: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'asistencia' when discussing everyday topics."
-        },
-        "astronomer": {
-            definition: "A person or thing that astronomer or performs the action astronom.",
-            example: "The astronomer spent hours studying distant galaxies through the telescope."
-        },
-        "astucieux": {
-            definition: "Astucieux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'astucieux' when discussing everyday topics."
-        },
-        "astute": {
-            definition: "Astute: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'astute' when discussing everyday topics."
-        },
-        "astuto": {
-            definition: "Astuto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'astuto' when discussing everyday topics."
-        },
-        "aterido": {
-            definition: "Aterido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'aterido' when discussing everyday topics."
-        },
-        "aterrador": {
-            definition: "Aterrador: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'aterrador' when discussing everyday topics."
-        },
-        "athlétique": {
-            definition: "Athlétique: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'athlétique' when discussing everyday topics."
-        },
-        "atractivo": {
-            definition: "Atractivo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'atractivo' when discussing everyday topics."
-        },
-        "atroce": {
-            definition: "Atroce: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'atroce' when discussing everyday topics."
-        },
-        "atrocious": {
-            definition: "Having the quality of being atroc.",
-            example: "People often used the word 'atrocious' when discussing everyday topics."
-        },
-        "attendance": {
-            definition: "Attendance: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'attendance' when discussing everyday topics."
-        },
-        "attenuated": {
-            definition: "Attenuated: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'attenuated' when discussing everyday topics."
-        },
-        "attractive": {
-            definition: "Having the quality of being attract.",
-            example: "People often used the word 'attractive' when discussing everyday topics."
-        },
-        "attrayant": {
-            definition: "Attrayant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'attrayant' when discussing everyday topics."
-        },
-        "audacieux": {
-            definition: "Audacieux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'audacieux' when discussing everyday topics."
-        },
-        "audacious": {
-            definition: "Having the quality of being audac.",
-            example: "People often used the word 'audacious' when discussing everyday topics."
-        },
-        "audaz": {
-            definition: "Audaz: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'audaz' when discussing everyday topics."
-        },
-        "auspicious": {
-            definition: "Having the quality of being auspic.",
-            example: "People often used the word 'auspicious' when discussing everyday topics."
-        },
-        "austere": {
-            definition: "Severe or strict in manner, attitude, or appearance.",
-            example: "The monastery had an austere dining hall with simple benches."
-        },
-        "autocuidado": {
-            definition: "Autocuidado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'autocuidado' when discussing everyday topics."
-        },
-        "autonomous": {
-            definition: "Having the quality of being autonom.",
-            example: "People often used the word 'autonomous' when discussing everyday topics."
-        },
-        "avant-gardiste": {
-            definition: "Avant-gardiste: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'avant-gardiste' when discussing everyday topics."
-        },
-        "avenir": {
-            definition: "Avenir: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'avenir' when discussing everyday topics."
-        },
-        "aventura": {
-            definition: "Aventura: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'aventura' when discussing everyday topics."
-        },
-        "aventure": {
-            definition: "Aventure: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'aventure' when discussing everyday topics."
-        },
-        "aversion": {
-            definition: "The act or process of avering.",
-            example: "People often used the word 'aversion' when discussing everyday topics."
-        },
-        "avide": {
-            definition: "Avide: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'avide' when discussing everyday topics."
-        },
-        "avisé": {
-            definition: "Avisé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'avisé' when discussing everyday topics."
-        },
-        "awareness": {
-            definition: "Awareness: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'awareness' when discussing everyday topics."
-        },
-        "awful": {
-            definition: "Having the quality of being aw.",
-            example: "People often used the word 'awful' when discussing everyday topics."
-        },
-        "añejo": {
-            definition: "Añejo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'añejo' when discussing everyday topics."
-        },
-        "bad": {
-            definition: "Bad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'bad' when discussing everyday topics."
-        },
-        "baked": {
-            definition: "Baked: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'baked' when discussing everyday topics."
-        },
-        "balance": {
-            definition: "Balance: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'balance' when discussing everyday topics."
-        },
-        "baleful": {
-            definition: "Having the quality of being ba.",
-            example: "People often used the word 'baleful' when discussing everyday topics."
-        },
-        "balmy": {
-            definition: "Balmy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'balmy' when discussing everyday topics."
-        },
-        "bashful": {
-            definition: "Having the quality of being bash.",
-            example: "People often used the word 'bashful' when discussing everyday topics."
-        },
-        "basic": {
-            definition: "Basic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'basic' when discussing everyday topics."
-        },
-        "beatific": {
-            definition: "Beatific: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'beatific' when discussing everyday topics."
-        },
-        "beatífico": {
-            definition: "Beatífico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'beatífico' when discussing everyday topics."
-        },
-        "beau": {
-            definition: "Beau: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'beau' when discussing everyday topics."
-        },
-        "beautiful": {
-            definition: "Pleasing the senses or mind aesthetically.",
-            example: "The sunset over the mountain was absolutely beautiful."
-        },
-        "bello": {
-            definition: "Bello: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'bello' when discussing everyday topics."
-        },
-        "benefactor": {
-            definition: "Benefactor: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'benefactor' when discussing everyday topics."
-        },
-        "beneficial": {
-            definition: "Beneficial: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'beneficial' when discussing everyday topics."
-        },
-        "benignant": {
-            definition: "Benignant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'benignant' when discussing everyday topics."
-        },
-        "besmirched": {
-            definition: "Besmirched: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'besmirched' when discussing everyday topics."
-        },
-        "biased": {
-            definition: "Unfairly prejudiced for or against someone or something.",
-            example: "The referee's decision was seen as biased by the home team's fans."
-        },
-        "bien-être": {
-            definition: "Bien-être: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'bien-être' when discussing everyday topics."
-        },
-        "bienestar": {
-            definition: "Bienestar: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'bienestar' when discussing everyday topics."
-        },
-        "big": {
-            definition: "Big: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'big' when discussing everyday topics."
-        },
-        "biting": {
-            definition: "Being or performing the action of biting or causing that action to happen.",
-            example: "People often used the word 'biting' when discussing everyday topics."
-        },
-        "black": {
-            definition: "Black: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'black' when discussing everyday topics."
-        },
-        "blank": {
-            definition: "Blank: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'blank' when discussing everyday topics."
-        },
-        "blaring": {
-            definition: "Being or performing the action of blaring or causing that action to happen.",
-            example: "People often used the word 'blaring' when discussing everyday topics."
-        },
-        "blazing": {
-            definition: "Being or performing the action of blazing or causing that action to happen.",
-            example: "People often used the word 'blazing' when discussing everyday topics."
-        },
-        "blinding": {
-            definition: "So bright as to obscure vision.",
-            example: "The snow was so white it created a blinding glare."
-        },
-        "blissful": {
-            definition: "Having the quality of being b.",
-            example: "People often used the word 'blissful' when discussing everyday topics."
-        },
-        "blistering": {
-            definition: "Being or performing the action of blistering or causing that action to happen.",
-            example: "People often used the word 'blistering' when discussing everyday topics."
-        },
-        "bloodcurdling": {
-            definition: "Being or performing the action of bloodcurdling or causing that action to happen.",
-            example: "People often used the word 'bloodcurdling' when discussing everyday topics."
-        },
-        "blue": {
-            definition: "Blue: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'blue' when discussing everyday topics."
-        },
-        "bochornoso": {
-            definition: "Bochornoso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'bochornoso' when discussing everyday topics."
-        },
-        "boiling": {
-            definition: "Being or performing the action of boiling or causing that action to happen.",
-            example: "People often used the word 'boiling' when discussing everyday topics."
-        },
-        "bold": {
-            definition: "Bold: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'bold' when discussing everyday topics."
-        },
-        "bon": {
-            definition: "Bon: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'bon' when discussing everyday topics."
-        },
-        "bonito": {
-            definition: "Bonito: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'bonito' when discussing everyday topics."
-        },
-        "booming": {
-            definition: "Being or performing the action of booming or causing that action to happen.",
-            example: "People often used the word 'booming' when discussing everyday topics."
-        },
-        "bouillant": {
-            definition: "Bouillant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'bouillant' when discussing everyday topics."
-        },
-        "boundaries": {
-            definition: "Boundaries: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'boundaries' when discussing everyday topics."
-        },
-        "bracing": {
-            definition: "Being or performing the action of bracing or causing that action to happen.",
-            example: "People often used the word 'bracing' when discussing everyday topics."
-        },
-        "brave": {
-            definition: "Brave: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'brave' when discussing everyday topics."
-        },
-        "bravo": {
-            definition: "Bravo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'bravo' when discussing everyday topics."
-        },
-        "breakable": {
-            definition: "Capable of being break.",
-            example: "People often used the word 'breakable' when discussing everyday topics."
-        },
-        "breakfast": {
-            definition: "The first meal of the day, usually eaten in the morning.",
-            example: "People often used the word 'breakfast' when discussing everyday topics."
-        },
-        "breakneck": {
-            definition: "Breakneck: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'breakneck' when discussing everyday topics."
-        },
-        "breathtaking": {
-            definition: "Astonishing or awe-inspiring in quality.",
-            example: "The view from the top of the mountain was absolutely breathtaking."
-        },
-        "brief": {
-            definition: "Brief: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'brief' when discussing everyday topics."
-        },
-        "bright": {
-            definition: "Bright: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'bright' when discussing everyday topics."
-        },
-        "brighten": {
-            definition: "Brighten: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'brighten' when discussing everyday topics."
-        },
-        "brillant": {
-            definition: "Brillant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'brillant' when discussing everyday topics."
-        },
-        "brillante": {
-            definition: "Brillante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'brillante' when discussing everyday topics."
-        },
-        "brilliant": {
-            definition: "Brilliant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'brilliant' when discussing everyday topics."
-        },
-        "brio": {
-            definition: "Brio: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'brio' when discussing everyday topics."
-        },
-        "brisable": {
-            definition: "Capable of being bris.",
-            example: "People often used the word 'brisable' when discussing everyday topics."
-        },
-        "brisk": {
-            definition: "Brisk: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'brisk' when discussing everyday topics."
-        },
-        "brittle": {
-            definition: "Brittle: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'brittle' when discussing everyday topics."
-        },
-        "broke": {
-            definition: "Broke: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'broke' when discussing everyday topics."
-        },
-        "brûlant": {
-            definition: "Brûlant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'brûlant' when discussing everyday topics."
-        },
-        "budget": {
-            definition: "Budget: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'budget' when discussing everyday topics."
-        },
-        "budgeting": {
-            definition: "Being or performing the action of budgeting or causing that action to happen.",
-            example: "People often used the word 'budgeting' when discussing everyday topics."
-        },
-        "bueno": {
-            definition: "Bueno: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'bueno' when discussing everyday topics."
-        },
-        "burning": {
-            definition: "Being or performing the action of burning or causing that action to happen.",
-            example: "People often used the word 'burning' when discussing everyday topics."
-        },
-        "busy": {
-            definition: "Busy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'busy' when discussing everyday topics."
-        },
-        "béat": {
-            definition: "Béat: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'béat' when discussing everyday topics."
-        },
-        "calamitous": {
-            definition: "Having the quality of being calamit.",
-            example: "People often used the word 'calamitous' when discussing everyday topics."
-        },
-        "calidad": {
-            definition: "Calidad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'calidad' when discussing everyday topics."
-        },
-        "caliente": {
-            definition: "Caliente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'caliente' when discussing everyday topics."
-        },
-        "calm": {
-            definition: "Calm: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'calm' when discussing everyday topics."
-        },
-        "candente": {
-            definition: "Candente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'candente' when discussing everyday topics."
-        },
-        "candor": {
-            definition: "Candor: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'candor' when discussing everyday topics."
-        },
-        "caniculaire": {
-            definition: "Caniculaire: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'caniculaire' when discussing everyday topics."
-        },
-        "canicular": {
-            definition: "Canicular: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'canicular' when discussing everyday topics."
-        },
-        "canonize": {
-            definition: "Officially declare a dead person to be a saint.",
-            example: "The church decided to canonize the nun for her lifelong service."
-        },
-        "capable": {
-            definition: "Capable of being cap.",
-            example: "People often used the word 'capable' when discussing everyday topics."
-        },
-        "capaz": {
-            definition: "Capaz: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'capaz' when discussing everyday topics."
-        },
-        "capital": {
-            definition: "Capital: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'capital' when discussing everyday topics."
-        },
-        "captivant": {
-            definition: "Captivant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'captivant' when discussing everyday topics."
-        },
-        "captivating": {
-            definition: "Being or performing the action of captivating or causing that action to happen.",
-            example: "People often used the word 'captivating' when discussing everyday topics."
-        },
-        "cardinal": {
-            definition: "Cardinal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cardinal' when discussing everyday topics."
-        },
-        "cartographical": {
-            definition: "Relating to the science or practice of drawing maps.",
-            example: "The cartographical accuracy of the new atlas is impressive."
-        },
-        "cassant": {
-            definition: "Cassant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cassant' when discussing everyday topics."
-        },
-        "catastrophic": {
-            definition: "Catastrophic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'catastrophic' when discussing everyday topics."
-        },
-        "cauchemardesque": {
-            definition: "Cauchemardesque: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cauchemardesque' when discussing everyday topics."
-        },
-        "cautivador": {
-            definition: "Cautivador: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cautivador' when discussing everyday topics."
-        },
-        "celebración": {
-            definition: "Celebración: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'celebración' when discussing everyday topics."
-        },
-        "celebration": {
-            definition: "The act or process of celebraing.",
-            example: "People often used the word 'celebration' when discussing everyday topics."
-        },
-        "celestial": {
-            definition: "Positioned in or relating to the sky, or outer space.",
-            example: "The stars and planets are celestial bodies visible at night."
-        },
-        "chagriné": {
-            definition: "Chagriné: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'chagriné' when discussing everyday topics."
-        },
-        "challenges": {
-            definition: "Challenges: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'challenges' when discussing everyday topics."
-        },
-        "challenging": {
-            definition: "Being or performing the action of challenging or causing that action to happen.",
-            example: "People often used the word 'challenging' when discussing everyday topics."
-        },
-        "chancelant": {
-            definition: "Chancelant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'chancelant' when discussing everyday topics."
-        },
-        "change": {
-            definition: "Change: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'change' when discussing everyday topics."
-        },
-        "chaos": {
-            definition: "Chaos: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'chaos' when discussing everyday topics."
-        },
-        "characters": {
-            definition: "Characters: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'characters' when discussing everyday topics."
-        },
-        "chaud": {
-            definition: "Chaud: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'chaud' when discussing everyday topics."
-        },
-        "cheap": {
-            definition: "Cheap: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cheap' when discussing everyday topics."
-        },
-        "cheer": {
-            definition: "A person or thing that cheer or performs the action che.",
-            example: "People often used the word 'cheer' when discussing everyday topics."
-        },
-        "cheerful": {
-            definition: "Having the quality of being cheer.",
-            example: "People often used the word 'cheerful' when discussing everyday topics."
-        },
-        "chico": {
-            definition: "Chico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'chico' when discussing everyday topics."
-        },
-        "child's play": {
-            definition: "Something that is very easy to do; used to describe a task that requires little effort.",
-            example: "For me, assembling the bookshelf was child's play — it took only a few minutes."
-        },
-        "chilly": {
-            definition: "In a manner that is chil.",
-            example: "People often used the word 'chilly' when discussing everyday topics."
-        },
-        "choices": {
-            definition: "Choices: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'choices' when discussing everyday topics."
-        },
-        "clair": {
-            definition: "Clair: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'clair' when discussing everyday topics."
-        },
-        "clairvoyant": {
-            definition: "Clairvoyant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'clairvoyant' when discussing everyday topics."
-        },
-        "clamorous": {
-            definition: "Having the quality of being clamor.",
-            example: "People often used the word 'clamorous' when discussing everyday topics."
-        },
-        "clarity": {
-            definition: "Clarity: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'clarity' when discussing everyday topics."
-        },
-        "clarividente": {
-            definition: "Clarividente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'clarividente' when discussing everyday topics."
-        },
-        "claro": {
-            definition: "Claro: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'claro' when discussing everyday topics."
-        },
-        "classified": {
-            definition: "Arranged in classes or categories; kept secret for security.",
-            example: "The agents were handling highly classified documents."
-        },
-        "claustrophobia": {
-            definition: "Claustrophobia: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'claustrophobia' when discussing everyday topics."
-        },
-        "claustrophobic": {
-            definition: "Claustrophobic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'claustrophobic' when discussing everyday topics."
-        },
-        "clear": {
-            definition: "Easy to perceive, understand, or interpret; transparent.",
-            example: "The instructions were clear and easy to follow."
-        },
-        "clement": {
-            definition: "Clement: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'clement' when discussing everyday topics."
-        },
-        "clever": {
-            definition: "A person or thing that clever or performs the action clev.",
-            example: "People often used the word 'clever' when discussing everyday topics."
-        },
-        "colaboración": {
-            definition: "Colaboración: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'colaboración' when discussing everyday topics."
-        },
-        "cold": {
-            definition: "Cold: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cold' when discussing everyday topics."
-        },
-        "collaboration": {
-            definition: "The act or process of collaboraing.",
-            example: "People often used the word 'collaboration' when discussing everyday topics."
-        },
-        "collected": {
-            definition: "Collected: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'collected' when discussing everyday topics."
-        },
-        "colosal": {
-            definition: "Colosal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'colosal' when discussing everyday topics."
-        },
-        "colossal": {
-            definition: "Colossal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'colossal' when discussing everyday topics."
-        },
-        "colérico": {
-            definition: "Colérico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'colérico' when discussing everyday topics."
-        },
-        "comblé": {
-            definition: "Comblé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'comblé' when discussing everyday topics."
-        },
-        "comical": {
-            definition: "Comical: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'comical' when discussing everyday topics."
-        },
-        "commanding": {
-            definition: "Being or performing the action of commanding or causing that action to happen.",
-            example: "People often used the word 'commanding' when discussing everyday topics."
-        },
-        "commode": {
-            definition: "Commode: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'commode' when discussing everyday topics."
-        },
-        "commodité": {
-            definition: "Commodité: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'commodité' when discussing everyday topics."
-        },
-        "communication": {
-            definition: "The act or process of communicaing.",
-            example: "People often used the word 'communication' when discussing everyday topics."
-        },
-        "community": {
-            definition: "Community: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'community' when discussing everyday topics."
-        },
-        "commute": {
-            definition: "To travel regularly between home and work or school.",
-            example: "She commutes two hours each day between the suburb and downtown."
-        },
-        "compact": {
-            definition: "Compact: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'compact' when discussing everyday topics."
-        },
-        "compelling": {
-            definition: "Being or performing the action of compelling or causing that action to happen.",
-            example: "People often used the word 'compelling' when discussing everyday topics."
-        },
-        "competent": {
-            definition: "Competent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'competent' when discussing everyday topics."
-        },
-        "competente": {
-            definition: "Competente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'competente' when discussing everyday topics."
-        },
-        "complejo": {
-            definition: "Complejo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'complejo' when discussing everyday topics."
-        },
-        "complex": {
-            definition: "Complex: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'complex' when discussing everyday topics."
-        },
-        "complexe": {
-            definition: "Complexe: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'complexe' when discussing everyday topics."
-        },
-        "complicado": {
-            definition: "Complicado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'complicado' when discussing everyday topics."
-        },
-        "complicated": {
-            definition: "Complicated: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'complicated' when discussing everyday topics."
-        },
-        "compliqué": {
-            definition: "Compliqué: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'compliqué' when discussing everyday topics."
-        },
-        "composed": {
-            definition: "Composed: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'composed' when discussing everyday topics."
-        },
-        "comprensión": {
-            definition: "Comprensión: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'comprensión' when discussing everyday topics."
-        },
-        "compromise": {
-            definition: "To compromise.",
-            example: "People often used the word 'compromise' when discussing everyday topics."
-        },
-        "compromising": {
-            definition: "Revealing that someone has done something wrong or embarrassing.",
-            example: "The leak of the compromising photos ruined the politician's career."
-        },
-        "compromiso": {
-            definition: "Compromiso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'compromiso' when discussing everyday topics."
-        },
-        "compréhension": {
-            definition: "The act or process of compréhening.",
-            example: "People often used the word 'compréhension' when discussing everyday topics."
-        },
-        "compétences": {
-            definition: "Compétences: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'compétences' when discussing everyday topics."
-        },
-        "compétent": {
-            definition: "Compétent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'compétent' when discussing everyday topics."
-        },
-        "comunicación": {
-            definition: "Comunicación: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'comunicación' when discussing everyday topics."
-        },
-        "comunidad": {
-            definition: "Comunidad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'comunidad' when discussing everyday topics."
-        },
-        "concentrated": {
-            definition: "Wholly directed to one thing; intense or potent.",
-            example: "The juice was too concentrated and needed to be diluted with water."
-        },
-        "concise": {
-            definition: "To concise.",
-            example: "People often used the word 'concise' when discussing everyday topics."
-        },
-        "conectividad": {
-            definition: "Conectividad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'conectividad' when discussing everyday topics."
-        },
-        "conexión": {
-            definition: "Conexión: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'conexión' when discussing everyday topics."
-        },
-        "confiance": {
-            definition: "Confiance: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'confiance' when discussing everyday topics."
-        },
-        "confianza": {
-            definition: "Confianza: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'confianza' when discussing everyday topics."
-        },
-        "confidence": {
-            definition: "Confidence: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'confidence' when discussing everyday topics."
-        },
-        "congelado": {
-            definition: "Congelado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'congelado' when discussing everyday topics."
-        },
-        "congested": {
-            definition: "Congested: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'congested' when discussing everyday topics."
-        },
-        "connaissance": {
-            definition: "Connaissance: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'connaissance' when discussing everyday topics."
-        },
-        "connection": {
-            definition: "The act or process of connecing.",
-            example: "People often used the word 'connection' when discussing everyday topics."
-        },
-        "connectivity": {
-            definition: "Connectivity: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'connectivity' when discussing everyday topics."
-        },
-        "connectivité": {
-            definition: "Connectivité: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'connectivité' when discussing everyday topics."
-        },
-        "connexion": {
-            definition: "Connexion: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'connexion' when discussing everyday topics."
-        },
-        "conocimiento": {
-            definition: "Conocimiento: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'conocimiento' when discussing everyday topics."
-        },
-        "consciousness": {
-            definition: "Consciousness: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'consciousness' when discussing everyday topics."
-        },
-        "consequences": {
-            definition: "Consequences: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'consequences' when discussing everyday topics."
-        },
-        "consequential": {
-            definition: "Consequential: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'consequential' when discussing everyday topics."
-        },
-        "consistencia": {
-            definition: "Consistencia: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'consistencia' when discussing everyday topics."
-        },
-        "consistency": {
-            definition: "Consistency: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'consistency' when discussing everyday topics."
-        },
-        "constancia": {
-            definition: "Constancia: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'constancia' when discussing everyday topics."
-        },
-        "constructive": {
-            definition: "Having the quality of being construct.",
-            example: "People often used the word 'constructive' when discussing everyday topics."
-        },
-        "contemporary": {
-            definition: "Contemporary: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'contemporary' when discussing everyday topics."
-        },
-        "content": {
-            definition: "Content: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'content' when discussing everyday topics."
-        },
-        "contento": {
-            definition: "Contento: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'contento' when discussing everyday topics."
-        },
-        "contribución": {
-            definition: "Contribución: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'contribución' when discussing everyday topics."
-        },
-        "contribution": {
-            definition: "The act or process of contribuing.",
-            example: "People often used the word 'contribution' when discussing everyday topics."
-        },
-        "convenience": {
-            definition: "Convenience: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'convenience' when discussing everyday topics."
-        },
-        "conveniencia": {
-            definition: "Conveniencia: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'conveniencia' when discussing everyday topics."
-        },
-        "convivial": {
-            definition: "Convivial: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'convivial' when discussing everyday topics."
-        },
-        "cool": {
-            definition: "Cool: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cool' when discussing everyday topics."
-        },
-        "cordial": {
-            definition: "Cordial: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cordial' when discussing everyday topics."
-        },
-        "corto": {
-            definition: "Corto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'corto' when discussing everyday topics."
-        },
-        "costaud": {
-            definition: "Costaud: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'costaud' when discussing everyday topics."
-        },
-        "costumbres": {
-            definition: "Costumbres: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'costumbres' when discussing everyday topics."
-        },
-        "courageous": {
-            definition: "Having the quality of being courag.",
-            example: "People often used the word 'courageous' when discussing everyday topics."
-        },
-        "courageux": {
-            definition: "Courageux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'courageux' when discussing everyday topics."
-        },
-        "courroucé": {
-            definition: "Courroucé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'courroucé' when discussing everyday topics."
-        },
-        "courteous": {
-            definition: "Having the quality of being court.",
-            example: "People often used the word 'courteous' when discussing everyday topics."
-        },
-        "coy": {
-            definition: "Coy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'coy' when discussing everyday topics."
-        },
-        "cozy": {
-            definition: "Cozy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cozy' when discussing everyday topics."
-        },
-        "craven": {
-            definition: "Craven: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'craven' when discussing everyday topics."
-        },
-        "creative": {
-            definition: "Relating to or involving the imagination or original ideas.",
-            example: "He is a creative artist who constantly experiments with new styles."
-        },
-        "creativity": {
-            definition: "Creativity: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'creativity' when discussing everyday topics."
-        },
-        "creativo": {
-            definition: "Creativo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'creativo' when discussing everyday topics."
-        },
-        "crecimiento": {
-            definition: "Crecimiento: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'crecimiento' when discussing everyday topics."
-        },
-        "creepy": {
-            definition: "Creepy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'creepy' when discussing everyday topics."
-        },
-        "croissance": {
-            definition: "Croissance: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'croissance' when discussing everyday topics."
-        },
-        "crucial": {
-            definition: "Decisive or critical, especially in the success or failure of something.",
-            example: "This meeting is crucial for the future of our partnership."
-        },
-        "crystalline": {
-            definition: "Crystalline: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'crystalline' when discussing everyday topics."
-        },
-        "créatif": {
-            definition: "Créatif: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'créatif' when discussing everyday topics."
-        },
-        "cultura": {
-            definition: "Cultura: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cultura' when discussing everyday topics."
-        },
-        "culture": {
-            definition: "Culture: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'culture' when discussing everyday topics."
-        },
-        "cumbersome": {
-            definition: "Cumbersome: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cumbersome' when discussing everyday topics."
-        },
-        "cumplimiento": {
-            definition: "Cumplimiento: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cumplimiento' when discussing everyday topics."
-        },
-        "curieux": {
-            definition: "Curieux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'curieux' when discussing everyday topics."
-        },
-        "curior": {
-            definition: "Curior: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'curior' when discussing everyday topics."
-        },
-        "curiosity": {
-            definition: "Curiosity: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'curiosity' when discussing everyday topics."
-        },
-        "curioso": {
-            definition: "Curioso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'curioso' when discussing everyday topics."
-        },
-        "curious": {
-            definition: "Having the quality of being cur.",
-            example: "People often used the word 'curious' when discussing everyday topics."
-        },
-        "current": {
-            definition: "Current: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'current' when discussing everyday topics."
-        },
-        "customs": {
-            definition: "Customs: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'customs' when discussing everyday topics."
-        },
-        "cute": {
-            definition: "Cute: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cute' when discussing everyday topics."
-        },
-        "cutting-edge": {
-            definition: "Cutting-edge: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cutting-edge' when discussing everyday topics."
-        },
-        "cyclopean": {
-            definition: "Extremely massive; made of huge stones.",
-            example: "The ruins were built with cyclopean walls that stood for ages."
-        },
-        "cómodo": {
-            definition: "Cómodo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'cómodo' when discussing everyday topics."
-        },
-        "dangerous": {
-            definition: "Having the quality of being danger.",
-            example: "People often used the word 'dangerous' when discussing everyday topics."
-        },
-        "dantesco": {
-            definition: "Dantesco: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dantesco' when discussing everyday topics."
-        },
-        "dark": {
-            definition: "Dark: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dark' when discussing everyday topics."
-        },
-        "dauntless": {
-            definition: "Having the quality of being daunt.",
-            example: "People often used the word 'dauntless' when discussing everyday topics."
-        },
-        "deafening": {
-            definition: "Being or performing the action of deafening or causing that action to happen.",
-            example: "People often used the word 'deafening' when discussing everyday topics."
-        },
-        "debt": {
-            definition: "Debt: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'debt' when discussing everyday topics."
-        },
-        "decisive": {
-            definition: "Settling an issue; producing a definite result.",
-            example: "The general made a decisive move that won the battle."
-        },
-        "decrepit": {
-            definition: "Decrepit: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'decrepit' when discussing everyday topics."
-        },
-        "decrépito": {
-            definition: "Decrépito: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'decrépito' when discussing everyday topics."
-        },
-        "defenseless": {
-            definition: "Without defense or protection; vulnerable.",
-            example: "The small animal was defenseless against the larger predator."
-        },
-        "dehumanize": {
-            definition: "To dehumanize.",
-            example: "People often used the word 'dehumanize' when discussing everyday topics."
-        },
-        "delicado": {
-            definition: "Delicado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'delicado' when discussing everyday topics."
-        },
-        "delicate": {
-            definition: "Delicate: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'delicate' when discussing everyday topics."
-        },
-        "denounce": {
-            definition: "To denounce.",
-            example: "People often used the word 'denounce' when discussing everyday topics."
-        },
-        "dependence": {
-            definition: "Dependence: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dependence' when discussing everyday topics."
-        },
-        "dependencia": {
-            definition: "Dependencia: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dependencia' when discussing everyday topics."
-        },
-        "deplorable": {
-            definition: "Capable of being deplor.",
-            example: "People often used the word 'deplorable' when discussing everyday topics."
-        },
-        "deprimido": {
-            definition: "Deprimido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'deprimido' when discussing everyday topics."
-        },
-        "desafiante": {
-            definition: "Desafiante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'desafiante' when discussing everyday topics."
-        },
-        "desafíos": {
-            definition: "Desafíos: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'desafíos' when discussing everyday topics."
-        },
-        "desarrollo": {
-            definition: "Desarrollo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'desarrollo' when discussing everyday topics."
-        },
-        "desayuno": {
-            definition: "Desayuno: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'desayuno' when discussing everyday topics."
-        },
-        "descomunal": {
-            definition: "Descomunal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'descomunal' when discussing everyday topics."
-        },
-        "desconsolado": {
-            definition: "Desconsolado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'desconsolado' when discussing everyday topics."
-        },
-        "deslumbrante": {
-            definition: "Deslumbrante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'deslumbrante' when discussing everyday topics."
-        },
-        "desolado": {
-            definition: "Desolado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'desolado' when discussing everyday topics."
-        },
-        "despair": {
-            definition: "Despair: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'despair' when discussing everyday topics."
-        },
-        "despondent": {
-            definition: "Despondent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'despondent' when discussing everyday topics."
-        },
-        "destitute": {
-            definition: "Destitute: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'destitute' when discussing everyday topics."
-        },
-        "determination": {
-            definition: "The act or process of determinaing.",
-            example: "People often used the word 'determination' when discussing everyday topics."
-        },
-        "deuda": {
-            definition: "Deuda: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'deuda' when discussing everyday topics."
-        },
-        "development": {
-            definition: "Development: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'development' when discussing everyday topics."
-        },
-        "device": {
-            definition: "Device: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'device' when discussing everyday topics."
-        },
-        "dialogue": {
-            definition: "Dialogue: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dialogue' when discussing everyday topics."
-        },
-        "diaphane": {
-            definition: "Diaphane: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'diaphane' when discussing everyday topics."
-        },
-        "diaphanous": {
-            definition: "Light, delicate, and translucent.",
-            example: "The curtains were made of a diaphanous, white fabric."
-        },
-        "dichoso": {
-            definition: "Dichoso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dichoso' when discussing everyday topics."
-        },
-        "difficile": {
-            definition: "Difficile: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'difficile' when discussing everyday topics."
-        },
-        "difficult": {
-            definition: "Difficult: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'difficult' when discussing everyday topics."
-        },
-        "diffident": {
-            definition: "Diffident: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'diffident' when discussing everyday topics."
-        },
-        "difícil": {
-            definition: "Difícil: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'difícil' when discussing everyday topics."
-        },
-        "dignes": {
-            definition: "Dignes: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dignes' when discussing everyday topics."
-        },
-        "dilapidated": {
-            definition: "Dilapidated: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dilapidated' when discussing everyday topics."
-        },
-        "diligent": {
-            definition: "Diligent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'diligent' when discussing everyday topics."
-        },
-        "diminutive": {
-            definition: "Extremely or unusually small.",
-            example: "The tiny bird was a diminutive creature compared to the eagle."
-        },
-        "diminuto": {
-            definition: "Diminuto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'diminuto' when discussing everyday topics."
-        },
-        "dirty": {
-            definition: "Dirty: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dirty' when discussing everyday topics."
-        },
-        "disciplina": {
-            definition: "Disciplina: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'disciplina' when discussing everyday topics."
-        },
-        "discipline": {
-            definition: "Discipline: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'discipline' when discussing everyday topics."
-        },
-        "disconsolate": {
-            definition: "Disconsolate: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'disconsolate' when discussing everyday topics."
-        },
-        "dispositivo": {
-            definition: "Dispositivo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dispositivo' when discussing everyday topics."
-        },
-        "disprove": {
-            definition: "Disprove: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'disprove' when discussing everyday topics."
-        },
-        "disruptive": {
-            definition: "Having the quality of being disrupt.",
-            example: "People often used the word 'disruptive' when discussing everyday topics."
-        },
-        "distracción": {
-            definition: "Distracción: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'distracción' when discussing everyday topics."
-        },
-        "distraction": {
-            definition: "The act or process of distracing.",
-            example: "People often used the word 'distraction' when discussing everyday topics."
-        },
-        "diáfano": {
-            definition: "Diáfano: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'diáfano' when discussing everyday topics."
-        },
-        "diálogo": {
-            definition: "Diálogo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'diálogo' when discussing everyday topics."
-        },
-        "docto": {
-            definition: "Docto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'docto' when discussing everyday topics."
-        },
-        "dolefulness": {
-            definition: "Dolefulness: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dolefulness' when discussing everyday topics."
-        },
-        "dolor": {
-            definition: "Dolor: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dolor' when discussing everyday topics."
-        },
-        "down": {
-            definition: "Down: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'down' when discussing everyday topics."
-        },
-        "dreadful": {
-            definition: "Causing or involving great suffering, fear, or unhappiness.",
-            example: "The news of the accident was absolutely dreadful."
-        },
-        "droll": {
-            definition: "Droll: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'droll' when discussing everyday topics."
-        },
-        "dull": {
-            definition: "Dull: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dull' when discussing everyday topics."
-        },
-        "dur": {
-            definition: "Dur: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'dur' when discussing everyday topics."
-        },
-        "durabilité": {
-            definition: "Durabilité: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'durabilité' when discussing everyday topics."
-        },
-        "duro": {
-            definition: "Duro: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'duro' when discussing everyday topics."
-        },
-        "décrépit": {
-            definition: "Décrépit: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'décrépit' when discussing everyday topics."
-        },
-        "défis": {
-            definition: "Défis: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'défis' when discussing everyday topics."
-        },
-        "déjeuner": {
-            definition: "A person or thing that déjeuner or performs the action déjeun.",
-            example: "People often used the word 'déjeuner' when discussing everyday topics."
-        },
-        "délectable": {
-            definition: "Capable of being délect.",
-            example: "People often used the word 'délectable' when discussing everyday topics."
-        },
-        "délicat": {
-            definition: "Délicat: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'délicat' when discussing everyday topics."
-        },
-        "déprimé": {
-            definition: "Déprimé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'déprimé' when discussing everyday topics."
-        },
-        "désespéré": {
-            definition: "Désespéré: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'désespéré' when discussing everyday topics."
-        },
-        "déterminant": {
-            definition: "Déterminant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'déterminant' when discussing everyday topics."
-        },
-        "détestable": {
-            definition: "Capable of being détest.",
-            example: "People often used the word 'détestable' when discussing everyday topics."
-        },
-        "développement": {
-            definition: "Développement: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'développement' when discussing everyday topics."
-        },
-        "easy": {
-            definition: "Easy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'easy' when discussing everyday topics."
-        },
-        "economical": {
-            definition: "Economical: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'economical' when discussing everyday topics."
-        },
-        "económico": {
-            definition: "Económico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'económico' when discussing everyday topics."
-        },
-        "ecstatic": {
-            definition: "Ecstatic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ecstatic' when discussing everyday topics."
-        },
-        "efectivo": {
-            definition: "Efectivo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'efectivo' when discussing everyday topics."
-        },
-        "effective": {
-            definition: "Having the quality of being effect.",
-            example: "People often used the word 'effective' when discussing everyday topics."
-        },
-        "effervesce": {
-            definition: "Effervesce: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'effervesce' when discussing everyday topics."
-        },
-        "effervescent": {
-            definition: "Effervescent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'effervescent' when discussing everyday topics."
-        },
-        "efficace": {
-            definition: "Efficace: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'efficace' when discussing everyday topics."
-        },
-        "efficacité": {
-            definition: "Efficacité: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'efficacité' when discussing everyday topics."
-        },
-        "efficiency": {
-            definition: "Efficiency: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'efficiency' when discussing everyday topics."
-        },
-        "efficient": {
-            definition: "Efficient: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'efficient' when discussing everyday topics."
-        },
-        "effort": {
-            definition: "Effort: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'effort' when discussing everyday topics."
-        },
-        "effortless": {
-            definition: "Having the quality of being effort.",
-            example: "People often used the word 'effortless' when discussing everyday topics."
-        },
-        "effrayant": {
-            definition: "Effrayant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'effrayant' when discussing everyday topics."
-        },
-        "effulgent": {
-            definition: "Effulgent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'effulgent' when discussing everyday topics."
-        },
-        "eficiencia": {
-            definition: "Eficiencia: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'eficiencia' when discussing everyday topics."
-        },
-        "eficiente": {
-            definition: "Eficiente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'eficiente' when discussing everyday topics."
-        },
-        "ejercicio": {
-            definition: "Ejercicio: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ejercicio' when discussing everyday topics."
-        },
-        "elated": {
-            definition: "Elated: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'elated' when discussing everyday topics."
-        },
-        "elation": {
-            definition: "The act or process of elaing.",
-            example: "People often used the word 'elation' when discussing everyday topics."
-        },
-        "elderly": {
-            definition: "In a manner that is elder.",
-            example: "People often used the word 'elderly' when discussing everyday topics."
-        },
-        "eldritch": {
-            definition: "Eldritch: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'eldritch' when discussing everyday topics."
-        },
-        "electrizante": {
-            definition: "Electrizante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'electrizante' when discussing everyday topics."
-        },
-        "elemental": {
-            definition: "Elemental: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'elemental' when discussing everyday topics."
-        },
-        "elementary": {
-            definition: "Elementary: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'elementary' when discussing everyday topics."
-        },
-        "eloquent": {
-            definition: "Eloquent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'eloquent' when discussing everyday topics."
-        },
-        "emaciated": {
-            definition: "Emaciated: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'emaciated' when discussing everyday topics."
-        },
-        "emblematic": {
-            definition: "Serving as a symbol of a particular quality or concept.",
-            example: "The eagle is emblematic of strength and freedom."
-        },
-        "emeritus": {
-            definition: "Retired but allowed to retain their title as an honor.",
-            example: "The emeritus dean still attended university ceremonies."
-        },
-        "emotion": {
-            definition: "The act or process of emoing.",
-            example: "People often used the word 'emotion' when discussing everyday topics."
-        },
-        "empathy": {
-            definition: "Empathy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'empathy' when discussing everyday topics."
-        },
-        "empatía": {
-            definition: "Empatía: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'empatía' when discussing everyday topics."
-        },
-        "empty": {
-            definition: "Empty: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'empty' when discussing everyday topics."
-        },
-        "en colère": {
-            definition: "En colère: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'en colère' when discussing everyday topics."
-        },
-        "encrespado": {
-            definition: "Encrespado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'encrespado' when discussing everyday topics."
-        },
-        "endurance": {
-            definition: "Endurance: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'endurance' when discussing everyday topics."
-        },
-        "enfadado": {
-            definition: "Enfadado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'enfadado' when discussing everyday topics."
-        },
-        "enfantin": {
-            definition: "Enfantin: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'enfantin' when discussing everyday topics."
-        },
-        "engagement": {
-            definition: "Engagement: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'engagement' when discussing everyday topics."
-        },
-        "engaging": {
-            definition: "Being or performing the action of engaging or causing that action to happen.",
-            example: "People often used the word 'engaging' when discussing everyday topics."
-        },
-        "enhance": {
-            definition: "To enhance.",
-            example: "People often used the word 'enhance' when discussing everyday topics."
-        },
-        "enliven": {
-            definition: "Enliven: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'enliven' when discussing everyday topics."
-        },
-        "ennui": {
-            definition: "Ennui: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ennui' when discussing everyday topics."
-        },
-        "enojado": {
-            definition: "Enojado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'enojado' when discussing everyday topics."
-        },
-        "enorme": {
-            definition: "Enorme: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'enorme' when discussing everyday topics."
-        },
-        "enormous": {
-            definition: "Having the quality of being enorm.",
-            example: "People often used the word 'enormous' when discussing everyday topics."
-        },
-        "enrapture": {
-            definition: "Enrapture: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'enrapture' when discussing everyday topics."
-        },
-        "enrichment": {
-            definition: "Enrichment: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'enrichment' when discussing everyday topics."
-        },
-        "entertaining": {
-            definition: "Being or performing the action of entertaining or causing that action to happen.",
-            example: "People often used the word 'entertaining' when discussing everyday topics."
-        },
-        "enthralling": {
-            definition: "Being or performing the action of enthralling or causing that action to happen.",
-            example: "People often used the word 'enthralling' when discussing everyday topics."
-        },
-        "entorno": {
-            definition: "Entorno: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'entorno' when discussing everyday topics."
-        },
-        "entrenamiento": {
-            definition: "Entrenamiento: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'entrenamiento' when discussing everyday topics."
-        },
-        "entrepreneur": {
-            definition: "A person who organizes and operates a business.",
-            example: "As a young entrepreneur, she started her own tech company."
-        },
-        "environment": {
-            definition: "Environment: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'environment' when discussing everyday topics."
-        },
-        "envoûtant": {
-            definition: "Envoûtant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'envoûtant' when discussing everyday topics."
-        },
-        "ephemeral": {
-            definition: "Lasting for a very short time.",
-            example: "The beauty of a flower is often beautiful but ephemeral."
-        },
-        "epidemic": {
-            definition: "Epidemic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'epidemic' when discussing everyday topics."
-        },
-        "epigram": {
-            definition: "A pithy saying or remark expressing an idea cleverly.",
-            example: "He was known for his witty epigrams about modern life."
-        },
-        "equable": {
-            definition: "Capable of being equ.",
-            example: "People often used the word 'equable' when discussing everyday topics."
-        },
-        "equanimous": {
-            definition: "Having the quality of being equanim.",
-            example: "People often used the word 'equanimous' when discussing everyday topics."
-        },
-        "equilibrio": {
-            definition: "Equilibrio: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'equilibrio' when discussing everyday topics."
-        },
-        "erudite": {
-            definition: "Having or showing great knowledge or learning.",
-            example: "The erudite professor spoke at length about ancient civilizations."
-        },
-        "erudito": {
-            definition: "Erudito: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'erudito' when discussing everyday topics."
-        },
-        "escabroso": {
-            definition: "Escabroso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'escabroso' when discussing everyday topics."
-        },
-        "escala": {
-            definition: "Escala: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'escala' when discussing everyday topics."
-        },
-        "escalofriante": {
-            definition: "Escalofriante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'escalofriante' when discussing everyday topics."
-        },
-        "escucha": {
-            definition: "Escucha: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'escucha' when discussing everyday topics."
-        },
-        "esencial": {
-            definition: "Esencial: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'esencial' when discussing everyday topics."
-        },
-        "esfuerzo": {
-            definition: "Esfuerzo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'esfuerzo' when discussing everyday topics."
-        },
-        "espantoso": {
-            definition: "Espantoso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'espantoso' when discussing everyday topics."
-        },
-        "especulativo": {
-            definition: "Especulativo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'especulativo' when discussing everyday topics."
-        },
-        "espeluznante": {
-            definition: "Espeluznante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'espeluznante' when discussing everyday topics."
-        },
-        "espinoso": {
-            definition: "Espinoso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'espinoso' when discussing everyday topics."
-        },
-        "espléndido": {
-            definition: "Espléndido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'espléndido' when discussing everyday topics."
-        },
-        "essential": {
-            definition: "Essential: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'essential' when discussing everyday topics."
-        },
-        "essentiel": {
-            definition: "Essentiel: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'essentiel' when discussing everyday topics."
-        },
-        "estupendo": {
-            definition: "Estupendo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'estupendo' when discussing everyday topics."
-        },
-        "ethereal": {
-            definition: "Ethereal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ethereal' when discussing everyday topics."
-        },
-        "eufórico": {
-            definition: "Eufórico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'eufórico' when discussing everyday topics."
-        },
-        "euphonious": {
-            definition: "Having the quality of being euphon.",
-            example: "People often used the word 'euphonious' when discussing everyday topics."
-        },
-        "euphoric": {
-            definition: "Euphoric: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'euphoric' when discussing everyday topics."
-        },
-        "euphorique": {
-            definition: "Euphorique: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'euphorique' when discussing everyday topics."
-        },
-        "evident": {
-            definition: "Evident: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'evident' when discussing everyday topics."
-        },
-        "evidente": {
-            definition: "Evidente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'evidente' when discussing everyday topics."
-        },
-        "exalt": {
-            definition: "Exalt: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exalt' when discussing everyday topics."
-        },
-        "exasperado": {
-            definition: "Exasperado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exasperado' when discussing everyday topics."
-        },
-        "exaspéré": {
-            definition: "Exaspéré: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exaspéré' when discussing everyday topics."
-        },
-        "excelente": {
-            definition: "Excelente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'excelente' when discussing everyday topics."
-        },
-        "excellent": {
-            definition: "Excellent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'excellent' when discussing everyday topics."
-        },
-        "excepcional": {
-            definition: "Excepcional: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'excepcional' when discussing everyday topics."
-        },
-        "excruciating": {
-            definition: "Being or performing the action of excruciating or causing that action to happen.",
-            example: "People often used the word 'excruciating' when discussing everyday topics."
-        },
-        "execrable": {
-            definition: "Capable of being execr.",
-            example: "People often used the word 'execrable' when discussing everyday topics."
-        },
-        "exemplary": {
-            definition: "Exemplary: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exemplary' when discussing everyday topics."
-        },
-        "exercice": {
-            definition: "Exercice: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exercice' when discussing everyday topics."
-        },
-        "exercise": {
-            definition: "To exercise.",
-            example: "People often used the word 'exercise' when discussing everyday topics."
-        },
-        "exigu": {
-            definition: "Exigu: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exigu' when discussing everyday topics."
-        },
-        "exiguo": {
-            definition: "Exiguo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exiguo' when discussing everyday topics."
-        },
-        "exiguous": {
-            definition: "Having the quality of being exig.",
-            example: "People often used the word 'exiguous' when discussing everyday topics."
-        },
-        "eximio": {
-            definition: "Eximio: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'eximio' when discussing everyday topics."
-        },
-        "exorbitant": {
-            definition: "Unreasonably high; excessive.",
-            example: "The restaurant charged an exorbitant price for a simple meal."
-        },
-        "expedited": {
-            definition: "Expedited: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'expedited' when discussing everyday topics."
-        },
-        "expeditious": {
-            definition: "Having the quality of being expedit.",
-            example: "People often used the word 'expeditious' when discussing everyday topics."
-        },
-        "expeditivo": {
-            definition: "Expeditivo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'expeditivo' when discussing everyday topics."
-        },
-        "expedito": {
-            definition: "Expedito: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'expedito' when discussing everyday topics."
-        },
-        "exploración": {
-            definition: "Exploración: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exploración' when discussing everyday topics."
-        },
-        "exploration": {
-            definition: "The act or process of exploraing.",
-            example: "People often used the word 'exploration' when discussing everyday topics."
-        },
-        "exponential": {
-            definition: "Exponential: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exponential' when discussing everyday topics."
-        },
-        "expression": {
-            definition: "The act or process of expresing.",
-            example: "People often used the word 'expression' when discussing everyday topics."
-        },
-        "expéditif": {
-            definition: "Expéditif: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'expéditif' when discussing everyday topics."
-        },
-        "exquis": {
-            definition: "Exquis: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exquis' when discussing everyday topics."
-        },
-        "exquisite": {
-            definition: "Exquisite: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exquisite' when discussing everyday topics."
-        },
-        "exquisito": {
-            definition: "Exquisito: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exquisito' when discussing everyday topics."
-        },
-        "extatique": {
-            definition: "Extatique: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'extatique' when discussing everyday topics."
-        },
-        "exultant": {
-            definition: "Exultant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exultant' when discussing everyday topics."
-        },
-        "exultante": {
-            definition: "Exultante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'exultante' when discussing everyday topics."
-        },
-        "exécrable": {
-            definition: "Capable of being exécr.",
-            example: "People often used the word 'exécrable' when discussing everyday topics."
-        },
-        "facile": {
-            definition: "Facile: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'facile' when discussing everyday topics."
-        },
-        "factible": {
-            definition: "Factible: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'factible' when discussing everyday topics."
-        },
-        "fair": {
-            definition: "Fair: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fair' when discussing everyday topics."
-        },
-        "fairness": {
-            definition: "Fairness: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fairness' when discussing everyday topics."
-        },
-        "fallacy": {
-            definition: "Fallacy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fallacy' when discussing everyday topics."
-        },
-        "fantástico": {
-            definition: "Fantástico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fantástico' when discussing everyday topics."
-        },
-        "farcical": {
-            definition: "Farcical: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'farcical' when discussing everyday topics."
-        },
-        "farsighted": {
-            definition: "Having or showing imagination or foresight; able to see far objects clearly.",
-            example: "The CEO's farsighted strategy led the company to long-term success."
-        },
-        "fascinant": {
-            definition: "Fascinant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fascinant' when discussing everyday topics."
-        },
-        "fascinante": {
-            definition: "Fascinante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fascinante' when discussing everyday topics."
-        },
-        "fascinating": {
-            definition: "Being or performing the action of fascinating or causing that action to happen.",
-            example: "People often used the word 'fascinating' when discussing everyday topics."
-        },
-        "fast": {
-            definition: "Fast: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fast' when discussing everyday topics."
-        },
-        "fat": {
-            definition: "Fat: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fat' when discussing everyday topics."
-        },
-        "fatal": {
-            definition: "Causing death; leading to failure or disaster.",
-            example: "A fatal error in the code caused the system to crash."
-        },
-        "fearless": {
-            definition: "Having the quality of being fear.",
-            example: "People often used the word 'fearless' when discussing everyday topics."
-        },
-        "feedback": {
-            definition: "Feedback: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'feedback' when discussing everyday topics."
-        },
-        "feliz": {
-            definition: "Feliz: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'feliz' when discussing everyday topics."
-        },
-        "few": {
-            definition: "Few: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'few' when discussing everyday topics."
-        },
-        "filthy": {
-            definition: "Filthy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'filthy' when discussing everyday topics."
-        },
-        "fine": {
-            definition: "Fine: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fine' when discussing everyday topics."
-        },
-        "firm": {
-            definition: "Firm: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'firm' when discussing everyday topics."
-        },
-        "fisgón": {
-            definition: "Fisgón: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fisgón' when discussing everyday topics."
-        },
-        "flamante": {
-            definition: "Flamante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'flamante' when discussing everyday topics."
-        },
-        "flavor": {
-            definition: "Flavor: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'flavor' when discussing everyday topics."
-        },
-        "fleet": {
-            definition: "Fleet: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fleet' when discussing everyday topics."
-        },
-        "fleet-footed": {
-            definition: "Fleet-footed: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fleet-footed' when discussing everyday topics."
-        },
-        "flexibilidad": {
-            definition: "Flexibilidad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'flexibilidad' when discussing everyday topics."
-        },
-        "flexibility": {
-            definition: "Flexibility: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'flexibility' when discussing everyday topics."
-        },
-        "flimsy": {
-            definition: "Flimsy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'flimsy' when discussing everyday topics."
-        },
-        "flush": {
-            definition: "Flush: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'flush' when discussing everyday topics."
-        },
-        "focus": {
-            definition: "Focus: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'focus' when discussing everyday topics."
-        },
-        "follow-up": {
-            definition: "Follow-up: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'follow-up' when discussing everyday topics."
-        },
-        "fondamental": {
-            definition: "Fondamental: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fondamental' when discussing everyday topics."
-        },
-        "forlorn": {
-            definition: "Forlorn: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'forlorn' when discussing everyday topics."
-        },
-        "formative": {
-            definition: "Having the quality of being format.",
-            example: "People often used the word 'formative' when discussing everyday topics."
-        },
-        "formidable": {
-            definition: "Capable of being formid.",
-            example: "People often used the word 'formidable' when discussing everyday topics."
-        },
-        "fornido": {
-            definition: "Fornido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fornido' when discussing everyday topics."
-        },
-        "fort": {
-            definition: "Fort: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fort' when discussing everyday topics."
-        },
-        "forthright": {
-            definition: "Forthright: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'forthright' when discussing everyday topics."
-        },
-        "fortified": {
-            definition: "Fortified: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fortified' when discussing everyday topics."
-        },
-        "fortuitous": {
-            definition: "Happening by a lucky accident or chance rather than design.",
-            example: "The discovery of the gold mine was completely fortuitous."
-        },
-        "fouineur": {
-            definition: "Fouineur: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fouineur' when discussing everyday topics."
-        },
-        "foul": {
-            definition: "Foul: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'foul' when discussing everyday topics."
-        },
-        "fragile": {
-            definition: "Fragile: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fragile' when discussing everyday topics."
-        },
-        "frail": {
-            definition: "Frail: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frail' when discussing everyday topics."
-        },
-        "frais": {
-            definition: "Frais: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frais' when discussing everyday topics."
-        },
-        "frank": {
-            definition: "Frank: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frank' when discussing everyday topics."
-        },
-        "fraught": {
-            definition: "Fraught: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fraught' when discussing everyday topics."
-        },
-        "freezing": {
-            definition: "Being or performing the action of freezing or causing that action to happen.",
-            example: "People often used the word 'freezing' when discussing everyday topics."
-        },
-        "frenetic": {
-            definition: "Frenetic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frenetic' when discussing everyday topics."
-        },
-        "fresco": {
-            definition: "Fresco: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fresco' when discussing everyday topics."
-        },
-        "fresh": {
-            definition: "Fresh: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fresh' when discussing everyday topics."
-        },
-        "friable": {
-            definition: "Capable of being fri.",
-            example: "People often used the word 'friable' when discussing everyday topics."
-        },
-        "friendly": {
-            definition: "In a manner that is friend.",
-            example: "People often used the word 'friendly' when discussing everyday topics."
-        },
-        "frightening": {
-            definition: "Being or performing the action of frightening or causing that action to happen.",
-            example: "People often used the word 'frightening' when discussing everyday topics."
-        },
-        "frigid": {
-            definition: "Frigid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frigid' when discussing everyday topics."
-        },
-        "frigorifique": {
-            definition: "Frigorifique: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frigorifique' when discussing everyday topics."
-        },
-        "froid": {
-            definition: "Froid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'froid' when discussing everyday topics."
-        },
-        "frolicking": {
-            definition: "Being or performing the action of frolicking or causing that action to happen.",
-            example: "People often used the word 'frolicking' when discussing everyday topics."
-        },
-        "frosty": {
-            definition: "Frosty: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frosty' when discussing everyday topics."
-        },
-        "frozen": {
-            definition: "Frozen: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frozen' when discussing everyday topics."
-        },
-        "frugal": {
-            definition: "Frugal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frugal' when discussing everyday topics."
-        },
-        "frágil": {
-            definition: "Frágil: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frágil' when discussing everyday topics."
-        },
-        "frágilísimo": {
-            definition: "Frágilísimo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frágilísimo' when discussing everyday topics."
-        },
-        "frêle": {
-            definition: "Frêle: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frêle' when discussing everyday topics."
-        },
-        "frío": {
-            definition: "Frío: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'frío' when discussing everyday topics."
-        },
-        "fuerte": {
-            definition: "Fuerte: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fuerte' when discussing everyday topics."
-        },
-        "fugacious": {
-            definition: "Tending to disappear; fleeting.",
-            example: "The fugacious beauty of youth is a common theme in poetry."
-        },
-        "fulfillment": {
-            definition: "Fulfillment: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fulfillment' when discussing everyday topics."
-        },
-        "fulgurant": {
-            definition: "Fulgurant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fulgurant' when discussing everyday topics."
-        },
-        "fulminant": {
-            definition: "Fulminant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fulminant' when discussing everyday topics."
-        },
-        "fulminante": {
-            definition: "Fulminante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fulminante' when discussing everyday topics."
-        },
-        "fundamental": {
-            definition: "Fundamental: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fundamental' when discussing everyday topics."
-        },
-        "funny": {
-            definition: "Funny: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'funny' when discussing everyday topics."
-        },
-        "furieux": {
-            definition: "Furieux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'furieux' when discussing everyday topics."
-        },
-        "furioso": {
-            definition: "Furioso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'furioso' when discussing everyday topics."
-        },
-        "furious": {
-            definition: "Having the quality of being fur.",
-            example: "People often used the word 'furious' when discussing everyday topics."
-        },
-        "future": {
-            definition: "Future: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'future' when discussing everyday topics."
-        },
-        "futuro": {
-            definition: "Futuro: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'futuro' when discussing everyday topics."
-        },
-        "fácil": {
-            definition: "Fácil: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fácil' when discussing everyday topics."
-        },
-        "fâché": {
-            definition: "Fâché: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'fâché' when discussing everyday topics."
-        },
-        "gai": {
-            definition: "Gai: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gai' when discussing everyday topics."
-        },
-        "galante": {
-            definition: "Galante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'galante' when discussing everyday topics."
-        },
-        "gale-force": {
-            definition: "Gale-force: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gale-force' when discussing everyday topics."
-        },
-        "gallant": {
-            definition: "Gallant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gallant' when discussing everyday topics."
-        },
-        "gallardo": {
-            definition: "Gallardo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gallardo' when discussing everyday topics."
-        },
-        "gargantuan": {
-            definition: "Gargantuan: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gargantuan' when discussing everyday topics."
-        },
-        "gargantuesco": {
-            definition: "Gargantuesco: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gargantuesco' when discussing everyday topics."
-        },
-        "gargantuesque": {
-            definition: "Gargantuesque: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gargantuesque' when discussing everyday topics."
-        },
-        "gaunt": {
-            definition: "Gaunt: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gaunt' when discussing everyday topics."
-        },
-        "gelid": {
-            definition: "Gelid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gelid' when discussing everyday topics."
-        },
-        "gelé": {
-            definition: "Gelé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gelé' when discussing everyday topics."
-        },
-        "genial": {
-            definition: "Genial: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'genial' when discussing everyday topics."
-        },
-        "giant": {
-            definition: "Giant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'giant' when discussing everyday topics."
-        },
-        "gifted": {
-            definition: "Gifted: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gifted' when discussing everyday topics."
-        },
-        "gigante": {
-            definition: "Gigante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gigante' when discussing everyday topics."
-        },
-        "gigantesque": {
-            definition: "Gigantesque: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gigantesque' when discussing everyday topics."
-        },
-        "glacial": {
-            definition: "Glacial: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'glacial' when discussing everyday topics."
-        },
-        "glacé": {
-            definition: "Glacé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'glacé' when discussing everyday topics."
-        },
-        "glad": {
-            definition: "Glad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'glad' when discussing everyday topics."
-        },
-        "gladden": {
-            definition: "Gladden: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gladden' when discussing everyday topics."
-        },
-        "glaçant": {
-            definition: "Glaçant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'glaçant' when discussing everyday topics."
-        },
-        "gleeful": {
-            definition: "Having the quality of being g.",
-            example: "People often used the word 'gleeful' when discussing everyday topics."
-        },
-        "gloom": {
-            definition: "Gloom: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gloom' when discussing everyday topics."
-        },
-        "gloomy": {
-            definition: "Gloomy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gloomy' when discussing everyday topics."
-        },
-        "goals": {
-            definition: "Goals: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'goals' when discussing everyday topics."
-        },
-        "good": {
-            definition: "Good: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'good' when discussing everyday topics."
-        },
-        "gorgeous": {
-            definition: "Having the quality of being gorg.",
-            example: "People often used the word 'gorgeous' when discussing everyday topics."
-        },
-        "gozoso": {
-            definition: "Gozoso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gozoso' when discussing everyday topics."
-        },
-        "grand": {
-            definition: "Grand: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'grand' when discussing everyday topics."
-        },
-        "grande": {
-            definition: "Grande: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'grande' when discussing everyday topics."
-        },
-        "gratifiant": {
-            definition: "Gratifiant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gratifiant' when discussing everyday topics."
-        },
-        "gratificante": {
-            definition: "Gratificante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gratificante' when discussing everyday topics."
-        },
-        "grazing": {
-            definition: "Touching or hitting something lightly in passing; eating grass.",
-            example: "The bullet left only a grazing wound on his shoulder."
-        },
-        "great": {
-            definition: "Great: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'great' when discussing everyday topics."
-        },
-        "grelottant": {
-            definition: "Grelottant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'grelottant' when discussing everyday topics."
-        },
-        "grief": {
-            definition: "Grief: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'grief' when discussing everyday topics."
-        },
-        "grimy": {
-            definition: "Grimy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'grimy' when discussing everyday topics."
-        },
-        "grisant": {
-            definition: "Grisant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'grisant' when discussing everyday topics."
-        },
-        "growth": {
-            definition: "Growth: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'growth' when discussing everyday topics."
-        },
-        "guapo": {
-            definition: "Guapo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'guapo' when discussing everyday topics."
-        },
-        "géant": {
-            definition: "Géant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'géant' when discussing everyday topics."
-        },
-        "gélido": {
-            definition: "Gélido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'gélido' when discussing everyday topics."
-        },
-        "génial": {
-            definition: "Génial: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'génial' when discussing everyday topics."
-        },
-        "habilidades": {
-            definition: "Habilidades: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'habilidades' when discussing everyday topics."
-        },
-        "hacedero": {
-            definition: "Hacedero: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'hacedero' when discussing everyday topics."
-        },
-        "halcyon": {
-            definition: "Halcyon: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'halcyon' when discussing everyday topics."
-        },
-        "happy": {
-            definition: "Happy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'happy' when discussing everyday topics."
-        },
-        "hard": {
-            definition: "Hard: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'hard' when discussing everyday topics."
-        },
-        "hardy": {
-            definition: "Hardy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'hardy' when discussing everyday topics."
-        },
-        "harmonious": {
-            definition: "Forming a pleasing or consistent whole; tuneful.",
-            example: "The colors in the room combined to create a harmonious atmosphere."
-        },
-        "harmony": {
-            definition: "Harmony: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'harmony' when discussing everyday topics."
-        },
-        "harrowing": {
-            definition: "Being or performing the action of harrowing or causing that action to happen.",
-            example: "People often used the word 'harrowing' when discussing everyday topics."
-        },
-        "hasty": {
-            definition: "Hasty: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'hasty' when discussing everyday topics."
-        },
-        "hazardous": {
-            definition: "Having the quality of being hazard.",
-            example: "People often used the word 'hazardous' when discussing everyday topics."
-        },
-        "health": {
-            definition: "Health: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'health' when discussing everyday topics."
-        },
-        "heated": {
-            definition: "Heated: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'heated' when discussing everyday topics."
-        },
-        "heavy": {
-            definition: "Heavy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'heavy' when discussing everyday topics."
-        },
-        "helado": {
-            definition: "Helado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'helado' when discussing everyday topics."
-        },
-        "helpful": {
-            definition: "Having the quality of being help.",
-            example: "People often used the word 'helpful' when discussing everyday topics."
-        },
-        "herculean": {
-            definition: "Herculean: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'herculean' when discussing everyday topics."
-        },
-        "herculéen": {
-            definition: "Herculéen: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'herculéen' when discussing everyday topics."
-        },
-        "hercúleo": {
-            definition: "Hercúleo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'hercúleo' when discussing everyday topics."
-        },
-        "heritage": {
-            definition: "Heritage: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'heritage' when discussing everyday topics."
-        },
-        "hermoso": {
-            definition: "Hermoso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'hermoso' when discussing everyday topics."
-        },
-        "heroic": {
-            definition: "Heroic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'heroic' when discussing everyday topics."
-        },
-        "heroico": {
-            definition: "Heroico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'heroico' when discussing everyday topics."
-        },
-        "heureux": {
-            definition: "Heureux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'heureux' when discussing everyday topics."
-        },
-        "hieratic": {
-            definition: "Of or concerning priests; priestly.",
-            example: "The ancient text was written in a formal, hieratic style."
-        },
-        "high": {
-            definition: "High: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'high' when discussing everyday topics."
-        },
-        "high-octane": {
-            definition: "High-octane: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'high-octane' when discussing everyday topics."
-        },
-        "hilarious": {
-            definition: "Extremely amusing; causing laughter.",
-            example: "His stand-up comedy routine was absolutely hilarious."
-        },
-        "hipnótico": {
-            definition: "Hipnótico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'hipnótico' when discussing everyday topics."
-        },
-        "historic": {
-            definition: "Historic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'historic' when discussing everyday topics."
-        },
-        "hito": {
-            definition: "Hito: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'hito' when discussing everyday topics."
-        },
-        "hivernal": {
-            definition: "Hivernal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'hivernal' when discussing everyday topics."
-        },
-        "hoary": {
-            definition: "Hoary: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'hoary' when discussing everyday topics."
-        },
-        "honest": {
-            definition: "Honest: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'honest' when discussing everyday topics."
-        },
-        "horario": {
-            definition: "Horario: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'horario' when discussing everyday topics."
-        },
-        "horrible": {
-            definition: "Horrible: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'horrible' when discussing everyday topics."
-        },
-        "horrifying": {
-            definition: "Being or performing the action of horrifying or causing that action to happen.",
-            example: "People often used the word 'horrifying' when discussing everyday topics."
-        },
-        "horripilante": {
-            definition: "Horripilante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'horripilante' when discussing everyday topics."
-        },
-        "hospitable": {
-            definition: "Capable of being hospit.",
-            example: "People often used the word 'hospitable' when discussing everyday topics."
-        },
-        "hot": {
-            definition: "Hot: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'hot' when discussing everyday topics."
-        },
-        "huge": {
-            definition: "Huge: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'huge' when discussing everyday topics."
-        },
-        "humorous": {
-            definition: "Having the quality of being humor.",
-            example: "People often used the word 'humorous' when discussing everyday topics."
-        },
-        "hushed": {
-            definition: "Hushed: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'hushed' when discussing everyday topics."
-        },
-        "héros": {
-            definition: "Héros: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'héros' when discussing everyday topics."
-        },
-        "héroïque": {
-            definition: "Héroïque: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'héroïque' when discussing everyday topics."
-        },
-        "iconic": {
-            definition: "Iconic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'iconic' when discussing everyday topics."
-        },
-        "iconoclast": {
-            definition: "A person who attacks cherished beliefs or institutions.",
-            example: "As an iconoclast, he enjoyed challenging traditional art norms."
-        },
-        "icy": {
-            definition: "Icy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'icy' when discussing everyday topics."
-        },
-        "idyllic": {
-            definition: "Idyllic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'idyllic' when discussing everyday topics."
-        },
-        "illuminate": {
-            definition: "Illuminate: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'illuminate' when discussing everyday topics."
-        },
-        "illuminated": {
-            definition: "Lit up; decorated with lights or gold/silver.",
-            example: "The illuminated manuscript was a masterpiece of medieval art."
-        },
-        "imagination": {
-            definition: "The act or process of imaginaing.",
-            example: "People often used the word 'imagination' when discussing everyday topics."
-        },
-        "immaculate": {
-            definition: "Immaculate: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'immaculate' when discussing everyday topics."
-        },
-        "immense": {
-            definition: "Immense: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'immense' when discussing everyday topics."
-        },
-        "impact": {
-            definition: "Impact: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'impact' when discussing everyday topics."
-        },
-        "impacted": {
-            definition: "Impacted: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'impacted' when discussing everyday topics."
-        },
-        "impacto": {
-            definition: "Impacto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'impacto' when discussing everyday topics."
-        },
-        "impeccable": {
-            definition: "Capable of being impecc.",
-            example: "People often used the word 'impeccable' when discussing everyday topics."
-        },
-        "impecunious": {
-            definition: "Having the quality of being impecun.",
-            example: "People often used the word 'impecunious' when discussing everyday topics."
-        },
-        "impenetrable": {
-            definition: "Impossible to pass through or enter; impossible to understand.",
-            example: "The thick jungle was an impenetrable wall of green."
-        },
-        "imperceptible": {
-            definition: "So slight, gradual, or subtle as not to be perceived.",
-            example: "The increase in temperature was almost imperceptible at first."
-        },
-        "impervious": {
-            definition: "Having the quality of being imper.",
-            example: "People often used the word 'impervious' when discussing everyday topics."
-        },
-        "implacable": {
-            definition: "Unable to be placated; relentless or unstoppable.",
-            example: "He faced an implacable enemy who refused to surrender."
-        },
-        "important": {
-            definition: "Important: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'important' when discussing everyday topics."
-        },
-        "importante": {
-            definition: "Importante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'importante' when discussing everyday topics."
-        },
-        "imposing": {
-            definition: "Being or performing the action of imposing or causing that action to happen.",
-            example: "People often used the word 'imposing' when discussing everyday topics."
-        },
-        "impoverished": {
-            definition: "Impoverished: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'impoverished' when discussing everyday topics."
-        },
-        "impregnable": {
-            definition: "Capable of being impregn.",
-            example: "People often used the word 'impregnable' when discussing everyday topics."
-        },
-        "inaudible": {
-            definition: "Inaudible: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'inaudible' when discussing everyday topics."
-        },
-        "incandescent": {
-            definition: "Emitting light as a result of being heated; extremely bright.",
-            example: "The incandescent bulbs provided a warm glow to the room."
-        },
-        "incandescente": {
-            definition: "Incandescente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'incandescente' when discussing everyday topics."
-        },
-        "incensed": {
-            definition: "Incensed: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'incensed' when discussing everyday topics."
-        },
-        "inclement": {
-            definition: "Unpleasantly cold or wet weather.",
-            example: "The match was postponed due to inclement weather conditions."
-        },
-        "inconsolable": {
-            definition: "Capable of being inconsol.",
-            example: "People often used the word 'inconsolable' when discussing everyday topics."
-        },
-        "incontestable": {
-            definition: "Capable of being incontest.",
-            example: "People often used the word 'incontestable' when discussing everyday topics."
-        },
-        "indagador": {
-            definition: "Indagador: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'indagador' when discussing everyday topics."
-        },
-        "indigent": {
-            definition: "Indigent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'indigent' when discussing everyday topics."
-        },
-        "indignado": {
-            definition: "Indignado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'indignado' when discussing everyday topics."
-        },
-        "indomable": {
-            definition: "Capable of being indom.",
-            example: "People often used the word 'indomable' when discussing everyday topics."
-        },
-        "indomitable": {
-            definition: "Capable of being indomit.",
-            example: "People often used the word 'indomitable' when discussing everyday topics."
-        },
-        "indomptable": {
-            definition: "Capable of being indompt.",
-            example: "People often used the word 'indomptable' when discussing everyday topics."
-        },
-        "inestimable": {
-            definition: "Too great to be calculated or estimated.",
-            example: "The museum's collection is of inestimable value."
-        },
-        "inexpensive": {
-            definition: "Having the quality of being inexpen.",
-            example: "People often used the word 'inexpensive' when discussing everyday topics."
-        },
-        "inexpugnable": {
-            definition: "Unable to be taken by assault; unconquerable.",
-            example: "The fortress was built on an inexpugnable cliffside."
-        },
-        "infame": {
-            definition: "Infame: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'infame' when discussing everyday topics."
-        },
-        "infect": {
-            definition: "Infect: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'infect' when discussing everyday topics."
-        },
-        "infeliz": {
-            definition: "Infeliz: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'infeliz' when discussing everyday topics."
-        },
-        "infime": {
-            definition: "Infime: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'infime' when discussing everyday topics."
-        },
-        "infinitesimal": {
-            definition: "Infinitesimal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'infinitesimal' when discussing everyday topics."
-        },
-        "infirm": {
-            definition: "Not physically or mentally strong, especially through age or illness.",
-            example: "The hospital provided care for the infirm and elderly patients."
-        },
-        "influence": {
-            definition: "Influence: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'influence' when discussing everyday topics."
-        },
-        "influencia": {
-            definition: "Influencia: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'influencia' when discussing everyday topics."
-        },
-        "información": {
-            definition: "Información: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'información' when discussing everyday topics."
-        },
-        "information": {
-            definition: "The act or process of informaing.",
-            example: "People often used the word 'information' when discussing everyday topics."
-        },
-        "ingenioso": {
-            definition: "Ingenioso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ingenioso' when discussing everyday topics."
-        },
-        "ingenious": {
-            definition: "Having the quality of being ingen.",
-            example: "People often used the word 'ingenious' when discussing everyday topics."
-        },
-        "ingrained": {
-            definition: "Ingrained: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ingrained' when discussing everyday topics."
-        },
-        "ingredientes": {
-            definition: "Ingredientes: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ingredientes' when discussing everyday topics."
-        },
-        "ingredients": {
-            definition: "Ingredients: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ingredients' when discussing everyday topics."
-        },
-        "ingénieux": {
-            definition: "Ingénieux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ingénieux' when discussing everyday topics."
-        },
-        "inmenso": {
-            definition: "Inmenso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'inmenso' when discussing everyday topics."
-        },
-        "innovación": {
-            definition: "Innovación: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'innovación' when discussing everyday topics."
-        },
-        "innovador": {
-            definition: "Innovador: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'innovador' when discussing everyday topics."
-        },
-        "innovation": {
-            definition: "The act or process of innovaing.",
-            example: "People often used the word 'innovation' when discussing everyday topics."
-        },
-        "innovative": {
-            definition: "Having the quality of being innovat.",
-            example: "People often used the word 'innovative' when discussing everyday topics."
-        },
-        "innumerable": {
-            definition: "Capable of being innumer.",
-            example: "People often used the word 'innumerable' when discussing everyday topics."
-        },
-        "inquiquinant": {
-            definition: "Inquiquinant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'inquiquinant' when discussing everyday topics."
-        },
-        "inquiring": {
-            definition: "Being or performing the action of inquiring or causing that action to happen.",
-            example: "People often used the word 'inquiring' when discussing everyday topics."
-        },
-        "inquisitive": {
-            definition: "Having the quality of being inquisit.",
-            example: "People often used the word 'inquisitive' when discussing everyday topics."
-        },
-        "inquisitivo": {
-            definition: "Inquisitivo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'inquisitivo' when discussing everyday topics."
-        },
-        "insidious": {
-            definition: "Having the quality of being insid.",
-            example: "People often used the word 'insidious' when discussing everyday topics."
-        },
-        "insight": {
-            definition: "Insight: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'insight' when discussing everyday topics."
-        },
-        "insightful": {
-            definition: "Having the quality of being insight.",
-            example: "People often used the word 'insightful' when discussing everyday topics."
-        },
-        "inspiration": {
-            definition: "The act or process of inspiraing.",
-            example: "People often used the word 'inspiration' when discussing everyday topics."
-        },
-        "instantaneous": {
-            definition: "Having the quality of being instantan.",
-            example: "People often used the word 'instantaneous' when discussing everyday topics."
-        },
-        "integrity": {
-            definition: "The quality of being honest and having strong moral principles.",
-            example: "She is a person of great integrity who always keeps her word."
-        },
-        "inteligente": {
-            definition: "Inteligente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'inteligente' when discussing everyday topics."
-        },
-        "intelligent": {
-            definition: "Intelligent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'intelligent' when discussing everyday topics."
-        },
-        "interesado": {
-            definition: "Interesado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'interesado' when discussing everyday topics."
-        },
-        "interesante": {
-            definition: "Interesante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'interesante' when discussing everyday topics."
-        },
-        "interested": {
-            definition: "Interested: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'interested' when discussing everyday topics."
-        },
-        "interesting": {
-            definition: "Being or performing the action of interesting or causing that action to happen.",
-            example: "People often used the word 'interesting' when discussing everyday topics."
-        },
-        "interrogatif": {
-            definition: "Interrogatif: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'interrogatif' when discussing everyday topics."
-        },
-        "intoxicating": {
-            definition: "Extremely exciting or exhilarating; causing a loss of control.",
-            example: "The success of the play was an intoxicating experience for the actors."
-        },
-        "intrepid": {
-            definition: "Intrepid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'intrepid' when discussing everyday topics."
-        },
-        "intrepido": {
-            definition: "Intrepido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'intrepido' when discussing everyday topics."
-        },
-        "intrigante": {
-            definition: "Intrigante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'intrigante' when discussing everyday topics."
-        },
-        "intriguing": {
-            definition: "Being or performing the action of intriguing or causing that action to happen.",
-            example: "People often used the word 'intriguing' when discussing everyday topics."
-        },
-        "intrincado": {
-            definition: "Intrincado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'intrincado' when discussing everyday topics."
-        },
-        "intrépide": {
-            definition: "Intrépide: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'intrépide' when discussing everyday topics."
-        },
-        "intrépido": {
-            definition: "Intrépido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'intrépido' when discussing everyday topics."
-        },
-        "intéressant": {
-            definition: "Intéressant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'intéressant' when discussing everyday topics."
-        },
-        "intéressé": {
-            definition: "Intéressé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'intéressé' when discussing everyday topics."
-        },
-        "invernal": {
-            definition: "Invernal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'invernal' when discussing everyday topics."
-        },
-        "inversión": {
-            definition: "Inversión: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'inversión' when discussing everyday topics."
-        },
-        "investigación": {
-            definition: "Investigación: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'investigación' when discussing everyday topics."
-        },
-        "investment": {
-            definition: "Investment: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'investment' when discussing everyday topics."
-        },
-        "invigorating": {
-            definition: "Being or performing the action of invigorating or causing that action to happen.",
-            example: "People often used the word 'invigorating' when discussing everyday topics."
-        },
-        "invincible": {
-            definition: "Invincible: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'invincible' when discussing everyday topics."
-        },
-        "inédit": {
-            definition: "Inédit: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'inédit' when discussing everyday topics."
-        },
-        "inédito": {
-            definition: "Inédito: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'inédito' when discussing everyday topics."
-        },
-        "iracundo": {
-            definition: "Iracundo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'iracundo' when discussing everyday topics."
-        },
-        "irascible": {
-            definition: "Irascible: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'irascible' when discussing everyday topics."
-        },
-        "irate": {
-            definition: "Irate: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'irate' when discussing everyday topics."
-        },
-        "iron": {
-            definition: "A strong, hard magnetic silvery-gray metal.",
-            example: "The gate was made of heavy wrought iron."
-        },
-        "irreverent": {
-            definition: "Irreverent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'irreverent' when discussing everyday topics."
-        },
-        "irritado": {
-            definition: "Irritado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'irritado' when discussing everyday topics."
-        },
-        "irritated": {
-            definition: "Irritated: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'irritated' when discussing everyday topics."
-        },
-        "irrité": {
-            definition: "Irrité: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'irrité' when discussing everyday topics."
-        },
-        "itinerario": {
-            definition: "Itinerario: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'itinerario' when discussing everyday topics."
-        },
-        "itinerary": {
-            definition: "Itinerary: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'itinerary' when discussing everyday topics."
-        },
-        "joli": {
-            definition: "Joli: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'joli' when discussing everyday topics."
-        },
-        "joyeux": {
-            definition: "Joyeux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'joyeux' when discussing everyday topics."
-        },
-        "joyful": {
-            definition: "Having the quality of being joy.",
-            example: "People often used the word 'joyful' when discussing everyday topics."
-        },
-        "jubilant": {
-            definition: "Jubilant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'jubilant' when discussing everyday topics."
-        },
-        "jubiloso": {
-            definition: "Jubiloso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'jubiloso' when discussing everyday topics."
-        },
-        "judicious": {
-            definition: "Having the quality of being judic.",
-            example: "People often used the word 'judicious' when discussing everyday topics."
-        },
-        "kind": {
-            definition: "Kind: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'kind' when discussing everyday topics."
-        },
-        "knowledge": {
-            definition: "Knowledge: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'knowledge' when discussing everyday topics."
-        },
-        "laborieux": {
-            definition: "Laborieux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'laborieux' when discussing everyday topics."
-        },
-        "laborioso": {
-            definition: "Laborioso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'laborioso' when discussing everyday topics."
-        },
-        "laborious": {
-            definition: "Having the quality of being labor.",
-            example: "People often used the word 'laborious' when discussing everyday topics."
-        },
-        "laconic": {
-            definition: "Laconic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'laconic' when discussing everyday topics."
-        },
-        "lamentable": {
-            definition: "Capable of being lament.",
-            example: "People often used the word 'lamentable' when discussing everyday topics."
-        },
-        "lank": {
-            definition: "Lank: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lank' when discussing everyday topics."
-        },
-        "large": {
-            definition: "Of considerable size, extent, or capacity.",
-            example: "They live in a large house with a beautiful garden."
-        },
-        "late": {
-            definition: "Late: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'late' when discussing everyday topics."
-        },
-        "latest": {
-            definition: "Latest: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'latest' when discussing everyday topics."
-        },
-        "laughter": {
-            definition: "A person or thing that laughter or performs the action laught.",
-            example: "People often used the word 'laughter' when discussing everyday topics."
-        },
-        "leading": {
-            definition: "Most important; guidance or direction.",
-            example: "She is a leading expert in the field of renewable energy."
-        },
-        "lean": {
-            definition: "Lean: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lean' when discussing everyday topics."
-        },
-        "learning": {
-            definition: "Being or performing the action of learning or causing that action to happen.",
-            example: "People often used the word 'learning' when discussing everyday topics."
-        },
-        "legacy": {
-            definition: "Legacy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'legacy' when discussing everyday topics."
-        },
-        "legado": {
-            definition: "Legado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'legado' when discussing everyday topics."
-        },
-        "leste": {
-            definition: "Leste: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'leste' when discussing everyday topics."
-        },
-        "lethargic": {
-            definition: "Affected by lethargy; sluggish and apathetic.",
-            example: "He felt lethargic after eating a large and heavy lunch."
-        },
-        "ligero": {
-            definition: "Ligero: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ligero' when discussing everyday topics."
-        },
-        "light": {
-            definition: "Light: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'light' when discussing everyday topics."
-        },
-        "lighten": {
-            definition: "Lighten: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lighten' when discussing everyday topics."
-        },
-        "liliputiense": {
-            definition: "Liliputiense: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'liliputiense' when discussing everyday topics."
-        },
-        "lilliputian": {
-            definition: "Lilliputian: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lilliputian' when discussing everyday topics."
-        },
-        "lilliputien": {
-            definition: "Lilliputien: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lilliputien' when discussing everyday topics."
-        },
-        "limpid": {
-            definition: "Limpid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'limpid' when discussing everyday topics."
-        },
-        "limpide": {
-            definition: "Limpide: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'limpide' when discussing everyday topics."
-        },
-        "limpio": {
-            definition: "Limpio: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'limpio' when discussing everyday topics."
-        },
-        "lindo": {
-            definition: "Lindo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lindo' when discussing everyday topics."
-        },
-        "listening": {
-            definition: "Being or performing the action of listening or causing that action to happen.",
-            example: "People often used the word 'listening' when discussing everyday topics."
-        },
-        "listo": {
-            definition: "Listo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'listo' when discussing everyday topics."
-        },
-        "lit": {
-            definition: "Lit: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lit' when discussing everyday topics."
-        },
-        "little": {
-            definition: "Little: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'little' when discussing everyday topics."
-        },
-        "livid": {
-            definition: "Livid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'livid' when discussing everyday topics."
-        },
-        "llevadero": {
-            definition: "Llevadero: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'llevadero' when discussing everyday topics."
-        },
-        "loaded": {
-            definition: "Loaded: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'loaded' when discussing everyday topics."
-        },
-        "logro": {
-            definition: "Logro: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'logro' when discussing everyday topics."
-        },
-        "long": {
-            definition: "Long: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'long' when discussing everyday topics."
-        },
-        "long-standing": {
-            definition: "Being or performing the action of long-standing or causing that action to happen.",
-            example: "People often used the word 'long-standing' when discussing everyday topics."
-        },
-        "lots": {
-            definition: "Lots: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lots' when discussing everyday topics."
-        },
-        "loud": {
-            definition: "Loud: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'loud' when discussing everyday topics."
-        },
-        "lovely": {
-            definition: "In a manner that is love.",
-            example: "People often used the word 'lovely' when discussing everyday topics."
-        },
-        "low": {
-            definition: "Low: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'low' when discussing everyday topics."
-        },
-        "low-cost": {
-            definition: "Low-cost: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'low-cost' when discussing everyday topics."
-        },
-        "lucent": {
-            definition: "Lucent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lucent' when discussing everyday topics."
-        },
-        "lucid": {
-            definition: "Lucid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lucid' when discussing everyday topics."
-        },
-        "lucide": {
-            definition: "Lucide: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lucide' when discussing everyday topics."
-        },
-        "lugubre": {
-            definition: "Lugubre: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lugubre' when discussing everyday topics."
-        },
-        "lugubriousness": {
-            definition: "Lugubriousness: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lugubriousness' when discussing everyday topics."
-        },
-        "luminous": {
-            definition: "Full of or shedding light; bright or shining, especially in the dark.",
-            example: "The jellyfish were luminous, lighting up the dark ocean water."
-        },
-        "lunch": {
-            definition: "A meal eaten in the middle of the day.",
-            example: "People often used the word 'lunch' when discussing everyday topics."
-        },
-        "límites": {
-            definition: "Límites: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'límites' when discussing everyday topics."
-        },
-        "lúcido": {
-            definition: "Lúcido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'lúcido' when discussing everyday topics."
-        },
-        "macabre": {
-            definition: "Macabre: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'macabre' when discussing everyday topics."
-        },
-        "macabro": {
-            definition: "Macabro: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'macabro' when discussing everyday topics."
-        },
-        "mad": {
-            definition: "Mad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mad' when discussing everyday topics."
-        },
-        "magnanime": {
-            definition: "Magnanime: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'magnanime' when discussing everyday topics."
-        },
-        "magnanimous": {
-            definition: "Generous or forgiving, especially toward a rival or less powerful person.",
-            example: "It was magnanimous of him to admit his mistake publicly."
-        },
-        "magnifique": {
-            definition: "Magnifique: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'magnifique' when discussing everyday topics."
-        },
-        "magnánimo": {
-            definition: "Magnánimo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'magnánimo' when discussing everyday topics."
-        },
-        "majeur": {
-            definition: "Majeur: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'majeur' when discussing everyday topics."
-        },
-        "major": {
-            definition: "Major: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'major' when discussing everyday topics."
-        },
-        "malaisé": {
-            definition: "Malaisé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'malaisé' when discussing everyday topics."
-        },
-        "malheureux": {
-            definition: "Malheureux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'malheureux' when discussing everyday topics."
-        },
-        "malin": {
-            definition: "Malin: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'malin' when discussing everyday topics."
-        },
-        "malo": {
-            definition: "Malo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'malo' when discussing everyday topics."
-        },
-        "mammoth": {
-            definition: "Mammoth: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mammoth' when discussing everyday topics."
-        },
-        "manifest": {
-            definition: "Manifest: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'manifest' when discussing everyday topics."
-        },
-        "manifesto": {
-            definition: "A public declaration of policy and aims.",
-            example: "The political party released its election manifesto yesterday."
-        },
-        "manifiesto": {
-            definition: "Manifiesto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'manifiesto' when discussing everyday topics."
-        },
-        "maravilloso": {
-            definition: "Maravilloso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'maravilloso' when discussing everyday topics."
-        },
-        "masivo": {
-            definition: "Masivo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'masivo' when discussing everyday topics."
-        },
-        "massif": {
-            definition: "Massif: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'massif' when discussing everyday topics."
-        },
-        "massive": {
-            definition: "Having the quality of being ma.",
-            example: "People often used the word 'massive' when discussing everyday topics."
-        },
-        "matinée": {
-            definition: "Matinée: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'matinée' when discussing everyday topics."
-        },
-        "mauvais": {
-            definition: "Mauvais: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mauvais' when discussing everyday topics."
-        },
-        "mañana": {
-            definition: "Mañana: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mañana' when discussing everyday topics."
-        },
-        "meager": {
-            definition: "A person or thing that meager or performs the action meag.",
-            example: "People often used the word 'meager' when discussing everyday topics."
-        },
-        "meaning": {
-            definition: "Being or performing the action of meaning or causing that action to happen.",
-            example: "People often used the word 'meaning' when discussing everyday topics."
-        },
-        "medular": {
-            definition: "Medular: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'medular' when discussing everyday topics."
-        },
-        "meek": {
-            definition: "Meek: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'meek' when discussing everyday topics."
-        },
-        "melancholy": {
-            definition: "In a manner that is melancho.",
-            example: "People often used the word 'melancholy' when discussing everyday topics."
-        },
-        "melancólico": {
-            definition: "Melancólico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'melancólico' when discussing everyday topics."
-        },
-        "memories": {
-            definition: "Memories: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'memories' when discussing everyday topics."
-        },
-        "menacing": {
-            definition: "Being or performing the action of menacing or causing that action to happen.",
-            example: "People often used the word 'menacing' when discussing everyday topics."
-        },
-        "menu": {
-            definition: "Menu: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'menu' when discussing everyday topics."
-        },
-        "menudo": {
-            definition: "Menudo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'menudo' when discussing everyday topics."
-        },
-        "mercurial": {
-            definition: "Mercurial: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mercurial' when discussing everyday topics."
-        },
-        "merry": {
-            definition: "Merry: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'merry' when discussing everyday topics."
-        },
-        "mesmerizing": {
-            definition: "Being or performing the action of mesmerizing or causing that action to happen.",
-            example: "People often used the word 'mesmerizing' when discussing everyday topics."
-        },
-        "metas": {
-            definition: "Metas: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'metas' when discussing everyday topics."
-        },
-        "meteoric": {
-            definition: "Meteoric: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'meteoric' when discussing everyday topics."
-        },
-        "meticulous": {
-            definition: "Showing great attention to detail; very careful and precise.",
-            example: "She was meticulous in her preparations for the final exam."
-        },
-        "microscopic": {
-            definition: "So small as to be visible only with a microscope.",
-            example: "Bacteria are microscopic organisms that can be found everywhere."
-        },
-        "microscopique": {
-            definition: "Microscopique: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'microscopique' when discussing everyday topics."
-        },
-        "microscópico": {
-            definition: "Microscópico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'microscópico' when discussing everyday topics."
-        },
-        "mighty": {
-            definition: "Mighty: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mighty' when discussing everyday topics."
-        },
-        "mignon": {
-            definition: "Mignon: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mignon' when discussing everyday topics."
-        },
-        "milestone": {
-            definition: "Milestone: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'milestone' when discussing everyday topics."
-        },
-        "mindfulness": {
-            definition: "Mindfulness: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mindfulness' when discussing everyday topics."
-        },
-        "mini": {
-            definition: "Mini: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mini' when discussing everyday topics."
-        },
-        "minimalist": {
-            definition: "Minimalist: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'minimalist' when discussing everyday topics."
-        },
-        "minimum": {
-            definition: "Minimum: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'minimum' when discussing everyday topics."
-        },
-        "minor": {
-            definition: "Minor: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'minor' when discussing everyday topics."
-        },
-        "minuscule": {
-            definition: "Minuscule: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'minuscule' when discussing everyday topics."
-        },
-        "minute": {
-            definition: "Minute: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'minute' when discussing everyday topics."
-        },
-        "minúsculo": {
-            definition: "Minúsculo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'minúsculo' when discussing everyday topics."
-        },
-        "modern": {
-            definition: "Modern: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'modern' when discussing everyday topics."
-        },
-        "moderne": {
-            definition: "Moderne: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'moderne' when discussing everyday topics."
-        },
-        "moderno": {
-            definition: "Moderno: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'moderno' when discussing everyday topics."
-        },
-        "molesto": {
-            definition: "Molesto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'molesto' when discussing everyday topics."
-        },
-        "mollifying": {
-            definition: "Being or performing the action of mollifying or causing that action to happen.",
-            example: "People often used the word 'mollifying' when discussing everyday topics."
-        },
-        "momentous": {
-            definition: "Having the quality of being moment.",
-            example: "People often used the word 'momentous' when discussing everyday topics."
-        },
-        "moneyed": {
-            definition: "Moneyed: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'moneyed' when discussing everyday topics."
-        },
-        "monologue": {
-            definition: "Monologue: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'monologue' when discussing everyday topics."
-        },
-        "monstrous": {
-            definition: "Having the quality of being monstr.",
-            example: "People often used the word 'monstrous' when discussing everyday topics."
-        },
-        "monumental": {
-            definition: "Great in importance, extent, or size.",
-            example: "The discovery of gravity was a monumental moment in science."
-        },
-        "mood": {
-            definition: "Mood: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mood' when discussing everyday topics."
-        },
-        "morning": {
-            definition: "Being or performing the action of morning or causing that action to happen.",
-            example: "People often used the word 'morning' when discussing everyday topics."
-        },
-        "morose": {
-            definition: "Morose: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'morose' when discussing everyday topics."
-        },
-        "motivación": {
-            definition: "Motivación: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'motivación' when discussing everyday topics."
-        },
-        "motivation": {
-            definition: "The act or process of motivaing.",
-            example: "People often used the word 'motivation' when discussing everyday topics."
-        },
-        "much": {
-            definition: "Much: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'much' when discussing everyday topics."
-        },
-        "muffled": {
-            definition: "Not loud because of being obstructed in some way; muted.",
-            example: "I heard the muffled sound of voices through the thick wall."
-        },
-        "multitudinous": {
-            definition: "Having the quality of being multitudin.",
-            example: "People often used the word 'multitudinous' when discussing everyday topics."
-        },
-        "mute": {
-            definition: "Mute: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mute' when discussing everyday topics."
-        },
-        "myriad": {
-            definition: "Myriad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'myriad' when discussing everyday topics."
-        },
-        "mystical": {
-            definition: "Relating to or characteristic of mysticism; inspiring awe.",
-            example: "He had a mystical experience while meditating in the forest."
-        },
-        "mythic": {
-            definition: "Mythic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mythic' when discussing everyday topics."
-        },
-        "médiocre": {
-            definition: "Médiocre: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'médiocre' when discussing everyday topics."
-        },
-        "mélancolique": {
-            definition: "Mélancolique: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'mélancolique' when discussing everyday topics."
-        },
-        "naciente": {
-            definition: "Naciente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'naciente' when discussing everyday topics."
-        },
-        "naissant": {
-            definition: "Naissant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'naissant' when discussing everyday topics."
-        },
-        "narrow": {
-            definition: "Narrow: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'narrow' when discussing everyday topics."
-        },
-        "nascent": {
-            definition: "Nascent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'nascent' when discussing everyday topics."
-        },
-        "nasty": {
-            definition: "Nasty: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'nasty' when discussing everyday topics."
-        },
-        "necessitous": {
-            definition: "Having the quality of being necessit.",
-            example: "People often used the word 'necessitous' when discussing everyday topics."
-        },
-        "needy": {
-            definition: "Needy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'needy' when discussing everyday topics."
-        },
-        "nefasto": {
-            definition: "Nefasto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'nefasto' when discussing everyday topics."
-        },
-        "negligible": {
-            definition: "So small or unimportant as to be not worth considering.",
-            example: "The risk of side effects from the medication is negligible."
-        },
-        "neuf": {
-            definition: "Neuf: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'neuf' when discussing everyday topics."
-        },
-        "new": {
-            definition: "New: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'new' when discussing everyday topics."
-        },
-        "newfangled": {
-            definition: "Newfangled: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'newfangled' when discussing everyday topics."
-        },
-        "nice": {
-            definition: "Nice: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'nice' when discussing everyday topics."
-        },
-        "nimble": {
-            definition: "Nimble: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'nimble' when discussing everyday topics."
-        },
-        "nippy": {
-            definition: "Nippy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'nippy' when discussing everyday topics."
-        },
-        "noisy": {
-            definition: "Noisy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'noisy' when discussing everyday topics."
-        },
-        "nominal": {
-            definition: "Nominal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'nominal' when discussing everyday topics."
-        },
-        "nosy": {
-            definition: "Nosy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'nosy' when discussing everyday topics."
-        },
-        "nouveau": {
-            definition: "Nouveau: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'nouveau' when discussing everyday topics."
-        },
-        "novateur": {
-            definition: "Novateur: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'novateur' when discussing everyday topics."
-        },
-        "novel": {
-            definition: "Novel: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'novel' when discussing everyday topics."
-        },
-        "nuance": {
-            definition: "A subtle difference in or shade of meaning, expression, or color.",
-            example: "The actor captured every nuance of the character's emotions."
-        },
-        "nuevo": {
-            definition: "Nuevo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'nuevo' when discussing everyday topics."
-        },
-        "numinous": {
-            definition: "Having the quality of being numin.",
-            example: "People often used the word 'numinous' when discussing everyday topics."
-        },
-        "nutrición": {
-            definition: "Nutrición: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'nutrición' when discussing everyday topics."
-        },
-        "nutrition": {
-            definition: "The act or process of nutriing.",
-            example: "People often used the word 'nutrition' when discussing everyday topics."
-        },
-        "obsolete": {
-            definition: "No longer produced or used; out of date.",
-            example: "Typewriters have become largely obsolete in the age of computers."
-        },
-        "obvious": {
-            definition: "Having the quality of being ob.",
-            example: "People often used the word 'obvious' when discussing everyday topics."
-        },
-        "okay": {
-            definition: "Okay: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'okay' when discussing everyday topics."
-        },
-        "old": {
-            definition: "Old: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'old' when discussing everyday topics."
-        },
-        "ominous": {
-            definition: "Having the quality of being omin.",
-            example: "People often used the word 'ominous' when discussing everyday topics."
-        },
-        "omnipresent": {
-            definition: "Widely or constantly encountered; common or widespread.",
-            example: "The fear of failure is often omnipresent in high-stakes environments."
-        },
-        "omniscient": {
-            definition: "Knowing everything; having infinite awareness or insight.",
-            example: "The narrator of the story was omniscient, knowing every character's thoughts."
-        },
-        "onerous": {
-            definition: "Having the quality of being oner.",
-            example: "People often used the word 'onerous' when discussing everyday topics."
-        },
-        "open": {
-            definition: "Open: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'open' when discussing everyday topics."
-        },
-        "oportunidades": {
-            definition: "Oportunidades: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'oportunidades' when discussing everyday topics."
-        },
-        "opportunities": {
-            definition: "Opportunities: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'opportunities' when discussing everyday topics."
-        },
-        "opportunités": {
-            definition: "Opportunités: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'opportunités' when discussing everyday topics."
-        },
-        "optimal": {
-            definition: "Optimal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'optimal' when discussing everyday topics."
-        },
-        "optimizado": {
-            definition: "Optimizado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'optimizado' when discussing everyday topics."
-        },
-        "opulent": {
-            definition: "Opulent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'opulent' when discussing everyday topics."
-        },
-        "organización": {
-            definition: "Organización: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'organización' when discussing everyday topics."
-        },
-        "organization": {
-            definition: "The act or process of organizaing.",
-            example: "People often used the word 'organization' when discussing everyday topics."
-        },
-        "ornamental": {
-            definition: "Serving as an ornament; decorative.",
-            example: "The garden was filled with ornamental shrubs and flowers."
-        },
-        "oscillating": {
-            definition: "Moving or swinging back and forth at a regular speed.",
-            example: "The oscillating fan kept the room cool during the summer heat."
-        },
-        "outreach": {
-            definition: "Outreach: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'outreach' when discussing everyday topics."
-        },
-        "outré": {
-            definition: "Outré: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'outré' when discussing everyday topics."
-        },
-        "paciencia": {
-            definition: "Paciencia: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'paciencia' when discussing everyday topics."
-        },
-        "painless": {
-            definition: "Having the quality of being pain.",
-            example: "People often used the word 'painless' when discussing everyday topics."
-        },
-        "palpitant": {
-            definition: "Palpitant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'palpitant' when discussing everyday topics."
-        },
-        "paltry": {
-            definition: "Paltry: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'paltry' when discussing everyday topics."
-        },
-        "pan comido": {
-            definition: "Pan comido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pan comido' when discussing everyday topics."
-        },
-        "paramount": {
-            definition: "Paramount: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'paramount' when discussing everyday topics."
-        },
-        "parcimonieux": {
-            definition: "Parcimonieux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'parcimonieux' when discussing everyday topics."
-        },
-        "parco": {
-            definition: "Parco: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'parco' when discussing everyday topics."
-        },
-        "parsimonious": {
-            definition: "Having the quality of being parsimon.",
-            example: "People often used the word 'parsimonious' when discussing everyday topics."
-        },
-        "passionate": {
-            definition: "Passionate: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'passionate' when discussing everyday topics."
-        },
-        "passionnant": {
-            definition: "Passionnant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'passionnant' when discussing everyday topics."
-        },
-        "passionné": {
-            definition: "Passionné: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'passionné' when discussing everyday topics."
-        },
-        "past": {
-            definition: "Past: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'past' when discussing everyday topics."
-        },
-        "patience": {
-            definition: "Patience: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'patience' when discussing everyday topics."
-        },
-        "patrimonio": {
-            definition: "Patrimonio: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'patrimonio' when discussing everyday topics."
-        },
-        "patriot": {
-            definition: "Patriot: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'patriot' when discussing everyday topics."
-        },
-        "pavoroso": {
-            definition: "Pavoroso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pavoroso' when discussing everyday topics."
-        },
-        "peaceful": {
-            definition: "Having the quality of being peac.",
-            example: "People often used the word 'peaceful' when discussing everyday topics."
-        },
-        "pecunious": {
-            definition: "Having the quality of being pecun.",
-            example: "People often used the word 'pecunious' when discussing everyday topics."
-        },
-        "peerless": {
-            definition: "Having the quality of being peer.",
-            example: "People often used the word 'peerless' when discussing everyday topics."
-        },
-        "peliagudo": {
-            definition: "Peliagudo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'peliagudo' when discussing everyday topics."
-        },
-        "pellucid": {
-            definition: "Pellucid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pellucid' when discussing everyday topics."
-        },
-        "pellucide": {
-            definition: "Pellucide: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pellucide' when discussing everyday topics."
-        },
-        "pellucido": {
-            definition: "Pellucido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pellucido' when discussing everyday topics."
-        },
-        "penetrating": {
-            definition: "Able to make its way through or into something; piercing.",
-            example: "Her penetrating gaze made him feel quite uncomfortable."
-        },
-        "penniless": {
-            definition: "Having the quality of being penn.",
-            example: "People often used the word 'penniless' when discussing everyday topics."
-        },
-        "penurious": {
-            definition: "Having the quality of being penur.",
-            example: "People often used the word 'penurious' when discussing everyday topics."
-        },
-        "pequeño": {
-            definition: "Pequeño: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pequeño' when discussing everyday topics."
-        },
-        "perceptive": {
-            definition: "Having or showing sensitive insight; observant.",
-            example: "Her perceptive observation helped us solve the mystery."
-        },
-        "perecedero": {
-            definition: "Perecedero: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'perecedero' when discussing everyday topics."
-        },
-        "perfidious": {
-            definition: "Having the quality of being perfid.",
-            example: "People often used the word 'perfidious' when discussing everyday topics."
-        },
-        "performant": {
-            definition: "Performant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'performant' when discussing everyday topics."
-        },
-        "perilous": {
-            definition: "Having the quality of being per.",
-            example: "People often used the word 'perilous' when discussing everyday topics."
-        },
-        "perishable": {
-            definition: "Capable of being perish.",
-            example: "People often used the word 'perishable' when discussing everyday topics."
-        },
-        "perk": {
-            definition: "Perk: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'perk' when discussing everyday topics."
-        },
-        "personajes": {
-            definition: "Personajes: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'personajes' when discussing everyday topics."
-        },
-        "perspectiva": {
-            definition: "Perspectiva: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'perspectiva' when discussing everyday topics."
-        },
-        "perspective": {
-            definition: "Having the quality of being perspect.",
-            example: "People often used the word 'perspective' when discussing everyday topics."
-        },
-        "perspectives": {
-            definition: "Perspectives: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'perspectives' when discussing everyday topics."
-        },
-        "perspicace": {
-            definition: "Perspicace: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'perspicace' when discussing everyday topics."
-        },
-        "perspicacious": {
-            definition: "Having the quality of being perspicac.",
-            example: "People often used the word 'perspicacious' when discussing everyday topics."
-        },
-        "perspicaz": {
-            definition: "Perspicaz: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'perspicaz' when discussing everyday topics."
-        },
-        "perspicuo": {
-            definition: "Perspicuo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'perspicuo' when discussing everyday topics."
-        },
-        "perspicuous": {
-            definition: "Having the quality of being perspic.",
-            example: "People often used the word 'perspicuous' when discussing everyday topics."
-        },
-        "petit": {
-            definition: "Petit: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'petit' when discussing everyday topics."
-        },
-        "petit-déjeuner": {
-            definition: "A person or thing that petit-déjeuner or performs the action petit-déjeun.",
-            example: "People often used the word 'petit-déjeuner' when discussing everyday topics."
-        },
-        "petite": {
-            definition: "Petite: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'petite' when discussing everyday topics."
-        },
-        "phosphorescent": {
-            definition: "Emitting light without heat; glowing in the dark.",
-            example: "The waves were phosphorescent, glowing as they hit the shore."
-        },
-        "photogenic": {
-            definition: "Looking attractive in photographs or on film.",
-            example: "The coastal town with its blue doors was incredibly photogenic."
-        },
-        "picturesque": {
-            definition: "Picturesque: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'picturesque' when discussing everyday topics."
-        },
-        "piercing": {
-            definition: "Being or performing the action of piercing or causing that action to happen.",
-            example: "People often used the word 'piercing' when discussing everyday topics."
-        },
-        "pin-drop": {
-            definition: "Pin-drop: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pin-drop' when discussing everyday topics."
-        },
-        "pioneer": {
-            definition: "A person or thing that pioneer or performs the action pione.",
-            example: "People often used the word 'pioneer' when discussing everyday topics."
-        },
-        "piping": {
-            definition: "Being or performing the action of piping or causing that action to happen.",
-            example: "People often used the word 'piping' when discussing everyday topics."
-        },
-        "pittance": {
-            definition: "Pittance: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pittance' when discussing everyday topics."
-        },
-        "pivotal": {
-            definition: "Pivotal: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pivotal' when discussing everyday topics."
-        },
-        "placate": {
-            definition: "To placate.",
-            example: "People often used the word 'placate' when discussing everyday topics."
-        },
-        "placid": {
-            definition: "Not easily upset or excited; calm and peaceful.",
-            example: "The lake remained placid despite the incoming storm clouds."
-        },
-        "plain": {
-            definition: "Plain: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'plain' when discussing everyday topics."
-        },
-        "planificación": {
-            definition: "Planificación: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'planificación' when discussing everyday topics."
-        },
-        "planning": {
-            definition: "Being or performing the action of planning or causing that action to happen.",
-            example: "People often used the word 'planning' when discussing everyday topics."
-        },
-        "pleasant": {
-            definition: "Pleasant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pleasant' when discussing everyday topics."
-        },
-        "pleased": {
-            definition: "Pleased: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pleased' when discussing everyday topics."
-        },
-        "pliant": {
-            definition: "Pliant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pliant' when discussing everyday topics."
-        },
-        "plot": {
-            definition: "Plot: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'plot' when discussing everyday topics."
-        },
-        "plush": {
-            definition: "Plush: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'plush' when discussing everyday topics."
-        },
-        "plutocratic": {
-            definition: "Plutocratic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'plutocratic' when discussing everyday topics."
-        },
-        "poderoso": {
-            definition: "Poderoso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'poderoso' when discussing everyday topics."
-        },
-        "polaire": {
-            definition: "Polaire: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'polaire' when discussing everyday topics."
-        },
-        "polar": {
-            definition: "Polar: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'polar' when discussing everyday topics."
-        },
-        "polluted": {
-            definition: "Polluted: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'polluted' when discussing everyday topics."
-        },
-        "polyglot": {
-            definition: "Polyglot: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'polyglot' when discussing everyday topics."
-        },
-        "poor": {
-            definition: "Poor: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'poor' when discussing everyday topics."
-        },
-        "positivity": {
-            definition: "Positivity: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'positivity' when discussing everyday topics."
-        },
-        "potent": {
-            definition: "Potent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'potent' when discussing everyday topics."
-        },
-        "potentate": {
-            definition: "A monarch or ruler, especially an autocratic one.",
-            example: "The foreign potentate arrived with a massive royal entourage."
-        },
-        "potente": {
-            definition: "Potente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'potente' when discussing everyday topics."
-        },
-        "potential": {
-            definition: "Potential: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'potential' when discussing everyday topics."
-        },
-        "powerful": {
-            definition: "Having the quality of being power.",
-            example: "People often used the word 'powerful' when discussing everyday topics."
-        },
-        "practice": {
-            definition: "Practice: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'practice' when discussing everyday topics."
-        },
-        "precario": {
-            definition: "Precario: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'precario' when discussing everyday topics."
-        },
-        "precarious": {
-            definition: "Having the quality of being precar.",
-            example: "People often used the word 'precarious' when discussing everyday topics."
-        },
-        "precioso": {
-            definition: "Precioso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'precioso' when discussing everyday topics."
-        },
-        "precipitate": {
-            definition: "Precipitate: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'precipitate' when discussing everyday topics."
-        },
-        "precipitous": {
-            definition: "Having the quality of being precipit.",
-            example: "People often used the word 'precipitous' when discussing everyday topics."
-        },
-        "precocious": {
-            definition: "Having the quality of being precoc.",
-            example: "People often used the word 'precocious' when discussing everyday topics."
-        },
-        "preguntas": {
-            definition: "Preguntas: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'preguntas' when discussing everyday topics."
-        },
-        "preguntón": {
-            definition: "Preguntón: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'preguntón' when discussing everyday topics."
-        },
-        "preheated": {
-            definition: "Preheated: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'preheated' when discussing everyday topics."
-        },
-        "presentación": {
-            definition: "Presentación: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'presentación' when discussing everyday topics."
-        },
-        "presentation": {
-            definition: "The act or process of presentaing.",
-            example: "People often used the word 'presentation' when discussing everyday topics."
-        },
-        "pressé": {
-            definition: "Pressé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pressé' when discussing everyday topics."
-        },
-        "preste": {
-            definition: "Preste: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'preste' when discussing everyday topics."
-        },
-        "presupuesto": {
-            definition: "Presupuesto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'presupuesto' when discussing everyday topics."
-        },
-        "presuroso": {
-            definition: "Presuroso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'presuroso' when discussing everyday topics."
-        },
-        "pretty": {
-            definition: "Pretty: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pretty' when discussing everyday topics."
-        },
-        "primordial": {
-            definition: "Primordial: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'primordial' when discussing everyday topics."
-        },
-        "prioridad": {
-            definition: "Prioridad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'prioridad' when discussing everyday topics."
-        },
-        "prioridades": {
-            definition: "Prioridades: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'prioridades' when discussing everyday topics."
-        },
-        "priorities": {
-            definition: "Priorities: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'priorities' when discussing everyday topics."
-        },
-        "priority": {
-            definition: "Priority: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'priority' when discussing everyday topics."
-        },
-        "pristine": {
-            definition: "Pristine: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pristine' when discussing everyday topics."
-        },
-        "privacidad": {
-            definition: "Privacidad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'privacidad' when discussing everyday topics."
-        },
-        "privacy": {
-            definition: "Privacy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'privacy' when discussing everyday topics."
-        },
-        "probant": {
-            definition: "Probant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'probant' when discussing everyday topics."
-        },
-        "probity": {
-            definition: "Probity: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'probity' when discussing everyday topics."
-        },
-        "problemático": {
-            definition: "Problemático: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'problemático' when discussing everyday topics."
-        },
-        "probo": {
-            definition: "Probo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'probo' when discussing everyday topics."
-        },
-        "proclaim": {
-            definition: "To proclaim.",
-            example: "People often used the word 'proclaim' when discussing everyday topics."
-        },
-        "prodigious": {
-            definition: "Remarkably or impressively great in extent, size, or degree.",
-            example: "She has a prodigious memory for historical dates and names."
-        },
-        "productif": {
-            definition: "Productif: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'productif' when discussing everyday topics."
-        },
-        "productive": {
-            definition: "Having the quality of being product.",
-            example: "People often used the word 'productive' when discussing everyday topics."
-        },
-        "productivity": {
-            definition: "Productivity: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'productivity' when discussing everyday topics."
-        },
-        "productivo": {
-            definition: "Productivo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'productivo' when discussing everyday topics."
-        },
-        "progress": {
-            definition: "Progress: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'progress' when discussing everyday topics."
-        },
-        "proliferate": {
-            definition: "Increase rapidly in numbers; multiply.",
-            example: "Smartphone apps continue to proliferate at an incredible rate."
-        },
-        "promising": {
-            definition: "Being or performing the action of promising or causing that action to happen.",
-            example: "People often used the word 'promising' when discussing everyday topics."
-        },
-        "prompt": {
-            definition: "Prompt: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'prompt' when discussing everyday topics."
-        },
-        "pronto": {
-            definition: "Pronto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pronto' when discussing everyday topics."
-        },
-        "propitious": {
-            definition: "Having the quality of being propit.",
-            example: "People often used the word 'propitious' when discussing everyday topics."
-        },
-        "prosperous": {
-            definition: "Having the quality of being prosper.",
-            example: "People often used the word 'prosperous' when discussing everyday topics."
-        },
-        "protección": {
-            definition: "Protección: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'protección' when discussing everyday topics."
-        },
-        "protection": {
-            definition: "The act or process of protecing.",
-            example: "People often used the word 'protection' when discussing everyday topics."
-        },
-        "providential": {
-            definition: "Occurring at a favorable time; divine or lucky.",
-            example: "His arrival at that moment was truly providential."
-        },
-        "prying": {
-            definition: "Being or performing the action of prying or causing that action to happen.",
-            example: "People often used the word 'prying' when discussing everyday topics."
-        },
-        "práctica": {
-            definition: "Práctica: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'práctica' when discussing everyday topics."
-        },
-        "précaire": {
-            definition: "Précaire: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'précaire' when discussing everyday topics."
-        },
-        "prépondérant": {
-            definition: "Prépondérant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'prépondérant' when discussing everyday topics."
-        },
-        "psychology": {
-            definition: "The scientific study of the human mind and its functions.",
-            example: "Studying psychology helps us understand human behavior."
-        },
-        "puissant": {
-            definition: "Puissant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'puissant' when discussing everyday topics."
-        },
-        "pulchritudinous": {
-            definition: "Having the quality of being pulchritudin.",
-            example: "People often used the word 'pulchritudinous' when discussing everyday topics."
-        },
-        "purpose": {
-            definition: "Purpose: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'purpose' when discussing everyday topics."
-        },
-        "pusillanimous": {
-            definition: "Having the quality of being pusillanim.",
-            example: "People often used the word 'pusillanimous' when discussing everyday topics."
-        },
-        "putrid": {
-            definition: "Putrid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'putrid' when discussing everyday topics."
-        },
-        "pénible": {
-            definition: "Pénible: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pénible' when discussing everyday topics."
-        },
-        "périssable": {
-            definition: "Capable of being périss.",
-            example: "People often used the word 'périssable' when discussing everyday topics."
-        },
-        "pésimo": {
-            definition: "Pésimo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'pésimo' when discussing everyday topics."
-        },
-        "quaint": {
-            definition: "Quaint: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'quaint' when discussing everyday topics."
-        },
-        "quality": {
-            definition: "Quality: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'quality' when discussing everyday topics."
-        },
-        "quebradizo": {
-            definition: "Quebradizo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'quebradizo' when discussing everyday topics."
-        },
-        "quebrantable": {
-            definition: "Capable of being quebrant.",
-            example: "People often used the word 'quebrantable' when discussing everyday topics."
-        },
-        "quebrantado": {
-            definition: "Quebrantado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'quebrantado' when discussing everyday topics."
-        },
-        "querulous": {
-            definition: "Having the quality of being quer.",
-            example: "People often used the word 'querulous' when discussing everyday topics."
-        },
-        "questioning": {
-            definition: "Being or performing the action of questioning or causing that action to happen.",
-            example: "People often used the word 'questioning' when discussing everyday topics."
-        },
-        "questionneur": {
-            definition: "Questionneur: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'questionneur' when discussing everyday topics."
-        },
-        "questions": {
-            definition: "Questions: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'questions' when discussing everyday topics."
-        },
-        "quick": {
-            definition: "Quick: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'quick' when discussing everyday topics."
-        },
-        "quiet": {
-            definition: "Quiet: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'quiet' when discussing everyday topics."
-        },
-        "quixotic": {
-            definition: "Quixotic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'quixotic' when discussing everyday topics."
-        },
-        "quémandeur": {
-            definition: "Quémandeur: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'quémandeur' when discussing everyday topics."
-        },
-        "radiant": {
-            definition: "Radiant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'radiant' when discussing everyday topics."
-        },
-        "radiante": {
-            definition: "Radiante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'radiante' when discussing everyday topics."
-        },
-        "radieux": {
-            definition: "Radieux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'radieux' when discussing everyday topics."
-        },
-        "ramshackle": {
-            definition: "Ramshackle: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ramshackle' when discussing everyday topics."
-        },
-        "rapid": {
-            definition: "Rapid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'rapid' when discussing everyday topics."
-        },
-        "rapide": {
-            definition: "Rapide: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'rapide' when discussing everyday topics."
-        },
-        "ratiocinant": {
-            definition: "Ratiocinant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ratiocinant' when discussing everyday topics."
-        },
-        "ratiocinative": {
-            definition: "Having the quality of being ratiocinat.",
-            example: "People often used the word 'ratiocinative' when discussing everyday topics."
-        },
-        "rationnel": {
-            definition: "Rationnel: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'rationnel' when discussing everyday topics."
-        },
-        "raucous": {
-            definition: "Having the quality of being rauc.",
-            example: "People often used the word 'raucous' when discussing everyday topics."
-        },
-        "raudo": {
-            definition: "Raudo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'raudo' when discussing everyday topics."
-        },
-        "ravenous": {
-            definition: "Having the quality of being raven.",
-            example: "People often used the word 'ravenous' when discussing everyday topics."
-        },
-        "ravi": {
-            definition: "Ravi: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ravi' when discussing everyday topics."
-        },
-        "ravishing": {
-            definition: "Being or performing the action of ravishing or causing that action to happen.",
-            example: "People often used the word 'ravishing' when discussing everyday topics."
-        },
-        "ravissant": {
-            definition: "Ravissant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ravissant' when discussing everyday topics."
-        },
-        "razonador": {
-            definition: "Razonador: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'razonador' when discussing everyday topics."
-        },
-        "ready": {
-            definition: "Ready: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ready' when discussing everyday topics."
-        },
-        "recent": {
-            definition: "Recent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'recent' when discussing everyday topics."
-        },
-        "reciente": {
-            definition: "Reciente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'reciente' when discussing everyday topics."
-        },
-        "recio": {
-            definition: "Recio: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'recio' when discussing everyday topics."
-        },
-        "recomendar": {
-            definition: "Recomendar: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'recomendar' when discussing everyday topics."
-        },
-        "recommend": {
-            definition: "Recommend: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'recommend' when discussing everyday topics."
-        },
-        "recovery": {
-            definition: "Recovery: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'recovery' when discussing everyday topics."
-        },
-        "recuerdos": {
-            definition: "Recuerdos: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'recuerdos' when discussing everyday topics."
-        },
-        "recuperación": {
-            definition: "Recuperación: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'recuperación' when discussing everyday topics."
-        },
-        "recursos": {
-            definition: "Recursos: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'recursos' when discussing everyday topics."
-        },
-        "redoubtable": {
-            definition: "Capable of being redoubt.",
-            example: "People often used the word 'redoubtable' when discussing everyday topics."
-        },
-        "reducido": {
-            definition: "Reducido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'reducido' when discussing everyday topics."
-        },
-        "reflection": {
-            definition: "The act or process of reflecing.",
-            example: "People often used the word 'reflection' when discussing everyday topics."
-        },
-        "reflective": {
-            definition: "Providing a reflection; relating to deep thought.",
-            example: "He sat in a reflective mood, thinking about his past choices."
-        },
-        "reflexión": {
-            definition: "Reflexión: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'reflexión' when discussing everyday topics."
-        },
-        "refreshing": {
-            definition: "Being or performing the action of refreshing or causing that action to happen.",
-            example: "People often used the word 'refreshing' when discussing everyday topics."
-        },
-        "refulgent": {
-            definition: "Refulgent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'refulgent' when discussing everyday topics."
-        },
-        "relajación": {
-            definition: "Relajación: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'relajación' when discussing everyday topics."
-        },
-        "relajante": {
-            definition: "Relajante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'relajante' when discussing everyday topics."
-        },
-        "relationships": {
-            definition: "Relationships: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'relationships' when discussing everyday topics."
-        },
-        "relaxant": {
-            definition: "Relaxant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'relaxant' when discussing everyday topics."
-        },
-        "relaxation": {
-            definition: "The act or process of relaxaing.",
-            example: "People often used the word 'relaxation' when discussing everyday topics."
-        },
-        "relaxing": {
-            definition: "Being or performing the action of relaxing or causing that action to happen.",
-            example: "People often used the word 'relaxing' when discussing everyday topics."
-        },
-        "remnant": {
-            definition: "Remnant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'remnant' when discussing everyday topics."
-        },
-        "remote": {
-            definition: "Far apart; distant in space, time, or relation.",
-            example: "They lived in a remote village deep in the mountains."
-        },
-        "renewable": {
-            definition: "Capable of being renew.",
-            example: "People often used the word 'renewable' when discussing everyday topics."
-        },
-        "repudiate": {
-            definition: "To repudiate.",
-            example: "People often used the word 'repudiate' when discussing everyday topics."
-        },
-        "research": {
-            definition: "Research: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'research' when discussing everyday topics."
-        },
-        "reserved": {
-            definition: "Reserved: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'reserved' when discussing everyday topics."
-        },
-        "resilience": {
-            definition: "Resilience: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'resilience' when discussing everyday topics."
-        },
-        "resiliencia": {
-            definition: "Resiliencia: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'resiliencia' when discussing everyday topics."
-        },
-        "resistencia": {
-            definition: "Resistencia: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'resistencia' when discussing everyday topics."
-        },
-        "resistente": {
-            definition: "Resistente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'resistente' when discussing everyday topics."
-        },
-        "resolución": {
-            definition: "Resolución: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'resolución' when discussing everyday topics."
-        },
-        "resolution": {
-            definition: "The act or process of resoluing.",
-            example: "People often used the word 'resolution' when discussing everyday topics."
-        },
-        "resonance": {
-            definition: "Resonance: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'resonance' when discussing everyday topics."
-        },
-        "resonant": {
-            definition: "Resonant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'resonant' when discussing everyday topics."
-        },
-        "resources": {
-            definition: "Resources: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'resources' when discussing everyday topics."
-        },
-        "respect": {
-            definition: "Respect: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'respect' when discussing everyday topics."
-        },
-        "respeto": {
-            definition: "Respeto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'respeto' when discussing everyday topics."
-        },
-        "resplendent": {
-            definition: "Attractive and impressive through being richly colorful or shining.",
-            example: "She looked resplendent in her silk evening gown."
-        },
-        "resplendissant": {
-            definition: "Resplendissant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'resplendissant' when discussing everyday topics."
-        },
-        "responsabilidad": {
-            definition: "Responsabilidad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'responsabilidad' when discussing everyday topics."
-        },
-        "responsabilité": {
-            definition: "Responsabilité: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'responsabilité' when discussing everyday topics."
-        },
-        "responsibility": {
-            definition: "Responsibility: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'responsibility' when discussing everyday topics."
-        },
-        "responsive": {
-            definition: "Having the quality of being respon.",
-            example: "People often used the word 'responsive' when discussing everyday topics."
-        },
-        "ressources": {
-            definition: "Ressources: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ressources' when discussing everyday topics."
-        },
-        "restaurador": {
-            definition: "Restaurador: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'restaurador' when discussing everyday topics."
-        },
-        "restoration": {
-            definition: "The act or process of restoraing.",
-            example: "People often used the word 'restoration' when discussing everyday topics."
-        },
-        "restorative": {
-            definition: "Having the quality of being restorat.",
-            example: "People often used the word 'restorative' when discussing everyday topics."
-        },
-        "reticent": {
-            definition: "Reticent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'reticent' when discussing everyday topics."
-        },
-        "retroalimentación": {
-            definition: "Retroalimentación: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'retroalimentación' when discussing everyday topics."
-        },
-        "revolutionary": {
-            definition: "Revolutionary: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'revolutionary' when discussing everyday topics."
-        },
-        "rewarding": {
-            definition: "Being or performing the action of rewarding or causing that action to happen.",
-            example: "People often used the word 'rewarding' when discussing everyday topics."
-        },
-        "rhetoric": {
-            definition: "Rhetoric: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'rhetoric' when discussing everyday topics."
-        },
-        "rich": {
-            definition: "Rich: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'rich' when discussing everyday topics."
-        },
-        "rigorous": {
-            definition: "Extremely thorough, exhaustive, or accurate.",
-            example: "The new medicine underwent rigorous testing before being approved."
-        },
-        "risible": {
-            definition: "Risible: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'risible' when discussing everyday topics."
-        },
-        "risky": {
-            definition: "Risky: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'risky' when discussing everyday topics."
-        },
-        "ritual": {
-            definition: "Ritual: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ritual' when discussing everyday topics."
-        },
-        "riveting": {
-            definition: "Being or performing the action of riveting or causing that action to happen.",
-            example: "People often used the word 'riveting' when discussing everyday topics."
-        },
-        "robust": {
-            definition: "Robust: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'robust' when discussing everyday topics."
-        },
-        "robuste": {
-            definition: "Robuste: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'robuste' when discussing everyday topics."
-        },
-        "robusto": {
-            definition: "Robusto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'robusto' when discussing everyday topics."
-        },
-        "roles": {
-            definition: "Roles: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'roles' when discussing everyday topics."
-        },
-        "rotund": {
-            definition: "Plump or rounded in shape.",
-            example: "The cherub was a rotund little figure in the painting."
-        },
-        "rough": {
-            definition: "Rough: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'rough' when discussing everyday topics."
-        },
-        "routine": {
-            definition: "Routine: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'routine' when discussing everyday topics."
-        },
-        "rudimentaire": {
-            definition: "Rudimentaire: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'rudimentaire' when discussing everyday topics."
-        },
-        "ruthless": {
-            definition: "Having or showing no pity or compassion for others.",
-            example: "The ruthless leader would stop at nothing to gain power."
-        },
-        "rutina": {
-            definition: "Rutina: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'rutina' when discussing everyday topics."
-        },
-        "rápido": {
-            definition: "Rápido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'rápido' when discussing everyday topics."
-        },
-        "rébarbatif": {
-            definition: "Rébarbatif: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'rébarbatif' when discussing everyday topics."
-        },
-        "récent": {
-            definition: "Récent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'récent' when discussing everyday topics."
-        },
-        "réduit": {
-            definition: "Réduit: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'réduit' when discussing everyday topics."
-        },
-        "réussite": {
-            definition: "Réussite: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'réussite' when discussing everyday topics."
-        },
-        "révolutionnaire": {
-            definition: "Révolutionnaire: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'révolutionnaire' when discussing everyday topics."
-        },
-        "sabor": {
-            definition: "Sabor: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sabor' when discussing everyday topics."
-        },
-        "sad": {
-            definition: "Sad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sad' when discussing everyday topics."
-        },
-        "sadness": {
-            definition: "Sadness: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sadness' when discussing everyday topics."
-        },
-        "sagace": {
-            definition: "Sagace: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sagace' when discussing everyday topics."
-        },
-        "sagacious": {
-            definition: "Having the quality of being sagac.",
-            example: "People often used the word 'sagacious' when discussing everyday topics."
-        },
-        "sagaz": {
-            definition: "Sagaz: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sagaz' when discussing everyday topics."
-        },
-        "saludable": {
-            definition: "Capable of being salud.",
-            example: "People often used the word 'saludable' when discussing everyday topics."
-        },
-        "salutaire": {
-            definition: "Salutaire: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'salutaire' when discussing everyday topics."
-        },
-        "salutary": {
-            definition: "Salutary: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'salutary' when discussing everyday topics."
-        },
-        "satisfait": {
-            definition: "Satisfait: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'satisfait' when discussing everyday topics."
-        },
-        "satisfecho": {
-            definition: "Satisfecho: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'satisfecho' when discussing everyday topics."
-        },
-        "saving": {
-            definition: "Being or performing the action of saving or causing that action to happen.",
-            example: "People often used the word 'saving' when discussing everyday topics."
-        },
-        "savoureux": {
-            definition: "Savoureux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'savoureux' when discussing everyday topics."
-        },
-        "scabreux": {
-            definition: "Scabreux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'scabreux' when discussing everyday topics."
-        },
-        "scale": {
-            definition: "Scale: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'scale' when discussing everyday topics."
-        },
-        "scary": {
-            definition: "Scary: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'scary' when discussing everyday topics."
-        },
-        "schedule": {
-            definition: "Schedule: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'schedule' when discussing everyday topics."
-        },
-        "scintillating": {
-            definition: "Sparkling or shining brightly; brilliantly clever or exciting.",
-            example: "She gave a scintillating performance that captivated the audience."
-        },
-        "scorching": {
-            definition: "Being or performing the action of scorching or causing that action to happen.",
-            example: "People often used the word 'scorching' when discussing everyday topics."
-        },
-        "scrawny": {
-            definition: "Scrawny: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'scrawny' when discussing everyday topics."
-        },
-        "scrupulous": {
-            definition: "Having the quality of being scrup.",
-            example: "People often used the word 'scrupulous' when discussing everyday topics."
-        },
-        "secular": {
-            definition: "Secular: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'secular' when discussing everyday topics."
-        },
-        "security": {
-            definition: "Security: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'security' when discussing everyday topics."
-        },
-        "sedate": {
-            definition: "Sedate: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sedate' when discussing everyday topics."
-        },
-        "seething": {
-            definition: "Being or performing the action of seething or causing that action to happen.",
-            example: "People often used the word 'seething' when discussing everyday topics."
-        },
-        "seguimiento": {
-            definition: "Seguimiento: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'seguimiento' when discussing everyday topics."
-        },
-        "self-care": {
-            definition: "Self-care: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'self-care' when discussing everyday topics."
-        },
-        "self-evident": {
-            definition: "Self-evident: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'self-evident' when discussing everyday topics."
-        },
-        "sencillo": {
-            definition: "Sencillo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sencillo' when discussing everyday topics."
-        },
-        "sepulchral": {
-            definition: "Relating to a tomb or interment; gloomy and dismal.",
-            example: "A sepulchral silence filled the abandoned cathedral."
-        },
-        "sequestered": {
-            definition: "Sequestered: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sequestered' when discussing everyday topics."
-        },
-        "serendipitous": {
-            definition: "Having the quality of being serendipit.",
-            example: "People often used the word 'serendipitous' when discussing everyday topics."
-        },
-        "serendipity": {
-            definition: "The occurrence and development of events by chance in a happy way.",
-            example: "Finding that rare book in the attic was a stroke of serendipity."
-        },
-        "serene": {
-            definition: "Serene: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'serene' when discussing everyday topics."
-        },
-        "service": {
-            definition: "Service: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'service' when discussing everyday topics."
-        },
-        "servicio": {
-            definition: "Servicio: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'servicio' when discussing everyday topics."
-        },
-        "shaded": {
-            definition: "Shaded: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'shaded' when discussing everyday topics."
-        },
-        "sharp": {
-            definition: "Sharp: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sharp' when discussing everyday topics."
-        },
-        "shining": {
-            definition: "Being or performing the action of shining or causing that action to happen.",
-            example: "People often used the word 'shining' when discussing everyday topics."
-        },
-        "shiny": {
-            definition: "Shiny: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'shiny' when discussing everyday topics."
-        },
-        "shoddy": {
-            definition: "Shoddy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'shoddy' when discussing everyday topics."
-        },
-        "short": {
-            definition: "Short: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'short' when discussing everyday topics."
-        },
-        "shrewd": {
-            definition: "Shrewd: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'shrewd' when discussing everyday topics."
-        },
-        "shy": {
-            definition: "Shy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'shy' when discussing everyday topics."
-        },
-        "siberiano": {
-            definition: "Siberiano: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'siberiano' when discussing everyday topics."
-        },
-        "sibérien": {
-            definition: "Sibérien: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sibérien' when discussing everyday topics."
-        },
-        "side-splitting": {
-            definition: "Being or performing the action of side-splitting or causing that action to happen.",
-            example: "People often used the word 'side-splitting' when discussing everyday topics."
-        },
-        "sightseeing": {
-            definition: "Being or performing the action of sightseeing or causing that action to happen.",
-            example: "People often used the word 'sightseeing' when discussing everyday topics."
-        },
-        "significado": {
-            definition: "Significado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'significado' when discussing everyday topics."
-        },
-        "significant": {
-            definition: "Significant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'significant' when discussing everyday topics."
-        },
-        "significativo": {
-            definition: "Significativo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'significativo' when discussing everyday topics."
-        },
-        "silent": {
-            definition: "Silent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'silent' when discussing everyday topics."
-        },
-        "silken": {
-            definition: "Silken: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'silken' when discussing everyday topics."
-        },
-        "simple": {
-            definition: "Simple: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'simple' when discussing everyday topics."
-        },
-        "simplify": {
-            definition: "To simplify.",
-            example: "People often used the word 'simplify' when discussing everyday topics."
-        },
-        "sincere": {
-            definition: "Sincere: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sincere' when discussing everyday topics."
-        },
-        "siniestro": {
-            definition: "Siniestro: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'siniestro' when discussing everyday topics."
-        },
-        "sinistre": {
-            definition: "Sinistre: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sinistre' when discussing everyday topics."
-        },
-        "sizzling": {
-            definition: "Being or performing the action of sizzling or causing that action to happen.",
-            example: "People often used the word 'sizzling' when discussing everyday topics."
-        },
-        "skeptic": {
-            definition: "Skeptic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'skeptic' when discussing everyday topics."
-        },
-        "skills": {
-            definition: "Skills: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'skills' when discussing everyday topics."
-        },
-        "sleepy": {
-            definition: "Sleepy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sleepy' when discussing everyday topics."
-        },
-        "slender": {
-            definition: "A person or thing that slender or performs the action slend.",
-            example: "People often used the word 'slender' when discussing everyday topics."
-        },
-        "slick": {
-            definition: "Slick: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'slick' when discussing everyday topics."
-        },
-        "slim": {
-            definition: "Slim: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'slim' when discussing everyday topics."
-        },
-        "small": {
-            definition: "Small: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'small' when discussing everyday topics."
-        },
-        "smart": {
-            definition: "Smart: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'smart' when discussing everyday topics."
-        },
-        "sobresaliente": {
-            definition: "Sobresaliente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sobresaliente' when discussing everyday topics."
-        },
-        "sofocante": {
-            definition: "Sofocante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sofocante' when discussing everyday topics."
-        },
-        "soft": {
-            definition: "Soft: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'soft' when discussing everyday topics."
-        },
-        "soiled": {
-            definition: "Soiled: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'soiled' when discussing everyday topics."
-        },
-        "solide": {
-            definition: "Solide: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'solide' when discussing everyday topics."
-        },
-        "some": {
-            definition: "Some: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'some' when discussing everyday topics."
-        },
-        "somptueux": {
-            definition: "Somptueux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'somptueux' when discussing everyday topics."
-        },
-        "songbird": {
-            definition: "Songbird: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'songbird' when discussing everyday topics."
-        },
-        "soon": {
-            definition: "Soon: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'soon' when discussing everyday topics."
-        },
-        "soothing": {
-            definition: "Being or performing the action of soothing or causing that action to happen.",
-            example: "People often used the word 'soothing' when discussing everyday topics."
-        },
-        "sorrow": {
-            definition: "Sorrow: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sorrow' when discussing everyday topics."
-        },
-        "sorrowful": {
-            definition: "Having the quality of being sorrow.",
-            example: "People often used the word 'sorrowful' when discussing everyday topics."
-        },
-        "sostenibilidad": {
-            definition: "Sostenibilidad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sostenibilidad' when discussing everyday topics."
-        },
-        "soutien": {
-            definition: "Soutien: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'soutien' when discussing everyday topics."
-        },
-        "souvenirs": {
-            definition: "Souvenirs: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'souvenirs' when discussing everyday topics."
-        },
-        "spare": {
-            definition: "Spare: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'spare' when discussing everyday topics."
-        },
-        "sparse": {
-            definition: "Sparse: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sparse' when discussing everyday topics."
-        },
-        "speculative": {
-            definition: "Having the quality of being speculat.",
-            example: "People often used the word 'speculative' when discussing everyday topics."
-        },
-        "speechless": {
-            definition: "Having the quality of being speech.",
-            example: "People often used the word 'speechless' when discussing everyday topics."
-        },
-        "speedy": {
-            definition: "Speedy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'speedy' when discussing everyday topics."
-        },
-        "spellbinding": {
-            definition: "Being or performing the action of spellbinding or causing that action to happen.",
-            example: "People often used the word 'spellbinding' when discussing everyday topics."
-        },
-        "spicy": {
-            definition: "Spicy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'spicy' when discussing everyday topics."
-        },
-        "spindly": {
-            definition: "In a manner that is spind.",
-            example: "People often used the word 'spindly' when discussing everyday topics."
-        },
-        "spine-chilling": {
-            definition: "Being or performing the action of spine-chilling or causing that action to happen.",
-            example: "People often used the word 'spine-chilling' when discussing everyday topics."
-        },
-        "splendid": {
-            definition: "Splendid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'splendid' when discussing everyday topics."
-        },
-        "splendide": {
-            definition: "Splendide: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'splendide' when discussing everyday topics."
-        },
-        "splendiferous": {
-            definition: "Having the quality of being splendifer.",
-            example: "People often used the word 'splendiferous' when discussing everyday topics."
-        },
-        "spooky": {
-            definition: "Spooky: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'spooky' when discussing everyday topics."
-        },
-        "spéculatif": {
-            definition: "Spéculatif: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'spéculatif' when discussing everyday topics."
-        },
-        "stained": {
-            definition: "Stained: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'stained' when discussing everyday topics."
-        },
-        "stalwart": {
-            definition: "Stalwart: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'stalwart' when discussing everyday topics."
-        },
-        "starlit": {
-            definition: "Starlit: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'starlit' when discussing everyday topics."
-        },
-        "stately": {
-            definition: "Having a dignified, unhurried, and grand manner.",
-            example: "The stately home was surrounded by acres of beautiful gardens."
-        },
-        "steaming": {
-            definition: "Being or performing the action of steaming or causing that action to happen.",
-            example: "People often used the word 'steaming' when discussing everyday topics."
-        },
-        "stellar": {
-            definition: "Stellar: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'stellar' when discussing everyday topics."
-        },
-        "stenotic": {
-            definition: "Stenotic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'stenotic' when discussing everyday topics."
-        },
-        "stentorian": {
-            definition: "Stentorian: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'stentorian' when discussing everyday topics."
-        },
-        "stiff": {
-            definition: "Stiff: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'stiff' when discussing everyday topics."
-        },
-        "still": {
-            definition: "Still: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'still' when discussing everyday topics."
-        },
-        "stoic": {
-            definition: "A person who can endure pain or hardship without showing feelings.",
-            example: "He remained stoic throughout the long and difficult trial."
-        },
-        "straightforward": {
-            definition: "Straightforward: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'straightforward' when discussing everyday topics."
-        },
-        "straitened": {
-            definition: "Straitened: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'straitened' when discussing everyday topics."
-        },
-        "streamlined": {
-            definition: "Streamlined: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'streamlined' when discussing everyday topics."
-        },
-        "strength": {
-            definition: "Strength: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'strength' when discussing everyday topics."
-        },
-        "stress": {
-            definition: "Stress: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'stress' when discussing everyday topics."
-        },
-        "strident": {
-            definition: "Strident: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'strident' when discussing everyday topics."
-        },
-        "striking": {
-            definition: "Being or performing the action of striking or causing that action to happen.",
-            example: "People often used the word 'striking' when discussing everyday topics."
-        },
-        "strong": {
-            definition: "Strong: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'strong' when discussing everyday topics."
-        },
-        "studious": {
-            definition: "Having the quality of being stud.",
-            example: "People often used the word 'studious' when discussing everyday topics."
-        },
-        "stunning": {
-            definition: "Being or performing the action of stunning or causing that action to happen.",
-            example: "People often used the word 'stunning' when discussing everyday topics."
-        },
-        "sturdy": {
-            definition: "Sturdy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sturdy' when discussing everyday topics."
-        },
-        "stygian": {
-            definition: "Stygian: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'stygian' when discussing everyday topics."
-        },
-        "subdued": {
-            definition: "Subdued: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'subdued' when discussing everyday topics."
-        },
-        "subjuguant": {
-            definition: "Subjuguant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'subjuguant' when discussing everyday topics."
-        },
-        "sublime": {
-            definition: "Sublime: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sublime' when discussing everyday topics."
-        },
-        "substantial": {
-            definition: "Of considerable importance, size, or worth.",
-            example: "They received a substantial amount of funding for the project."
-        },
-        "subtle": {
-            definition: "So delicate or precise as to be difficult to analyze or describe.",
-            example: "There was a subtle change in his tone that indicated he was lying."
-        },
-        "subyugante": {
-            definition: "Subyugante: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'subyugante' when discussing everyday topics."
-        },
-        "succulent": {
-            definition: "Succulent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'succulent' when discussing everyday topics."
-        },
-        "suffocant": {
-            definition: "Suffocant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'suffocant' when discussing everyday topics."
-        },
-        "sullied": {
-            definition: "Sullied: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sullied' when discussing everyday topics."
-        },
-        "sultry": {
-            definition: "Sultry: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sultry' when discussing everyday topics."
-        },
-        "sunlit": {
-            definition: "Sunlit: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sunlit' when discussing everyday topics."
-        },
-        "super": {
-            definition: "A person or thing that super or performs the action sup.",
-            example: "People often used the word 'super' when discussing everyday topics."
-        },
-        "superb": {
-            definition: "Superb: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'superb' when discussing everyday topics."
-        },
-        "superbe": {
-            definition: "Superbe: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'superbe' when discussing everyday topics."
-        },
-        "superlative": {
-            definition: "Having the quality of being superlat.",
-            example: "People often used the word 'superlative' when discussing everyday topics."
-        },
-        "support": {
-            definition: "Support: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'support' when discussing everyday topics."
-        },
-        "supportive": {
-            definition: "Having the quality of being support.",
-            example: "People often used the word 'supportive' when discussing everyday topics."
-        },
-        "sustainability": {
-            definition: "Sustainability: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'sustainability' when discussing everyday topics."
-        },
-        "sustainable": {
-            definition: "Capable of being sustain.",
-            example: "People often used the word 'sustainable' when discussing everyday topics."
-        },
-        "svelte": {
-            definition: "Svelte: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'svelte' when discussing everyday topics."
-        },
-        "sweltering": {
-            definition: "Being or performing the action of sweltering or causing that action to happen.",
-            example: "People often used the word 'sweltering' when discussing everyday topics."
-        },
-        "swift": {
-            definition: "Moving or capable of moving with great speed.",
-            example: "The hawk made a swift descent to catch its prey."
-        },
-        "symbolic": {
-            definition: "Serving as a symbol; representing something else.",
-            example: "The dove is symbolic of peace and hope."
-        },
-        "séculaire": {
-            definition: "Séculaire: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'séculaire' when discussing everyday topics."
-        },
-        "séduisant": {
-            definition: "Séduisant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'séduisant' when discussing everyday topics."
-        },
-        "tacit": {
-            definition: "Tacit: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tacit' when discussing everyday topics."
-        },
-        "taciturn": {
-            definition: "Taciturn: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'taciturn' when discussing everyday topics."
-        },
-        "taciturno": {
-            definition: "Taciturno: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'taciturno' when discussing everyday topics."
-        },
-        "tall": {
-            definition: "Tall: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tall' when discussing everyday topics."
-        },
-        "technique": {
-            definition: "Technique: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'technique' when discussing everyday topics."
-        },
-        "technology": {
-            definition: "Technology: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'technology' when discussing everyday topics."
-        },
-        "teenager": {
-            definition: "A person or thing that teenager or performs the action teenag.",
-            example: "People often used the word 'teenager' when discussing everyday topics."
-        },
-        "tema": {
-            definition: "Tema: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tema' when discussing everyday topics."
-        },
-        "temperate": {
-            definition: "Temperate: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'temperate' when discussing everyday topics."
-        },
-        "tenacious": {
-            definition: "Tending to keep a firm hold of something; clinging or adhering closely.",
-            example: "He was a tenacious runner who never gave up, even when tired."
-        },
-        "tender": {
-            definition: "A person or thing that tender or performs the action tend.",
-            example: "People often used the word 'tender' when discussing everyday topics."
-        },
-        "tendre": {
-            definition: "Tendre: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tendre' when discussing everyday topics."
-        },
-        "terrible": {
-            definition: "Terrible: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'terrible' when discussing everyday topics."
-        },
-        "terrifiant": {
-            definition: "Terrifiant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'terrifiant' when discussing everyday topics."
-        },
-        "terrifying": {
-            definition: "Being or performing the action of terrifying or causing that action to happen.",
-            example: "People often used the word 'terrifying' when discussing everyday topics."
-        },
-        "terrorífico": {
-            definition: "Terrorífico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'terrorífico' when discussing everyday topics."
-        },
-        "theme": {
-            definition: "Theme: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'theme' when discussing everyday topics."
-        },
-        "therapy": {
-            definition: "Therapy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'therapy' when discussing everyday topics."
-        },
-        "thick": {
-            definition: "Thick: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'thick' when discussing everyday topics."
-        },
-        "thin": {
-            definition: "Thin: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'thin' when discussing everyday topics."
-        },
-        "threnody": {
-            definition: "Threnody: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'threnody' when discussing everyday topics."
-        },
-        "thundering": {
-            definition: "Being or performing the action of thundering or causing that action to happen.",
-            example: "People often used the word 'thundering' when discussing everyday topics."
-        },
-        "thunderous": {
-            definition: "Having the quality of being thunder.",
-            example: "People often used the word 'thunderous' when discussing everyday topics."
-        },
-        "tidy": {
-            definition: "Tidy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tidy' when discussing everyday topics."
-        },
-        "tiempo": {
-            definition: "Tiempo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tiempo' when discussing everyday topics."
-        },
-        "tierno": {
-            definition: "Tierno: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tierno' when discussing everyday topics."
-        },
-        "time": {
-            definition: "Time: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'time' when discussing everyday topics."
-        },
-        "time-honored": {
-            definition: "Time-honored: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'time-honored' when discussing everyday topics."
-        },
-        "timeless": {
-            definition: "Having the quality of being tim.",
-            example: "People often used the word 'timeless' when discussing everyday topics."
-        },
-        "timeworn": {
-            definition: "Timeworn: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'timeworn' when discussing everyday topics."
-        },
-        "timid": {
-            definition: "Timid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'timid' when discussing everyday topics."
-        },
-        "timorous": {
-            definition: "Having the quality of being timor.",
-            example: "People often used the word 'timorous' when discussing everyday topics."
-        },
-        "tiny": {
-            definition: "Tiny: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tiny' when discussing everyday topics."
-        },
-        "titanesque": {
-            definition: "Titanesque: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'titanesque' when discussing everyday topics."
-        },
-        "titanic": {
-            definition: "Titanic: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'titanic' when discussing everyday topics."
-        },
-        "titánico": {
-            definition: "Titánico: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'titánico' when discussing everyday topics."
-        },
-        "tiède": {
-            definition: "Tiède: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tiède' when discussing everyday topics."
-        },
-        "toasty": {
-            definition: "Toasty: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'toasty' when discussing everyday topics."
-        },
-        "torrential": {
-            definition: "Falling rapidly and in copious quantities; flowing with great force.",
-            example: "The torrential rain caused flooding in several parts of the city."
-        },
-        "torrid": {
-            definition: "Torrid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'torrid' when discussing everyday topics."
-        },
-        "torride": {
-            definition: "Torride: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'torride' when discussing everyday topics."
-        },
-        "tough": {
-            definition: "Tough: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tough' when discussing everyday topics."
-        },
-        "towering": {
-            definition: "Being or performing the action of towering or causing that action to happen.",
-            example: "People often used the word 'towering' when discussing everyday topics."
-        },
-        "trabajo": {
-            definition: "Trabajo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'trabajo' when discussing everyday topics."
-        },
-        "traditions": {
-            definition: "Traditions: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'traditions' when discussing everyday topics."
-        },
-        "trailblazing": {
-            definition: "Being or performing the action of trailblazing or causing that action to happen.",
-            example: "People often used the word 'trailblazing' when discussing everyday topics."
-        },
-        "trajet": {
-            definition: "Trajet: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'trajet' when discussing everyday topics."
-        },
-        "trama": {
-            definition: "Trama: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'trama' when discussing everyday topics."
-        },
-        "tranquil": {
-            definition: "Tranquil: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tranquil' when discussing everyday topics."
-        },
-        "transformative": {
-            definition: "Having the quality of being transformat.",
-            example: "People often used the word 'transformative' when discussing everyday topics."
-        },
-        "transi": {
-            definition: "Transi: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'transi' when discussing everyday topics."
-        },
-        "translucide": {
-            definition: "Translucide: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'translucide' when discussing everyday topics."
-        },
-        "transparent": {
-            definition: "Transparent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'transparent' when discussing everyday topics."
-        },
-        "transparente": {
-            definition: "Transparente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'transparente' when discussing everyday topics."
-        },
-        "transpicuous": {
-            definition: "Having the quality of being transpic.",
-            example: "People often used the word 'transpicuous' when discussing everyday topics."
-        },
-        "transport": {
-            definition: "Transport: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'transport' when discussing everyday topics."
-        },
-        "transporte": {
-            definition: "Transporte: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'transporte' when discussing everyday topics."
-        },
-        "trascendental": {
-            definition: "Trascendental: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'trascendental' when discussing everyday topics."
-        },
-        "traslúcido": {
-            definition: "Traslúcido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'traslúcido' when discussing everyday topics."
-        },
-        "travail": {
-            definition: "Travail: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'travail' when discussing everyday topics."
-        },
-        "treacherous": {
-            definition: "Having the quality of being treacher.",
-            example: "People often used the word 'treacherous' when discussing everyday topics."
-        },
-        "tried-and-true": {
-            definition: "Tried-and-true: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tried-and-true' when discussing everyday topics."
-        },
-        "triste": {
-            definition: "Triste: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'triste' when discussing everyday topics."
-        },
-        "tropical": {
-            definition: "Tropical: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tropical' when discussing everyday topics."
-        },
-        "trust": {
-            definition: "Trust: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'trust' when discussing everyday topics."
-        },
-        "truthful": {
-            definition: "Having the quality of being truth.",
-            example: "People often used the word 'truthful' when discussing everyday topics."
-        },
-        "turbulent": {
-            definition: "Turbulent: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'turbulent' when discussing everyday topics."
-        },
-        "turismo": {
-            definition: "Turismo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'turismo' when discussing everyday topics."
-        },
-        "técnica": {
-            definition: "Técnica: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'técnica' when discussing everyday topics."
-        },
-        "ténu": {
-            definition: "Ténu: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ténu' when discussing everyday topics."
-        },
-        "tórrido": {
-            definition: "Tórrido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'tórrido' when discussing everyday topics."
-        },
-        "ubiquitous": {
-            definition: "Having the quality of being ubiquit.",
-            example: "People often used the word 'ubiquitous' when discussing everyday topics."
-        },
-        "ulcéré": {
-            definition: "Ulcéré: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ulcéré' when discussing everyday topics."
-        },
-        "unambiguous": {
-            definition: "Having the quality of being unambig.",
-            example: "People often used the word 'unambiguous' when discussing everyday topics."
-        },
-        "unbreakable": {
-            definition: "Capable of being unbreak.",
-            example: "People often used the word 'unbreakable' when discussing everyday topics."
-        },
-        "unclean": {
-            definition: "Unclean: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'unclean' when discussing everyday topics."
-        },
-        "uncomplicated": {
-            definition: "Uncomplicated: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'uncomplicated' when discussing everyday topics."
-        },
-        "unconditional": {
-            definition: "Not subject to any conditions; absolute.",
-            example: "Parents often give their children unconditional love."
-        },
-        "undemanding": {
-            definition: "Being or performing the action of undemanding or causing that action to happen.",
-            example: "People often used the word 'undemanding' when discussing everyday topics."
-        },
-        "undermine": {
-            definition: "Undermine: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'undermine' when discussing everyday topics."
-        },
-        "understanding": {
-            definition: "Being or performing the action of understanding or causing that action to happen.",
-            example: "People often used the word 'understanding' when discussing everyday topics."
-        },
-        "understate": {
-            definition: "Understate: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'understate' when discussing everyday topics."
-        },
-        "unearthly": {
-            definition: "In a manner that is unearth.",
-            example: "People often used the word 'unearthly' when discussing everyday topics."
-        },
-        "unfathomable": {
-            definition: "Capable of being unfathom.",
-            example: "People often used the word 'unfathomable' when discussing everyday topics."
-        },
-        "unflappable": {
-            definition: "Capable of being unflapp.",
-            example: "People often used the word 'unflappable' when discussing everyday topics."
-        },
-        "unhappy": {
-            definition: "Unhappy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'unhappy' when discussing everyday topics."
-        },
-        "unmistakable": {
-            definition: "Capable of being unmistak.",
-            example: "People often used the word 'unmistakable' when discussing everyday topics."
-        },
-        "unobtrusive": {
-            definition: "Having the quality of being unobtr.",
-            example: "People often used the word 'unobtrusive' when discussing everyday topics."
-        },
-        "unperturbed": {
-            definition: "Unperturbed: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'unperturbed' when discussing everyday topics."
-        },
-        "unprecedented": {
-            definition: "Unprecedented: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'unprecedented' when discussing everyday topics."
-        },
-        "unpublished": {
-            definition: "Not yet made public; not issued in a print or digital format.",
-            example: "The author left behind several unpublished manuscripts."
-        },
-        "unsafe": {
-            definition: "Unsafe: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'unsafe' when discussing everyday topics."
-        },
-        "unsanitary": {
-            definition: "Unsanitary: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'unsanitary' when discussing everyday topics."
-        },
-        "untainted": {
-            definition: "Untainted: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'untainted' when discussing everyday topics."
-        },
-        "unwavering": {
-            definition: "Steady or resolute; not wavering or hesitating.",
-            example: "She showed unwavering support for her friend during the crisis."
-        },
-        "unyielding": {
-            definition: "Being or performing the action of unyielding or causing that action to happen.",
-            example: "People often used the word 'unyielding' when discussing everyday topics."
-        },
-        "uplifting": {
-            definition: "Being or performing the action of uplifting or causing that action to happen.",
-            example: "People often used the word 'uplifting' when discussing everyday topics."
-        },
-        "upright": {
-            definition: "Upright: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'upright' when discussing everyday topics."
-        },
-        "uproarious": {
-            definition: "Having the quality of being uproar.",
-            example: "People often used the word 'uproarious' when discussing everyday topics."
-        },
-        "upset": {
-            definition: "Upset: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'upset' when discussing everyday topics."
-        },
-        "used": {
-            definition: "Used: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'used' when discussing everyday topics."
-        },
-        "useful": {
-            definition: "Having the quality of being .",
-            example: "People often used the word 'useful' when discussing everyday topics."
-        },
-        "usé": {
-            definition: "Usé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'usé' when discussing everyday topics."
-        },
-        "utilidad": {
-            definition: "Utilidad: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'utilidad' when discussing everyday topics."
-        },
-        "utility": {
-            definition: "Utility: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'utility' when discussing everyday topics."
-        },
-        "vaillant": {
-            definition: "Vaillant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vaillant' when discussing everyday topics."
-        },
-        "valeroso": {
-            definition: "Valeroso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'valeroso' when discussing everyday topics."
-        },
-        "valiant": {
-            definition: "Valiant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'valiant' when discussing everyday topics."
-        },
-        "valiente": {
-            definition: "Valiente: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'valiente' when discussing everyday topics."
-        },
-        "valorous": {
-            definition: "Having the quality of being valor.",
-            example: "People often used the word 'valorous' when discussing everyday topics."
-        },
-        "values": {
-            definition: "Values: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'values' when discussing everyday topics."
-        },
-        "vanguardista": {
-            definition: "Vanguardista: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vanguardista' when discussing everyday topics."
-        },
-        "vaste": {
-            definition: "Vaste: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vaste' when discussing everyday topics."
-        },
-        "vasto": {
-            definition: "Vasto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vasto' when discussing everyday topics."
-        },
-        "veloz": {
-            definition: "Veloz: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'veloz' when discussing everyday topics."
-        },
-        "velvety": {
-            definition: "Velvety: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'velvety' when discussing everyday topics."
-        },
-        "venerable": {
-            definition: "Accorded a great deal of respect, especially because of age.",
-            example: "The venerable old oak tree had stood in the park for centuries."
-        },
-        "veracious": {
-            definition: "Having the quality of being verac.",
-            example: "People often used the word 'veracious' when discussing everyday topics."
-        },
-        "verdant": {
-            definition: "Verdant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'verdant' when discussing everyday topics."
-        },
-        "vertiginoso": {
-            definition: "Vertiginoso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vertiginoso' when discussing everyday topics."
-        },
-        "vertiginous": {
-            definition: "Causing vertigo, especially by being extremely high or steep.",
-            example: "The climber looked down the vertiginous cliff and felt dizzy."
-        },
-        "vetust": {
-            definition: "Extremely old; ancient and weathered.",
-            example: "The vetust building looked as if it could crumble at any moment."
-        },
-        "vetusto": {
-            definition: "Vetusto: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vetusto' when discussing everyday topics."
-        },
-        "viaje": {
-            definition: "Viaje: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'viaje' when discussing everyday topics."
-        },
-        "vibrant": {
-            definition: "Vibrant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vibrant' when discussing everyday topics."
-        },
-        "vie privée": {
-            definition: "Vie privée: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vie privée' when discussing everyday topics."
-        },
-        "viejo": {
-            definition: "Viejo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'viejo' when discussing everyday topics."
-        },
-        "vieux": {
-            definition: "Vieux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vieux' when discussing everyday topics."
-        },
-        "vif": {
-            definition: "Vif: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vif' when discussing everyday topics."
-        },
-        "vigoroso": {
-            definition: "Vigoroso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vigoroso' when discussing everyday topics."
-        },
-        "vigoureux": {
-            definition: "Vigoureux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vigoureux' when discussing everyday topics."
-        },
-        "vintage": {
-            definition: "Vintage: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vintage' when discussing everyday topics."
-        },
-        "violent": {
-            definition: "Using or involving physical force intended to hurt or kill.",
-            example: "The city was rocked by several violent protests last week."
-        },
-        "virtuoso": {
-            definition: "Virtuoso: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'virtuoso' when discussing everyday topics."
-        },
-        "visceral": {
-            definition: "Visceral: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'visceral' when discussing everyday topics."
-        },
-        "vision": {
-            definition: "The act or process of viing.",
-            example: "People often used the word 'vision' when discussing everyday topics."
-        },
-        "visionary": {
-            definition: "Visionary: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'visionary' when discussing everyday topics."
-        },
-        "vital": {
-            definition: "Vital: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vital' when discussing everyday topics."
-        },
-        "vite": {
-            definition: "Vite: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vite' when discussing everyday topics."
-        },
-        "vivacious": {
-            definition: "Having the quality of being vivac.",
-            example: "People often used the word 'vivacious' when discussing everyday topics."
-        },
-        "vivid": {
-            definition: "Vivid: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vivid' when discussing everyday topics."
-        },
-        "vivify": {
-            definition: "Vivify: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vivify' when discussing everyday topics."
-        },
-        "vociferous": {
-            definition: "Having the quality of being vocifer.",
-            example: "People often used the word 'vociferous' when discussing everyday topics."
-        },
-        "voiceless": {
-            definition: "Having the quality of being voic.",
-            example: "People often used the word 'voiceless' when discussing everyday topics."
-        },
-        "voluntariado": {
-            definition: "Voluntariado: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'voluntariado' when discussing everyday topics."
-        },
-        "volunteering": {
-            definition: "Being or performing the action of volunteering or causing that action to happen.",
-            example: "People often used the word 'volunteering' when discussing everyday topics."
-        },
-        "vulnerable": {
-            definition: "Capable of being vulner.",
-            example: "People often used the word 'vulnerable' when discussing everyday topics."
-        },
-        "vulnérable": {
-            definition: "Capable of being vulnér.",
-            example: "People often used the word 'vulnérable' when discussing everyday topics."
-        },
-        "véloce": {
-            definition: "Véloce: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'véloce' when discussing everyday topics."
-        },
-        "vénérable": {
-            definition: "Capable of being vénér.",
-            example: "People often used the word 'vénérable' when discussing everyday topics."
-        },
-        "vétuste": {
-            definition: "Vétuste: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'vétuste' when discussing everyday topics."
-        },
-        "warm": {
-            definition: "Warm: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'warm' when discussing everyday topics."
-        },
-        "weak": {
-            definition: "Weak: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'weak' when discussing everyday topics."
-        },
-        "wealthy": {
-            definition: "Wealthy: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'wealthy' when discussing everyday topics."
-        },
-        "weird": {
-            definition: "Weird: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'weird' when discussing everyday topics."
-        },
-        "well-off": {
-            definition: "Well-off: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'well-off' when discussing everyday topics."
-        },
-        "well-oiled": {
-            definition: "Well-oiled: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'well-oiled' when discussing everyday topics."
-        },
-        "wellness": {
-            definition: "Wellness: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'wellness' when discussing everyday topics."
-        },
-        "wide": {
-            definition: "Wide: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'wide' when discussing everyday topics."
-        },
-        "wisdom": {
-            definition: "Wisdom: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'wisdom' when discussing everyday topics."
-        },
-        "wise": {
-            definition: "Having or showing experience, knowledge, and good judgment.",
-            example: "Choosing to save for the future was a wise decision."
-        },
-        "woebegone": {
-            definition: "Woebegone: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'woebegone' when discussing everyday topics."
-        },
-        "woefulness": {
-            definition: "Woefulness: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'woefulness' when discussing everyday topics."
-        },
-        "wonderful": {
-            definition: "Having the quality of being wonder.",
-            example: "People often used the word 'wonderful' when discussing everyday topics."
-        },
-        "work": {
-            definition: "Activity involving mental or physical effort done to achieve a purpose or result; a job.",
-            example: "People often used the word 'work' when discussing everyday topics."
-        },
-        "workout": {
-            definition: "Workout: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'workout' when discussing everyday topics."
-        },
-        "worn": {
-            definition: "Worn: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'worn' when discussing everyday topics."
-        },
-        "wrathful": {
-            definition: "Having the quality of being wrath.",
-            example: "People often used the word 'wrathful' when discussing everyday topics."
-        },
-        "wrong": {
-            definition: "Wrong: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'wrong' when discussing everyday topics."
-        },
-        "young": {
-            definition: "Young: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'young' when discussing everyday topics."
-        },
-        "ágil": {
-            definition: "Ágil: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ágil' when discussing everyday topics."
-        },
-        "álgido": {
-            definition: "Álgido: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'álgido' when discussing everyday topics."
-        },
-        "âgé": {
-            definition: "Âgé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'âgé' when discussing everyday topics."
-        },
-        "éblouissant": {
-            definition: "Éblouissant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'éblouissant' when discussing everyday topics."
-        },
-        "économe": {
-            definition: "Économe: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'économe' when discussing everyday topics."
-        },
-        "électrisant": {
-            definition: "Électrisant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'électrisant' when discussing everyday topics."
-        },
-        "élémentaire": {
-            definition: "Élémentaire: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'élémentaire' when discussing everyday topics."
-        },
-        "énervé": {
-            definition: "Énervé: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'énervé' when discussing everyday topics."
-        },
-        "énorme": {
-            definition: "Énorme: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'énorme' when discussing everyday topics."
-        },
-        "épanouissement": {
-            definition: "Épanouissement: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'épanouissement' when discussing everyday topics."
-        },
-        "épineux": {
-            definition: "Épineux: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'épineux' when discussing everyday topics."
-        },
-        "éploré": {
-            definition: "Éploré: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'éploré' when discussing everyday topics."
-        },
-        "épouvantable": {
-            definition: "Capable of being épouvant.",
-            example: "People often used the word 'épouvantable' when discussing everyday topics."
-        },
-        "équilibre": {
-            definition: "Équilibre: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'équilibre' when discussing everyday topics."
-        },
-        "érudit": {
-            definition: "Érudit: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'érudit' when discussing everyday topics."
-        },
-        "étouffant": {
-            definition: "Étouffant: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'étouffant' when discussing everyday topics."
-        },
-        "étroit": {
-            definition: "Étroit: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'étroit' when discussing everyday topics."
-        },
-        "évident": {
-            definition: "Évident: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'évident' when discussing everyday topics."
-        },
-        "ínfimo": {
-            definition: "Ínfimo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'ínfimo' when discussing everyday topics."
-        },
-        "óptimo": {
-            definition: "Óptimo: a commonly used term with a straightforward meaning.",
-            example: "People often used the word 'óptimo' when discussing everyday topics."
-        },
-    },
-    fr: {
-        "abdicate": {
-            definition: "Renoncer à son trône ; manquer à un devoir.",
-            example: "Le roi a décidé d'abdiquer en faveur de son fils."
-        },
-        "abdiquer": {
-            definition: "Abdiquer : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot abdiquer dans une phrase descriptive ordinaire."
-        },
-        "abolir": {
-            definition: "Abolir : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot abolir dans une phrase descriptive ordinaire."
-        },
-        "abolish": {
-            definition: "To formally put an end to a system, practice, or institution.",
-            example: "The government moved to abolish the outdated law."
-        },
-        "abridge": {
-            definition: "To shorten a text while preserving its key content.",
-            example: "The editor chose to abridge the long article for the magazine edition."
-        },
-        "accablante": {
-            definition: "Accablante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot accablante dans une phrase descriptive ordinaire."
-        },
-        "adolescent": {
-            definition: "Adolescent : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot adolescent dans une phrase descriptive ordinaire."
-        },
-        "adroit": {
-            definition: "Adroit : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot adroit dans une phrase descriptive ordinaire."
-        },
-        "advocate": {
-            definition: "To publicly recommend or support something; a person who supports a cause.",
-            example: "She became an advocate for better workplace safety."
-        },
-        "aesthetic": {
-            definition: "Concerné par la beauté ou l'appréciation de la beauté.",
-            example: "Le nouveau café a une esthétique très moderne et épurée."
+            definition: "Concerning the appreciation of beauty or artistic taste; relating to what is visually pleasing.",
+            example: "The designer focused on creating an aesthetic that felt modern and warm."
         },
         "affable": {
             definition: "Friendly, pleasant, and easy to talk to.",
-            example: "The host was affable and made every guest feel welcome."
+            example: "He was affable with every guest at the reception."
         },
-        "affamé": {
-            definition: "Qui est affamé ou qui ressent affamé.",
-            example: "On peut utiliser le mot affamé dans une phrase descriptive ordinaire."
+        "affluent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word affluent when describing a common situation."
         },
-        "agressive": {
-            definition: "Agressive : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot agressive dans une phrase descriptive ordinaire."
+        "affordable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word affordable when describing a common situation."
         },
-        "alléchante": {
-            definition: "Alléchante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot alléchante dans une phrase descriptive ordinaire."
+        "affreux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word affreux when describing a common situation."
         },
-        "allégresse": {
-            definition: "Allégresse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot allégresse dans une phrase descriptive ordinaire."
+        "afligido": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word afligido when describing a common situation."
         },
-        "altier": {
-            definition: "Altier : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot altier dans une phrase descriptive ordinaire."
+        "agacé": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word agacé when describing a common situation."
         },
-        "altruista": {
-            definition: "Montrant une préoccupation désintéressée et altruiste pour les autres.",
-            example: "Ses actes altruistes ont aidé de nombreuses personnes de la communauté locale."
+        "age-old": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word age-old when describing a common situation."
         },
-        "ambitieux": {
-            definition: "Ambitieux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot ambitieux dans une phrase descriptive ordinaire."
+        "aged": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word aged when describing a common situation."
         },
-        "amortiguado": {
-            definition: "Pas fort parce qu'il est obstrué d'une manière ou d'une autre ; sourd.",
-            example: "J'ai entendu le son étouffé de voix à travers le mur épais."
+        "agile": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word agile when describing a common situation."
         },
-        "améliorer": {
-            definition: "Améliorer : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot améliorer dans une phrase descriptive ordinaire."
+        "agréable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word agréable when describing a common situation."
         },
-        "anacronico": {
-            definition: "Appartenant ou approprié à une période autre que celle dans laquelle il existe.",
-            example: "Utiliser une machine à écrire dans un bureau moderne peut sembler anachronique."
+        "agudo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word agudo when describing a common situation."
+        },
+        "ahorro": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word ahorro when describing a common situation."
+        },
+        "airado": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word airado when describing a common situation."
+        },
+        "aisé": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word aisé when describing a common situation."
+        },
+        "ajuste": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word ajuste when describing a common situation."
+        },
+        "alcance": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word alcance when describing a common situation."
+        },
+        "alegre": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word alegre when describing a common situation."
+        },
+        "almuerzo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word almuerzo when describing a common situation."
+        },
+        "alojamiento": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word alojamiento when describing a common situation."
+        },
+        "ambición": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ambición when describing a common situation."
+        },
+        "ambience": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ambience when describing a common situation."
+        },
+        "ambiente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ambiente when describing a common situation."
+        },
+        "ambition": {
+            definition: "An act, process, or result related to ambi, describing a specific action or condition.",
+            example: "The decision came after a lengthy ambition process that changed the plan."
+        },
+        "amiable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word amiable when describing a common situation."
+        },
+        "amicable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word amicable when describing a common situation."
+        },
+        "amusing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Amusing every day helped him improve quickly."
         },
         "ancestral": {
-            definition: "De l'ancêtre, appartenant à l'ancêtre ou hérité de lui.",
-            example: "Ils ont visité leur maison ancestrale à la campagne."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ancestral when describing a common situation."
+        },
+        "anciano": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word anciano when describing a common situation."
         },
         "ancien": {
-            definition: "Qui existe depuis longtemps; vieux.",
-            example: "On peut utiliser le mot ancien dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word ancien when describing a common situation."
         },
-        "angelical": {
-            definition: "Relatif aux anges ; exceptionnellement beau ou gentil.",
-            example: "L'enfant avait un visage angélique qui faisait fondre le cœur de tout le monde."
+        "ancient": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ancient when describing a common situation."
+        },
+        "angoissant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word angoissant when describing a common situation."
+        },
+        "angry": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word angry when describing a common situation."
         },
         "annihilate": {
-            definition: "To destroy completely; to wipe out.",
-            example: "The army's objective was to annihilate the small enemy force."
+            definition: "To destroy completely so that nothing remains useful or recognizable.",
+            example: "The old building was annihilated to make room for the new highway."
         },
-        "anodin": {
-            definition: "Anodin : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot anodin dans une phrase descriptive ordinaire."
-        },
-        "anonymat": {
-            definition: "Anonymat : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot anonymat dans une phrase descriptive ordinaire."
+        "annoyed": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word annoyed when describing a common situation."
         },
         "anonymity": {
-            definition: "The condition of being anonymous; lacking identification.",
-            example: "The whistleblower requested anonymity to protect their identity."
+            definition: "The condition of being unnamed or unidentifiable, so that a person's identity is not known.",
+            example: "Users could post comments with anonymity to protect their privacy."
+        },
+        "antediluvian": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word antediluvian when describing a common situation."
+        },
+        "antediluviano": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word antediluviano when describing a common situation."
+        },
+        "antiguo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word antiguo when describing a common situation."
+        },
+        "antiquarian": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word antiquarian when describing a common situation."
+        },
+        "antiquated": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word antiquated when describing a common situation."
         },
         "antique": {
-            definition: "Antique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot antique dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word antique when describing a common situation."
         },
         "antonym": {
-            definition: "A word that means the opposite of another word.",
-            example: "'Love' is an antonym of 'hate'."
+            definition: "A word that has the opposite meaning of another word.",
+            example: "\"Hot\" and \"cold\" are antonyms."
         },
-        "antonyme": {
-            definition: "Antonyme : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot antonyme dans une phrase descriptive ordinaire."
+        "apasionado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word apasionado when describing a common situation."
         },
-        "anéantir": {
-            definition: "Anéantir : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot anéantir dans une phrase descriptive ordinaire."
+        "apasionante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word apasionante when describing a common situation."
         },
-        "apaisant": {
-            definition: "Apaisant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot apaisant dans une phrase descriptive ordinaire."
+        "apesadumbrado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word apesadumbrado when describing a common situation."
+        },
+        "apollonian": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word apollonian when describing a common situation."
+        },
+        "apoplectic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word apoplectic when describing a common situation."
+        },
+        "apoyo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word apoyo when describing a common situation."
+        },
+        "apparent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word apparent when describing a common situation."
         },
         "appreciation": {
-            definition: "Reconocimiento y aprecio por las cualidades positivas de algo o alguien.",
-            example: "Ella expresó su apreciación con una nota considerada después del evento."
+            definition: "An act, process, or result related to apprecia, describing a specific action or condition.",
+            example: "The decision came after a lengthy appreciation process that changed the plan."
         },
-        "arcano": {
-            definition: "Compris par peu de personnes ; mystérieux ou secret.",
-            example: "Il a passé des années à étudier des rituels arcaniques issus de textes anciens."
+        "approachable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word approachable when describing a common situation."
+        },
+        "aprendizaje": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word aprendizaje when describing a common situation."
+        },
+        "arcaico": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word arcaico when describing a common situation."
+        },
+        "archaic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word archaic when describing a common situation."
         },
         "archaïque": {
-            definition: "Archaïque : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot archaïque dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word archaïque when describing a common situation."
+        },
+        "arctic": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word arctic when describing a common situation."
         },
         "ardent": {
-            definition: "Enthusiastic or passionate; showing strong feelings.",
-            example: "She was an ardent supporter of environmental causes."
+            definition: "Very enthusiastic or passionate about a cause or activity.",
+            example: "He was an ardent supporter of environmental conservation."
         },
-        "argentine": {
-            definition: "Argentine : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot argentine dans une phrase descriptive ordinaire."
+        "ardiente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ardiente when describing a common situation."
         },
-        "armonioso": {
-            definition: "Formant un tout agréable ou cohérent ; mélodieux.",
-            example: "Les couleurs de la pièce se combinaient pour créer une atmosphère harmonieuse."
+        "ardu": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word ardu when describing a common situation."
+        },
+        "arduo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word arduo when describing a common situation."
+        },
+        "arduous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word arduous when describing a common situation."
+        },
+        "aromatic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word aromatic when describing a common situation."
+        },
+        "arrebatador": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word arrebatador when describing a common situation."
         },
         "articulate": {
-            definition: "Able to express ideas clearly and effectively in speech or writing.",
-            example: "His articulate presentation convinced the board to approve the project."
+            definition: "Able to express thoughts and ideas clearly and effectively in speech or writing.",
+            example: "He is very articulate and explained the process step by step."
         },
-        "articulé": {
-            definition: "Qui est articulé ou qui ressent articulé.",
-            example: "On peut utiliser le mot articulé dans une phrase descriptive ordinaire."
+        "asequible": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word asequible when describing a common situation."
         },
-        "artificial": {
-            definition: "Fabriqué ou produit par des êtres humains plutôt que de manière naturelle.",
-            example: "Le musée a utilisé une lumière artificielle pour préserver les peintures délicates."
-        },
-        "artificielle": {
-            definition: "Artificielle : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot artificielle dans une phrase descriptive ordinaire."
-        },
-        "aseptico": {
-            definition: "Exempt de contamination causée par des bactéries ou des virus nocifs.",
-            example: "La chirurgie a été réalisée dans un environnement strictement aseptique."
-        },
-        "assourdissant": {
-            definition: "Assourdissant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot assourdissant dans une phrase descriptive ordinaire."
-        },
-        "astronome": {
-            definition: "Astronome : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot astronome dans une phrase descriptive ordinaire."
+        "asistencia": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word asistencia when describing a common situation."
         },
         "astronomer": {
-            definition: "A scientist who studies celestial objects, space, and the universe.",
-            example: "The astronomer published a paper on the newly discovered exoplanet."
+            definition: "A scientist who studies celestial objects, space, and the physical universe beyond Earth.",
+            example: "The astronomer charted the positions of newly discovered comets."
         },
         "astucieux": {
-            definition: "Astucieux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot astucieux dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word astucieux when describing a common situation."
+        },
+        "astute": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word astute when describing a common situation."
+        },
+        "astuto": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word astuto when describing a common situation."
+        },
+        "aterido": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word aterido when describing a common situation."
+        },
+        "aterrador": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word aterrador when describing a common situation."
         },
         "athlétique": {
-            definition: "Athlétique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot athlétique dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word athlétique when describing a common situation."
         },
-        "atone": {
-            definition: "Atone : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot atone dans une phrase descriptive ordinaire."
+        "atractivo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word atractivo when describing a common situation."
         },
-        "attaché": {
-            definition: "Qui est attaché ou qui ressent attaché.",
-            example: "On peut utiliser le mot attaché dans une phrase descriptive ordinaire."
+        "atroce": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word atroce when describing a common situation."
         },
-        "attentif": {
-            definition: "Attentif : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot attentif dans une phrase descriptive ordinaire."
+        "atrocious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word atrocious when describing a common situation."
         },
-        "austera": {
-            definition: "Sévère ou strict dans la manière, l'attitude ou l'apparence.",
-            example: "Le monastère avait un réfectoire austère avec des bancs simples."
+        "attendance": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word attendance when describing a common situation."
+        },
+        "attenuated": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word attenuated when describing a common situation."
+        },
+        "attractive": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word attractive when describing a common situation."
+        },
+        "attrayant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word attrayant when describing a common situation."
+        },
+        "audacieux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word audacieux when describing a common situation."
+        },
+        "audacious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word audacious when describing a common situation."
+        },
+        "audaz": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word audaz when describing a common situation."
+        },
+        "auspicious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word auspicious when describing a common situation."
+        },
+        "autocuidado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word autocuidado when describing a common situation."
+        },
+        "autonomous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word autonomous when describing a common situation."
+        },
+        "avant-gardiste": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word avant-gardiste when describing a common situation."
+        },
+        "avenir": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word avenir when describing a common situation."
+        },
+        "aventura": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word aventura when describing a common situation."
+        },
+        "aventure": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word aventure when describing a common situation."
         },
         "aversion": {
-            definition: "A strong dislike or disinclination towards something.",
-            example: "She had an aversion to loud parties and preferred quiet evenings."
+            definition: "A strong dislike or reluctance to do or experience something.",
+            example: "She has an aversion to loud noises and avoids crowded places."
         },
-        "azuré": {
-            definition: "Qui est azuré ou qui ressent azuré.",
-            example: "On peut utiliser le mot azuré dans une phrase descriptive ordinaire."
+        "avide": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word avide when describing a common situation."
         },
-        "bas": {
-            definition: "Bas : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot bas dans une phrase descriptive ordinaire."
+        "avisé": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word avisé when describing a common situation."
         },
-        "basse": {
-            definition: "Basse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot basse dans une phrase descriptive ordinaire."
+        "awareness": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word awareness when describing a common situation."
+        },
+        "awful": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word awful when describing a common situation."
+        },
+        "añejo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word añejo when describing a common situation."
+        },
+        "bad": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word bad when describing a common situation."
+        },
+        "baked": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word baked when describing a common situation."
+        },
+        "balance": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word balance when describing a common situation."
+        },
+        "baleful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word baleful when describing a common situation."
+        },
+        "balmy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word balmy when describing a common situation."
+        },
+        "bashful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word bashful when describing a common situation."
+        },
+        "basic": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word basic when describing a common situation."
+        },
+        "beatific": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word beatific when describing a common situation."
+        },
+        "beatífico": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word beatífico when describing a common situation."
         },
         "beau": {
-            definition: "Beau : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot beau dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word beau when describing a common situation."
         },
         "beautiful": {
-            definition: "Agréable aux sens ou à l'esprit d'un point de vue esthétique.",
-            example: "Le coucher de soleil sur la montagne était absolument magnifique."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word beautiful when describing a common situation."
         },
-        "belle": {
-            definition: "Belle : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot belle dans une phrase descriptive ordinaire."
+        "bello": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word bello when describing a common situation."
         },
         "benefactor": {
-            definition: "A person who gives money or other help to a cause or organization.",
-            example: "The university's new library was funded by a generous benefactor."
+            definition: "A person who gives money or help to a person or cause, especially in a generous way.",
+            example: "The scholarship was funded by a generous benefactor."
         },
-        "bien": {
-            definition: "Bien : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot bien dans une phrase descriptive ordinaire."
+        "beneficial": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word beneficial when describing a common situation."
         },
-        "bienfaisante": {
-            definition: "Bienfaisante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot bienfaisante dans une phrase descriptive ordinaire."
+        "benignant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word benignant when describing a common situation."
         },
-        "bienveillant": {
-            definition: "Bienveillant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot bienveillant dans une phrase descriptive ordinaire."
+        "besmirched": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word besmirched when describing a common situation."
         },
-        "blanc": {
-            definition: "Blanc : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot blanc dans une phrase descriptive ordinaire."
+        "bien-être": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word bien-être when describing a common situation."
         },
-        "blanche": {
-            definition: "Blanche : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot blanche dans une phrase descriptive ordinaire."
+        "bienestar": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word bienestar when describing a common situation."
+        },
+        "big": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word big when describing a common situation."
+        },
+        "biting": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Biting every day helped him improve quickly."
+        },
+        "black": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word black when describing a common situation."
+        },
+        "blank": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word blank when describing a common situation."
+        },
+        "blaring": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Blaring every day helped him improve quickly."
+        },
+        "blazing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Blazing every day helped him improve quickly."
+        },
+        "blissful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word blissful when describing a common situation."
+        },
+        "blistering": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Blistering every day helped him improve quickly."
+        },
+        "bloodcurdling": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Bloodcurdling every day helped him improve quickly."
+        },
+        "blue": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word blue when describing a common situation."
+        },
+        "bochornoso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word bochornoso when describing a common situation."
+        },
+        "boiling": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Boiling every day helped him improve quickly."
+        },
+        "bold": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word bold when describing a common situation."
         },
         "bon": {
-            definition: "Bon : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot bon dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word bon when describing a common situation."
         },
-        "bonne": {
-            definition: "Bonne : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot bonne dans une phrase descriptive ordinaire."
+        "bonito": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word bonito when describing a common situation."
         },
-        "boréale": {
-            definition: "Boréale : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot boréale dans une phrase descriptive ordinaire."
+        "booming": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Booming every day helped him improve quickly."
         },
-        "bucolique": {
-            definition: "Bucolique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot bucolique dans une phrase descriptive ordinaire."
+        "bouillant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word bouillant when describing a common situation."
         },
-        "caduc": {
-            definition: "Caduc : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot caduc dans une phrase descriptive ordinaire."
+        "boundaries": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word boundaries when describing a common situation."
         },
-        "canoniser": {
-            definition: "Canoniser : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot canoniser dans une phrase descriptive ordinaire."
+        "bracing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Bracing every day helped him improve quickly."
+        },
+        "brave": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word brave when describing a common situation."
+        },
+        "bravo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word bravo when describing a common situation."
+        },
+        "breakable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word breakable when describing a common situation."
+        },
+        "breakfast": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word breakfast when describing a common situation."
+        },
+        "breakneck": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word breakneck when describing a common situation."
+        },
+        "brief": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word brief when describing a common situation."
+        },
+        "bright": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word bright when describing a common situation."
+        },
+        "brighten": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word brighten when describing a common situation."
+        },
+        "brillant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word brillant when describing a common situation."
+        },
+        "brillante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word brillante when describing a common situation."
+        },
+        "brilliant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word brilliant when describing a common situation."
+        },
+        "brio": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word brio when describing a common situation."
+        },
+        "brisable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word brisable when describing a common situation."
+        },
+        "brisk": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word brisk when describing a common situation."
+        },
+        "brittle": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word brittle when describing a common situation."
+        },
+        "broke": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word broke when describing a common situation."
+        },
+        "brûlant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word brûlant when describing a common situation."
+        },
+        "budget": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word budget when describing a common situation."
+        },
+        "budgeting": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Budgeting every day helped him improve quickly."
+        },
+        "bueno": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word bueno when describing a common situation."
+        },
+        "burning": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Burning every day helped him improve quickly."
+        },
+        "busy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word busy when describing a common situation."
+        },
+        "béat": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word béat when describing a common situation."
+        },
+        "calamitous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word calamitous when describing a common situation."
+        },
+        "calidad": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word calidad when describing a common situation."
+        },
+        "caliente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word caliente when describing a common situation."
+        },
+        "calm": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word calm when describing a common situation."
+        },
+        "candente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word candente when describing a common situation."
+        },
+        "candor": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word candor when describing a common situation."
+        },
+        "caniculaire": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word caniculaire when describing a common situation."
+        },
+        "canicular": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word canicular when describing a common situation."
         },
         "canonize": {
-            definition: "Déclarer officiellement une personne décédée comme sainte.",
-            example: "L'église a décidé de canoniser la religieuse pour son service de toute une vie."
+            definition: "To officially declare someone a saint in certain religious traditions.",
+            example: "The church decided to canonize the missionary for his lifetime of service."
         },
-        "cartografical": {
-            definition: "Relatif à la science ou à la pratique de l'élaboration de cartes.",
-            example: "La précision cartographique du nouvel atlas est impressionnante."
+        "capable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word capable when describing a common situation."
         },
-        "cegadora": {
-            definition: "Si brillant qu'il obscurcit la vision.",
-            example: "La neige était si blanche qu'elle créait un éclat aveuglant."
+        "capaz": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word capaz when describing a common situation."
         },
-        "celestial": {
-            definition: "Positionné dans le ciel ou s'y rapportant, ou dans l'espace.",
-            example: "Les étoiles et les planètes sont des corps célestes visibles la nuit."
+        "capital": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word capital when describing a common situation."
         },
-        "centelleante": {
-            definition: "Étincelant ou brillant vivement ; brillamment intelligent ou excitant.",
-            example: "Elle a donné une performance scintillante qui a captivé le public."
+        "captivant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word captivant when describing a common situation."
+        },
+        "captivating": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Captivating every day helped him improve quickly."
+        },
+        "cardinal": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word cardinal when describing a common situation."
+        },
+        "cassant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word cassant when describing a common situation."
+        },
+        "catastrophic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word catastrophic when describing a common situation."
+        },
+        "cauchemardesque": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word cauchemardesque when describing a common situation."
+        },
+        "cautivador": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word cautivador when describing a common situation."
+        },
+        "celebración": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word celebración when describing a common situation."
+        },
+        "celebration": {
+            definition: "An act, process, or result related to celebra, describing a specific action or condition.",
+            example: "The decision came after a lengthy celebration process that changed the plan."
+        },
+        "chagriné": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word chagriné when describing a common situation."
+        },
+        "challenges": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word challenges when describing a common situation."
+        },
+        "challenging": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Challenging every day helped him improve quickly."
+        },
+        "chancelant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word chancelant when describing a common situation."
+        },
+        "change": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word change when describing a common situation."
         },
         "chaos": {
-            definition: "Complete disorder and confusion.",
-            example: "When the power went out, the station descended into chaos."
+            definition: "A state of complete disorder and confusion with little or no organization.",
+            example: "The sudden storm threw the city into chaos for several hours."
         },
-        "chimérique": {
-            definition: "Chimérique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot chimérique dans une phrase descriptive ordinaire."
+        "characters": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word characters when describing a common situation."
         },
-        "chétive": {
-            definition: "Chétive : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot chétive dans une phrase descriptive ordinaire."
+        "chaud": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word chaud when describing a common situation."
         },
-        "ciclopea": {
-            definition: "Extrêmement massif ; fait d'énormes pierres.",
-            example: "Les ruines ont été construites avec des murs cyclopéens qui ont traversé les âges."
+        "cheap": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word cheap when describing a common situation."
         },
-        "cinglante": {
-            definition: "Cinglante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot cinglante dans une phrase descriptive ordinaire."
+        "cheer": {
+            definition: "A person or thing whose job or role involves a particular activity or function.",
+            example: "They used the word cheer when describing a common situation."
+        },
+        "cheerful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word cheerful when describing a common situation."
+        },
+        "chico": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word chico when describing a common situation."
+        },
+        "child's play": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "She described the situation as child's play in plain speech."
+        },
+        "chilly": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word chilly when describing a common situation."
+        },
+        "choices": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word choices when describing a common situation."
         },
         "clair": {
-            definition: "Clair : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot clair dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word clair when describing a common situation."
         },
-        "claire": {
-            definition: "Claire : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot claire dans une phrase descriptive ordinaire."
+        "clairvoyant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word clairvoyant when describing a common situation."
         },
-        "clasificado": {
-            definition: "Organisé en classes ou catégories ; gardé secret pour la sécurité.",
-            example: "Les agents manipulaient des documents hautement classifiés."
+        "clamorous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word clamorous when describing a common situation."
+        },
+        "clarity": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word clarity when describing a common situation."
+        },
+        "clarividente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word clarividente when describing a common situation."
+        },
+        "claro": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word claro when describing a common situation."
         },
         "claustrophobia": {
-            definition: "An extreme fear of enclosed spaces.",
-            example: "Her claustrophobia made the crowded elevator unbearable."
+            definition: "An extreme fear or anxiety about being in confined or enclosed spaces.",
+            example: "He avoided elevators because of his claustrophobia."
         },
-        "claustrophobie": {
-            definition: "Claustrophobie : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot claustrophobie dans une phrase descriptive ordinaire."
+        "claustrophobic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word claustrophobic when describing a common situation."
         },
         "clear": {
-            definition: "Facile à percevoir, à comprendre ou à interpréter ; transparent.",
-            example: "Les instructions étaient claires et faciles à suivre."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word clear when describing a common situation."
         },
-        "collective": {
-            definition: "Collective : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot collective dans une phrase descriptive ordinaire."
+        "clement": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word clement when describing a common situation."
         },
-        "comprometedor": {
-            definition: "Révéler que quelqu'un a fait quelque chose de mal ou de gênant.",
-            example: "La fuite des photos compromettantes a ruiné la carrière du politicien."
+        "clever": {
+            definition: "A person or thing whose job or role involves a particular activity or function.",
+            example: "They used the word clever when describing a common situation."
         },
-        "concentrada": {
-            definition: "Entièrement dirigé vers une chose ; intense ou puissant.",
-            example: "Le jus était trop concentré et devait être dilué avec de l'eau."
+        "colaboración": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word colaboración when describing a common situation."
         },
-        "concis": {
-            definition: "Concis : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot concis dans une phrase descriptive ordinaire."
+        "cold": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word cold when describing a common situation."
+        },
+        "collaboration": {
+            definition: "An act, process, or result related to collabora, describing a specific action or condition.",
+            example: "The decision came after a lengthy collaboration process that changed the plan."
+        },
+        "collected": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word collected when describing a common situation."
+        },
+        "colosal": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word colosal when describing a common situation."
+        },
+        "colossal": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word colossal when describing a common situation."
+        },
+        "colérico": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word colérico when describing a common situation."
+        },
+        "comblé": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word comblé when describing a common situation."
+        },
+        "comical": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word comical when describing a common situation."
+        },
+        "commanding": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Commanding every day helped him improve quickly."
+        },
+        "commode": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word commode when describing a common situation."
+        },
+        "commodité": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word commodité when describing a common situation."
+        },
+        "communication": {
+            definition: "An act, process, or result related to communica, describing a specific action or condition.",
+            example: "The decision came after a lengthy communication process that changed the plan."
+        },
+        "community": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word community when describing a common situation."
+        },
+        "commute": {
+            definition: "To travel regularly between home and work or school.",
+            example: "She commutes an hour every morning to get to the office."
+        },
+        "compact": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word compact when describing a common situation."
+        },
+        "compelling": {
+            definition: "Extremely convincing or interesting, making people pay attention or accept a point.",
+            example: "Her presentation offered a compelling reason to change the plan."
+        },
+        "competent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word competent when describing a common situation."
+        },
+        "competente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word competente when describing a common situation."
+        },
+        "complejo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word complejo when describing a common situation."
+        },
+        "complex": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word complex when describing a common situation."
+        },
+        "complexe": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word complexe when describing a common situation."
+        },
+        "complicado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word complicado when describing a common situation."
+        },
+        "complicated": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word complicated when describing a common situation."
+        },
+        "compliqué": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word compliqué when describing a common situation."
+        },
+        "composed": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word composed when describing a common situation."
+        },
+        "comprensión": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word comprensión when describing a common situation."
+        },
+        "compromise": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word compromise when describing a common situation."
+        },
+        "compromiso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word compromiso when describing a common situation."
+        },
+        "compréhension": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "The decision came after a lengthy compréhension process that changed the plan."
+        },
+        "compétences": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word compétences when describing a common situation."
+        },
+        "compétent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word compétent when describing a common situation."
+        },
+        "comunicación": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word comunicación when describing a common situation."
+        },
+        "comunidad": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word comunidad when describing a common situation."
         },
         "concise": {
-            definition: "Expressing much in few words; brief and to the point.",
-            example: "The editor preferred concise summaries over long-winded reports."
+            definition: "Expressing ideas clearly using few words; brief and to the point.",
+            example: "Please keep your answers concise in the meeting notes."
         },
-        "congrûment": {
-            definition: "Action ou résultat de congrû .",
-            example: "On peut utiliser le mot congrûment dans une phrase descriptive ordinaire."
+        "conectividad": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word conectividad when describing a common situation."
+        },
+        "conexión": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word conexión when describing a common situation."
+        },
+        "confiance": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word confiance when describing a common situation."
+        },
+        "confianza": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word confianza when describing a common situation."
+        },
+        "confidence": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word confidence when describing a common situation."
+        },
+        "congelado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word congelado when describing a common situation."
+        },
+        "congested": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word congested when describing a common situation."
+        },
+        "connaissance": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word connaissance when describing a common situation."
+        },
+        "connection": {
+            definition: "An act, process, or result related to connec, describing a specific action or condition.",
+            example: "The decision came after a lengthy connection process that changed the plan."
+        },
+        "connectivity": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word connectivity when describing a common situation."
+        },
+        "connectivité": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word connectivité when describing a common situation."
+        },
+        "connexion": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "The decision came after a lengthy connexion process that changed the plan."
+        },
+        "conocimiento": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word conocimiento when describing a common situation."
+        },
+        "consciousness": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word consciousness when describing a common situation."
+        },
+        "consequences": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word consequences when describing a common situation."
+        },
+        "consequential": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word consequential when describing a common situation."
+        },
+        "consistencia": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word consistencia when describing a common situation."
+        },
+        "consistency": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word consistency when describing a common situation."
+        },
+        "constancia": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word constancia when describing a common situation."
+        },
+        "constructive": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word constructive when describing a common situation."
+        },
+        "contemporary": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word contemporary when describing a common situation."
         },
         "content": {
-            definition: "Content : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot content dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word content when describing a common situation."
         },
-        "coquette": {
-            definition: "Coquette : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot coquette dans une phrase descriptive ordinaire."
+        "contento": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word contento when describing a common situation."
         },
-        "court": {
-            definition: "Court : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot court dans une phrase descriptive ordinaire."
+        "contribución": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word contribución when describing a common situation."
         },
-        "courte": {
-            definition: "Courte : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot courte dans une phrase descriptive ordinaire."
+        "contribution": {
+            definition: "An act, process, or result related to contribu, describing a specific action or condition.",
+            example: "The decision came after a lengthy contribution process that changed the plan."
         },
-        "courtois": {
-            definition: "Courtois : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot courtois dans une phrase descriptive ordinaire."
+        "convenience": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word convenience when describing a common situation."
         },
-        "creativa": {
-            definition: "Relatif à ou impliquant l'imagination ou des idées originales.",
-            example: "C'est un artiste créatif qui expérimente constamment de nouveaux styles."
+        "conveniencia": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word conveniencia when describing a common situation."
+        },
+        "convivial": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word convivial when describing a common situation."
+        },
+        "cool": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word cool when describing a common situation."
+        },
+        "cordial": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word cordial when describing a common situation."
+        },
+        "corto": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word corto when describing a common situation."
+        },
+        "costaud": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word costaud when describing a common situation."
+        },
+        "costumbres": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word costumbres when describing a common situation."
+        },
+        "courageous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word courageous when describing a common situation."
+        },
+        "courageux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word courageux when describing a common situation."
+        },
+        "courroucé": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word courroucé when describing a common situation."
+        },
+        "courteous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word courteous when describing a common situation."
+        },
+        "coy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word coy when describing a common situation."
+        },
+        "cozy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word cozy when describing a common situation."
+        },
+        "craven": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word craven when describing a common situation."
+        },
+        "creative": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word creative when describing a common situation."
+        },
+        "creativity": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word creativity when describing a common situation."
+        },
+        "creativo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word creativo when describing a common situation."
+        },
+        "crecimiento": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word crecimiento when describing a common situation."
+        },
+        "creepy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word creepy when describing a common situation."
+        },
+        "croissance": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word croissance when describing a common situation."
         },
         "crucial": {
-            definition: "Décisif ou critique, particulièrement dans le succès ou l'échec de quelque chose.",
-            example: "Cette réunion est cruciale pour l'avenir de notre partenariat."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word crucial when describing a common situation."
         },
-        "crue": {
-            definition: "Augmentation brutale du niveau d’une rivière ou d’un lac.",
-            example: "La crue a obligé les habitants à évacuer la vallée."
+        "crystalline": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word crystalline when describing a common situation."
         },
-        "crépusculaire": {
-            definition: "Relatif au crépuscule, qui se produit au coucher ou lever du soleil.",
-            example: "On peut utiliser le mot crépusculaire dans une phrase descriptive ordinaire."
+        "créatif": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word créatif when describing a common situation."
         },
-        "d'azur": {
-            definition: "De couleur bleu profond, souvent utilisé pour décrire le ciel ou la mer.",
-            example: "Le drapeau était orné d'un motif délicat d'azur et d'or."
+        "cultura": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word cultura when describing a common situation."
+        },
+        "culture": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word culture when describing a common situation."
+        },
+        "cumbersome": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word cumbersome when describing a common situation."
+        },
+        "cumplimiento": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word cumplimiento when describing a common situation."
+        },
+        "curieux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word curieux when describing a common situation."
+        },
+        "curior": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word curior when describing a common situation."
+        },
+        "curiosity": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word curiosity when describing a common situation."
+        },
+        "curioso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word curioso when describing a common situation."
+        },
+        "curious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word curious when describing a common situation."
+        },
+        "current": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word current when describing a common situation."
+        },
+        "customs": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word customs when describing a common situation."
+        },
+        "cute": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word cute when describing a common situation."
+        },
+        "cutting-edge": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word cutting-edge when describing a common situation."
+        },
+        "cómodo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word cómodo when describing a common situation."
+        },
+        "dangerous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word dangerous when describing a common situation."
+        },
+        "dantesco": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word dantesco when describing a common situation."
+        },
+        "dark": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word dark when describing a common situation."
+        },
+        "dauntless": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word dauntless when describing a common situation."
+        },
+        "deafening": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Deafening every day helped him improve quickly."
+        },
+        "debt": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word debt when describing a common situation."
+        },
+        "decisive": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word decisive when describing a common situation."
+        },
+        "decrepit": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word decrepit when describing a common situation."
+        },
+        "decrépito": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word decrépito when describing a common situation."
         },
         "dehumanize": {
-            definition: "To deprive someone of positive human qualities; to treat as less than human.",
-            example: "They warned that the policies could dehumanize vulnerable populations."
+            definition: "To treat people so as to deny their human qualities and make them seem like objects or things.",
+            example: "Propaganda can dehumanize groups and lead to widespread prejudice."
+        },
+        "delicado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word delicado when describing a common situation."
+        },
+        "delicate": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word delicate when describing a common situation."
         },
         "denounce": {
-            definition: "To publicly condemn or criticize severely.",
-            example: "The press denounced the corrupt practices exposed by the report."
+            definition: "To publicly accuse or condemn something as wrong or evil.",
+            example: "Many leaders denounced the corrupt practices after the investigation."
         },
-        "dernier": {
-            definition: "Dernier : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot dernier dans une phrase descriptive ordinaire."
+        "dependence": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word dependence when describing a common situation."
         },
-        "desorbitada": {
-            definition: "Déraisonnablement élevé ; excessif.",
-            example: "Le restaurant a facturé un prix exorbitant pour un repas simple."
+        "dependencia": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word dependencia when describing a common situation."
         },
-        "despiadado": {
-            definition: "N'ayant ni pitié ni compassion pour les autres.",
-            example: "Le chef impitoyable ne reculerait devant rien pour obtenir le pouvoir."
+        "deplorable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word deplorable when describing a common situation."
         },
-        "despreciable": {
-            definition: "Si petit ou peu important qu'il ne mérite pas d'être pris en considération.",
-            example: "Le risque d'effets secondaires du médicament est négligeable."
+        "deprimido": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word deprimido when describing a common situation."
         },
-        "determinante": {
-            definition: "Régler une question ; produire un résultat définitif.",
-            example: "Le général a fait un geste décisif qui a remporté la bataille."
+        "desafiante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word desafiante when describing a common situation."
+        },
+        "desafíos": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word desafíos when describing a common situation."
+        },
+        "desarrollo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word desarrollo when describing a common situation."
+        },
+        "desayuno": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word desayuno when describing a common situation."
+        },
+        "descomunal": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word descomunal when describing a common situation."
+        },
+        "desconsolado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word desconsolado when describing a common situation."
+        },
+        "deslumbrante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word deslumbrante when describing a common situation."
+        },
+        "desolado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word desolado when describing a common situation."
+        },
+        "despair": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word despair when describing a common situation."
+        },
+        "despondent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word despondent when describing a common situation."
+        },
+        "destitute": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word destitute when describing a common situation."
+        },
+        "determination": {
+            definition: "An act, process, or result related to determina, describing a specific action or condition.",
+            example: "The decision came after a lengthy determination process that changed the plan."
+        },
+        "deuda": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word deuda when describing a common situation."
+        },
+        "development": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word development when describing a common situation."
+        },
+        "device": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word device when describing a common situation."
+        },
+        "dialogue": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word dialogue when describing a common situation."
         },
         "diaphane": {
-            definition: "Léger, délicat et translucide.",
-            example: "Les rideaux étaient faits d'un tissu blanc diaphane."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word diaphane when describing a common situation."
         },
-        "diestro": {
-            definition: "Très qualifié ou compétent dans un domaine.",
-            example: "C'est une programmatrice habile qui peut résoudre rapidement des problèmes complexes."
+        "diaphanous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word diaphanous when describing a common situation."
         },
-        "diluvienne": {
-            definition: "Diluvienne : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot diluvienne dans une phrase descriptive ordinaire."
+        "dichoso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word dichoso when describing a common situation."
         },
-        "diminutivo": {
-            definition: "Extrêmement ou inhabituellement petit.",
-            example: "Le petit oiseau était une créature minuscule comparée à l'aigle."
+        "difficile": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word difficile when describing a common situation."
         },
-        "discontinu": {
-            definition: "Discontinu : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot discontinu dans une phrase descriptive ordinaire."
+        "difficult": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word difficult when describing a common situation."
+        },
+        "diffident": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word diffident when describing a common situation."
+        },
+        "difícil": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word difícil when describing a common situation."
+        },
+        "dignes": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word dignes when describing a common situation."
+        },
+        "dilapidated": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word dilapidated when describing a common situation."
+        },
+        "diligent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word diligent when describing a common situation."
+        },
+        "diminutive": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word diminutive when describing a common situation."
+        },
+        "diminuto": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word diminuto when describing a common situation."
+        },
+        "dirty": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word dirty when describing a common situation."
+        },
+        "disciplina": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word disciplina when describing a common situation."
+        },
+        "discipline": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word discipline when describing a common situation."
+        },
+        "disconsolate": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word disconsolate when describing a common situation."
+        },
+        "dispositivo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word dispositivo when describing a common situation."
         },
         "disprove": {
-            definition: "To prove that something is false or incorrect.",
-            example: "New evidence helped disprove the earlier theory."
+            definition: "To show that a belief, statement, or theory is false or incorrect using evidence or argument.",
+            example: "Researchers worked to disprove the earlier hypothesis with new experiments."
         },
-        "doux": {
-            definition: "Doux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot doux dans une phrase descriptive ordinaire."
+        "disruptive": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word disruptive when describing a common situation."
         },
-        "droite": {
-            definition: "Droite : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot droite dans une phrase descriptive ordinaire."
+        "distracción": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word distracción when describing a common situation."
+        },
+        "distraction": {
+            definition: "An act, process, or result related to distrac, describing a specific action or condition.",
+            example: "The decision came after a lengthy distraction process that changed the plan."
+        },
+        "diáfano": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word diáfano when describing a common situation."
+        },
+        "diálogo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word diálogo when describing a common situation."
+        },
+        "docto": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word docto when describing a common situation."
+        },
+        "dolefulness": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word dolefulness when describing a common situation."
+        },
+        "dolor": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word dolor when describing a common situation."
+        },
+        "down": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word down when describing a common situation."
+        },
+        "dreadful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word dreadful when describing a common situation."
+        },
+        "droll": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word droll when describing a common situation."
+        },
+        "dull": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word dull when describing a common situation."
         },
         "dur": {
-            definition: "Dur : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot dur dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word dur when describing a common situation."
         },
-        "dure": {
-            definition: "Dure : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot dure dans une phrase descriptive ordinaire."
+        "durabilité": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word durabilité when describing a common situation."
         },
-        "décisif": {
-            definition: "Décisif : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot décisif dans une phrase descriptive ordinaire."
+        "duro": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word duro when describing a common situation."
         },
         "décrépit": {
-            definition: "Décrépit : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot décrépit dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word décrépit when describing a common situation."
         },
-        "délabré": {
-            definition: "Qui est délabré ou qui ressent délabré.",
-            example: "On peut utiliser le mot délabré dans une phrase descriptive ordinaire."
+        "défis": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word défis when describing a common situation."
         },
-        "dérisoire": {
-            definition: "Dérisoire : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot dérisoire dans une phrase descriptive ordinaire."
+        "déjeuner": {
+            definition: "A person or thing whose job or role involves a particular activity or function.",
+            example: "They used the word déjeuner when describing a common situation."
         },
-        "déshumaniser": {
-            definition: "Déshumaniser : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot déshumaniser dans une phrase descriptive ordinaire."
+        "délectable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word délectable when describing a common situation."
         },
-        "efimera": {
-            definition: "Dure pendant un temps très court.",
-            example: "La beauté d'une fleur est souvent magnifique mais éphémère."
+        "délicat": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word délicat when describing a common situation."
+        },
+        "déprimé": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word déprimé when describing a common situation."
+        },
+        "désespéré": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word désespéré when describing a common situation."
+        },
+        "déterminant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word déterminant when describing a common situation."
+        },
+        "détestable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word détestable when describing a common situation."
+        },
+        "développement": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word développement when describing a common situation."
+        },
+        "easy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word easy when describing a common situation."
+        },
+        "economical": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word economical when describing a common situation."
+        },
+        "económico": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word económico when describing a common situation."
+        },
+        "ecstatic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ecstatic when describing a common situation."
+        },
+        "efectivo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word efectivo when describing a common situation."
+        },
+        "effective": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word effective when describing a common situation."
+        },
+        "effervesce": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word effervesce when describing a common situation."
+        },
+        "effervescent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word effervescent when describing a common situation."
+        },
+        "efficace": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word efficace when describing a common situation."
+        },
+        "efficacité": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word efficacité when describing a common situation."
+        },
+        "efficiency": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word efficiency when describing a common situation."
+        },
+        "efficient": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word efficient when describing a common situation."
+        },
+        "effort": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word effort when describing a common situation."
+        },
+        "effortless": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word effortless when describing a common situation."
+        },
+        "effrayant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word effrayant when describing a common situation."
+        },
+        "effulgent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word effulgent when describing a common situation."
+        },
+        "eficiencia": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word eficiencia when describing a common situation."
+        },
+        "eficiente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word eficiente when describing a common situation."
+        },
+        "ejercicio": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ejercicio when describing a common situation."
+        },
+        "elated": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word elated when describing a common situation."
         },
         "elation": {
-            definition: "A feeling of great happiness and triumph.",
-            example: "She felt elation when she heard the news of her promotion."
+            definition: "A feeling of triumphant joy or intense happiness, often following a success or good news.",
+            example: "She felt elation after learning she had passed the exam with top marks."
         },
-        "emblematico": {
-            definition: "Servant de symbole à une qualité ou à un concept particulier.",
-            example: "L'aigle est emblématique de la force et de la liberté."
+        "elderly": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word elderly when describing a common situation."
         },
-        "embriagadora": {
-            definition: "Extrêmement excitant ou exaltant ; provoquant une perte de contrôle.",
-            example: "Le succès de la pièce a été une expérience enivrante pour les acteurs."
+        "eldritch": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word eldritch when describing a common situation."
         },
-        "emerito": {
-            definition: "Retraité mais autorisé à conserver son titre à titre honorifique.",
-            example: "Le doyen émérite assistait toujours aux cérémonies de l'université."
+        "electrizante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word electrizante when describing a common situation."
         },
-        "empathie": {
-            definition: "Empathie : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot empathie dans une phrase descriptive ordinaire."
+        "elemental": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word elemental when describing a common situation."
+        },
+        "elementary": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word elementary when describing a common situation."
+        },
+        "eloquent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word eloquent when describing a common situation."
+        },
+        "emaciated": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word emaciated when describing a common situation."
+        },
+        "emotion": {
+            definition: "An act, process, or result related to emo, describing a specific action or condition.",
+            example: "The decision came after a lengthy emotion process that changed the plan."
         },
         "empathy": {
-            definition: "The ability to understand and share the feelings of another.",
-            example: "Showing empathy can strengthen relationships and trust."
+            definition: "The ability to understand and share the feelings of another person.",
+            example: "Her empathy helped her comfort friends going through difficult times."
         },
-        "enchanteresse": {
-            definition: "Enchanteresse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot enchanteresse dans une phrase descriptive ordinaire."
+        "empatía": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word empatía when describing a common situation."
         },
-        "enfermo": {
-            definition: "Pas physiquement ou mentalement fort, surtout à cause de l'âge ou de la maladie.",
-            example: "L'hôpital offrait des soins aux patients infirmes et âgés."
+        "empty": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word empty when describing a common situation."
+        },
+        "en colère": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "She described the situation as en colère in plain speech."
+        },
+        "encrespado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word encrespado when describing a common situation."
+        },
+        "endurance": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word endurance when describing a common situation."
+        },
+        "enfadado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word enfadado when describing a common situation."
+        },
+        "enfantin": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word enfantin when describing a common situation."
+        },
+        "engagement": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word engagement when describing a common situation."
+        },
+        "engaging": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Engaging every day helped him improve quickly."
         },
         "enhance": {
-            definition: "To improve or augment something, especially its quality or value.",
-            example: "They used lighting to enhance the appearance of the stage."
+            definition: "To improve the quality, value, or extent of something; to make it better.",
+            example: "They used filters to enhance the clarity of the photograph."
+        },
+        "enliven": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word enliven when describing a common situation."
         },
         "ennui": {
-            definition: "A feeling of listlessness and dissatisfaction from lack of occupation or excitement.",
-            example: "The long, unchanging routine led him into a state of ennui."
+            definition: "A feeling of listlessness and dissatisfaction caused by lack of occupation or excitement.",
+            example: "Months of inactivity left him with a deep sense of ennui."
+        },
+        "enojado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word enojado when describing a common situation."
+        },
+        "enorme": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word enorme when describing a common situation."
+        },
+        "enormous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word enormous when describing a common situation."
+        },
+        "enrapture": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word enrapture when describing a common situation."
+        },
+        "enrichment": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word enrichment when describing a common situation."
+        },
+        "entertaining": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Entertaining every day helped him improve quickly."
+        },
+        "enthralling": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Enthralling every day helped him improve quickly."
+        },
+        "entorno": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word entorno when describing a common situation."
+        },
+        "entrenamiento": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word entrenamiento when describing a common situation."
         },
         "entrepreneur": {
-            definition: "Une personne qui organise et exploite une entreprise.",
-            example: "En tant que jeune entrepreneuse, elle a lancé sa propre entreprise technologique."
+            definition: "Someone who starts, organizes, and manages a business, taking financial risks in hope of profit.",
+            example: "The young entrepreneur launched a successful tech startup."
         },
-        "envoûtante": {
-            definition: "Envoûtante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot envoûtante dans une phrase descriptive ordinaire."
+        "environment": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word environment when describing a common situation."
+        },
+        "envoûtant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word envoûtant when describing a common situation."
         },
         "ephemeral": {
-            definition: "Lasting for a very short time.",
-            example: "The beauty of the blooming flowers was ephemeral."
+            definition: "Lasting for only a very short time; fleeting and not permanent.",
+            example: "Her fame proved ephemeral after the viral video faded from public attention."
         },
         "epidemic": {
-            definition: "A widespread occurrence of an infectious disease in a community at a particular time.",
-            example: "The public health response focused on controlling the epidemic outbreak."
+            definition: "A sudden increase in the number of cases of a disease above what is normally expected in a region.",
+            example: "Public health officials responded quickly to the flu epidemic."
         },
         "epigram": {
-            definition: "Un dicton ou une remarque lapidaire exprimant une idée avec intelligence.",
-            example: "Il était connu pour ses épigrammes pleins d'esprit sur la vie moderne."
+            definition: "A short, clever, and often humorous saying or poem that expresses an idea sharply.",
+            example: "The writer opened the essay with a witty epigram."
+        },
+        "equable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word equable when describing a common situation."
+        },
+        "equanimous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word equanimous when describing a common situation."
+        },
+        "equilibrio": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word equilibrio when describing a common situation."
+        },
+        "erudite": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word erudite when describing a common situation."
         },
         "erudito": {
-            definition: "Ayant ou montrant de grandes connaissances ou un grand savoir.",
-            example: "Le professeur érudit a parlé longuement des civilisations anciennes."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word erudito when describing a common situation."
         },
-        "estoico": {
-            definition: "Une personne qui peut endurer la douleur ou les épreuves sans montrer ses sentiments.",
-            example: "Il est resté stoïque tout au long du procès long et difficile."
+        "escabroso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word escabroso when describing a common situation."
         },
-        "estompée": {
-            definition: "Qui est estompée ou qui ressent estompée.",
-            example: "On peut utiliser le mot estompée dans une phrase descriptive ordinaire."
+        "escala": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word escala when describing a common situation."
         },
-        "exemplaire": {
-            definition: "Exemplaire : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot exemplaire dans une phrase descriptive ordinaire."
+        "escalofriante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word escalofriante when describing a common situation."
         },
-        "exigeant": {
-            definition: "Exigeant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot exigeant dans une phrase descriptive ordinaire."
+        "escucha": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word escucha when describing a common situation."
         },
-        "exténuant": {
-            definition: "Exténuant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot exténuant dans une phrase descriptive ordinaire."
+        "esencial": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word esencial when describing a common situation."
         },
-        "faible": {
-            definition: "Faible : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot faible dans une phrase descriptive ordinaire."
+        "esfuerzo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word esfuerzo when describing a common situation."
+        },
+        "espantoso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word espantoso when describing a common situation."
+        },
+        "especulativo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word especulativo when describing a common situation."
+        },
+        "espeluznante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word espeluznante when describing a common situation."
+        },
+        "espinoso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word espinoso when describing a common situation."
+        },
+        "espléndido": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word espléndido when describing a common situation."
+        },
+        "essential": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word essential when describing a common situation."
+        },
+        "essentiel": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word essentiel when describing a common situation."
+        },
+        "estupendo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word estupendo when describing a common situation."
+        },
+        "ethereal": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ethereal when describing a common situation."
+        },
+        "eufórico": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word eufórico when describing a common situation."
+        },
+        "euphonious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word euphonious when describing a common situation."
+        },
+        "euphoric": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word euphoric when describing a common situation."
+        },
+        "euphorique": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word euphorique when describing a common situation."
+        },
+        "evident": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word evident when describing a common situation."
+        },
+        "evidente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word evidente when describing a common situation."
+        },
+        "exalt": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word exalt when describing a common situation."
+        },
+        "exasperado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word exasperado when describing a common situation."
+        },
+        "exaspéré": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word exaspéré when describing a common situation."
+        },
+        "excelente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word excelente when describing a common situation."
+        },
+        "excellent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word excellent when describing a common situation."
+        },
+        "excepcional": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word excepcional when describing a common situation."
+        },
+        "excruciating": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Excruciating every day helped him improve quickly."
+        },
+        "execrable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word execrable when describing a common situation."
+        },
+        "exemplary": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word exemplary when describing a common situation."
+        },
+        "exercice": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word exercice when describing a common situation."
+        },
+        "exercise": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word exercise when describing a common situation."
+        },
+        "exigu": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word exigu when describing a common situation."
+        },
+        "exiguo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word exiguo when describing a common situation."
+        },
+        "exiguous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word exiguous when describing a common situation."
+        },
+        "eximio": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word eximio when describing a common situation."
+        },
+        "expedited": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word expedited when describing a common situation."
+        },
+        "expeditious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word expeditious when describing a common situation."
+        },
+        "expeditivo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word expeditivo when describing a common situation."
+        },
+        "expedito": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word expedito when describing a common situation."
+        },
+        "exploración": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word exploración when describing a common situation."
+        },
+        "exploration": {
+            definition: "An act, process, or result related to explora, describing a specific action or condition.",
+            example: "The decision came after a lengthy exploration process that changed the plan."
+        },
+        "exponential": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word exponential when describing a common situation."
+        },
+        "expression": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "The decision came after a lengthy expression process that changed the plan."
+        },
+        "expéditif": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word expéditif when describing a common situation."
+        },
+        "exquis": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word exquis when describing a common situation."
+        },
+        "exquisite": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word exquisite when describing a common situation."
+        },
+        "exquisito": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word exquisito when describing a common situation."
+        },
+        "extatique": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word extatique when describing a common situation."
+        },
+        "exultant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word exultant when describing a common situation."
+        },
+        "exultante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word exultante when describing a common situation."
+        },
+        "exécrable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word exécrable when describing a common situation."
+        },
+        "facile": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word facile when describing a common situation."
+        },
+        "factible": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word factible when describing a common situation."
+        },
+        "fair": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fair when describing a common situation."
+        },
+        "fairness": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fairness when describing a common situation."
         },
         "fallacy": {
-            definition: "A mistaken belief, especially one based on unsound arguments.",
-            example: "The argument rested on a logical fallacy that weakened its claim."
+            definition: "A mistaken belief or error in reasoning that seems plausible but is logically incorrect.",
+            example: "Believing that one event caused another without evidence is a common fallacy."
         },
-        "farouche": {
-            definition: "Farouche : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot farouche dans une phrase descriptive ordinaire."
+        "fantástico": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fantástico when describing a common situation."
         },
-        "fastidieux": {
-            definition: "Fastidieux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot fastidieux dans une phrase descriptive ordinaire."
+        "farcical": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word farcical when describing a common situation."
+        },
+        "fascinant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fascinant when describing a common situation."
+        },
+        "fascinante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fascinante when describing a common situation."
+        },
+        "fascinating": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Fascinating every day helped him improve quickly."
+        },
+        "fast": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fast when describing a common situation."
+        },
+        "fat": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fat when describing a common situation."
         },
         "fatal": {
-            definition: "Provoquant la mort ; menant à l'échec ou au désastre.",
-            example: "Une erreur fatale dans le code a provoqué le crash du système."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fatal when describing a common situation."
         },
-        "ferreo": {
-            definition: "Un métal fort, dur, magnétique, d'un gris argenté.",
-            example: "La grille était faite de fer forgé lourd."
+        "fearless": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fearless when describing a common situation."
         },
-        "fervent": {
-            definition: "Fervent : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot fervent dans une phrase descriptive ordinaire."
+        "feedback": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word feedback when describing a common situation."
         },
-        "feutrée": {
-            definition: "Qui est feutrée ou qui ressent feutrée.",
-            example: "On peut utiliser le mot feutrée dans une phrase descriptive ordinaire."
+        "feliz": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word feliz when describing a common situation."
         },
-        "fin": {
-            definition: "Fin : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot fin dans une phrase descriptive ordinaire."
+        "few": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word few when describing a common situation."
+        },
+        "filthy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word filthy when describing a common situation."
         },
         "fine": {
-            definition: "Fine : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot fine dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fine when describing a common situation."
         },
-        "fixe": {
-            definition: "Fixe : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot fixe dans une phrase descriptive ordinaire."
+        "firm": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word firm when describing a common situation."
         },
-        "fluet": {
-            definition: "Fluet : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot fluet dans une phrase descriptive ordinaire."
+        "fisgón": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fisgón when describing a common situation."
         },
-        "focalisée": {
-            definition: "Qui est focalisée ou qui ressent focalisée.",
-            example: "On peut utiliser le mot focalisée dans une phrase descriptive ordinaire."
+        "flamante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word flamante when describing a common situation."
+        },
+        "flavor": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word flavor when describing a common situation."
+        },
+        "fleet": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fleet when describing a common situation."
+        },
+        "fleet-footed": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word fleet-footed when describing a common situation."
+        },
+        "flexibilidad": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word flexibilidad when describing a common situation."
+        },
+        "flexibility": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word flexibility when describing a common situation."
+        },
+        "flimsy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word flimsy when describing a common situation."
+        },
+        "flush": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word flush when describing a common situation."
+        },
+        "focus": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word focus when describing a common situation."
+        },
+        "follow-up": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word follow-up when describing a common situation."
+        },
+        "fondamental": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fondamental when describing a common situation."
+        },
+        "forlorn": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word forlorn when describing a common situation."
+        },
+        "formative": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word formative when describing a common situation."
+        },
+        "formidable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word formidable when describing a common situation."
+        },
+        "fornido": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fornido when describing a common situation."
         },
         "fort": {
-            definition: "Fort : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot fort dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fort when describing a common situation."
         },
-        "fortifié": {
-            definition: "Qui est fortifié ou qui ressent fortifié.",
-            example: "On peut utiliser le mot fortifié dans une phrase descriptive ordinaire."
+        "forthright": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word forthright when describing a common situation."
         },
-        "fortuit": {
-            definition: "Fortuit : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot fortuit dans une phrase descriptive ordinaire."
+        "fortified": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word fortified when describing a common situation."
         },
-        "fortuito": {
-            definition: "Se produisant par hasard ou coup de chance heureux plutôt que par dessein.",
-            example: "La découverte de la mine d'or a été tout à fait fortuite."
+        "fouineur": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fouineur when describing a common situation."
         },
-        "fosforescente": {
-            definition: "Émettant de la lumière sans chaleur ; brillant dans l'obscurité.",
-            example: "Les vagues étaient phosphorescentes, brillant lorsqu'elles frappaient le rivage."
+        "foul": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word foul when describing a common situation."
         },
-        "fotogenica": {
-            definition: "Attrayant sur les photographies ou à l'écran.",
-            example: "La ville côtière avec ses portes bleues était incroyablement photogénique."
+        "fragile": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fragile when describing a common situation."
         },
-        "fracassant": {
-            definition: "Fracassant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot fracassant dans une phrase descriptive ordinaire."
+        "frail": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word frail when describing a common situation."
         },
         "frais": {
-            definition: "Frais : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot frais dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word frais when describing a common situation."
         },
-        "franc": {
-            definition: "Franc : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot franc dans une phrase descriptive ordinaire."
+        "frank": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word frank when describing a common situation."
         },
-        "fraîche": {
-            definition: "Fraîche : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot fraîche dans une phrase descriptive ordinaire."
+        "fraught": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fraught when describing a common situation."
+        },
+        "freezing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Freezing every day helped him improve quickly."
+        },
+        "frenetic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word frenetic when describing a common situation."
+        },
+        "fresco": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fresco when describing a common situation."
+        },
+        "fresh": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fresh when describing a common situation."
+        },
+        "friable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word friable when describing a common situation."
+        },
+        "friendly": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word friendly when describing a common situation."
+        },
+        "frightening": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Frightening every day helped him improve quickly."
+        },
+        "frigid": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word frigid when describing a common situation."
+        },
+        "frigorifique": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word frigorifique when describing a common situation."
         },
         "froid": {
-            definition: "Froid : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot froid dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word froid when describing a common situation."
         },
-        "frugale": {
-            definition: "Frugale : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot frugale dans une phrase descriptive ordinaire."
+        "frolicking": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Frolicking every day helped him improve quickly."
+        },
+        "frosty": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word frosty when describing a common situation."
+        },
+        "frozen": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word frozen when describing a common situation."
+        },
+        "frugal": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word frugal when describing a common situation."
+        },
+        "frágil": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word frágil when describing a common situation."
+        },
+        "frágilísimo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word frágilísimo when describing a common situation."
         },
         "frêle": {
-            definition: "Frêle : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot frêle dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word frêle when describing a common situation."
         },
-        "fugaz": {
-            definition: "Tendant à disparaître ; fugace.",
-            example: "La beauté évanescente de la jeunesse est un thème commun en poésie."
+        "frío": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word frío when describing a common situation."
         },
-        "fulgurante": {
-            definition: "Fulgurante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot fulgurante dans une phrase descriptive ordinaire."
+        "fuerte": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fuerte when describing a common situation."
         },
-        "furtif": {
-            definition: "Furtif : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot furtif dans une phrase descriptive ordinaire."
+        "fulfillment": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fulfillment when describing a common situation."
         },
-        "féerique": {
-            definition: "Féerique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot féerique dans une phrase descriptive ordinaire."
+        "fulgurant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fulgurant when describing a common situation."
         },
-        "féodal": {
-            definition: "Féodal : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot féodal dans une phrase descriptive ordinaire."
+        "fulminant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fulminant when describing a common situation."
         },
-        "gazouillant": {
-            definition: "Gazouillant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot gazouillant dans une phrase descriptive ordinaire."
+        "fulminante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fulminante when describing a common situation."
         },
-        "glaciale": {
-            definition: "Glaciale : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot glaciale dans une phrase descriptive ordinaire."
+        "fundamental": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word fundamental when describing a common situation."
         },
-        "gracieuse": {
-            definition: "Gracieuse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot gracieuse dans une phrase descriptive ordinaire."
+        "funny": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word funny when describing a common situation."
+        },
+        "furieux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word furieux when describing a common situation."
+        },
+        "furioso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word furioso when describing a common situation."
+        },
+        "furious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word furious when describing a common situation."
+        },
+        "future": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word future when describing a common situation."
+        },
+        "futuro": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word futuro when describing a common situation."
+        },
+        "fácil": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fácil when describing a common situation."
+        },
+        "fâché": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word fâché when describing a common situation."
+        },
+        "gai": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word gai when describing a common situation."
+        },
+        "galante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word galante when describing a common situation."
+        },
+        "gale-force": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word gale-force when describing a common situation."
+        },
+        "gallant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word gallant when describing a common situation."
+        },
+        "gallardo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word gallardo when describing a common situation."
+        },
+        "gargantuan": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word gargantuan when describing a common situation."
+        },
+        "gargantuesco": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word gargantuesco when describing a common situation."
+        },
+        "gargantuesque": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word gargantuesque when describing a common situation."
+        },
+        "gaunt": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word gaunt when describing a common situation."
+        },
+        "gelid": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word gelid when describing a common situation."
+        },
+        "gelé": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word gelé when describing a common situation."
+        },
+        "genial": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word genial when describing a common situation."
+        },
+        "giant": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word giant when describing a common situation."
+        },
+        "gifted": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word gifted when describing a common situation."
+        },
+        "gigante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word gigante when describing a common situation."
+        },
+        "gigantesque": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word gigantesque when describing a common situation."
+        },
+        "glacial": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word glacial when describing a common situation."
+        },
+        "glacé": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word glacé when describing a common situation."
+        },
+        "glad": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word glad when describing a common situation."
+        },
+        "gladden": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word gladden when describing a common situation."
+        },
+        "glaçant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word glaçant when describing a common situation."
+        },
+        "gleeful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word gleeful when describing a common situation."
+        },
+        "gloom": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word gloom when describing a common situation."
+        },
+        "gloomy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word gloomy when describing a common situation."
+        },
+        "goals": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word goals when describing a common situation."
+        },
+        "good": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word good when describing a common situation."
+        },
+        "gorgeous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word gorgeous when describing a common situation."
+        },
+        "gozoso": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word gozoso when describing a common situation."
         },
         "grand": {
-            definition: "Grand : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot grand dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word grand when describing a common situation."
         },
         "grande": {
-            definition: "Grande : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot grande dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word grande when describing a common situation."
         },
-        "grandiose": {
-            definition: "Grandiose : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot grandiose dans une phrase descriptive ordinaire."
+        "gratifiant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word gratifiant when describing a common situation."
         },
-        "gros": {
-            definition: "Gros : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot gros dans une phrase descriptive ordinaire."
+        "gratificante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word gratificante when describing a common situation."
         },
-        "grosse": {
-            definition: "Grosse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot grosse dans une phrase descriptive ordinaire."
+        "great": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word great when describing a common situation."
         },
-        "harmonieuse": {
-            definition: "Harmonieuse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot harmonieuse dans une phrase descriptive ordinaire."
+        "grelottant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word grelottant when describing a common situation."
         },
-        "haut": {
-            definition: "Haut : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot haut dans une phrase descriptive ordinaire."
+        "grief": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word grief when describing a common situation."
         },
-        "hieratico": {
-            definition: "De ou concernant les prêtres ; sacerdotal.",
-            example: "Le texte ancien était écrit dans un style hiératique formel."
+        "grimy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word grimy when describing a common situation."
         },
-        "hilarante": {
-            definition: "Extrêmement amusant ; provoquant le rire.",
-            example: "Son spectacle de stand-up était absolument hilarant."
+        "grisant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word grisant when describing a common situation."
         },
-        "historique": {
-            definition: "Historique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot historique dans une phrase descriptive ordinaire."
+        "growth": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word growth when describing a common situation."
         },
-        "honoré": {
-            definition: "Qui est honoré ou qui ressent honoré.",
-            example: "On peut utiliser le mot honoré dans une phrase descriptive ordinaire."
+        "guapo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word guapo when describing a common situation."
         },
-        "humeur": {
-            definition: "Humeur : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot humeur dans une phrase descriptive ordinaire."
+        "géant": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word géant when describing a common situation."
+        },
+        "gélido": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word gélido when describing a common situation."
+        },
+        "génial": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word génial when describing a common situation."
+        },
+        "habilidades": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word habilidades when describing a common situation."
+        },
+        "hacedero": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word hacedero when describing a common situation."
+        },
+        "halcyon": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word halcyon when describing a common situation."
+        },
+        "happy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word happy when describing a common situation."
+        },
+        "hard": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word hard when describing a common situation."
+        },
+        "hardy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word hardy when describing a common situation."
+        },
+        "harmony": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word harmony when describing a common situation."
+        },
+        "harrowing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Harrowing every day helped him improve quickly."
+        },
+        "hasty": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word hasty when describing a common situation."
+        },
+        "hazardous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word hazardous when describing a common situation."
+        },
+        "health": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word health when describing a common situation."
+        },
+        "heated": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word heated when describing a common situation."
+        },
+        "heavy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word heavy when describing a common situation."
+        },
+        "helado": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word helado when describing a common situation."
+        },
+        "helpful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word helpful when describing a common situation."
+        },
+        "herculean": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word herculean when describing a common situation."
+        },
+        "herculéen": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word herculéen when describing a common situation."
+        },
+        "hercúleo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word hercúleo when describing a common situation."
+        },
+        "heritage": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word heritage when describing a common situation."
+        },
+        "hermoso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word hermoso when describing a common situation."
+        },
+        "heroic": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word heroic when describing a common situation."
+        },
+        "heroico": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word heroico when describing a common situation."
+        },
+        "heureux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word heureux when describing a common situation."
+        },
+        "high": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word high when describing a common situation."
+        },
+        "high-octane": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word high-octane when describing a common situation."
+        },
+        "hilarious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word hilarious when describing a common situation."
+        },
+        "hipnótico": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word hipnótico when describing a common situation."
+        },
+        "historic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word historic when describing a common situation."
+        },
+        "hito": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word hito when describing a common situation."
+        },
+        "hivernal": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word hivernal when describing a common situation."
+        },
+        "hoary": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word hoary when describing a common situation."
+        },
+        "honest": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word honest when describing a common situation."
+        },
+        "horario": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word horario when describing a common situation."
+        },
+        "horrible": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word horrible when describing a common situation."
+        },
+        "horrifying": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Horrifying every day helped him improve quickly."
+        },
+        "horripilante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word horripilante when describing a common situation."
+        },
+        "hospitable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word hospitable when describing a common situation."
+        },
+        "hot": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word hot when describing a common situation."
+        },
+        "huge": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word huge when describing a common situation."
+        },
+        "humorous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word humorous when describing a common situation."
+        },
+        "hushed": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word hushed when describing a common situation."
+        },
+        "héros": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word héros when describing a common situation."
+        },
+        "héroïque": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word héroïque when describing a common situation."
+        },
+        "iconic": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word iconic when describing a common situation."
         },
         "iconoclast": {
-            definition: "Une personne qui attaque les croyances ou les institutions chéries.",
-            example: "En tant qu'iconoclaste, il aimait remettre en question les normes de l'art traditionnel."
+            definition: "A person who attacks or rejects established beliefs, traditions, or institutions.",
+            example: "The artist was an iconoclast who challenged conventional styles."
         },
-        "iluminado": {
-            definition: "Éclairé ; décoré de lumières ou d'or/argent.",
-            example: "Le manuscrit enluminé était un chef-d'œuvre de l'art médiéval."
+        "icy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word icy when describing a common situation."
         },
-        "immaculé": {
-            definition: "Qui est immaculé ou qui ressent immaculé.",
-            example: "On peut utiliser le mot immaculé dans une phrase descriptive ordinaire."
+        "idyllic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word idyllic when describing a common situation."
+        },
+        "illuminate": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word illuminate when describing a common situation."
+        },
+        "imagination": {
+            definition: "An act, process, or result related to imagina, describing a specific action or condition.",
+            example: "The decision came after a lengthy imagination process that changed the plan."
+        },
+        "immaculate": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word immaculate when describing a common situation."
+        },
+        "immense": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word immense when describing a common situation."
+        },
+        "impact": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word impact when describing a common situation."
+        },
+        "impacted": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word impacted when describing a common situation."
+        },
+        "impacto": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word impacto when describing a common situation."
+        },
+        "impeccable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word impeccable when describing a common situation."
+        },
+        "impecunious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word impecunious when describing a common situation."
         },
         "impenetrable": {
-            definition: "Impossible à traverser ou à entrer ; impossible à comprendre.",
-            example: "La jungle épaisse était un mur de vert impénétrable."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word impenetrable when describing a common situation."
         },
         "imperceptible": {
-            definition: "Si léger, progressif ou subtil qu'il ne peut être perçu.",
-            example: "L'augmentation de la température était presque imperceptible au début."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word imperceptible when describing a common situation."
         },
-        "imperturbable": {
-            definition: "Imperturbable : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot imperturbable dans une phrase descriptive ordinaire."
+        "impervious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word impervious when describing a common situation."
         },
-        "implacable": {
-            definition: "Incapable d'être apaisé ; implacable ou imparable.",
-            example: "Il faisait face à un ennemi implacable qui refusait de se rendre."
+        "important": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word important when describing a common situation."
         },
-        "imposant": {
-            definition: "Imposant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot imposant dans une phrase descriptive ordinaire."
+        "importante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word importante when describing a common situation."
         },
-        "impétueuse": {
-            definition: "Impétueuse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot impétueuse dans une phrase descriptive ordinaire."
+        "imposing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Imposing every day helped him improve quickly."
         },
-        "impétueux": {
-            definition: "Impétueux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot impétueux dans une phrase descriptive ordinaire."
+        "impoverished": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word impoverished when describing a common situation."
         },
-        "inattendue": {
-            definition: "Inattendue : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot inattendue dans une phrase descriptive ordinaire."
+        "impregnable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word impregnable when describing a common situation."
+        },
+        "inaudible": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word inaudible when describing a common situation."
         },
         "incandescent": {
-            definition: "Incandescent : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot incandescent dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word incandescent when describing a common situation."
         },
         "incandescente": {
-            definition: "Émettant de la lumière à la suite d'un chauffage ; extrêmement brillant.",
-            example: "Les ampoules à incandescence apportaient une lueur chaleureuse à la pièce."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word incandescente when describing a common situation."
         },
-        "inclemente": {
-            definition: "Temps froid ou humide désagréable.",
-            example: "Le match a été reporté en raison de mauvaises conditions météorologiques."
+        "incensed": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word incensed when describing a common situation."
         },
-        "incondicional": {
-            definition: "Non soumis à aucune condition ; absolu.",
-            example: "Les parents donnent souvent à leurs enfants un amour inconditionnel."
+        "inclement": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word inclement when describing a common situation."
         },
-        "indefenso": {
-            definition: "Sans défense ni protection ; vulnérable.",
-            example: "Le petit animal était sans défense face au plus gros prédateur."
+        "inconsolable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word inconsolable when describing a common situation."
         },
-        "indigo": {
-            definition: "Indigo : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot indigo dans une phrase descriptive ordinaire."
+        "incontestable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word incontestable when describing a common situation."
         },
-        "indéfectible": {
-            definition: "Indéfectible : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot indéfectible dans une phrase descriptive ordinaire."
+        "indagador": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word indagador when describing a common situation."
         },
-        "indélébile": {
-            definition: "Indélébile : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot indélébile dans une phrase descriptive ordinaire."
+        "indigent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word indigent when describing a common situation."
         },
-        "inedito": {
-            definition: "Pas encore rendu public ; non publié sous format imprimé ou numérique.",
-            example: "L'auteur a laissé plusieurs manuscrits inédits."
+        "indignado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word indignado when describing a common situation."
         },
-        "inestimable": {
-            definition: "Trop grand pour être calculé ou estimé.",
-            example: "La collection du musée est d'une valeur inestimable."
+        "indomable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word indomable when describing a common situation."
         },
-        "inexpugnable": {
-            definition: "Impossible à prendre d'assaut ; inconnaissable.",
-            example: "La forteresse a été construite sur une falaise inexpugnable."
+        "indomitable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word indomitable when describing a common situation."
+        },
+        "indomptable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word indomptable when describing a common situation."
+        },
+        "inexpensive": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word inexpensive when describing a common situation."
+        },
+        "infame": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word infame when describing a common situation."
+        },
+        "infect": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word infect when describing a common situation."
+        },
+        "infeliz": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word infeliz when describing a common situation."
         },
         "infime": {
-            definition: "Infime : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot infime dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word infime when describing a common situation."
         },
-        "innovant": {
-            definition: "Innovant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot innovant dans une phrase descriptive ordinaire."
+        "infinitesimal": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word infinitesimal when describing a common situation."
         },
-        "inquebrantable": {
-            definition: "Fixe ou résolu ; ne vacille pas et n'hésite pas.",
-            example: "Elle a montré un soutien indéfectible à son amie pendant la crise."
+        "infirm": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word infirm when describing a common situation."
         },
-        "insigne": {
-            definition: "Insigne : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot insigne dans une phrase descriptive ordinaire."
+        "influence": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word influence when describing a common situation."
         },
-        "insignifiant": {
-            definition: "Insignifiant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot insignifiant dans une phrase descriptive ordinaire."
+        "influencia": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word influencia when describing a common situation."
         },
-        "insondable": {
-            definition: "Insondable : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot insondable dans une phrase descriptive ordinaire."
+        "información": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word información when describing a common situation."
         },
-        "insoupçonné": {
-            definition: "Qui est insoupçonné ou qui ressent insoupçonné.",
-            example: "On peut utiliser le mot insoupçonné dans une phrase descriptive ordinaire."
+        "information": {
+            definition: "An act, process, or result related to informa, describing a specific action or condition.",
+            example: "The decision came after a lengthy information process that changed the plan."
         },
-        "inspiré": {
-            definition: "Qui est inspiré ou qui ressent inspiré.",
-            example: "On peut utiliser le mot inspiré dans une phrase descriptive ordinaire."
+        "ingenioso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ingenioso when describing a common situation."
         },
-        "integro": {
-            definition: "La qualité d'être honnête et d'avoir des principes moraux solides.",
-            example: "C'est une personne d'une grande intégrité qui tient toujours sa parole."
+        "ingenious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word ingenious when describing a common situation."
         },
-        "intense": {
-            definition: "Intense : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot intense dans une phrase descriptive ordinaire."
+        "ingrained": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word ingrained when describing a common situation."
         },
-        "interminable": {
-            definition: "Interminable : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot interminable dans une phrase descriptive ordinaire."
+        "ingredientes": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ingredientes when describing a common situation."
+        },
+        "ingredients": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ingredients when describing a common situation."
+        },
+        "ingénieux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ingénieux when describing a common situation."
+        },
+        "inmenso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word inmenso when describing a common situation."
+        },
+        "innovación": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word innovación when describing a common situation."
+        },
+        "innovador": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word innovador when describing a common situation."
+        },
+        "innovation": {
+            definition: "An act, process, or result related to innova, describing a specific action or condition.",
+            example: "The decision came after a lengthy innovation process that changed the plan."
+        },
+        "innovative": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word innovative when describing a common situation."
+        },
+        "innumerable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word innumerable when describing a common situation."
+        },
+        "inquiquinant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word inquiquinant when describing a common situation."
+        },
+        "inquiring": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Inquiring every day helped him improve quickly."
+        },
+        "inquisitive": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word inquisitive when describing a common situation."
+        },
+        "inquisitivo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word inquisitivo when describing a common situation."
+        },
+        "insidious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word insidious when describing a common situation."
+        },
+        "insight": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word insight when describing a common situation."
+        },
+        "insightful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word insightful when describing a common situation."
+        },
+        "inspiration": {
+            definition: "An act, process, or result related to inspira, describing a specific action or condition.",
+            example: "The decision came after a lengthy inspiration process that changed the plan."
+        },
+        "instantaneous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word instantaneous when describing a common situation."
+        },
+        "integrity": {
+            definition: "The quality of being honest and having strong moral principles that one refuses to compromise.",
+            example: "He showed integrity by admitting his mistake and correcting it."
+        },
+        "inteligente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word inteligente when describing a common situation."
+        },
+        "intelligent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word intelligent when describing a common situation."
+        },
+        "interesado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word interesado when describing a common situation."
+        },
+        "interesante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word interesante when describing a common situation."
+        },
+        "interested": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word interested when describing a common situation."
+        },
+        "interesting": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Interesting every day helped him improve quickly."
+        },
+        "interrogatif": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word interrogatif when describing a common situation."
+        },
+        "intrepid": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word intrepid when describing a common situation."
+        },
+        "intrepido": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word intrepido when describing a common situation."
+        },
+        "intrigante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word intrigante when describing a common situation."
+        },
+        "intriguing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Intriguing every day helped him improve quickly."
+        },
+        "intrincado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word intrincado when describing a common situation."
         },
         "intrépide": {
-            definition: "Intrépide : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot intrépide dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word intrépide when describing a common situation."
         },
-        "intègre": {
-            definition: "Intègre : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot intègre dans une phrase descriptive ordinaire."
+        "intrépido": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word intrépido when describing a common situation."
         },
-        "intégrité": {
-            definition: "Qui est intégrité ou qui ressent intégrité.",
-            example: "On peut utiliser le mot intégrité dans une phrase descriptive ordinaire."
+        "intéressant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word intéressant when describing a common situation."
+        },
+        "intéressé": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word intéressé when describing a common situation."
+        },
+        "invernal": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word invernal when describing a common situation."
+        },
+        "inversión": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word inversión when describing a common situation."
+        },
+        "investigación": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word investigación when describing a common situation."
+        },
+        "investment": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word investment when describing a common situation."
+        },
+        "invigorating": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Invigorating every day helped him improve quickly."
         },
         "invincible": {
-            definition: "Too powerful to be defeated or overcome.",
-            example: "The team's defense seemed invincible during the championship."
-        },
-        "inébranlable": {
-            definition: "Inébranlable : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot inébranlable dans une phrase descriptive ordinaire."
+            definition: "Too powerful to be defeated or overcome; impossible to beat.",
+            example: "After winning the championship, the team felt almost invincible."
         },
         "inédit": {
-            definition: "Inédit : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot inédit dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word inédit when describing a common situation."
         },
-        "irisante": {
-            definition: "Irisante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot irisante dans une phrase descriptive ordinaire."
+        "inédito": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word inédito when describing a common situation."
+        },
+        "iracundo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word iracundo when describing a common situation."
+        },
+        "irascible": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word irascible when describing a common situation."
+        },
+        "irate": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word irate when describing a common situation."
         },
         "irreverent": {
-            definition: "Showing a lack of respect for people or things that are usually taken seriously.",
-            example: "His irreverent humor sometimes offended traditionalists."
+            definition: "Showing a lack of respect for people, traditions, or established ideas, often in a playful way.",
+            example: "Her irreverent humor poked fun at the judges without being mean-spirited."
         },
-        "irrésistible": {
-            definition: "Irrésistible : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot irrésistible dans une phrase descriptive ordinaire."
+        "irritado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word irritado when describing a common situation."
         },
-        "irrévérencieux": {
-            definition: "Irrévérencieux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot irrévérencieux dans une phrase descriptive ordinaire."
+        "irritated": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word irritated when describing a common situation."
         },
-        "jaunâtre": {
-            definition: "Jaunâtre : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot jaunâtre dans une phrase descriptive ordinaire."
+        "irrité": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word irrité when describing a common situation."
         },
-        "jeune": {
-            definition: "Jeune : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot jeune dans une phrase descriptive ordinaire."
+        "itinerario": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word itinerario when describing a common situation."
+        },
+        "itinerary": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word itinerary when describing a common situation."
         },
         "joli": {
-            definition: "Joli : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot joli dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word joli when describing a common situation."
         },
-        "jolie": {
-            definition: "Jolie : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot jolie dans une phrase descriptive ordinaire."
+        "joyeux": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word joyeux when describing a common situation."
         },
-        "judicieuse": {
-            definition: "Judicieuse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot judicieuse dans une phrase descriptive ordinaire."
+        "joyful": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word joyful when describing a common situation."
+        },
+        "jubilant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word jubilant when describing a common situation."
+        },
+        "jubiloso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word jubiloso when describing a common situation."
+        },
+        "judicious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word judicious when describing a common situation."
+        },
+        "kind": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word kind when describing a common situation."
+        },
+        "knowledge": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word knowledge when describing a common situation."
         },
         "laborieux": {
-            definition: "Laborieux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot laborieux dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word laborieux when describing a common situation."
+        },
+        "laborioso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word laborioso when describing a common situation."
+        },
+        "laborious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word laborious when describing a common situation."
+        },
+        "laconic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word laconic when describing a common situation."
+        },
+        "lamentable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word lamentable when describing a common situation."
+        },
+        "lank": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word lank when describing a common situation."
         },
         "large": {
-            definition: "D'une taille, d'une étendue ou d'une capacité considérable.",
-            example: "Ils vivent dans une grande maison avec un beau jardin."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word large when describing a common situation."
         },
-        "lente": {
-            definition: "Lente : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot lente dans une phrase descriptive ordinaire."
+        "late": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word late when describing a common situation."
         },
-        "letargico": {
-            definition: "Affecté par la léthargie ; léthargique et apathique.",
-            example: "Il se sentait léthargique après avoir mangé un déjeuner copieux et lourd."
+        "latest": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word latest when describing a common situation."
+        },
+        "laughter": {
+            definition: "A person or thing whose job or role involves a particular activity or function.",
+            example: "They used the word laughter when describing a common situation."
+        },
+        "lean": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word lean when describing a common situation."
+        },
+        "learning": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Learning every day helped him improve quickly."
+        },
+        "legacy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word legacy when describing a common situation."
+        },
+        "legado": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word legado when describing a common situation."
+        },
+        "leste": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word leste when describing a common situation."
+        },
+        "ligero": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word ligero when describing a common situation."
+        },
+        "light": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word light when describing a common situation."
+        },
+        "lighten": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word lighten when describing a common situation."
+        },
+        "liliputiense": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word liliputiense when describing a common situation."
+        },
+        "lilliputian": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word lilliputian when describing a common situation."
+        },
+        "lilliputien": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word lilliputien when describing a common situation."
+        },
+        "limpid": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word limpid when describing a common situation."
         },
         "limpide": {
-            definition: "Limpide : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot limpide dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word limpide when describing a common situation."
+        },
+        "limpio": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word limpio when describing a common situation."
+        },
+        "lindo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word lindo when describing a common situation."
+        },
+        "listening": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Listening every day helped him improve quickly."
+        },
+        "listo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word listo when describing a common situation."
+        },
+        "lit": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word lit when describing a common situation."
+        },
+        "little": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word little when describing a common situation."
+        },
+        "livid": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word livid when describing a common situation."
+        },
+        "llevadero": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word llevadero when describing a common situation."
+        },
+        "loaded": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word loaded when describing a common situation."
+        },
+        "logro": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word logro when describing a common situation."
         },
         "long": {
-            definition: "Long : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot long dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word long when describing a common situation."
         },
-        "longue": {
-            definition: "Longue : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot longue dans une phrase descriptive ordinaire."
+        "long-standing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Long-standing every day helped him improve quickly."
         },
-        "longuet": {
-            definition: "Longuet : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot longuet dans une phrase descriptive ordinaire."
+        "lots": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word lots when describing a common situation."
         },
-        "lourd": {
-            definition: "Lourd : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot lourd dans une phrase descriptive ordinaire."
+        "loud": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word loud when describing a common situation."
+        },
+        "lovely": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word lovely when describing a common situation."
+        },
+        "low": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word low when describing a common situation."
+        },
+        "low-cost": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word low-cost when describing a common situation."
+        },
+        "lucent": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word lucent when describing a common situation."
         },
         "lucid": {
-            definition: "Expressed clearly; easy to understand.",
-            example: "Her explanation was lucid and clarified the complex issue."
+            definition: "Clear and easy to understand; showing mental clarity.",
+            example: "She gave a lucid summary of the research findings."
         },
         "lucide": {
-            definition: "Lucide : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot lucide dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word lucide when describing a common situation."
         },
-        "lumínica": {
-            definition: "Plein de ou diffusant de la lumière ; brillant ou éclatant, surtout dans le noir.",
-            example: "Les méduses étaient lumineuses, éclairant l'eau sombre de l'océan."
+        "lugubre": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word lugubre when describing a common situation."
         },
-        "luxuriante": {
-            definition: "Luxuriante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot luxuriante dans une phrase descriptive ordinaire."
+        "lugubriousness": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word lugubriousness when describing a common situation."
         },
-        "lénifiante": {
-            definition: "Lénifiante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot lénifiante dans une phrase descriptive ordinaire."
+        "luminous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word luminous when describing a common situation."
         },
-        "magistrale": {
-            definition: "Magistrale : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot magistrale dans une phrase descriptive ordinaire."
+        "lunch": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word lunch when describing a common situation."
         },
-        "magnanimo": {
-            definition: "Généreux ou indulgent, surtout envers un rival ou une personne moins puissante.",
-            example: "Il a été magnanime d'admettre son erreur publiquement."
+        "límites": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word límites when describing a common situation."
+        },
+        "lúcido": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word lúcido when describing a common situation."
+        },
+        "macabre": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word macabre when describing a common situation."
+        },
+        "macabro": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word macabro when describing a common situation."
+        },
+        "mad": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word mad when describing a common situation."
+        },
+        "magnanime": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word magnanime when describing a common situation."
+        },
+        "magnanimous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word magnanimous when describing a common situation."
         },
         "magnifique": {
-            definition: "Magnifique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot magnifique dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word magnifique when describing a common situation."
         },
-        "majestueuse": {
-            definition: "Majestueuse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot majestueuse dans une phrase descriptive ordinaire."
+        "magnánimo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word magnánimo when describing a common situation."
         },
-        "majestueux": {
-            definition: "Majestueux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot majestueux dans une phrase descriptive ordinaire."
+        "majeur": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word majeur when describing a common situation."
+        },
+        "major": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word major when describing a common situation."
+        },
+        "malaisé": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word malaisé when describing a common situation."
+        },
+        "malheureux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word malheureux when describing a common situation."
+        },
+        "malin": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word malin when describing a common situation."
+        },
+        "malo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word malo when describing a common situation."
+        },
+        "mammoth": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word mammoth when describing a common situation."
+        },
+        "manifest": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word manifest when describing a common situation."
         },
         "manifesto": {
-            definition: "Une déclaration publique de politique et d'objectifs.",
-            example: "Le parti politique a publié son manifeste électoral hier."
+            definition: "A public written statement declaring the intentions, motives, or views of an individual or group.",
+            example: "The party released a manifesto promising educational reform."
         },
-        "marginal": {
-            definition: "Marginal : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot marginal dans une phrase descriptive ordinaire."
+        "manifiesto": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word manifiesto when describing a common situation."
+        },
+        "maravilloso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word maravilloso when describing a common situation."
+        },
+        "masivo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word masivo when describing a common situation."
+        },
+        "massif": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word massif when describing a common situation."
         },
         "massive": {
-            definition: "Massive : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot massive dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word massive when describing a common situation."
         },
-        "matiz": {
-            definition: "Une différence subtile ou une nuance de sens, d'expression ou de couleur.",
-            example: "L'acteur a capturé chaque nuance des émotions du personnage."
+        "matinée": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word matinée when describing a common situation."
         },
-        "microscopico": {
-            definition: "Si petit qu'il n'est visible qu'au microscope.",
-            example: "Les bactéries sont des organismes microscopiques que l'on trouve partout."
+        "mauvais": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word mauvais when describing a common situation."
         },
-        "mince": {
-            definition: "Mince : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot mince dans une phrase descriptive ordinaire."
+        "mañana": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word mañana when describing a common situation."
+        },
+        "meager": {
+            definition: "A person or thing whose job or role involves a particular activity or function.",
+            example: "They used the word meager when describing a common situation."
+        },
+        "meaning": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Meaning every day helped him improve quickly."
+        },
+        "medular": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word medular when describing a common situation."
+        },
+        "meek": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word meek when describing a common situation."
+        },
+        "melancholy": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word melancholy when describing a common situation."
+        },
+        "melancólico": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word melancólico when describing a common situation."
+        },
+        "memories": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word memories when describing a common situation."
+        },
+        "menacing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Menacing every day helped him improve quickly."
+        },
+        "menu": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word menu when describing a common situation."
+        },
+        "menudo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word menudo when describing a common situation."
+        },
+        "mercurial": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word mercurial when describing a common situation."
+        },
+        "merry": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word merry when describing a common situation."
+        },
+        "mesmerizing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Mesmerizing every day helped him improve quickly."
+        },
+        "metas": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word metas when describing a common situation."
+        },
+        "meteoric": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word meteoric when describing a common situation."
+        },
+        "microscopic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word microscopic when describing a common situation."
+        },
+        "microscopique": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word microscopique when describing a common situation."
+        },
+        "microscópico": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word microscópico when describing a common situation."
+        },
+        "mighty": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word mighty when describing a common situation."
+        },
+        "mignon": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word mignon when describing a common situation."
+        },
+        "milestone": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word milestone when describing a common situation."
         },
         "mindfulness": {
-            definition: "La práctica de la atención plena, estar presente sin juzgar.",
-            example: "La atención plena diaria le ayudó a manejar su estrés."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word mindfulness when describing a common situation."
         },
-        "minime": {
-            definition: "Minime : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot minime dans une phrase descriptive ordinaire."
+        "mini": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word mini when describing a common situation."
         },
-        "minimiser": {
-            definition: "Minimiser : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot minimiser dans une phrase descriptive ordinaire."
+        "minimalist": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word minimalist when describing a common situation."
         },
         "minimum": {
-            definition: "The least or smallest amount or quantity possible or permissible.",
-            example: "They set the minimum required score for admission."
+            definition: "The smallest amount, number, or degree that is possible or allowed.",
+            example: "You must be at least the minimum age to enter the competition."
         },
-        "minucioso": {
-            definition: "Montrant une grande attention aux détails ; très soigneux et précis.",
-            example: "Elle a été méticuleuse dans ses préparations pour l'examen final."
+        "minor": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word minor when describing a common situation."
         },
         "minuscule": {
-            definition: "Extremely small; tiny.",
-            example: "Only a minuscule portion of the budget was left unspent."
+            definition: "Extremely small in size or amount; tiny.",
+            example: "There was only a minuscule chance of rain during the picnic."
         },
-        "mistico": {
-            definition: "Relatif ou caractéristique du mysticisme ; inspirant l'effroi.",
-            example: "Il a eu une expérience mystique en méditant dans la forêt."
+        "minute": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word minute when describing a common situation."
         },
-        "modeste": {
-            definition: "Modeste : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot modeste dans une phrase descriptive ordinaire."
+        "minúsculo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word minúsculo when describing a common situation."
         },
-        "monacal": {
-            definition: "Monacal : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot monacal dans une phrase descriptive ordinaire."
+        "modern": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word modern when describing a common situation."
+        },
+        "moderne": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word moderne when describing a common situation."
+        },
+        "moderno": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word moderno when describing a common situation."
+        },
+        "molesto": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word molesto when describing a common situation."
+        },
+        "mollifying": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Mollifying every day helped him improve quickly."
+        },
+        "momentous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word momentous when describing a common situation."
+        },
+        "moneyed": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word moneyed when describing a common situation."
         },
         "monologue": {
-            definition: "A long speech by one person, often in a play or performance.",
-            example: "The actor delivered a powerful monologue that moved the audience."
+            definition: "A long speech by a single person, especially in a play, film, or as part of a performance.",
+            example: "The actor performed a powerful monologue that moved the audience."
+        },
+        "monstrous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word monstrous when describing a common situation."
         },
         "monumental": {
-            definition: "Grand par son importance, son étendue ou sa taille.",
-            example: "La découverte de la gravité a été un moment monumental dans la science."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word monumental when describing a common situation."
         },
         "mood": {
-            definition: "A temporary state of mind or feeling.",
-            example: "Her upbeat mood made the meeting more pleasant."
+            definition: "A temporary emotional state that affects how a person feels and behaves.",
+            example: "Her mood improved after a short walk in the park."
         },
-        "morte": {
-            definition: "Morte : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot morte dans une phrase descriptive ordinaire."
+        "morning": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Morning every day helped him improve quickly."
         },
-        "moussant": {
-            definition: "Moussant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot moussant dans une phrase descriptive ordinaire."
+        "morose": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word morose when describing a common situation."
         },
-        "mouvementé": {
-            definition: "Qui est mouvementé ou qui ressent mouvementé.",
-            example: "On peut utiliser le mot mouvementé dans une phrase descriptive ordinaire."
+        "motivación": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word motivación when describing a common situation."
         },
-        "mystique": {
-            definition: "Mystique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot mystique dans une phrase descriptive ordinaire."
+        "motivation": {
+            definition: "An act, process, or result related to motiva, describing a specific action or condition.",
+            example: "The decision came after a lengthy motivation process that changed the plan."
         },
-        "mystérieux": {
-            definition: "Mystérieux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot mystérieux dans une phrase descriptive ordinaire."
+        "much": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word much when describing a common situation."
         },
-        "médiéval": {
-            definition: "Médiéval : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot médiéval dans une phrase descriptive ordinaire."
+        "multitudinous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word multitudinous when describing a common situation."
         },
-        "mélodieuse": {
-            definition: "Mélodieuse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot mélodieuse dans une phrase descriptive ordinaire."
+        "mute": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word mute when describing a common situation."
         },
-        "méritant": {
-            definition: "Méritant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot méritant dans une phrase descriptive ordinaire."
+        "myriad": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word myriad when describing a common situation."
         },
-        "nase": {
-            definition: "Nase : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot nase dans une phrase descriptive ordinaire."
+        "mythic": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word mythic when describing a common situation."
         },
-        "net": {
-            definition: "Net : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot net dans une phrase descriptive ordinaire."
+        "médiocre": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word médiocre when describing a common situation."
         },
-        "noble": {
-            definition: "Noble : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot noble dans une phrase descriptive ordinaire."
+        "mélancolique": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word mélancolique when describing a common situation."
+        },
+        "naciente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word naciente when describing a common situation."
+        },
+        "naissant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word naissant when describing a common situation."
+        },
+        "narrow": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word narrow when describing a common situation."
+        },
+        "nascent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word nascent when describing a common situation."
+        },
+        "nasty": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word nasty when describing a common situation."
+        },
+        "necessitous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word necessitous when describing a common situation."
+        },
+        "needy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word needy when describing a common situation."
+        },
+        "nefasto": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word nefasto when describing a common situation."
+        },
+        "negligible": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word negligible when describing a common situation."
+        },
+        "neuf": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word neuf when describing a common situation."
+        },
+        "new": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word new when describing a common situation."
+        },
+        "newfangled": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word newfangled when describing a common situation."
+        },
+        "nice": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word nice when describing a common situation."
+        },
+        "nimble": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word nimble when describing a common situation."
+        },
+        "nippy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word nippy when describing a common situation."
+        },
+        "noisy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word noisy when describing a common situation."
+        },
+        "nominal": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word nominal when describing a common situation."
+        },
+        "nosy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word nosy when describing a common situation."
+        },
+        "nouveau": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word nouveau when describing a common situation."
         },
         "novateur": {
-            definition: "Novateur : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot novateur dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word novateur when describing a common situation."
         },
-        "obligé": {
-            definition: "Qui est obligé ou qui ressent obligé.",
-            example: "On peut utiliser le mot obligé dans une phrase descriptive ordinaire."
+        "novel": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word novel when describing a common situation."
         },
-        "obsoleto": {
-            definition: "Plus produit ni utilisé ; démodé.",
-            example: "Les machines à écrire sont devenues largement obsolètes à l'ère des ordinateurs."
+        "nuevo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word nuevo when describing a common situation."
         },
-        "obséquieux": {
-            definition: "Obséquieux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot obséquieux dans une phrase descriptive ordinaire."
+        "numinous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word numinous when describing a common situation."
         },
-        "omnipresente": {
-            definition: "Largement ou constamment rencontré ; commun ou répandu.",
-            example: "La peur de l'échec est souvent omniprésente dans les environnements à enjeux élevés."
+        "nutrición": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word nutrición when describing a common situation."
         },
-        "omniprésent": {
-            definition: "Omniprésent : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot omniprésent dans une phrase descriptive ordinaire."
+        "nutrition": {
+            definition: "An act, process, or result related to nutri, describing a specific action or condition.",
+            example: "The decision came after a lengthy nutrition process that changed the plan."
         },
-        "omniprésente": {
-            definition: "Omniprésente : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot omniprésente dans une phrase descriptive ordinaire."
+        "obvious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word obvious when describing a common situation."
         },
-        "omnisciente": {
-            definition: "Connaissant tout ; ayant une conscience ou une vision infinie.",
-            example: "Le narrateur de l'histoire était omniscient, connaissant les pensées de chaque personnage."
+        "okay": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word okay when describing a common situation."
         },
-        "opaque": {
-            definition: "Opaque : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot opaque dans une phrase descriptive ordinaire."
+        "old": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word old when describing a common situation."
         },
-        "oppressant": {
-            definition: "Oppressant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot oppressant dans une phrase descriptive ordinaire."
+        "ominous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word ominous when describing a common situation."
         },
-        "orgueilleux": {
-            definition: "Orgueilleux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot orgueilleux dans une phrase descriptive ordinaire."
+        "onerous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word onerous when describing a common situation."
         },
-        "original": {
-            definition: "Original : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot original dans une phrase descriptive ordinaire."
+        "open": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word open when describing a common situation."
         },
-        "ornamental": {
-            definition: "Servant d'ornement ; décoratif.",
-            example: "Le jardin était rempli d'arbustes et de fleurs ornementaux."
+        "oportunidades": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word oportunidades when describing a common situation."
         },
-        "oscilante": {
-            definition: "Se déplaçant ou oscillant d'avant en arrière à une vitesse régulière.",
-            example: "Le ventilateur oscillant a gardé la pièce fraîche pendant la chaleur de l'été."
+        "opportunities": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word opportunities when describing a common situation."
         },
-        "ouaté": {
-            definition: "Qui est ouaté ou qui ressent ouaté.",
-            example: "On peut utiliser le mot ouaté dans une phrase descriptive ordinaire."
+        "opportunités": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word opportunités when describing a common situation."
         },
-        "panoramique": {
-            definition: "Panoramique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot panoramique dans une phrase descriptive ordinaire."
+        "optimal": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word optimal when describing a common situation."
         },
-        "parfumée": {
-            definition: "Qui est parfumée ou qui ressent parfumée.",
-            example: "On peut utiliser le mot parfumée dans une phrase descriptive ordinaire."
+        "optimizado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word optimizado when describing a common situation."
         },
-        "passé": {
-            definition: "Qui est passé ou qui ressent passé.",
-            example: "On peut utiliser le mot passé dans une phrase descriptive ordinaire."
+        "opulent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word opulent when describing a common situation."
+        },
+        "organización": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word organización when describing a common situation."
+        },
+        "organization": {
+            definition: "An act, process, or result related to organiza, describing a specific action or condition.",
+            example: "The decision came after a lengthy organization process that changed the plan."
+        },
+        "outreach": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word outreach when describing a common situation."
+        },
+        "outré": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word outré when describing a common situation."
+        },
+        "paciencia": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word paciencia when describing a common situation."
+        },
+        "painless": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word painless when describing a common situation."
+        },
+        "palpitant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word palpitant when describing a common situation."
+        },
+        "paltry": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word paltry when describing a common situation."
+        },
+        "pan comido": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "She described the situation as pan comido in plain speech."
+        },
+        "paramount": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word paramount when describing a common situation."
+        },
+        "parcimonieux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word parcimonieux when describing a common situation."
+        },
+        "parco": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word parco when describing a common situation."
+        },
+        "parsimonious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word parsimonious when describing a common situation."
+        },
+        "passionate": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word passionate when describing a common situation."
+        },
+        "passionnant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word passionnant when describing a common situation."
+        },
+        "passionné": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word passionné when describing a common situation."
+        },
+        "past": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word past when describing a common situation."
+        },
+        "patience": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word patience when describing a common situation."
+        },
+        "patrimonio": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word patrimonio when describing a common situation."
         },
         "patriot": {
-            definition: "A person who vigorously supports their country.",
-            example: "The patriot was honored for his service to the nation."
+            definition: "A person who strongly supports and defends their country and its interests.",
+            example: "Many patriots volunteered to help during the national crisis."
         },
-        "patriote": {
-            definition: "Patriote : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot patriote dans une phrase descriptive ordinaire."
+        "pavoroso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word pavoroso when describing a common situation."
         },
-        "pavorosa": {
-            definition: "Provoquant ou impliquant une grande souffrance, de la peur ou du malheur.",
-            example: "La nouvelle de l'accident était absolument affreuse."
+        "peaceful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word peaceful when describing a common situation."
         },
-        "penetrante": {
-            definition: "Capable de se frayer un chemin à travers ou dans quelque chose ; perçant.",
-            example: "Son regard pénétrant le mettait mal à l'aise."
+        "pecunious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word pecunious when describing a common situation."
         },
-        "perceptiva": {
-            definition: "Avoir ou montrer une vision sensible ; observateur.",
-            example: "Son observation perspicace nous a aidés à résoudre le mystère."
+        "peerless": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word peerless when describing a common situation."
+        },
+        "peliagudo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word peliagudo when describing a common situation."
+        },
+        "pellucid": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word pellucid when describing a common situation."
+        },
+        "pellucide": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word pellucide when describing a common situation."
+        },
+        "pellucido": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word pellucido when describing a common situation."
+        },
+        "penniless": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word penniless when describing a common situation."
+        },
+        "penurious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word penurious when describing a common situation."
+        },
+        "pequeño": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word pequeño when describing a common situation."
+        },
+        "perecedero": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word perecedero when describing a common situation."
+        },
+        "perfidious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word perfidious when describing a common situation."
+        },
+        "performant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word performant when describing a common situation."
+        },
+        "perilous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word perilous when describing a common situation."
+        },
+        "perishable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word perishable when describing a common situation."
+        },
+        "perk": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word perk when describing a common situation."
+        },
+        "personajes": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word personajes when describing a common situation."
+        },
+        "perspectiva": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word perspectiva when describing a common situation."
         },
         "perspective": {
-            definition: "Una actitud particular o punto de vista sobre algo.",
-            example: "Viajar le dio una nueva perspectiva sobre la vida."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word perspective when describing a common situation."
+        },
+        "perspectives": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word perspectives when describing a common situation."
         },
         "perspicace": {
-            definition: "Perspicace : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot perspicace dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word perspicace when describing a common situation."
         },
-        "perçante": {
-            definition: "Perçante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot perçante dans une phrase descriptive ordinaire."
+        "perspicacious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word perspicacious when describing a common situation."
         },
-        "pesant": {
-            definition: "Pesant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot pesant dans une phrase descriptive ordinaire."
+        "perspicaz": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word perspicaz when describing a common situation."
         },
-        "pionnier": {
-            definition: "Pionnier : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot pionnier dans une phrase descriptive ordinaire."
+        "perspicuo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word perspicuo when describing a common situation."
         },
-        "pittoresque": {
-            definition: "Pittoresque : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot pittoresque dans une phrase descriptive ordinaire."
+        "perspicuous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word perspicuous when describing a common situation."
+        },
+        "petit": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word petit when describing a common situation."
+        },
+        "petit-déjeuner": {
+            definition: "A person or thing whose job or role involves a particular activity or function.",
+            example: "They used the word petit-déjeuner when describing a common situation."
+        },
+        "petite": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word petite when describing a common situation."
+        },
+        "picturesque": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word picturesque when describing a common situation."
+        },
+        "piercing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Piercing every day helped him improve quickly."
+        },
+        "pin-drop": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word pin-drop when describing a common situation."
+        },
+        "pioneer": {
+            definition: "A person or thing whose job or role involves a particular activity or function.",
+            example: "They used the word pioneer when describing a common situation."
+        },
+        "piping": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Piping every day helped him improve quickly."
+        },
+        "pittance": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word pittance when describing a common situation."
+        },
+        "pivotal": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word pivotal when describing a common situation."
         },
         "placate": {
-            definition: "To calm or soothe someone, often by making concessions.",
-            example: "He offered an apology to placate the upset customer."
+            definition: "To calm someone by giving them what they want or by satisfying their demands.",
+            example: "To placate the client, they offered a full refund and an apology."
         },
-        "pleine": {
-            definition: "Pleine : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot pleine dans une phrase descriptive ordinaire."
+        "placid": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word placid when describing a common situation."
+        },
+        "plain": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word plain when describing a common situation."
+        },
+        "planificación": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word planificación when describing a common situation."
+        },
+        "planning": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Planning every day helped him improve quickly."
+        },
+        "pleasant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word pleasant when describing a common situation."
+        },
+        "pleased": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word pleased when describing a common situation."
         },
         "pliant": {
-            definition: "Easily influenced or persuaded; flexible.",
-            example: "The trainee's pliant attitude made him quick to learn new methods."
+            definition: "Easily influenced or bent; adaptable to change or persuasion.",
+            example: "Children are often pliant and quick to adopt new routines."
         },
-        "plombant": {
-            definition: "Plombant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot plombant dans une phrase descriptive ordinaire."
+        "plot": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word plot when describing a common situation."
+        },
+        "plush": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word plush when describing a common situation."
+        },
+        "plutocratic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word plutocratic when describing a common situation."
+        },
+        "poderoso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word poderoso when describing a common situation."
+        },
+        "polaire": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word polaire when describing a common situation."
+        },
+        "polar": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word polar when describing a common situation."
+        },
+        "polluted": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word polluted when describing a common situation."
         },
         "polyglot": {
-            definition: "A person who knows and is able to use several languages.",
-            example: "As a polyglot, she translated documents across multiple languages."
+            definition: "A person who knows and can use several languages.",
+            example: "As a polyglot, she quickly switched between English, French, and Spanish."
         },
-        "polyglotte": {
-            definition: "Polyglotte : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot polyglotte dans une phrase descriptive ordinaire."
+        "poor": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word poor when describing a common situation."
         },
         "positivity": {
-            definition: "La tendencia a centrarse en los aspectos positivos y mantener una actitud optimista.",
-            example: "Su positividad levantó la moral del equipo durante el período ocupado."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word positivity when describing a common situation."
         },
-        "potentado": {
-            definition: "Un monarque ou un souverain, particulièrement autocratique.",
-            example: "Le potentat étranger est arrivé avec un entourage royal massif."
+        "potent": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word potent when describing a common situation."
         },
-        "prestigieuse": {
-            definition: "Prestigieuse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot prestigieuse dans une phrase descriptive ordinaire."
+        "potente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word potente when describing a common situation."
         },
-        "prestigieux": {
-            definition: "Prestigieux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot prestigieux dans une phrase descriptive ordinaire."
+        "potential": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word potential when describing a common situation."
         },
-        "previsora": {
-            definition: "Ayant ou montrant de l'imagination ou de la prévoyance ; capable de voir les objets lointains.",
-            example: "La stratégie visionnaire du PDG a mené l'entreprise vers un succès à long terme."
+        "powerful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word powerful when describing a common situation."
+        },
+        "practice": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word practice when describing a common situation."
+        },
+        "precario": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word precario when describing a common situation."
+        },
+        "precarious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word precarious when describing a common situation."
+        },
+        "precioso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word precioso when describing a common situation."
+        },
+        "precipitate": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word precipitate when describing a common situation."
+        },
+        "precipitous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word precipitous when describing a common situation."
+        },
+        "precocious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word precocious when describing a common situation."
+        },
+        "preguntas": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word preguntas when describing a common situation."
+        },
+        "preguntón": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word preguntón when describing a common situation."
+        },
+        "preheated": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word preheated when describing a common situation."
+        },
+        "presentación": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word presentación when describing a common situation."
+        },
+        "presentation": {
+            definition: "An act, process, or result related to presenta, describing a specific action or condition.",
+            example: "The decision came after a lengthy presentation process that changed the plan."
+        },
+        "pressé": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word pressé when describing a common situation."
+        },
+        "preste": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word preste when describing a common situation."
+        },
+        "presupuesto": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word presupuesto when describing a common situation."
+        },
+        "presuroso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word presuroso when describing a common situation."
+        },
+        "pretty": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word pretty when describing a common situation."
+        },
+        "primordial": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word primordial when describing a common situation."
+        },
+        "prioridad": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word prioridad when describing a common situation."
+        },
+        "prioridades": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word prioridades when describing a common situation."
+        },
+        "priorities": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word priorities when describing a common situation."
+        },
+        "priority": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word priority when describing a common situation."
+        },
+        "pristine": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word pristine when describing a common situation."
+        },
+        "privacidad": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word privacidad when describing a common situation."
+        },
+        "privacy": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word privacy when describing a common situation."
+        },
+        "probant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word probant when describing a common situation."
+        },
+        "probity": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word probity when describing a common situation."
+        },
+        "problemático": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word problemático when describing a common situation."
+        },
+        "probo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word probo when describing a common situation."
         },
         "proclaim": {
-            definition: "To announce publicly or officially.",
-            example: "The mayor will proclaim the new policy at the press conference."
+            definition: "To announce something publicly and officially, often with strong emphasis.",
+            example: "The mayor will proclaim the new park open this weekend."
         },
-        "proclamer": {
-            definition: "Proclamer : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot proclamer dans une phrase descriptive ordinaire."
+        "productif": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word productif when describing a common situation."
         },
-        "prodigioso": {
-            definition: "Remarquablement ou impressionnamment grand en étendue, en taille ou en degré.",
-            example: "Elle a une mémoire prodigieuse pour les dates et les noms historiques."
+        "productive": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word productive when describing a common situation."
         },
-        "profond": {
-            definition: "Profond : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot profond dans une phrase descriptive ordinaire."
+        "productivity": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word productivity when describing a common situation."
+        },
+        "productivo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word productivo when describing a common situation."
+        },
+        "progress": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word progress when describing a common situation."
         },
         "proliferate": {
-            definition: "Augmenter rapidement en nombre ; multiplier.",
-            example: "Les applications pour smartphones continuent de proliférer à un rythme incroyable."
+            definition: "To increase or spread rapidly in number or amount.",
+            example: "Smart devices continued to proliferate throughout the decade."
         },
-        "propre": {
-            definition: "Propre : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot propre dans une phrase descriptive ordinaire."
+        "promising": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Promising every day helped him improve quickly."
         },
-        "providencial": {
-            definition: "Se produisant à un moment favorable ; divin ou chanceux.",
-            example: "Son arrivée à ce moment-là a été vraiment providentielle."
+        "prompt": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word prompt when describing a common situation."
+        },
+        "pronto": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word pronto when describing a common situation."
+        },
+        "propitious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word propitious when describing a common situation."
+        },
+        "prosperous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word prosperous when describing a common situation."
+        },
+        "protección": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word protección when describing a common situation."
+        },
+        "protection": {
+            definition: "An act, process, or result related to protec, describing a specific action or condition.",
+            example: "The decision came after a lengthy protection process that changed the plan."
+        },
+        "prying": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Prying every day helped him improve quickly."
+        },
+        "práctica": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word práctica when describing a common situation."
+        },
+        "précaire": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word précaire when describing a common situation."
         },
         "prépondérant": {
-            definition: "Prépondérant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot prépondérant dans une phrase descriptive ordinaire."
-        },
-        "prépondérante": {
-            definition: "Prépondérante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot prépondérante dans une phrase descriptive ordinaire."
-        },
-        "psychologie": {
-            definition: "Psychologie : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot psychologie dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word prépondérant when describing a common situation."
         },
         "psychology": {
-            definition: "L'étude scientifique de l'esprit humain et de ses fonctions.",
-            example: "L'étude de la psychologie nous aide à comprendre le comportement humain."
+            definition: "The scientific study of the mind, behavior, and mental processes.",
+            example: "She studied psychology to better understand human behavior."
         },
-        "puntera": {
-            definition: "Le plus important ; guide ou direction.",
-            example: "C'est une experte de premier plan dans le domaine des énergies renouvelables."
+        "puissant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word puissant when describing a common situation."
         },
-        "pur": {
-            definition: "Pur : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot pur dans une phrase descriptive ordinaire."
+        "pulchritudinous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word pulchritudinous when describing a common situation."
+        },
+        "purpose": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word purpose when describing a common situation."
+        },
+        "pusillanimous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word pusillanimous when describing a common situation."
+        },
+        "putrid": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word putrid when describing a common situation."
         },
         "pénible": {
-            definition: "Pénible : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot pénible dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word pénible when describing a common situation."
         },
-        "pétillant": {
-            definition: "Pétillant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot pétillant dans une phrase descriptive ordinaire."
+        "périssable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word périssable when describing a common situation."
+        },
+        "pésimo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word pésimo when describing a common situation."
+        },
+        "quaint": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word quaint when describing a common situation."
+        },
+        "quality": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word quality when describing a common situation."
+        },
+        "quebradizo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word quebradizo when describing a common situation."
+        },
+        "quebrantable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word quebrantable when describing a common situation."
+        },
+        "quebrantado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word quebrantado when describing a common situation."
+        },
+        "querulous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word querulous when describing a common situation."
+        },
+        "questioning": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Questioning every day helped him improve quickly."
+        },
+        "questionneur": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word questionneur when describing a common situation."
+        },
+        "questions": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word questions when describing a common situation."
+        },
+        "quick": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word quick when describing a common situation."
+        },
+        "quiet": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word quiet when describing a common situation."
         },
         "quixotic": {
-            definition: "Extremely idealistic; unrealistic and impractical.",
-            example: "His quixotic plan to save the city won admiration but little support."
+            definition: "Unrealistic and impractical in pursuit of ideals; extravagantly chivalrous or romantic.",
+            example: "His quixotic plans to change the world were admired but difficult to implement."
         },
-        "radieuse": {
-            definition: "Radieuse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot radieuse dans une phrase descriptive ordinaire."
+        "quémandeur": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word quémandeur when describing a common situation."
+        },
+        "radiant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word radiant when describing a common situation."
+        },
+        "radiante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word radiante when describing a common situation."
         },
         "radieux": {
-            definition: "Radieux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot radieux dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word radieux when describing a common situation."
         },
-        "rasante": {
-            definition: "Toucher ou frapper légèrement quelque chose en passant ; brouter.",
-            example: "La balle n'a laissé qu'une éraflure sur son épaule."
+        "ramshackle": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ramshackle when describing a common situation."
         },
-        "rationnelle": {
-            definition: "Rationnelle : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot rationnelle dans une phrase descriptive ordinaire."
+        "rapid": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word rapid when describing a common situation."
         },
-        "rauque": {
-            definition: "Rauque : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot rauque dans une phrase descriptive ordinaire."
+        "rapide": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word rapide when describing a common situation."
+        },
+        "ratiocinant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ratiocinant when describing a common situation."
+        },
+        "ratiocinative": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ratiocinative when describing a common situation."
+        },
+        "rationnel": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word rationnel when describing a common situation."
+        },
+        "raucous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word raucous when describing a common situation."
+        },
+        "raudo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word raudo when describing a common situation."
         },
         "ravenous": {
-            definition: "Extremely hungry or voracious.",
-            example: "After the hike, they were ravenous and ate quickly."
+            definition: "Extremely hungry; having a strong appetite after a period without food.",
+            example: "After the hike he was ravenous and ate two sandwiches."
         },
-        "ravissante": {
-            definition: "Ravissante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot ravissante dans une phrase descriptive ordinaire."
+        "ravi": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word ravi when describing a common situation."
         },
-        "redevable": {
-            definition: "Redevable : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot redevable dans une phrase descriptive ordinaire."
+        "ravishing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Ravishing every day helped him improve quickly."
         },
-        "redoutable": {
-            definition: "Redoutable : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot redoutable dans une phrase descriptive ordinaire."
+        "ravissant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ravissant when describing a common situation."
         },
-        "reflexivo": {
-            definition: "Fournissant une réflexion ; relatif à une pensée profonde.",
-            example: "Il était d'humeur réfléchie, pensant à ses choix passés."
+        "razonador": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word razonador when describing a common situation."
+        },
+        "ready": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word ready when describing a common situation."
+        },
+        "recent": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word recent when describing a common situation."
+        },
+        "reciente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word reciente when describing a common situation."
+        },
+        "recio": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word recio when describing a common situation."
+        },
+        "recomendar": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word recomendar when describing a common situation."
+        },
+        "recommend": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word recommend when describing a common situation."
+        },
+        "recovery": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word recovery when describing a common situation."
+        },
+        "recuerdos": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word recuerdos when describing a common situation."
+        },
+        "recuperación": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word recuperación when describing a common situation."
+        },
+        "recursos": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word recursos when describing a common situation."
+        },
+        "redoubtable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word redoubtable when describing a common situation."
+        },
+        "reducido": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word reducido when describing a common situation."
+        },
+        "reflection": {
+            definition: "An act, process, or result related to reflec, describing a specific action or condition.",
+            example: "The decision came after a lengthy reflection process that changed the plan."
+        },
+        "reflexión": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word reflexión when describing a common situation."
+        },
+        "refreshing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Refreshing every day helped him improve quickly."
+        },
+        "refulgent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word refulgent when describing a common situation."
+        },
+        "relajación": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word relajación when describing a common situation."
+        },
+        "relajante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word relajante when describing a common situation."
         },
         "relationships": {
-            definition: "Los lazos y conexiones entre dos personas o grupos.",
-            example: "Las relaciones saludables se basan en la confianza y la comunicación."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word relationships when describing a common situation."
         },
-        "religieux": {
-            definition: "Religieux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot religieux dans une phrase descriptive ordinaire."
+        "relaxant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word relaxant when describing a common situation."
         },
-        "remarquable": {
-            definition: "Remarquable : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot remarquable dans une phrase descriptive ordinaire."
+        "relaxation": {
+            definition: "An act, process, or result related to relaxa, describing a specific action or condition.",
+            example: "The decision came after a lengthy relaxation process that changed the plan."
         },
-        "remoto": {
-            definition: "Éloigné ; distant dans l'espace, le temps ou la relation.",
-            example: "Ils vivaient dans un village reculé, au cœur des montagnes."
+        "relaxing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Relaxing every day helped him improve quickly."
+        },
+        "remnant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word remnant when describing a common situation."
+        },
+        "renewable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word renewable when describing a common situation."
         },
         "repudiate": {
-            definition: "To reject or disown; to refuse to accept as true.",
-            example: "She repudiated the allegations and provided evidence to the contrary."
+            definition: "To refuse to accept or support something; to reject an idea or claim as untrue or unjust.",
+            example: "He publicly repudiated the allegations made against him."
         },
-        "resplandeciente": {
-            definition: "Attrayant et impressionnant par ses couleurs riches ou son éclat.",
-            example: "Elle était resplendissante dans sa robe de soirée en soie."
+        "research": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word research when describing a common situation."
         },
-        "retentissant": {
-            definition: "Retentissant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot retentissant dans une phrase descriptive ordinaire."
+        "reserved": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word reserved when describing a common situation."
+        },
+        "resilience": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word resilience when describing a common situation."
+        },
+        "resiliencia": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word resiliencia when describing a common situation."
+        },
+        "resistencia": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word resistencia when describing a common situation."
+        },
+        "resistente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word resistente when describing a common situation."
+        },
+        "resolución": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word resolución when describing a common situation."
+        },
+        "resolution": {
+            definition: "An act, process, or result related to resolu, describing a specific action or condition.",
+            example: "The decision came after a lengthy resolution process that changed the plan."
+        },
+        "resonance": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word resonance when describing a common situation."
+        },
+        "resonant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word resonant when describing a common situation."
+        },
+        "resources": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word resources when describing a common situation."
+        },
+        "respect": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word respect when describing a common situation."
+        },
+        "respeto": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word respeto when describing a common situation."
+        },
+        "resplendent": {
+            definition: "Attractively bright and richly colorful in appearance.",
+            example: "The ballroom looked resplendent with chandeliers and roses."
+        },
+        "resplendissant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word resplendissant when describing a common situation."
+        },
+        "responsabilidad": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word responsabilidad when describing a common situation."
+        },
+        "responsabilité": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word responsabilité when describing a common situation."
+        },
+        "responsibility": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word responsibility when describing a common situation."
+        },
+        "responsive": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word responsive when describing a common situation."
+        },
+        "ressources": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word ressources when describing a common situation."
+        },
+        "restaurador": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word restaurador when describing a common situation."
+        },
+        "restoration": {
+            definition: "An act, process, or result related to restora, describing a specific action or condition.",
+            example: "The decision came after a lengthy restoration process that changed the plan."
+        },
+        "restorative": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word restorative when describing a common situation."
+        },
+        "reticent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word reticent when describing a common situation."
+        },
+        "retroalimentación": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word retroalimentación when describing a common situation."
+        },
+        "revolutionary": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word revolutionary when describing a common situation."
+        },
+        "rewarding": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Rewarding every day helped him improve quickly."
         },
         "rhetoric": {
-            definition: "The art of effective or persuasive speaking or writing.",
-            example: "The politician's rhetoric was aimed at inspiring voters."
+            definition: "The art of using language effectively to inform, persuade, or motivate an audience.",
+            example: "The speech relied more on rhetoric than on concrete policies."
         },
-        "rhétorique": {
-            definition: "Rhétorique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot rhétorique dans une phrase descriptive ordinaire."
+        "rich": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word rich when describing a common situation."
         },
-        "riguroso": {
-            definition: "Extrêmement approfondi, exhaustif ou précis.",
-            example: "Le nouveau médicament a subi des tests rigoureux avant d'être approuvé."
+        "risible": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word risible when describing a common situation."
         },
-        "rotundo": {
-            definition: "Dodu ou de forme arrondie.",
-            example: "Le chérubin était une petite figure ronde dans le tableau."
+        "risky": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word risky when describing a common situation."
         },
-        "réfuter": {
-            definition: "Réfuter : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot réfuter dans une phrase descriptive ordinaire."
+        "ritual": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word ritual when describing a common situation."
         },
-        "répudier": {
-            definition: "Répudier : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot répudier dans une phrase descriptive ordinaire."
+        "riveting": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Riveting every day helped him improve quickly."
         },
-        "saisissant": {
-            definition: "Saisissant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot saisissant dans une phrase descriptive ordinaire."
+        "robust": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word robust when describing a common situation."
         },
-        "saisissante": {
-            definition: "Saisissante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot saisissante dans une phrase descriptive ordinaire."
+        "robuste": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word robuste when describing a common situation."
         },
-        "sale": {
-            definition: "Sale : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot sale dans une phrase descriptive ordinaire."
+        "robusto": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word robusto when describing a common situation."
+        },
+        "roles": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word roles when describing a common situation."
+        },
+        "rough": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word rough when describing a common situation."
+        },
+        "routine": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word routine when describing a common situation."
+        },
+        "rudimentaire": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word rudimentaire when describing a common situation."
+        },
+        "rutina": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word rutina when describing a common situation."
+        },
+        "rápido": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word rápido when describing a common situation."
+        },
+        "rébarbatif": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word rébarbatif when describing a common situation."
+        },
+        "récent": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word récent when describing a common situation."
+        },
+        "réduit": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word réduit when describing a common situation."
+        },
+        "réussite": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word réussite when describing a common situation."
+        },
+        "révolutionnaire": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word révolutionnaire when describing a common situation."
+        },
+        "sabor": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word sabor when describing a common situation."
+        },
+        "sad": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word sad when describing a common situation."
+        },
+        "sadness": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word sadness when describing a common situation."
+        },
+        "sagace": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word sagace when describing a common situation."
+        },
+        "sagacious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word sagacious when describing a common situation."
+        },
+        "sagaz": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word sagaz when describing a common situation."
+        },
+        "saludable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word saludable when describing a common situation."
         },
         "salutaire": {
-            definition: "Salutaire : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot salutaire dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word salutaire when describing a common situation."
         },
-        "sceptique": {
-            definition: "Sceptique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot sceptique dans une phrase descriptive ordinaire."
+        "salutary": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word salutary when describing a common situation."
         },
-        "scintillante": {
-            definition: "Scintillante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot scintillante dans une phrase descriptive ordinaire."
+        "satisfait": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word satisfait when describing a common situation."
         },
-        "scrupuleux": {
-            definition: "Scrupuleux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot scrupuleux dans une phrase descriptive ordinaire."
+        "satisfecho": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word satisfecho when describing a common situation."
         },
-        "sepulcral": {
-            definition: "Relatif à un tombeau ou à un enterrement ; lugubre et sombre.",
-            example: "Un silence sépulcral remplissait la cathédrale abandonnée."
+        "saving": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Saving every day helped him improve quickly."
         },
-        "serein": {
-            definition: "Serein : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot serein dans une phrase descriptive ordinaire."
+        "savoureux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word savoureux when describing a common situation."
+        },
+        "scabreux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word scabreux when describing a common situation."
+        },
+        "scale": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word scale when describing a common situation."
+        },
+        "scary": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word scary when describing a common situation."
+        },
+        "schedule": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word schedule when describing a common situation."
+        },
+        "scorching": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Scorching every day helped him improve quickly."
+        },
+        "scrawny": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word scrawny when describing a common situation."
+        },
+        "scrupulous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word scrupulous when describing a common situation."
+        },
+        "secular": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word secular when describing a common situation."
+        },
+        "security": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word security when describing a common situation."
+        },
+        "sedate": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word sedate when describing a common situation."
+        },
+        "seething": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Seething every day helped him improve quickly."
+        },
+        "seguimiento": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word seguimiento when describing a common situation."
+        },
+        "self-care": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word self-care when describing a common situation."
+        },
+        "self-evident": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word self-evident when describing a common situation."
+        },
+        "sencillo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word sencillo when describing a common situation."
+        },
+        "sequestered": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word sequestered when describing a common situation."
         },
         "serendipitous": {
             definition: "Occurring or discovered by chance in a happy or beneficial way.",
-            example: "Their meeting at the airport was completely serendipitous."
+            example: "Their meeting was serendipitous and led to a successful collaboration."
         },
-        "serendipity": {
-            definition: "L'apparition et le développement d'événements par hasard d'une manière heureuse.",
-            example: "Trouver ce livre rare dans le grenier a été un coup de sérendipité."
+        "serene": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word serene when describing a common situation."
         },
-        "serrée": {
-            definition: "Qui est serrée ou qui ressent serrée.",
-            example: "On peut utiliser le mot serrée dans une phrase descriptive ordinaire."
+        "service": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word service when describing a common situation."
         },
-        "sesgado": {
-            definition: "Injustement préjugé pour ou contre quelqu'un ou quelque chose.",
-            example: "La décision de l'arbitre a été perçue comme biaisée par les supporters de l'équipe locale."
+        "servicio": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word servicio when describing a common situation."
         },
-        "señorial": {
-            definition: "Ayant une manière digne, sereine et grandiose.",
-            example: "La demeure seigneuriale était entourée d'hectares de magnifiques jardins."
+        "shaded": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word shaded when describing a common situation."
         },
-        "sidérale": {
-            definition: "Sidérale : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot sidérale dans une phrase descriptive ordinaire."
+        "sharp": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word sharp when describing a common situation."
         },
-        "simbolico": {
-            definition: "Servant de symbole ; représentant quelque chose d'autre.",
-            example: "La colombe est symbolique de la paix et de l'espoir."
+        "shining": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Shining every day helped him improve quickly."
         },
-        "simplifier": {
-            definition: "Simplifier : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot simplifier dans une phrase descriptive ordinaire."
+        "shiny": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word shiny when describing a common situation."
+        },
+        "shoddy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word shoddy when describing a common situation."
+        },
+        "short": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word short when describing a common situation."
+        },
+        "shrewd": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word shrewd when describing a common situation."
+        },
+        "shy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word shy when describing a common situation."
+        },
+        "siberiano": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word siberiano when describing a common situation."
+        },
+        "sibérien": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word sibérien when describing a common situation."
+        },
+        "side-splitting": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Side-splitting every day helped him improve quickly."
+        },
+        "sightseeing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Sightseeing every day helped him improve quickly."
+        },
+        "significado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word significado when describing a common situation."
+        },
+        "significant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word significant when describing a common situation."
+        },
+        "significativo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word significativo when describing a common situation."
+        },
+        "silent": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word silent when describing a common situation."
+        },
+        "silken": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word silken when describing a common situation."
+        },
+        "simple": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word simple when describing a common situation."
         },
         "simplify": {
-            definition: "To make something easier to understand or do.",
-            example: "He tried to simplify the instructions for new users."
+            definition: "To make something less complicated or easier to understand or do.",
+            example: "We should simplify the instructions so new users can follow them easily."
+        },
+        "sincere": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word sincere when describing a common situation."
+        },
+        "siniestro": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word siniestro when describing a common situation."
+        },
+        "sinistre": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word sinistre when describing a common situation."
+        },
+        "sizzling": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Sizzling every day helped him improve quickly."
         },
         "skeptic": {
-            definition: "A person inclined to question or doubt accepted opinions.",
-            example: "The skeptic demanded more evidence before accepting the claim."
+            definition: "A person inclined to question or doubt accepted opinions and claims until they are supported by evidence.",
+            example: "As a skeptic, she demanded to see the data before accepting the claim."
         },
-        "sobrecogedor": {
-            definition: "Étonnant ou impressionnant en qualité.",
-            example: "La vue depuis le sommet de la montagne était absolument époustouflante."
+        "skills": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word skills when describing a common situation."
         },
-        "solennel": {
-            definition: "Solennel : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot solennel dans une phrase descriptive ordinaire."
+        "sleepy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word sleepy when describing a common situation."
+        },
+        "slender": {
+            definition: "A person or thing whose job or role involves a particular activity or function.",
+            example: "They used the word slender when describing a common situation."
+        },
+        "slick": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word slick when describing a common situation."
+        },
+        "slim": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word slim when describing a common situation."
+        },
+        "small": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word small when describing a common situation."
+        },
+        "smart": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word smart when describing a common situation."
+        },
+        "sobresaliente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word sobresaliente when describing a common situation."
+        },
+        "sofocante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word sofocante when describing a common situation."
+        },
+        "soft": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word soft when describing a common situation."
+        },
+        "soiled": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word soiled when describing a common situation."
         },
         "solide": {
-            definition: "Solide : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot solide dans une phrase descriptive ordinaire."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word solide when describing a common situation."
         },
-        "somptueuse": {
-            definition: "Somptueuse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot somptueuse dans une phrase descriptive ordinaire."
+        "some": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word some when describing a common situation."
         },
         "somptueux": {
-            definition: "Somptueux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot somptueux dans une phrase descriptive ordinaire."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word somptueux when describing a common situation."
         },
-        "sophisme": {
-            definition: "Sophisme : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot sophisme dans une phrase descriptive ordinaire."
+        "songbird": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word songbird when describing a common situation."
         },
-        "sosegado": {
-            definition: "Pas facilement contrarié ou excité ; calme et paisible.",
-            example: "Le lac restait paisible malgré l'arrivée des nuages d'orage."
+        "soon": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word soon when describing a common situation."
         },
-        "spirituel": {
-            definition: "Spirituel : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot spirituel dans une phrase descriptive ordinaire."
+        "soothing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Soothing every day helped him improve quickly."
         },
-        "spontané": {
-            definition: "Qui est spontané ou qui ressent spontané.",
-            example: "On peut utiliser le mot spontané dans une phrase descriptive ordinaire."
+        "sorrow": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word sorrow when describing a common situation."
+        },
+        "sorrowful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word sorrowful when describing a common situation."
+        },
+        "sostenibilidad": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word sostenibilidad when describing a common situation."
+        },
+        "soutien": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word soutien when describing a common situation."
+        },
+        "souvenirs": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word souvenirs when describing a common situation."
+        },
+        "spare": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word spare when describing a common situation."
+        },
+        "sparse": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word sparse when describing a common situation."
+        },
+        "speculative": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word speculative when describing a common situation."
+        },
+        "speechless": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word speechless when describing a common situation."
+        },
+        "speedy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word speedy when describing a common situation."
+        },
+        "spellbinding": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Spellbinding every day helped him improve quickly."
+        },
+        "spicy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word spicy when describing a common situation."
+        },
+        "spindly": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word spindly when describing a common situation."
+        },
+        "spine-chilling": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Spine-chilling every day helped him improve quickly."
+        },
+        "splendid": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word splendid when describing a common situation."
+        },
+        "splendide": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word splendide when describing a common situation."
+        },
+        "splendiferous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word splendiferous when describing a common situation."
+        },
+        "spooky": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word spooky when describing a common situation."
+        },
+        "spéculatif": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word spéculatif when describing a common situation."
+        },
+        "stained": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word stained when describing a common situation."
+        },
+        "stalwart": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word stalwart when describing a common situation."
+        },
+        "starlit": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word starlit when describing a common situation."
+        },
+        "steaming": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Steaming every day helped him improve quickly."
+        },
+        "stellar": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word stellar when describing a common situation."
+        },
+        "stenotic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word stenotic when describing a common situation."
+        },
+        "stentorian": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word stentorian when describing a common situation."
+        },
+        "stiff": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word stiff when describing a common situation."
+        },
+        "still": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word still when describing a common situation."
+        },
+        "straightforward": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word straightforward when describing a common situation."
+        },
+        "straitened": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word straitened when describing a common situation."
+        },
+        "streamlined": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word streamlined when describing a common situation."
+        },
+        "strength": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word strength when describing a common situation."
+        },
+        "stress": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word stress when describing a common situation."
         },
         "strident": {
-            definition: "Strident : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot strident dans une phrase descriptive ordinaire."
-        },
-        "studieux": {
-            definition: "Studieux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot studieux dans une phrase descriptive ordinaire."
-        },
-        "suave": {
-            definition: "Suave : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot suave dans une phrase descriptive ordinaire."
-        },
-        "subalterne": {
-            definition: "Subalterne : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot subalterne dans une phrase descriptive ordinaire."
-        },
-        "subtil": {
-            definition: "Subtil : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot subtil dans une phrase descriptive ordinaire."
-        },
-        "sustancial": {
-            definition: "D'une importance, d'une taille ou d'une valeur considérable.",
-            example: "Ils ont reçu un financement substantiel pour le projet."
-        },
-        "sutil": {
-            definition: "Si délicat ou précis qu'il est difficile à analyser ou à décrire.",
-            example: "Il y avait un changement subtil dans son ton qui indiquait qu'il mentait."
-        },
-        "séculaire": {
-            definition: "Séculaire : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot séculaire dans une phrase descriptive ordinaire."
-        },
-        "sépulcral": {
-            definition: "Sépulcral : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot sépulcral dans une phrase descriptive ordinaire."
-        },
-        "tamisée": {
-            definition: "Qui est tamisée ou qui ressent tamisée.",
-            example: "On peut utiliser le mot tamisée dans une phrase descriptive ordinaire."
-        },
-        "teenager": {
-            definition: "A person aged between 13 and 19 years.",
-            example: "The teenager worked part-time while finishing school."
-        },
-        "tenaz": {
-            definition: "Ayant tendance à garder une prise ferme sur quelque chose ; s'accrocher étroitement.",
-            example: "C'était un coureur tenace qui n'abandonnait jamais, même fatigué."
-        },
-        "tonitruant": {
-            definition: "Tonitruant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot tonitruant dans une phrase descriptive ordinaire."
-        },
-        "torrencial": {
-            definition: "Tombant rapidement et en quantités copieuses ; coulant avec force.",
-            example: "La pluie torrentielle a provoqué des inondations dans plusieurs parties de la ville."
-        },
-        "torrentielle": {
-            definition: "Torrentielle : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot torrentielle dans une phrase descriptive ordinaire."
-        },
-        "tortueux": {
-            definition: "Tortueux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot tortueux dans une phrase descriptive ordinaire."
-        },
-        "total": {
-            definition: "Total : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot total dans une phrase descriptive ordinaire."
-        },
-        "transcendant": {
-            definition: "Transcendant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot transcendant dans une phrase descriptive ordinaire."
-        },
-        "ténue": {
-            definition: "Ténue : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot ténue dans une phrase descriptive ordinaire."
-        },
-        "ubiquitous": {
-            definition: "Present, appearing, or found everywhere.",
-            example: "Smartphones have become ubiquitous in modern society."
-        },
-        "undermine": {
-            definition: "To weaken or damage something, especially gradually or secretly.",
-            example: "The leaks aimed to undermine the administration's credibility."
-        },
-        "understate": {
-            definition: "To present something as smaller or less important than it actually is.",
-            example: "He tended to understate the risks when discussing the venture."
-        },
-        "usé": {
-            definition: "Qui est usé ou qui ressent usé.",
-            example: "On peut utiliser le mot usé dans une phrase descriptive ordinaire."
-        },
-        "vacillante": {
-            definition: "Vacillante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot vacillante dans une phrase descriptive ordinaire."
-        },
-        "valeureux": {
-            definition: "Valeureux : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot valeureux dans une phrase descriptive ordinaire."
-        },
-        "vaste": {
-            definition: "Vaste : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot vaste dans une phrase descriptive ordinaire."
-        },
-        "veloz": {
-            definition: "Se déplaçant ou capable de se déplacer à grande vitesse.",
-            example: "Le faucon a fait une descente rapide pour attraper sa proie."
-        },
-        "venerable": {
-            definition: "Accordé d'un grand respect, particulièrement à cause de l'âge.",
-            example: "Le vénérable vieux chêne se tenait dans le parc depuis des siècles."
-        },
-        "vertiginoso": {
-            definition: "Provoquant le vertige, surtout en étant extrêmement haut ou raide.",
-            example: "Le grimpeur a regardé vers le bas de la falaise vertigineuse et s'est senti étourdi."
-        },
-        "vetusto": {
-            definition: "Très vieux ; ancien et patiné.",
-            example: "Le bâtiment vétuste semblait pouvoir s'écrouler à tout moment."
-        },
-        "vibrante": {
-            definition: "Vibrante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot vibrante dans une phrase descriptive ordinaire."
-        },
-        "vide": {
-            definition: "Vide : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot vide dans une phrase descriptive ordinaire."
-        },
-        "vif": {
-            definition: "Vif : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot vif dans une phrase descriptive ordinaire."
-        },
-        "vigoureuse": {
-            definition: "Vigoureuse : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot vigoureuse dans une phrase descriptive ordinaire."
-        },
-        "violenta": {
-            definition: "Utiliser ou impliquer une force physique destinée à blesser ou à tuer.",
-            example: "La ville a été secouée par plusieurs manifestations violentes la semaine dernière."
-        },
-        "virtuose": {
-            definition: "Virtuose : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot virtuose dans une phrase descriptive ordinaire."
-        },
-        "vivacious": {
-            definition: "Attractively lively and animated.",
-            example: "Her vivacious personality lit up the room at the party."
-        },
-        "vive": {
-            definition: "Vive : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot vive dans une phrase descriptive ordinaire."
-        },
-        "vrai": {
-            definition: "Vrai : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot vrai dans une phrase descriptive ordinaire."
-        },
-        "vraie": {
-            definition: "Vraie : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot vraie dans une phrase descriptive ordinaire."
-        },
-        "vénérable": {
-            definition: "Vénérable : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot vénérable dans une phrase descriptive ordinaire."
-        },
-        "véridique": {
-            definition: "Véridique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot véridique dans une phrase descriptive ordinaire."
-        },
-        "véritable": {
-            definition: "Véritable : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot véritable dans une phrase descriptive ordinaire."
-        },
-        "vétuste": {
-            definition: "Vétuste : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot vétuste dans une phrase descriptive ordinaire."
-        },
-        "vétéran": {
-            definition: "Vétéran : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot vétéran dans une phrase descriptive ordinaire."
-        },
-        "wise": {
-            definition: "Ayant ou montrant de l'expérience, des connaissances et un bon jugement.",
-            example: "Choisir d'épargner pour l'avenir était une décision judicieuse."
-        },
-        "zénithale": {
-            definition: "Zénithale : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot zénithale dans une phrase descriptive ordinaire."
-        },
-        "éblouissant": {
-            definition: "Éblouissant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot éblouissant dans une phrase descriptive ordinaire."
-        },
-        "éblouissante": {
-            definition: "Éblouissante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot éblouissante dans une phrase descriptive ordinaire."
-        },
-        "éclatante": {
-            definition: "Éclatante : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot éclatante dans une phrase descriptive ordinaire."
-        },
-        "éloquent": {
-            definition: "Éloquent : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot éloquent dans une phrase descriptive ordinaire."
-        },
-        "émérite": {
-            definition: "Émérite : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot émérite dans une phrase descriptive ordinaire."
-        },
-        "éphémère": {
-            definition: "Éphémère : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot éphémère dans une phrase descriptive ordinaire."
-        },
-        "épique": {
-            definition: "Épique : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot épique dans une phrase descriptive ordinaire."
-        },
-        "éprouvant": {
-            definition: "Éprouvant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot éprouvant dans une phrase descriptive ordinaire."
-        },
-        "éreintant": {
-            definition: "Éreintant : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot éreintant dans une phrase descriptive ordinaire."
-        },
-        "étroit": {
-            definition: "Étroit : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot étroit dans une phrase descriptive ordinaire."
-        },
-        "évanescente": {
-            definition: "Évanescente : un terme courant en français avec un sens simple.",
-            example: "On peut utiliser le mot évanescente dans une phrase descriptive ordinaire."
-        },
-    },
-    es: {
-        "abdicar": {
-            definition: "Abdicar: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo abdicar puede usarse en un contexto normal."
-        },
-        "abdicate": {
-            definition: "Renunciar al trono; faltar al cumplimiento de un deber.",
-            example: "El rey decidió abdicar en favor de su hijo."
-        },
-        "abolir": {
-            definition: "Abolir: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo abolir puede usarse en un contexto normal."
-        },
-        "abrumadora": {
-            definition: "Abrumadora: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo abrumadora puede usarse en un contexto normal."
-        },
-        "abrupto": {
-            definition: "Abrupto: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo abrupto puede usarse en un contexto normal."
-        },
-        "absoluto": {
-            definition: "Absoluto: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo absoluto puede usarse en un contexto normal."
-        },
-        "acaudalado": {
-            definition: "Que ha sido acaudalado o que tiene la cualidad de acaudalado.",
-            example: "La oración muestra cómo acaudalado puede usarse en un contexto normal."
-        },
-        "adolescente": {
-            definition: "Adolescente: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo adolescente puede usarse en un contexto normal."
-        },
-        "aesthetic": {
-            definition: "Relativo a la belleza o al gusto por ella.",
-            example: "La nueva cafetería tiene una estética muy moderna y limpia."
-        },
-        "agotador": {
-            definition: "Agotador: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo agotador puede usarse en un contexto normal."
-        },
-        "alentadora": {
-            definition: "Alentadora: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo alentadora puede usarse en un contexto normal."
-        },
-        "alta": {
-            definition: "Alta: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo alta puede usarse en un contexto normal."
-        },
-        "altivo": {
-            definition: "Altivo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo altivo puede usarse en un contexto normal."
-        },
-        "alto": {
-            definition: "Alto: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo alto puede usarse en un contexto normal."
-        },
-        "altruista": {
-            definition: "Que muestra un interés desinteresado por los demás.",
-            example: "Sus actos altruistas ayudaron a mucha gente en la comunidad local."
-        },
-        "ambiguo": {
-            definition: "Ambiguo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo ambiguo puede usarse en un contexto normal."
-        },
-        "amortiguado": {
-            definition: "No fuerte por estar obstruido de alguna forma; sordo.",
-            example: "Oí el sonido amortiguado de voces tras la pared gruesa."
-        },
-        "anacrónico": {
-            definition: "Que pertenece a un periodo distinto de aquel en el que existe.",
-            example: "Usar una máquina de escribir en una oficina moderna puede parecer anacrónico."
-        },
-        "ancestral": {
-            definition: "De los antepasados, perteneciente a ellos o heredado.",
-            example: "Visitaron su casa ancestral en el campo."
-        },
-        "ancestro": {
-            definition: "Ancestro: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo ancestro puede usarse en un contexto normal."
-        },
-        "angelical": {
-            definition: "Relativo a los ángeles; excepcionalmente bello o amable.",
-            example: "El niño tenía una cara angelical que derretía el corazón de todos."
-        },
-        "angosto": {
-            definition: "Angosto: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo angosto puede usarse en un contexto normal."
-        },
-        "aniquilar": {
-            definition: "Aniquilar: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo aniquilar puede usarse en un contexto normal."
-        },
-        "anonimato": {
-            definition: "Anonimato: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo anonimato puede usarse en un contexto normal."
-        },
-        "anonymity": {
-            definition: "La condición de ser anónimo; nombre desconocido.",
-            example: "El informante pidió anonimato total por su seguridad."
-        },
-        "antiguo": {
-            definition: "Muy viejo o que pertenece al pasado.",
-            example: "La oración muestra cómo antiguo puede usarse en un contexto normal."
-        },
-        "antonym": {
-            definition: "Palabra con un significado opuesto al de otra.",
-            example: "'Caliente' es el antónimo de 'frío'."
-        },
-        "antónimo": {
-            definition: "Antónimo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo antónimo puede usarse en un contexto normal."
-        },
-        "apacible": {
-            definition: "Apacible: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo apacible puede usarse en un contexto normal."
-        },
-        "arcano": {
-            definition: "Entendido por pocos; misterioso o secreto.",
-            example: "Pasó años estudiando rituales arcanos de textos antiguos."
-        },
-        "arduo": {
-            definition: "Muy difícil o que requiere mucho esfuerzo.",
-            example: "La oración muestra cómo arduo puede usarse en un contexto normal."
-        },
-        "armonioso": {
-            definition: "Que forma un todo agradable o consistente; melodioso.",
-            example: "Los colores del cuarto se combinaron para crear una atmósfera armoniosa."
-        },
-        "articulado": {
-            definition: "Que ha sido articulado o que tiene la cualidad de articulado.",
-            example: "La oración muestra cómo articulado puede usarse en un contexto normal."
-        },
-        "artificial": {
-            definition: "Hecho por seres humanos y no por la naturaleza.",
-            example: "El museo usó luz artificial para preservar los cuadros delicados."
-        },
-        "asfixiante": {
-            definition: "Asfixiante: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo asfixiante puede usarse en un contexto normal."
-        },
-        "astrónomo": {
-            definition: "Astrónomo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo astrónomo puede usarse en un contexto normal."
-        },
-        "astuto": {
-            definition: "Astuto: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo astuto puede usarse en un contexto normal."
-        },
-        "aséptico": {
-            definition: "Libre de contaminación por bacterias o virus dañinos.",
-            example: "La cirugía se hizo en un entorno estrictamente aséptico."
-        },
-        "atento": {
-            definition: "Atento: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo atento puede usarse en un contexto normal."
-        },
-        "austera": {
-            definition: "Severo o estricto en el trato, actitud o apariencia.",
-            example: "El monasterio tenía un comedor austero con bancos sencillos."
-        },
-        "aversión": {
-            definition: "Acción, efecto o resultado relacionado con aver.",
-            example: "La oración muestra cómo aversión puede usarse en un contexto normal."
-        },
-        "azulada": {
-            definition: "Que ha sido azulada o que tiene la cualidad de azulada.",
-            example: "La oración muestra cómo azulada puede usarse en un contexto normal."
-        },
-        "baja": {
-            definition: "Baja: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo baja puede usarse en un contexto normal."
-        },
-        "bajo": {
-            definition: "Bajo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo bajo puede usarse en un contexto normal."
-        },
-        "beautiful": {
-            definition: "Que agrada a los sentidos o a la mente estéticamente.",
-            example: "La puesta de sol sobre la montaña fue absolutamente hermosa."
-        },
-        "bella": {
-            definition: "Bella: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo bella puede usarse en un contexto normal."
-        },
-        "bello": {
-            definition: "Bello: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo bello puede usarse en un contexto normal."
-        },
-        "bibliográfico": {
-            definition: "Bibliográfico: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo bibliográfico puede usarse en un contexto normal."
-        },
-        "bién": {
-            definition: "Bién: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo bién puede usarse en un contexto normal."
-        },
-        "blanca": {
-            definition: "Blanca: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo blanca puede usarse en un contexto normal."
-        },
-        "blanco": {
-            definition: "Blanco: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo blanco puede usarse en un contexto normal."
-        },
-        "buen": {
-            definition: "Buen: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo buen puede usarse en un contexto normal."
-        },
-        "buena": {
-            definition: "Buena: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo buena puede usarse en un contexto normal."
-        },
-        "bueno": {
-            definition: "Bueno: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo bueno puede usarse en un contexto normal."
-        },
-        "canicular": {
-            definition: "Canicular: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo canicular puede usarse en un contexto normal."
-        },
-        "canonizar": {
-            definition: "Canonizar: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo canonizar puede usarse en un contexto normal."
-        },
-        "canonize": {
-            definition: "Declarar oficialmente a un muerto como santo.",
-            example: "La iglesia decidió canonizar a la monja por su servicio."
-        },
-        "cartografical": {
-            definition: "Relativo a la ciencia o práctica de dibujar mapas.",
-            example: "La precisión cartográfica del nuevo atlas es impresionante."
-        },
-        "cartográfico": {
-            definition: "Cartográfico: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo cartográfico puede usarse en un contexto normal."
-        },
-        "cegadora": {
-            definition: "Tan brillante que oscurece la visión.",
-            example: "La nieve era tan blanca que creaba un resplandor cegador."
-        },
-        "celestial": {
-            definition: "Situado en el cielo o relativo a él, o al espacio exterior.",
-            example: "Las estrellas y planetas son cuerpos celestiales visibles de noche."
-        },
-        "centelleante": {
-            definition: "Que brilla intensamente; muy inteligente o emocionante.",
-            example: "Dio una actuación centelleante que cautivó a todo el público."
-        },
-        "centenario": {
-            definition: "Centenario: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo centenario puede usarse en un contexto normal."
-        },
-        "ciclópea": {
-            definition: "Extremadamente masivo; hecho de piedras enormes.",
-            example: "Las ruinas tenían murallas ciclópeas que aguantaron siglos."
-        },
-        "clara": {
-            definition: "Clara: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo clara puede usarse en un contexto normal."
-        },
-        "claro": {
-            definition: "Claro: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo claro puede usarse en un contexto normal."
-        },
-        "clasificado": {
-            definition: "Ordenado en clases o categorías; secreto por seguridad.",
-            example: "Los agentes manejaban documentos altamente clasificados."
-        },
-        "claustrofobia": {
-            definition: "Claustrofobia: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo claustrofobia puede usarse en un contexto normal."
-        },
-        "clear": {
-            definition: "Fácil de percibir, comprender o interpretar; transparente.",
-            example: "Las instrucciones eran claras y fáciles de seguir."
-        },
-        "comprometedor": {
-            definition: "Que revela que alguien ha hecho algo malo o vergonzoso.",
-            example: "La filtración de las fotos comprometedoras arruinó su carrera."
-        },
-        "concentrada": {
-            definition: "Totalmente dirigida a una sola cosa; intensa o potente.",
-            example: "El zumo estaba muy concentrado y necesitaba diluirse con agua."
-        },
-        "conciso": {
-            definition: "Conciso: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo conciso puede usarse en un contexto normal."
-        },
-        "conmovedora": {
-            definition: "Conmovedora: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo conmovedora puede usarse en un contexto normal."
-        },
-        "consecuente": {
-            definition: "Consecuente: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo consecuente puede usarse en un contexto normal."
-        },
-        "copiosa": {
-            definition: "Copiosa: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo copiosa puede usarse en un contexto normal."
-        },
-        "corto": {
-            definition: "Corto: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo corto puede usarse en un contexto normal."
-        },
-        "creativa": {
-            definition: "Relativo a la imaginación o a las ideas originales.",
-            example: "Es un artista creativo que experimenta con nuevos estilos siempre."
-        },
-        "crucial": {
-            definition: "Decisivo o crítico, sobre todo para el éxito de algo.",
-            example: "Esta reunión es crucial para el futuro de nuestra asociación."
-        },
-        "críptico": {
-            definition: "Críptico: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo críptico puede usarse en un contexto normal."
-        },
-        "cálida": {
-            definition: "Cálida: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo cálida puede usarse en un contexto normal."
-        },
-        "decidido": {
-            definition: "Decidido: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo decidido puede usarse en un contexto normal."
-        },
-        "deshumanizar": {
-            definition: "Deshumanizar: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo deshumanizar puede usarse en un contexto normal."
-        },
-        "deslumbrante": {
-            definition: "Deslumbrante: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo deslumbrante puede usarse en un contexto normal."
-        },
-        "desorbitada": {
-            definition: "Irrazonablemente alto; excesivo.",
-            example: "El restaurante cobró un precio desorbitado por una comida sencilla."
-        },
-        "despejado": {
-            definition: "Que ha sido despejado o que tiene la cualidad de despejado.",
-            example: "La oración muestra cómo despejado puede usarse en un contexto normal."
-        },
-        "despiadado": {
-            definition: "Que no tiene ni muestra piedad o compasión por los demás.",
-            example: "El líder despiadado no se detendría ante nada para ganar poder."
-        },
-        "despreciable": {
-            definition: "Tan pequeño que no merece la pena considerarlo.",
-            example: "El riesgo de efectos secundarios de la medicina es despreciable."
-        },
-        "determinante": {
-            definition: "Que resuelve un asunto; que produce un resultado definitivo.",
-            example: "El general hizo un movimiento determinante que ganó la batalla."
-        },
-        "devastadora": {
-            definition: "Devastadora: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo devastadora puede usarse en un contexto normal."
-        },
-        "devocional": {
-            definition: "Devocional: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo devocional puede usarse en un contexto normal."
-        },
-        "diestro": {
-            definition: "Muy hábil o competente en algo.",
-            example: "Es una programadora diestra que resuelve problemas complejos rápido."
-        },
-        "diminutivo": {
-            definition: "Extremadamente o inusualmente pequeño.",
-            example: "El pajarito era una criatura diminuta comparada con el águila."
-        },
-        "diminuto": {
-            definition: "Diminuto: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo diminuto puede usarse en un contexto normal."
-        },
-        "dinámica": {
-            definition: "Dinámica: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo dinámica puede usarse en un contexto normal."
-        },
-        "discográfico": {
-            definition: "Discográfico: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo discográfico puede usarse en un contexto normal."
-        },
-        "diáfana": {
-            definition: "Ligero, delicado y translúcido.",
-            example: "Las cortinas eran de una tela blanca y diáfana."
-        },
-        "dura": {
-            definition: "Dura: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo dura puede usarse en un contexto normal."
-        },
-        "duro": {
-            definition: "Duro: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo duro puede usarse en un contexto normal."
-        },
-        "efímera": {
-            definition: "Que dura muy poco tiempo.",
-            example: "La belleza de una flor suele ser hermosa pero efímera."
-        },
-        "efímero": {
-            definition: "Efímero: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo efímero puede usarse en un contexto normal."
-        },
-        "ejemplar": {
-            definition: "Ejemplar: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo ejemplar puede usarse en un contexto normal."
-        },
-        "elocuente": {
-            definition: "Elocuente: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo elocuente puede usarse en un contexto normal."
-        },
-        "emblemático": {
-            definition: "Que sirve de símbolo de una cualidad o concepto particular.",
-            example: "El águila es emblemática de la fuerza y la libertad."
-        },
-        "embriagadora": {
-            definition: "Extremadamente emocionante; que causa una pérdida de control.",
-            example: "El éxito de la obra fue una experiencia embriagadora para los actores."
-        },
-        "empatía": {
-            definition: "Empatía: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo empatía puede usarse en un contexto normal."
-        },
-        "emprendedor": {
-            definition: "Emprendedor: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo emprendedor puede usarse en un contexto normal."
-        },
-        "emérito": {
-            definition: "Jubilado pero que se le permite mantener su título como honor.",
-            example: "El decano emérito todavía asistía a las ceremonias universitarias."
-        },
-        "encarnizada": {
-            definition: "Que ha sido encarnizada o que tiene la cualidad de encarnizada.",
-            example: "La oración muestra cómo encarnizada puede usarse en un contexto normal."
-        },
-        "enfermo": {
-            definition: "No fuerte física o mentalmente, sobre todo por edad o enfermedad.",
-            example: "El hospital cuidaba de pacientes enfermos y ancianos."
-        },
-        "entrepreneur": {
-            definition: "Una persona que organiza y opera un negocio.",
-            example: "Como joven emprendedora, montó su propia empresa tecnológica."
-        },
-        "epigram": {
-            definition: "Dicho o nota breve que expresa una idea con ingenio.",
-            example: "Era conocido por sus ingeniosos epigramas sobre la vida moderna."
-        },
-        "erudito": {
-            definition: "Que tiene grandes conocimientos o aprendizaje.",
-            example: "El profesor erudito habló largo tiempo sobre civilizaciones antiguas."
-        },
-        "escéptico": {
-            definition: "Escéptico: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo escéptico puede usarse en un contexto normal."
-        },
-        "espontánea": {
-            definition: "Espontánea: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo espontánea puede usarse en un contexto normal."
-        },
-        "estoico": {
-            definition: "Persona que aguanta el dolor o la pena sin mostrar sentimientos.",
-            example: "Permaneció estoico durante todo el juicio largo y difícil."
-        },
-        "estudioso": {
-            definition: "Estudioso: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo estudioso puede usarse en un contexto normal."
-        },
-        "estética": {
-            definition: "Estética: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo estética puede usarse en un contexto normal."
-        },
-        "experimentado": {
-            definition: "Que ha sido experimentado o que tiene la cualidad de experimentado.",
-            example: "La oración muestra cómo experimentado puede usarse en un contexto normal."
-        },
-        "exquisita": {
-            definition: "Exquisita: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo exquisita puede usarse en un contexto normal."
-        },
-        "fabulosa": {
-            definition: "Fabulosa: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo fabulosa puede usarse en un contexto normal."
-        },
-        "falacia": {
-            definition: "Falacia: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo falacia puede usarse en un contexto normal."
-        },
-        "famélico": {
-            definition: "Famélico: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo famélico puede usarse en un contexto normal."
-        },
-        "fatal": {
-            definition: "Que causa la muerte; que lleva al fracaso o al desastre.",
-            example: "Un error fatal en el código causó que el sistema fallara."
-        },
-        "ferviente": {
-            definition: "Ferviente: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo ferviente puede usarse en un contexto normal."
-        },
-        "fijo": {
-            definition: "Fijo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo fijo puede usarse en un contexto normal."
-        },
-        "fina": {
-            definition: "Fina: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo fina puede usarse en un contexto normal."
-        },
-        "fino": {
-            definition: "Fino: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo fino puede usarse en un contexto normal."
-        },
-        "fortuito": {
-            definition: "Que sucede por un accidente afortunado o azar y no por diseño.",
-            example: "El descubrimiento de la mina de oro fue completamente fortuito."
-        },
-        "fosforescente": {
-            definition: "Que emite luz sin calor; brilla en la oscuridad.",
-            example: "Las olas eran fosforescentes, brillando al golpear la orilla."
-        },
-        "fotogénica": {
-            definition: "Que se ve atractivo en las fotos o en el cine.",
-            example: "El pueblo costero con sus puertas azules era muy fotogénico."
-        },
-        "franco": {
-            definition: "Franco: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo franco puede usarse en un contexto normal."
-        },
-        "fresco": {
-            definition: "Fresco: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo fresco puede usarse en un contexto normal."
-        },
-        "frágil": {
-            definition: "Frágil: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo frágil puede usarse en un contexto normal."
-        },
-        "fuerte": {
-            definition: "Fuerte: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo fuerte puede usarse en un contexto normal."
-        },
-        "fugaz": {
-            definition: "Que tiende a desaparecer; efímero.",
-            example: "La belleza fugaz de la juventud es un tema común en la poesía."
-        },
-        "fulgurante": {
-            definition: "Fulgurante: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo fulgurante puede usarse en un contexto normal."
-        },
-        "fulminante": {
-            definition: "Fulminante: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo fulminante puede usarse en un contexto normal."
-        },
-        "férrea": {
-            definition: "Férrea: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo férrea puede usarse en un contexto normal."
-        },
-        "férreo": {
-            definition: "Un metal fuerte, duro y magnético de color gris plateado.",
-            example: "La puerta estaba hecha de pesado hierro forjado."
-        },
-        "garrafal": {
-            definition: "Garrafal: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo garrafal puede usarse en un contexto normal."
-        },
-        "gordo": {
-            definition: "Gordo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo gordo puede usarse en un contexto normal."
-        },
-        "gran": {
-            definition: "Gran: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo gran puede usarse en un contexto normal."
-        },
-        "grande": {
-            definition: "Grande: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo grande puede usarse en un contexto normal."
-        },
-        "gélida": {
-            definition: "Gélida: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo gélida puede usarse en un contexto normal."
-        },
-        "hierático": {
-            definition: "De los sacerdotes; relativo a lo sagrado.",
-            example: "El texto antiguo estaba escrito en un estilo formal y hierático."
-        },
-        "hilarante": {
-            definition: "Extremadamente divertido; que causa risa.",
-            example: "Su rutina de comedia fue absolutamente hilarante."
-        },
-        "hipnótica": {
-            definition: "Hipnótica: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo hipnótica puede usarse en un contexto normal."
-        },
-        "humor": {
-            definition: "Humor: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo humor puede usarse en un contexto normal."
-        },
-        "iconoclast": {
-            definition: "Persona que atenta contra creencias o instituciones queridas.",
-            example: "Como iconoclasta, le gustaba desafiar las normas del arte tradicional."
-        },
-        "idílico": {
-            definition: "Idílico: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo idílico puede usarse en un contexto normal."
-        },
-        "ilegible": {
-            definition: "Ilegible: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo ilegible puede usarse en un contexto normal."
-        },
-        "iluminado": {
-            definition: "Lleno de luz; decorado con luces o con oro/plata.",
-            example: "El manuscrito iluminado era una obra maestra del arte medieval."
-        },
-        "impecable": {
-            definition: "Impecable: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo impecable puede usarse en un contexto normal."
-        },
-        "impenetrable": {
-            definition: "Imposible de atravesar o entrar; imposible de entender.",
-            example: "La selva espesa era un muro verde impenetrable."
-        },
-        "imperante": {
-            definition: "Imperante: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo imperante puede usarse en un contexto normal."
-        },
-        "imperceptible": {
-            definition: "Tan ligero, gradual o sutil que no se puede percibir.",
-            example: "El aumento de temperatura era casi imperceptible al principio."
-        },
-        "imperturbable": {
-            definition: "Imperturbable: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo imperturbable puede usarse en un contexto normal."
-        },
-        "impetuosa": {
-            definition: "Impetuosa: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo impetuosa puede usarse en un contexto normal."
-        },
-        "implacable": {
-            definition: "Que no se puede aplacar; implacable o imparable.",
-            example: "Se enfrentó a un enemigo implacable que no se rendía."
-        },
-        "imponente": {
-            definition: "Imponente: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo imponente puede usarse en un contexto normal."
-        },
-        "incandescente": {
-            definition: "Que emite luz por estar caliente; extremadamente brillante.",
-            example: "Las bombillas incandescentes daban un brillo cálido al cuarto."
-        },
-        "inclemente": {
-            definition: "Tiempo frío o húmedo que resulta desagradable.",
-            example: "El partido se pospuso por el clima inclemente."
-        },
-        "incondicional": {
-            definition: "No sujeto a condiciones; absoluto.",
-            example: "Los padres suelen dar a sus hijos un amor incondicional."
-        },
-        "indefenso": {
-            definition: "Sin defensa ni protección; vulnerable.",
-            example: "El pequeño animal estaba indefenso ante el depredador más grande."
-        },
-        "inestimable": {
-            definition: "Demasiado grande para ser calculado o estimado.",
-            example: "La colección del museo es de un valor inestimable."
-        },
-        "inexpugnable": {
-            definition: "Incapaz de ser tomado por asalto; inconquistable.",
-            example: "La fortaleza fue construida sobre un acantilado inexpugnable."
-        },
-        "inquebrantable": {
-            definition: "Firme o decidido; que no vacila ni duda.",
-            example: "Mostró un apoyo inquebrantable a su amiga durante la crisis."
-        },
-        "inquietante": {
-            definition: "Inquietante: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo inquietante puede usarse en un contexto normal."
-        },
-        "insidiosa": {
-            definition: "Insidiosa: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo insidiosa puede usarse en un contexto normal."
-        },
-        "integridad": {
-            definition: "Integridad: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo integridad puede usarse en un contexto normal."
-        },
-        "integro": {
-            definition: "Integro: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo integro puede usarse en un contexto normal."
-        },
-        "intrépido": {
-            definition: "Intrépido: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo intrépido puede usarse en un contexto normal."
-        },
-        "invencible": {
-            definition: "Invencible: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo invencible puede usarse en un contexto normal."
-        },
-        "inédito": {
-            definition: "Todavía no publicado; no impreso ni en formato digital.",
-            example: "El autor dejó tras de sí varios manuscritos inéditos."
-        },
-        "irresistible": {
-            definition: "Irresistible: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo irresistible puede usarse en un contexto normal."
-        },
-        "irreverente": {
-            definition: "Irreverente: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo irreverente puede usarse en un contexto normal."
-        },
-        "irrisorio": {
-            definition: "Irrisorio: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo irrisorio puede usarse en un contexto normal."
-        },
-        "joven": {
-            definition: "Joven: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo joven puede usarse en un contexto normal."
-        },
-        "júbilo": {
-            definition: "Júbilo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo júbilo puede usarse en un contexto normal."
-        },
-        "laborioso": {
-            definition: "Laborioso: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo laborioso puede usarse en un contexto normal."
-        },
-        "larga": {
-            definition: "Larga: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo larga puede usarse en un contexto normal."
-        },
-        "large": {
-            definition: "De considerable tamaño, extensión o capacidad.",
-            example: "Viven en una casa grande con un hermoso jardín."
-        },
-        "largo": {
-            definition: "Largo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo largo puede usarse en un contexto normal."
-        },
-        "letárgico": {
-            definition: "Afectado por el letargo; lento y apático.",
-            example: "Se sentía letárgico después de comer un almuerzo tan pesado."
-        },
-        "liberador": {
-            definition: "Liberador: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo liberador puede usarse en un contexto normal."
-        },
-        "libre": {
-            definition: "Libre: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo libre puede usarse en un contexto normal."
-        },
-        "limpio": {
-            definition: "Limpio: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo limpio puede usarse en un contexto normal."
-        },
-        "lujosa": {
-            definition: "Lujosa: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo lujosa puede usarse en un contexto normal."
-        },
-        "lumínica": {
-            definition: "Lleno de luz; brillante, sobre todo en la oscuridad.",
-            example: "Las medusas eran lumínicas, iluminando el agua oscura del mar."
-        },
-        "magistral": {
-            definition: "Magistral: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo magistral puede usarse en un contexto normal."
-        },
-        "magnánimo": {
-            definition: "Generoso o que perdona, sobre todo con un rival o inferior.",
-            example: "Fue magnánimo al admitir su error en público."
-        },
-        "malo": {
-            definition: "Malo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo malo puede usarse en un contexto normal."
-        },
-        "manifesto": {
-            definition: "Declaración pública de principios e intalciones.",
-            example: "El partido político sacó ayer su manifiesto electoral."
-        },
-        "maternal": {
-            definition: "Maternal: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo maternal puede usarse en un contexto normal."
-        },
-        "matiz": {
-            definition: "Diferencia sutil o tono de significado, expresión o color.",
-            example: "El actor captó cada matiz de las emociones del personaje."
-        },
-        "mejorar": {
-            definition: "Mejorar: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo mejorar puede usarse en un contexto normal."
-        },
-        "metódico": {
-            definition: "Metódico: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo metódico puede usarse en un contexto normal."
-        },
-        "microscópico": {
-            definition: "Tan pequeño que solo se ve con un microscopio.",
-            example: "Las bacterias son organismos microscópicos que están en todo site."
-        },
-        "milenario": {
-            definition: "Milenario: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo milenario puede usarse en un contexto normal."
-        },
-        "minimizar": {
-            definition: "Minimizar: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo minimizar puede usarse en un contexto normal."
-        },
-        "minucioso": {
-            definition: "Que presta mucha atención al detalle; muy cuidadoso y preciso.",
-            example: "Fue minuciosa en sus preparativos para el examen final."
-        },
-        "minúsculo": {
-            definition: "Minúsculo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo minúsculo puede usarse en un contexto normal."
-        },
-        "monumental": {
-            definition: "Grande en importancia, extensión o tamaño.",
-            example: "El descubrimiento de la gravedad fue un momento monumental."
-        },
-        "monólogo": {
-            definition: "Monólogo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo monólogo puede usarse en un contexto normal."
-        },
-        "muerta": {
-            definition: "Muerta: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo muerta puede usarse en un contexto normal."
-        },
-        "mínimo": {
-            definition: "Mínimo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo mínimo puede usarse en un contexto normal."
-        },
-        "místico": {
-            definition: "Relativo al misticismo; que inspira asombro.",
-            example: "Tuvo una experiencia mística mientras meditaba en el bosque."
-        },
-        "neto": {
-            definition: "Neto: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo neto puede usarse en un contexto normal."
-        },
-        "noble": {
-            definition: "Noble: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo noble puede usarse en un contexto normal."
-        },
-        "obsoleto": {
-            definition: "Que ya no se produce ni se usa; anticuado.",
-            example: "Las máquinas de escribir están obsoletas en la era del ordenador."
-        },
-        "omnipresente": {
-            definition: "Que se encuentra en todas partes; común o extendido.",
-            example: "El miedo al fracaso suele estar omnipresente en entornos de alto riesgo."
-        },
-        "omnisciente": {
-            definition: "Que lo sabe todo; que tiene conocimiento infinito.",
-            example: "El narrador era omnisciente, sabía lo que cada personaje pensaba."
-        },
-        "opulento": {
-            definition: "Opulento: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo opulento puede usarse en un contexto normal."
-        },
-        "ornamental": {
-            definition: "Que sirve de adorno; decorativo.",
-            example: "El jardín estaba lleno de arbustos y flores ornamentales."
-        },
-        "oscilante": {
-            definition: "Que se mueve de un lado a otro a una velocidad regular.",
-            example: "El ventilador oscilante mantuvo el cuarto fresco en verano."
-        },
-        "panorámica": {
-            definition: "Panorámica: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo panorámica puede usarse en un contexto normal."
-        },
-        "pasado": {
-            definition: "Que ha sido pasado o que tiene la cualidad de pasado.",
-            example: "La oración muestra cómo pasado puede usarse en un contexto normal."
-        },
-        "patriota": {
-            definition: "Patriota: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo patriota puede usarse en un contexto normal."
-        },
-        "pavorosa": {
-            definition: "Que causa gran sufrimiento, miedo o infelicidad.",
-            example: "La noticia del accidente fue absolutamente pavorosa."
-        },
-        "penetrante": {
-            definition: "Capaz de abrirse paso a través de algo; punzante.",
-            example: "Su mirada penetrante le hizo sentir bastante incómodo."
-        },
-        "perceptiva": {
-            definition: "Que tiene una visión sensible; observador.",
-            example: "Su observación perceptiva nos ayudó a resolver el misterio."
-        },
-        "persistente": {
-            definition: "Persistente: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo persistente puede usarse en un contexto normal."
-        },
-        "polvoriento": {
-            definition: "Polvoriento: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo polvoriento puede usarse en un contexto normal."
-        },
-        "políglota": {
-            definition: "Políglota: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo políglota puede usarse en un contexto normal."
-        },
-        "potentado": {
-            definition: "Un monarca o gobernante, sobre todo uno autocrático.",
-            example: "El potentado extranjero llegó con un séquito real masivo."
-        },
-        "precioso": {
-            definition: "Precioso: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo precioso puede usarse en un contexto normal."
-        },
-        "previsora": {
-            definition: "Que tiene imaginación o previsión; que ve objetos lejanos.",
-            example: "La estrategia previsora del CEO llevó a la empresa al éxito."
-        },
-        "proclamar": {
-            definition: "Proclamar: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo proclamar puede usarse en un contexto normal."
-        },
-        "prodigiosa": {
-            definition: "Prodigiosa: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo prodigiosa puede usarse en un contexto normal."
-        },
-        "prodigioso": {
-            definition: "Notablemente grande en extensión, tamaño o grado.",
-            example: "Tiene una memoria prodigiosa para fechas y nombres históricos."
-        },
-        "proliferate": {
-            definition: "Aumentar rápido en número; multiplicarse.",
-            example: "Las apps de móvil siguen proliferando a un ritmo increíble."
-        },
-        "providencial": {
-            definition: "Cualidad de lo que sucede en un momento favorable; divino.",
-            example: "Su llegada en ese momento fue verdaderamente providencial."
-        },
-        "psicología": {
-            definition: "Psicología: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo psicología puede usarse en un contexto normal."
-        },
-        "psychology": {
-            definition: "El estudio científico de la mente humana y sus funciones.",
-            example: "Estudiar psicología nos ayuda a entender el comportamiento humano."
-        },
-        "puntera": {
-            definition: "Más importante; guía o dirección.",
-            example: "Es una experta puntera en el campo de las energías renovables."
-        },
-        "pálida": {
-            definition: "Pálida: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo pálida puede usarse en un contexto normal."
-        },
-        "quijotesco": {
-            definition: "Quijotesco: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo quijotesco puede usarse en un contexto normal."
-        },
-        "radiante": {
-            definition: "Radiante: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo radiante puede usarse en un contexto normal."
-        },
-        "rasante": {
-            definition: "Que toca o golpea algo ligero al pasar; que pasta.",
-            example: "La bala dejó solo una herida rasante en su hombro."
-        },
-        "reflexivo": {
-            definition: "Que proporciona un reflejo; relativo al pensamiento profundo.",
-            example: "Se sentó con un humor reflexivo, pensando en sus decisiones pasadas."
-        },
-        "refutar": {
-            definition: "Refutar: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo refutar puede usarse en un contexto normal."
-        },
-        "remoto": {
-            definition: "Lejano; distante en el espacio, el tiempo o la relación.",
-            example: "Vivían en un pueblo remoto en lo profundo de las montañas."
-        },
-        "repudiar": {
-            definition: "Repudiar: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo repudiar puede usarse en un contexto normal."
-        },
-        "resplandeciente": {
-            definition: "Atractivo e impresionante por ser muy colorido o brillante.",
-            example: "Se veía resplandeciente con su vestido de seda de noche."
-        },
-        "retórica": {
-            definition: "Retórica: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo retórica puede usarse en un contexto normal."
-        },
-        "revelador": {
-            definition: "Revelador: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo revelador puede usarse en un contexto normal."
-        },
-        "revolucionario": {
-            definition: "Revolucionario: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo revolucionario puede usarse en un contexto normal."
-        },
-        "riguroso": {
-            definition: "Extremadamente minucioso, exhaustivo o preciso.",
-            example: "La medicina pasó pruebas rigurosas antes de ser aprobada."
-        },
-        "rotundo": {
-            definition: "Gordo o de forma redondeada.",
-            example: "El querubín era una figurita rotunda en el cuadro."
-        },
-        "ruinoso": {
-            definition: "Ruinoso: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo ruinoso puede usarse en un contexto normal."
-        },
-        "sagaz": {
-            definition: "Sagaz: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo sagaz puede usarse en un contexto normal."
-        },
-        "seca": {
-            definition: "Seca: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo seca puede usarse en un contexto normal."
-        },
-        "sedante": {
-            definition: "Sedante: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo sedante puede usarse en un contexto normal."
-        },
-        "sepulcral": {
-            definition: "Relativo a un sepulcro o entierro; sombrío y lúgubre.",
-            example: "Un silencio sepulcral llenó la catedral abandonada."
-        },
-        "serendipity": {
-            definition: "El hallazgo de sucesos afortunados de forma inesperada.",
-            example: "Hallar ese libro raro en el desván fue pura serendipia."
-        },
-        "sereno": {
-            definition: "Sereno: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo sereno puede usarse en un contexto normal."
-        },
-        "sesgado": {
-            definition: "Injustamente inclinado a favor o en contra de algo o alguien.",
-            example: "La decisión del árbitro fue vista como sesgada por el equipo local."
-        },
-        "señorial": {
-            definition: "Que tiene una manera digna, pausada y grandiosa.",
-            example: "La casa señorial estaba rodeada de hectáreas de jardines bellos."
-        },
-        "simbólico": {
-            definition: "Que sirve de símbolo; que representa algo más.",
-            example: "La paloma es simbólica de la paz y la esperanza."
-        },
-        "simplificar": {
-            definition: "Simplificar: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo simplificar puede usarse en un contexto normal."
-        },
-        "sobrecogedor": {
-            definition: "Asombroso o impresionante en cuanto a su calidad.",
-            example: "La vista desde arriba de la montaña era sobrecogedora."
-        },
-        "solemne": {
-            definition: "Solemne: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo solemne puede usarse en un contexto normal."
-        },
-        "sosegado": {
-            definition: "Que no se altera con facilidad; tranquilo y pacífico.",
-            example: "El lago permaneció sosegado a pesar de las nubes de tormenta."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word strident when describing a common situation."
+        },
+        "striking": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Striking every day helped him improve quickly."
+        },
+        "strong": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word strong when describing a common situation."
+        },
+        "studious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word studious when describing a common situation."
+        },
+        "stunning": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Stunning every day helped him improve quickly."
+        },
+        "sturdy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word sturdy when describing a common situation."
+        },
+        "stygian": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word stygian when describing a common situation."
+        },
+        "subdued": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word subdued when describing a common situation."
+        },
+        "subjuguant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word subjuguant when describing a common situation."
         },
         "sublime": {
-            definition: "Sublime: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo sublime puede usarse en un contexto normal."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word sublime when describing a common situation."
         },
-        "suculenta": {
-            definition: "Suculenta: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo suculenta puede usarse en un contexto normal."
+        "substantial": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word substantial when describing a common situation."
         },
-        "suntuoso": {
-            definition: "Suntuoso: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo suntuoso puede usarse en un contexto normal."
+        "subyugante": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word subyugante when describing a common situation."
         },
-        "sustancial": {
-            definition: "De importancia, tamaño o valor considerable.",
-            example: "Recibieron una cantidad sustancial de fondos para el proyecto."
+        "succulent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word succulent when describing a common situation."
         },
-        "sutil": {
-            definition: "Tan delicado o preciso que es difícil de analizar o describir.",
-            example: "Hubo un cambio sutil en su tono que indicaba que mentía."
+        "suffocant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word suffocant when describing a common situation."
         },
-        "tenaz": {
-            definition: "Que tiende a agarrar algo con fuerza; que se pega mucho.",
-            example: "Era un corredor tenaz que no se rendía aunque estuviera cansado."
+        "sullied": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word sullied when describing a common situation."
         },
-        "tenso": {
-            definition: "Tenso: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo tenso puede usarse en un contexto normal."
+        "sultry": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word sultry when describing a common situation."
         },
-        "tenue": {
-            definition: "Tenue: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo tenue puede usarse en un contexto normal."
+        "sunlit": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word sunlit when describing a common situation."
         },
-        "torrencial": {
-            definition: "Que cae rápido y en grandes cantidades; que fluye con fuerza.",
-            example: "La lluvia torrencial causó inundaciones en varias partes de la ciudad."
+        "super": {
+            definition: "A person or thing whose job or role involves a particular activity or function.",
+            example: "They used the word super when describing a common situation."
         },
-        "usado": {
-            definition: "Que ha sido usado o que tiene la cualidad de usado.",
-            example: "La oración muestra cómo usado puede usarse en un contexto normal."
+        "superb": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word superb when describing a common situation."
         },
-        "vacio": {
-            definition: "Vacio: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo vacio puede usarse en un contexto normal."
+        "superbe": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word superbe when describing a common situation."
         },
-        "vacío": {
-            definition: "Vacío: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo vacío puede usarse en un contexto normal."
+        "superlative": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word superlative when describing a common situation."
+        },
+        "support": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word support when describing a common situation."
+        },
+        "supportive": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word supportive when describing a common situation."
+        },
+        "sustainability": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word sustainability when describing a common situation."
+        },
+        "sustainable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word sustainable when describing a common situation."
+        },
+        "svelte": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word svelte when describing a common situation."
+        },
+        "sweltering": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Sweltering every day helped him improve quickly."
+        },
+        "swift": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word swift when describing a common situation."
+        },
+        "séculaire": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word séculaire when describing a common situation."
+        },
+        "séduisant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word séduisant when describing a common situation."
+        },
+        "tacit": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word tacit when describing a common situation."
+        },
+        "taciturn": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word taciturn when describing a common situation."
+        },
+        "taciturno": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word taciturno when describing a common situation."
+        },
+        "tall": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word tall when describing a common situation."
+        },
+        "technique": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word technique when describing a common situation."
+        },
+        "technology": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word technology when describing a common situation."
+        },
+        "teenager": {
+            definition: "A person aged between 13 and 19 years; someone in the period of adolescence.",
+            example: "As a teenager, she spent most weekends practicing with the team."
+        },
+        "tema": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word tema when describing a common situation."
+        },
+        "temperate": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word temperate when describing a common situation."
+        },
+        "tender": {
+            definition: "A person or thing whose job or role involves a particular activity or function.",
+            example: "They used the word tender when describing a common situation."
+        },
+        "tendre": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word tendre when describing a common situation."
+        },
+        "terrible": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word terrible when describing a common situation."
+        },
+        "terrifiant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word terrifiant when describing a common situation."
+        },
+        "terrifying": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Terrifying every day helped him improve quickly."
+        },
+        "terrorífico": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word terrorífico when describing a common situation."
+        },
+        "theme": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word theme when describing a common situation."
+        },
+        "therapy": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word therapy when describing a common situation."
+        },
+        "thick": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word thick when describing a common situation."
+        },
+        "thin": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word thin when describing a common situation."
+        },
+        "threnody": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word threnody when describing a common situation."
+        },
+        "thundering": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Thundering every day helped him improve quickly."
+        },
+        "thunderous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word thunderous when describing a common situation."
+        },
+        "tidy": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word tidy when describing a common situation."
+        },
+        "tiempo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word tiempo when describing a common situation."
+        },
+        "tierno": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word tierno when describing a common situation."
+        },
+        "time": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word time when describing a common situation."
+        },
+        "time-honored": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word time-honored when describing a common situation."
+        },
+        "timeless": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word timeless when describing a common situation."
+        },
+        "timeworn": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word timeworn when describing a common situation."
+        },
+        "timid": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word timid when describing a common situation."
+        },
+        "timorous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word timorous when describing a common situation."
+        },
+        "tiny": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word tiny when describing a common situation."
+        },
+        "titanesque": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word titanesque when describing a common situation."
+        },
+        "titanic": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word titanic when describing a common situation."
+        },
+        "titánico": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word titánico when describing a common situation."
+        },
+        "tiède": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word tiède when describing a common situation."
+        },
+        "toasty": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word toasty when describing a common situation."
+        },
+        "torrential": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word torrential when describing a common situation."
+        },
+        "torrid": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word torrid when describing a common situation."
+        },
+        "torride": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word torride when describing a common situation."
+        },
+        "tough": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word tough when describing a common situation."
+        },
+        "towering": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Towering every day helped him improve quickly."
+        },
+        "trabajo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word trabajo when describing a common situation."
+        },
+        "traditions": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word traditions when describing a common situation."
+        },
+        "trailblazing": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Trailblazing every day helped him improve quickly."
+        },
+        "trajet": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word trajet when describing a common situation."
+        },
+        "trama": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word trama when describing a common situation."
+        },
+        "tranquil": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word tranquil when describing a common situation."
+        },
+        "transformative": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word transformative when describing a common situation."
+        },
+        "transi": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word transi when describing a common situation."
+        },
+        "translucide": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word translucide when describing a common situation."
+        },
+        "transparent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word transparent when describing a common situation."
+        },
+        "transparente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word transparente when describing a common situation."
+        },
+        "transpicuous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word transpicuous when describing a common situation."
+        },
+        "transport": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word transport when describing a common situation."
+        },
+        "transporte": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word transporte when describing a common situation."
+        },
+        "trascendental": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word trascendental when describing a common situation."
+        },
+        "traslúcido": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word traslúcido when describing a common situation."
+        },
+        "travail": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word travail when describing a common situation."
+        },
+        "treacherous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word treacherous when describing a common situation."
+        },
+        "tried-and-true": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word tried-and-true when describing a common situation."
+        },
+        "triste": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word triste when describing a common situation."
+        },
+        "tropical": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word tropical when describing a common situation."
+        },
+        "trust": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word trust when describing a common situation."
+        },
+        "truthful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word truthful when describing a common situation."
+        },
+        "turbulent": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word turbulent when describing a common situation."
+        },
+        "turismo": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word turismo when describing a common situation."
+        },
+        "técnica": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word técnica when describing a common situation."
+        },
+        "ténu": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word ténu when describing a common situation."
+        },
+        "tórrido": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word tórrido when describing a common situation."
+        },
+        "ubiquitous": {
+            definition: "Present, appearing, or found everywhere or very commonly.",
+            example: "Smartphones are ubiquitous in modern cities."
+        },
+        "ulcéré": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word ulcéré when describing a common situation."
+        },
+        "unambiguous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word unambiguous when describing a common situation."
+        },
+        "unbreakable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word unbreakable when describing a common situation."
+        },
+        "unclean": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word unclean when describing a common situation."
+        },
+        "uncomplicated": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word uncomplicated when describing a common situation."
+        },
+        "undemanding": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Undemanding every day helped him improve quickly."
+        },
+        "undermine": {
+            definition: "To weaken or damage someone's position, authority, or chances of success gradually or secretly.",
+            example: "The constant criticism began to undermine her confidence at work."
+        },
+        "understanding": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Understanding every day helped him improve quickly."
+        },
+        "understate": {
+            definition: "To describe something as smaller, less important, or less serious than it really is.",
+            example: "He tended to understate his role in the project despite doing most of the work."
+        },
+        "unearthly": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word unearthly when describing a common situation."
+        },
+        "unfathomable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word unfathomable when describing a common situation."
+        },
+        "unflappable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word unflappable when describing a common situation."
+        },
+        "unhappy": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word unhappy when describing a common situation."
+        },
+        "unmistakable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word unmistakable when describing a common situation."
+        },
+        "unobtrusive": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word unobtrusive when describing a common situation."
+        },
+        "unperturbed": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word unperturbed when describing a common situation."
+        },
+        "unprecedented": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word unprecedented when describing a common situation."
+        },
+        "unsafe": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word unsafe when describing a common situation."
+        },
+        "unsanitary": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word unsanitary when describing a common situation."
+        },
+        "untainted": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word untainted when describing a common situation."
+        },
+        "unwavering": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Unwavering every day helped him improve quickly."
+        },
+        "unyielding": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Unyielding every day helped him improve quickly."
+        },
+        "uplifting": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Uplifting every day helped him improve quickly."
+        },
+        "upright": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word upright when describing a common situation."
+        },
+        "uproarious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word uproarious when describing a common situation."
+        },
+        "upset": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word upset when describing a common situation."
+        },
+        "used": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word used when describing a common situation."
+        },
+        "useful": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word useful when describing a common situation."
+        },
+        "usé": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word usé when describing a common situation."
+        },
+        "utilidad": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word utilidad when describing a common situation."
+        },
+        "utility": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word utility when describing a common situation."
+        },
+        "vaillant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word vaillant when describing a common situation."
+        },
+        "valeroso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word valeroso when describing a common situation."
+        },
+        "valiant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word valiant when describing a common situation."
+        },
+        "valiente": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word valiente when describing a common situation."
+        },
+        "valorous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word valorous when describing a common situation."
+        },
+        "values": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word values when describing a common situation."
         },
         "vanguardista": {
-            definition: "Vanguardista: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo vanguardista puede usarse en un contexto normal."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word vanguardista when describing a common situation."
         },
-        "velado": {
-            definition: "Que ha sido velado o que tiene la cualidad de velado.",
-            example: "La oración muestra cómo velado puede usarse en un contexto normal."
+        "vaste": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word vaste when describing a common situation."
+        },
+        "vasto": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word vasto when describing a common situation."
         },
         "veloz": {
-            definition: "Que se mueve o es capaz de moverse a gran velocidad.",
-            example: "El halcón hizo un descenso veloz para atrapar a su presa."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word veloz when describing a common situation."
+        },
+        "velvety": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word velvety when describing a common situation."
         },
         "venerable": {
-            definition: "Que merece mucho respeto, sobre todo por la edad.",
-            example: "El venerable viejo roble llevaba en el parque siglos."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word venerable when describing a common situation."
         },
-        "vertiginosa": {
-            definition: "Vertiginosa: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo vertiginosa puede usarse en un contexto normal."
+        "veracious": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word veracious when describing a common situation."
+        },
+        "verdant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word verdant when describing a common situation."
         },
         "vertiginoso": {
-            definition: "Que causa vértigo, sobre todo por ser muy alto o empinado.",
-            example: "El escalador miró el precipicio vertiginoso y se mareó."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word vertiginoso when describing a common situation."
         },
         "vetusto": {
-            definition: "Extremadamente viejo; antiguo y desgastado.",
-            example: "El edificio vetusto parecía que podía derrumbarse en cualquier momento."
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word vetusto when describing a common situation."
         },
-        "vibrante": {
-            definition: "Vibrante: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo vibrante puede usarse en un contexto normal."
+        "viaje": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word viaje when describing a common situation."
         },
-        "violenta": {
-            definition: "Que usa la fuerza física para herir o matar.",
-            example: "La ciudad sufrió varias protestas violentas la semana pasada."
+        "vibrant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word vibrant when describing a common situation."
         },
-        "viva": {
-            definition: "Viva: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo viva puede usarse en un contexto normal."
+        "vie privée": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "She described the situation as vie privée in plain speech."
         },
-        "vivida": {
-            definition: "Vivida: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo vivida puede usarse en un contexto normal."
+        "viejo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word viejo when describing a common situation."
         },
-        "vulnerada": {
-            definition: "Que ha sido vulnerada o que tiene la cualidad de vulnerada.",
-            example: "La oración muestra cómo vulnerada puede usarse en un contexto normal."
+        "vieux": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word vieux when describing a common situation."
         },
-        "wise": {
-            definition: "Que tiene o muestra experiencia, conocimiento y buen juicio.",
-            example: "Elegir ahorrar para el futuro fue una decisión acertada."
+        "vif": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word vif when describing a common situation."
+        },
+        "vigoroso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word vigoroso when describing a common situation."
+        },
+        "vigoureux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word vigoureux when describing a common situation."
+        },
+        "vintage": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word vintage when describing a common situation."
+        },
+        "virtuoso": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word virtuoso when describing a common situation."
+        },
+        "visceral": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word visceral when describing a common situation."
+        },
+        "vision": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "The decision came after a lengthy vision process that changed the plan."
+        },
+        "visionary": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word visionary when describing a common situation."
+        },
+        "vital": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word vital when describing a common situation."
+        },
+        "vite": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word vite when describing a common situation."
+        },
+        "vivacious": {
+            definition: "Full of energy and enthusiasm; lively in spirit and behavior.",
+            example: "Her vivacious personality made her popular at social events."
+        },
+        "vivid": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word vivid when describing a common situation."
+        },
+        "vivify": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word vivify when describing a common situation."
+        },
+        "vociferous": {
+            definition: "Having a quality or characteristic that is often noticeable or strong.",
+            example: "They used the word vociferous when describing a common situation."
+        },
+        "voiceless": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word voiceless when describing a common situation."
+        },
+        "voluntariado": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word voluntariado when describing a common situation."
+        },
+        "volunteering": {
+            definition: "The action or process of doing something; also used to describe an ongoing activity.",
+            example: "Volunteering every day helped him improve quickly."
+        },
+        "vulnerable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word vulnerable when describing a common situation."
+        },
+        "vulnérable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word vulnérable when describing a common situation."
+        },
+        "véloce": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word véloce when describing a common situation."
+        },
+        "vénérable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word vénérable when describing a common situation."
+        },
+        "vétuste": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word vétuste when describing a common situation."
+        },
+        "warm": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word warm when describing a common situation."
+        },
+        "weak": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word weak when describing a common situation."
+        },
+        "wealthy": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word wealthy when describing a common situation."
+        },
+        "weird": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word weird when describing a common situation."
+        },
+        "well-off": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word well-off when describing a common situation."
+        },
+        "well-oiled": {
+            definition: "Describing a state that someone or something has experienced as a result of an action.",
+            example: "They used the word well-oiled when describing a common situation."
+        },
+        "wellness": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word wellness when describing a common situation."
+        },
+        "wide": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word wide when describing a common situation."
+        },
+        "wisdom": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word wisdom when describing a common situation."
+        },
+        "woebegone": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word woebegone when describing a common situation."
+        },
+        "woefulness": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word woefulness when describing a common situation."
+        },
+        "wonderful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word wonderful when describing a common situation."
+        },
+        "work": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word work when describing a common situation."
+        },
+        "workout": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word workout when describing a common situation."
+        },
+        "worn": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word worn when describing a common situation."
+        },
+        "wrathful": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word wrathful when describing a common situation."
+        },
+        "wrong": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word wrong when describing a common situation."
+        },
+        "young": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word young when describing a common situation."
+        },
+        "ágil": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word ágil when describing a common situation."
+        },
+        "álgido": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word álgido when describing a common situation."
+        },
+        "âgé": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word âgé when describing a common situation."
+        },
+        "éblouissant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word éblouissant when describing a common situation."
+        },
+        "économe": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word économe when describing a common situation."
+        },
+        "électrisant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word électrisant when describing a common situation."
+        },
+        "élémentaire": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word élémentaire when describing a common situation."
+        },
+        "énervé": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word énervé when describing a common situation."
+        },
+        "énorme": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word énorme when describing a common situation."
+        },
+        "épanouissement": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word épanouissement when describing a common situation."
+        },
+        "épineux": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word épineux when describing a common situation."
+        },
+        "éploré": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word éploré when describing a common situation."
+        },
+        "épouvantable": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word épouvantable when describing a common situation."
+        },
+        "équilibre": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word équilibre when describing a common situation."
+        },
+        "érudit": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word érudit when describing a common situation."
+        },
+        "étouffant": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word étouffant when describing a common situation."
+        },
+        "étroit": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word étroit when describing a common situation."
+        },
+        "évident": {
+            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
+            example: "They used the word évident when describing a common situation."
         },
         "ínfimo": {
-            definition: "Ínfimo: una palabra de uso común en español con un significado sencillo.",
-            example: "La oración muestra cómo ínfimo puede usarse en un contexto normal."
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word ínfimo when describing a common situation."
         },
-        "íntegro": {
-            definition: "La cualidad de ser honesto y tener principios morales firmes.",
-            example: "Es una persona de gran integridad que siempre cumple su palabra."
+        "óptimo": {
+            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
+            example: "They used the word óptimo when describing a common situation."
         },
     },
+    fr: {
+        "abdiquer": {
+            definition: "Renoncer officiellement à un pouvoir ou un poste, notamment la couronne.",
+            example: "Le roi a choisi d'abdiquer."
+        },
+        "abolir": {
+            definition: "Mettre fin officiellement à une loi, une pratique ou une institution.",
+            example: "Ils ont voté pour abolir la règle obsolète."
+        },
+        "accablante": {
+            definition: "Accablante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot accablante dans une phrase courante pour illustrer le sens."
+        },
+        "adolescent": {
+            definition: "Jeune personne âgée de 13 à 19 ans; période de transition vers l'âge adulte.",
+            example: "En tant qu'adolescent, il aimait passer du temps au club scolaire."
+        },
+        "adroit": {
+            definition: "Adroit : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot adroit dans une phrase courante pour illustrer le sens."
+        },
+        "affamé": {
+            definition: "Qui ressent une faim intense.",
+            example: "Après la randonnée, il était affamé et a mangé tout son repas."
+        },
+        "agressive": {
+            definition: "Agressive : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot agressive dans une phrase courante pour illustrer le sens."
+        },
+        "alléchante": {
+            definition: "Alléchante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot alléchante dans une phrase courante pour illustrer le sens."
+        },
+        "allégresse": {
+            definition: "Un sentiment intense de joie ou de triomphe.",
+            example: "Elle éprouva une allégresse profonde en recevant la bonne nouvelle."
+        },
+        "altier": {
+            definition: "Altier : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot altier dans une phrase courante pour illustrer le sens."
+        },
+        "ambitieux": {
+            definition: "Ambitieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot ambitieux dans une phrase courante pour illustrer le sens."
+        },
+        "améliorer": {
+            definition: "Rendre quelque chose meilleur ou plus efficace.",
+            example: "Ils cherchent toujours à améliorer la qualité du service."
+        },
+        "ancestral": {
+            definition: "Ancestral : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot ancestral dans une phrase courante pour illustrer le sens."
+        },
+        "ancien": {
+            definition: "Ancien : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot ancien dans une phrase courante pour illustrer le sens."
+        },
+        "anodin": {
+            definition: "Anodin : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot anodin dans une phrase courante pour illustrer le sens."
+        },
+        "anonymat": {
+            definition: "État de ne pas être identifié; identité inconnue.",
+            example: "Les témoins ont demandé l'anonymat pour leur sécurité."
+        },
+        "antique": {
+            definition: "Antique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot antique dans une phrase courante pour illustrer le sens."
+        },
+        "antonyme": {
+            definition: "Mot qui a le sens opposé d'un autre mot.",
+            example: "\"Chaud\" est l'antonyme de \"froid\"."
+        },
+        "anéantir": {
+            definition: "Détruire complètement de sorte qu'il n'en reste rien d'utile.",
+            example: "La tempête a presque anéanti le village."
+        },
+        "apaisant": {
+            definition: "Apaisant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot apaisant dans une phrase courante pour illustrer le sens."
+        },
+        "archaïque": {
+            definition: "Archaïque : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot archaïque dans une phrase courante pour illustrer le sens."
+        },
+        "ardent": {
+            definition: "Ardent : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot ardent dans une phrase courante pour illustrer le sens."
+        },
+        "argentine": {
+            definition: "Argentine : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot argentine dans une phrase courante pour illustrer le sens."
+        },
+        "articulé": {
+            definition: "Qui s'exprime clairement et précisément à l'oral ou à l'écrit.",
+            example: "Le conférencier était très articulé et ses propos étaient faciles à suivre."
+        },
+        "artificielle": {
+            definition: "Artificielle : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot artificielle dans une phrase courante pour illustrer le sens."
+        },
+        "assourdissant": {
+            definition: "Assourdissant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot assourdissant dans une phrase courante pour illustrer le sens."
+        },
+        "astronome": {
+            definition: "Scientifique qui étudie les astres et l'espace.",
+            example: "L'astronome a découvert une nouvelle comète."
+        },
+        "astucieux": {
+            definition: "Astucieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot astucieux dans une phrase courante pour illustrer le sens."
+        },
+        "athlétique": {
+            definition: "Athlétique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot athlétique dans une phrase courante pour illustrer le sens."
+        },
+        "atone": {
+            definition: "Atone : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot atone dans une phrase courante pour illustrer le sens."
+        },
+        "attaché": {
+            definition: "Attaché : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot attaché dans une phrase courante pour illustrer le sens."
+        },
+        "attentif": {
+            definition: "Attentif : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot attentif dans une phrase courante pour illustrer le sens."
+        },
+        "aversion": {
+            definition: "Forte répugnance ou dégoût envers quelque chose.",
+            example: "Elle a une aversion profonde pour le bruit."
+        },
+        "azuré": {
+            definition: "Azuré : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot azuré dans une phrase courante pour illustrer le sens."
+        },
+        "bas": {
+            definition: "Bas : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot bas dans une phrase courante pour illustrer le sens."
+        },
+        "basse": {
+            definition: "Basse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot basse dans une phrase courante pour illustrer le sens."
+        },
+        "beau": {
+            definition: "Beau : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot beau dans une phrase courante pour illustrer le sens."
+        },
+        "belle": {
+            definition: "Belle : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot belle dans une phrase courante pour illustrer le sens."
+        },
+        "bien": {
+            definition: "Bien : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot bien dans une phrase courante pour illustrer le sens."
+        },
+        "bienfaisante": {
+            definition: "Bienfaisante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot bienfaisante dans une phrase courante pour illustrer le sens."
+        },
+        "bienveillant": {
+            definition: "Bienveillant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot bienveillant dans une phrase courante pour illustrer le sens."
+        },
+        "blanc": {
+            definition: "Blanc : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot blanc dans une phrase courante pour illustrer le sens."
+        },
+        "blanche": {
+            definition: "Blanche : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot blanche dans une phrase courante pour illustrer le sens."
+        },
+        "bon": {
+            definition: "Bon : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot bon dans une phrase courante pour illustrer le sens."
+        },
+        "bonne": {
+            definition: "Bonne : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot bonne dans une phrase courante pour illustrer le sens."
+        },
+        "boréale": {
+            definition: "Boréale : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot boréale dans une phrase courante pour illustrer le sens."
+        },
+        "bucolique": {
+            definition: "Bucolique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot bucolique dans une phrase courante pour illustrer le sens."
+        },
+        "caduc": {
+            definition: "Caduc : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot caduc dans une phrase courante pour illustrer le sens."
+        },
+        "canoniser": {
+            definition: "Déclarer officiellement quelqu'un saint dans certaines traditions religieuses.",
+            example: "On a canonisé la missionnaire pour son dévouement."
+        },
+        "chimérique": {
+            definition: "Extrêmement idéaliste ou irréaliste, souvent impossible à réaliser.",
+            example: "Leur projet était chimérique et difficilement réalisable."
+        },
+        "chétive": {
+            definition: "Chétive : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot chétive dans une phrase courante pour illustrer le sens."
+        },
+        "cinglante": {
+            definition: "Cinglante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot cinglante dans une phrase courante pour illustrer le sens."
+        },
+        "clair": {
+            definition: "Clair : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot clair dans une phrase courante pour illustrer le sens."
+        },
+        "claire": {
+            definition: "Claire : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot claire dans une phrase courante pour illustrer le sens."
+        },
+        "claustrophobie": {
+            definition: "Peur intense des espaces clos ou confinés.",
+            example: "Il évitait les ascenseurs à cause de sa claustrophobie."
+        },
+        "collective": {
+            definition: "Collective : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot collective dans une phrase courante pour illustrer le sens."
+        },
+        "concis": {
+            definition: "Qui exprime l'essentiel en peu de mots; bref et précis.",
+            example: "Rédigez un résumé concis des points principaux."
+        },
+        "congrûment": {
+            definition: "Congrûment : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot congrûment dans une phrase courante pour illustrer le sens."
+        },
+        "content": {
+            definition: "Content : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot content dans une phrase courante pour illustrer le sens."
+        },
+        "coquette": {
+            definition: "Coquette : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot coquette dans une phrase courante pour illustrer le sens."
+        },
+        "court": {
+            definition: "Court : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot court dans une phrase courante pour illustrer le sens."
+        },
+        "courte": {
+            definition: "Courte : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot courte dans une phrase courante pour illustrer le sens."
+        },
+        "courtois": {
+            definition: "Courtois : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot courtois dans une phrase courante pour illustrer le sens."
+        },
+        "crue": {
+            definition: "Crue : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot crue dans une phrase courante pour illustrer le sens."
+        },
+        "crépusculaire": {
+            definition: "Crépusculaire : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot crépusculaire dans une phrase courante pour illustrer le sens."
+        },
+        "d'azur": {
+            definition: "D'azur : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "On a entendu le mot d'azur utilisé dans une phrase simple."
+        },
+        "dernier": {
+            definition: "Dernier : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot dernier dans une phrase courante pour illustrer le sens."
+        },
+        "diaphane": {
+            definition: "Diaphane : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot diaphane dans une phrase courante pour illustrer le sens."
+        },
+        "diluvienne": {
+            definition: "Diluvienne : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot diluvienne dans une phrase courante pour illustrer le sens."
+        },
+        "discontinu": {
+            definition: "Discontinu : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot discontinu dans une phrase courante pour illustrer le sens."
+        },
+        "doux": {
+            definition: "Doux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot doux dans une phrase courante pour illustrer le sens."
+        },
+        "droite": {
+            definition: "Droite : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot droite dans une phrase courante pour illustrer le sens."
+        },
+        "dur": {
+            definition: "Dur : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot dur dans une phrase courante pour illustrer le sens."
+        },
+        "dure": {
+            definition: "Dure : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot dure dans une phrase courante pour illustrer le sens."
+        },
+        "décisif": {
+            definition: "Décisif : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot décisif dans une phrase courante pour illustrer le sens."
+        },
+        "décrépit": {
+            definition: "Décrépit : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot décrépit dans une phrase courante pour illustrer le sens."
+        },
+        "délabré": {
+            definition: "Délabré : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot délabré dans une phrase courante pour illustrer le sens."
+        },
+        "dérisoire": {
+            definition: "Dérisoire : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot dérisoire dans une phrase courante pour illustrer le sens."
+        },
+        "déshumaniser": {
+            definition: "Traiter des personnes comme si elles n'étaient pas humaines.",
+            example: "La propagande peut déshumaniser des groupes entiers."
+        },
+        "empathie": {
+            definition: "Capacité à comprendre et partager les sentiments d'autrui.",
+            example: "Son empathie lui a permis de réconforter les personnes en deuil."
+        },
+        "enchanteresse": {
+            definition: "Enchanteresse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot enchanteresse dans une phrase courante pour illustrer le sens."
+        },
+        "entrepreneur": {
+            definition: "Personne qui crée et gère une entreprise en acceptant les risques.",
+            example: "L'entrepreneur a lancé une start-up technologique florissante."
+        },
+        "envoûtante": {
+            definition: "Envoûtante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot envoûtante dans une phrase courante pour illustrer le sens."
+        },
+        "estompée": {
+            definition: "Estompée : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot estompée dans une phrase courante pour illustrer le sens."
+        },
+        "exemplaire": {
+            definition: "Exemplaire : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot exemplaire dans une phrase courante pour illustrer le sens."
+        },
+        "exigeant": {
+            definition: "Exigeant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot exigeant dans une phrase courante pour illustrer le sens."
+        },
+        "exténuant": {
+            definition: "Exténuant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot exténuant dans une phrase courante pour illustrer le sens."
+        },
+        "faible": {
+            definition: "Faible : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot faible dans une phrase courante pour illustrer le sens."
+        },
+        "farouche": {
+            definition: "Farouche : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot farouche dans une phrase courante pour illustrer le sens."
+        },
+        "fastidieux": {
+            definition: "Fastidieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot fastidieux dans une phrase courante pour illustrer le sens."
+        },
+        "fervent": {
+            definition: "Très enthousiaste et dévoué à une cause ou activité.",
+            example: "C'est un fervent défenseur des droits de l'enfant."
+        },
+        "feutrée": {
+            definition: "Feutrée : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot feutrée dans une phrase courante pour illustrer le sens."
+        },
+        "fin": {
+            definition: "Fin : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot fin dans une phrase courante pour illustrer le sens."
+        },
+        "fine": {
+            definition: "Fine : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot fine dans une phrase courante pour illustrer le sens."
+        },
+        "fixe": {
+            definition: "Fixe : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot fixe dans une phrase courante pour illustrer le sens."
+        },
+        "fluet": {
+            definition: "Fluet : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot fluet dans une phrase courante pour illustrer le sens."
+        },
+        "focalisée": {
+            definition: "Focalisée : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot focalisée dans une phrase courante pour illustrer le sens."
+        },
+        "fort": {
+            definition: "Fort : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot fort dans une phrase courante pour illustrer le sens."
+        },
+        "fortifié": {
+            definition: "Fortifié : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot fortifié dans une phrase courante pour illustrer le sens."
+        },
+        "fortuit": {
+            definition: "Qui arrive par chance et sans planification.",
+            example: "La rencontre fut fortuite et bénéfique."
+        },
+        "fracassant": {
+            definition: "Fracassant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot fracassant dans une phrase courante pour illustrer le sens."
+        },
+        "frais": {
+            definition: "Frais : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot frais dans une phrase courante pour illustrer le sens."
+        },
+        "franc": {
+            definition: "Franc : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot franc dans une phrase courante pour illustrer le sens."
+        },
+        "fraîche": {
+            definition: "Fraîche : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot fraîche dans une phrase courante pour illustrer le sens."
+        },
+        "froid": {
+            definition: "Froid : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot froid dans une phrase courante pour illustrer le sens."
+        },
+        "frugale": {
+            definition: "Frugale : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot frugale dans une phrase courante pour illustrer le sens."
+        },
+        "frêle": {
+            definition: "Frêle : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot frêle dans une phrase courante pour illustrer le sens."
+        },
+        "fulgurante": {
+            definition: "Fulgurante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot fulgurante dans une phrase courante pour illustrer le sens."
+        },
+        "furtif": {
+            definition: "Furtif : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot furtif dans une phrase courante pour illustrer le sens."
+        },
+        "féerique": {
+            definition: "Féerique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot féerique dans une phrase courante pour illustrer le sens."
+        },
+        "féodal": {
+            definition: "Féodal : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot féodal dans une phrase courante pour illustrer le sens."
+        },
+        "gazouillant": {
+            definition: "Gazouillant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot gazouillant dans une phrase courante pour illustrer le sens."
+        },
+        "glaciale": {
+            definition: "Glaciale : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot glaciale dans une phrase courante pour illustrer le sens."
+        },
+        "gracieuse": {
+            definition: "Gracieuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot gracieuse dans une phrase courante pour illustrer le sens."
+        },
+        "grand": {
+            definition: "Grand : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot grand dans une phrase courante pour illustrer le sens."
+        },
+        "grande": {
+            definition: "Grande : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot grande dans une phrase courante pour illustrer le sens."
+        },
+        "grandiose": {
+            definition: "Grandiose : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot grandiose dans une phrase courante pour illustrer le sens."
+        },
+        "gros": {
+            definition: "Gros : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot gros dans une phrase courante pour illustrer le sens."
+        },
+        "grosse": {
+            definition: "Grosse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot grosse dans une phrase courante pour illustrer le sens."
+        },
+        "harmonieuse": {
+            definition: "Harmonieuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot harmonieuse dans une phrase courante pour illustrer le sens."
+        },
+        "haut": {
+            definition: "Haut : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot haut dans une phrase courante pour illustrer le sens."
+        },
+        "historique": {
+            definition: "Historique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot historique dans une phrase courante pour illustrer le sens."
+        },
+        "honoré": {
+            definition: "Honoré : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot honoré dans une phrase courante pour illustrer le sens."
+        },
+        "humeur": {
+            definition: "État émotionnel temporaire qui influence les sentiments et le comportement.",
+            example: "Son humeur s'est améliorée après une promenade."
+        },
+        "immaculé": {
+            definition: "Immaculé : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot immaculé dans une phrase courante pour illustrer le sens."
+        },
+        "imperceptible": {
+            definition: "Imperceptible : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot imperceptible dans une phrase courante pour illustrer le sens."
+        },
+        "imperturbable": {
+            definition: "Imperturbable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot imperturbable dans une phrase courante pour illustrer le sens."
+        },
+        "imposant": {
+            definition: "Imposant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot imposant dans une phrase courante pour illustrer le sens."
+        },
+        "impétueuse": {
+            definition: "Impétueuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot impétueuse dans une phrase courante pour illustrer le sens."
+        },
+        "impétueux": {
+            definition: "Impétueux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot impétueux dans une phrase courante pour illustrer le sens."
+        },
+        "inattendue": {
+            definition: "Inattendue : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot inattendue dans une phrase courante pour illustrer le sens."
+        },
+        "incandescent": {
+            definition: "Incandescent : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot incandescent dans une phrase courante pour illustrer le sens."
+        },
+        "indigo": {
+            definition: "Indigo : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot indigo dans une phrase courante pour illustrer le sens."
+        },
+        "indéfectible": {
+            definition: "Indéfectible : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot indéfectible dans une phrase courante pour illustrer le sens."
+        },
+        "indélébile": {
+            definition: "Indélébile : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot indélébile dans une phrase courante pour illustrer le sens."
+        },
+        "infime": {
+            definition: "Infime : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot infime dans une phrase courante pour illustrer le sens."
+        },
+        "innovant": {
+            definition: "Innovant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot innovant dans une phrase courante pour illustrer le sens."
+        },
+        "insigne": {
+            definition: "Insigne : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot insigne dans une phrase courante pour illustrer le sens."
+        },
+        "insignifiant": {
+            definition: "Insignifiant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot insignifiant dans une phrase courante pour illustrer le sens."
+        },
+        "insondable": {
+            definition: "Insondable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot insondable dans une phrase courante pour illustrer le sens."
+        },
+        "insoupçonné": {
+            definition: "Insoupçonné : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot insoupçonné dans une phrase courante pour illustrer le sens."
+        },
+        "inspiré": {
+            definition: "Inspiré : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot inspiré dans une phrase courante pour illustrer le sens."
+        },
+        "intense": {
+            definition: "Intense : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot intense dans une phrase courante pour illustrer le sens."
+        },
+        "interminable": {
+            definition: "Interminable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot interminable dans une phrase courante pour illustrer le sens."
+        },
+        "intrépide": {
+            definition: "Intrépide : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot intrépide dans une phrase courante pour illustrer le sens."
+        },
+        "intègre": {
+            definition: "Intègre : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot intègre dans une phrase courante pour illustrer le sens."
+        },
+        "intégrité": {
+            definition: "Honnêteté et principes moraux solides.",
+            example: "Son intégrité lui a valu le respect de tous."
+        },
+        "invincible": {
+            definition: "Impossible à vaincre ou à surmonter.",
+            example: "L'équipe semblait invincible après la série de victoires."
+        },
+        "inébranlable": {
+            definition: "Inébranlable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot inébranlable dans une phrase courante pour illustrer le sens."
+        },
+        "inédit": {
+            definition: "Inédit : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot inédit dans une phrase courante pour illustrer le sens."
+        },
+        "irisante": {
+            definition: "Irisante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot irisante dans une phrase courante pour illustrer le sens."
+        },
+        "irrésistible": {
+            definition: "Irrésistible : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot irrésistible dans une phrase courante pour illustrer le sens."
+        },
+        "irrévérencieux": {
+            definition: "Manque de respect envers les personnes ou les traditions.",
+            example: "Son ton irrévérencieux a surpris les invités."
+        },
+        "jaunâtre": {
+            definition: "Jaunâtre : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot jaunâtre dans une phrase courante pour illustrer le sens."
+        },
+        "jeune": {
+            definition: "Jeune : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot jeune dans une phrase courante pour illustrer le sens."
+        },
+        "joli": {
+            definition: "Joli : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot joli dans une phrase courante pour illustrer le sens."
+        },
+        "jolie": {
+            definition: "Jolie : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot jolie dans une phrase courante pour illustrer le sens."
+        },
+        "judicieuse": {
+            definition: "Judicieuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot judicieuse dans une phrase courante pour illustrer le sens."
+        },
+        "laborieux": {
+            definition: "Laborieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot laborieux dans une phrase courante pour illustrer le sens."
+        },
+        "large": {
+            definition: "Large : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot large dans une phrase courante pour illustrer le sens."
+        },
+        "lente": {
+            definition: "Lente : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot lente dans une phrase courante pour illustrer le sens."
+        },
+        "limpide": {
+            definition: "Limpide : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot limpide dans une phrase courante pour illustrer le sens."
+        },
+        "long": {
+            definition: "Long : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot long dans une phrase courante pour illustrer le sens."
+        },
+        "longue": {
+            definition: "Longue : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot longue dans une phrase courante pour illustrer le sens."
+        },
+        "longuet": {
+            definition: "Longuet : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot longuet dans une phrase courante pour illustrer le sens."
+        },
+        "lourd": {
+            definition: "Lourd : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot lourd dans une phrase courante pour illustrer le sens."
+        },
+        "lucide": {
+            definition: "Clair et facile à comprendre; esprit net et cohérent.",
+            example: "Elle a donné une explication lucide des résultats."
+        },
+        "luxuriante": {
+            definition: "Luxuriante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot luxuriante dans une phrase courante pour illustrer le sens."
+        },
+        "lénifiante": {
+            definition: "Lénifiante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot lénifiante dans une phrase courante pour illustrer le sens."
+        },
+        "magistrale": {
+            definition: "Magistrale : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot magistrale dans une phrase courante pour illustrer le sens."
+        },
+        "magnifique": {
+            definition: "Magnifique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot magnifique dans une phrase courante pour illustrer le sens."
+        },
+        "majestueuse": {
+            definition: "Majestueuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot majestueuse dans une phrase courante pour illustrer le sens."
+        },
+        "majestueux": {
+            definition: "Majestueux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot majestueux dans une phrase courante pour illustrer le sens."
+        },
+        "marginal": {
+            definition: "Marginal : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot marginal dans une phrase courante pour illustrer le sens."
+        },
+        "massive": {
+            definition: "Massive : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot massive dans une phrase courante pour illustrer le sens."
+        },
+        "mince": {
+            definition: "Mince : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot mince dans une phrase courante pour illustrer le sens."
+        },
+        "minime": {
+            definition: "Minime : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot minime dans une phrase courante pour illustrer le sens."
+        },
+        "minimiser": {
+            definition: "Rendre quelque chose moins important ou sérieux qu'il ne l'est réellement.",
+            example: "Elle a tendance à minimiser ses réussites."
+        },
+        "minimum": {
+            definition: "La quantité la plus petite autorisée ou nécessaire.",
+            example: "Il faut atteindre le minimum requis pour être admissible."
+        },
+        "minuscule": {
+            definition: "Extrêmement petit en taille ou en quantité.",
+            example: "Il y avait une chance minuscule de pluie."
+        },
+        "modeste": {
+            definition: "Modeste : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot modeste dans une phrase courante pour illustrer le sens."
+        },
+        "monacal": {
+            definition: "Monacal : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot monacal dans une phrase courante pour illustrer le sens."
+        },
+        "monologue": {
+            definition: "Discours long prononcé par une seule personne.",
+            example: "Le comédien a livré un monologue poignant."
+        },
+        "morte": {
+            definition: "Morte : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot morte dans une phrase courante pour illustrer le sens."
+        },
+        "moussant": {
+            definition: "Moussant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot moussant dans une phrase courante pour illustrer le sens."
+        },
+        "mouvementé": {
+            definition: "Mouvementé : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot mouvementé dans une phrase courante pour illustrer le sens."
+        },
+        "mystique": {
+            definition: "Mystique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot mystique dans une phrase courante pour illustrer le sens."
+        },
+        "mystérieux": {
+            definition: "Mystérieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot mystérieux dans une phrase courante pour illustrer le sens."
+        },
+        "médiéval": {
+            definition: "Médiéval : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot médiéval dans une phrase courante pour illustrer le sens."
+        },
+        "mélodieuse": {
+            definition: "Mélodieuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot mélodieuse dans une phrase courante pour illustrer le sens."
+        },
+        "méritant": {
+            definition: "Méritant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot méritant dans une phrase courante pour illustrer le sens."
+        },
+        "nase": {
+            definition: "Nase : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot nase dans une phrase courante pour illustrer le sens."
+        },
+        "net": {
+            definition: "Net : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot net dans une phrase courante pour illustrer le sens."
+        },
+        "noble": {
+            definition: "Noble : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot noble dans une phrase courante pour illustrer le sens."
+        },
+        "novateur": {
+            definition: "Novateur : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot novateur dans une phrase courante pour illustrer le sens."
+        },
+        "obligé": {
+            definition: "Obligé : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot obligé dans une phrase courante pour illustrer le sens."
+        },
+        "obséquieux": {
+            definition: "Obséquieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot obséquieux dans une phrase courante pour illustrer le sens."
+        },
+        "omniprésent": {
+            definition: "Présent ou apparent partout à la fois.",
+            example: "Les smartphones semblent omniprésents dans nos villes."
+        },
+        "omniprésente": {
+            definition: "Omniprésente : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot omniprésente dans une phrase courante pour illustrer le sens."
+        },
+        "opaque": {
+            definition: "Opaque : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot opaque dans une phrase courante pour illustrer le sens."
+        },
+        "oppressant": {
+            definition: "Oppressant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot oppressant dans une phrase courante pour illustrer le sens."
+        },
+        "orgueilleux": {
+            definition: "Orgueilleux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot orgueilleux dans une phrase courante pour illustrer le sens."
+        },
+        "original": {
+            definition: "Original : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot original dans une phrase courante pour illustrer le sens."
+        },
+        "ouaté": {
+            definition: "Ouaté : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot ouaté dans une phrase courante pour illustrer le sens."
+        },
+        "panoramique": {
+            definition: "Panoramique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot panoramique dans une phrase courante pour illustrer le sens."
+        },
+        "parfumée": {
+            definition: "Parfumée : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot parfumée dans une phrase courante pour illustrer le sens."
+        },
+        "passé": {
+            definition: "Passé : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot passé dans une phrase courante pour illustrer le sens."
+        },
+        "patriote": {
+            definition: "Personne qui aime et défend son pays.",
+            example: "C'est un patriote qui participe activement aux cérémonies locales."
+        },
+        "perspicace": {
+            definition: "Perspicace : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot perspicace dans une phrase courante pour illustrer le sens."
+        },
+        "perçante": {
+            definition: "Perçante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot perçante dans une phrase courante pour illustrer le sens."
+        },
+        "pesant": {
+            definition: "Pesant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot pesant dans une phrase courante pour illustrer le sens."
+        },
+        "pionnier": {
+            definition: "Pionnier : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot pionnier dans une phrase courante pour illustrer le sens."
+        },
+        "pittoresque": {
+            definition: "Pittoresque : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot pittoresque dans une phrase courante pour illustrer le sens."
+        },
+        "pleine": {
+            definition: "Pleine : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot pleine dans une phrase courante pour illustrer le sens."
+        },
+        "plombant": {
+            definition: "Plombant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot plombant dans une phrase courante pour illustrer le sens."
+        },
+        "polyglotte": {
+            definition: "Personne qui connaît et utilise plusieurs langues.",
+            example: "En tant que polyglotte, elle parlait couramment trois langues."
+        },
+        "prestigieuse": {
+            definition: "Prestigieuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot prestigieuse dans une phrase courante pour illustrer le sens."
+        },
+        "prestigieux": {
+            definition: "Prestigieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot prestigieux dans une phrase courante pour illustrer le sens."
+        },
+        "proclamer": {
+            definition: "Annoncer publiquement de manière officielle.",
+            example: "Le maire proclamera l'ouverture du parc."
+        },
+        "profond": {
+            definition: "Profond : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot profond dans une phrase courante pour illustrer le sens."
+        },
+        "propre": {
+            definition: "Propre : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot propre dans une phrase courante pour illustrer le sens."
+        },
+        "prépondérant": {
+            definition: "Prépondérant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot prépondérant dans une phrase courante pour illustrer le sens."
+        },
+        "prépondérante": {
+            definition: "Prépondérante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot prépondérante dans une phrase courante pour illustrer le sens."
+        },
+        "psychologie": {
+            definition: "Étude scientifique de l'esprit et du comportement humain.",
+            example: "Elle étudie la psychologie pour comprendre les comportements."
+        },
+        "pur": {
+            definition: "Pur : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot pur dans une phrase courante pour illustrer le sens."
+        },
+        "pénible": {
+            definition: "Pénible : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot pénible dans une phrase courante pour illustrer le sens."
+        },
+        "pétillant": {
+            definition: "Pétillant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot pétillant dans une phrase courante pour illustrer le sens."
+        },
+        "radieuse": {
+            definition: "Radieuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot radieuse dans une phrase courante pour illustrer le sens."
+        },
+        "radieux": {
+            definition: "Radieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot radieux dans une phrase courante pour illustrer le sens."
+        },
+        "rationnelle": {
+            definition: "Rationnelle : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot rationnelle dans une phrase courante pour illustrer le sens."
+        },
+        "rauque": {
+            definition: "Rauque : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot rauque dans une phrase courante pour illustrer le sens."
+        },
+        "ravissante": {
+            definition: "Ravissante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot ravissante dans une phrase courante pour illustrer le sens."
+        },
+        "redevable": {
+            definition: "Redevable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot redevable dans une phrase courante pour illustrer le sens."
+        },
+        "redoutable": {
+            definition: "Redoutable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot redoutable dans une phrase courante pour illustrer le sens."
+        },
+        "religieux": {
+            definition: "Religieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot religieux dans une phrase courante pour illustrer le sens."
+        },
+        "remarquable": {
+            definition: "Remarquable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot remarquable dans une phrase courante pour illustrer le sens."
+        },
+        "retentissant": {
+            definition: "Retentissant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot retentissant dans une phrase courante pour illustrer le sens."
+        },
+        "rhétorique": {
+            definition: "Art d'utiliser la langue pour persuader ou émouvoir.",
+            example: "Sa rhétorique captivante a convaincu le public."
+        },
+        "réfuter": {
+            definition: "Montrer qu'une idée ou une affirmation est fausse à l'aide d'arguments ou de preuves.",
+            example: "Les chercheurs ont réfuté l'hypothèse avec de nouvelles données."
+        },
+        "répudier": {
+            definition: "Refuser d'accepter ou de reconnaître quelque chose comme vrai ou légitime.",
+            example: "Il a répudié publiquement les accusations."
+        },
+        "saisissant": {
+            definition: "Saisissant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot saisissant dans une phrase courante pour illustrer le sens."
+        },
+        "saisissante": {
+            definition: "Saisissante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot saisissante dans une phrase courante pour illustrer le sens."
+        },
+        "sale": {
+            definition: "Sale : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot sale dans une phrase courante pour illustrer le sens."
+        },
+        "salutaire": {
+            definition: "Salutaire : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot salutaire dans une phrase courante pour illustrer le sens."
+        },
+        "sceptique": {
+            definition: "Personne qui doute et remet en question les affirmations sans preuve.",
+            example: "En tant que sceptique, il a demandé des preuves solides avant de croire l'article."
+        },
+        "scintillante": {
+            definition: "Scintillante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot scintillante dans une phrase courante pour illustrer le sens."
+        },
+        "scrupuleux": {
+            definition: "Scrupuleux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot scrupuleux dans une phrase courante pour illustrer le sens."
+        },
+        "serein": {
+            definition: "Serein : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot serein dans une phrase courante pour illustrer le sens."
+        },
+        "serrée": {
+            definition: "Serrée : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot serrée dans une phrase courante pour illustrer le sens."
+        },
+        "sidérale": {
+            definition: "Sidérale : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot sidérale dans une phrase courante pour illustrer le sens."
+        },
+        "simplifier": {
+            definition: "Rendre plus clair ou moins complexe.",
+            example: "Nous devons simplifier la procédure pour les nouveaux utilisateurs."
+        },
+        "solennel": {
+            definition: "Solennel : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot solennel dans une phrase courante pour illustrer le sens."
+        },
+        "solide": {
+            definition: "Solide : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot solide dans une phrase courante pour illustrer le sens."
+        },
+        "somptueuse": {
+            definition: "Somptueuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot somptueuse dans une phrase courante pour illustrer le sens."
+        },
+        "somptueux": {
+            definition: "Somptueux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot somptueux dans une phrase courante pour illustrer le sens."
+        },
+        "sophisme": {
+            definition: "Argument qui semble logique mais qui contient une erreur de raisonnement.",
+            example: "Le sophisme a trompé certains lecteurs du débat."
+        },
+        "spirituel": {
+            definition: "Spirituel : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot spirituel dans une phrase courante pour illustrer le sens."
+        },
+        "spontané": {
+            definition: "Spontané : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot spontané dans une phrase courante pour illustrer le sens."
+        },
+        "strident": {
+            definition: "Strident : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot strident dans une phrase courante pour illustrer le sens."
+        },
+        "studieux": {
+            definition: "Studieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot studieux dans une phrase courante pour illustrer le sens."
+        },
+        "suave": {
+            definition: "Suave : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot suave dans une phrase courante pour illustrer le sens."
+        },
+        "subalterne": {
+            definition: "Subalterne : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot subalterne dans une phrase courante pour illustrer le sens."
+        },
+        "subtil": {
+            definition: "Subtil : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot subtil dans une phrase courante pour illustrer le sens."
+        },
+        "séculaire": {
+            definition: "Séculaire : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot séculaire dans une phrase courante pour illustrer le sens."
+        },
+        "sépulcral": {
+            definition: "Sépulcral : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot sépulcral dans une phrase courante pour illustrer le sens."
+        },
+        "tamisée": {
+            definition: "Tamisée : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot tamisée dans une phrase courante pour illustrer le sens."
+        },
+        "tonitruant": {
+            definition: "Tonitruant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot tonitruant dans une phrase courante pour illustrer le sens."
+        },
+        "torrentielle": {
+            definition: "Torrentielle : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot torrentielle dans une phrase courante pour illustrer le sens."
+        },
+        "tortueux": {
+            definition: "Tortueux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot tortueux dans une phrase courante pour illustrer le sens."
+        },
+        "total": {
+            definition: "Total : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot total dans une phrase courante pour illustrer le sens."
+        },
+        "transcendant": {
+            definition: "Transcendant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot transcendant dans une phrase courante pour illustrer le sens."
+        },
+        "ténue": {
+            definition: "Ténue : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot ténue dans une phrase courante pour illustrer le sens."
+        },
+        "usé": {
+            definition: "Usé : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot usé dans une phrase courante pour illustrer le sens."
+        },
+        "vacillante": {
+            definition: "Vacillante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot vacillante dans une phrase courante pour illustrer le sens."
+        },
+        "valeureux": {
+            definition: "Valeureux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot valeureux dans une phrase courante pour illustrer le sens."
+        },
+        "vaste": {
+            definition: "Vaste : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot vaste dans une phrase courante pour illustrer le sens."
+        },
+        "vibrante": {
+            definition: "Vibrante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot vibrante dans une phrase courante pour illustrer le sens."
+        },
+        "vide": {
+            definition: "Vide : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot vide dans une phrase courante pour illustrer le sens."
+        },
+        "vif": {
+            definition: "Vif : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot vif dans une phrase courante pour illustrer le sens."
+        },
+        "vigoureuse": {
+            definition: "Vigoureuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot vigoureuse dans une phrase courante pour illustrer le sens."
+        },
+        "virtuose": {
+            definition: "Virtuose : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot virtuose dans une phrase courante pour illustrer le sens."
+        },
+        "vive": {
+            definition: "Vive : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot vive dans une phrase courante pour illustrer le sens."
+        },
+        "vrai": {
+            definition: "Vrai : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot vrai dans une phrase courante pour illustrer le sens."
+        },
+        "vraie": {
+            definition: "Vraie : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot vraie dans une phrase courante pour illustrer le sens."
+        },
+        "vénérable": {
+            definition: "Vénérable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot vénérable dans une phrase courante pour illustrer le sens."
+        },
+        "véridique": {
+            definition: "Véridique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot véridique dans une phrase courante pour illustrer le sens."
+        },
+        "véritable": {
+            definition: "Véritable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot véritable dans une phrase courante pour illustrer le sens."
+        },
+        "vétuste": {
+            definition: "Vétuste : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot vétuste dans une phrase courante pour illustrer le sens."
+        },
+        "vétéran": {
+            definition: "Vétéran : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot vétéran dans une phrase courante pour illustrer le sens."
+        },
+        "zénithale": {
+            definition: "Zénithale : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot zénithale dans une phrase courante pour illustrer le sens."
+        },
+        "éblouissant": {
+            definition: "Éblouissant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot éblouissant dans une phrase courante pour illustrer le sens."
+        },
+        "éblouissante": {
+            definition: "Éblouissante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot éblouissante dans une phrase courante pour illustrer le sens."
+        },
+        "éclatante": {
+            definition: "Éclatante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot éclatante dans une phrase courante pour illustrer le sens."
+        },
+        "éloquent": {
+            definition: "Éloquent : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot éloquent dans une phrase courante pour illustrer le sens."
+        },
+        "émérite": {
+            definition: "Émérite : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot émérite dans une phrase courante pour illustrer le sens."
+        },
+        "éphémère": {
+            definition: "Qui dure très peu de temps; passager.",
+            example: "La beauté du lever de soleil est souvent éphémère."
+        },
+        "épique": {
+            definition: "Épique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot épique dans une phrase courante pour illustrer le sens."
+        },
+        "éprouvant": {
+            definition: "Éprouvant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot éprouvant dans une phrase courante pour illustrer le sens."
+        },
+        "éreintant": {
+            definition: "Éreintant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot éreintant dans une phrase courante pour illustrer le sens."
+        },
+        "étroit": {
+            definition: "Étroit : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot étroit dans une phrase courante pour illustrer le sens."
+        },
+        "évanescente": {
+            definition: "Évanescente : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
+            example: "Il a utilisé le mot évanescente dans une phrase courante pour illustrer le sens."
+        },
+        "epigramme": {
+            definition: "Bref mot ou vers spirituel exprimant une idée de façon frappante.",
+            example: "L'auteur a commencé le chapitre par une epigramme."
+        },
+        "manifeste": {
+            definition: "Déclaration écrite présentant les idées et objectifs d'un groupe ou d'une personne.",
+            example: "Le parti a publié son manifeste avant les élections."
+        },
+        "saper": {
+            definition: "Affaiblir progressivement ou discrètement une position, une autorité ou des efforts.",
+            example: "Les critiques constantes ont fini par saper sa confiance."
+        },
+        "esthétique": {
+            definition: "Relatif à l'appréciation du beau ou au goût artistique.",
+            example: "L'entrée du musée a une esthétique moderne et soignée."
+        },
+        "épidémie": {
+            definition: "Augmentation rapide du nombre de cas d'une maladie dans une région.",
+            example: "Les autorités sanitaires ont réagi à l'épidémie de grippe."
+        },
+        "abréger": {
+            definition: "Raccourcir un texte tout en conservant l'idée principale.",
+            example: "L'éditeur a abrégé l'article pour la version imprimée."
+        },
+        "affable": {
+            definition: "Aimable et facile à approcher; cordial.",
+            example: "Il était affable avec tous les invités."
+        },
+        "plaider": {
+            definition: "Soutenir publiquement une cause ou une politique.",
+            example: "Elle plaide pour un meilleur accès aux soins."
+        },
+        "ennui": {
+            definition: "Sentiment d'ennui et d'insatisfaction dû à l'inactivité.",
+            example: "Des mois d'inactivité lui ont causé un profond ennui."
+        },
+        "apaiser": {
+            definition: "Calmer ou satisfaire quelqu'un pour réduire la colère ou la tension.",
+            example: "Ils ont offert un remboursement pour apaiser le client."
+        },
+        "iconoclaste": {
+            definition: "Personne qui rejette ou critique les croyances et institutions établies.",
+            example: "L'artiste iconoclaste remettait en question les styles traditionnels."
+        },
+        "dénoncer": {
+            definition: "Accuser publiquement ou condamner quelque chose comme mal ou injuste.",
+            example: "De nombreux responsables ont dénoncé la corruption."
+        },
+        "vivace": {
+            definition: "Plein d'énergie et d'entrain; animé.",
+            example: "Sa personnalité vivace la rendait populaire."
+        },
+        "bienfaiteur": {
+            definition: "Personne qui donne de l'argent ou de l'aide à une cause ou une personne.",
+            example: "La bourse a été financée par un généreux bienfaiteur."
+        },
+        "malleable": {
+            definition: "Facile à influencer ou à modeler; adaptable.",
+            example: "Les enfants sont souvent malléables et adoptent vite de nouvelles routines."
+        },
+        "chaos": {
+            definition: "État de désordre complet et de confusion.",
+            example: "La tempête a plongé la ville dans le chaos."
+        },
+        "se multiplier": {
+            definition: "Augmenter rapidement en nombre ou en quantité.",
+            example: "Les appareils intelligents se sont multipliés dans la décennie."
+        },
+},
+    es: {
+        "abdicar": {
+            definition: "Renunciar formalmente a un puesto de poder, especialmente a la corona.",
+            example: "El monarca decidió abdicar en favor de su hijo."
+        },
+        "abolir": {
+            definition: "Poner fin oficialmente a una ley, práctica o institución.",
+            example: "El congreso decidió abolir la norma."
+        },
+        "abrumadora": {
+            definition: "Abrumadora: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron abrumadora en una conversación sobre un tema cotidiano."
+        },
+        "abrupto": {
+            definition: "Abrupto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron abrupto en una conversación sobre un tema cotidiano."
+        },
+        "absoluto": {
+            definition: "Absoluto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron absoluto en una conversación sobre un tema cotidiano."
+        },
+        "acaudalado": {
+            definition: "Acaudalado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron acaudalado en una conversación sobre un tema cotidiano."
+        },
+        "adolescente": {
+            definition: "Persona entre 13 y 19 años; etapa de la adolescencia.",
+            example: "Como adolescente, pasaba mucho tiempo con sus amigos."
+        },
+        "agotador": {
+            definition: "Agotador: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron agotador en una conversación sobre un tema cotidiano."
+        },
+        "alentadora": {
+            definition: "Alentadora: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron alentadora en una conversación sobre un tema cotidiano."
+        },
+        "alta": {
+            definition: "Alta: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron alta en una conversación sobre un tema cotidiano."
+        },
+        "altivo": {
+            definition: "Altivo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron altivo en una conversación sobre un tema cotidiano."
+        },
+        "alto": {
+            definition: "Alto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron alto en una conversación sobre un tema cotidiano."
+        },
+        "altruista": {
+            definition: "Altruista: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron altruista en una conversación sobre un tema cotidiano."
+        },
+        "ambiguo": {
+            definition: "Ambiguo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron ambiguo en una conversación sobre un tema cotidiano."
+        },
+        "amortiguado": {
+            definition: "Amortiguado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron amortiguado en una conversación sobre un tema cotidiano."
+        },
+        "anacrónico": {
+            definition: "Anacrónico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron anacrónico en una conversación sobre un tema cotidiano."
+        },
+        "ancestral": {
+            definition: "Ancestral: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron ancestral en una conversación sobre un tema cotidiano."
+        },
+        "ancestro": {
+            definition: "Ancestro: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron ancestro en una conversación sobre un tema cotidiano."
+        },
+        "angelical": {
+            definition: "Angelical: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron angelical en una conversación sobre un tema cotidiano."
+        },
+        "angosto": {
+            definition: "Angosto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron angosto en una conversación sobre un tema cotidiano."
+        },
+        "aniquilar": {
+            definition: "Destruir por completo de modo que no quede nada útil.",
+            example: "La explosión aniquiló la fábrica vieja."
+        },
+        "anonimato": {
+            definition: "Estado de no ser identificado; ocultación de la identidad.",
+            example: "Los testigos pidieron anonimato por seguridad."
+        },
+        "antiguo": {
+            definition: "Antiguo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron antiguo en una conversación sobre un tema cotidiano."
+        },
+        "antónimo": {
+            definition: "Palabra que expresa el sentido opuesto a otra.",
+            example: "\"Frío\" es el antónimo de \"calor\"."
+        },
+        "apacible": {
+            definition: "Apacible: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron apacible en una conversación sobre un tema cotidiano."
+        },
+        "arcano": {
+            definition: "Arcano: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron arcano en una conversación sobre un tema cotidiano."
+        },
+        "arduo": {
+            definition: "Arduo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron arduo en una conversación sobre un tema cotidiano."
+        },
+        "armonioso": {
+            definition: "Armonioso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron armonioso en una conversación sobre un tema cotidiano."
+        },
+        "articulado": {
+            definition: "Que se expresa con claridad y precisión.",
+            example: "El orador estuvo muy articulado durante la conferencia."
+        },
+        "artificial": {
+            definition: "Artificial: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron artificial en una conversación sobre un tema cotidiano."
+        },
+        "asfixiante": {
+            definition: "Asfixiante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron asfixiante en una conversación sobre un tema cotidiano."
+        },
+        "astrónomo": {
+            definition: "Científico que estudia estrellas y cuerpos celestes.",
+            example: "El astrónomo descubrió un nuevo cometa."
+        },
+        "astuto": {
+            definition: "Astuto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron astuto en una conversación sobre un tema cotidiano."
+        },
+        "aséptico": {
+            definition: "Aséptico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron aséptico en una conversación sobre un tema cotidiano."
+        },
+        "atento": {
+            definition: "Atento: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron atento en una conversación sobre un tema cotidiano."
+        },
+        "austera": {
+            definition: "Austera: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron austera en una conversación sobre un tema cotidiano."
+        },
+        "aversión": {
+            definition: "Fuerte rechazo o disgusto hacia algo.",
+            example: "Tiene aversión a los lugares muy ruidosos."
+        },
+        "azulada": {
+            definition: "Azulada: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron azulada en una conversación sobre un tema cotidiano."
+        },
+        "baja": {
+            definition: "Baja: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron baja en una conversación sobre un tema cotidiano."
+        },
+        "bajo": {
+            definition: "Bajo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron bajo en una conversación sobre un tema cotidiano."
+        },
+        "bella": {
+            definition: "Bella: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron bella en una conversación sobre un tema cotidiano."
+        },
+        "bello": {
+            definition: "Bello: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron bello en una conversación sobre un tema cotidiano."
+        },
+        "bibliográfico": {
+            definition: "Bibliográfico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron bibliográfico en una conversación sobre un tema cotidiano."
+        },
+        "bién": {
+            definition: "Bién: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron bién en una conversación sobre un tema cotidiano."
+        },
+        "blanca": {
+            definition: "Blanca: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron blanca en una conversación sobre un tema cotidiano."
+        },
+        "blanco": {
+            definition: "Blanco: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron blanco en una conversación sobre un tema cotidiano."
+        },
+        "buen": {
+            definition: "Buen: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron buen en una conversación sobre un tema cotidiano."
+        },
+        "buena": {
+            definition: "Buena: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron buena en una conversación sobre un tema cotidiano."
+        },
+        "bueno": {
+            definition: "Bueno: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron bueno en una conversación sobre un tema cotidiano."
+        },
+        "canicular": {
+            definition: "Canicular: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron canicular en una conversación sobre un tema cotidiano."
+        },
+        "canonizar": {
+            definition: "Declarar oficialmente a alguien santo en ciertas tradiciones religiosas.",
+            example: "La iglesia canonizó al misionero por su servicio."
+        },
+        "cartográfico": {
+            definition: "Cartográfico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron cartográfico en una conversación sobre un tema cotidiano."
+        },
+        "cegadora": {
+            definition: "Cegadora: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron cegadora en una conversación sobre un tema cotidiano."
+        },
+        "celestial": {
+            definition: "Celestial: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron celestial en una conversación sobre un tema cotidiano."
+        },
+        "centelleante": {
+            definition: "Centelleante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron centelleante en una conversación sobre un tema cotidiano."
+        },
+        "centenario": {
+            definition: "Centenario: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron centenario en una conversación sobre un tema cotidiano."
+        },
+        "ciclópea": {
+            definition: "Ciclópea: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron ciclópea en una conversación sobre un tema cotidiano."
+        },
+        "clara": {
+            definition: "Clara: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron clara en una conversación sobre un tema cotidiano."
+        },
+        "claro": {
+            definition: "Claro: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron claro en una conversación sobre un tema cotidiano."
+        },
+        "clasificado": {
+            definition: "Clasificado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron clasificado en una conversación sobre un tema cotidiano."
+        },
+        "claustrofobia": {
+            definition: "Miedo intenso a los espacios cerrados o confinados.",
+            example: "Evita los espacios cerrados por su claustrofobia."
+        },
+        "comprometedor": {
+            definition: "Comprometedor: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron comprometedor en una conversación sobre un tema cotidiano."
+        },
+        "concentrada": {
+            definition: "Concentrada: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron concentrada en una conversación sobre un tema cotidiano."
+        },
+        "conciso": {
+            definition: "Que expresa las ideas de forma breve y clara.",
+            example: "Mantén el texto conciso y directo."
+        },
+        "conmovedora": {
+            definition: "Conmovedora: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron conmovedora en una conversación sobre un tema cotidiano."
+        },
+        "consecuente": {
+            definition: "Consecuente: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron consecuente en una conversación sobre un tema cotidiano."
+        },
+        "copiosa": {
+            definition: "Copiosa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron copiosa en una conversación sobre un tema cotidiano."
+        },
+        "corto": {
+            definition: "Corto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron corto en una conversación sobre un tema cotidiano."
+        },
+        "creativa": {
+            definition: "Creativa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron creativa en una conversación sobre un tema cotidiano."
+        },
+        "crucial": {
+            definition: "Crucial: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron crucial en una conversación sobre un tema cotidiano."
+        },
+        "críptico": {
+            definition: "Críptico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron críptico en una conversación sobre un tema cotidiano."
+        },
+        "cálida": {
+            definition: "Cálida: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron cálida en una conversación sobre un tema cotidiano."
+        },
+        "decidido": {
+            definition: "Decidido: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron decidido en una conversación sobre un tema cotidiano."
+        },
+        "deshumanizar": {
+            definition: "Tratar a las personas como si no tuvieran cualidades humanas.",
+            example: "La propaganda puede deshumanizar a ciertos grupos."
+        },
+        "deslumbrante": {
+            definition: "Deslumbrante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron deslumbrante en una conversación sobre un tema cotidiano."
+        },
+        "desorbitada": {
+            definition: "Desorbitada: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron desorbitada en una conversación sobre un tema cotidiano."
+        },
+        "despejado": {
+            definition: "Despejado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron despejado en una conversación sobre un tema cotidiano."
+        },
+        "despiadado": {
+            definition: "Despiadado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron despiadado en una conversación sobre un tema cotidiano."
+        },
+        "despreciable": {
+            definition: "Despreciable: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron despreciable en una conversación sobre un tema cotidiano."
+        },
+        "determinante": {
+            definition: "Determinante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron determinante en una conversación sobre un tema cotidiano."
+        },
+        "devastadora": {
+            definition: "Devastadora: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron devastadora en una conversación sobre un tema cotidiano."
+        },
+        "devocional": {
+            definition: "Devocional: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron devocional en una conversación sobre un tema cotidiano."
+        },
+        "diestro": {
+            definition: "Diestro: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron diestro en una conversación sobre un tema cotidiano."
+        },
+        "diminuto": {
+            definition: "Diminuto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron diminuto en una conversación sobre un tema cotidiano."
+        },
+        "dinámica": {
+            definition: "Dinámica: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron dinámica en una conversación sobre un tema cotidiano."
+        },
+        "discográfico": {
+            definition: "Discográfico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron discográfico en una conversación sobre un tema cotidiano."
+        },
+        "diáfana": {
+            definition: "Diáfana: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron diáfana en una conversación sobre un tema cotidiano."
+        },
+        "dura": {
+            definition: "Dura: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron dura en una conversación sobre un tema cotidiano."
+        },
+        "duro": {
+            definition: "Duro: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron duro en una conversación sobre un tema cotidiano."
+        },
+        "efímera": {
+            definition: "Efímera: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron efímera en una conversación sobre un tema cotidiano."
+        },
+        "efímero": {
+            definition: "Que dura muy poco tiempo; pasajero.",
+            example: "La fama del vídeo fue efímera."
+        },
+        "ejemplar": {
+            definition: "Ejemplar: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron ejemplar en una conversación sobre un tema cotidiano."
+        },
+        "elocuente": {
+            definition: "Elocuente: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron elocuente en una conversación sobre un tema cotidiano."
+        },
+        "emblemático": {
+            definition: "Emblemático: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron emblemático en una conversación sobre un tema cotidiano."
+        },
+        "embriagadora": {
+            definition: "Embriagadora: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron embriagadora en una conversación sobre un tema cotidiano."
+        },
+        "empatía": {
+            definition: "Capacidad de comprender y compartir los sentimientos de otra persona.",
+            example: "Su empatía la ayudó a consolar a sus amigos."
+        },
+        "emprendedor": {
+            definition: "Persona que inicia y dirige un negocio, asumiendo riesgos.",
+            example: "El emprendedor fundó una empresa tecnológica exitosa."
+        },
+        "emérito": {
+            definition: "Emérito: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron emérito en una conversación sobre un tema cotidiano."
+        },
+        "encarnizada": {
+            definition: "Encarnizada: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron encarnizada en una conversación sobre un tema cotidiano."
+        },
+        "enfermo": {
+            definition: "Enfermo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron enfermo en una conversación sobre un tema cotidiano."
+        },
+        "erudito": {
+            definition: "Erudito: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron erudito en una conversación sobre un tema cotidiano."
+        },
+        "escéptico": {
+            definition: "Persona que duda y exige pruebas antes de aceptar afirmaciones.",
+            example: "Como escéptico, quería ver los datos antes de creerlo."
+        },
+        "espontánea": {
+            definition: "Espontánea: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron espontánea en una conversación sobre un tema cotidiano."
+        },
+        "estoico": {
+            definition: "Estoico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron estoico en una conversación sobre un tema cotidiano."
+        },
+        "estudioso": {
+            definition: "Estudioso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron estudioso en una conversación sobre un tema cotidiano."
+        },
+        "estética": {
+            definition: "Relativo a la apreciación de la belleza o al gusto artístico.",
+            example: "El hotel tenía una estética minimalista y elegante."
+        },
+        "experimentado": {
+            definition: "Experimentado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron experimentado en una conversación sobre un tema cotidiano."
+        },
+        "exquisita": {
+            definition: "Exquisita: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron exquisita en una conversación sobre un tema cotidiano."
+        },
+        "fabulosa": {
+            definition: "Fabulosa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron fabulosa en una conversación sobre un tema cotidiano."
+        },
+        "falacia": {
+            definition: "Creencia o razonamiento incorrecto que parece lógico.",
+            example: "Identificaron la falacia en el argumento del debatiente."
+        },
+        "famélico": {
+            definition: "Extremadamente hambriento o desfallecido por falta de comida.",
+            example: "Tras días sin comer, estaba famélico."
+        },
+        "fatal": {
+            definition: "Fatal: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron fatal en una conversación sobre un tema cotidiano."
+        },
+        "ferviente": {
+            definition: "Muy entusiasmado y dedicado a una causa.",
+            example: "Es un ferviente defensor de la justicia social."
+        },
+        "fijo": {
+            definition: "Fijo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron fijo en una conversación sobre un tema cotidiano."
+        },
+        "fina": {
+            definition: "Fina: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron fina en una conversación sobre un tema cotidiano."
+        },
+        "fino": {
+            definition: "Fino: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron fino en una conversación sobre un tema cotidiano."
+        },
+        "fortuito": {
+            definition: "Que sucede por casualidad y con un resultado favorable.",
+            example: "Encontrarse con ella fue completamente fortuito."
+        },
+        "fosforescente": {
+            definition: "Fosforescente: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron fosforescente en una conversación sobre un tema cotidiano."
+        },
+        "fotogénica": {
+            definition: "Fotogénica: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron fotogénica en una conversación sobre un tema cotidiano."
+        },
+        "franco": {
+            definition: "Franco: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron franco en una conversación sobre un tema cotidiano."
+        },
+        "fresco": {
+            definition: "Fresco: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron fresco en una conversación sobre un tema cotidiano."
+        },
+        "frágil": {
+            definition: "Frágil: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron frágil en una conversación sobre un tema cotidiano."
+        },
+        "fuerte": {
+            definition: "Fuerte: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron fuerte en una conversación sobre un tema cotidiano."
+        },
+        "fugaz": {
+            definition: "Fugaz: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron fugaz en una conversación sobre un tema cotidiano."
+        },
+        "fulgurante": {
+            definition: "Fulgurante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron fulgurante en una conversación sobre un tema cotidiano."
+        },
+        "fulminante": {
+            definition: "Fulminante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron fulminante en una conversación sobre un tema cotidiano."
+        },
+        "férrea": {
+            definition: "Férrea: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron férrea en una conversación sobre un tema cotidiano."
+        },
+        "garrafal": {
+            definition: "Garrafal: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron garrafal en una conversación sobre un tema cotidiano."
+        },
+        "gordo": {
+            definition: "Gordo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron gordo en una conversación sobre un tema cotidiano."
+        },
+        "gran": {
+            definition: "Gran: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron gran en una conversación sobre un tema cotidiano."
+        },
+        "grande": {
+            definition: "Grande: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron grande en una conversación sobre un tema cotidiano."
+        },
+        "gélida": {
+            definition: "Gélida: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron gélida en una conversación sobre un tema cotidiano."
+        },
+        "hierático": {
+            definition: "Hierático: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron hierático en una conversación sobre un tema cotidiano."
+        },
+        "hilarante": {
+            definition: "Hilarante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron hilarante en una conversación sobre un tema cotidiano."
+        },
+        "hipnótica": {
+            definition: "Hipnótica: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron hipnótica en una conversación sobre un tema cotidiano."
+        },
+        "humor": {
+            definition: "Estado de ánimo temporal que influye en el comportamiento.",
+            example: "Su humor mejoró tras un paseo."
+        },
+        "idílico": {
+            definition: "Idílico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron idílico en una conversación sobre un tema cotidiano."
+        },
+        "ilegible": {
+            definition: "Ilegible: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron ilegible en una conversación sobre un tema cotidiano."
+        },
+        "iluminado": {
+            definition: "Iluminado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron iluminado en una conversación sobre un tema cotidiano."
+        },
+        "impecable": {
+            definition: "Impecable: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron impecable en una conversación sobre un tema cotidiano."
+        },
+        "impenetrable": {
+            definition: "Impenetrable: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron impenetrable en una conversación sobre un tema cotidiano."
+        },
+        "imperante": {
+            definition: "Imperante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron imperante en una conversación sobre un tema cotidiano."
+        },
+        "imperceptible": {
+            definition: "Imperceptible: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron imperceptible en una conversación sobre un tema cotidiano."
+        },
+        "imperturbable": {
+            definition: "Imperturbable: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron imperturbable en una conversación sobre un tema cotidiano."
+        },
+        "impetuosa": {
+            definition: "Impetuosa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron impetuosa en una conversación sobre un tema cotidiano."
+        },
+        "implacable": {
+            definition: "Implacable: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron implacable en una conversación sobre un tema cotidiano."
+        },
+        "imponente": {
+            definition: "Imponente: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron imponente en una conversación sobre un tema cotidiano."
+        },
+        "incandescente": {
+            definition: "Incandescente: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron incandescente en una conversación sobre un tema cotidiano."
+        },
+        "inclemente": {
+            definition: "Inclemente: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron inclemente en una conversación sobre un tema cotidiano."
+        },
+        "incondicional": {
+            definition: "Incondicional: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron incondicional en una conversación sobre un tema cotidiano."
+        },
+        "indefenso": {
+            definition: "Indefenso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron indefenso en una conversación sobre un tema cotidiano."
+        },
+        "inestimable": {
+            definition: "Inestimable: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron inestimable en una conversación sobre un tema cotidiano."
+        },
+        "inexpugnable": {
+            definition: "Inexpugnable: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron inexpugnable en una conversación sobre un tema cotidiano."
+        },
+        "inquebrantable": {
+            definition: "Inquebrantable: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron inquebrantable en una conversación sobre un tema cotidiano."
+        },
+        "inquietante": {
+            definition: "Inquietante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron inquietante en una conversación sobre un tema cotidiano."
+        },
+        "insidiosa": {
+            definition: "Insidiosa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron insidiosa en una conversación sobre un tema cotidiano."
+        },
+        "integridad": {
+            definition: "Honestidad y principios morales firmes.",
+            example: "Su integridad le ganó el respeto de sus colegas."
+        },
+        "integro": {
+            definition: "Integro: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron integro en una conversación sobre un tema cotidiano."
+        },
+        "intrépido": {
+            definition: "Intrépido: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron intrépido en una conversación sobre un tema cotidiano."
+        },
+        "invencible": {
+            definition: "Que no puede ser vencido o superado.",
+            example: "Tras la racha de victorias, el equipo parecía invencible."
+        },
+        "inédito": {
+            definition: "Inédito: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron inédito en una conversación sobre un tema cotidiano."
+        },
+        "irresistible": {
+            definition: "Irresistible: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron irresistible en una conversación sobre un tema cotidiano."
+        },
+        "irreverente": {
+            definition: "Que muestra falta de respeto hacia lo establecido, a menudo de forma provocadora.",
+            example: "Su humor irreverente sorprendió al público."
+        },
+        "irrisorio": {
+            definition: "Irrisorio: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron irrisorio en una conversación sobre un tema cotidiano."
+        },
+        "joven": {
+            definition: "Joven: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron joven en una conversación sobre un tema cotidiano."
+        },
+        "júbilo": {
+            definition: "Sentimiento de gran alegría y triunfo.",
+            example: "Sintió un júbilo inmenso al recibir la noticia."
+        },
+        "laborioso": {
+            definition: "Laborioso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron laborioso en una conversación sobre un tema cotidiano."
+        },
+        "larga": {
+            definition: "Larga: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron larga en una conversación sobre un tema cotidiano."
+        },
+        "largo": {
+            definition: "Largo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron largo en una conversación sobre un tema cotidiano."
+        },
+        "letárgico": {
+            definition: "Letárgico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron letárgico en una conversación sobre un tema cotidiano."
+        },
+        "liberador": {
+            definition: "Liberador: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron liberador en una conversación sobre un tema cotidiano."
+        },
+        "libre": {
+            definition: "Libre: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron libre en una conversación sobre un tema cotidiano."
+        },
+        "limpio": {
+            definition: "Limpio: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron limpio en una conversación sobre un tema cotidiano."
+        },
+        "lujosa": {
+            definition: "Lujosa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron lujosa en una conversación sobre un tema cotidiano."
+        },
+        "lumínica": {
+            definition: "Lumínica: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron lumínica en una conversación sobre un tema cotidiano."
+        },
+        "magistral": {
+            definition: "Magistral: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron magistral en una conversación sobre un tema cotidiano."
+        },
+        "magnánimo": {
+            definition: "Magnánimo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron magnánimo en una conversación sobre un tema cotidiano."
+        },
+        "malo": {
+            definition: "Malo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron malo en una conversación sobre un tema cotidiano."
+        },
+        "maternal": {
+            definition: "Maternal: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron maternal en una conversación sobre un tema cotidiano."
+        },
+        "matiz": {
+            definition: "Matiz: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron matiz en una conversación sobre un tema cotidiano."
+        },
+        "mejorar": {
+            definition: "Hacer que algo sea mejor o más efectivo.",
+            example: "Decidieron mejorar la calidad del servicio."
+        },
+        "metódico": {
+            definition: "Metódico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron metódico en una conversación sobre un tema cotidiano."
+        },
+        "microscópico": {
+            definition: "Microscópico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron microscópico en una conversación sobre un tema cotidiano."
+        },
+        "milenario": {
+            definition: "Milenario: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron milenario en una conversación sobre un tema cotidiano."
+        },
+        "minimizar": {
+            definition: "Hacer que algo parezca menos grave o importante de lo que es.",
+            example: "Trataron de minimizar el problema públicamente."
+        },
+        "minucioso": {
+            definition: "Minucioso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron minucioso en una conversación sobre un tema cotidiano."
+        },
+        "minúsculo": {
+            definition: "Extremadamente pequeño en tamaño o cantidad.",
+            example: "Solo hubo una posibilidad minúscula de error."
+        },
+        "monumental": {
+            definition: "Monumental: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron monumental en una conversación sobre un tema cotidiano."
+        },
+        "monólogo": {
+            definition: "Discurso largo pronunciado por una sola persona.",
+            example: "El actor entregó un monólogo emotivo."
+        },
+        "muerta": {
+            definition: "Muerta: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron muerta en una conversación sobre un tema cotidiano."
+        },
+        "mínimo": {
+            definition: "La cantidad o grado más pequeño permitido o necesario.",
+            example: "Debes alcanzar el mínimo requerido para entrar."
+        },
+        "místico": {
+            definition: "Místico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron místico en una conversación sobre un tema cotidiano."
+        },
+        "neto": {
+            definition: "Neto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron neto en una conversación sobre un tema cotidiano."
+        },
+        "noble": {
+            definition: "Noble: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron noble en una conversación sobre un tema cotidiano."
+        },
+        "obsoleto": {
+            definition: "Obsoleto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron obsoleto en una conversación sobre un tema cotidiano."
+        },
+        "omnipresente": {
+            definition: "Presente en todas partes o muy extendido.",
+            example: "Los teléfonos móviles son omnipresentes en la ciudad."
+        },
+        "omnisciente": {
+            definition: "Omnisciente: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron omnisciente en una conversación sobre un tema cotidiano."
+        },
+        "opulento": {
+            definition: "Opulento: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron opulento en una conversación sobre un tema cotidiano."
+        },
+        "ornamental": {
+            definition: "Ornamental: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron ornamental en una conversación sobre un tema cotidiano."
+        },
+        "oscilante": {
+            definition: "Oscilante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron oscilante en una conversación sobre un tema cotidiano."
+        },
+        "panorámica": {
+            definition: "Panorámica: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron panorámica en una conversación sobre un tema cotidiano."
+        },
+        "pasado": {
+            definition: "Pasado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron pasado en una conversación sobre un tema cotidiano."
+        },
+        "patriota": {
+            definition: "Persona que ama y defiende su país.",
+            example: "Como patriota, participó en las celebraciones nacionales."
+        },
+        "pavorosa": {
+            definition: "Pavorosa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron pavorosa en una conversación sobre un tema cotidiano."
+        },
+        "penetrante": {
+            definition: "Penetrante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron penetrante en una conversación sobre un tema cotidiano."
+        },
+        "perceptiva": {
+            definition: "Perceptiva: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron perceptiva en una conversación sobre un tema cotidiano."
+        },
+        "persistente": {
+            definition: "Persistente: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron persistente en una conversación sobre un tema cotidiano."
+        },
+        "polvoriento": {
+            definition: "Polvoriento: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron polvoriento en una conversación sobre un tema cotidiano."
+        },
+        "políglota": {
+            definition: "Persona que habla y usa varias lenguas con fluidez.",
+            example: "Como políglota, cambió rápidamente entre idiomas."
+        },
+        "potentado": {
+            definition: "Potentado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron potentado en una conversación sobre un tema cotidiano."
+        },
+        "precioso": {
+            definition: "Precioso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron precioso en una conversación sobre un tema cotidiano."
+        },
+        "previsora": {
+            definition: "Previsora: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron previsora en una conversación sobre un tema cotidiano."
+        },
+        "proclamar": {
+            definition: "Anunciar algo públicamente y de forma oficial.",
+            example: "El alcalde proclamará la nueva ley esta semana."
+        },
+        "prodigiosa": {
+            definition: "Prodigiosa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron prodigiosa en una conversación sobre un tema cotidiano."
+        },
+        "providencial": {
+            definition: "Providencial: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron providencial en una conversación sobre un tema cotidiano."
+        },
+        "psicología": {
+            definition: "Ciencia que estudia la mente y el comportamiento.",
+            example: "Estudió psicología para comprender mejor a las personas."
+        },
+        "puntera": {
+            definition: "Puntera: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron puntera en una conversación sobre un tema cotidiano."
+        },
+        "pálida": {
+            definition: "Pálida: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron pálida en una conversación sobre un tema cotidiano."
+        },
+        "quijotesco": {
+            definition: "Extremadamente idealista e impracticable.",
+            example: "Su plan quijotesco sonaba noble pero poco realista."
+        },
+        "radiante": {
+            definition: "Radiante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron radiante en una conversación sobre un tema cotidiano."
+        },
+        "rasante": {
+            definition: "Rasante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron rasante en una conversación sobre un tema cotidiano."
+        },
+        "reflexivo": {
+            definition: "Reflexivo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron reflexivo en una conversación sobre un tema cotidiano."
+        },
+        "refutar": {
+            definition: "Demostrar que una afirmación o teoría es falsa mediante pruebas o argumentos.",
+            example: "Los científicos refutaron la hipótesis con nuevos datos."
+        },
+        "remoto": {
+            definition: "Remoto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron remoto en una conversación sobre un tema cotidiano."
+        },
+        "repudiar": {
+            definition: "Rechazar o negar algo de forma pública o tajante.",
+            example: "Ella repudió las acusaciones en una conferencia de prensa."
+        },
+        "resplandeciente": {
+            definition: "Resplandeciente: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron resplandeciente en una conversación sobre un tema cotidiano."
+        },
+        "retórica": {
+            definition: "Arte de usar el lenguaje para persuadir o impresionar a un público.",
+            example: "Su retórica impresionó a la audiencia."
+        },
+        "revelador": {
+            definition: "Revelador: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron revelador en una conversación sobre un tema cotidiano."
+        },
+        "revolucionario": {
+            definition: "Revolucionario: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron revolucionario en una conversación sobre un tema cotidiano."
+        },
+        "riguroso": {
+            definition: "Riguroso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron riguroso en una conversación sobre un tema cotidiano."
+        },
+        "rotundo": {
+            definition: "Rotundo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron rotundo en una conversación sobre un tema cotidiano."
+        },
+        "ruinoso": {
+            definition: "Ruinoso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron ruinoso en una conversación sobre un tema cotidiano."
+        },
+        "sagaz": {
+            definition: "Sagaz: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron sagaz en una conversación sobre un tema cotidiano."
+        },
+        "seca": {
+            definition: "Seca: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron seca en una conversación sobre un tema cotidiano."
+        },
+        "sedante": {
+            definition: "Sedante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron sedante en una conversación sobre un tema cotidiano."
+        },
+        "sepulcral": {
+            definition: "Sepulcral: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron sepulcral en una conversación sobre un tema cotidiano."
+        },
+        "sereno": {
+            definition: "Sereno: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron sereno en una conversación sobre un tema cotidiano."
+        },
+        "sesgado": {
+            definition: "Sesgado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron sesgado en una conversación sobre un tema cotidiano."
+        },
+        "señorial": {
+            definition: "Señorial: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron señorial en una conversación sobre un tema cotidiano."
+        },
+        "simbólico": {
+            definition: "Simbólico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron simbólico en una conversación sobre un tema cotidiano."
+        },
+        "simplificar": {
+            definition: "Hacer algo menos complicado o más fácil de entender.",
+            example: "Necesitamos simplificar las instrucciones para los usuarios."
+        },
+        "sobrecogedor": {
+            definition: "Sobrecogedor: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron sobrecogedor en una conversación sobre un tema cotidiano."
+        },
+        "solemne": {
+            definition: "Solemne: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron solemne en una conversación sobre un tema cotidiano."
+        },
+        "sosegado": {
+            definition: "Sosegado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron sosegado en una conversación sobre un tema cotidiano."
+        },
+        "sublime": {
+            definition: "Sublime: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron sublime en una conversación sobre un tema cotidiano."
+        },
+        "suculenta": {
+            definition: "Suculenta: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron suculenta en una conversación sobre un tema cotidiano."
+        },
+        "suntuoso": {
+            definition: "Suntuoso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron suntuoso en una conversación sobre un tema cotidiano."
+        },
+        "sustancial": {
+            definition: "Sustancial: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron sustancial en una conversación sobre un tema cotidiano."
+        },
+        "sutil": {
+            definition: "Sutil: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron sutil en una conversación sobre un tema cotidiano."
+        },
+        "tenaz": {
+            definition: "Tenaz: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron tenaz en una conversación sobre un tema cotidiano."
+        },
+        "tenso": {
+            definition: "Tenso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron tenso en una conversación sobre un tema cotidiano."
+        },
+        "tenue": {
+            definition: "Tenue: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron tenue en una conversación sobre un tema cotidiano."
+        },
+        "torrencial": {
+            definition: "Torrencial: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron torrencial en una conversación sobre un tema cotidiano."
+        },
+        "usado": {
+            definition: "Usado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron usado en una conversación sobre un tema cotidiano."
+        },
+        "vacio": {
+            definition: "Vacio: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron vacio en una conversación sobre un tema cotidiano."
+        },
+        "vacío": {
+            definition: "Vacío: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron vacío en una conversación sobre un tema cotidiano."
+        },
+        "vanguardista": {
+            definition: "Vanguardista: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron vanguardista en una conversación sobre un tema cotidiano."
+        },
+        "velado": {
+            definition: "Velado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron velado en una conversación sobre un tema cotidiano."
+        },
+        "veloz": {
+            definition: "Veloz: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron veloz en una conversación sobre un tema cotidiano."
+        },
+        "venerable": {
+            definition: "Venerable: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron venerable en una conversación sobre un tema cotidiano."
+        },
+        "vertiginosa": {
+            definition: "Vertiginosa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron vertiginosa en una conversación sobre un tema cotidiano."
+        },
+        "vetusto": {
+            definition: "Vetusto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron vetusto en una conversación sobre un tema cotidiano."
+        },
+        "vibrante": {
+            definition: "Vibrante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron vibrante en una conversación sobre un tema cotidiano."
+        },
+        "violenta": {
+            definition: "Violenta: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron violenta en una conversación sobre un tema cotidiano."
+        },
+        "viva": {
+            definition: "Viva: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron viva en una conversación sobre un tema cotidiano."
+        },
+        "vivida": {
+            definition: "Vivida: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron vivida en una conversación sobre un tema cotidiano."
+        },
+        "vulnerada": {
+            definition: "Vulnerada: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron vulnerada en una conversación sobre un tema cotidiano."
+        },
+        "ínfimo": {
+            definition: "Ínfimo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron ínfimo en una conversación sobre un tema cotidiano."
+        },
+        "íntegro": {
+            definition: "Íntegro: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
+            example: "Dijeron íntegro en una conversación sobre un tema cotidiano."
+        },
+        "epigrama": {
+            definition: "Dicho breve y agudo que expresa una idea con ingenio.",
+            example: "El ensayo comenzó con un epigrama ingenioso."
+        },
+        "manifiesto": {
+            definition: "Declaración pública escrita que presenta las ideas y objetivos de un grupo.",
+            example: "El partido publicó su manifiesto antes de las elecciones."
+        },
+        "socavar": {
+            definition: "Debilitar gradualmente o secretamente una posición o autoridad.",
+            example: "La crítica continua socavó su confianza."
+        },
+        "epidemia": {
+            definition: "Aumento rápido en el número de casos de una enfermedad en una región.",
+            example: "La epidemia provocó una movilización sanitaria inmediata."
+        },
+        "lúcido": {
+            definition: "Claro y fácil de entender; pensamiento coherente.",
+            example: "Durante la entrevista, ofreció un relato lúcido de los hechos."
+        },
+        "abbreviar": {
+            definition: "Acortar un texto manteniendo la idea principal.",
+            example: "Se optó por abbreviar el artículo para la revista."
+        },
+        "afable": {
+            definition: "Amable y fácil de tratar; cordial.",
+            example: "El nuevo vecino resultó afable con todos."
+        },
+        "defender": {
+            definition: "Apoyar públicamente una causa o idea.",
+            example: "Ella defiende la igualdad de oportunidades."
+        },
+        "aburrimiento": {
+            definition: "Sentimiento de desinterés y falta de estímulo por la inactividad.",
+            example: "El aburrimiento de la cuarentena fue difícil de combatir."
+        },
+        "aplacar": {
+            definition: "Calmar a alguien para reducir su enfado o inquietud.",
+            example: "Ofrecieron una compensación para aplacar al cliente."
+        },
+        "iconoclasta": {
+            definition: "Persona que desafía las creencias o instituciones establecidas.",
+            example: "El escritor iconoclasta rechazó las normas tradicionales."
+        },
+        "denunciar": {
+            definition: "Acosar públicamente o condenar algo como malo o injusto.",
+            example: "Las ONG denunciaron los abusos ante los tribunales."
+        },
+        "vivaz": {
+            definition: "Lleno de energía y entusiasmo; animado.",
+            example: "Su actitud vivaz hizo la reunión más llevadera."
+        },
+        "benefactor": {
+            definition: "Persona que dona dinero o ayuda a una causa desinteresadamente.",
+            example: "Los estudiantes agradecieron al benefactor por la beca."
+        },
+        "maleable": {
+            definition: "Que se deja influir o moldear con facilidad.",
+            example: "Los jóvenes son a menudo maleables y se adaptan rápido."
+        },
+        "caos": {
+            definition: "Estado de desorden y confusión generalizada.",
+            example: "El caos tras la tormenta obligó a evacuar varias zonas."
+        },
+        "proliferar": {
+            definition: "Aumentar o difundirse rápidamente en número o cantidad.",
+            example: "Las plantas comenzaron a proliferar en el jardín."
+        },
+},
 };

@@ -886,6 +886,470 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "L'apparition et le développement d'événements par hasard d'une manière heureuse.",
             example: "Trouver ce livre rare dans le grenier a été un coup de sérendipité."
         },
+        // Reverse Definitions (ES translations)
+        "elation": {
+            definition: "Un sentimiento de gran felicidad y triunfo.",
+            example: "Sintió una enorme euforia al recibir la noticia de su ascenso."
+        },
+        "articulate": {
+            definition: "Capaz de expresar ideas clara y eficazmente.",
+            example: "Su discurso articulado convenció al consejo."
+        },
+        "skeptic": {
+            definition: "Persona inclinada a dudar o cuestionar opiniones aceptadas.",
+            example: "El escéptico solicitó más pruebas antes de aceptar la teoría."
+        },
+        "ubiquitous": {
+            definition: "Presente o encontrado en todas partes.",
+            example: "Los teléfonos inteligentes son ubicuos en la vida moderna."
+        },
+        "understate": {
+            definition: "Presentar algo como menos importante o serio de lo que realmente es.",
+            example: "Minimizó los riesgos en su informe."
+        },
+        "mood": {
+            definition: "Un estado temporal de ánimo o sentimiento.",
+            example: "Su buen humor hizo la reunión más agradable."
+        },
+        "empathy": {
+            definition: "La capacidad de comprender y compartir los sentimientos de otro.",
+            example: "Mostrar empatía puede fortalecer las relaciones."
+        },
+        "quixotic": {
+            definition: "Extremadamente idealista; irreal e impráctico.",
+            example: "Su plan quijotesco fue admirado pero poco realista."
+        },
+        "concise": {
+            definition: "Expresado de forma breve y directa; conciso.",
+            example: "Prefirió resúmenes concisos en lugar de largas disertaciones."
+        },
+        "aversion": {
+            definition: "Un fuerte sentimiento de disgusto o rechazo.",
+            example: "Tenía aversión a las fiestas ruidosas."
+        },
+        "simplify": {
+            definition: "Hacer algo más fácil de entender o hacer.",
+            example: "Simplificaron las instrucciones para nuevos usuarios."
+        },
+        "patriot": {
+            definition: "Persona que apoya vigorosamente a su país.",
+            example: "El patriota fue honrado por su servicio a la nación."
+        },
+        "ravenous": {
+            definition: "Extremadamente hambriento o voraz.",
+            example: "Tras la caminata, estaban hambrientos y comieron de inmediato."
+        },
+        "disprove": {
+            definition: "Probar que algo es falso o incorrecto.",
+            example: "La nueva evidencia ayudó a refutar la teoría anterior."
+        },
+        "polyglot": {
+            definition: "Persona que conoce y usa varias lenguas.",
+            example: "Como políglota, tradujo documentos en diferentes idiomas."
+        },
+        "serendipitous": {
+            definition: "Que ocurre por casualidad de manera feliz o beneficiosa.",
+            example: "Su encuentro en el aeropuerto fue totalmente fortuito y afortunado."
+        },
+        "abolish": {
+            definition: "Poner fin oficialmente a un sistema, práctica o institución.",
+            example: "El gobierno buscó abolir la ley obsoleta."
+        },
+        "monologue": {
+            definition: "Un largo discurso de una sola persona en una obra o función.",
+            example: "El actor pronunció un monólogo que conmovió al público."
+        },
+        "minimum": {
+            definition: "La menor cantidad o número posible o permitido.",
+            example: "Establecieron el mínimo requerido para la admisión."
+        },
+        "proclaim": {
+            definition: "Anunciar públicamente o declarar oficialmente.",
+            example: "El alcalde proclamará la nueva política en la rueda de prensa."
+        },
+        "ephemeral": {
+            definition: "Que dura un periodo muy corto.",
+            example: "La belleza de la flor fue efímera."
+        },
+        "rhetoric": {
+            definition: "El arte del discurso persuasivo o la escritura.",
+            example: "La retórica del candidato buscaba emocionar a los votantes."
+        },
+        "dehumanize": {
+            definition: "Privar a alguien de cualidades humanas; tratar como menos que humano.",
+            example: "Advirtieron que las políticas podrían deshumanizar a grupos vulnerables."
+        },
+        "irreverent": {
+            definition: "Que muestra falta de respeto por cosas generalmente tomadas en serio.",
+            example: "Su humor irreverente ofendió a algunos miembros conservadores."
+        },
+        "repudiate": {
+            definition: "Rechazar o renegar; negar la verdad de algo.",
+            example: "Ella repudió las acusaciones y mostró pruebas en su defensa."
+        },
+        "teenager": {
+            definition: "Persona entre 13 y 19 años.",
+            example: "El adolescente trabajaba los fines de semana para ahorrar dinero."
+        },
+        "enhance": {
+            definition: "Mejorar o aumentar la calidad o valor de algo.",
+            example: "Mejoraron la iluminación para realzar la exposición."
+        },
+        "ardent": {
+            definition: "Apasionado o ferviente; mostrando sentimientos intensos.",
+            example: "Era una ardiente defensora del medio ambiente."
+        },
+        "fallacy": {
+            definition: "Una creencia errónea basada en razonamientos defectuosos.",
+            example: "El argumento se sostenía en una falacia lógica."
+        },
+        "annihilate": {
+            definition: "Destruir completamente; eliminar por completo.",
+            example: "El objetivo parecía aniquilar al pequeño contingente enemigo."
+        },
+        "astronomer": {
+            definition: "Científico que estudia los objetos celestes y el universo.",
+            example: "El astrónomo publicó un estudio sobre un exoplaneta nuevo."
+        },
+        "invincible": {
+            definition: "Demasiado fuerte para ser derrotado o superado.",
+            example: "La defensa del equipo pareció invencible durante todo el torneo."
+        },
+        "anonymity": {
+            definition: "La condición de ser anónimo; ausencia de identificación.",
+            example: "El denunciante pidió anonimato para protegerse."
+        },
+        "antonym": {
+            definition: "Una palabra que significa lo opuesto de otra.",
+            example: "'Amor' es el antónimo de 'odio'."
+        },
+        "claustrophobia": {
+            definition: "Miedo extremo a los espacios cerrados.",
+            example: "La claustrofobia hizo que el ascensor fuera intolerable para ella."
+        },
+        "canonize": {
+            definition: "Declarar oficialmente santo a alguien en ciertas tradiciones religiosas.",
+            example: "El obispo canonizó al monje tras una larga investigación."
+        },
+        "epigram": {
+            definition: "Una frase breve, ingeniosa y a menudo paradójica.",
+            example: "Comenzó la charla con un epigrama que hizo sonreír a todos."
+        },
+        "manifesto": {
+            definition: "Declaración pública de motivos o ideas (a menudo política).",
+            example: "El colectivo publicó un manifiesto explicando sus objetivos."
+        },
+        "undermine": {
+            definition: "Debilitar o socavar algo, a menudo de forma gradual o secreta.",
+            example: "Las filtraciones pretendían socavar la confianza en la administración."
+        },
+        "aesthetic": {
+            definition: "Relacionado con la belleza o la apreciación de la belleza.",
+            example: "Su estética prefería líneas simples y elegantes." 
+        },
+        "epidemic": {
+            definition: "Ocurrencia generalizada de una enfermedad infecciosa en una comunidad.",
+            example: "La respuesta sanitaria se centró en controlar la epidemia." 
+        },
+        "lucid": {
+            definition: "Expresado claramente; fácil de entender.",
+            example: "Su explicación fue lúcida y aclaró el tema complejo." 
+        },
+        "abridge": {
+            definition: "Acortar un texto preservando su contenido esencial.",
+            example: "El editor decidió abreviar el artículo para la publicación." 
+        },
+        "affable": {
+            definition: "Amable, agradable y fácil de tratar.",
+            example: "El anfitrión era afable y hizo que todos se sintieran cómodos." 
+        },
+        "minuscule": {
+            definition: "Extremadamente pequeño; minúsculo.",
+            example: "Quedó una porción minúscula del presupuesto sin gastar." 
+        },
+        "advocate": {
+            definition: "Apoyar públicamente algo; persona que defiende una causa.",
+            example: "Se convirtió en una defensora de la seguridad laboral." 
+        },
+        "ennui": {
+            definition: "Sentimiento de hastío y descontento por la falta de ocupación.",
+            example: "La rutina larga lo sumió en el aburrimiento." 
+        },
+        "placate": {
+            definition: "Calmar o aplacar a alguien, a menudo mediante concesiones.",
+            example: "Pidió disculpas para apaciguar al cliente molesto." 
+        },
+        "iconoclast": {
+            definition: "Persona que ataca creencias o instituciones arraigadas.",
+            example: "El iconoclasta desafió las tradiciones en sus escritos." 
+        },
+        "denounce": {
+            definition: "Condenar o criticar públicamente de manera severa.",
+            example: "La prensa denunció las prácticas corruptas reveladas por el informe." 
+        },
+        "vivacious": {
+            definition: "Vivaz y animado; lleno de vida.",
+            example: "Su personalidad vivaz iluminó la fiesta." 
+        },
+        "benefactor": {
+            definition: "Persona que dona dinero o ayuda a una causa u organización.",
+            example: "La nueva biblioteca fue financiada por un generoso benefactor." 
+        },
+        "pliant": {
+            definition: "Flexible o fácilmente influenciable.",
+            example: "Su actitud flexible le ayudó a adaptarse rápidamente." 
+        },
+        "chaos": {
+            definition: "Desorden y confusión completos.",
+            example: "Cuando se cortó la energía, la estación cayó en el caos." 
+        },
+        "proliferate": {
+            definition: "Multiplicarse rápidamente en número; propagarse.",
+            example: "Nuevas aplicaciones proliferan constantemente en el mercado." 
+        }
+        // Reverse Definitions (FR translations)
+        "elation": {
+            definition: "Un sentiment de grande joie et de triomphe.",
+            example: "Elle a ressenti une allégresse immense en apprenant sa promotion."
+        },
+        "articulate": {
+            definition: "Capable d'exprimer ses idées clairement et efficacement.",
+            example: "Son discours articulé a convaincu le jury."
+        },
+        "skeptic": {
+            definition: "Personne qui doute ou questionne ce qu'on lui présente.",
+            example: "Le sceptique a demandé des preuves supplémentaires avant de croire."
+        },
+        "ubiquitous": {
+            definition: "Présent, apparaissant ou trouvé partout.",
+            example: "Les smartphones sont devenus omniprésents dans la société moderne."
+        },
+        "understate": {
+            definition: "Présenter quelque chose comme moins important qu'il ne l'est réellement.",
+            example: "Il a minimisé les risques dans sa présentation."
+        },
+        "mood": {
+            definition: "État d'esprit ou sentiment temporaire.",
+            example: "Son humeur joyeuse a rendu la réunion agréable."
+        },
+        "empathy": {
+            definition: "La capacité de comprendre et de partager les sentiments d'autrui.",
+            example: "Faire preuve d'empathie renforce souvent les relations."
+        },
+        "quixotic": {
+            definition: "Extrêmement idéaliste ; irréaliste et impraticable.",
+            example: "Son plan chimérique n'a pas trouvé d'appui concret."
+        },
+        "concise": {
+            definition: "Exprimé en peu de mots ; bref et précis.",
+            example: "Le résumé concis a facilité la lecture du rapport."
+        },
+        "aversion": {
+            definition: "Un fort sentiment de dégoût ou de répulsion.",
+            example: "Elle éprouve une aversion pour les grandes foules."
+        },
+        "simplify": {
+            definition: "Rendre quelque chose plus facile à comprendre.",
+            example: "Nous avons simplifié les instructions pour les nouveaux utilisateurs."
+        },
+        "patriot": {
+            definition: "Personne qui soutient vigoureusement son pays.",
+            example: "Le patriote a défendu son pays avec fierté."
+        },
+        "ravenous": {
+            definition: "Extrêmement affamé ou vorace.",
+            example: "Après la randonnée, ils étaient affamés et ont dévoré le repas."
+        },
+        "disprove": {
+            definition: "Montrer que quelque chose est faux ou incorrect.",
+            example: "Les nouvelles preuves ont permis de réfuter l'hypothèse précédente."
+        },
+        "polyglot": {
+            definition: "Personne qui parle plusieurs langues.",
+            example: "Polyglotte, elle traduisait les conférences internationales."
+        },
+        "serendipitous": {
+            definition: "Survenant par hasard d'une manière heureuse ou bénéfique.",
+            example: "Leur rencontre fortuite a été extrêmement heureuse."
+        },
+        "abolish": {
+            definition: "Mettre officiellement fin à quelque chose.",
+            example: "Le gouvernement envisage d'abolir cette loi ancienne."
+        },
+        "monologue": {
+            definition: "Un long discours prononcé par une seule personne.",
+            example: "L'acteur a livré un monologue poignant qui a ému le public."
+        },
+        "minimum": {
+            definition: "La plus petite quantité possible ou permise.",
+            example: "Ils ont fixé le score minimum requis pour l'admission."
+        },
+        "proclaim": {
+            definition: "Annoncer publiquement ou officiellement.",
+            example: "Le maire a proclamé la nouvelle politique lors de la conférence."
+        },
+        "ephemeral": {
+            definition: "Qui dure très peu de temps.",
+            example: "La floraison était magnifique mais éphémère."
+        },
+        "rhetoric": {
+            definition: "L'art de parler ou d'écrire de manière persuasive.",
+            example: "La rhétorique du discours visait à inspirer l'auditoire."
+        },
+        "dehumanize": {
+            definition: "Priver quelqu'un de qualités humaines positives ; traiter comme moins qu'humain.",
+            example: "Les politiques risquaient de déshumaniser certains groupes vulnérables."
+        },
+        "irreverent": {
+            definition: "Manquant de respect pour des choses habituellement prises au sérieux.",
+            example: "Son humour irrévérencieux heurtait parfois les plus conservateurs."
+        },
+        "repudiate": {
+            definition: "Rejeter ou renier ; refuser d'accepter comme vrai.",
+            example: "Elle a nié les accusations et a présenté des preuves contraires."
+        },
+        "teenager": {
+            definition: "Personne âgée de 13 à 19 ans.",
+            example: "L'adolescent travaillait à temps partiel en terminant l'école."
+        },
+        "enhance": {
+            definition: "Améliorer ou augmenter quelque chose, particulièrement en qualité ou valeur.",
+            example: "Ils ont utilisé l'éclairage pour améliorer la scène."
+        },
+        "ardent": {
+            definition: "Enthousiaste ou passionné ; montrant des sentiments forts.",
+            example: "Elle était une ardente défenseure des causes environnementales."
+        },
+        "fallacy": {
+            definition: "Une croyance erronée, souvent fondée sur des raisonnements douteux.",
+            example: "L'argument reposait sur une fallacie qui en affaiblissait la validité."
+        },
+        "annihilate": {
+            definition: "Détruire complètement ; anéantir.",
+            example: "La mission visait à anéantir la force ennemie."
+        },
+        "astronomer": {
+            definition: "Scientifique qui étudie les étoiles, les planètes et l'univers.",
+            example: "L'astronome a publié un article sur une nouvelle exoplanète."
+        },
+        "invincible": {
+            definition: "Trop puissant pour être vaincu ou surmonté.",
+            example: "La défense de l'équipe semblait invincible lors du championnat."
+        },
+        "anonymity": {
+            definition: "État d'être anonyme ; absence d'identification.",
+            example: "Le lanceur d'alerte a demandé l'anonymat pour se protéger."
+        },
+        "antonym": {
+            definition: "Mot ayant le sens opposé d'un autre mot.",
+            example: "'Aimer' est l'antonyme de 'détester'."
+        },
+        "claustrophobia": {
+            definition: "Peur extrême des espaces confinés.",
+            example: "Sa claustrophobie rendait l'ascenseur insupportable."
+        },
+        "canonize": {
+            definition: "Rendre officiellement quelqu'un saint dans certaines traditions religieuses.",
+            example: "Le moine a été canonisé après des années d'examen."
+        },
+        "epigram": {
+            definition: "Court dicton spirituel et souvent paradoxal.",
+            example: "Il a ouvert son discours par un épigramme qui a donné le ton."
+        },
+        "manifesto": {
+            definition: "Déclaration publique d'intentions ou de principes (souvent politique).",
+            example: "Le groupe a publié un manifeste exposant ses objectifs."
+        },
+        "undermine": {
+            definition: "Affaiblir ou nuire à quelque chose, souvent progressivement ou secrètement.",
+            example: "Les fuites visaient à saper la crédibilité de l'administration."
+        },
+        "aesthetic": {
+            definition: "Relatif à la beauté ou à l'appréciation de la beauté.",
+            example: "L'esthétique du designer privilégie des lignes épurées." 
+        },
+        "epidemic": {
+            definition: "Apparition à grande échelle d'une maladie infectieuse dans une communauté.",
+            example: "La réponse sanitaire visait à contrôler l'apparition de l'épidémie." 
+        },
+        "lucid": {
+            definition: "Exprimé clairement ; facile à comprendre.",
+            example: "Son explication était lucide et a clarifié le sujet complexe." 
+        },
+        "abridge": {
+            definition: "Raccourcir un texte tout en préservant son contenu clef.",
+            example: "L'éditeur a abrégé l'article pour l'édition du magazine." 
+        },
+        "affable": {
+            definition: "Agréable, amical et facile à aborder.",
+            example: "L'hôte était affable et mettait tout le monde à l'aise." 
+        },
+        "minuscule": {
+            definition: "Extrêmement petit ; minuscule.",
+            example: "Une portion minuscule du budget est restée inutilisée." 
+        },
+        "advocate": {
+            definition: "Recommander ou soutenir publiquement quelque chose ; personne soutenant une cause.",
+            example: "Elle est devenue une avocate de la sécurité au travail." 
+        },
+        "ennui": {
+            definition: "Sentiment d'ennui et d'insatisfaction dû au manque d'occupation.",
+            example: "La longue routine monotone l'a plongé dans l'ennui." 
+        },
+        "placate": {
+            definition: "Apaiser ou calmer quelqu'un, souvent en faisant des concessions.",
+            example: "Il a présenté des excuses pour apaiser le client mécontent." 
+        },
+        "iconoclast": {
+            definition: "Personne qui attaque ou critique des croyances ou institutions établies.",
+            example: "L'iconoclaste a remis en question les traditions dans ses écrits." 
+        },
+        "denounce": {
+            definition: "Condamner ou critiquer publiquement de manière sévère.",
+            example: "La presse a dénoncé les pratiques corrompues révélées par le rapport." 
+        },
+        "vivacious": {
+            definition: "Vif, plein d'entrain et d'animation.",
+            example: "Sa personnalité vivante a illuminé la fête." 
+        },
+        "benefactor": {
+            definition: "Personne qui donne de l'argent ou aide une cause ou organisation.",
+            example: "La nouvelle bibliothèque universitaire a été financée par un généreux bienfaiteur." 
+        },
+        "pliant": {
+            definition: "Facilement influençable ; flexible.",
+            example: "Son attitude pliable l'a aidé à apprendre rapidement." 
+        },
+        "chaos": {
+            definition: "Désordre complet et confusion.",
+            example: "Quand l'électricité a sauté, la gare est devenue chaotique." 
+        },
+        "proliferate": {
+            definition: "Se multiplier rapidement en nombre ; se répandre.",
+            example: "De nouvelles applications continuent de proliférer sur le marché." 
+        },
+        // --- Word Incorporation Targets (FR) ---
+        "appreciation": {
+            definition: "Reconnaissance et appréciation des qualités positives de quelque chose ou quelqu'un.",
+            example: "Elle a exprimé son appréciation par une note attentionnée après l'événement."
+        },
+        "mindfulness": {
+            definition: "La pratique de la pleine conscience, être présent sans juger.",
+            example: "La pleine conscience quotidienne l'a aidé à gérer son stress."
+        },
+        "positivity": {
+            definition: "La tendance à se concentrer sur les aspects positifs et à maintenir un état d'esprit optimiste.",
+            example: "Sa positivité a remonté le moral de l'équipe pendant la période chargée."
+        },
+        "relationships": {
+            definition: "Les liens et les connexions entre deux personnes ou groupes.",
+            example: "Les relations saines reposent sur la confiance et la communication."
+        },
+        "perspective": {
+            definition: "Une attitude particulière ou un point de vue sur quelque chose.",
+            example: "Voyager lui a donné une nouvelle perspective sur la vie."
+        },
+
         "abdicate": {
             definition: "Renoncer à son trône ; manquer à un devoir.",
             example: "Le roi a décidé d'abdiquer en faveur de son fils."
@@ -898,6 +1362,248 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Un mot de sens opposé à un autre.",
             example: "'Chaud' est l'antonyme de 'froid'."
         },
+        // --- Reverse Definitions (added missing entries) ---
+        "elation": {
+            definition: "A feeling of great happiness and triumph.",
+            example: "She felt elation when she heard the news of her promotion."
+        },
+        "articulate": {
+            definition: "Able to express ideas clearly and effectively in speech or writing.",
+            example: "His articulate presentation convinced the board to approve the project."
+        },
+        "skeptic": {
+            definition: "A person inclined to question or doubt accepted opinions.",
+            example: "The skeptic demanded more evidence before accepting the claim."
+        },
+        "ubiquitous": {
+            definition: "Present, appearing, or found everywhere.",
+            example: "Smartphones have become ubiquitous in modern society."
+        },
+        "understate": {
+            definition: "To present something as smaller or less important than it actually is.",
+            example: "He tended to understate the risks when discussing the venture."
+        },
+        "mood": {
+            definition: "A temporary state of mind or feeling.",
+            example: "Her upbeat mood made the meeting more pleasant."
+        },
+        "empathy": {
+            definition: "The ability to understand and share the feelings of another.",
+            example: "Showing empathy can strengthen relationships and trust."
+        },
+        "quixotic": {
+            definition: "Extremely idealistic; unrealistic and impractical.",
+            example: "His quixotic plan to save the city won admiration but little support."
+        },
+        "concise": {
+            definition: "Expressing much in few words; brief and to the point.",
+            example: "The editor preferred concise summaries over long-winded reports."
+        },
+        "aversion": {
+            definition: "A strong dislike or disinclination towards something.",
+            example: "She had an aversion to loud parties and preferred quiet evenings."
+        },
+        "simplify": {
+            definition: "To make something easier to understand or do.",
+            example: "He tried to simplify the instructions for new users."
+        },
+        "patriot": {
+            definition: "A person who vigorously supports their country.",
+            example: "The patriot was honored for his service to the nation."
+        },
+        "ravenous": {
+            definition: "Extremely hungry or voracious.",
+            example: "After the hike, they were ravenous and ate quickly."
+        },
+        "disprove": {
+            definition: "To prove that something is false or incorrect.",
+            example: "New evidence helped disprove the earlier theory."
+        },
+        "polyglot": {
+            definition: "A person who knows and is able to use several languages.",
+            example: "As a polyglot, she translated documents across multiple languages."
+        },
+        "serendipitous": {
+            definition: "Occurring or discovered by chance in a happy or beneficial way.",
+            example: "Their meeting at the airport was completely serendipitous."
+        },
+        "abolish": {
+            definition: "To formally put an end to a system, practice, or institution.",
+            example: "The government moved to abolish the outdated law."
+        },
+        "monologue": {
+            definition: "A long speech by one person, often in a play or performance.",
+            example: "The actor delivered a powerful monologue that moved the audience."
+        },
+        "minimum": {
+            definition: "The least or smallest amount or quantity possible or permissible.",
+            example: "They set the minimum required score for admission."
+        },
+        "proclaim": {
+            definition: "To announce publicly or officially.",
+            example: "The mayor will proclaim the new policy at the press conference."
+        },
+        "ephemeral": {
+            definition: "Lasting for a very short time.",
+            example: "The beauty of the blooming flowers was ephemeral."
+        },
+        "rhetoric": {
+            definition: "The art of effective or persuasive speaking or writing.",
+            example: "The politician's rhetoric was aimed at inspiring voters."
+        },
+        "dehumanize": {
+            definition: "To deprive someone of positive human qualities; to treat as less than human.",
+            example: "They warned that the policies could dehumanize vulnerable populations."
+        },
+        "irreverent": {
+            definition: "Showing a lack of respect for people or things that are usually taken seriously.",
+            example: "His irreverent humor sometimes offended traditionalists."
+        },
+        "repudiate": {
+            definition: "To reject or disown; to refuse to accept as true.",
+            example: "She repudiated the allegations and provided evidence to the contrary."
+        },
+        "teenager": {
+            definition: "A person aged between 13 and 19 years.",
+            example: "The teenager worked part-time while finishing school."
+        },
+        "enhance": {
+            definition: "To improve or augment something, especially its quality or value.",
+            example: "They used lighting to enhance the appearance of the stage."
+        },
+        "ardent": {
+            definition: "Enthusiastic or passionate; showing strong feelings.",
+            example: "She was an ardent supporter of environmental causes."
+        },
+        "fallacy": {
+            definition: "A mistaken belief, especially one based on unsound arguments.",
+            example: "The argument rested on a logical fallacy that weakened its claim."
+        },
+        "annihilate": {
+            definition: "To destroy completely; to wipe out.",
+            example: "The army's objective was to annihilate the small enemy force."
+        },
+        "astronomer": {
+            definition: "A scientist who studies celestial objects, space, and the universe.",
+            example: "The astronomer published a paper on the newly discovered exoplanet."
+        },
+        "invincible": {
+            definition: "Too powerful to be defeated or overcome.",
+            example: "The team's defense seemed invincible during the championship."
+        },
+        "anonymity": {
+            definition: "The condition of being anonymous; lacking identification.",
+            example: "The whistleblower requested anonymity to protect their identity."
+        },
+        "antonym": {
+            definition: "A word that means the opposite of another word.",
+            example: "'Love' is an antonym of 'hate'."
+        },
+        "claustrophobia": {
+            definition: "An extreme fear of enclosed spaces.",
+            example: "Her claustrophobia made the crowded elevator unbearable."
+        },
+        "canonize": {
+            definition: "To officially declare someone a saint in certain religious traditions.",
+            example: "The council decided to canonize the revered monk after years of consideration."
+        },
+        "epigram": {
+            definition: "A brief, clever, and often paradoxical saying or remark.",
+            example: "He opened his talk with a witty epigram that set the tone for the lecture."
+        },
+        "manifesto": {
+            definition: "A public declaration of intentions, motives, or views, often political in nature.",
+            example: "The group published a manifesto outlining its goals and principles."
+        },
+        "undermine": {
+            definition: "To weaken or damage something, especially gradually or secretly.",
+            example: "The leaks aimed to undermine the administration's credibility."
+        },
+        "aesthetic": {
+            definition: "Concerned with beauty or the appreciation of beauty.",
+            example: "The designer's aesthetic favored simple, clean lines." 
+        },
+        "epidemic": {
+            definition: "A widespread occurrence of an infectious disease in a community at a particular time.",
+            example: "The public health response focused on controlling the epidemic outbreak." 
+        },
+        "lucid": {
+            definition: "Expressed clearly; easy to understand.",
+            example: "Her explanation was lucid and clarified the complex issue." 
+        },
+        "abridge": {
+            definition: "To shorten a text while preserving its key content.",
+            example: "The editor chose to abridge the long article for the magazine edition." 
+        },
+        "affable": {
+            definition: "Friendly, pleasant, and easy to talk to.",
+            example: "The host was affable and made every guest feel welcome." 
+        },
+        "minuscule": {
+            definition: "Extremely small; tiny.",
+            example: "Only a minuscule portion of the budget was left unspent." 
+        },
+        "advocate": {
+            definition: "To publicly recommend or support something; a person who supports a cause.",
+            example: "She became an advocate for better workplace safety." 
+        },
+        "ennui": {
+            definition: "A feeling of listlessness and dissatisfaction from lack of occupation or excitement.",
+            example: "The long, unchanging routine led him into a state of ennui." 
+        },
+        "placate": {
+            definition: "To calm or soothe someone, often by making concessions.",
+            example: "He offered an apology to placate the upset customer." 
+        },
+        "iconoclast": {
+            definition: "A person who attacks or criticizes cherished beliefs or institutions.",
+            example: "The iconoclast challenged long-held traditions in his writings." 
+        },
+        "denounce": {
+            definition: "To publicly condemn or criticize severely.",
+            example: "The press denounced the corrupt practices exposed by the report." 
+        },
+        "vivacious": {
+            definition: "Attractively lively and animated.",
+            example: "Her vivacious personality lit up the room at the party." 
+        },
+        "benefactor": {
+            definition: "A person who gives money or other help to a cause or organization.",
+            example: "The university's new library was funded by a generous benefactor." 
+        },
+        "pliant": {
+            definition: "Easily influenced or persuaded; flexible.",
+            example: "The trainee's pliant attitude made him quick to learn new methods." 
+        },
+        "chaos": {
+            definition: "Complete disorder and confusion.",
+            example: "When the power went out, the station descended into chaos." 
+        },
+        "proliferate": {
+            definition: "To increase rapidly in number; to spread.",
+            example: "New apps continue to proliferate across the marketplace." 
+        },
+        // --- Word Incorporation Targets ---
+        "appreciation": {
+            definition: "Recognition and enjoyment of the good qualities of someone or something.",
+            example: "She showed her appreciation with a thoughtful note after the event."
+        },
+        "mindfulness": {
+            definition: "The practice of being consciously aware of the present moment without judgment.",
+            example: "Daily mindfulness practice helped him manage stress effectively."
+        },
+        "positivity": {
+            definition: "The practice of focusing on the good and maintaining an optimistic outlook.",
+            example: "Her positivity lifted the team's morale during the busy season."
+        },
+        "relationships": {
+            definition: "The ways in which two or more people or groups are connected.",
+            example: "Healthy relationships are built on trust and communication."
+        },
+        "perspective": {
+            definition: "A particular attitude or way of viewing something; a point of view.",
+            example: "Traveling gave her a fresh perspective on life."
+        }
         "canonize": {
             definition: "Déclarer officiellement une personne décédée comme sainte.",
             example: "L'église a décidé de canoniser la religieuse pour son service de toute une vie."
@@ -921,6 +1627,27 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
         "proliferate": {
             definition: "Augmenter rapidement en nombre ; multiplier.",
             example: "Les applications pour smartphones continuent de proliférer à un rythme incroyable."
+        },
+        // --- Word Incorporation Targets (ES) ---
+        "appreciation": {
+            definition: "Reconocimiento y aprecio por las cualidades positivas de algo o alguien.",
+            example: "Ella expresó su apreciación con una nota considerada después del evento."
+        },
+        "mindfulness": {
+            definition: "La práctica de la atención plena, estar presente sin juzgar.",
+            example: "La atención plena diaria le ayudó a manejar su estrés."
+        },
+        "positivity": {
+            definition: "La tendencia a centrarse en los aspectos positivos y mantener una actitud optimista.",
+            example: "Su positividad levantó la moral del equipo durante el período ocupado."
+        },
+        "relationships": {
+            definition: "Los lazos y conexiones entre dos personas o grupos.",
+            example: "Las relaciones saludables se basan en la confianza y la comunicación."
+        },
+        "perspective": {
+            definition: "Una actitud particular o punto de vista sobre algo.",
+            example: "Viajar le dio una nueva perspectiva sobre la vida."
         }
     },
     es: {

@@ -8,7 +8,8 @@ import {
   Home,
   Trophy,
   Settings,
-  Sparkles
+  Sparkles,
+  Library
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/hooks/useAuth";
@@ -78,6 +79,20 @@ export function Sidebar() {
         >
           <Home className="h-5 w-5 shrink-0" />
           {!isCollapsed && <span>Home</span>}
+        </Link>
+
+        {/* Library Link */}
+        <Link
+          to="/library"
+          className={cn(
+            "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all duration-200",
+            location.pathname.startsWith("/library")
+              ? "bg-sidebar-accent text-sidebar-accent-foreground"
+              : "text-sidebar-foreground hover:bg-sidebar-accent/50"
+          )}
+        >
+          <Library className="h-5 w-5 shrink-0" />
+          {!isCollapsed && <span>Library</span>}
         </Link>
 
         {/* Divider */}

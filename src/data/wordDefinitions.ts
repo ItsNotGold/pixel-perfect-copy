@@ -9,268 +9,268 @@ export interface WordDefinition {
 export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = {
     en: {
         "abatido": {
-            definition: "A short definition of 'abatido' in English.",
-            example: "This sentence uses the word 'abatido' in a natural way."
+            definition: "Abatido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'abatido' when discussing everyday topics."
         },
         "abattu": {
-            definition: "A short definition of 'abattu' in English.",
-            example: "This sentence uses the word 'abattu' in a natural way."
+            definition: "Abattu: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'abattu' when discussing everyday topics."
         },
         "abdicate": {
             definition: "Renounce one's throne; fail to fulfill a duty.",
             example: "The king decided to abdicate in favor of his son."
         },
         "abolish": {
-            definition: "A short definition of 'abolish' in English.",
-            example: "This sentence uses the word 'abolish' in a natural way."
+            definition: "To abolish.",
+            example: "The new law will abolish outdated regulations that slowed business growth."
         },
         "abominable": {
-            definition: "A short definition of 'abominable' in English.",
-            example: "This sentence uses the word 'abominable' in a natural way."
+            definition: "Capable of being abomin.",
+            example: "The conditions in the abandoned building were abominable."
         },
         "abordable": {
-            definition: "A short definition of 'abordable' in English.",
-            example: "This sentence uses the word 'abordable' in a natural way."
+            definition: "Capable of being abord.",
+            example: "People often used the word 'abordable' when discussing everyday topics."
         },
         "abrasador": {
-            definition: "A short definition of 'abrasador' in English.",
-            example: "This sentence uses the word 'abrasador' in a natural way."
+            definition: "Abrasador: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'abrasador' when discussing everyday topics."
         },
         "abridge": {
-            definition: "A short definition of 'abridge' in English.",
-            example: "This sentence uses the word 'abridge' in a natural way."
+            definition: "Abridge: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'abridge' when discussing everyday topics."
         },
         "abrupt": {
-            definition: "A short definition of 'abrupt' in English.",
-            example: "This sentence uses the word 'abrupt' in a natural way."
+            definition: "Sudden and unexpected.",
+            example: "People often used the word 'abrupt' when discussing everyday topics."
         },
         "absorbente": {
-            definition: "A short definition of 'absorbente' in English.",
-            example: "This sentence uses the word 'absorbente' in a natural way."
+            definition: "Absorbente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'absorbente' when discussing everyday topics."
         },
         "absorbing": {
-            definition: "A short definition of 'absorbing' in English.",
-            example: "This sentence uses the word 'absorbing' in a natural way."
+            definition: "Being or performing the action of absorbing or causing that action to happen.",
+            example: "People often used the word 'absorbing' when discussing everyday topics."
         },
         "abundant": {
-            definition: "A short definition of 'abundant' in English.",
-            example: "This sentence uses the word 'abundant' in a natural way."
+            definition: "Existing in large quantities; plentiful.",
+            example: "After the rains, the fields were abundant with wildflowers."
         },
         "abysmal": {
-            definition: "A short definition of 'abysmal' in English.",
-            example: "This sentence uses the word 'abysmal' in a natural way."
+            definition: "Abysmal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'abysmal' when discussing everyday topics."
         },
         "accablé": {
-            definition: "A short definition of 'accablé' in English.",
-            example: "This sentence uses the word 'accablé' in a natural way."
+            definition: "Accablé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'accablé' when discussing everyday topics."
         },
         "accelerated": {
-            definition: "A short definition of 'accelerated' in English.",
-            example: "This sentence uses the word 'accelerated' in a natural way."
+            definition: "Accelerated: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'accelerated' when discussing everyday topics."
         },
         "accesible": {
-            definition: "A short definition of 'accesible' in English.",
-            example: "This sentence uses the word 'accesible' in a natural way."
+            definition: "Accesible: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'accesible' when discussing everyday topics."
         },
         "accessible": {
-            definition: "A short definition of 'accessible' in English.",
-            example: "This sentence uses the word 'accessible' in a natural way."
+            definition: "Accessible: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'accessible' when discussing everyday topics."
         },
         "acción": {
-            definition: "A short definition of 'acción' in English.",
-            example: "This sentence uses the word 'acción' in a natural way."
+            definition: "Acción: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'acción' when discussing everyday topics."
         },
         "accommodation": {
-            definition: "A short definition of 'accommodation' in English.",
-            example: "This sentence uses the word 'accommodation' in a natural way."
+            definition: "The act or process of accommodaing.",
+            example: "People often used the word 'accommodation' when discussing everyday topics."
         },
         "acelerado": {
-            definition: "A short definition of 'acelerado' in English.",
-            example: "This sentence uses the word 'acelerado' in a natural way."
+            definition: "Acelerado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'acelerado' when discussing everyday topics."
         },
         "achicharrante": {
-            definition: "A short definition of 'achicharrante' in English.",
-            example: "This sentence uses the word 'achicharrante' in a natural way."
+            definition: "Achicharrante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'achicharrante' when discussing everyday topics."
         },
         "achievement": {
-            definition: "A short definition of 'achievement' in English.",
-            example: "This sentence uses the word 'achievement' in a natural way."
+            definition: "Achievement: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'achievement' when discussing everyday topics."
         },
         "acongojado": {
-            definition: "A short definition of 'acongojado' in English.",
-            example: "This sentence uses the word 'acongojado' in a natural way."
+            definition: "Acongojado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'acongojado' when discussing everyday topics."
         },
         "acrid": {
-            definition: "A short definition of 'acrid' in English.",
-            example: "This sentence uses the word 'acrid' in a natural way."
+            definition: "Acrid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'acrid' when discussing everyday topics."
         },
         "action": {
-            definition: "A short definition of 'action' in English.",
-            example: "This sentence uses the word 'action' in a natural way."
+            definition: "The act or process of acing.",
+            example: "People often used the word 'action' when discussing everyday topics."
         },
         "active": {
-            definition: "A short definition of 'active' in English.",
-            example: "This sentence uses the word 'active' in a natural way."
+            definition: "Having the quality of being act.",
+            example: "People often used the word 'active' when discussing everyday topics."
         },
         "actual": {
-            definition: "A short definition of 'actual' in English.",
-            example: "This sentence uses the word 'actual' in a natural way."
+            definition: "Actual: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'actual' when discussing everyday topics."
         },
         "actuel": {
-            definition: "A short definition of 'actuel' in English.",
-            example: "This sentence uses the word 'actuel' in a natural way."
+            definition: "Actuel: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'actuel' when discussing everyday topics."
         },
         "adamantine": {
-            definition: "A short definition of 'adamantine' in English.",
-            example: "This sentence uses the word 'adamantine' in a natural way."
+            definition: "Adamantine: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'adamantine' when discussing everyday topics."
         },
         "adaptación": {
-            definition: "A short definition of 'adaptación' in English.",
-            example: "This sentence uses the word 'adaptación' in a natural way."
+            definition: "Adaptación: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'adaptación' when discussing everyday topics."
         },
         "adaptation": {
-            definition: "A short definition of 'adaptation' in English.",
-            example: "This sentence uses the word 'adaptation' in a natural way."
+            definition: "The act or process of adaptaing.",
+            example: "People often used the word 'adaptation' when discussing everyday topics."
         },
         "adept": {
             definition: "Very skilled or proficient at something.",
             example: "She is an adept programmer who can solve complex problems quickly."
         },
         "adjustment": {
-            definition: "A short definition of 'adjustment' in English.",
-            example: "This sentence uses the word 'adjustment' in a natural way."
+            definition: "Adjustment: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'adjustment' when discussing everyday topics."
         },
         "adopción": {
-            definition: "A short definition of 'adopción' in English.",
-            example: "This sentence uses the word 'adopción' in a natural way."
+            definition: "Adopción: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'adopción' when discussing everyday topics."
         },
         "adoption": {
-            definition: "A short definition of 'adoption' in English.",
-            example: "This sentence uses the word 'adoption' in a natural way."
+            definition: "The act or process of adoping.",
+            example: "People often used the word 'adoption' when discussing everyday topics."
         },
         "advantageous": {
-            definition: "A short definition of 'advantageous' in English.",
-            example: "This sentence uses the word 'advantageous' in a natural way."
+            definition: "Having the quality of being advantag.",
+            example: "People often used the word 'advantageous' when discussing everyday topics."
         },
         "adventure": {
-            definition: "A short definition of 'adventure' in English.",
-            example: "This sentence uses the word 'adventure' in a natural way."
+            definition: "Adventure: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'adventure' when discussing everyday topics."
         },
         "advocate": {
-            definition: "A short definition of 'advocate' in English.",
-            example: "This sentence uses the word 'advocate' in a natural way."
+            definition: "To advocate.",
+            example: "People often used the word 'advocate' when discussing everyday topics."
         },
         "aesthetic": {
             definition: "Concerned with beauty or the appreciation of beauty.",
             example: "The new cafe has a very modern and clean aesthetic."
         },
         "affable": {
-            definition: "A short definition of 'affable' in English.",
-            example: "This sentence uses the word 'affable' in a natural way."
+            definition: "Capable of being aff.",
+            example: "People often used the word 'affable' when discussing everyday topics."
         },
         "affluent": {
-            definition: "A short definition of 'affluent' in English.",
-            example: "This sentence uses the word 'affluent' in a natural way."
+            definition: "Having a lot of money; wealthy.",
+            example: "People often used the word 'affluent' when discussing everyday topics."
         },
         "affordable": {
-            definition: "A short definition of 'affordable' in English.",
-            example: "This sentence uses the word 'affordable' in a natural way."
+            definition: "Capable of being afford.",
+            example: "People often used the word 'affordable' when discussing everyday topics."
         },
         "affreux": {
-            definition: "A short definition of 'affreux' in English.",
-            example: "This sentence uses the word 'affreux' in a natural way."
+            definition: "Affreux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'affreux' when discussing everyday topics."
         },
         "afligido": {
-            definition: "A short definition of 'afligido' in English.",
-            example: "This sentence uses the word 'afligido' in a natural way."
+            definition: "Afligido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'afligido' when discussing everyday topics."
         },
         "agacé": {
-            definition: "A short definition of 'agacé' in English.",
-            example: "This sentence uses the word 'agacé' in a natural way."
+            definition: "Agacé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'agacé' when discussing everyday topics."
         },
         "age-old": {
-            definition: "A short definition of 'age-old' in English.",
-            example: "This sentence uses the word 'age-old' in a natural way."
+            definition: "Age-old: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'age-old' when discussing everyday topics."
         },
         "aged": {
-            definition: "A short definition of 'aged' in English.",
-            example: "This sentence uses the word 'aged' in a natural way."
+            definition: "Aged: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'aged' when discussing everyday topics."
         },
         "agile": {
-            definition: "A short definition of 'agile' in English.",
-            example: "This sentence uses the word 'agile' in a natural way."
+            definition: "Able to move quickly and easily.",
+            example: "People often used the word 'agile' when discussing everyday topics."
         },
         "agréable": {
-            definition: "A short definition of 'agréable' in English.",
-            example: "This sentence uses the word 'agréable' in a natural way."
+            definition: "Capable of being agré.",
+            example: "People often used the word 'agréable' when discussing everyday topics."
         },
         "agudo": {
-            definition: "A short definition of 'agudo' in English.",
-            example: "This sentence uses the word 'agudo' in a natural way."
+            definition: "Agudo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'agudo' when discussing everyday topics."
         },
         "ahorro": {
-            definition: "A short definition of 'ahorro' in English.",
-            example: "This sentence uses the word 'ahorro' in a natural way."
+            definition: "Ahorro: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ahorro' when discussing everyday topics."
         },
         "airado": {
-            definition: "A short definition of 'airado' in English.",
-            example: "This sentence uses the word 'airado' in a natural way."
+            definition: "Airado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'airado' when discussing everyday topics."
         },
         "aisé": {
-            definition: "A short definition of 'aisé' in English.",
-            example: "This sentence uses the word 'aisé' in a natural way."
+            definition: "Aisé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'aisé' when discussing everyday topics."
         },
         "ajuste": {
-            definition: "A short definition of 'ajuste' in English.",
-            example: "This sentence uses the word 'ajuste' in a natural way."
+            definition: "Ajuste: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ajuste' when discussing everyday topics."
         },
         "alcance": {
-            definition: "A short definition of 'alcance' in English.",
-            example: "This sentence uses the word 'alcance' in a natural way."
+            definition: "Alcance: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'alcance' when discussing everyday topics."
         },
         "alegre": {
-            definition: "A short definition of 'alegre' in English.",
-            example: "This sentence uses the word 'alegre' in a natural way."
+            definition: "Alegre: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'alegre' when discussing everyday topics."
         },
         "almuerzo": {
-            definition: "A short definition of 'almuerzo' in English.",
-            example: "This sentence uses the word 'almuerzo' in a natural way."
+            definition: "Almuerzo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'almuerzo' when discussing everyday topics."
         },
         "alojamiento": {
-            definition: "A short definition of 'alojamiento' in English.",
-            example: "This sentence uses the word 'alojamiento' in a natural way."
+            definition: "Alojamiento: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'alojamiento' when discussing everyday topics."
         },
         "altruistic": {
             definition: "Showing a disinterested and selfless concern for others.",
             example: "Her altruistic acts helped many people in the local community."
         },
         "ambición": {
-            definition: "A short definition of 'ambición' in English.",
-            example: "This sentence uses the word 'ambición' in a natural way."
+            definition: "Ambición: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ambición' when discussing everyday topics."
         },
         "ambience": {
-            definition: "A short definition of 'ambience' in English.",
-            example: "This sentence uses the word 'ambience' in a natural way."
+            definition: "Ambience: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ambience' when discussing everyday topics."
         },
         "ambiente": {
-            definition: "A short definition of 'ambiente' in English.",
-            example: "This sentence uses the word 'ambiente' in a natural way."
+            definition: "Ambiente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ambiente' when discussing everyday topics."
         },
         "ambition": {
-            definition: "A short definition of 'ambition' in English.",
-            example: "This sentence uses the word 'ambition' in a natural way."
+            definition: "The act or process of ambiing.",
+            example: "People often used the word 'ambition' when discussing everyday topics."
         },
         "amiable": {
-            definition: "A short definition of 'amiable' in English.",
-            example: "This sentence uses the word 'amiable' in a natural way."
+            definition: "Capable of being ami.",
+            example: "People often used the word 'amiable' when discussing everyday topics."
         },
         "amicable": {
-            definition: "A short definition of 'amicable' in English.",
-            example: "This sentence uses the word 'amicable' in a natural way."
+            definition: "Capable of being amic.",
+            example: "People often used the word 'amicable' when discussing everyday topics."
         },
         "amusing": {
-            definition: "A short definition of 'amusing' in English.",
-            example: "This sentence uses the word 'amusing' in a natural way."
+            definition: "Being or performing the action of amusing or causing that action to happen.",
+            example: "People often used the word 'amusing' when discussing everyday topics."
         },
         "anachronistic": {
             definition: "Belonging or appropriate to a period other than that in which it exists.",
@@ -281,160 +281,160 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They visited their ancestral home in the countryside."
         },
         "anciano": {
-            definition: "A short definition of 'anciano' in English.",
-            example: "This sentence uses the word 'anciano' in a natural way."
+            definition: "Anciano: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'anciano' when discussing everyday topics."
         },
         "ancien": {
-            definition: "A short definition of 'ancien' in English.",
-            example: "This sentence uses the word 'ancien' in a natural way."
+            definition: "Ancien: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ancien' when discussing everyday topics."
         },
         "ancient": {
-            definition: "A short definition of 'ancient' in English.",
-            example: "This sentence uses the word 'ancient' in a natural way."
+            definition: "Very old; belonging to a distant past.",
+            example: "They explored an ancient ruin hidden in the forest."
         },
         "angelic": {
             definition: "Relating to angels; exceptionally beautiful or kind.",
             example: "The child had an angelic face that melted everyone's hearts."
         },
         "angoissant": {
-            definition: "A short definition of 'angoissant' in English.",
-            example: "This sentence uses the word 'angoissant' in a natural way."
+            definition: "Angoissant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'angoissant' when discussing everyday topics."
         },
         "angry": {
-            definition: "A short definition of 'angry' in English.",
-            example: "This sentence uses the word 'angry' in a natural way."
+            definition: "Feeling or showing strong displeasure or hostility.",
+            example: "People often used the word 'angry' when discussing everyday topics."
         },
         "annihilate": {
-            definition: "A short definition of 'annihilate' in English.",
-            example: "This sentence uses the word 'annihilate' in a natural way."
+            definition: "To annihilate.",
+            example: "The army vowed to annihilate the enemy's supply line."
         },
         "annoyed": {
-            definition: "A short definition of 'annoyed' in English.",
-            example: "This sentence uses the word 'annoyed' in a natural way."
+            definition: "Annoyed: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'annoyed' when discussing everyday topics."
         },
         "anonymity": {
             definition: "The condition of being anonymous; unknown name.",
             example: "The whistleblower requested total anonymity for their protection."
         },
         "antediluvian": {
-            definition: "A short definition of 'antediluvian' in English.",
-            example: "This sentence uses the word 'antediluvian' in a natural way."
+            definition: "Antediluvian: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'antediluvian' when discussing everyday topics."
         },
         "antediluviano": {
-            definition: "A short definition of 'antediluviano' in English.",
-            example: "This sentence uses the word 'antediluviano' in a natural way."
+            definition: "Antediluviano: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'antediluviano' when discussing everyday topics."
         },
         "antiguo": {
-            definition: "A short definition of 'antiguo' in English.",
-            example: "This sentence uses the word 'antiguo' in a natural way."
+            definition: "Antiguo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'antiguo' when discussing everyday topics."
         },
         "antiquarian": {
-            definition: "A short definition of 'antiquarian' in English.",
-            example: "This sentence uses the word 'antiquarian' in a natural way."
+            definition: "Antiquarian: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'antiquarian' when discussing everyday topics."
         },
         "antiquated": {
-            definition: "A short definition of 'antiquated' in English.",
-            example: "This sentence uses the word 'antiquated' in a natural way."
+            definition: "Antiquated: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'antiquated' when discussing everyday topics."
         },
         "antique": {
-            definition: "A short definition of 'antique' in English.",
-            example: "This sentence uses the word 'antique' in a natural way."
+            definition: "Antique: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'antique' when discussing everyday topics."
         },
         "antonym": {
             definition: "A word opposite in meaning to another.",
             example: "'Hot' is the antonym of 'cold'."
         },
         "apasionado": {
-            definition: "A short definition of 'apasionado' in English.",
-            example: "This sentence uses the word 'apasionado' in a natural way."
+            definition: "Apasionado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'apasionado' when discussing everyday topics."
         },
         "apasionante": {
-            definition: "A short definition of 'apasionante' in English.",
-            example: "This sentence uses the word 'apasionante' in a natural way."
+            definition: "Apasionante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'apasionante' when discussing everyday topics."
         },
         "apesadumbrado": {
-            definition: "A short definition of 'apesadumbrado' in English.",
-            example: "This sentence uses the word 'apesadumbrado' in a natural way."
+            definition: "Apesadumbrado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'apesadumbrado' when discussing everyday topics."
         },
         "apollonian": {
-            definition: "A short definition of 'apollonian' in English.",
-            example: "This sentence uses the word 'apollonian' in a natural way."
+            definition: "Apollonian: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'apollonian' when discussing everyday topics."
         },
         "apoplectic": {
-            definition: "A short definition of 'apoplectic' in English.",
-            example: "This sentence uses the word 'apoplectic' in a natural way."
+            definition: "Apoplectic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'apoplectic' when discussing everyday topics."
         },
         "apoyo": {
-            definition: "A short definition of 'apoyo' in English.",
-            example: "This sentence uses the word 'apoyo' in a natural way."
+            definition: "Apoyo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'apoyo' when discussing everyday topics."
         },
         "apparent": {
-            definition: "A short definition of 'apparent' in English.",
-            example: "This sentence uses the word 'apparent' in a natural way."
+            definition: "Apparent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'apparent' when discussing everyday topics."
         },
         "appreciation": {
-            definition: "A short definition of 'appreciation' in English.",
-            example: "This sentence uses the word 'appreciation' in a natural way."
+            definition: "The act or process of appreciaing.",
+            example: "People often used the word 'appreciation' when discussing everyday topics."
         },
         "approachable": {
-            definition: "A short definition of 'approachable' in English.",
-            example: "This sentence uses the word 'approachable' in a natural way."
+            definition: "Capable of being approach.",
+            example: "People often used the word 'approachable' when discussing everyday topics."
         },
         "aprendizaje": {
-            definition: "A short definition of 'aprendizaje' in English.",
-            example: "This sentence uses the word 'aprendizaje' in a natural way."
+            definition: "Aprendizaje: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'aprendizaje' when discussing everyday topics."
         },
         "arcaico": {
-            definition: "A short definition of 'arcaico' in English.",
-            example: "This sentence uses the word 'arcaico' in a natural way."
+            definition: "Arcaico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'arcaico' when discussing everyday topics."
         },
         "arcane": {
             definition: "Understood by few; mysterious or secret.",
             example: "He spent years studying arcane rituals from ancient texts."
         },
         "archaic": {
-            definition: "A short definition of 'archaic' in English.",
-            example: "This sentence uses the word 'archaic' in a natural way."
+            definition: "Archaic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'archaic' when discussing everyday topics."
         },
         "archaïque": {
-            definition: "A short definition of 'archaïque' in English.",
-            example: "This sentence uses the word 'archaïque' in a natural way."
+            definition: "Archaïque: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'archaïque' when discussing everyday topics."
         },
         "arctic": {
-            definition: "A short definition of 'arctic' in English.",
-            example: "This sentence uses the word 'arctic' in a natural way."
+            definition: "Arctic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'arctic' when discussing everyday topics."
         },
         "ardent": {
-            definition: "A short definition of 'ardent' in English.",
-            example: "This sentence uses the word 'ardent' in a natural way."
+            definition: "Very enthusiastic or passionate.",
+            example: "People often used the word 'ardent' when discussing everyday topics."
         },
         "ardiente": {
-            definition: "A short definition of 'ardiente' in English.",
-            example: "This sentence uses the word 'ardiente' in a natural way."
+            definition: "Ardiente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ardiente' when discussing everyday topics."
         },
         "ardu": {
-            definition: "A short definition of 'ardu' in English.",
-            example: "This sentence uses the word 'ardu' in a natural way."
+            definition: "Ardu: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ardu' when discussing everyday topics."
         },
         "arduo": {
-            definition: "A short definition of 'arduo' in English.",
-            example: "This sentence uses the word 'arduo' in a natural way."
+            definition: "Arduo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'arduo' when discussing everyday topics."
         },
         "arduous": {
-            definition: "A short definition of 'arduous' in English.",
-            example: "This sentence uses the word 'arduous' in a natural way."
+            definition: "Having the quality of being ard.",
+            example: "People often used the word 'arduous' when discussing everyday topics."
         },
         "aromatic": {
-            definition: "A short definition of 'aromatic' in English.",
-            example: "This sentence uses the word 'aromatic' in a natural way."
+            definition: "Having a pleasant and distinctive smell.",
+            example: "People often used the word 'aromatic' when discussing everyday topics."
         },
         "arrebatador": {
-            definition: "A short definition of 'arrebatador' in English.",
-            example: "This sentence uses the word 'arrebatador' in a natural way."
+            definition: "Arrebatador: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'arrebatador' when discussing everyday topics."
         },
         "articulate": {
-            definition: "A short definition of 'articulate' in English.",
-            example: "This sentence uses the word 'articulate' in a natural way."
+            definition: "Able to express ideas clearly and effectively in speech or writing.",
+            example: "People often used the word 'articulate' when discussing everyday topics."
         },
         "artificial": {
             definition: "Made or produced by human beings rather than occurring naturally.",
@@ -445,1412 +445,1412 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The surgery was performed in a strictly aseptic environment."
         },
         "asequible": {
-            definition: "A short definition of 'asequible' in English.",
-            example: "This sentence uses the word 'asequible' in a natural way."
+            definition: "Asequible: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'asequible' when discussing everyday topics."
         },
         "asistencia": {
-            definition: "A short definition of 'asistencia' in English.",
-            example: "This sentence uses the word 'asistencia' in a natural way."
+            definition: "Asistencia: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'asistencia' when discussing everyday topics."
         },
         "astronomer": {
-            definition: "A short definition of 'astronomer' in English.",
-            example: "This sentence uses the word 'astronomer' in a natural way."
+            definition: "A person or thing that astronomer or performs the action astronom.",
+            example: "The astronomer spent hours studying distant galaxies through the telescope."
         },
         "astucieux": {
-            definition: "A short definition of 'astucieux' in English.",
-            example: "This sentence uses the word 'astucieux' in a natural way."
+            definition: "Astucieux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'astucieux' when discussing everyday topics."
         },
         "astute": {
-            definition: "A short definition of 'astute' in English.",
-            example: "This sentence uses the word 'astute' in a natural way."
+            definition: "Astute: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'astute' when discussing everyday topics."
         },
         "astuto": {
-            definition: "A short definition of 'astuto' in English.",
-            example: "This sentence uses the word 'astuto' in a natural way."
+            definition: "Astuto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'astuto' when discussing everyday topics."
         },
         "aterido": {
-            definition: "A short definition of 'aterido' in English.",
-            example: "This sentence uses the word 'aterido' in a natural way."
+            definition: "Aterido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'aterido' when discussing everyday topics."
         },
         "aterrador": {
-            definition: "A short definition of 'aterrador' in English.",
-            example: "This sentence uses the word 'aterrador' in a natural way."
+            definition: "Aterrador: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'aterrador' when discussing everyday topics."
         },
         "athlétique": {
-            definition: "A short definition of 'athlétique' in English.",
-            example: "This sentence uses the word 'athlétique' in a natural way."
+            definition: "Athlétique: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'athlétique' when discussing everyday topics."
         },
         "atractivo": {
-            definition: "A short definition of 'atractivo' in English.",
-            example: "This sentence uses the word 'atractivo' in a natural way."
+            definition: "Atractivo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'atractivo' when discussing everyday topics."
         },
         "atroce": {
-            definition: "A short definition of 'atroce' in English.",
-            example: "This sentence uses the word 'atroce' in a natural way."
+            definition: "Atroce: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'atroce' when discussing everyday topics."
         },
         "atrocious": {
-            definition: "A short definition of 'atrocious' in English.",
-            example: "This sentence uses the word 'atrocious' in a natural way."
+            definition: "Having the quality of being atroc.",
+            example: "People often used the word 'atrocious' when discussing everyday topics."
         },
         "attendance": {
-            definition: "A short definition of 'attendance' in English.",
-            example: "This sentence uses the word 'attendance' in a natural way."
+            definition: "Attendance: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'attendance' when discussing everyday topics."
         },
         "attenuated": {
-            definition: "A short definition of 'attenuated' in English.",
-            example: "This sentence uses the word 'attenuated' in a natural way."
+            definition: "Attenuated: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'attenuated' when discussing everyday topics."
         },
         "attractive": {
-            definition: "A short definition of 'attractive' in English.",
-            example: "This sentence uses the word 'attractive' in a natural way."
+            definition: "Having the quality of being attract.",
+            example: "People often used the word 'attractive' when discussing everyday topics."
         },
         "attrayant": {
-            definition: "A short definition of 'attrayant' in English.",
-            example: "This sentence uses the word 'attrayant' in a natural way."
+            definition: "Attrayant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'attrayant' when discussing everyday topics."
         },
         "audacieux": {
-            definition: "A short definition of 'audacieux' in English.",
-            example: "This sentence uses the word 'audacieux' in a natural way."
+            definition: "Audacieux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'audacieux' when discussing everyday topics."
         },
         "audacious": {
-            definition: "A short definition of 'audacious' in English.",
-            example: "This sentence uses the word 'audacious' in a natural way."
+            definition: "Having the quality of being audac.",
+            example: "People often used the word 'audacious' when discussing everyday topics."
         },
         "audaz": {
-            definition: "A short definition of 'audaz' in English.",
-            example: "This sentence uses the word 'audaz' in a natural way."
+            definition: "Audaz: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'audaz' when discussing everyday topics."
         },
         "auspicious": {
-            definition: "A short definition of 'auspicious' in English.",
-            example: "This sentence uses the word 'auspicious' in a natural way."
+            definition: "Having the quality of being auspic.",
+            example: "People often used the word 'auspicious' when discussing everyday topics."
         },
         "austere": {
             definition: "Severe or strict in manner, attitude, or appearance.",
             example: "The monastery had an austere dining hall with simple benches."
         },
         "autocuidado": {
-            definition: "A short definition of 'autocuidado' in English.",
-            example: "This sentence uses the word 'autocuidado' in a natural way."
+            definition: "Autocuidado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'autocuidado' when discussing everyday topics."
         },
         "autonomous": {
-            definition: "A short definition of 'autonomous' in English.",
-            example: "This sentence uses the word 'autonomous' in a natural way."
+            definition: "Having the quality of being autonom.",
+            example: "People often used the word 'autonomous' when discussing everyday topics."
         },
         "avant-gardiste": {
-            definition: "A short definition of 'avant-gardiste' in English.",
-            example: "This sentence uses the word 'avant-gardiste' in a natural way."
+            definition: "Avant-gardiste: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'avant-gardiste' when discussing everyday topics."
         },
         "avenir": {
-            definition: "A short definition of 'avenir' in English.",
-            example: "This sentence uses the word 'avenir' in a natural way."
+            definition: "Avenir: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'avenir' when discussing everyday topics."
         },
         "aventura": {
-            definition: "A short definition of 'aventura' in English.",
-            example: "This sentence uses the word 'aventura' in a natural way."
+            definition: "Aventura: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'aventura' when discussing everyday topics."
         },
         "aventure": {
-            definition: "A short definition of 'aventure' in English.",
-            example: "This sentence uses the word 'aventure' in a natural way."
+            definition: "Aventure: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'aventure' when discussing everyday topics."
         },
         "aversion": {
-            definition: "A short definition of 'aversion' in English.",
-            example: "This sentence uses the word 'aversion' in a natural way."
+            definition: "The act or process of avering.",
+            example: "People often used the word 'aversion' when discussing everyday topics."
         },
         "avide": {
-            definition: "A short definition of 'avide' in English.",
-            example: "This sentence uses the word 'avide' in a natural way."
+            definition: "Avide: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'avide' when discussing everyday topics."
         },
         "avisé": {
-            definition: "A short definition of 'avisé' in English.",
-            example: "This sentence uses the word 'avisé' in a natural way."
+            definition: "Avisé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'avisé' when discussing everyday topics."
         },
         "awareness": {
-            definition: "A short definition of 'awareness' in English.",
-            example: "This sentence uses the word 'awareness' in a natural way."
+            definition: "Awareness: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'awareness' when discussing everyday topics."
         },
         "awful": {
-            definition: "A short definition of 'awful' in English.",
-            example: "This sentence uses the word 'awful' in a natural way."
+            definition: "Having the quality of being aw.",
+            example: "People often used the word 'awful' when discussing everyday topics."
         },
         "añejo": {
-            definition: "A short definition of 'añejo' in English.",
-            example: "This sentence uses the word 'añejo' in a natural way."
+            definition: "Añejo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'añejo' when discussing everyday topics."
         },
         "bad": {
-            definition: "A short definition of 'bad' in English.",
-            example: "This sentence uses the word 'bad' in a natural way."
+            definition: "Bad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'bad' when discussing everyday topics."
         },
         "baked": {
-            definition: "A short definition of 'baked' in English.",
-            example: "This sentence uses the word 'baked' in a natural way."
+            definition: "Baked: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'baked' when discussing everyday topics."
         },
         "balance": {
-            definition: "A short definition of 'balance' in English.",
-            example: "This sentence uses the word 'balance' in a natural way."
+            definition: "Balance: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'balance' when discussing everyday topics."
         },
         "baleful": {
-            definition: "A short definition of 'baleful' in English.",
-            example: "This sentence uses the word 'baleful' in a natural way."
+            definition: "Having the quality of being ba.",
+            example: "People often used the word 'baleful' when discussing everyday topics."
         },
         "balmy": {
-            definition: "A short definition of 'balmy' in English.",
-            example: "This sentence uses the word 'balmy' in a natural way."
+            definition: "Balmy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'balmy' when discussing everyday topics."
         },
         "bashful": {
-            definition: "A short definition of 'bashful' in English.",
-            example: "This sentence uses the word 'bashful' in a natural way."
+            definition: "Having the quality of being bash.",
+            example: "People often used the word 'bashful' when discussing everyday topics."
         },
         "basic": {
-            definition: "A short definition of 'basic' in English.",
-            example: "This sentence uses the word 'basic' in a natural way."
+            definition: "Basic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'basic' when discussing everyday topics."
         },
         "beatific": {
-            definition: "A short definition of 'beatific' in English.",
-            example: "This sentence uses the word 'beatific' in a natural way."
+            definition: "Beatific: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'beatific' when discussing everyday topics."
         },
         "beatífico": {
-            definition: "A short definition of 'beatífico' in English.",
-            example: "This sentence uses the word 'beatífico' in a natural way."
+            definition: "Beatífico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'beatífico' when discussing everyday topics."
         },
         "beau": {
-            definition: "A short definition of 'beau' in English.",
-            example: "This sentence uses the word 'beau' in a natural way."
+            definition: "Beau: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'beau' when discussing everyday topics."
         },
         "beautiful": {
             definition: "Pleasing the senses or mind aesthetically.",
             example: "The sunset over the mountain was absolutely beautiful."
         },
         "bello": {
-            definition: "A short definition of 'bello' in English.",
-            example: "This sentence uses the word 'bello' in a natural way."
+            definition: "Bello: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'bello' when discussing everyday topics."
         },
         "benefactor": {
-            definition: "A short definition of 'benefactor' in English.",
-            example: "This sentence uses the word 'benefactor' in a natural way."
+            definition: "Benefactor: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'benefactor' when discussing everyday topics."
         },
         "beneficial": {
-            definition: "A short definition of 'beneficial' in English.",
-            example: "This sentence uses the word 'beneficial' in a natural way."
+            definition: "Beneficial: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'beneficial' when discussing everyday topics."
         },
         "benignant": {
-            definition: "A short definition of 'benignant' in English.",
-            example: "This sentence uses the word 'benignant' in a natural way."
+            definition: "Benignant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'benignant' when discussing everyday topics."
         },
         "besmirched": {
-            definition: "A short definition of 'besmirched' in English.",
-            example: "This sentence uses the word 'besmirched' in a natural way."
+            definition: "Besmirched: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'besmirched' when discussing everyday topics."
         },
         "biased": {
             definition: "Unfairly prejudiced for or against someone or something.",
             example: "The referee's decision was seen as biased by the home team's fans."
         },
         "bien-être": {
-            definition: "A short definition of 'bien-être' in English.",
-            example: "This sentence uses the word 'bien-être' in a natural way."
+            definition: "Bien-être: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'bien-être' when discussing everyday topics."
         },
         "bienestar": {
-            definition: "A short definition of 'bienestar' in English.",
-            example: "This sentence uses the word 'bienestar' in a natural way."
+            definition: "Bienestar: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'bienestar' when discussing everyday topics."
         },
         "big": {
-            definition: "A short definition of 'big' in English.",
-            example: "This sentence uses the word 'big' in a natural way."
+            definition: "Big: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'big' when discussing everyday topics."
         },
         "biting": {
-            definition: "A short definition of 'biting' in English.",
-            example: "This sentence uses the word 'biting' in a natural way."
+            definition: "Being or performing the action of biting or causing that action to happen.",
+            example: "People often used the word 'biting' when discussing everyday topics."
         },
         "black": {
-            definition: "A short definition of 'black' in English.",
-            example: "This sentence uses the word 'black' in a natural way."
+            definition: "Black: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'black' when discussing everyday topics."
         },
         "blank": {
-            definition: "A short definition of 'blank' in English.",
-            example: "This sentence uses the word 'blank' in a natural way."
+            definition: "Blank: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'blank' when discussing everyday topics."
         },
         "blaring": {
-            definition: "A short definition of 'blaring' in English.",
-            example: "This sentence uses the word 'blaring' in a natural way."
+            definition: "Being or performing the action of blaring or causing that action to happen.",
+            example: "People often used the word 'blaring' when discussing everyday topics."
         },
         "blazing": {
-            definition: "A short definition of 'blazing' in English.",
-            example: "This sentence uses the word 'blazing' in a natural way."
+            definition: "Being or performing the action of blazing or causing that action to happen.",
+            example: "People often used the word 'blazing' when discussing everyday topics."
         },
         "blinding": {
             definition: "So bright as to obscure vision.",
             example: "The snow was so white it created a blinding glare."
         },
         "blissful": {
-            definition: "A short definition of 'blissful' in English.",
-            example: "This sentence uses the word 'blissful' in a natural way."
+            definition: "Having the quality of being b.",
+            example: "People often used the word 'blissful' when discussing everyday topics."
         },
         "blistering": {
-            definition: "A short definition of 'blistering' in English.",
-            example: "This sentence uses the word 'blistering' in a natural way."
+            definition: "Being or performing the action of blistering or causing that action to happen.",
+            example: "People often used the word 'blistering' when discussing everyday topics."
         },
         "bloodcurdling": {
-            definition: "A short definition of 'bloodcurdling' in English.",
-            example: "This sentence uses the word 'bloodcurdling' in a natural way."
+            definition: "Being or performing the action of bloodcurdling or causing that action to happen.",
+            example: "People often used the word 'bloodcurdling' when discussing everyday topics."
         },
         "blue": {
-            definition: "A short definition of 'blue' in English.",
-            example: "This sentence uses the word 'blue' in a natural way."
+            definition: "Blue: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'blue' when discussing everyday topics."
         },
         "bochornoso": {
-            definition: "A short definition of 'bochornoso' in English.",
-            example: "This sentence uses the word 'bochornoso' in a natural way."
+            definition: "Bochornoso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'bochornoso' when discussing everyday topics."
         },
         "boiling": {
-            definition: "A short definition of 'boiling' in English.",
-            example: "This sentence uses the word 'boiling' in a natural way."
+            definition: "Being or performing the action of boiling or causing that action to happen.",
+            example: "People often used the word 'boiling' when discussing everyday topics."
         },
         "bold": {
-            definition: "A short definition of 'bold' in English.",
-            example: "This sentence uses the word 'bold' in a natural way."
+            definition: "Bold: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'bold' when discussing everyday topics."
         },
         "bon": {
-            definition: "A short definition of 'bon' in English.",
-            example: "This sentence uses the word 'bon' in a natural way."
+            definition: "Bon: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'bon' when discussing everyday topics."
         },
         "bonito": {
-            definition: "A short definition of 'bonito' in English.",
-            example: "This sentence uses the word 'bonito' in a natural way."
+            definition: "Bonito: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'bonito' when discussing everyday topics."
         },
         "booming": {
-            definition: "A short definition of 'booming' in English.",
-            example: "This sentence uses the word 'booming' in a natural way."
+            definition: "Being or performing the action of booming or causing that action to happen.",
+            example: "People often used the word 'booming' when discussing everyday topics."
         },
         "bouillant": {
-            definition: "A short definition of 'bouillant' in English.",
-            example: "This sentence uses the word 'bouillant' in a natural way."
+            definition: "Bouillant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'bouillant' when discussing everyday topics."
         },
         "boundaries": {
-            definition: "A short definition of 'boundaries' in English.",
-            example: "This sentence uses the word 'boundaries' in a natural way."
+            definition: "Boundaries: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'boundaries' when discussing everyday topics."
         },
         "bracing": {
-            definition: "A short definition of 'bracing' in English.",
-            example: "This sentence uses the word 'bracing' in a natural way."
+            definition: "Being or performing the action of bracing or causing that action to happen.",
+            example: "People often used the word 'bracing' when discussing everyday topics."
         },
         "brave": {
-            definition: "A short definition of 'brave' in English.",
-            example: "This sentence uses the word 'brave' in a natural way."
+            definition: "Brave: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'brave' when discussing everyday topics."
         },
         "bravo": {
-            definition: "A short definition of 'bravo' in English.",
-            example: "This sentence uses the word 'bravo' in a natural way."
+            definition: "Bravo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'bravo' when discussing everyday topics."
         },
         "breakable": {
-            definition: "A short definition of 'breakable' in English.",
-            example: "This sentence uses the word 'breakable' in a natural way."
+            definition: "Capable of being break.",
+            example: "People often used the word 'breakable' when discussing everyday topics."
         },
         "breakfast": {
-            definition: "A short definition of 'breakfast' in English.",
-            example: "This sentence uses the word 'breakfast' in a natural way."
+            definition: "The first meal of the day, usually eaten in the morning.",
+            example: "People often used the word 'breakfast' when discussing everyday topics."
         },
         "breakneck": {
-            definition: "A short definition of 'breakneck' in English.",
-            example: "This sentence uses the word 'breakneck' in a natural way."
+            definition: "Breakneck: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'breakneck' when discussing everyday topics."
         },
         "breathtaking": {
             definition: "Astonishing or awe-inspiring in quality.",
             example: "The view from the top of the mountain was absolutely breathtaking."
         },
         "brief": {
-            definition: "A short definition of 'brief' in English.",
-            example: "This sentence uses the word 'brief' in a natural way."
+            definition: "Brief: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'brief' when discussing everyday topics."
         },
         "bright": {
-            definition: "A short definition of 'bright' in English.",
-            example: "This sentence uses the word 'bright' in a natural way."
+            definition: "Bright: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'bright' when discussing everyday topics."
         },
         "brighten": {
-            definition: "A short definition of 'brighten' in English.",
-            example: "This sentence uses the word 'brighten' in a natural way."
+            definition: "Brighten: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'brighten' when discussing everyday topics."
         },
         "brillant": {
-            definition: "A short definition of 'brillant' in English.",
-            example: "This sentence uses the word 'brillant' in a natural way."
+            definition: "Brillant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'brillant' when discussing everyday topics."
         },
         "brillante": {
-            definition: "A short definition of 'brillante' in English.",
-            example: "This sentence uses the word 'brillante' in a natural way."
+            definition: "Brillante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'brillante' when discussing everyday topics."
         },
         "brilliant": {
-            definition: "A short definition of 'brilliant' in English.",
-            example: "This sentence uses the word 'brilliant' in a natural way."
+            definition: "Brilliant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'brilliant' when discussing everyday topics."
         },
         "brio": {
-            definition: "A short definition of 'brio' in English.",
-            example: "This sentence uses the word 'brio' in a natural way."
+            definition: "Brio: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'brio' when discussing everyday topics."
         },
         "brisable": {
-            definition: "A short definition of 'brisable' in English.",
-            example: "This sentence uses the word 'brisable' in a natural way."
+            definition: "Capable of being bris.",
+            example: "People often used the word 'brisable' when discussing everyday topics."
         },
         "brisk": {
-            definition: "A short definition of 'brisk' in English.",
-            example: "This sentence uses the word 'brisk' in a natural way."
+            definition: "Brisk: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'brisk' when discussing everyday topics."
         },
         "brittle": {
-            definition: "A short definition of 'brittle' in English.",
-            example: "This sentence uses the word 'brittle' in a natural way."
+            definition: "Brittle: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'brittle' when discussing everyday topics."
         },
         "broke": {
-            definition: "A short definition of 'broke' in English.",
-            example: "This sentence uses the word 'broke' in a natural way."
+            definition: "Broke: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'broke' when discussing everyday topics."
         },
         "brûlant": {
-            definition: "A short definition of 'brûlant' in English.",
-            example: "This sentence uses the word 'brûlant' in a natural way."
+            definition: "Brûlant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'brûlant' when discussing everyday topics."
         },
         "budget": {
-            definition: "A short definition of 'budget' in English.",
-            example: "This sentence uses the word 'budget' in a natural way."
+            definition: "Budget: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'budget' when discussing everyday topics."
         },
         "budgeting": {
-            definition: "A short definition of 'budgeting' in English.",
-            example: "This sentence uses the word 'budgeting' in a natural way."
+            definition: "Being or performing the action of budgeting or causing that action to happen.",
+            example: "People often used the word 'budgeting' when discussing everyday topics."
         },
         "bueno": {
-            definition: "A short definition of 'bueno' in English.",
-            example: "This sentence uses the word 'bueno' in a natural way."
+            definition: "Bueno: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'bueno' when discussing everyday topics."
         },
         "burning": {
-            definition: "A short definition of 'burning' in English.",
-            example: "This sentence uses the word 'burning' in a natural way."
+            definition: "Being or performing the action of burning or causing that action to happen.",
+            example: "People often used the word 'burning' when discussing everyday topics."
         },
         "busy": {
-            definition: "A short definition of 'busy' in English.",
-            example: "This sentence uses the word 'busy' in a natural way."
+            definition: "Busy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'busy' when discussing everyday topics."
         },
         "béat": {
-            definition: "A short definition of 'béat' in English.",
-            example: "This sentence uses the word 'béat' in a natural way."
+            definition: "Béat: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'béat' when discussing everyday topics."
         },
         "calamitous": {
-            definition: "A short definition of 'calamitous' in English.",
-            example: "This sentence uses the word 'calamitous' in a natural way."
+            definition: "Having the quality of being calamit.",
+            example: "People often used the word 'calamitous' when discussing everyday topics."
         },
         "calidad": {
-            definition: "A short definition of 'calidad' in English.",
-            example: "This sentence uses the word 'calidad' in a natural way."
+            definition: "Calidad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'calidad' when discussing everyday topics."
         },
         "caliente": {
-            definition: "A short definition of 'caliente' in English.",
-            example: "This sentence uses the word 'caliente' in a natural way."
+            definition: "Caliente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'caliente' when discussing everyday topics."
         },
         "calm": {
-            definition: "A short definition of 'calm' in English.",
-            example: "This sentence uses the word 'calm' in a natural way."
+            definition: "Calm: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'calm' when discussing everyday topics."
         },
         "candente": {
-            definition: "A short definition of 'candente' in English.",
-            example: "This sentence uses the word 'candente' in a natural way."
+            definition: "Candente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'candente' when discussing everyday topics."
         },
         "candor": {
-            definition: "A short definition of 'candor' in English.",
-            example: "This sentence uses the word 'candor' in a natural way."
+            definition: "Candor: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'candor' when discussing everyday topics."
         },
         "caniculaire": {
-            definition: "A short definition of 'caniculaire' in English.",
-            example: "This sentence uses the word 'caniculaire' in a natural way."
+            definition: "Caniculaire: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'caniculaire' when discussing everyday topics."
         },
         "canicular": {
-            definition: "A short definition of 'canicular' in English.",
-            example: "This sentence uses the word 'canicular' in a natural way."
+            definition: "Canicular: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'canicular' when discussing everyday topics."
         },
         "canonize": {
             definition: "Officially declare a dead person to be a saint.",
             example: "The church decided to canonize the nun for her lifelong service."
         },
         "capable": {
-            definition: "A short definition of 'capable' in English.",
-            example: "This sentence uses the word 'capable' in a natural way."
+            definition: "Capable of being cap.",
+            example: "People often used the word 'capable' when discussing everyday topics."
         },
         "capaz": {
-            definition: "A short definition of 'capaz' in English.",
-            example: "This sentence uses the word 'capaz' in a natural way."
+            definition: "Capaz: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'capaz' when discussing everyday topics."
         },
         "capital": {
-            definition: "A short definition of 'capital' in English.",
-            example: "This sentence uses the word 'capital' in a natural way."
+            definition: "Capital: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'capital' when discussing everyday topics."
         },
         "captivant": {
-            definition: "A short definition of 'captivant' in English.",
-            example: "This sentence uses the word 'captivant' in a natural way."
+            definition: "Captivant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'captivant' when discussing everyday topics."
         },
         "captivating": {
-            definition: "A short definition of 'captivating' in English.",
-            example: "This sentence uses the word 'captivating' in a natural way."
+            definition: "Being or performing the action of captivating or causing that action to happen.",
+            example: "People often used the word 'captivating' when discussing everyday topics."
         },
         "cardinal": {
-            definition: "A short definition of 'cardinal' in English.",
-            example: "This sentence uses the word 'cardinal' in a natural way."
+            definition: "Cardinal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cardinal' when discussing everyday topics."
         },
         "cartographical": {
             definition: "Relating to the science or practice of drawing maps.",
             example: "The cartographical accuracy of the new atlas is impressive."
         },
         "cassant": {
-            definition: "A short definition of 'cassant' in English.",
-            example: "This sentence uses the word 'cassant' in a natural way."
+            definition: "Cassant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cassant' when discussing everyday topics."
         },
         "catastrophic": {
-            definition: "A short definition of 'catastrophic' in English.",
-            example: "This sentence uses the word 'catastrophic' in a natural way."
+            definition: "Catastrophic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'catastrophic' when discussing everyday topics."
         },
         "cauchemardesque": {
-            definition: "A short definition of 'cauchemardesque' in English.",
-            example: "This sentence uses the word 'cauchemardesque' in a natural way."
+            definition: "Cauchemardesque: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cauchemardesque' when discussing everyday topics."
         },
         "cautivador": {
-            definition: "A short definition of 'cautivador' in English.",
-            example: "This sentence uses the word 'cautivador' in a natural way."
+            definition: "Cautivador: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cautivador' when discussing everyday topics."
         },
         "celebración": {
-            definition: "A short definition of 'celebración' in English.",
-            example: "This sentence uses the word 'celebración' in a natural way."
+            definition: "Celebración: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'celebración' when discussing everyday topics."
         },
         "celebration": {
-            definition: "A short definition of 'celebration' in English.",
-            example: "This sentence uses the word 'celebration' in a natural way."
+            definition: "The act or process of celebraing.",
+            example: "People often used the word 'celebration' when discussing everyday topics."
         },
         "celestial": {
             definition: "Positioned in or relating to the sky, or outer space.",
             example: "The stars and planets are celestial bodies visible at night."
         },
         "chagriné": {
-            definition: "A short definition of 'chagriné' in English.",
-            example: "This sentence uses the word 'chagriné' in a natural way."
+            definition: "Chagriné: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'chagriné' when discussing everyday topics."
         },
         "challenges": {
-            definition: "A short definition of 'challenges' in English.",
-            example: "This sentence uses the word 'challenges' in a natural way."
+            definition: "Challenges: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'challenges' when discussing everyday topics."
         },
         "challenging": {
-            definition: "A short definition of 'challenging' in English.",
-            example: "This sentence uses the word 'challenging' in a natural way."
+            definition: "Being or performing the action of challenging or causing that action to happen.",
+            example: "People often used the word 'challenging' when discussing everyday topics."
         },
         "chancelant": {
-            definition: "A short definition of 'chancelant' in English.",
-            example: "This sentence uses the word 'chancelant' in a natural way."
+            definition: "Chancelant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'chancelant' when discussing everyday topics."
         },
         "change": {
-            definition: "A short definition of 'change' in English.",
-            example: "This sentence uses the word 'change' in a natural way."
+            definition: "Change: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'change' when discussing everyday topics."
         },
         "chaos": {
-            definition: "A short definition of 'chaos' in English.",
-            example: "This sentence uses the word 'chaos' in a natural way."
+            definition: "Chaos: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'chaos' when discussing everyday topics."
         },
         "characters": {
-            definition: "A short definition of 'characters' in English.",
-            example: "This sentence uses the word 'characters' in a natural way."
+            definition: "Characters: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'characters' when discussing everyday topics."
         },
         "chaud": {
-            definition: "A short definition of 'chaud' in English.",
-            example: "This sentence uses the word 'chaud' in a natural way."
+            definition: "Chaud: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'chaud' when discussing everyday topics."
         },
         "cheap": {
-            definition: "A short definition of 'cheap' in English.",
-            example: "This sentence uses the word 'cheap' in a natural way."
+            definition: "Cheap: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cheap' when discussing everyday topics."
         },
         "cheer": {
-            definition: "A short definition of 'cheer' in English.",
-            example: "This sentence uses the word 'cheer' in a natural way."
+            definition: "A person or thing that cheer or performs the action che.",
+            example: "People often used the word 'cheer' when discussing everyday topics."
         },
         "cheerful": {
-            definition: "A short definition of 'cheerful' in English.",
-            example: "This sentence uses the word 'cheerful' in a natural way."
+            definition: "Having the quality of being cheer.",
+            example: "People often used the word 'cheerful' when discussing everyday topics."
         },
         "chico": {
-            definition: "A short definition of 'chico' in English.",
-            example: "This sentence uses the word 'chico' in a natural way."
+            definition: "Chico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'chico' when discussing everyday topics."
         },
         "child's play": {
-            definition: "A short definition of 'child's play' in English.",
-            example: "This sentence uses the word 'child's play' in a natural way."
+            definition: "Something that is very easy to do; used to describe a task that requires little effort.",
+            example: "For me, assembling the bookshelf was child's play — it took only a few minutes."
         },
         "chilly": {
-            definition: "A short definition of 'chilly' in English.",
-            example: "This sentence uses the word 'chilly' in a natural way."
+            definition: "In a manner that is chil.",
+            example: "People often used the word 'chilly' when discussing everyday topics."
         },
         "choices": {
-            definition: "A short definition of 'choices' in English.",
-            example: "This sentence uses the word 'choices' in a natural way."
+            definition: "Choices: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'choices' when discussing everyday topics."
         },
         "clair": {
-            definition: "A short definition of 'clair' in English.",
-            example: "This sentence uses the word 'clair' in a natural way."
+            definition: "Clair: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'clair' when discussing everyday topics."
         },
         "clairvoyant": {
-            definition: "A short definition of 'clairvoyant' in English.",
-            example: "This sentence uses the word 'clairvoyant' in a natural way."
+            definition: "Clairvoyant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'clairvoyant' when discussing everyday topics."
         },
         "clamorous": {
-            definition: "A short definition of 'clamorous' in English.",
-            example: "This sentence uses the word 'clamorous' in a natural way."
+            definition: "Having the quality of being clamor.",
+            example: "People often used the word 'clamorous' when discussing everyday topics."
         },
         "clarity": {
-            definition: "A short definition of 'clarity' in English.",
-            example: "This sentence uses the word 'clarity' in a natural way."
+            definition: "Clarity: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'clarity' when discussing everyday topics."
         },
         "clarividente": {
-            definition: "A short definition of 'clarividente' in English.",
-            example: "This sentence uses the word 'clarividente' in a natural way."
+            definition: "Clarividente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'clarividente' when discussing everyday topics."
         },
         "claro": {
-            definition: "A short definition of 'claro' in English.",
-            example: "This sentence uses the word 'claro' in a natural way."
+            definition: "Claro: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'claro' when discussing everyday topics."
         },
         "classified": {
             definition: "Arranged in classes or categories; kept secret for security.",
             example: "The agents were handling highly classified documents."
         },
         "claustrophobia": {
-            definition: "A short definition of 'claustrophobia' in English.",
-            example: "This sentence uses the word 'claustrophobia' in a natural way."
+            definition: "Claustrophobia: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'claustrophobia' when discussing everyday topics."
         },
         "claustrophobic": {
-            definition: "A short definition of 'claustrophobic' in English.",
-            example: "This sentence uses the word 'claustrophobic' in a natural way."
+            definition: "Claustrophobic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'claustrophobic' when discussing everyday topics."
         },
         "clear": {
             definition: "Easy to perceive, understand, or interpret; transparent.",
             example: "The instructions were clear and easy to follow."
         },
         "clement": {
-            definition: "A short definition of 'clement' in English.",
-            example: "This sentence uses the word 'clement' in a natural way."
+            definition: "Clement: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'clement' when discussing everyday topics."
         },
         "clever": {
-            definition: "A short definition of 'clever' in English.",
-            example: "This sentence uses the word 'clever' in a natural way."
+            definition: "A person or thing that clever or performs the action clev.",
+            example: "People often used the word 'clever' when discussing everyday topics."
         },
         "colaboración": {
-            definition: "A short definition of 'colaboración' in English.",
-            example: "This sentence uses the word 'colaboración' in a natural way."
+            definition: "Colaboración: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'colaboración' when discussing everyday topics."
         },
         "cold": {
-            definition: "A short definition of 'cold' in English.",
-            example: "This sentence uses the word 'cold' in a natural way."
+            definition: "Cold: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cold' when discussing everyday topics."
         },
         "collaboration": {
-            definition: "A short definition of 'collaboration' in English.",
-            example: "This sentence uses the word 'collaboration' in a natural way."
+            definition: "The act or process of collaboraing.",
+            example: "People often used the word 'collaboration' when discussing everyday topics."
         },
         "collected": {
-            definition: "A short definition of 'collected' in English.",
-            example: "This sentence uses the word 'collected' in a natural way."
+            definition: "Collected: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'collected' when discussing everyday topics."
         },
         "colosal": {
-            definition: "A short definition of 'colosal' in English.",
-            example: "This sentence uses the word 'colosal' in a natural way."
+            definition: "Colosal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'colosal' when discussing everyday topics."
         },
         "colossal": {
-            definition: "A short definition of 'colossal' in English.",
-            example: "This sentence uses the word 'colossal' in a natural way."
+            definition: "Colossal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'colossal' when discussing everyday topics."
         },
         "colérico": {
-            definition: "A short definition of 'colérico' in English.",
-            example: "This sentence uses the word 'colérico' in a natural way."
+            definition: "Colérico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'colérico' when discussing everyday topics."
         },
         "comblé": {
-            definition: "A short definition of 'comblé' in English.",
-            example: "This sentence uses the word 'comblé' in a natural way."
+            definition: "Comblé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'comblé' when discussing everyday topics."
         },
         "comical": {
-            definition: "A short definition of 'comical' in English.",
-            example: "This sentence uses the word 'comical' in a natural way."
+            definition: "Comical: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'comical' when discussing everyday topics."
         },
         "commanding": {
-            definition: "A short definition of 'commanding' in English.",
-            example: "This sentence uses the word 'commanding' in a natural way."
+            definition: "Being or performing the action of commanding or causing that action to happen.",
+            example: "People often used the word 'commanding' when discussing everyday topics."
         },
         "commode": {
-            definition: "A short definition of 'commode' in English.",
-            example: "This sentence uses the word 'commode' in a natural way."
+            definition: "Commode: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'commode' when discussing everyday topics."
         },
         "commodité": {
-            definition: "A short definition of 'commodité' in English.",
-            example: "This sentence uses the word 'commodité' in a natural way."
+            definition: "Commodité: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'commodité' when discussing everyday topics."
         },
         "communication": {
-            definition: "A short definition of 'communication' in English.",
-            example: "This sentence uses the word 'communication' in a natural way."
+            definition: "The act or process of communicaing.",
+            example: "People often used the word 'communication' when discussing everyday topics."
         },
         "community": {
-            definition: "A short definition of 'community' in English.",
-            example: "This sentence uses the word 'community' in a natural way."
+            definition: "Community: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'community' when discussing everyday topics."
         },
         "commute": {
-            definition: "A short definition of 'commute' in English.",
-            example: "This sentence uses the word 'commute' in a natural way."
+            definition: "To travel regularly between home and work or school.",
+            example: "She commutes two hours each day between the suburb and downtown."
         },
         "compact": {
-            definition: "A short definition of 'compact' in English.",
-            example: "This sentence uses the word 'compact' in a natural way."
+            definition: "Compact: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'compact' when discussing everyday topics."
         },
         "compelling": {
-            definition: "A short definition of 'compelling' in English.",
-            example: "This sentence uses the word 'compelling' in a natural way."
+            definition: "Being or performing the action of compelling or causing that action to happen.",
+            example: "People often used the word 'compelling' when discussing everyday topics."
         },
         "competent": {
-            definition: "A short definition of 'competent' in English.",
-            example: "This sentence uses the word 'competent' in a natural way."
+            definition: "Competent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'competent' when discussing everyday topics."
         },
         "competente": {
-            definition: "A short definition of 'competente' in English.",
-            example: "This sentence uses the word 'competente' in a natural way."
+            definition: "Competente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'competente' when discussing everyday topics."
         },
         "complejo": {
-            definition: "A short definition of 'complejo' in English.",
-            example: "This sentence uses the word 'complejo' in a natural way."
+            definition: "Complejo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'complejo' when discussing everyday topics."
         },
         "complex": {
-            definition: "A short definition of 'complex' in English.",
-            example: "This sentence uses the word 'complex' in a natural way."
+            definition: "Complex: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'complex' when discussing everyday topics."
         },
         "complexe": {
-            definition: "A short definition of 'complexe' in English.",
-            example: "This sentence uses the word 'complexe' in a natural way."
+            definition: "Complexe: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'complexe' when discussing everyday topics."
         },
         "complicado": {
-            definition: "A short definition of 'complicado' in English.",
-            example: "This sentence uses the word 'complicado' in a natural way."
+            definition: "Complicado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'complicado' when discussing everyday topics."
         },
         "complicated": {
-            definition: "A short definition of 'complicated' in English.",
-            example: "This sentence uses the word 'complicated' in a natural way."
+            definition: "Complicated: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'complicated' when discussing everyday topics."
         },
         "compliqué": {
-            definition: "A short definition of 'compliqué' in English.",
-            example: "This sentence uses the word 'compliqué' in a natural way."
+            definition: "Compliqué: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'compliqué' when discussing everyday topics."
         },
         "composed": {
-            definition: "A short definition of 'composed' in English.",
-            example: "This sentence uses the word 'composed' in a natural way."
+            definition: "Composed: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'composed' when discussing everyday topics."
         },
         "comprensión": {
-            definition: "A short definition of 'comprensión' in English.",
-            example: "This sentence uses the word 'comprensión' in a natural way."
+            definition: "Comprensión: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'comprensión' when discussing everyday topics."
         },
         "compromise": {
-            definition: "A short definition of 'compromise' in English.",
-            example: "This sentence uses the word 'compromise' in a natural way."
+            definition: "To compromise.",
+            example: "People often used the word 'compromise' when discussing everyday topics."
         },
         "compromising": {
             definition: "Revealing that someone has done something wrong or embarrassing.",
             example: "The leak of the compromising photos ruined the politician's career."
         },
         "compromiso": {
-            definition: "A short definition of 'compromiso' in English.",
-            example: "This sentence uses the word 'compromiso' in a natural way."
+            definition: "Compromiso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'compromiso' when discussing everyday topics."
         },
         "compréhension": {
-            definition: "A short definition of 'compréhension' in English.",
-            example: "This sentence uses the word 'compréhension' in a natural way."
+            definition: "The act or process of compréhening.",
+            example: "People often used the word 'compréhension' when discussing everyday topics."
         },
         "compétences": {
-            definition: "A short definition of 'compétences' in English.",
-            example: "This sentence uses the word 'compétences' in a natural way."
+            definition: "Compétences: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'compétences' when discussing everyday topics."
         },
         "compétent": {
-            definition: "A short definition of 'compétent' in English.",
-            example: "This sentence uses the word 'compétent' in a natural way."
+            definition: "Compétent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'compétent' when discussing everyday topics."
         },
         "comunicación": {
-            definition: "A short definition of 'comunicación' in English.",
-            example: "This sentence uses the word 'comunicación' in a natural way."
+            definition: "Comunicación: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'comunicación' when discussing everyday topics."
         },
         "comunidad": {
-            definition: "A short definition of 'comunidad' in English.",
-            example: "This sentence uses the word 'comunidad' in a natural way."
+            definition: "Comunidad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'comunidad' when discussing everyday topics."
         },
         "concentrated": {
             definition: "Wholly directed to one thing; intense or potent.",
             example: "The juice was too concentrated and needed to be diluted with water."
         },
         "concise": {
-            definition: "A short definition of 'concise' in English.",
-            example: "This sentence uses the word 'concise' in a natural way."
+            definition: "To concise.",
+            example: "People often used the word 'concise' when discussing everyday topics."
         },
         "conectividad": {
-            definition: "A short definition of 'conectividad' in English.",
-            example: "This sentence uses the word 'conectividad' in a natural way."
+            definition: "Conectividad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'conectividad' when discussing everyday topics."
         },
         "conexión": {
-            definition: "A short definition of 'conexión' in English.",
-            example: "This sentence uses the word 'conexión' in a natural way."
+            definition: "Conexión: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'conexión' when discussing everyday topics."
         },
         "confiance": {
-            definition: "A short definition of 'confiance' in English.",
-            example: "This sentence uses the word 'confiance' in a natural way."
+            definition: "Confiance: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'confiance' when discussing everyday topics."
         },
         "confianza": {
-            definition: "A short definition of 'confianza' in English.",
-            example: "This sentence uses the word 'confianza' in a natural way."
+            definition: "Confianza: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'confianza' when discussing everyday topics."
         },
         "confidence": {
-            definition: "A short definition of 'confidence' in English.",
-            example: "This sentence uses the word 'confidence' in a natural way."
+            definition: "Confidence: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'confidence' when discussing everyday topics."
         },
         "congelado": {
-            definition: "A short definition of 'congelado' in English.",
-            example: "This sentence uses the word 'congelado' in a natural way."
+            definition: "Congelado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'congelado' when discussing everyday topics."
         },
         "congested": {
-            definition: "A short definition of 'congested' in English.",
-            example: "This sentence uses the word 'congested' in a natural way."
+            definition: "Congested: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'congested' when discussing everyday topics."
         },
         "connaissance": {
-            definition: "A short definition of 'connaissance' in English.",
-            example: "This sentence uses the word 'connaissance' in a natural way."
+            definition: "Connaissance: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'connaissance' when discussing everyday topics."
         },
         "connection": {
-            definition: "A short definition of 'connection' in English.",
-            example: "This sentence uses the word 'connection' in a natural way."
+            definition: "The act or process of connecing.",
+            example: "People often used the word 'connection' when discussing everyday topics."
         },
         "connectivity": {
-            definition: "A short definition of 'connectivity' in English.",
-            example: "This sentence uses the word 'connectivity' in a natural way."
+            definition: "Connectivity: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'connectivity' when discussing everyday topics."
         },
         "connectivité": {
-            definition: "A short definition of 'connectivité' in English.",
-            example: "This sentence uses the word 'connectivité' in a natural way."
+            definition: "Connectivité: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'connectivité' when discussing everyday topics."
         },
         "connexion": {
-            definition: "A short definition of 'connexion' in English.",
-            example: "This sentence uses the word 'connexion' in a natural way."
+            definition: "Connexion: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'connexion' when discussing everyday topics."
         },
         "conocimiento": {
-            definition: "A short definition of 'conocimiento' in English.",
-            example: "This sentence uses the word 'conocimiento' in a natural way."
+            definition: "Conocimiento: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'conocimiento' when discussing everyday topics."
         },
         "consciousness": {
-            definition: "A short definition of 'consciousness' in English.",
-            example: "This sentence uses the word 'consciousness' in a natural way."
+            definition: "Consciousness: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'consciousness' when discussing everyday topics."
         },
         "consequences": {
-            definition: "A short definition of 'consequences' in English.",
-            example: "This sentence uses the word 'consequences' in a natural way."
+            definition: "Consequences: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'consequences' when discussing everyday topics."
         },
         "consequential": {
-            definition: "A short definition of 'consequential' in English.",
-            example: "This sentence uses the word 'consequential' in a natural way."
+            definition: "Consequential: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'consequential' when discussing everyday topics."
         },
         "consistencia": {
-            definition: "A short definition of 'consistencia' in English.",
-            example: "This sentence uses the word 'consistencia' in a natural way."
+            definition: "Consistencia: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'consistencia' when discussing everyday topics."
         },
         "consistency": {
-            definition: "A short definition of 'consistency' in English.",
-            example: "This sentence uses the word 'consistency' in a natural way."
+            definition: "Consistency: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'consistency' when discussing everyday topics."
         },
         "constancia": {
-            definition: "A short definition of 'constancia' in English.",
-            example: "This sentence uses the word 'constancia' in a natural way."
+            definition: "Constancia: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'constancia' when discussing everyday topics."
         },
         "constructive": {
-            definition: "A short definition of 'constructive' in English.",
-            example: "This sentence uses the word 'constructive' in a natural way."
+            definition: "Having the quality of being construct.",
+            example: "People often used the word 'constructive' when discussing everyday topics."
         },
         "contemporary": {
-            definition: "A short definition of 'contemporary' in English.",
-            example: "This sentence uses the word 'contemporary' in a natural way."
+            definition: "Contemporary: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'contemporary' when discussing everyday topics."
         },
         "content": {
-            definition: "A short definition of 'content' in English.",
-            example: "This sentence uses the word 'content' in a natural way."
+            definition: "Content: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'content' when discussing everyday topics."
         },
         "contento": {
-            definition: "A short definition of 'contento' in English.",
-            example: "This sentence uses the word 'contento' in a natural way."
+            definition: "Contento: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'contento' when discussing everyday topics."
         },
         "contribución": {
-            definition: "A short definition of 'contribución' in English.",
-            example: "This sentence uses the word 'contribución' in a natural way."
+            definition: "Contribución: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'contribución' when discussing everyday topics."
         },
         "contribution": {
-            definition: "A short definition of 'contribution' in English.",
-            example: "This sentence uses the word 'contribution' in a natural way."
+            definition: "The act or process of contribuing.",
+            example: "People often used the word 'contribution' when discussing everyday topics."
         },
         "convenience": {
-            definition: "A short definition of 'convenience' in English.",
-            example: "This sentence uses the word 'convenience' in a natural way."
+            definition: "Convenience: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'convenience' when discussing everyday topics."
         },
         "conveniencia": {
-            definition: "A short definition of 'conveniencia' in English.",
-            example: "This sentence uses the word 'conveniencia' in a natural way."
+            definition: "Conveniencia: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'conveniencia' when discussing everyday topics."
         },
         "convivial": {
-            definition: "A short definition of 'convivial' in English.",
-            example: "This sentence uses the word 'convivial' in a natural way."
+            definition: "Convivial: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'convivial' when discussing everyday topics."
         },
         "cool": {
-            definition: "A short definition of 'cool' in English.",
-            example: "This sentence uses the word 'cool' in a natural way."
+            definition: "Cool: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cool' when discussing everyday topics."
         },
         "cordial": {
-            definition: "A short definition of 'cordial' in English.",
-            example: "This sentence uses the word 'cordial' in a natural way."
+            definition: "Cordial: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cordial' when discussing everyday topics."
         },
         "corto": {
-            definition: "A short definition of 'corto' in English.",
-            example: "This sentence uses the word 'corto' in a natural way."
+            definition: "Corto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'corto' when discussing everyday topics."
         },
         "costaud": {
-            definition: "A short definition of 'costaud' in English.",
-            example: "This sentence uses the word 'costaud' in a natural way."
+            definition: "Costaud: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'costaud' when discussing everyday topics."
         },
         "costumbres": {
-            definition: "A short definition of 'costumbres' in English.",
-            example: "This sentence uses the word 'costumbres' in a natural way."
+            definition: "Costumbres: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'costumbres' when discussing everyday topics."
         },
         "courageous": {
-            definition: "A short definition of 'courageous' in English.",
-            example: "This sentence uses the word 'courageous' in a natural way."
+            definition: "Having the quality of being courag.",
+            example: "People often used the word 'courageous' when discussing everyday topics."
         },
         "courageux": {
-            definition: "A short definition of 'courageux' in English.",
-            example: "This sentence uses the word 'courageux' in a natural way."
+            definition: "Courageux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'courageux' when discussing everyday topics."
         },
         "courroucé": {
-            definition: "A short definition of 'courroucé' in English.",
-            example: "This sentence uses the word 'courroucé' in a natural way."
+            definition: "Courroucé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'courroucé' when discussing everyday topics."
         },
         "courteous": {
-            definition: "A short definition of 'courteous' in English.",
-            example: "This sentence uses the word 'courteous' in a natural way."
+            definition: "Having the quality of being court.",
+            example: "People often used the word 'courteous' when discussing everyday topics."
         },
         "coy": {
-            definition: "A short definition of 'coy' in English.",
-            example: "This sentence uses the word 'coy' in a natural way."
+            definition: "Coy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'coy' when discussing everyday topics."
         },
         "cozy": {
-            definition: "A short definition of 'cozy' in English.",
-            example: "This sentence uses the word 'cozy' in a natural way."
+            definition: "Cozy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cozy' when discussing everyday topics."
         },
         "craven": {
-            definition: "A short definition of 'craven' in English.",
-            example: "This sentence uses the word 'craven' in a natural way."
+            definition: "Craven: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'craven' when discussing everyday topics."
         },
         "creative": {
             definition: "Relating to or involving the imagination or original ideas.",
             example: "He is a creative artist who constantly experiments with new styles."
         },
         "creativity": {
-            definition: "A short definition of 'creativity' in English.",
-            example: "This sentence uses the word 'creativity' in a natural way."
+            definition: "Creativity: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'creativity' when discussing everyday topics."
         },
         "creativo": {
-            definition: "A short definition of 'creativo' in English.",
-            example: "This sentence uses the word 'creativo' in a natural way."
+            definition: "Creativo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'creativo' when discussing everyday topics."
         },
         "crecimiento": {
-            definition: "A short definition of 'crecimiento' in English.",
-            example: "This sentence uses the word 'crecimiento' in a natural way."
+            definition: "Crecimiento: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'crecimiento' when discussing everyday topics."
         },
         "creepy": {
-            definition: "A short definition of 'creepy' in English.",
-            example: "This sentence uses the word 'creepy' in a natural way."
+            definition: "Creepy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'creepy' when discussing everyday topics."
         },
         "croissance": {
-            definition: "A short definition of 'croissance' in English.",
-            example: "This sentence uses the word 'croissance' in a natural way."
+            definition: "Croissance: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'croissance' when discussing everyday topics."
         },
         "crucial": {
             definition: "Decisive or critical, especially in the success or failure of something.",
             example: "This meeting is crucial for the future of our partnership."
         },
         "crystalline": {
-            definition: "A short definition of 'crystalline' in English.",
-            example: "This sentence uses the word 'crystalline' in a natural way."
+            definition: "Crystalline: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'crystalline' when discussing everyday topics."
         },
         "créatif": {
-            definition: "A short definition of 'créatif' in English.",
-            example: "This sentence uses the word 'créatif' in a natural way."
+            definition: "Créatif: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'créatif' when discussing everyday topics."
         },
         "cultura": {
-            definition: "A short definition of 'cultura' in English.",
-            example: "This sentence uses the word 'cultura' in a natural way."
+            definition: "Cultura: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cultura' when discussing everyday topics."
         },
         "culture": {
-            definition: "A short definition of 'culture' in English.",
-            example: "This sentence uses the word 'culture' in a natural way."
+            definition: "Culture: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'culture' when discussing everyday topics."
         },
         "cumbersome": {
-            definition: "A short definition of 'cumbersome' in English.",
-            example: "This sentence uses the word 'cumbersome' in a natural way."
+            definition: "Cumbersome: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cumbersome' when discussing everyday topics."
         },
         "cumplimiento": {
-            definition: "A short definition of 'cumplimiento' in English.",
-            example: "This sentence uses the word 'cumplimiento' in a natural way."
+            definition: "Cumplimiento: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cumplimiento' when discussing everyday topics."
         },
         "curieux": {
-            definition: "A short definition of 'curieux' in English.",
-            example: "This sentence uses the word 'curieux' in a natural way."
+            definition: "Curieux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'curieux' when discussing everyday topics."
         },
         "curior": {
-            definition: "A short definition of 'curior' in English.",
-            example: "This sentence uses the word 'curior' in a natural way."
+            definition: "Curior: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'curior' when discussing everyday topics."
         },
         "curiosity": {
-            definition: "A short definition of 'curiosity' in English.",
-            example: "This sentence uses the word 'curiosity' in a natural way."
+            definition: "Curiosity: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'curiosity' when discussing everyday topics."
         },
         "curioso": {
-            definition: "A short definition of 'curioso' in English.",
-            example: "This sentence uses the word 'curioso' in a natural way."
+            definition: "Curioso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'curioso' when discussing everyday topics."
         },
         "curious": {
-            definition: "A short definition of 'curious' in English.",
-            example: "This sentence uses the word 'curious' in a natural way."
+            definition: "Having the quality of being cur.",
+            example: "People often used the word 'curious' when discussing everyday topics."
         },
         "current": {
-            definition: "A short definition of 'current' in English.",
-            example: "This sentence uses the word 'current' in a natural way."
+            definition: "Current: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'current' when discussing everyday topics."
         },
         "customs": {
-            definition: "A short definition of 'customs' in English.",
-            example: "This sentence uses the word 'customs' in a natural way."
+            definition: "Customs: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'customs' when discussing everyday topics."
         },
         "cute": {
-            definition: "A short definition of 'cute' in English.",
-            example: "This sentence uses the word 'cute' in a natural way."
+            definition: "Cute: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cute' when discussing everyday topics."
         },
         "cutting-edge": {
-            definition: "A short definition of 'cutting-edge' in English.",
-            example: "This sentence uses the word 'cutting-edge' in a natural way."
+            definition: "Cutting-edge: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cutting-edge' when discussing everyday topics."
         },
         "cyclopean": {
             definition: "Extremely massive; made of huge stones.",
             example: "The ruins were built with cyclopean walls that stood for ages."
         },
         "cómodo": {
-            definition: "A short definition of 'cómodo' in English.",
-            example: "This sentence uses the word 'cómodo' in a natural way."
+            definition: "Cómodo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'cómodo' when discussing everyday topics."
         },
         "dangerous": {
-            definition: "A short definition of 'dangerous' in English.",
-            example: "This sentence uses the word 'dangerous' in a natural way."
+            definition: "Having the quality of being danger.",
+            example: "People often used the word 'dangerous' when discussing everyday topics."
         },
         "dantesco": {
-            definition: "A short definition of 'dantesco' in English.",
-            example: "This sentence uses the word 'dantesco' in a natural way."
+            definition: "Dantesco: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dantesco' when discussing everyday topics."
         },
         "dark": {
-            definition: "A short definition of 'dark' in English.",
-            example: "This sentence uses the word 'dark' in a natural way."
+            definition: "Dark: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dark' when discussing everyday topics."
         },
         "dauntless": {
-            definition: "A short definition of 'dauntless' in English.",
-            example: "This sentence uses the word 'dauntless' in a natural way."
+            definition: "Having the quality of being daunt.",
+            example: "People often used the word 'dauntless' when discussing everyday topics."
         },
         "deafening": {
-            definition: "A short definition of 'deafening' in English.",
-            example: "This sentence uses the word 'deafening' in a natural way."
+            definition: "Being or performing the action of deafening or causing that action to happen.",
+            example: "People often used the word 'deafening' when discussing everyday topics."
         },
         "debt": {
-            definition: "A short definition of 'debt' in English.",
-            example: "This sentence uses the word 'debt' in a natural way."
+            definition: "Debt: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'debt' when discussing everyday topics."
         },
         "decisive": {
             definition: "Settling an issue; producing a definite result.",
             example: "The general made a decisive move that won the battle."
         },
         "decrepit": {
-            definition: "A short definition of 'decrepit' in English.",
-            example: "This sentence uses the word 'decrepit' in a natural way."
+            definition: "Decrepit: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'decrepit' when discussing everyday topics."
         },
         "decrépito": {
-            definition: "A short definition of 'decrépito' in English.",
-            example: "This sentence uses the word 'decrépito' in a natural way."
+            definition: "Decrépito: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'decrépito' when discussing everyday topics."
         },
         "defenseless": {
             definition: "Without defense or protection; vulnerable.",
             example: "The small animal was defenseless against the larger predator."
         },
         "dehumanize": {
-            definition: "A short definition of 'dehumanize' in English.",
-            example: "This sentence uses the word 'dehumanize' in a natural way."
+            definition: "To dehumanize.",
+            example: "People often used the word 'dehumanize' when discussing everyday topics."
         },
         "delicado": {
-            definition: "A short definition of 'delicado' in English.",
-            example: "This sentence uses the word 'delicado' in a natural way."
+            definition: "Delicado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'delicado' when discussing everyday topics."
         },
         "delicate": {
-            definition: "A short definition of 'delicate' in English.",
-            example: "This sentence uses the word 'delicate' in a natural way."
+            definition: "Delicate: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'delicate' when discussing everyday topics."
         },
         "denounce": {
-            definition: "A short definition of 'denounce' in English.",
-            example: "This sentence uses the word 'denounce' in a natural way."
+            definition: "To denounce.",
+            example: "People often used the word 'denounce' when discussing everyday topics."
         },
         "dependence": {
-            definition: "A short definition of 'dependence' in English.",
-            example: "This sentence uses the word 'dependence' in a natural way."
+            definition: "Dependence: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dependence' when discussing everyday topics."
         },
         "dependencia": {
-            definition: "A short definition of 'dependencia' in English.",
-            example: "This sentence uses the word 'dependencia' in a natural way."
+            definition: "Dependencia: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dependencia' when discussing everyday topics."
         },
         "deplorable": {
-            definition: "A short definition of 'deplorable' in English.",
-            example: "This sentence uses the word 'deplorable' in a natural way."
+            definition: "Capable of being deplor.",
+            example: "People often used the word 'deplorable' when discussing everyday topics."
         },
         "deprimido": {
-            definition: "A short definition of 'deprimido' in English.",
-            example: "This sentence uses the word 'deprimido' in a natural way."
+            definition: "Deprimido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'deprimido' when discussing everyday topics."
         },
         "desafiante": {
-            definition: "A short definition of 'desafiante' in English.",
-            example: "This sentence uses the word 'desafiante' in a natural way."
+            definition: "Desafiante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'desafiante' when discussing everyday topics."
         },
         "desafíos": {
-            definition: "A short definition of 'desafíos' in English.",
-            example: "This sentence uses the word 'desafíos' in a natural way."
+            definition: "Desafíos: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'desafíos' when discussing everyday topics."
         },
         "desarrollo": {
-            definition: "A short definition of 'desarrollo' in English.",
-            example: "This sentence uses the word 'desarrollo' in a natural way."
+            definition: "Desarrollo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'desarrollo' when discussing everyday topics."
         },
         "desayuno": {
-            definition: "A short definition of 'desayuno' in English.",
-            example: "This sentence uses the word 'desayuno' in a natural way."
+            definition: "Desayuno: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'desayuno' when discussing everyday topics."
         },
         "descomunal": {
-            definition: "A short definition of 'descomunal' in English.",
-            example: "This sentence uses the word 'descomunal' in a natural way."
+            definition: "Descomunal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'descomunal' when discussing everyday topics."
         },
         "desconsolado": {
-            definition: "A short definition of 'desconsolado' in English.",
-            example: "This sentence uses the word 'desconsolado' in a natural way."
+            definition: "Desconsolado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'desconsolado' when discussing everyday topics."
         },
         "deslumbrante": {
-            definition: "A short definition of 'deslumbrante' in English.",
-            example: "This sentence uses the word 'deslumbrante' in a natural way."
+            definition: "Deslumbrante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'deslumbrante' when discussing everyday topics."
         },
         "desolado": {
-            definition: "A short definition of 'desolado' in English.",
-            example: "This sentence uses the word 'desolado' in a natural way."
+            definition: "Desolado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'desolado' when discussing everyday topics."
         },
         "despair": {
-            definition: "A short definition of 'despair' in English.",
-            example: "This sentence uses the word 'despair' in a natural way."
+            definition: "Despair: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'despair' when discussing everyday topics."
         },
         "despondent": {
-            definition: "A short definition of 'despondent' in English.",
-            example: "This sentence uses the word 'despondent' in a natural way."
+            definition: "Despondent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'despondent' when discussing everyday topics."
         },
         "destitute": {
-            definition: "A short definition of 'destitute' in English.",
-            example: "This sentence uses the word 'destitute' in a natural way."
+            definition: "Destitute: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'destitute' when discussing everyday topics."
         },
         "determination": {
-            definition: "A short definition of 'determination' in English.",
-            example: "This sentence uses the word 'determination' in a natural way."
+            definition: "The act or process of determinaing.",
+            example: "People often used the word 'determination' when discussing everyday topics."
         },
         "deuda": {
-            definition: "A short definition of 'deuda' in English.",
-            example: "This sentence uses the word 'deuda' in a natural way."
+            definition: "Deuda: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'deuda' when discussing everyday topics."
         },
         "development": {
-            definition: "A short definition of 'development' in English.",
-            example: "This sentence uses the word 'development' in a natural way."
+            definition: "Development: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'development' when discussing everyday topics."
         },
         "device": {
-            definition: "A short definition of 'device' in English.",
-            example: "This sentence uses the word 'device' in a natural way."
+            definition: "Device: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'device' when discussing everyday topics."
         },
         "dialogue": {
-            definition: "A short definition of 'dialogue' in English.",
-            example: "This sentence uses the word 'dialogue' in a natural way."
+            definition: "Dialogue: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dialogue' when discussing everyday topics."
         },
         "diaphane": {
-            definition: "A short definition of 'diaphane' in English.",
-            example: "This sentence uses the word 'diaphane' in a natural way."
+            definition: "Diaphane: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'diaphane' when discussing everyday topics."
         },
         "diaphanous": {
             definition: "Light, delicate, and translucent.",
             example: "The curtains were made of a diaphanous, white fabric."
         },
         "dichoso": {
-            definition: "A short definition of 'dichoso' in English.",
-            example: "This sentence uses the word 'dichoso' in a natural way."
+            definition: "Dichoso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dichoso' when discussing everyday topics."
         },
         "difficile": {
-            definition: "A short definition of 'difficile' in English.",
-            example: "This sentence uses the word 'difficile' in a natural way."
+            definition: "Difficile: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'difficile' when discussing everyday topics."
         },
         "difficult": {
-            definition: "A short definition of 'difficult' in English.",
-            example: "This sentence uses the word 'difficult' in a natural way."
+            definition: "Difficult: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'difficult' when discussing everyday topics."
         },
         "diffident": {
-            definition: "A short definition of 'diffident' in English.",
-            example: "This sentence uses the word 'diffident' in a natural way."
+            definition: "Diffident: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'diffident' when discussing everyday topics."
         },
         "difícil": {
-            definition: "A short definition of 'difícil' in English.",
-            example: "This sentence uses the word 'difícil' in a natural way."
+            definition: "Difícil: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'difícil' when discussing everyday topics."
         },
         "dignes": {
-            definition: "A short definition of 'dignes' in English.",
-            example: "This sentence uses the word 'dignes' in a natural way."
+            definition: "Dignes: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dignes' when discussing everyday topics."
         },
         "dilapidated": {
-            definition: "A short definition of 'dilapidated' in English.",
-            example: "This sentence uses the word 'dilapidated' in a natural way."
+            definition: "Dilapidated: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dilapidated' when discussing everyday topics."
         },
         "diligent": {
-            definition: "A short definition of 'diligent' in English.",
-            example: "This sentence uses the word 'diligent' in a natural way."
+            definition: "Diligent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'diligent' when discussing everyday topics."
         },
         "diminutive": {
             definition: "Extremely or unusually small.",
             example: "The tiny bird was a diminutive creature compared to the eagle."
         },
         "diminuto": {
-            definition: "A short definition of 'diminuto' in English.",
-            example: "This sentence uses the word 'diminuto' in a natural way."
+            definition: "Diminuto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'diminuto' when discussing everyday topics."
         },
         "dirty": {
-            definition: "A short definition of 'dirty' in English.",
-            example: "This sentence uses the word 'dirty' in a natural way."
+            definition: "Dirty: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dirty' when discussing everyday topics."
         },
         "disciplina": {
-            definition: "A short definition of 'disciplina' in English.",
-            example: "This sentence uses the word 'disciplina' in a natural way."
+            definition: "Disciplina: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'disciplina' when discussing everyday topics."
         },
         "discipline": {
-            definition: "A short definition of 'discipline' in English.",
-            example: "This sentence uses the word 'discipline' in a natural way."
+            definition: "Discipline: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'discipline' when discussing everyday topics."
         },
         "disconsolate": {
-            definition: "A short definition of 'disconsolate' in English.",
-            example: "This sentence uses the word 'disconsolate' in a natural way."
+            definition: "Disconsolate: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'disconsolate' when discussing everyday topics."
         },
         "dispositivo": {
-            definition: "A short definition of 'dispositivo' in English.",
-            example: "This sentence uses the word 'dispositivo' in a natural way."
+            definition: "Dispositivo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dispositivo' when discussing everyday topics."
         },
         "disprove": {
-            definition: "A short definition of 'disprove' in English.",
-            example: "This sentence uses the word 'disprove' in a natural way."
+            definition: "Disprove: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'disprove' when discussing everyday topics."
         },
         "disruptive": {
-            definition: "A short definition of 'disruptive' in English.",
-            example: "This sentence uses the word 'disruptive' in a natural way."
+            definition: "Having the quality of being disrupt.",
+            example: "People often used the word 'disruptive' when discussing everyday topics."
         },
         "distracción": {
-            definition: "A short definition of 'distracción' in English.",
-            example: "This sentence uses the word 'distracción' in a natural way."
+            definition: "Distracción: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'distracción' when discussing everyday topics."
         },
         "distraction": {
-            definition: "A short definition of 'distraction' in English.",
-            example: "This sentence uses the word 'distraction' in a natural way."
+            definition: "The act or process of distracing.",
+            example: "People often used the word 'distraction' when discussing everyday topics."
         },
         "diáfano": {
-            definition: "A short definition of 'diáfano' in English.",
-            example: "This sentence uses the word 'diáfano' in a natural way."
+            definition: "Diáfano: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'diáfano' when discussing everyday topics."
         },
         "diálogo": {
-            definition: "A short definition of 'diálogo' in English.",
-            example: "This sentence uses the word 'diálogo' in a natural way."
+            definition: "Diálogo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'diálogo' when discussing everyday topics."
         },
         "docto": {
-            definition: "A short definition of 'docto' in English.",
-            example: "This sentence uses the word 'docto' in a natural way."
+            definition: "Docto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'docto' when discussing everyday topics."
         },
         "dolefulness": {
-            definition: "A short definition of 'dolefulness' in English.",
-            example: "This sentence uses the word 'dolefulness' in a natural way."
+            definition: "Dolefulness: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dolefulness' when discussing everyday topics."
         },
         "dolor": {
-            definition: "A short definition of 'dolor' in English.",
-            example: "This sentence uses the word 'dolor' in a natural way."
+            definition: "Dolor: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dolor' when discussing everyday topics."
         },
         "down": {
-            definition: "A short definition of 'down' in English.",
-            example: "This sentence uses the word 'down' in a natural way."
+            definition: "Down: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'down' when discussing everyday topics."
         },
         "dreadful": {
             definition: "Causing or involving great suffering, fear, or unhappiness.",
             example: "The news of the accident was absolutely dreadful."
         },
         "droll": {
-            definition: "A short definition of 'droll' in English.",
-            example: "This sentence uses the word 'droll' in a natural way."
+            definition: "Droll: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'droll' when discussing everyday topics."
         },
         "dull": {
-            definition: "A short definition of 'dull' in English.",
-            example: "This sentence uses the word 'dull' in a natural way."
+            definition: "Dull: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dull' when discussing everyday topics."
         },
         "dur": {
-            definition: "A short definition of 'dur' in English.",
-            example: "This sentence uses the word 'dur' in a natural way."
+            definition: "Dur: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'dur' when discussing everyday topics."
         },
         "durabilité": {
-            definition: "A short definition of 'durabilité' in English.",
-            example: "This sentence uses the word 'durabilité' in a natural way."
+            definition: "Durabilité: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'durabilité' when discussing everyday topics."
         },
         "duro": {
-            definition: "A short definition of 'duro' in English.",
-            example: "This sentence uses the word 'duro' in a natural way."
+            definition: "Duro: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'duro' when discussing everyday topics."
         },
         "décrépit": {
-            definition: "A short definition of 'décrépit' in English.",
-            example: "This sentence uses the word 'décrépit' in a natural way."
+            definition: "Décrépit: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'décrépit' when discussing everyday topics."
         },
         "défis": {
-            definition: "A short definition of 'défis' in English.",
-            example: "This sentence uses the word 'défis' in a natural way."
+            definition: "Défis: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'défis' when discussing everyday topics."
         },
         "déjeuner": {
-            definition: "A short definition of 'déjeuner' in English.",
-            example: "This sentence uses the word 'déjeuner' in a natural way."
+            definition: "A person or thing that déjeuner or performs the action déjeun.",
+            example: "People often used the word 'déjeuner' when discussing everyday topics."
         },
         "délectable": {
-            definition: "A short definition of 'délectable' in English.",
-            example: "This sentence uses the word 'délectable' in a natural way."
+            definition: "Capable of being délect.",
+            example: "People often used the word 'délectable' when discussing everyday topics."
         },
         "délicat": {
-            definition: "A short definition of 'délicat' in English.",
-            example: "This sentence uses the word 'délicat' in a natural way."
+            definition: "Délicat: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'délicat' when discussing everyday topics."
         },
         "déprimé": {
-            definition: "A short definition of 'déprimé' in English.",
-            example: "This sentence uses the word 'déprimé' in a natural way."
+            definition: "Déprimé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'déprimé' when discussing everyday topics."
         },
         "désespéré": {
-            definition: "A short definition of 'désespéré' in English.",
-            example: "This sentence uses the word 'désespéré' in a natural way."
+            definition: "Désespéré: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'désespéré' when discussing everyday topics."
         },
         "déterminant": {
-            definition: "A short definition of 'déterminant' in English.",
-            example: "This sentence uses the word 'déterminant' in a natural way."
+            definition: "Déterminant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'déterminant' when discussing everyday topics."
         },
         "détestable": {
-            definition: "A short definition of 'détestable' in English.",
-            example: "This sentence uses the word 'détestable' in a natural way."
+            definition: "Capable of being détest.",
+            example: "People often used the word 'détestable' when discussing everyday topics."
         },
         "développement": {
-            definition: "A short definition of 'développement' in English.",
-            example: "This sentence uses the word 'développement' in a natural way."
+            definition: "Développement: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'développement' when discussing everyday topics."
         },
         "easy": {
-            definition: "A short definition of 'easy' in English.",
-            example: "This sentence uses the word 'easy' in a natural way."
+            definition: "Easy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'easy' when discussing everyday topics."
         },
         "economical": {
-            definition: "A short definition of 'economical' in English.",
-            example: "This sentence uses the word 'economical' in a natural way."
+            definition: "Economical: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'economical' when discussing everyday topics."
         },
         "económico": {
-            definition: "A short definition of 'económico' in English.",
-            example: "This sentence uses the word 'económico' in a natural way."
+            definition: "Económico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'económico' when discussing everyday topics."
         },
         "ecstatic": {
-            definition: "A short definition of 'ecstatic' in English.",
-            example: "This sentence uses the word 'ecstatic' in a natural way."
+            definition: "Ecstatic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ecstatic' when discussing everyday topics."
         },
         "efectivo": {
-            definition: "A short definition of 'efectivo' in English.",
-            example: "This sentence uses the word 'efectivo' in a natural way."
+            definition: "Efectivo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'efectivo' when discussing everyday topics."
         },
         "effective": {
-            definition: "A short definition of 'effective' in English.",
-            example: "This sentence uses the word 'effective' in a natural way."
+            definition: "Having the quality of being effect.",
+            example: "People often used the word 'effective' when discussing everyday topics."
         },
         "effervesce": {
-            definition: "A short definition of 'effervesce' in English.",
-            example: "This sentence uses the word 'effervesce' in a natural way."
+            definition: "Effervesce: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'effervesce' when discussing everyday topics."
         },
         "effervescent": {
-            definition: "A short definition of 'effervescent' in English.",
-            example: "This sentence uses the word 'effervescent' in a natural way."
+            definition: "Effervescent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'effervescent' when discussing everyday topics."
         },
         "efficace": {
-            definition: "A short definition of 'efficace' in English.",
-            example: "This sentence uses the word 'efficace' in a natural way."
+            definition: "Efficace: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'efficace' when discussing everyday topics."
         },
         "efficacité": {
-            definition: "A short definition of 'efficacité' in English.",
-            example: "This sentence uses the word 'efficacité' in a natural way."
+            definition: "Efficacité: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'efficacité' when discussing everyday topics."
         },
         "efficiency": {
-            definition: "A short definition of 'efficiency' in English.",
-            example: "This sentence uses the word 'efficiency' in a natural way."
+            definition: "Efficiency: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'efficiency' when discussing everyday topics."
         },
         "efficient": {
-            definition: "A short definition of 'efficient' in English.",
-            example: "This sentence uses the word 'efficient' in a natural way."
+            definition: "Efficient: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'efficient' when discussing everyday topics."
         },
         "effort": {
-            definition: "A short definition of 'effort' in English.",
-            example: "This sentence uses the word 'effort' in a natural way."
+            definition: "Effort: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'effort' when discussing everyday topics."
         },
         "effortless": {
-            definition: "A short definition of 'effortless' in English.",
-            example: "This sentence uses the word 'effortless' in a natural way."
+            definition: "Having the quality of being effort.",
+            example: "People often used the word 'effortless' when discussing everyday topics."
         },
         "effrayant": {
-            definition: "A short definition of 'effrayant' in English.",
-            example: "This sentence uses the word 'effrayant' in a natural way."
+            definition: "Effrayant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'effrayant' when discussing everyday topics."
         },
         "effulgent": {
-            definition: "A short definition of 'effulgent' in English.",
-            example: "This sentence uses the word 'effulgent' in a natural way."
+            definition: "Effulgent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'effulgent' when discussing everyday topics."
         },
         "eficiencia": {
-            definition: "A short definition of 'eficiencia' in English.",
-            example: "This sentence uses the word 'eficiencia' in a natural way."
+            definition: "Eficiencia: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'eficiencia' when discussing everyday topics."
         },
         "eficiente": {
-            definition: "A short definition of 'eficiente' in English.",
-            example: "This sentence uses the word 'eficiente' in a natural way."
+            definition: "Eficiente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'eficiente' when discussing everyday topics."
         },
         "ejercicio": {
-            definition: "A short definition of 'ejercicio' in English.",
-            example: "This sentence uses the word 'ejercicio' in a natural way."
+            definition: "Ejercicio: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ejercicio' when discussing everyday topics."
         },
         "elated": {
-            definition: "A short definition of 'elated' in English.",
-            example: "This sentence uses the word 'elated' in a natural way."
+            definition: "Elated: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'elated' when discussing everyday topics."
         },
         "elation": {
-            definition: "A short definition of 'elation' in English.",
-            example: "This sentence uses the word 'elation' in a natural way."
+            definition: "The act or process of elaing.",
+            example: "People often used the word 'elation' when discussing everyday topics."
         },
         "elderly": {
-            definition: "A short definition of 'elderly' in English.",
-            example: "This sentence uses the word 'elderly' in a natural way."
+            definition: "In a manner that is elder.",
+            example: "People often used the word 'elderly' when discussing everyday topics."
         },
         "eldritch": {
-            definition: "A short definition of 'eldritch' in English.",
-            example: "This sentence uses the word 'eldritch' in a natural way."
+            definition: "Eldritch: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'eldritch' when discussing everyday topics."
         },
         "electrizante": {
-            definition: "A short definition of 'electrizante' in English.",
-            example: "This sentence uses the word 'electrizante' in a natural way."
+            definition: "Electrizante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'electrizante' when discussing everyday topics."
         },
         "elemental": {
-            definition: "A short definition of 'elemental' in English.",
-            example: "This sentence uses the word 'elemental' in a natural way."
+            definition: "Elemental: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'elemental' when discussing everyday topics."
         },
         "elementary": {
-            definition: "A short definition of 'elementary' in English.",
-            example: "This sentence uses the word 'elementary' in a natural way."
+            definition: "Elementary: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'elementary' when discussing everyday topics."
         },
         "eloquent": {
-            definition: "A short definition of 'eloquent' in English.",
-            example: "This sentence uses the word 'eloquent' in a natural way."
+            definition: "Eloquent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'eloquent' when discussing everyday topics."
         },
         "emaciated": {
-            definition: "A short definition of 'emaciated' in English.",
-            example: "This sentence uses the word 'emaciated' in a natural way."
+            definition: "Emaciated: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'emaciated' when discussing everyday topics."
         },
         "emblematic": {
             definition: "Serving as a symbol of a particular quality or concept.",
@@ -1861,1084 +1861,1084 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The emeritus dean still attended university ceremonies."
         },
         "emotion": {
-            definition: "A short definition of 'emotion' in English.",
-            example: "This sentence uses the word 'emotion' in a natural way."
+            definition: "The act or process of emoing.",
+            example: "People often used the word 'emotion' when discussing everyday topics."
         },
         "empathy": {
-            definition: "A short definition of 'empathy' in English.",
-            example: "This sentence uses the word 'empathy' in a natural way."
+            definition: "Empathy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'empathy' when discussing everyday topics."
         },
         "empatía": {
-            definition: "A short definition of 'empatía' in English.",
-            example: "This sentence uses the word 'empatía' in a natural way."
+            definition: "Empatía: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'empatía' when discussing everyday topics."
         },
         "empty": {
-            definition: "A short definition of 'empty' in English.",
-            example: "This sentence uses the word 'empty' in a natural way."
+            definition: "Empty: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'empty' when discussing everyday topics."
         },
         "en colère": {
-            definition: "A short definition of 'en colère' in English.",
-            example: "This sentence uses the word 'en colère' in a natural way."
+            definition: "En colère: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'en colère' when discussing everyday topics."
         },
         "encrespado": {
-            definition: "A short definition of 'encrespado' in English.",
-            example: "This sentence uses the word 'encrespado' in a natural way."
+            definition: "Encrespado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'encrespado' when discussing everyday topics."
         },
         "endurance": {
-            definition: "A short definition of 'endurance' in English.",
-            example: "This sentence uses the word 'endurance' in a natural way."
+            definition: "Endurance: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'endurance' when discussing everyday topics."
         },
         "enfadado": {
-            definition: "A short definition of 'enfadado' in English.",
-            example: "This sentence uses the word 'enfadado' in a natural way."
+            definition: "Enfadado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'enfadado' when discussing everyday topics."
         },
         "enfantin": {
-            definition: "A short definition of 'enfantin' in English.",
-            example: "This sentence uses the word 'enfantin' in a natural way."
+            definition: "Enfantin: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'enfantin' when discussing everyday topics."
         },
         "engagement": {
-            definition: "A short definition of 'engagement' in English.",
-            example: "This sentence uses the word 'engagement' in a natural way."
+            definition: "Engagement: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'engagement' when discussing everyday topics."
         },
         "engaging": {
-            definition: "A short definition of 'engaging' in English.",
-            example: "This sentence uses the word 'engaging' in a natural way."
+            definition: "Being or performing the action of engaging or causing that action to happen.",
+            example: "People often used the word 'engaging' when discussing everyday topics."
         },
         "enhance": {
-            definition: "A short definition of 'enhance' in English.",
-            example: "This sentence uses the word 'enhance' in a natural way."
+            definition: "To enhance.",
+            example: "People often used the word 'enhance' when discussing everyday topics."
         },
         "enliven": {
-            definition: "A short definition of 'enliven' in English.",
-            example: "This sentence uses the word 'enliven' in a natural way."
+            definition: "Enliven: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'enliven' when discussing everyday topics."
         },
         "ennui": {
-            definition: "A short definition of 'ennui' in English.",
-            example: "This sentence uses the word 'ennui' in a natural way."
+            definition: "Ennui: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ennui' when discussing everyday topics."
         },
         "enojado": {
-            definition: "A short definition of 'enojado' in English.",
-            example: "This sentence uses the word 'enojado' in a natural way."
+            definition: "Enojado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'enojado' when discussing everyday topics."
         },
         "enorme": {
-            definition: "A short definition of 'enorme' in English.",
-            example: "This sentence uses the word 'enorme' in a natural way."
+            definition: "Enorme: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'enorme' when discussing everyday topics."
         },
         "enormous": {
-            definition: "A short definition of 'enormous' in English.",
-            example: "This sentence uses the word 'enormous' in a natural way."
+            definition: "Having the quality of being enorm.",
+            example: "People often used the word 'enormous' when discussing everyday topics."
         },
         "enrapture": {
-            definition: "A short definition of 'enrapture' in English.",
-            example: "This sentence uses the word 'enrapture' in a natural way."
+            definition: "Enrapture: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'enrapture' when discussing everyday topics."
         },
         "enrichment": {
-            definition: "A short definition of 'enrichment' in English.",
-            example: "This sentence uses the word 'enrichment' in a natural way."
+            definition: "Enrichment: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'enrichment' when discussing everyday topics."
         },
         "entertaining": {
-            definition: "A short definition of 'entertaining' in English.",
-            example: "This sentence uses the word 'entertaining' in a natural way."
+            definition: "Being or performing the action of entertaining or causing that action to happen.",
+            example: "People often used the word 'entertaining' when discussing everyday topics."
         },
         "enthralling": {
-            definition: "A short definition of 'enthralling' in English.",
-            example: "This sentence uses the word 'enthralling' in a natural way."
+            definition: "Being or performing the action of enthralling or causing that action to happen.",
+            example: "People often used the word 'enthralling' when discussing everyday topics."
         },
         "entorno": {
-            definition: "A short definition of 'entorno' in English.",
-            example: "This sentence uses the word 'entorno' in a natural way."
+            definition: "Entorno: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'entorno' when discussing everyday topics."
         },
         "entrenamiento": {
-            definition: "A short definition of 'entrenamiento' in English.",
-            example: "This sentence uses the word 'entrenamiento' in a natural way."
+            definition: "Entrenamiento: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'entrenamiento' when discussing everyday topics."
         },
         "entrepreneur": {
             definition: "A person who organizes and operates a business.",
             example: "As a young entrepreneur, she started her own tech company."
         },
         "environment": {
-            definition: "A short definition of 'environment' in English.",
-            example: "This sentence uses the word 'environment' in a natural way."
+            definition: "Environment: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'environment' when discussing everyday topics."
         },
         "envoûtant": {
-            definition: "A short definition of 'envoûtant' in English.",
-            example: "This sentence uses the word 'envoûtant' in a natural way."
+            definition: "Envoûtant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'envoûtant' when discussing everyday topics."
         },
         "ephemeral": {
             definition: "Lasting for a very short time.",
             example: "The beauty of a flower is often beautiful but ephemeral."
         },
         "epidemic": {
-            definition: "A short definition of 'epidemic' in English.",
-            example: "This sentence uses the word 'epidemic' in a natural way."
+            definition: "Epidemic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'epidemic' when discussing everyday topics."
         },
         "epigram": {
             definition: "A pithy saying or remark expressing an idea cleverly.",
             example: "He was known for his witty epigrams about modern life."
         },
         "equable": {
-            definition: "A short definition of 'equable' in English.",
-            example: "This sentence uses the word 'equable' in a natural way."
+            definition: "Capable of being equ.",
+            example: "People often used the word 'equable' when discussing everyday topics."
         },
         "equanimous": {
-            definition: "A short definition of 'equanimous' in English.",
-            example: "This sentence uses the word 'equanimous' in a natural way."
+            definition: "Having the quality of being equanim.",
+            example: "People often used the word 'equanimous' when discussing everyday topics."
         },
         "equilibrio": {
-            definition: "A short definition of 'equilibrio' in English.",
-            example: "This sentence uses the word 'equilibrio' in a natural way."
+            definition: "Equilibrio: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'equilibrio' when discussing everyday topics."
         },
         "erudite": {
             definition: "Having or showing great knowledge or learning.",
             example: "The erudite professor spoke at length about ancient civilizations."
         },
         "erudito": {
-            definition: "A short definition of 'erudito' in English.",
-            example: "This sentence uses the word 'erudito' in a natural way."
+            definition: "Erudito: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'erudito' when discussing everyday topics."
         },
         "escabroso": {
-            definition: "A short definition of 'escabroso' in English.",
-            example: "This sentence uses the word 'escabroso' in a natural way."
+            definition: "Escabroso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'escabroso' when discussing everyday topics."
         },
         "escala": {
-            definition: "A short definition of 'escala' in English.",
-            example: "This sentence uses the word 'escala' in a natural way."
+            definition: "Escala: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'escala' when discussing everyday topics."
         },
         "escalofriante": {
-            definition: "A short definition of 'escalofriante' in English.",
-            example: "This sentence uses the word 'escalofriante' in a natural way."
+            definition: "Escalofriante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'escalofriante' when discussing everyday topics."
         },
         "escucha": {
-            definition: "A short definition of 'escucha' in English.",
-            example: "This sentence uses the word 'escucha' in a natural way."
+            definition: "Escucha: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'escucha' when discussing everyday topics."
         },
         "esencial": {
-            definition: "A short definition of 'esencial' in English.",
-            example: "This sentence uses the word 'esencial' in a natural way."
+            definition: "Esencial: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'esencial' when discussing everyday topics."
         },
         "esfuerzo": {
-            definition: "A short definition of 'esfuerzo' in English.",
-            example: "This sentence uses the word 'esfuerzo' in a natural way."
+            definition: "Esfuerzo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'esfuerzo' when discussing everyday topics."
         },
         "espantoso": {
-            definition: "A short definition of 'espantoso' in English.",
-            example: "This sentence uses the word 'espantoso' in a natural way."
+            definition: "Espantoso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'espantoso' when discussing everyday topics."
         },
         "especulativo": {
-            definition: "A short definition of 'especulativo' in English.",
-            example: "This sentence uses the word 'especulativo' in a natural way."
+            definition: "Especulativo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'especulativo' when discussing everyday topics."
         },
         "espeluznante": {
-            definition: "A short definition of 'espeluznante' in English.",
-            example: "This sentence uses the word 'espeluznante' in a natural way."
+            definition: "Espeluznante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'espeluznante' when discussing everyday topics."
         },
         "espinoso": {
-            definition: "A short definition of 'espinoso' in English.",
-            example: "This sentence uses the word 'espinoso' in a natural way."
+            definition: "Espinoso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'espinoso' when discussing everyday topics."
         },
         "espléndido": {
-            definition: "A short definition of 'espléndido' in English.",
-            example: "This sentence uses the word 'espléndido' in a natural way."
+            definition: "Espléndido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'espléndido' when discussing everyday topics."
         },
         "essential": {
-            definition: "A short definition of 'essential' in English.",
-            example: "This sentence uses the word 'essential' in a natural way."
+            definition: "Essential: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'essential' when discussing everyday topics."
         },
         "essentiel": {
-            definition: "A short definition of 'essentiel' in English.",
-            example: "This sentence uses the word 'essentiel' in a natural way."
+            definition: "Essentiel: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'essentiel' when discussing everyday topics."
         },
         "estupendo": {
-            definition: "A short definition of 'estupendo' in English.",
-            example: "This sentence uses the word 'estupendo' in a natural way."
+            definition: "Estupendo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'estupendo' when discussing everyday topics."
         },
         "ethereal": {
-            definition: "A short definition of 'ethereal' in English.",
-            example: "This sentence uses the word 'ethereal' in a natural way."
+            definition: "Ethereal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ethereal' when discussing everyday topics."
         },
         "eufórico": {
-            definition: "A short definition of 'eufórico' in English.",
-            example: "This sentence uses the word 'eufórico' in a natural way."
+            definition: "Eufórico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'eufórico' when discussing everyday topics."
         },
         "euphonious": {
-            definition: "A short definition of 'euphonious' in English.",
-            example: "This sentence uses the word 'euphonious' in a natural way."
+            definition: "Having the quality of being euphon.",
+            example: "People often used the word 'euphonious' when discussing everyday topics."
         },
         "euphoric": {
-            definition: "A short definition of 'euphoric' in English.",
-            example: "This sentence uses the word 'euphoric' in a natural way."
+            definition: "Euphoric: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'euphoric' when discussing everyday topics."
         },
         "euphorique": {
-            definition: "A short definition of 'euphorique' in English.",
-            example: "This sentence uses the word 'euphorique' in a natural way."
+            definition: "Euphorique: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'euphorique' when discussing everyday topics."
         },
         "evident": {
-            definition: "A short definition of 'evident' in English.",
-            example: "This sentence uses the word 'evident' in a natural way."
+            definition: "Evident: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'evident' when discussing everyday topics."
         },
         "evidente": {
-            definition: "A short definition of 'evidente' in English.",
-            example: "This sentence uses the word 'evidente' in a natural way."
+            definition: "Evidente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'evidente' when discussing everyday topics."
         },
         "exalt": {
-            definition: "A short definition of 'exalt' in English.",
-            example: "This sentence uses the word 'exalt' in a natural way."
+            definition: "Exalt: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exalt' when discussing everyday topics."
         },
         "exasperado": {
-            definition: "A short definition of 'exasperado' in English.",
-            example: "This sentence uses the word 'exasperado' in a natural way."
+            definition: "Exasperado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exasperado' when discussing everyday topics."
         },
         "exaspéré": {
-            definition: "A short definition of 'exaspéré' in English.",
-            example: "This sentence uses the word 'exaspéré' in a natural way."
+            definition: "Exaspéré: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exaspéré' when discussing everyday topics."
         },
         "excelente": {
-            definition: "A short definition of 'excelente' in English.",
-            example: "This sentence uses the word 'excelente' in a natural way."
+            definition: "Excelente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'excelente' when discussing everyday topics."
         },
         "excellent": {
-            definition: "A short definition of 'excellent' in English.",
-            example: "This sentence uses the word 'excellent' in a natural way."
+            definition: "Excellent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'excellent' when discussing everyday topics."
         },
         "excepcional": {
-            definition: "A short definition of 'excepcional' in English.",
-            example: "This sentence uses the word 'excepcional' in a natural way."
+            definition: "Excepcional: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'excepcional' when discussing everyday topics."
         },
         "excruciating": {
-            definition: "A short definition of 'excruciating' in English.",
-            example: "This sentence uses the word 'excruciating' in a natural way."
+            definition: "Being or performing the action of excruciating or causing that action to happen.",
+            example: "People often used the word 'excruciating' when discussing everyday topics."
         },
         "execrable": {
-            definition: "A short definition of 'execrable' in English.",
-            example: "This sentence uses the word 'execrable' in a natural way."
+            definition: "Capable of being execr.",
+            example: "People often used the word 'execrable' when discussing everyday topics."
         },
         "exemplary": {
-            definition: "A short definition of 'exemplary' in English.",
-            example: "This sentence uses the word 'exemplary' in a natural way."
+            definition: "Exemplary: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exemplary' when discussing everyday topics."
         },
         "exercice": {
-            definition: "A short definition of 'exercice' in English.",
-            example: "This sentence uses the word 'exercice' in a natural way."
+            definition: "Exercice: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exercice' when discussing everyday topics."
         },
         "exercise": {
-            definition: "A short definition of 'exercise' in English.",
-            example: "This sentence uses the word 'exercise' in a natural way."
+            definition: "To exercise.",
+            example: "People often used the word 'exercise' when discussing everyday topics."
         },
         "exigu": {
-            definition: "A short definition of 'exigu' in English.",
-            example: "This sentence uses the word 'exigu' in a natural way."
+            definition: "Exigu: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exigu' when discussing everyday topics."
         },
         "exiguo": {
-            definition: "A short definition of 'exiguo' in English.",
-            example: "This sentence uses the word 'exiguo' in a natural way."
+            definition: "Exiguo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exiguo' when discussing everyday topics."
         },
         "exiguous": {
-            definition: "A short definition of 'exiguous' in English.",
-            example: "This sentence uses the word 'exiguous' in a natural way."
+            definition: "Having the quality of being exig.",
+            example: "People often used the word 'exiguous' when discussing everyday topics."
         },
         "eximio": {
-            definition: "A short definition of 'eximio' in English.",
-            example: "This sentence uses the word 'eximio' in a natural way."
+            definition: "Eximio: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'eximio' when discussing everyday topics."
         },
         "exorbitant": {
             definition: "Unreasonably high; excessive.",
             example: "The restaurant charged an exorbitant price for a simple meal."
         },
         "expedited": {
-            definition: "A short definition of 'expedited' in English.",
-            example: "This sentence uses the word 'expedited' in a natural way."
+            definition: "Expedited: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'expedited' when discussing everyday topics."
         },
         "expeditious": {
-            definition: "A short definition of 'expeditious' in English.",
-            example: "This sentence uses the word 'expeditious' in a natural way."
+            definition: "Having the quality of being expedit.",
+            example: "People often used the word 'expeditious' when discussing everyday topics."
         },
         "expeditivo": {
-            definition: "A short definition of 'expeditivo' in English.",
-            example: "This sentence uses the word 'expeditivo' in a natural way."
+            definition: "Expeditivo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'expeditivo' when discussing everyday topics."
         },
         "expedito": {
-            definition: "A short definition of 'expedito' in English.",
-            example: "This sentence uses the word 'expedito' in a natural way."
+            definition: "Expedito: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'expedito' when discussing everyday topics."
         },
         "exploración": {
-            definition: "A short definition of 'exploración' in English.",
-            example: "This sentence uses the word 'exploración' in a natural way."
+            definition: "Exploración: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exploración' when discussing everyday topics."
         },
         "exploration": {
-            definition: "A short definition of 'exploration' in English.",
-            example: "This sentence uses the word 'exploration' in a natural way."
+            definition: "The act or process of exploraing.",
+            example: "People often used the word 'exploration' when discussing everyday topics."
         },
         "exponential": {
-            definition: "A short definition of 'exponential' in English.",
-            example: "This sentence uses the word 'exponential' in a natural way."
+            definition: "Exponential: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exponential' when discussing everyday topics."
         },
         "expression": {
-            definition: "A short definition of 'expression' in English.",
-            example: "This sentence uses the word 'expression' in a natural way."
+            definition: "The act or process of expresing.",
+            example: "People often used the word 'expression' when discussing everyday topics."
         },
         "expéditif": {
-            definition: "A short definition of 'expéditif' in English.",
-            example: "This sentence uses the word 'expéditif' in a natural way."
+            definition: "Expéditif: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'expéditif' when discussing everyday topics."
         },
         "exquis": {
-            definition: "A short definition of 'exquis' in English.",
-            example: "This sentence uses the word 'exquis' in a natural way."
+            definition: "Exquis: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exquis' when discussing everyday topics."
         },
         "exquisite": {
-            definition: "A short definition of 'exquisite' in English.",
-            example: "This sentence uses the word 'exquisite' in a natural way."
+            definition: "Exquisite: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exquisite' when discussing everyday topics."
         },
         "exquisito": {
-            definition: "A short definition of 'exquisito' in English.",
-            example: "This sentence uses the word 'exquisito' in a natural way."
+            definition: "Exquisito: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exquisito' when discussing everyday topics."
         },
         "extatique": {
-            definition: "A short definition of 'extatique' in English.",
-            example: "This sentence uses the word 'extatique' in a natural way."
+            definition: "Extatique: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'extatique' when discussing everyday topics."
         },
         "exultant": {
-            definition: "A short definition of 'exultant' in English.",
-            example: "This sentence uses the word 'exultant' in a natural way."
+            definition: "Exultant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exultant' when discussing everyday topics."
         },
         "exultante": {
-            definition: "A short definition of 'exultante' in English.",
-            example: "This sentence uses the word 'exultante' in a natural way."
+            definition: "Exultante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'exultante' when discussing everyday topics."
         },
         "exécrable": {
-            definition: "A short definition of 'exécrable' in English.",
-            example: "This sentence uses the word 'exécrable' in a natural way."
+            definition: "Capable of being exécr.",
+            example: "People often used the word 'exécrable' when discussing everyday topics."
         },
         "facile": {
-            definition: "A short definition of 'facile' in English.",
-            example: "This sentence uses the word 'facile' in a natural way."
+            definition: "Facile: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'facile' when discussing everyday topics."
         },
         "factible": {
-            definition: "A short definition of 'factible' in English.",
-            example: "This sentence uses the word 'factible' in a natural way."
+            definition: "Factible: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'factible' when discussing everyday topics."
         },
         "fair": {
-            definition: "A short definition of 'fair' in English.",
-            example: "This sentence uses the word 'fair' in a natural way."
+            definition: "Fair: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fair' when discussing everyday topics."
         },
         "fairness": {
-            definition: "A short definition of 'fairness' in English.",
-            example: "This sentence uses the word 'fairness' in a natural way."
+            definition: "Fairness: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fairness' when discussing everyday topics."
         },
         "fallacy": {
-            definition: "A short definition of 'fallacy' in English.",
-            example: "This sentence uses the word 'fallacy' in a natural way."
+            definition: "Fallacy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fallacy' when discussing everyday topics."
         },
         "fantástico": {
-            definition: "A short definition of 'fantástico' in English.",
-            example: "This sentence uses the word 'fantástico' in a natural way."
+            definition: "Fantástico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fantástico' when discussing everyday topics."
         },
         "farcical": {
-            definition: "A short definition of 'farcical' in English.",
-            example: "This sentence uses the word 'farcical' in a natural way."
+            definition: "Farcical: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'farcical' when discussing everyday topics."
         },
         "farsighted": {
             definition: "Having or showing imagination or foresight; able to see far objects clearly.",
             example: "The CEO's farsighted strategy led the company to long-term success."
         },
         "fascinant": {
-            definition: "A short definition of 'fascinant' in English.",
-            example: "This sentence uses the word 'fascinant' in a natural way."
+            definition: "Fascinant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fascinant' when discussing everyday topics."
         },
         "fascinante": {
-            definition: "A short definition of 'fascinante' in English.",
-            example: "This sentence uses the word 'fascinante' in a natural way."
+            definition: "Fascinante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fascinante' when discussing everyday topics."
         },
         "fascinating": {
-            definition: "A short definition of 'fascinating' in English.",
-            example: "This sentence uses the word 'fascinating' in a natural way."
+            definition: "Being or performing the action of fascinating or causing that action to happen.",
+            example: "People often used the word 'fascinating' when discussing everyday topics."
         },
         "fast": {
-            definition: "A short definition of 'fast' in English.",
-            example: "This sentence uses the word 'fast' in a natural way."
+            definition: "Fast: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fast' when discussing everyday topics."
         },
         "fat": {
-            definition: "A short definition of 'fat' in English.",
-            example: "This sentence uses the word 'fat' in a natural way."
+            definition: "Fat: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fat' when discussing everyday topics."
         },
         "fatal": {
             definition: "Causing death; leading to failure or disaster.",
             example: "A fatal error in the code caused the system to crash."
         },
         "fearless": {
-            definition: "A short definition of 'fearless' in English.",
-            example: "This sentence uses the word 'fearless' in a natural way."
+            definition: "Having the quality of being fear.",
+            example: "People often used the word 'fearless' when discussing everyday topics."
         },
         "feedback": {
-            definition: "A short definition of 'feedback' in English.",
-            example: "This sentence uses the word 'feedback' in a natural way."
+            definition: "Feedback: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'feedback' when discussing everyday topics."
         },
         "feliz": {
-            definition: "A short definition of 'feliz' in English.",
-            example: "This sentence uses the word 'feliz' in a natural way."
+            definition: "Feliz: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'feliz' when discussing everyday topics."
         },
         "few": {
-            definition: "A short definition of 'few' in English.",
-            example: "This sentence uses the word 'few' in a natural way."
+            definition: "Few: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'few' when discussing everyday topics."
         },
         "filthy": {
-            definition: "A short definition of 'filthy' in English.",
-            example: "This sentence uses the word 'filthy' in a natural way."
+            definition: "Filthy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'filthy' when discussing everyday topics."
         },
         "fine": {
-            definition: "A short definition of 'fine' in English.",
-            example: "This sentence uses the word 'fine' in a natural way."
+            definition: "Fine: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fine' when discussing everyday topics."
         },
         "firm": {
-            definition: "A short definition of 'firm' in English.",
-            example: "This sentence uses the word 'firm' in a natural way."
+            definition: "Firm: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'firm' when discussing everyday topics."
         },
         "fisgón": {
-            definition: "A short definition of 'fisgón' in English.",
-            example: "This sentence uses the word 'fisgón' in a natural way."
+            definition: "Fisgón: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fisgón' when discussing everyday topics."
         },
         "flamante": {
-            definition: "A short definition of 'flamante' in English.",
-            example: "This sentence uses the word 'flamante' in a natural way."
+            definition: "Flamante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'flamante' when discussing everyday topics."
         },
         "flavor": {
-            definition: "A short definition of 'flavor' in English.",
-            example: "This sentence uses the word 'flavor' in a natural way."
+            definition: "Flavor: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'flavor' when discussing everyday topics."
         },
         "fleet": {
-            definition: "A short definition of 'fleet' in English.",
-            example: "This sentence uses the word 'fleet' in a natural way."
+            definition: "Fleet: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fleet' when discussing everyday topics."
         },
         "fleet-footed": {
-            definition: "A short definition of 'fleet-footed' in English.",
-            example: "This sentence uses the word 'fleet-footed' in a natural way."
+            definition: "Fleet-footed: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fleet-footed' when discussing everyday topics."
         },
         "flexibilidad": {
-            definition: "A short definition of 'flexibilidad' in English.",
-            example: "This sentence uses the word 'flexibilidad' in a natural way."
+            definition: "Flexibilidad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'flexibilidad' when discussing everyday topics."
         },
         "flexibility": {
-            definition: "A short definition of 'flexibility' in English.",
-            example: "This sentence uses the word 'flexibility' in a natural way."
+            definition: "Flexibility: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'flexibility' when discussing everyday topics."
         },
         "flimsy": {
-            definition: "A short definition of 'flimsy' in English.",
-            example: "This sentence uses the word 'flimsy' in a natural way."
+            definition: "Flimsy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'flimsy' when discussing everyday topics."
         },
         "flush": {
-            definition: "A short definition of 'flush' in English.",
-            example: "This sentence uses the word 'flush' in a natural way."
+            definition: "Flush: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'flush' when discussing everyday topics."
         },
         "focus": {
-            definition: "A short definition of 'focus' in English.",
-            example: "This sentence uses the word 'focus' in a natural way."
+            definition: "Focus: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'focus' when discussing everyday topics."
         },
         "follow-up": {
-            definition: "A short definition of 'follow-up' in English.",
-            example: "This sentence uses the word 'follow-up' in a natural way."
+            definition: "Follow-up: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'follow-up' when discussing everyday topics."
         },
         "fondamental": {
-            definition: "A short definition of 'fondamental' in English.",
-            example: "This sentence uses the word 'fondamental' in a natural way."
+            definition: "Fondamental: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fondamental' when discussing everyday topics."
         },
         "forlorn": {
-            definition: "A short definition of 'forlorn' in English.",
-            example: "This sentence uses the word 'forlorn' in a natural way."
+            definition: "Forlorn: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'forlorn' when discussing everyday topics."
         },
         "formative": {
-            definition: "A short definition of 'formative' in English.",
-            example: "This sentence uses the word 'formative' in a natural way."
+            definition: "Having the quality of being format.",
+            example: "People often used the word 'formative' when discussing everyday topics."
         },
         "formidable": {
-            definition: "A short definition of 'formidable' in English.",
-            example: "This sentence uses the word 'formidable' in a natural way."
+            definition: "Capable of being formid.",
+            example: "People often used the word 'formidable' when discussing everyday topics."
         },
         "fornido": {
-            definition: "A short definition of 'fornido' in English.",
-            example: "This sentence uses the word 'fornido' in a natural way."
+            definition: "Fornido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fornido' when discussing everyday topics."
         },
         "fort": {
-            definition: "A short definition of 'fort' in English.",
-            example: "This sentence uses the word 'fort' in a natural way."
+            definition: "Fort: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fort' when discussing everyday topics."
         },
         "forthright": {
-            definition: "A short definition of 'forthright' in English.",
-            example: "This sentence uses the word 'forthright' in a natural way."
+            definition: "Forthright: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'forthright' when discussing everyday topics."
         },
         "fortified": {
-            definition: "A short definition of 'fortified' in English.",
-            example: "This sentence uses the word 'fortified' in a natural way."
+            definition: "Fortified: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fortified' when discussing everyday topics."
         },
         "fortuitous": {
             definition: "Happening by a lucky accident or chance rather than design.",
             example: "The discovery of the gold mine was completely fortuitous."
         },
         "fouineur": {
-            definition: "A short definition of 'fouineur' in English.",
-            example: "This sentence uses the word 'fouineur' in a natural way."
+            definition: "Fouineur: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fouineur' when discussing everyday topics."
         },
         "foul": {
-            definition: "A short definition of 'foul' in English.",
-            example: "This sentence uses the word 'foul' in a natural way."
+            definition: "Foul: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'foul' when discussing everyday topics."
         },
         "fragile": {
-            definition: "A short definition of 'fragile' in English.",
-            example: "This sentence uses the word 'fragile' in a natural way."
+            definition: "Fragile: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fragile' when discussing everyday topics."
         },
         "frail": {
-            definition: "A short definition of 'frail' in English.",
-            example: "This sentence uses the word 'frail' in a natural way."
+            definition: "Frail: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frail' when discussing everyday topics."
         },
         "frais": {
-            definition: "A short definition of 'frais' in English.",
-            example: "This sentence uses the word 'frais' in a natural way."
+            definition: "Frais: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frais' when discussing everyday topics."
         },
         "frank": {
-            definition: "A short definition of 'frank' in English.",
-            example: "This sentence uses the word 'frank' in a natural way."
+            definition: "Frank: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frank' when discussing everyday topics."
         },
         "fraught": {
-            definition: "A short definition of 'fraught' in English.",
-            example: "This sentence uses the word 'fraught' in a natural way."
+            definition: "Fraught: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fraught' when discussing everyday topics."
         },
         "freezing": {
-            definition: "A short definition of 'freezing' in English.",
-            example: "This sentence uses the word 'freezing' in a natural way."
+            definition: "Being or performing the action of freezing or causing that action to happen.",
+            example: "People often used the word 'freezing' when discussing everyday topics."
         },
         "frenetic": {
-            definition: "A short definition of 'frenetic' in English.",
-            example: "This sentence uses the word 'frenetic' in a natural way."
+            definition: "Frenetic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frenetic' when discussing everyday topics."
         },
         "fresco": {
-            definition: "A short definition of 'fresco' in English.",
-            example: "This sentence uses the word 'fresco' in a natural way."
+            definition: "Fresco: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fresco' when discussing everyday topics."
         },
         "fresh": {
-            definition: "A short definition of 'fresh' in English.",
-            example: "This sentence uses the word 'fresh' in a natural way."
+            definition: "Fresh: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fresh' when discussing everyday topics."
         },
         "friable": {
-            definition: "A short definition of 'friable' in English.",
-            example: "This sentence uses the word 'friable' in a natural way."
+            definition: "Capable of being fri.",
+            example: "People often used the word 'friable' when discussing everyday topics."
         },
         "friendly": {
-            definition: "A short definition of 'friendly' in English.",
-            example: "This sentence uses the word 'friendly' in a natural way."
+            definition: "In a manner that is friend.",
+            example: "People often used the word 'friendly' when discussing everyday topics."
         },
         "frightening": {
-            definition: "A short definition of 'frightening' in English.",
-            example: "This sentence uses the word 'frightening' in a natural way."
+            definition: "Being or performing the action of frightening or causing that action to happen.",
+            example: "People often used the word 'frightening' when discussing everyday topics."
         },
         "frigid": {
-            definition: "A short definition of 'frigid' in English.",
-            example: "This sentence uses the word 'frigid' in a natural way."
+            definition: "Frigid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frigid' when discussing everyday topics."
         },
         "frigorifique": {
-            definition: "A short definition of 'frigorifique' in English.",
-            example: "This sentence uses the word 'frigorifique' in a natural way."
+            definition: "Frigorifique: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frigorifique' when discussing everyday topics."
         },
         "froid": {
-            definition: "A short definition of 'froid' in English.",
-            example: "This sentence uses the word 'froid' in a natural way."
+            definition: "Froid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'froid' when discussing everyday topics."
         },
         "frolicking": {
-            definition: "A short definition of 'frolicking' in English.",
-            example: "This sentence uses the word 'frolicking' in a natural way."
+            definition: "Being or performing the action of frolicking or causing that action to happen.",
+            example: "People often used the word 'frolicking' when discussing everyday topics."
         },
         "frosty": {
-            definition: "A short definition of 'frosty' in English.",
-            example: "This sentence uses the word 'frosty' in a natural way."
+            definition: "Frosty: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frosty' when discussing everyday topics."
         },
         "frozen": {
-            definition: "A short definition of 'frozen' in English.",
-            example: "This sentence uses the word 'frozen' in a natural way."
+            definition: "Frozen: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frozen' when discussing everyday topics."
         },
         "frugal": {
-            definition: "A short definition of 'frugal' in English.",
-            example: "This sentence uses the word 'frugal' in a natural way."
+            definition: "Frugal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frugal' when discussing everyday topics."
         },
         "frágil": {
-            definition: "A short definition of 'frágil' in English.",
-            example: "This sentence uses the word 'frágil' in a natural way."
+            definition: "Frágil: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frágil' when discussing everyday topics."
         },
         "frágilísimo": {
-            definition: "A short definition of 'frágilísimo' in English.",
-            example: "This sentence uses the word 'frágilísimo' in a natural way."
+            definition: "Frágilísimo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frágilísimo' when discussing everyday topics."
         },
         "frêle": {
-            definition: "A short definition of 'frêle' in English.",
-            example: "This sentence uses the word 'frêle' in a natural way."
+            definition: "Frêle: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frêle' when discussing everyday topics."
         },
         "frío": {
-            definition: "A short definition of 'frío' in English.",
-            example: "This sentence uses the word 'frío' in a natural way."
+            definition: "Frío: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'frío' when discussing everyday topics."
         },
         "fuerte": {
-            definition: "A short definition of 'fuerte' in English.",
-            example: "This sentence uses the word 'fuerte' in a natural way."
+            definition: "Fuerte: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fuerte' when discussing everyday topics."
         },
         "fugacious": {
             definition: "Tending to disappear; fleeting.",
             example: "The fugacious beauty of youth is a common theme in poetry."
         },
         "fulfillment": {
-            definition: "A short definition of 'fulfillment' in English.",
-            example: "This sentence uses the word 'fulfillment' in a natural way."
+            definition: "Fulfillment: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fulfillment' when discussing everyday topics."
         },
         "fulgurant": {
-            definition: "A short definition of 'fulgurant' in English.",
-            example: "This sentence uses the word 'fulgurant' in a natural way."
+            definition: "Fulgurant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fulgurant' when discussing everyday topics."
         },
         "fulminant": {
-            definition: "A short definition of 'fulminant' in English.",
-            example: "This sentence uses the word 'fulminant' in a natural way."
+            definition: "Fulminant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fulminant' when discussing everyday topics."
         },
         "fulminante": {
-            definition: "A short definition of 'fulminante' in English.",
-            example: "This sentence uses the word 'fulminante' in a natural way."
+            definition: "Fulminante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fulminante' when discussing everyday topics."
         },
         "fundamental": {
-            definition: "A short definition of 'fundamental' in English.",
-            example: "This sentence uses the word 'fundamental' in a natural way."
+            definition: "Fundamental: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fundamental' when discussing everyday topics."
         },
         "funny": {
-            definition: "A short definition of 'funny' in English.",
-            example: "This sentence uses the word 'funny' in a natural way."
+            definition: "Funny: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'funny' when discussing everyday topics."
         },
         "furieux": {
-            definition: "A short definition of 'furieux' in English.",
-            example: "This sentence uses the word 'furieux' in a natural way."
+            definition: "Furieux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'furieux' when discussing everyday topics."
         },
         "furioso": {
-            definition: "A short definition of 'furioso' in English.",
-            example: "This sentence uses the word 'furioso' in a natural way."
+            definition: "Furioso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'furioso' when discussing everyday topics."
         },
         "furious": {
-            definition: "A short definition of 'furious' in English.",
-            example: "This sentence uses the word 'furious' in a natural way."
+            definition: "Having the quality of being fur.",
+            example: "People often used the word 'furious' when discussing everyday topics."
         },
         "future": {
-            definition: "A short definition of 'future' in English.",
-            example: "This sentence uses the word 'future' in a natural way."
+            definition: "Future: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'future' when discussing everyday topics."
         },
         "futuro": {
-            definition: "A short definition of 'futuro' in English.",
-            example: "This sentence uses the word 'futuro' in a natural way."
+            definition: "Futuro: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'futuro' when discussing everyday topics."
         },
         "fácil": {
-            definition: "A short definition of 'fácil' in English.",
-            example: "This sentence uses the word 'fácil' in a natural way."
+            definition: "Fácil: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fácil' when discussing everyday topics."
         },
         "fâché": {
-            definition: "A short definition of 'fâché' in English.",
-            example: "This sentence uses the word 'fâché' in a natural way."
+            definition: "Fâché: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'fâché' when discussing everyday topics."
         },
         "gai": {
-            definition: "A short definition of 'gai' in English.",
-            example: "This sentence uses the word 'gai' in a natural way."
+            definition: "Gai: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gai' when discussing everyday topics."
         },
         "galante": {
-            definition: "A short definition of 'galante' in English.",
-            example: "This sentence uses the word 'galante' in a natural way."
+            definition: "Galante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'galante' when discussing everyday topics."
         },
         "gale-force": {
-            definition: "A short definition of 'gale-force' in English.",
-            example: "This sentence uses the word 'gale-force' in a natural way."
+            definition: "Gale-force: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gale-force' when discussing everyday topics."
         },
         "gallant": {
-            definition: "A short definition of 'gallant' in English.",
-            example: "This sentence uses the word 'gallant' in a natural way."
+            definition: "Gallant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gallant' when discussing everyday topics."
         },
         "gallardo": {
-            definition: "A short definition of 'gallardo' in English.",
-            example: "This sentence uses the word 'gallardo' in a natural way."
+            definition: "Gallardo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gallardo' when discussing everyday topics."
         },
         "gargantuan": {
-            definition: "A short definition of 'gargantuan' in English.",
-            example: "This sentence uses the word 'gargantuan' in a natural way."
+            definition: "Gargantuan: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gargantuan' when discussing everyday topics."
         },
         "gargantuesco": {
-            definition: "A short definition of 'gargantuesco' in English.",
-            example: "This sentence uses the word 'gargantuesco' in a natural way."
+            definition: "Gargantuesco: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gargantuesco' when discussing everyday topics."
         },
         "gargantuesque": {
-            definition: "A short definition of 'gargantuesque' in English.",
-            example: "This sentence uses the word 'gargantuesque' in a natural way."
+            definition: "Gargantuesque: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gargantuesque' when discussing everyday topics."
         },
         "gaunt": {
-            definition: "A short definition of 'gaunt' in English.",
-            example: "This sentence uses the word 'gaunt' in a natural way."
+            definition: "Gaunt: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gaunt' when discussing everyday topics."
         },
         "gelid": {
-            definition: "A short definition of 'gelid' in English.",
-            example: "This sentence uses the word 'gelid' in a natural way."
+            definition: "Gelid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gelid' when discussing everyday topics."
         },
         "gelé": {
-            definition: "A short definition of 'gelé' in English.",
-            example: "This sentence uses the word 'gelé' in a natural way."
+            definition: "Gelé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gelé' when discussing everyday topics."
         },
         "genial": {
-            definition: "A short definition of 'genial' in English.",
-            example: "This sentence uses the word 'genial' in a natural way."
+            definition: "Genial: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'genial' when discussing everyday topics."
         },
         "giant": {
-            definition: "A short definition of 'giant' in English.",
-            example: "This sentence uses the word 'giant' in a natural way."
+            definition: "Giant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'giant' when discussing everyday topics."
         },
         "gifted": {
-            definition: "A short definition of 'gifted' in English.",
-            example: "This sentence uses the word 'gifted' in a natural way."
+            definition: "Gifted: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gifted' when discussing everyday topics."
         },
         "gigante": {
-            definition: "A short definition of 'gigante' in English.",
-            example: "This sentence uses the word 'gigante' in a natural way."
+            definition: "Gigante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gigante' when discussing everyday topics."
         },
         "gigantesque": {
-            definition: "A short definition of 'gigantesque' in English.",
-            example: "This sentence uses the word 'gigantesque' in a natural way."
+            definition: "Gigantesque: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gigantesque' when discussing everyday topics."
         },
         "glacial": {
-            definition: "A short definition of 'glacial' in English.",
-            example: "This sentence uses the word 'glacial' in a natural way."
+            definition: "Glacial: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'glacial' when discussing everyday topics."
         },
         "glacé": {
-            definition: "A short definition of 'glacé' in English.",
-            example: "This sentence uses the word 'glacé' in a natural way."
+            definition: "Glacé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'glacé' when discussing everyday topics."
         },
         "glad": {
-            definition: "A short definition of 'glad' in English.",
-            example: "This sentence uses the word 'glad' in a natural way."
+            definition: "Glad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'glad' when discussing everyday topics."
         },
         "gladden": {
-            definition: "A short definition of 'gladden' in English.",
-            example: "This sentence uses the word 'gladden' in a natural way."
+            definition: "Gladden: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gladden' when discussing everyday topics."
         },
         "glaçant": {
-            definition: "A short definition of 'glaçant' in English.",
-            example: "This sentence uses the word 'glaçant' in a natural way."
+            definition: "Glaçant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'glaçant' when discussing everyday topics."
         },
         "gleeful": {
-            definition: "A short definition of 'gleeful' in English.",
-            example: "This sentence uses the word 'gleeful' in a natural way."
+            definition: "Having the quality of being g.",
+            example: "People often used the word 'gleeful' when discussing everyday topics."
         },
         "gloom": {
-            definition: "A short definition of 'gloom' in English.",
-            example: "This sentence uses the word 'gloom' in a natural way."
+            definition: "Gloom: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gloom' when discussing everyday topics."
         },
         "gloomy": {
-            definition: "A short definition of 'gloomy' in English.",
-            example: "This sentence uses the word 'gloomy' in a natural way."
+            definition: "Gloomy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gloomy' when discussing everyday topics."
         },
         "goals": {
-            definition: "A short definition of 'goals' in English.",
-            example: "This sentence uses the word 'goals' in a natural way."
+            definition: "Goals: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'goals' when discussing everyday topics."
         },
         "good": {
-            definition: "A short definition of 'good' in English.",
-            example: "This sentence uses the word 'good' in a natural way."
+            definition: "Good: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'good' when discussing everyday topics."
         },
         "gorgeous": {
-            definition: "A short definition of 'gorgeous' in English.",
-            example: "This sentence uses the word 'gorgeous' in a natural way."
+            definition: "Having the quality of being gorg.",
+            example: "People often used the word 'gorgeous' when discussing everyday topics."
         },
         "gozoso": {
-            definition: "A short definition of 'gozoso' in English.",
-            example: "This sentence uses the word 'gozoso' in a natural way."
+            definition: "Gozoso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gozoso' when discussing everyday topics."
         },
         "grand": {
-            definition: "A short definition of 'grand' in English.",
-            example: "This sentence uses the word 'grand' in a natural way."
+            definition: "Grand: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'grand' when discussing everyday topics."
         },
         "grande": {
-            definition: "A short definition of 'grande' in English.",
-            example: "This sentence uses the word 'grande' in a natural way."
+            definition: "Grande: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'grande' when discussing everyday topics."
         },
         "gratifiant": {
-            definition: "A short definition of 'gratifiant' in English.",
-            example: "This sentence uses the word 'gratifiant' in a natural way."
+            definition: "Gratifiant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gratifiant' when discussing everyday topics."
         },
         "gratificante": {
-            definition: "A short definition of 'gratificante' in English.",
-            example: "This sentence uses the word 'gratificante' in a natural way."
+            definition: "Gratificante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gratificante' when discussing everyday topics."
         },
         "grazing": {
             definition: "Touching or hitting something lightly in passing; eating grass.",
             example: "The bullet left only a grazing wound on his shoulder."
         },
         "great": {
-            definition: "A short definition of 'great' in English.",
-            example: "This sentence uses the word 'great' in a natural way."
+            definition: "Great: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'great' when discussing everyday topics."
         },
         "grelottant": {
-            definition: "A short definition of 'grelottant' in English.",
-            example: "This sentence uses the word 'grelottant' in a natural way."
+            definition: "Grelottant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'grelottant' when discussing everyday topics."
         },
         "grief": {
-            definition: "A short definition of 'grief' in English.",
-            example: "This sentence uses the word 'grief' in a natural way."
+            definition: "Grief: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'grief' when discussing everyday topics."
         },
         "grimy": {
-            definition: "A short definition of 'grimy' in English.",
-            example: "This sentence uses the word 'grimy' in a natural way."
+            definition: "Grimy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'grimy' when discussing everyday topics."
         },
         "grisant": {
-            definition: "A short definition of 'grisant' in English.",
-            example: "This sentence uses the word 'grisant' in a natural way."
+            definition: "Grisant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'grisant' when discussing everyday topics."
         },
         "growth": {
-            definition: "A short definition of 'growth' in English.",
-            example: "This sentence uses the word 'growth' in a natural way."
+            definition: "Growth: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'growth' when discussing everyday topics."
         },
         "guapo": {
-            definition: "A short definition of 'guapo' in English.",
-            example: "This sentence uses the word 'guapo' in a natural way."
+            definition: "Guapo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'guapo' when discussing everyday topics."
         },
         "géant": {
-            definition: "A short definition of 'géant' in English.",
-            example: "This sentence uses the word 'géant' in a natural way."
+            definition: "Géant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'géant' when discussing everyday topics."
         },
         "gélido": {
-            definition: "A short definition of 'gélido' in English.",
-            example: "This sentence uses the word 'gélido' in a natural way."
+            definition: "Gélido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'gélido' when discussing everyday topics."
         },
         "génial": {
-            definition: "A short definition of 'génial' in English.",
-            example: "This sentence uses the word 'génial' in a natural way."
+            definition: "Génial: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'génial' when discussing everyday topics."
         },
         "habilidades": {
-            definition: "A short definition of 'habilidades' in English.",
-            example: "This sentence uses the word 'habilidades' in a natural way."
+            definition: "Habilidades: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'habilidades' when discussing everyday topics."
         },
         "hacedero": {
-            definition: "A short definition of 'hacedero' in English.",
-            example: "This sentence uses the word 'hacedero' in a natural way."
+            definition: "Hacedero: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'hacedero' when discussing everyday topics."
         },
         "halcyon": {
-            definition: "A short definition of 'halcyon' in English.",
-            example: "This sentence uses the word 'halcyon' in a natural way."
+            definition: "Halcyon: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'halcyon' when discussing everyday topics."
         },
         "happy": {
-            definition: "A short definition of 'happy' in English.",
-            example: "This sentence uses the word 'happy' in a natural way."
+            definition: "Happy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'happy' when discussing everyday topics."
         },
         "hard": {
-            definition: "A short definition of 'hard' in English.",
-            example: "This sentence uses the word 'hard' in a natural way."
+            definition: "Hard: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'hard' when discussing everyday topics."
         },
         "hardy": {
-            definition: "A short definition of 'hardy' in English.",
-            example: "This sentence uses the word 'hardy' in a natural way."
+            definition: "Hardy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'hardy' when discussing everyday topics."
         },
         "harmonious": {
             definition: "Forming a pleasing or consistent whole; tuneful.",
             example: "The colors in the room combined to create a harmonious atmosphere."
         },
         "harmony": {
-            definition: "A short definition of 'harmony' in English.",
-            example: "This sentence uses the word 'harmony' in a natural way."
+            definition: "Harmony: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'harmony' when discussing everyday topics."
         },
         "harrowing": {
-            definition: "A short definition of 'harrowing' in English.",
-            example: "This sentence uses the word 'harrowing' in a natural way."
+            definition: "Being or performing the action of harrowing or causing that action to happen.",
+            example: "People often used the word 'harrowing' when discussing everyday topics."
         },
         "hasty": {
-            definition: "A short definition of 'hasty' in English.",
-            example: "This sentence uses the word 'hasty' in a natural way."
+            definition: "Hasty: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'hasty' when discussing everyday topics."
         },
         "hazardous": {
-            definition: "A short definition of 'hazardous' in English.",
-            example: "This sentence uses the word 'hazardous' in a natural way."
+            definition: "Having the quality of being hazard.",
+            example: "People often used the word 'hazardous' when discussing everyday topics."
         },
         "health": {
-            definition: "A short definition of 'health' in English.",
-            example: "This sentence uses the word 'health' in a natural way."
+            definition: "Health: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'health' when discussing everyday topics."
         },
         "heated": {
-            definition: "A short definition of 'heated' in English.",
-            example: "This sentence uses the word 'heated' in a natural way."
+            definition: "Heated: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'heated' when discussing everyday topics."
         },
         "heavy": {
-            definition: "A short definition of 'heavy' in English.",
-            example: "This sentence uses the word 'heavy' in a natural way."
+            definition: "Heavy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'heavy' when discussing everyday topics."
         },
         "helado": {
-            definition: "A short definition of 'helado' in English.",
-            example: "This sentence uses the word 'helado' in a natural way."
+            definition: "Helado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'helado' when discussing everyday topics."
         },
         "helpful": {
-            definition: "A short definition of 'helpful' in English.",
-            example: "This sentence uses the word 'helpful' in a natural way."
+            definition: "Having the quality of being help.",
+            example: "People often used the word 'helpful' when discussing everyday topics."
         },
         "herculean": {
-            definition: "A short definition of 'herculean' in English.",
-            example: "This sentence uses the word 'herculean' in a natural way."
+            definition: "Herculean: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'herculean' when discussing everyday topics."
         },
         "herculéen": {
-            definition: "A short definition of 'herculéen' in English.",
-            example: "This sentence uses the word 'herculéen' in a natural way."
+            definition: "Herculéen: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'herculéen' when discussing everyday topics."
         },
         "hercúleo": {
-            definition: "A short definition of 'hercúleo' in English.",
-            example: "This sentence uses the word 'hercúleo' in a natural way."
+            definition: "Hercúleo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'hercúleo' when discussing everyday topics."
         },
         "heritage": {
-            definition: "A short definition of 'heritage' in English.",
-            example: "This sentence uses the word 'heritage' in a natural way."
+            definition: "Heritage: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'heritage' when discussing everyday topics."
         },
         "hermoso": {
-            definition: "A short definition of 'hermoso' in English.",
-            example: "This sentence uses the word 'hermoso' in a natural way."
+            definition: "Hermoso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'hermoso' when discussing everyday topics."
         },
         "heroic": {
-            definition: "A short definition of 'heroic' in English.",
-            example: "This sentence uses the word 'heroic' in a natural way."
+            definition: "Heroic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'heroic' when discussing everyday topics."
         },
         "heroico": {
-            definition: "A short definition of 'heroico' in English.",
-            example: "This sentence uses the word 'heroico' in a natural way."
+            definition: "Heroico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'heroico' when discussing everyday topics."
         },
         "heureux": {
-            definition: "A short definition of 'heureux' in English.",
-            example: "This sentence uses the word 'heureux' in a natural way."
+            definition: "Heureux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'heureux' when discussing everyday topics."
         },
         "hieratic": {
             definition: "Of or concerning priests; priestly.",
             example: "The ancient text was written in a formal, hieratic style."
         },
         "high": {
-            definition: "A short definition of 'high' in English.",
-            example: "This sentence uses the word 'high' in a natural way."
+            definition: "High: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'high' when discussing everyday topics."
         },
         "high-octane": {
-            definition: "A short definition of 'high-octane' in English.",
-            example: "This sentence uses the word 'high-octane' in a natural way."
+            definition: "High-octane: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'high-octane' when discussing everyday topics."
         },
         "hilarious": {
             definition: "Extremely amusing; causing laughter.",
             example: "His stand-up comedy routine was absolutely hilarious."
         },
         "hipnótico": {
-            definition: "A short definition of 'hipnótico' in English.",
-            example: "This sentence uses the word 'hipnótico' in a natural way."
+            definition: "Hipnótico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'hipnótico' when discussing everyday topics."
         },
         "historic": {
-            definition: "A short definition of 'historic' in English.",
-            example: "This sentence uses the word 'historic' in a natural way."
+            definition: "Historic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'historic' when discussing everyday topics."
         },
         "hito": {
-            definition: "A short definition of 'hito' in English.",
-            example: "This sentence uses the word 'hito' in a natural way."
+            definition: "Hito: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'hito' when discussing everyday topics."
         },
         "hivernal": {
-            definition: "A short definition of 'hivernal' in English.",
-            example: "This sentence uses the word 'hivernal' in a natural way."
+            definition: "Hivernal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'hivernal' when discussing everyday topics."
         },
         "hoary": {
-            definition: "A short definition of 'hoary' in English.",
-            example: "This sentence uses the word 'hoary' in a natural way."
+            definition: "Hoary: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'hoary' when discussing everyday topics."
         },
         "honest": {
-            definition: "A short definition of 'honest' in English.",
-            example: "This sentence uses the word 'honest' in a natural way."
+            definition: "Honest: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'honest' when discussing everyday topics."
         },
         "horario": {
-            definition: "A short definition of 'horario' in English.",
-            example: "This sentence uses the word 'horario' in a natural way."
+            definition: "Horario: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'horario' when discussing everyday topics."
         },
         "horrible": {
-            definition: "A short definition of 'horrible' in English.",
-            example: "This sentence uses the word 'horrible' in a natural way."
+            definition: "Horrible: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'horrible' when discussing everyday topics."
         },
         "horrifying": {
-            definition: "A short definition of 'horrifying' in English.",
-            example: "This sentence uses the word 'horrifying' in a natural way."
+            definition: "Being or performing the action of horrifying or causing that action to happen.",
+            example: "People often used the word 'horrifying' when discussing everyday topics."
         },
         "horripilante": {
-            definition: "A short definition of 'horripilante' in English.",
-            example: "This sentence uses the word 'horripilante' in a natural way."
+            definition: "Horripilante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'horripilante' when discussing everyday topics."
         },
         "hospitable": {
-            definition: "A short definition of 'hospitable' in English.",
-            example: "This sentence uses the word 'hospitable' in a natural way."
+            definition: "Capable of being hospit.",
+            example: "People often used the word 'hospitable' when discussing everyday topics."
         },
         "hot": {
-            definition: "A short definition of 'hot' in English.",
-            example: "This sentence uses the word 'hot' in a natural way."
+            definition: "Hot: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'hot' when discussing everyday topics."
         },
         "huge": {
-            definition: "A short definition of 'huge' in English.",
-            example: "This sentence uses the word 'huge' in a natural way."
+            definition: "Huge: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'huge' when discussing everyday topics."
         },
         "humorous": {
-            definition: "A short definition of 'humorous' in English.",
-            example: "This sentence uses the word 'humorous' in a natural way."
+            definition: "Having the quality of being humor.",
+            example: "People often used the word 'humorous' when discussing everyday topics."
         },
         "hushed": {
-            definition: "A short definition of 'hushed' in English.",
-            example: "This sentence uses the word 'hushed' in a natural way."
+            definition: "Hushed: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'hushed' when discussing everyday topics."
         },
         "héros": {
-            definition: "A short definition of 'héros' in English.",
-            example: "This sentence uses the word 'héros' in a natural way."
+            definition: "Héros: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'héros' when discussing everyday topics."
         },
         "héroïque": {
-            definition: "A short definition of 'héroïque' in English.",
-            example: "This sentence uses the word 'héroïque' in a natural way."
+            definition: "Héroïque: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'héroïque' when discussing everyday topics."
         },
         "iconic": {
-            definition: "A short definition of 'iconic' in English.",
-            example: "This sentence uses the word 'iconic' in a natural way."
+            definition: "Iconic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'iconic' when discussing everyday topics."
         },
         "iconoclast": {
             definition: "A person who attacks cherished beliefs or institutions.",
             example: "As an iconoclast, he enjoyed challenging traditional art norms."
         },
         "icy": {
-            definition: "A short definition of 'icy' in English.",
-            example: "This sentence uses the word 'icy' in a natural way."
+            definition: "Icy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'icy' when discussing everyday topics."
         },
         "idyllic": {
-            definition: "A short definition of 'idyllic' in English.",
-            example: "This sentence uses the word 'idyllic' in a natural way."
+            definition: "Idyllic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'idyllic' when discussing everyday topics."
         },
         "illuminate": {
-            definition: "A short definition of 'illuminate' in English.",
-            example: "This sentence uses the word 'illuminate' in a natural way."
+            definition: "Illuminate: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'illuminate' when discussing everyday topics."
         },
         "illuminated": {
             definition: "Lit up; decorated with lights or gold/silver.",
             example: "The illuminated manuscript was a masterpiece of medieval art."
         },
         "imagination": {
-            definition: "A short definition of 'imagination' in English.",
-            example: "This sentence uses the word 'imagination' in a natural way."
+            definition: "The act or process of imaginaing.",
+            example: "People often used the word 'imagination' when discussing everyday topics."
         },
         "immaculate": {
-            definition: "A short definition of 'immaculate' in English.",
-            example: "This sentence uses the word 'immaculate' in a natural way."
+            definition: "Immaculate: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'immaculate' when discussing everyday topics."
         },
         "immense": {
-            definition: "A short definition of 'immense' in English.",
-            example: "This sentence uses the word 'immense' in a natural way."
+            definition: "Immense: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'immense' when discussing everyday topics."
         },
         "impact": {
-            definition: "A short definition of 'impact' in English.",
-            example: "This sentence uses the word 'impact' in a natural way."
+            definition: "Impact: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'impact' when discussing everyday topics."
         },
         "impacted": {
-            definition: "A short definition of 'impacted' in English.",
-            example: "This sentence uses the word 'impacted' in a natural way."
+            definition: "Impacted: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'impacted' when discussing everyday topics."
         },
         "impacto": {
-            definition: "A short definition of 'impacto' in English.",
-            example: "This sentence uses the word 'impacto' in a natural way."
+            definition: "Impacto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'impacto' when discussing everyday topics."
         },
         "impeccable": {
-            definition: "A short definition of 'impeccable' in English.",
-            example: "This sentence uses the word 'impeccable' in a natural way."
+            definition: "Capable of being impecc.",
+            example: "People often used the word 'impeccable' when discussing everyday topics."
         },
         "impecunious": {
-            definition: "A short definition of 'impecunious' in English.",
-            example: "This sentence uses the word 'impecunious' in a natural way."
+            definition: "Having the quality of being impecun.",
+            example: "People often used the word 'impecunious' when discussing everyday topics."
         },
         "impenetrable": {
             definition: "Impossible to pass through or enter; impossible to understand.",
@@ -2949,756 +2949,756 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The increase in temperature was almost imperceptible at first."
         },
         "impervious": {
-            definition: "A short definition of 'impervious' in English.",
-            example: "This sentence uses the word 'impervious' in a natural way."
+            definition: "Having the quality of being imper.",
+            example: "People often used the word 'impervious' when discussing everyday topics."
         },
         "implacable": {
             definition: "Unable to be placated; relentless or unstoppable.",
             example: "He faced an implacable enemy who refused to surrender."
         },
         "important": {
-            definition: "A short definition of 'important' in English.",
-            example: "This sentence uses the word 'important' in a natural way."
+            definition: "Important: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'important' when discussing everyday topics."
         },
         "importante": {
-            definition: "A short definition of 'importante' in English.",
-            example: "This sentence uses the word 'importante' in a natural way."
+            definition: "Importante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'importante' when discussing everyday topics."
         },
         "imposing": {
-            definition: "A short definition of 'imposing' in English.",
-            example: "This sentence uses the word 'imposing' in a natural way."
+            definition: "Being or performing the action of imposing or causing that action to happen.",
+            example: "People often used the word 'imposing' when discussing everyday topics."
         },
         "impoverished": {
-            definition: "A short definition of 'impoverished' in English.",
-            example: "This sentence uses the word 'impoverished' in a natural way."
+            definition: "Impoverished: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'impoverished' when discussing everyday topics."
         },
         "impregnable": {
-            definition: "A short definition of 'impregnable' in English.",
-            example: "This sentence uses the word 'impregnable' in a natural way."
+            definition: "Capable of being impregn.",
+            example: "People often used the word 'impregnable' when discussing everyday topics."
         },
         "inaudible": {
-            definition: "A short definition of 'inaudible' in English.",
-            example: "This sentence uses the word 'inaudible' in a natural way."
+            definition: "Inaudible: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'inaudible' when discussing everyday topics."
         },
         "incandescent": {
             definition: "Emitting light as a result of being heated; extremely bright.",
             example: "The incandescent bulbs provided a warm glow to the room."
         },
         "incandescente": {
-            definition: "A short definition of 'incandescente' in English.",
-            example: "This sentence uses the word 'incandescente' in a natural way."
+            definition: "Incandescente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'incandescente' when discussing everyday topics."
         },
         "incensed": {
-            definition: "A short definition of 'incensed' in English.",
-            example: "This sentence uses the word 'incensed' in a natural way."
+            definition: "Incensed: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'incensed' when discussing everyday topics."
         },
         "inclement": {
             definition: "Unpleasantly cold or wet weather.",
             example: "The match was postponed due to inclement weather conditions."
         },
         "inconsolable": {
-            definition: "A short definition of 'inconsolable' in English.",
-            example: "This sentence uses the word 'inconsolable' in a natural way."
+            definition: "Capable of being inconsol.",
+            example: "People often used the word 'inconsolable' when discussing everyday topics."
         },
         "incontestable": {
-            definition: "A short definition of 'incontestable' in English.",
-            example: "This sentence uses the word 'incontestable' in a natural way."
+            definition: "Capable of being incontest.",
+            example: "People often used the word 'incontestable' when discussing everyday topics."
         },
         "indagador": {
-            definition: "A short definition of 'indagador' in English.",
-            example: "This sentence uses the word 'indagador' in a natural way."
+            definition: "Indagador: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'indagador' when discussing everyday topics."
         },
         "indigent": {
-            definition: "A short definition of 'indigent' in English.",
-            example: "This sentence uses the word 'indigent' in a natural way."
+            definition: "Indigent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'indigent' when discussing everyday topics."
         },
         "indignado": {
-            definition: "A short definition of 'indignado' in English.",
-            example: "This sentence uses the word 'indignado' in a natural way."
+            definition: "Indignado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'indignado' when discussing everyday topics."
         },
         "indomable": {
-            definition: "A short definition of 'indomable' in English.",
-            example: "This sentence uses the word 'indomable' in a natural way."
+            definition: "Capable of being indom.",
+            example: "People often used the word 'indomable' when discussing everyday topics."
         },
         "indomitable": {
-            definition: "A short definition of 'indomitable' in English.",
-            example: "This sentence uses the word 'indomitable' in a natural way."
+            definition: "Capable of being indomit.",
+            example: "People often used the word 'indomitable' when discussing everyday topics."
         },
         "indomptable": {
-            definition: "A short definition of 'indomptable' in English.",
-            example: "This sentence uses the word 'indomptable' in a natural way."
+            definition: "Capable of being indompt.",
+            example: "People often used the word 'indomptable' when discussing everyday topics."
         },
         "inestimable": {
             definition: "Too great to be calculated or estimated.",
             example: "The museum's collection is of inestimable value."
         },
         "inexpensive": {
-            definition: "A short definition of 'inexpensive' in English.",
-            example: "This sentence uses the word 'inexpensive' in a natural way."
+            definition: "Having the quality of being inexpen.",
+            example: "People often used the word 'inexpensive' when discussing everyday topics."
         },
         "inexpugnable": {
             definition: "Unable to be taken by assault; unconquerable.",
             example: "The fortress was built on an inexpugnable cliffside."
         },
         "infame": {
-            definition: "A short definition of 'infame' in English.",
-            example: "This sentence uses the word 'infame' in a natural way."
+            definition: "Infame: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'infame' when discussing everyday topics."
         },
         "infect": {
-            definition: "A short definition of 'infect' in English.",
-            example: "This sentence uses the word 'infect' in a natural way."
+            definition: "Infect: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'infect' when discussing everyday topics."
         },
         "infeliz": {
-            definition: "A short definition of 'infeliz' in English.",
-            example: "This sentence uses the word 'infeliz' in a natural way."
+            definition: "Infeliz: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'infeliz' when discussing everyday topics."
         },
         "infime": {
-            definition: "A short definition of 'infime' in English.",
-            example: "This sentence uses the word 'infime' in a natural way."
+            definition: "Infime: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'infime' when discussing everyday topics."
         },
         "infinitesimal": {
-            definition: "A short definition of 'infinitesimal' in English.",
-            example: "This sentence uses the word 'infinitesimal' in a natural way."
+            definition: "Infinitesimal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'infinitesimal' when discussing everyday topics."
         },
         "infirm": {
             definition: "Not physically or mentally strong, especially through age or illness.",
             example: "The hospital provided care for the infirm and elderly patients."
         },
         "influence": {
-            definition: "A short definition of 'influence' in English.",
-            example: "This sentence uses the word 'influence' in a natural way."
+            definition: "Influence: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'influence' when discussing everyday topics."
         },
         "influencia": {
-            definition: "A short definition of 'influencia' in English.",
-            example: "This sentence uses the word 'influencia' in a natural way."
+            definition: "Influencia: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'influencia' when discussing everyday topics."
         },
         "información": {
-            definition: "A short definition of 'información' in English.",
-            example: "This sentence uses the word 'información' in a natural way."
+            definition: "Información: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'información' when discussing everyday topics."
         },
         "information": {
-            definition: "A short definition of 'information' in English.",
-            example: "This sentence uses the word 'information' in a natural way."
+            definition: "The act or process of informaing.",
+            example: "People often used the word 'information' when discussing everyday topics."
         },
         "ingenioso": {
-            definition: "A short definition of 'ingenioso' in English.",
-            example: "This sentence uses the word 'ingenioso' in a natural way."
+            definition: "Ingenioso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ingenioso' when discussing everyday topics."
         },
         "ingenious": {
-            definition: "A short definition of 'ingenious' in English.",
-            example: "This sentence uses the word 'ingenious' in a natural way."
+            definition: "Having the quality of being ingen.",
+            example: "People often used the word 'ingenious' when discussing everyday topics."
         },
         "ingrained": {
-            definition: "A short definition of 'ingrained' in English.",
-            example: "This sentence uses the word 'ingrained' in a natural way."
+            definition: "Ingrained: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ingrained' when discussing everyday topics."
         },
         "ingredientes": {
-            definition: "A short definition of 'ingredientes' in English.",
-            example: "This sentence uses the word 'ingredientes' in a natural way."
+            definition: "Ingredientes: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ingredientes' when discussing everyday topics."
         },
         "ingredients": {
-            definition: "A short definition of 'ingredients' in English.",
-            example: "This sentence uses the word 'ingredients' in a natural way."
+            definition: "Ingredients: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ingredients' when discussing everyday topics."
         },
         "ingénieux": {
-            definition: "A short definition of 'ingénieux' in English.",
-            example: "This sentence uses the word 'ingénieux' in a natural way."
+            definition: "Ingénieux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ingénieux' when discussing everyday topics."
         },
         "inmenso": {
-            definition: "A short definition of 'inmenso' in English.",
-            example: "This sentence uses the word 'inmenso' in a natural way."
+            definition: "Inmenso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'inmenso' when discussing everyday topics."
         },
         "innovación": {
-            definition: "A short definition of 'innovación' in English.",
-            example: "This sentence uses the word 'innovación' in a natural way."
+            definition: "Innovación: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'innovación' when discussing everyday topics."
         },
         "innovador": {
-            definition: "A short definition of 'innovador' in English.",
-            example: "This sentence uses the word 'innovador' in a natural way."
+            definition: "Innovador: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'innovador' when discussing everyday topics."
         },
         "innovation": {
-            definition: "A short definition of 'innovation' in English.",
-            example: "This sentence uses the word 'innovation' in a natural way."
+            definition: "The act or process of innovaing.",
+            example: "People often used the word 'innovation' when discussing everyday topics."
         },
         "innovative": {
-            definition: "A short definition of 'innovative' in English.",
-            example: "This sentence uses the word 'innovative' in a natural way."
+            definition: "Having the quality of being innovat.",
+            example: "People often used the word 'innovative' when discussing everyday topics."
         },
         "innumerable": {
-            definition: "A short definition of 'innumerable' in English.",
-            example: "This sentence uses the word 'innumerable' in a natural way."
+            definition: "Capable of being innumer.",
+            example: "People often used the word 'innumerable' when discussing everyday topics."
         },
         "inquiquinant": {
-            definition: "A short definition of 'inquiquinant' in English.",
-            example: "This sentence uses the word 'inquiquinant' in a natural way."
+            definition: "Inquiquinant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'inquiquinant' when discussing everyday topics."
         },
         "inquiring": {
-            definition: "A short definition of 'inquiring' in English.",
-            example: "This sentence uses the word 'inquiring' in a natural way."
+            definition: "Being or performing the action of inquiring or causing that action to happen.",
+            example: "People often used the word 'inquiring' when discussing everyday topics."
         },
         "inquisitive": {
-            definition: "A short definition of 'inquisitive' in English.",
-            example: "This sentence uses the word 'inquisitive' in a natural way."
+            definition: "Having the quality of being inquisit.",
+            example: "People often used the word 'inquisitive' when discussing everyday topics."
         },
         "inquisitivo": {
-            definition: "A short definition of 'inquisitivo' in English.",
-            example: "This sentence uses the word 'inquisitivo' in a natural way."
+            definition: "Inquisitivo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'inquisitivo' when discussing everyday topics."
         },
         "insidious": {
-            definition: "A short definition of 'insidious' in English.",
-            example: "This sentence uses the word 'insidious' in a natural way."
+            definition: "Having the quality of being insid.",
+            example: "People often used the word 'insidious' when discussing everyday topics."
         },
         "insight": {
-            definition: "A short definition of 'insight' in English.",
-            example: "This sentence uses the word 'insight' in a natural way."
+            definition: "Insight: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'insight' when discussing everyday topics."
         },
         "insightful": {
-            definition: "A short definition of 'insightful' in English.",
-            example: "This sentence uses the word 'insightful' in a natural way."
+            definition: "Having the quality of being insight.",
+            example: "People often used the word 'insightful' when discussing everyday topics."
         },
         "inspiration": {
-            definition: "A short definition of 'inspiration' in English.",
-            example: "This sentence uses the word 'inspiration' in a natural way."
+            definition: "The act or process of inspiraing.",
+            example: "People often used the word 'inspiration' when discussing everyday topics."
         },
         "instantaneous": {
-            definition: "A short definition of 'instantaneous' in English.",
-            example: "This sentence uses the word 'instantaneous' in a natural way."
+            definition: "Having the quality of being instantan.",
+            example: "People often used the word 'instantaneous' when discussing everyday topics."
         },
         "integrity": {
             definition: "The quality of being honest and having strong moral principles.",
             example: "She is a person of great integrity who always keeps her word."
         },
         "inteligente": {
-            definition: "A short definition of 'inteligente' in English.",
-            example: "This sentence uses the word 'inteligente' in a natural way."
+            definition: "Inteligente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'inteligente' when discussing everyday topics."
         },
         "intelligent": {
-            definition: "A short definition of 'intelligent' in English.",
-            example: "This sentence uses the word 'intelligent' in a natural way."
+            definition: "Intelligent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'intelligent' when discussing everyday topics."
         },
         "interesado": {
-            definition: "A short definition of 'interesado' in English.",
-            example: "This sentence uses the word 'interesado' in a natural way."
+            definition: "Interesado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'interesado' when discussing everyday topics."
         },
         "interesante": {
-            definition: "A short definition of 'interesante' in English.",
-            example: "This sentence uses the word 'interesante' in a natural way."
+            definition: "Interesante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'interesante' when discussing everyday topics."
         },
         "interested": {
-            definition: "A short definition of 'interested' in English.",
-            example: "This sentence uses the word 'interested' in a natural way."
+            definition: "Interested: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'interested' when discussing everyday topics."
         },
         "interesting": {
-            definition: "A short definition of 'interesting' in English.",
-            example: "This sentence uses the word 'interesting' in a natural way."
+            definition: "Being or performing the action of interesting or causing that action to happen.",
+            example: "People often used the word 'interesting' when discussing everyday topics."
         },
         "interrogatif": {
-            definition: "A short definition of 'interrogatif' in English.",
-            example: "This sentence uses the word 'interrogatif' in a natural way."
+            definition: "Interrogatif: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'interrogatif' when discussing everyday topics."
         },
         "intoxicating": {
             definition: "Extremely exciting or exhilarating; causing a loss of control.",
             example: "The success of the play was an intoxicating experience for the actors."
         },
         "intrepid": {
-            definition: "A short definition of 'intrepid' in English.",
-            example: "This sentence uses the word 'intrepid' in a natural way."
+            definition: "Intrepid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'intrepid' when discussing everyday topics."
         },
         "intrepido": {
-            definition: "A short definition of 'intrepido' in English.",
-            example: "This sentence uses the word 'intrepido' in a natural way."
+            definition: "Intrepido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'intrepido' when discussing everyday topics."
         },
         "intrigante": {
-            definition: "A short definition of 'intrigante' in English.",
-            example: "This sentence uses the word 'intrigante' in a natural way."
+            definition: "Intrigante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'intrigante' when discussing everyday topics."
         },
         "intriguing": {
-            definition: "A short definition of 'intriguing' in English.",
-            example: "This sentence uses the word 'intriguing' in a natural way."
+            definition: "Being or performing the action of intriguing or causing that action to happen.",
+            example: "People often used the word 'intriguing' when discussing everyday topics."
         },
         "intrincado": {
-            definition: "A short definition of 'intrincado' in English.",
-            example: "This sentence uses the word 'intrincado' in a natural way."
+            definition: "Intrincado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'intrincado' when discussing everyday topics."
         },
         "intrépide": {
-            definition: "A short definition of 'intrépide' in English.",
-            example: "This sentence uses the word 'intrépide' in a natural way."
+            definition: "Intrépide: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'intrépide' when discussing everyday topics."
         },
         "intrépido": {
-            definition: "A short definition of 'intrépido' in English.",
-            example: "This sentence uses the word 'intrépido' in a natural way."
+            definition: "Intrépido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'intrépido' when discussing everyday topics."
         },
         "intéressant": {
-            definition: "A short definition of 'intéressant' in English.",
-            example: "This sentence uses the word 'intéressant' in a natural way."
+            definition: "Intéressant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'intéressant' when discussing everyday topics."
         },
         "intéressé": {
-            definition: "A short definition of 'intéressé' in English.",
-            example: "This sentence uses the word 'intéressé' in a natural way."
+            definition: "Intéressé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'intéressé' when discussing everyday topics."
         },
         "invernal": {
-            definition: "A short definition of 'invernal' in English.",
-            example: "This sentence uses the word 'invernal' in a natural way."
+            definition: "Invernal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'invernal' when discussing everyday topics."
         },
         "inversión": {
-            definition: "A short definition of 'inversión' in English.",
-            example: "This sentence uses the word 'inversión' in a natural way."
+            definition: "Inversión: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'inversión' when discussing everyday topics."
         },
         "investigación": {
-            definition: "A short definition of 'investigación' in English.",
-            example: "This sentence uses the word 'investigación' in a natural way."
+            definition: "Investigación: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'investigación' when discussing everyday topics."
         },
         "investment": {
-            definition: "A short definition of 'investment' in English.",
-            example: "This sentence uses the word 'investment' in a natural way."
+            definition: "Investment: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'investment' when discussing everyday topics."
         },
         "invigorating": {
-            definition: "A short definition of 'invigorating' in English.",
-            example: "This sentence uses the word 'invigorating' in a natural way."
+            definition: "Being or performing the action of invigorating or causing that action to happen.",
+            example: "People often used the word 'invigorating' when discussing everyday topics."
         },
         "invincible": {
-            definition: "A short definition of 'invincible' in English.",
-            example: "This sentence uses the word 'invincible' in a natural way."
+            definition: "Invincible: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'invincible' when discussing everyday topics."
         },
         "inédit": {
-            definition: "A short definition of 'inédit' in English.",
-            example: "This sentence uses the word 'inédit' in a natural way."
+            definition: "Inédit: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'inédit' when discussing everyday topics."
         },
         "inédito": {
-            definition: "A short definition of 'inédito' in English.",
-            example: "This sentence uses the word 'inédito' in a natural way."
+            definition: "Inédito: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'inédito' when discussing everyday topics."
         },
         "iracundo": {
-            definition: "A short definition of 'iracundo' in English.",
-            example: "This sentence uses the word 'iracundo' in a natural way."
+            definition: "Iracundo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'iracundo' when discussing everyday topics."
         },
         "irascible": {
-            definition: "A short definition of 'irascible' in English.",
-            example: "This sentence uses the word 'irascible' in a natural way."
+            definition: "Irascible: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'irascible' when discussing everyday topics."
         },
         "irate": {
-            definition: "A short definition of 'irate' in English.",
-            example: "This sentence uses the word 'irate' in a natural way."
+            definition: "Irate: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'irate' when discussing everyday topics."
         },
         "iron": {
             definition: "A strong, hard magnetic silvery-gray metal.",
             example: "The gate was made of heavy wrought iron."
         },
         "irreverent": {
-            definition: "A short definition of 'irreverent' in English.",
-            example: "This sentence uses the word 'irreverent' in a natural way."
+            definition: "Irreverent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'irreverent' when discussing everyday topics."
         },
         "irritado": {
-            definition: "A short definition of 'irritado' in English.",
-            example: "This sentence uses the word 'irritado' in a natural way."
+            definition: "Irritado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'irritado' when discussing everyday topics."
         },
         "irritated": {
-            definition: "A short definition of 'irritated' in English.",
-            example: "This sentence uses the word 'irritated' in a natural way."
+            definition: "Irritated: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'irritated' when discussing everyday topics."
         },
         "irrité": {
-            definition: "A short definition of 'irrité' in English.",
-            example: "This sentence uses the word 'irrité' in a natural way."
+            definition: "Irrité: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'irrité' when discussing everyday topics."
         },
         "itinerario": {
-            definition: "A short definition of 'itinerario' in English.",
-            example: "This sentence uses the word 'itinerario' in a natural way."
+            definition: "Itinerario: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'itinerario' when discussing everyday topics."
         },
         "itinerary": {
-            definition: "A short definition of 'itinerary' in English.",
-            example: "This sentence uses the word 'itinerary' in a natural way."
+            definition: "Itinerary: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'itinerary' when discussing everyday topics."
         },
         "joli": {
-            definition: "A short definition of 'joli' in English.",
-            example: "This sentence uses the word 'joli' in a natural way."
+            definition: "Joli: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'joli' when discussing everyday topics."
         },
         "joyeux": {
-            definition: "A short definition of 'joyeux' in English.",
-            example: "This sentence uses the word 'joyeux' in a natural way."
+            definition: "Joyeux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'joyeux' when discussing everyday topics."
         },
         "joyful": {
-            definition: "A short definition of 'joyful' in English.",
-            example: "This sentence uses the word 'joyful' in a natural way."
+            definition: "Having the quality of being joy.",
+            example: "People often used the word 'joyful' when discussing everyday topics."
         },
         "jubilant": {
-            definition: "A short definition of 'jubilant' in English.",
-            example: "This sentence uses the word 'jubilant' in a natural way."
+            definition: "Jubilant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'jubilant' when discussing everyday topics."
         },
         "jubiloso": {
-            definition: "A short definition of 'jubiloso' in English.",
-            example: "This sentence uses the word 'jubiloso' in a natural way."
+            definition: "Jubiloso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'jubiloso' when discussing everyday topics."
         },
         "judicious": {
-            definition: "A short definition of 'judicious' in English.",
-            example: "This sentence uses the word 'judicious' in a natural way."
+            definition: "Having the quality of being judic.",
+            example: "People often used the word 'judicious' when discussing everyday topics."
         },
         "kind": {
-            definition: "A short definition of 'kind' in English.",
-            example: "This sentence uses the word 'kind' in a natural way."
+            definition: "Kind: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'kind' when discussing everyday topics."
         },
         "knowledge": {
-            definition: "A short definition of 'knowledge' in English.",
-            example: "This sentence uses the word 'knowledge' in a natural way."
+            definition: "Knowledge: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'knowledge' when discussing everyday topics."
         },
         "laborieux": {
-            definition: "A short definition of 'laborieux' in English.",
-            example: "This sentence uses the word 'laborieux' in a natural way."
+            definition: "Laborieux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'laborieux' when discussing everyday topics."
         },
         "laborioso": {
-            definition: "A short definition of 'laborioso' in English.",
-            example: "This sentence uses the word 'laborioso' in a natural way."
+            definition: "Laborioso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'laborioso' when discussing everyday topics."
         },
         "laborious": {
-            definition: "A short definition of 'laborious' in English.",
-            example: "This sentence uses the word 'laborious' in a natural way."
+            definition: "Having the quality of being labor.",
+            example: "People often used the word 'laborious' when discussing everyday topics."
         },
         "laconic": {
-            definition: "A short definition of 'laconic' in English.",
-            example: "This sentence uses the word 'laconic' in a natural way."
+            definition: "Laconic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'laconic' when discussing everyday topics."
         },
         "lamentable": {
-            definition: "A short definition of 'lamentable' in English.",
-            example: "This sentence uses the word 'lamentable' in a natural way."
+            definition: "Capable of being lament.",
+            example: "People often used the word 'lamentable' when discussing everyday topics."
         },
         "lank": {
-            definition: "A short definition of 'lank' in English.",
-            example: "This sentence uses the word 'lank' in a natural way."
+            definition: "Lank: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lank' when discussing everyday topics."
         },
         "large": {
             definition: "Of considerable size, extent, or capacity.",
             example: "They live in a large house with a beautiful garden."
         },
         "late": {
-            definition: "A short definition of 'late' in English.",
-            example: "This sentence uses the word 'late' in a natural way."
+            definition: "Late: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'late' when discussing everyday topics."
         },
         "latest": {
-            definition: "A short definition of 'latest' in English.",
-            example: "This sentence uses the word 'latest' in a natural way."
+            definition: "Latest: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'latest' when discussing everyday topics."
         },
         "laughter": {
-            definition: "A short definition of 'laughter' in English.",
-            example: "This sentence uses the word 'laughter' in a natural way."
+            definition: "A person or thing that laughter or performs the action laught.",
+            example: "People often used the word 'laughter' when discussing everyday topics."
         },
         "leading": {
             definition: "Most important; guidance or direction.",
             example: "She is a leading expert in the field of renewable energy."
         },
         "lean": {
-            definition: "A short definition of 'lean' in English.",
-            example: "This sentence uses the word 'lean' in a natural way."
+            definition: "Lean: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lean' when discussing everyday topics."
         },
         "learning": {
-            definition: "A short definition of 'learning' in English.",
-            example: "This sentence uses the word 'learning' in a natural way."
+            definition: "Being or performing the action of learning or causing that action to happen.",
+            example: "People often used the word 'learning' when discussing everyday topics."
         },
         "legacy": {
-            definition: "A short definition of 'legacy' in English.",
-            example: "This sentence uses the word 'legacy' in a natural way."
+            definition: "Legacy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'legacy' when discussing everyday topics."
         },
         "legado": {
-            definition: "A short definition of 'legado' in English.",
-            example: "This sentence uses the word 'legado' in a natural way."
+            definition: "Legado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'legado' when discussing everyday topics."
         },
         "leste": {
-            definition: "A short definition of 'leste' in English.",
-            example: "This sentence uses the word 'leste' in a natural way."
+            definition: "Leste: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'leste' when discussing everyday topics."
         },
         "lethargic": {
             definition: "Affected by lethargy; sluggish and apathetic.",
             example: "He felt lethargic after eating a large and heavy lunch."
         },
         "ligero": {
-            definition: "A short definition of 'ligero' in English.",
-            example: "This sentence uses the word 'ligero' in a natural way."
+            definition: "Ligero: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ligero' when discussing everyday topics."
         },
         "light": {
-            definition: "A short definition of 'light' in English.",
-            example: "This sentence uses the word 'light' in a natural way."
+            definition: "Light: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'light' when discussing everyday topics."
         },
         "lighten": {
-            definition: "A short definition of 'lighten' in English.",
-            example: "This sentence uses the word 'lighten' in a natural way."
+            definition: "Lighten: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lighten' when discussing everyday topics."
         },
         "liliputiense": {
-            definition: "A short definition of 'liliputiense' in English.",
-            example: "This sentence uses the word 'liliputiense' in a natural way."
+            definition: "Liliputiense: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'liliputiense' when discussing everyday topics."
         },
         "lilliputian": {
-            definition: "A short definition of 'lilliputian' in English.",
-            example: "This sentence uses the word 'lilliputian' in a natural way."
+            definition: "Lilliputian: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lilliputian' when discussing everyday topics."
         },
         "lilliputien": {
-            definition: "A short definition of 'lilliputien' in English.",
-            example: "This sentence uses the word 'lilliputien' in a natural way."
+            definition: "Lilliputien: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lilliputien' when discussing everyday topics."
         },
         "limpid": {
-            definition: "A short definition of 'limpid' in English.",
-            example: "This sentence uses the word 'limpid' in a natural way."
+            definition: "Limpid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'limpid' when discussing everyday topics."
         },
         "limpide": {
-            definition: "A short definition of 'limpide' in English.",
-            example: "This sentence uses the word 'limpide' in a natural way."
+            definition: "Limpide: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'limpide' when discussing everyday topics."
         },
         "limpio": {
-            definition: "A short definition of 'limpio' in English.",
-            example: "This sentence uses the word 'limpio' in a natural way."
+            definition: "Limpio: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'limpio' when discussing everyday topics."
         },
         "lindo": {
-            definition: "A short definition of 'lindo' in English.",
-            example: "This sentence uses the word 'lindo' in a natural way."
+            definition: "Lindo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lindo' when discussing everyday topics."
         },
         "listening": {
-            definition: "A short definition of 'listening' in English.",
-            example: "This sentence uses the word 'listening' in a natural way."
+            definition: "Being or performing the action of listening or causing that action to happen.",
+            example: "People often used the word 'listening' when discussing everyday topics."
         },
         "listo": {
-            definition: "A short definition of 'listo' in English.",
-            example: "This sentence uses the word 'listo' in a natural way."
+            definition: "Listo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'listo' when discussing everyday topics."
         },
         "lit": {
-            definition: "A short definition of 'lit' in English.",
-            example: "This sentence uses the word 'lit' in a natural way."
+            definition: "Lit: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lit' when discussing everyday topics."
         },
         "little": {
-            definition: "A short definition of 'little' in English.",
-            example: "This sentence uses the word 'little' in a natural way."
+            definition: "Little: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'little' when discussing everyday topics."
         },
         "livid": {
-            definition: "A short definition of 'livid' in English.",
-            example: "This sentence uses the word 'livid' in a natural way."
+            definition: "Livid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'livid' when discussing everyday topics."
         },
         "llevadero": {
-            definition: "A short definition of 'llevadero' in English.",
-            example: "This sentence uses the word 'llevadero' in a natural way."
+            definition: "Llevadero: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'llevadero' when discussing everyday topics."
         },
         "loaded": {
-            definition: "A short definition of 'loaded' in English.",
-            example: "This sentence uses the word 'loaded' in a natural way."
+            definition: "Loaded: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'loaded' when discussing everyday topics."
         },
         "logro": {
-            definition: "A short definition of 'logro' in English.",
-            example: "This sentence uses the word 'logro' in a natural way."
+            definition: "Logro: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'logro' when discussing everyday topics."
         },
         "long": {
-            definition: "A short definition of 'long' in English.",
-            example: "This sentence uses the word 'long' in a natural way."
+            definition: "Long: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'long' when discussing everyday topics."
         },
         "long-standing": {
-            definition: "A short definition of 'long-standing' in English.",
-            example: "This sentence uses the word 'long-standing' in a natural way."
+            definition: "Being or performing the action of long-standing or causing that action to happen.",
+            example: "People often used the word 'long-standing' when discussing everyday topics."
         },
         "lots": {
-            definition: "A short definition of 'lots' in English.",
-            example: "This sentence uses the word 'lots' in a natural way."
+            definition: "Lots: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lots' when discussing everyday topics."
         },
         "loud": {
-            definition: "A short definition of 'loud' in English.",
-            example: "This sentence uses the word 'loud' in a natural way."
+            definition: "Loud: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'loud' when discussing everyday topics."
         },
         "lovely": {
-            definition: "A short definition of 'lovely' in English.",
-            example: "This sentence uses the word 'lovely' in a natural way."
+            definition: "In a manner that is love.",
+            example: "People often used the word 'lovely' when discussing everyday topics."
         },
         "low": {
-            definition: "A short definition of 'low' in English.",
-            example: "This sentence uses the word 'low' in a natural way."
+            definition: "Low: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'low' when discussing everyday topics."
         },
         "low-cost": {
-            definition: "A short definition of 'low-cost' in English.",
-            example: "This sentence uses the word 'low-cost' in a natural way."
+            definition: "Low-cost: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'low-cost' when discussing everyday topics."
         },
         "lucent": {
-            definition: "A short definition of 'lucent' in English.",
-            example: "This sentence uses the word 'lucent' in a natural way."
+            definition: "Lucent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lucent' when discussing everyday topics."
         },
         "lucid": {
-            definition: "A short definition of 'lucid' in English.",
-            example: "This sentence uses the word 'lucid' in a natural way."
+            definition: "Lucid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lucid' when discussing everyday topics."
         },
         "lucide": {
-            definition: "A short definition of 'lucide' in English.",
-            example: "This sentence uses the word 'lucide' in a natural way."
+            definition: "Lucide: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lucide' when discussing everyday topics."
         },
         "lugubre": {
-            definition: "A short definition of 'lugubre' in English.",
-            example: "This sentence uses the word 'lugubre' in a natural way."
+            definition: "Lugubre: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lugubre' when discussing everyday topics."
         },
         "lugubriousness": {
-            definition: "A short definition of 'lugubriousness' in English.",
-            example: "This sentence uses the word 'lugubriousness' in a natural way."
+            definition: "Lugubriousness: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lugubriousness' when discussing everyday topics."
         },
         "luminous": {
             definition: "Full of or shedding light; bright or shining, especially in the dark.",
             example: "The jellyfish were luminous, lighting up the dark ocean water."
         },
         "lunch": {
-            definition: "A short definition of 'lunch' in English.",
-            example: "This sentence uses the word 'lunch' in a natural way."
+            definition: "A meal eaten in the middle of the day.",
+            example: "People often used the word 'lunch' when discussing everyday topics."
         },
         "límites": {
-            definition: "A short definition of 'límites' in English.",
-            example: "This sentence uses the word 'límites' in a natural way."
+            definition: "Límites: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'límites' when discussing everyday topics."
         },
         "lúcido": {
-            definition: "A short definition of 'lúcido' in English.",
-            example: "This sentence uses the word 'lúcido' in a natural way."
+            definition: "Lúcido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'lúcido' when discussing everyday topics."
         },
         "macabre": {
-            definition: "A short definition of 'macabre' in English.",
-            example: "This sentence uses the word 'macabre' in a natural way."
+            definition: "Macabre: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'macabre' when discussing everyday topics."
         },
         "macabro": {
-            definition: "A short definition of 'macabro' in English.",
-            example: "This sentence uses the word 'macabro' in a natural way."
+            definition: "Macabro: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'macabro' when discussing everyday topics."
         },
         "mad": {
-            definition: "A short definition of 'mad' in English.",
-            example: "This sentence uses the word 'mad' in a natural way."
+            definition: "Mad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mad' when discussing everyday topics."
         },
         "magnanime": {
-            definition: "A short definition of 'magnanime' in English.",
-            example: "This sentence uses the word 'magnanime' in a natural way."
+            definition: "Magnanime: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'magnanime' when discussing everyday topics."
         },
         "magnanimous": {
             definition: "Generous or forgiving, especially toward a rival or less powerful person.",
             example: "It was magnanimous of him to admit his mistake publicly."
         },
         "magnifique": {
-            definition: "A short definition of 'magnifique' in English.",
-            example: "This sentence uses the word 'magnifique' in a natural way."
+            definition: "Magnifique: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'magnifique' when discussing everyday topics."
         },
         "magnánimo": {
-            definition: "A short definition of 'magnánimo' in English.",
-            example: "This sentence uses the word 'magnánimo' in a natural way."
+            definition: "Magnánimo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'magnánimo' when discussing everyday topics."
         },
         "majeur": {
-            definition: "A short definition of 'majeur' in English.",
-            example: "This sentence uses the word 'majeur' in a natural way."
+            definition: "Majeur: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'majeur' when discussing everyday topics."
         },
         "major": {
-            definition: "A short definition of 'major' in English.",
-            example: "This sentence uses the word 'major' in a natural way."
+            definition: "Major: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'major' when discussing everyday topics."
         },
         "malaisé": {
-            definition: "A short definition of 'malaisé' in English.",
-            example: "This sentence uses the word 'malaisé' in a natural way."
+            definition: "Malaisé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'malaisé' when discussing everyday topics."
         },
         "malheureux": {
-            definition: "A short definition of 'malheureux' in English.",
-            example: "This sentence uses the word 'malheureux' in a natural way."
+            definition: "Malheureux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'malheureux' when discussing everyday topics."
         },
         "malin": {
-            definition: "A short definition of 'malin' in English.",
-            example: "This sentence uses the word 'malin' in a natural way."
+            definition: "Malin: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'malin' when discussing everyday topics."
         },
         "malo": {
-            definition: "A short definition of 'malo' in English.",
-            example: "This sentence uses the word 'malo' in a natural way."
+            definition: "Malo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'malo' when discussing everyday topics."
         },
         "mammoth": {
-            definition: "A short definition of 'mammoth' in English.",
-            example: "This sentence uses the word 'mammoth' in a natural way."
+            definition: "Mammoth: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mammoth' when discussing everyday topics."
         },
         "manifest": {
-            definition: "A short definition of 'manifest' in English.",
-            example: "This sentence uses the word 'manifest' in a natural way."
+            definition: "Manifest: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'manifest' when discussing everyday topics."
         },
         "manifesto": {
             definition: "A public declaration of policy and aims.",
             example: "The political party released its election manifesto yesterday."
         },
         "manifiesto": {
-            definition: "A short definition of 'manifiesto' in English.",
-            example: "This sentence uses the word 'manifiesto' in a natural way."
+            definition: "Manifiesto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'manifiesto' when discussing everyday topics."
         },
         "maravilloso": {
-            definition: "A short definition of 'maravilloso' in English.",
-            example: "This sentence uses the word 'maravilloso' in a natural way."
+            definition: "Maravilloso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'maravilloso' when discussing everyday topics."
         },
         "masivo": {
-            definition: "A short definition of 'masivo' in English.",
-            example: "This sentence uses the word 'masivo' in a natural way."
+            definition: "Masivo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'masivo' when discussing everyday topics."
         },
         "massif": {
-            definition: "A short definition of 'massif' in English.",
-            example: "This sentence uses the word 'massif' in a natural way."
+            definition: "Massif: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'massif' when discussing everyday topics."
         },
         "massive": {
-            definition: "A short definition of 'massive' in English.",
-            example: "This sentence uses the word 'massive' in a natural way."
+            definition: "Having the quality of being ma.",
+            example: "People often used the word 'massive' when discussing everyday topics."
         },
         "matinée": {
-            definition: "A short definition of 'matinée' in English.",
-            example: "This sentence uses the word 'matinée' in a natural way."
+            definition: "Matinée: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'matinée' when discussing everyday topics."
         },
         "mauvais": {
-            definition: "A short definition of 'mauvais' in English.",
-            example: "This sentence uses the word 'mauvais' in a natural way."
+            definition: "Mauvais: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mauvais' when discussing everyday topics."
         },
         "mañana": {
-            definition: "A short definition of 'mañana' in English.",
-            example: "This sentence uses the word 'mañana' in a natural way."
+            definition: "Mañana: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mañana' when discussing everyday topics."
         },
         "meager": {
-            definition: "A short definition of 'meager' in English.",
-            example: "This sentence uses the word 'meager' in a natural way."
+            definition: "A person or thing that meager or performs the action meag.",
+            example: "People often used the word 'meager' when discussing everyday topics."
         },
         "meaning": {
-            definition: "A short definition of 'meaning' in English.",
-            example: "This sentence uses the word 'meaning' in a natural way."
+            definition: "Being or performing the action of meaning or causing that action to happen.",
+            example: "People often used the word 'meaning' when discussing everyday topics."
         },
         "medular": {
-            definition: "A short definition of 'medular' in English.",
-            example: "This sentence uses the word 'medular' in a natural way."
+            definition: "Medular: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'medular' when discussing everyday topics."
         },
         "meek": {
-            definition: "A short definition of 'meek' in English.",
-            example: "This sentence uses the word 'meek' in a natural way."
+            definition: "Meek: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'meek' when discussing everyday topics."
         },
         "melancholy": {
-            definition: "A short definition of 'melancholy' in English.",
-            example: "This sentence uses the word 'melancholy' in a natural way."
+            definition: "In a manner that is melancho.",
+            example: "People often used the word 'melancholy' when discussing everyday topics."
         },
         "melancólico": {
-            definition: "A short definition of 'melancólico' in English.",
-            example: "This sentence uses the word 'melancólico' in a natural way."
+            definition: "Melancólico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'melancólico' when discussing everyday topics."
         },
         "memories": {
-            definition: "A short definition of 'memories' in English.",
-            example: "This sentence uses the word 'memories' in a natural way."
+            definition: "Memories: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'memories' when discussing everyday topics."
         },
         "menacing": {
-            definition: "A short definition of 'menacing' in English.",
-            example: "This sentence uses the word 'menacing' in a natural way."
+            definition: "Being or performing the action of menacing or causing that action to happen.",
+            example: "People often used the word 'menacing' when discussing everyday topics."
         },
         "menu": {
-            definition: "A short definition of 'menu' in English.",
-            example: "This sentence uses the word 'menu' in a natural way."
+            definition: "Menu: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'menu' when discussing everyday topics."
         },
         "menudo": {
-            definition: "A short definition of 'menudo' in English.",
-            example: "This sentence uses the word 'menudo' in a natural way."
+            definition: "Menudo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'menudo' when discussing everyday topics."
         },
         "mercurial": {
-            definition: "A short definition of 'mercurial' in English.",
-            example: "This sentence uses the word 'mercurial' in a natural way."
+            definition: "Mercurial: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mercurial' when discussing everyday topics."
         },
         "merry": {
-            definition: "A short definition of 'merry' in English.",
-            example: "This sentence uses the word 'merry' in a natural way."
+            definition: "Merry: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'merry' when discussing everyday topics."
         },
         "mesmerizing": {
-            definition: "A short definition of 'mesmerizing' in English.",
-            example: "This sentence uses the word 'mesmerizing' in a natural way."
+            definition: "Being or performing the action of mesmerizing or causing that action to happen.",
+            example: "People often used the word 'mesmerizing' when discussing everyday topics."
         },
         "metas": {
-            definition: "A short definition of 'metas' in English.",
-            example: "This sentence uses the word 'metas' in a natural way."
+            definition: "Metas: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'metas' when discussing everyday topics."
         },
         "meteoric": {
-            definition: "A short definition of 'meteoric' in English.",
-            example: "This sentence uses the word 'meteoric' in a natural way."
+            definition: "Meteoric: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'meteoric' when discussing everyday topics."
         },
         "meticulous": {
             definition: "Showing great attention to detail; very careful and precise.",
@@ -3709,276 +3709,276 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Bacteria are microscopic organisms that can be found everywhere."
         },
         "microscopique": {
-            definition: "A short definition of 'microscopique' in English.",
-            example: "This sentence uses the word 'microscopique' in a natural way."
+            definition: "Microscopique: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'microscopique' when discussing everyday topics."
         },
         "microscópico": {
-            definition: "A short definition of 'microscópico' in English.",
-            example: "This sentence uses the word 'microscópico' in a natural way."
+            definition: "Microscópico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'microscópico' when discussing everyday topics."
         },
         "mighty": {
-            definition: "A short definition of 'mighty' in English.",
-            example: "This sentence uses the word 'mighty' in a natural way."
+            definition: "Mighty: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mighty' when discussing everyday topics."
         },
         "mignon": {
-            definition: "A short definition of 'mignon' in English.",
-            example: "This sentence uses the word 'mignon' in a natural way."
+            definition: "Mignon: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mignon' when discussing everyday topics."
         },
         "milestone": {
-            definition: "A short definition of 'milestone' in English.",
-            example: "This sentence uses the word 'milestone' in a natural way."
+            definition: "Milestone: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'milestone' when discussing everyday topics."
         },
         "mindfulness": {
-            definition: "A short definition of 'mindfulness' in English.",
-            example: "This sentence uses the word 'mindfulness' in a natural way."
+            definition: "Mindfulness: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mindfulness' when discussing everyday topics."
         },
         "mini": {
-            definition: "A short definition of 'mini' in English.",
-            example: "This sentence uses the word 'mini' in a natural way."
+            definition: "Mini: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mini' when discussing everyday topics."
         },
         "minimalist": {
-            definition: "A short definition of 'minimalist' in English.",
-            example: "This sentence uses the word 'minimalist' in a natural way."
+            definition: "Minimalist: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'minimalist' when discussing everyday topics."
         },
         "minimum": {
-            definition: "A short definition of 'minimum' in English.",
-            example: "This sentence uses the word 'minimum' in a natural way."
+            definition: "Minimum: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'minimum' when discussing everyday topics."
         },
         "minor": {
-            definition: "A short definition of 'minor' in English.",
-            example: "This sentence uses the word 'minor' in a natural way."
+            definition: "Minor: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'minor' when discussing everyday topics."
         },
         "minuscule": {
-            definition: "A short definition of 'minuscule' in English.",
-            example: "This sentence uses the word 'minuscule' in a natural way."
+            definition: "Minuscule: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'minuscule' when discussing everyday topics."
         },
         "minute": {
-            definition: "A short definition of 'minute' in English.",
-            example: "This sentence uses the word 'minute' in a natural way."
+            definition: "Minute: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'minute' when discussing everyday topics."
         },
         "minúsculo": {
-            definition: "A short definition of 'minúsculo' in English.",
-            example: "This sentence uses the word 'minúsculo' in a natural way."
+            definition: "Minúsculo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'minúsculo' when discussing everyday topics."
         },
         "modern": {
-            definition: "A short definition of 'modern' in English.",
-            example: "This sentence uses the word 'modern' in a natural way."
+            definition: "Modern: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'modern' when discussing everyday topics."
         },
         "moderne": {
-            definition: "A short definition of 'moderne' in English.",
-            example: "This sentence uses the word 'moderne' in a natural way."
+            definition: "Moderne: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'moderne' when discussing everyday topics."
         },
         "moderno": {
-            definition: "A short definition of 'moderno' in English.",
-            example: "This sentence uses the word 'moderno' in a natural way."
+            definition: "Moderno: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'moderno' when discussing everyday topics."
         },
         "molesto": {
-            definition: "A short definition of 'molesto' in English.",
-            example: "This sentence uses the word 'molesto' in a natural way."
+            definition: "Molesto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'molesto' when discussing everyday topics."
         },
         "mollifying": {
-            definition: "A short definition of 'mollifying' in English.",
-            example: "This sentence uses the word 'mollifying' in a natural way."
+            definition: "Being or performing the action of mollifying or causing that action to happen.",
+            example: "People often used the word 'mollifying' when discussing everyday topics."
         },
         "momentous": {
-            definition: "A short definition of 'momentous' in English.",
-            example: "This sentence uses the word 'momentous' in a natural way."
+            definition: "Having the quality of being moment.",
+            example: "People often used the word 'momentous' when discussing everyday topics."
         },
         "moneyed": {
-            definition: "A short definition of 'moneyed' in English.",
-            example: "This sentence uses the word 'moneyed' in a natural way."
+            definition: "Moneyed: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'moneyed' when discussing everyday topics."
         },
         "monologue": {
-            definition: "A short definition of 'monologue' in English.",
-            example: "This sentence uses the word 'monologue' in a natural way."
+            definition: "Monologue: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'monologue' when discussing everyday topics."
         },
         "monstrous": {
-            definition: "A short definition of 'monstrous' in English.",
-            example: "This sentence uses the word 'monstrous' in a natural way."
+            definition: "Having the quality of being monstr.",
+            example: "People often used the word 'monstrous' when discussing everyday topics."
         },
         "monumental": {
             definition: "Great in importance, extent, or size.",
             example: "The discovery of gravity was a monumental moment in science."
         },
         "mood": {
-            definition: "A short definition of 'mood' in English.",
-            example: "This sentence uses the word 'mood' in a natural way."
+            definition: "Mood: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mood' when discussing everyday topics."
         },
         "morning": {
-            definition: "A short definition of 'morning' in English.",
-            example: "This sentence uses the word 'morning' in a natural way."
+            definition: "Being or performing the action of morning or causing that action to happen.",
+            example: "People often used the word 'morning' when discussing everyday topics."
         },
         "morose": {
-            definition: "A short definition of 'morose' in English.",
-            example: "This sentence uses the word 'morose' in a natural way."
+            definition: "Morose: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'morose' when discussing everyday topics."
         },
         "motivación": {
-            definition: "A short definition of 'motivación' in English.",
-            example: "This sentence uses the word 'motivación' in a natural way."
+            definition: "Motivación: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'motivación' when discussing everyday topics."
         },
         "motivation": {
-            definition: "A short definition of 'motivation' in English.",
-            example: "This sentence uses the word 'motivation' in a natural way."
+            definition: "The act or process of motivaing.",
+            example: "People often used the word 'motivation' when discussing everyday topics."
         },
         "much": {
-            definition: "A short definition of 'much' in English.",
-            example: "This sentence uses the word 'much' in a natural way."
+            definition: "Much: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'much' when discussing everyday topics."
         },
         "muffled": {
             definition: "Not loud because of being obstructed in some way; muted.",
             example: "I heard the muffled sound of voices through the thick wall."
         },
         "multitudinous": {
-            definition: "A short definition of 'multitudinous' in English.",
-            example: "This sentence uses the word 'multitudinous' in a natural way."
+            definition: "Having the quality of being multitudin.",
+            example: "People often used the word 'multitudinous' when discussing everyday topics."
         },
         "mute": {
-            definition: "A short definition of 'mute' in English.",
-            example: "This sentence uses the word 'mute' in a natural way."
+            definition: "Mute: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mute' when discussing everyday topics."
         },
         "myriad": {
-            definition: "A short definition of 'myriad' in English.",
-            example: "This sentence uses the word 'myriad' in a natural way."
+            definition: "Myriad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'myriad' when discussing everyday topics."
         },
         "mystical": {
             definition: "Relating to or characteristic of mysticism; inspiring awe.",
             example: "He had a mystical experience while meditating in the forest."
         },
         "mythic": {
-            definition: "A short definition of 'mythic' in English.",
-            example: "This sentence uses the word 'mythic' in a natural way."
+            definition: "Mythic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mythic' when discussing everyday topics."
         },
         "médiocre": {
-            definition: "A short definition of 'médiocre' in English.",
-            example: "This sentence uses the word 'médiocre' in a natural way."
+            definition: "Médiocre: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'médiocre' when discussing everyday topics."
         },
         "mélancolique": {
-            definition: "A short definition of 'mélancolique' in English.",
-            example: "This sentence uses the word 'mélancolique' in a natural way."
+            definition: "Mélancolique: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'mélancolique' when discussing everyday topics."
         },
         "naciente": {
-            definition: "A short definition of 'naciente' in English.",
-            example: "This sentence uses the word 'naciente' in a natural way."
+            definition: "Naciente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'naciente' when discussing everyday topics."
         },
         "naissant": {
-            definition: "A short definition of 'naissant' in English.",
-            example: "This sentence uses the word 'naissant' in a natural way."
+            definition: "Naissant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'naissant' when discussing everyday topics."
         },
         "narrow": {
-            definition: "A short definition of 'narrow' in English.",
-            example: "This sentence uses the word 'narrow' in a natural way."
+            definition: "Narrow: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'narrow' when discussing everyday topics."
         },
         "nascent": {
-            definition: "A short definition of 'nascent' in English.",
-            example: "This sentence uses the word 'nascent' in a natural way."
+            definition: "Nascent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'nascent' when discussing everyday topics."
         },
         "nasty": {
-            definition: "A short definition of 'nasty' in English.",
-            example: "This sentence uses the word 'nasty' in a natural way."
+            definition: "Nasty: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'nasty' when discussing everyday topics."
         },
         "necessitous": {
-            definition: "A short definition of 'necessitous' in English.",
-            example: "This sentence uses the word 'necessitous' in a natural way."
+            definition: "Having the quality of being necessit.",
+            example: "People often used the word 'necessitous' when discussing everyday topics."
         },
         "needy": {
-            definition: "A short definition of 'needy' in English.",
-            example: "This sentence uses the word 'needy' in a natural way."
+            definition: "Needy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'needy' when discussing everyday topics."
         },
         "nefasto": {
-            definition: "A short definition of 'nefasto' in English.",
-            example: "This sentence uses the word 'nefasto' in a natural way."
+            definition: "Nefasto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'nefasto' when discussing everyday topics."
         },
         "negligible": {
             definition: "So small or unimportant as to be not worth considering.",
             example: "The risk of side effects from the medication is negligible."
         },
         "neuf": {
-            definition: "A short definition of 'neuf' in English.",
-            example: "This sentence uses the word 'neuf' in a natural way."
+            definition: "Neuf: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'neuf' when discussing everyday topics."
         },
         "new": {
-            definition: "A short definition of 'new' in English.",
-            example: "This sentence uses the word 'new' in a natural way."
+            definition: "New: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'new' when discussing everyday topics."
         },
         "newfangled": {
-            definition: "A short definition of 'newfangled' in English.",
-            example: "This sentence uses the word 'newfangled' in a natural way."
+            definition: "Newfangled: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'newfangled' when discussing everyday topics."
         },
         "nice": {
-            definition: "A short definition of 'nice' in English.",
-            example: "This sentence uses the word 'nice' in a natural way."
+            definition: "Nice: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'nice' when discussing everyday topics."
         },
         "nimble": {
-            definition: "A short definition of 'nimble' in English.",
-            example: "This sentence uses the word 'nimble' in a natural way."
+            definition: "Nimble: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'nimble' when discussing everyday topics."
         },
         "nippy": {
-            definition: "A short definition of 'nippy' in English.",
-            example: "This sentence uses the word 'nippy' in a natural way."
+            definition: "Nippy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'nippy' when discussing everyday topics."
         },
         "noisy": {
-            definition: "A short definition of 'noisy' in English.",
-            example: "This sentence uses the word 'noisy' in a natural way."
+            definition: "Noisy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'noisy' when discussing everyday topics."
         },
         "nominal": {
-            definition: "A short definition of 'nominal' in English.",
-            example: "This sentence uses the word 'nominal' in a natural way."
+            definition: "Nominal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'nominal' when discussing everyday topics."
         },
         "nosy": {
-            definition: "A short definition of 'nosy' in English.",
-            example: "This sentence uses the word 'nosy' in a natural way."
+            definition: "Nosy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'nosy' when discussing everyday topics."
         },
         "nouveau": {
-            definition: "A short definition of 'nouveau' in English.",
-            example: "This sentence uses the word 'nouveau' in a natural way."
+            definition: "Nouveau: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'nouveau' when discussing everyday topics."
         },
         "novateur": {
-            definition: "A short definition of 'novateur' in English.",
-            example: "This sentence uses the word 'novateur' in a natural way."
+            definition: "Novateur: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'novateur' when discussing everyday topics."
         },
         "novel": {
-            definition: "A short definition of 'novel' in English.",
-            example: "This sentence uses the word 'novel' in a natural way."
+            definition: "Novel: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'novel' when discussing everyday topics."
         },
         "nuance": {
             definition: "A subtle difference in or shade of meaning, expression, or color.",
             example: "The actor captured every nuance of the character's emotions."
         },
         "nuevo": {
-            definition: "A short definition of 'nuevo' in English.",
-            example: "This sentence uses the word 'nuevo' in a natural way."
+            definition: "Nuevo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'nuevo' when discussing everyday topics."
         },
         "numinous": {
-            definition: "A short definition of 'numinous' in English.",
-            example: "This sentence uses the word 'numinous' in a natural way."
+            definition: "Having the quality of being numin.",
+            example: "People often used the word 'numinous' when discussing everyday topics."
         },
         "nutrición": {
-            definition: "A short definition of 'nutrición' in English.",
-            example: "This sentence uses the word 'nutrición' in a natural way."
+            definition: "Nutrición: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'nutrición' when discussing everyday topics."
         },
         "nutrition": {
-            definition: "A short definition of 'nutrition' in English.",
-            example: "This sentence uses the word 'nutrition' in a natural way."
+            definition: "The act or process of nutriing.",
+            example: "People often used the word 'nutrition' when discussing everyday topics."
         },
         "obsolete": {
             definition: "No longer produced or used; out of date.",
             example: "Typewriters have become largely obsolete in the age of computers."
         },
         "obvious": {
-            definition: "A short definition of 'obvious' in English.",
-            example: "This sentence uses the word 'obvious' in a natural way."
+            definition: "Having the quality of being ob.",
+            example: "People often used the word 'obvious' when discussing everyday topics."
         },
         "okay": {
-            definition: "A short definition of 'okay' in English.",
-            example: "This sentence uses the word 'okay' in a natural way."
+            definition: "Okay: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'okay' when discussing everyday topics."
         },
         "old": {
-            definition: "A short definition of 'old' in English.",
-            example: "This sentence uses the word 'old' in a natural way."
+            definition: "Old: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'old' when discussing everyday topics."
         },
         "ominous": {
-            definition: "A short definition of 'ominous' in English.",
-            example: "This sentence uses the word 'ominous' in a natural way."
+            definition: "Having the quality of being omin.",
+            example: "People often used the word 'ominous' when discussing everyday topics."
         },
         "omnipresent": {
             definition: "Widely or constantly encountered; common or widespread.",
@@ -3989,44 +3989,44 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The narrator of the story was omniscient, knowing every character's thoughts."
         },
         "onerous": {
-            definition: "A short definition of 'onerous' in English.",
-            example: "This sentence uses the word 'onerous' in a natural way."
+            definition: "Having the quality of being oner.",
+            example: "People often used the word 'onerous' when discussing everyday topics."
         },
         "open": {
-            definition: "A short definition of 'open' in English.",
-            example: "This sentence uses the word 'open' in a natural way."
+            definition: "Open: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'open' when discussing everyday topics."
         },
         "oportunidades": {
-            definition: "A short definition of 'oportunidades' in English.",
-            example: "This sentence uses the word 'oportunidades' in a natural way."
+            definition: "Oportunidades: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'oportunidades' when discussing everyday topics."
         },
         "opportunities": {
-            definition: "A short definition of 'opportunities' in English.",
-            example: "This sentence uses the word 'opportunities' in a natural way."
+            definition: "Opportunities: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'opportunities' when discussing everyday topics."
         },
         "opportunités": {
-            definition: "A short definition of 'opportunités' in English.",
-            example: "This sentence uses the word 'opportunités' in a natural way."
+            definition: "Opportunités: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'opportunités' when discussing everyday topics."
         },
         "optimal": {
-            definition: "A short definition of 'optimal' in English.",
-            example: "This sentence uses the word 'optimal' in a natural way."
+            definition: "Optimal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'optimal' when discussing everyday topics."
         },
         "optimizado": {
-            definition: "A short definition of 'optimizado' in English.",
-            example: "This sentence uses the word 'optimizado' in a natural way."
+            definition: "Optimizado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'optimizado' when discussing everyday topics."
         },
         "opulent": {
-            definition: "A short definition of 'opulent' in English.",
-            example: "This sentence uses the word 'opulent' in a natural way."
+            definition: "Opulent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'opulent' when discussing everyday topics."
         },
         "organización": {
-            definition: "A short definition of 'organización' in English.",
-            example: "This sentence uses the word 'organización' in a natural way."
+            definition: "Organización: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'organización' when discussing everyday topics."
         },
         "organization": {
-            definition: "A short definition of 'organization' in English.",
-            example: "This sentence uses the word 'organization' in a natural way."
+            definition: "The act or process of organizaing.",
+            example: "People often used the word 'organization' when discussing everyday topics."
         },
         "ornamental": {
             definition: "Serving as an ornament; decorative.",
@@ -4037,200 +4037,200 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The oscillating fan kept the room cool during the summer heat."
         },
         "outreach": {
-            definition: "A short definition of 'outreach' in English.",
-            example: "This sentence uses the word 'outreach' in a natural way."
+            definition: "Outreach: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'outreach' when discussing everyday topics."
         },
         "outré": {
-            definition: "A short definition of 'outré' in English.",
-            example: "This sentence uses the word 'outré' in a natural way."
+            definition: "Outré: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'outré' when discussing everyday topics."
         },
         "paciencia": {
-            definition: "A short definition of 'paciencia' in English.",
-            example: "This sentence uses the word 'paciencia' in a natural way."
+            definition: "Paciencia: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'paciencia' when discussing everyday topics."
         },
         "painless": {
-            definition: "A short definition of 'painless' in English.",
-            example: "This sentence uses the word 'painless' in a natural way."
+            definition: "Having the quality of being pain.",
+            example: "People often used the word 'painless' when discussing everyday topics."
         },
         "palpitant": {
-            definition: "A short definition of 'palpitant' in English.",
-            example: "This sentence uses the word 'palpitant' in a natural way."
+            definition: "Palpitant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'palpitant' when discussing everyday topics."
         },
         "paltry": {
-            definition: "A short definition of 'paltry' in English.",
-            example: "This sentence uses the word 'paltry' in a natural way."
+            definition: "Paltry: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'paltry' when discussing everyday topics."
         },
         "pan comido": {
-            definition: "A short definition of 'pan comido' in English.",
-            example: "This sentence uses the word 'pan comido' in a natural way."
+            definition: "Pan comido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pan comido' when discussing everyday topics."
         },
         "paramount": {
-            definition: "A short definition of 'paramount' in English.",
-            example: "This sentence uses the word 'paramount' in a natural way."
+            definition: "Paramount: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'paramount' when discussing everyday topics."
         },
         "parcimonieux": {
-            definition: "A short definition of 'parcimonieux' in English.",
-            example: "This sentence uses the word 'parcimonieux' in a natural way."
+            definition: "Parcimonieux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'parcimonieux' when discussing everyday topics."
         },
         "parco": {
-            definition: "A short definition of 'parco' in English.",
-            example: "This sentence uses the word 'parco' in a natural way."
+            definition: "Parco: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'parco' when discussing everyday topics."
         },
         "parsimonious": {
-            definition: "A short definition of 'parsimonious' in English.",
-            example: "This sentence uses the word 'parsimonious' in a natural way."
+            definition: "Having the quality of being parsimon.",
+            example: "People often used the word 'parsimonious' when discussing everyday topics."
         },
         "passionate": {
-            definition: "A short definition of 'passionate' in English.",
-            example: "This sentence uses the word 'passionate' in a natural way."
+            definition: "Passionate: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'passionate' when discussing everyday topics."
         },
         "passionnant": {
-            definition: "A short definition of 'passionnant' in English.",
-            example: "This sentence uses the word 'passionnant' in a natural way."
+            definition: "Passionnant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'passionnant' when discussing everyday topics."
         },
         "passionné": {
-            definition: "A short definition of 'passionné' in English.",
-            example: "This sentence uses the word 'passionné' in a natural way."
+            definition: "Passionné: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'passionné' when discussing everyday topics."
         },
         "past": {
-            definition: "A short definition of 'past' in English.",
-            example: "This sentence uses the word 'past' in a natural way."
+            definition: "Past: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'past' when discussing everyday topics."
         },
         "patience": {
-            definition: "A short definition of 'patience' in English.",
-            example: "This sentence uses the word 'patience' in a natural way."
+            definition: "Patience: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'patience' when discussing everyday topics."
         },
         "patrimonio": {
-            definition: "A short definition of 'patrimonio' in English.",
-            example: "This sentence uses the word 'patrimonio' in a natural way."
+            definition: "Patrimonio: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'patrimonio' when discussing everyday topics."
         },
         "patriot": {
-            definition: "A short definition of 'patriot' in English.",
-            example: "This sentence uses the word 'patriot' in a natural way."
+            definition: "Patriot: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'patriot' when discussing everyday topics."
         },
         "pavoroso": {
-            definition: "A short definition of 'pavoroso' in English.",
-            example: "This sentence uses the word 'pavoroso' in a natural way."
+            definition: "Pavoroso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pavoroso' when discussing everyday topics."
         },
         "peaceful": {
-            definition: "A short definition of 'peaceful' in English.",
-            example: "This sentence uses the word 'peaceful' in a natural way."
+            definition: "Having the quality of being peac.",
+            example: "People often used the word 'peaceful' when discussing everyday topics."
         },
         "pecunious": {
-            definition: "A short definition of 'pecunious' in English.",
-            example: "This sentence uses the word 'pecunious' in a natural way."
+            definition: "Having the quality of being pecun.",
+            example: "People often used the word 'pecunious' when discussing everyday topics."
         },
         "peerless": {
-            definition: "A short definition of 'peerless' in English.",
-            example: "This sentence uses the word 'peerless' in a natural way."
+            definition: "Having the quality of being peer.",
+            example: "People often used the word 'peerless' when discussing everyday topics."
         },
         "peliagudo": {
-            definition: "A short definition of 'peliagudo' in English.",
-            example: "This sentence uses the word 'peliagudo' in a natural way."
+            definition: "Peliagudo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'peliagudo' when discussing everyday topics."
         },
         "pellucid": {
-            definition: "A short definition of 'pellucid' in English.",
-            example: "This sentence uses the word 'pellucid' in a natural way."
+            definition: "Pellucid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pellucid' when discussing everyday topics."
         },
         "pellucide": {
-            definition: "A short definition of 'pellucide' in English.",
-            example: "This sentence uses the word 'pellucide' in a natural way."
+            definition: "Pellucide: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pellucide' when discussing everyday topics."
         },
         "pellucido": {
-            definition: "A short definition of 'pellucido' in English.",
-            example: "This sentence uses the word 'pellucido' in a natural way."
+            definition: "Pellucido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pellucido' when discussing everyday topics."
         },
         "penetrating": {
             definition: "Able to make its way through or into something; piercing.",
             example: "Her penetrating gaze made him feel quite uncomfortable."
         },
         "penniless": {
-            definition: "A short definition of 'penniless' in English.",
-            example: "This sentence uses the word 'penniless' in a natural way."
+            definition: "Having the quality of being penn.",
+            example: "People often used the word 'penniless' when discussing everyday topics."
         },
         "penurious": {
-            definition: "A short definition of 'penurious' in English.",
-            example: "This sentence uses the word 'penurious' in a natural way."
+            definition: "Having the quality of being penur.",
+            example: "People often used the word 'penurious' when discussing everyday topics."
         },
         "pequeño": {
-            definition: "A short definition of 'pequeño' in English.",
-            example: "This sentence uses the word 'pequeño' in a natural way."
+            definition: "Pequeño: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pequeño' when discussing everyday topics."
         },
         "perceptive": {
             definition: "Having or showing sensitive insight; observant.",
             example: "Her perceptive observation helped us solve the mystery."
         },
         "perecedero": {
-            definition: "A short definition of 'perecedero' in English.",
-            example: "This sentence uses the word 'perecedero' in a natural way."
+            definition: "Perecedero: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'perecedero' when discussing everyday topics."
         },
         "perfidious": {
-            definition: "A short definition of 'perfidious' in English.",
-            example: "This sentence uses the word 'perfidious' in a natural way."
+            definition: "Having the quality of being perfid.",
+            example: "People often used the word 'perfidious' when discussing everyday topics."
         },
         "performant": {
-            definition: "A short definition of 'performant' in English.",
-            example: "This sentence uses the word 'performant' in a natural way."
+            definition: "Performant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'performant' when discussing everyday topics."
         },
         "perilous": {
-            definition: "A short definition of 'perilous' in English.",
-            example: "This sentence uses the word 'perilous' in a natural way."
+            definition: "Having the quality of being per.",
+            example: "People often used the word 'perilous' when discussing everyday topics."
         },
         "perishable": {
-            definition: "A short definition of 'perishable' in English.",
-            example: "This sentence uses the word 'perishable' in a natural way."
+            definition: "Capable of being perish.",
+            example: "People often used the word 'perishable' when discussing everyday topics."
         },
         "perk": {
-            definition: "A short definition of 'perk' in English.",
-            example: "This sentence uses the word 'perk' in a natural way."
+            definition: "Perk: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'perk' when discussing everyday topics."
         },
         "personajes": {
-            definition: "A short definition of 'personajes' in English.",
-            example: "This sentence uses the word 'personajes' in a natural way."
+            definition: "Personajes: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'personajes' when discussing everyday topics."
         },
         "perspectiva": {
-            definition: "A short definition of 'perspectiva' in English.",
-            example: "This sentence uses the word 'perspectiva' in a natural way."
+            definition: "Perspectiva: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'perspectiva' when discussing everyday topics."
         },
         "perspective": {
-            definition: "A short definition of 'perspective' in English.",
-            example: "This sentence uses the word 'perspective' in a natural way."
+            definition: "Having the quality of being perspect.",
+            example: "People often used the word 'perspective' when discussing everyday topics."
         },
         "perspectives": {
-            definition: "A short definition of 'perspectives' in English.",
-            example: "This sentence uses the word 'perspectives' in a natural way."
+            definition: "Perspectives: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'perspectives' when discussing everyday topics."
         },
         "perspicace": {
-            definition: "A short definition of 'perspicace' in English.",
-            example: "This sentence uses the word 'perspicace' in a natural way."
+            definition: "Perspicace: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'perspicace' when discussing everyday topics."
         },
         "perspicacious": {
-            definition: "A short definition of 'perspicacious' in English.",
-            example: "This sentence uses the word 'perspicacious' in a natural way."
+            definition: "Having the quality of being perspicac.",
+            example: "People often used the word 'perspicacious' when discussing everyday topics."
         },
         "perspicaz": {
-            definition: "A short definition of 'perspicaz' in English.",
-            example: "This sentence uses the word 'perspicaz' in a natural way."
+            definition: "Perspicaz: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'perspicaz' when discussing everyday topics."
         },
         "perspicuo": {
-            definition: "A short definition of 'perspicuo' in English.",
-            example: "This sentence uses the word 'perspicuo' in a natural way."
+            definition: "Perspicuo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'perspicuo' when discussing everyday topics."
         },
         "perspicuous": {
-            definition: "A short definition of 'perspicuous' in English.",
-            example: "This sentence uses the word 'perspicuous' in a natural way."
+            definition: "Having the quality of being perspic.",
+            example: "People often used the word 'perspicuous' when discussing everyday topics."
         },
         "petit": {
-            definition: "A short definition of 'petit' in English.",
-            example: "This sentence uses the word 'petit' in a natural way."
+            definition: "Petit: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'petit' when discussing everyday topics."
         },
         "petit-déjeuner": {
-            definition: "A short definition of 'petit-déjeuner' in English.",
-            example: "This sentence uses the word 'petit-déjeuner' in a natural way."
+            definition: "A person or thing that petit-déjeuner or performs the action petit-déjeun.",
+            example: "People often used the word 'petit-déjeuner' when discussing everyday topics."
         },
         "petite": {
-            definition: "A short definition of 'petite' in English.",
-            example: "This sentence uses the word 'petite' in a natural way."
+            definition: "Petite: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'petite' when discussing everyday topics."
         },
         "phosphorescent": {
             definition: "Emitting light without heat; glowing in the dark.",
@@ -4241,1268 +4241,1268 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The coastal town with its blue doors was incredibly photogenic."
         },
         "picturesque": {
-            definition: "A short definition of 'picturesque' in English.",
-            example: "This sentence uses the word 'picturesque' in a natural way."
+            definition: "Picturesque: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'picturesque' when discussing everyday topics."
         },
         "piercing": {
-            definition: "A short definition of 'piercing' in English.",
-            example: "This sentence uses the word 'piercing' in a natural way."
+            definition: "Being or performing the action of piercing or causing that action to happen.",
+            example: "People often used the word 'piercing' when discussing everyday topics."
         },
         "pin-drop": {
-            definition: "A short definition of 'pin-drop' in English.",
-            example: "This sentence uses the word 'pin-drop' in a natural way."
+            definition: "Pin-drop: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pin-drop' when discussing everyday topics."
         },
         "pioneer": {
-            definition: "A short definition of 'pioneer' in English.",
-            example: "This sentence uses the word 'pioneer' in a natural way."
+            definition: "A person or thing that pioneer or performs the action pione.",
+            example: "People often used the word 'pioneer' when discussing everyday topics."
         },
         "piping": {
-            definition: "A short definition of 'piping' in English.",
-            example: "This sentence uses the word 'piping' in a natural way."
+            definition: "Being or performing the action of piping or causing that action to happen.",
+            example: "People often used the word 'piping' when discussing everyday topics."
         },
         "pittance": {
-            definition: "A short definition of 'pittance' in English.",
-            example: "This sentence uses the word 'pittance' in a natural way."
+            definition: "Pittance: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pittance' when discussing everyday topics."
         },
         "pivotal": {
-            definition: "A short definition of 'pivotal' in English.",
-            example: "This sentence uses the word 'pivotal' in a natural way."
+            definition: "Pivotal: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pivotal' when discussing everyday topics."
         },
         "placate": {
-            definition: "A short definition of 'placate' in English.",
-            example: "This sentence uses the word 'placate' in a natural way."
+            definition: "To placate.",
+            example: "People often used the word 'placate' when discussing everyday topics."
         },
         "placid": {
             definition: "Not easily upset or excited; calm and peaceful.",
             example: "The lake remained placid despite the incoming storm clouds."
         },
         "plain": {
-            definition: "A short definition of 'plain' in English.",
-            example: "This sentence uses the word 'plain' in a natural way."
+            definition: "Plain: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'plain' when discussing everyday topics."
         },
         "planificación": {
-            definition: "A short definition of 'planificación' in English.",
-            example: "This sentence uses the word 'planificación' in a natural way."
+            definition: "Planificación: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'planificación' when discussing everyday topics."
         },
         "planning": {
-            definition: "A short definition of 'planning' in English.",
-            example: "This sentence uses the word 'planning' in a natural way."
+            definition: "Being or performing the action of planning or causing that action to happen.",
+            example: "People often used the word 'planning' when discussing everyday topics."
         },
         "pleasant": {
-            definition: "A short definition of 'pleasant' in English.",
-            example: "This sentence uses the word 'pleasant' in a natural way."
+            definition: "Pleasant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pleasant' when discussing everyday topics."
         },
         "pleased": {
-            definition: "A short definition of 'pleased' in English.",
-            example: "This sentence uses the word 'pleased' in a natural way."
+            definition: "Pleased: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pleased' when discussing everyday topics."
         },
         "pliant": {
-            definition: "A short definition of 'pliant' in English.",
-            example: "This sentence uses the word 'pliant' in a natural way."
+            definition: "Pliant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pliant' when discussing everyday topics."
         },
         "plot": {
-            definition: "A short definition of 'plot' in English.",
-            example: "This sentence uses the word 'plot' in a natural way."
+            definition: "Plot: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'plot' when discussing everyday topics."
         },
         "plush": {
-            definition: "A short definition of 'plush' in English.",
-            example: "This sentence uses the word 'plush' in a natural way."
+            definition: "Plush: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'plush' when discussing everyday topics."
         },
         "plutocratic": {
-            definition: "A short definition of 'plutocratic' in English.",
-            example: "This sentence uses the word 'plutocratic' in a natural way."
+            definition: "Plutocratic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'plutocratic' when discussing everyday topics."
         },
         "poderoso": {
-            definition: "A short definition of 'poderoso' in English.",
-            example: "This sentence uses the word 'poderoso' in a natural way."
+            definition: "Poderoso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'poderoso' when discussing everyday topics."
         },
         "polaire": {
-            definition: "A short definition of 'polaire' in English.",
-            example: "This sentence uses the word 'polaire' in a natural way."
+            definition: "Polaire: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'polaire' when discussing everyday topics."
         },
         "polar": {
-            definition: "A short definition of 'polar' in English.",
-            example: "This sentence uses the word 'polar' in a natural way."
+            definition: "Polar: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'polar' when discussing everyday topics."
         },
         "polluted": {
-            definition: "A short definition of 'polluted' in English.",
-            example: "This sentence uses the word 'polluted' in a natural way."
+            definition: "Polluted: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'polluted' when discussing everyday topics."
         },
         "polyglot": {
-            definition: "A short definition of 'polyglot' in English.",
-            example: "This sentence uses the word 'polyglot' in a natural way."
+            definition: "Polyglot: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'polyglot' when discussing everyday topics."
         },
         "poor": {
-            definition: "A short definition of 'poor' in English.",
-            example: "This sentence uses the word 'poor' in a natural way."
+            definition: "Poor: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'poor' when discussing everyday topics."
         },
         "positivity": {
-            definition: "A short definition of 'positivity' in English.",
-            example: "This sentence uses the word 'positivity' in a natural way."
+            definition: "Positivity: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'positivity' when discussing everyday topics."
         },
         "potent": {
-            definition: "A short definition of 'potent' in English.",
-            example: "This sentence uses the word 'potent' in a natural way."
+            definition: "Potent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'potent' when discussing everyday topics."
         },
         "potentate": {
             definition: "A monarch or ruler, especially an autocratic one.",
             example: "The foreign potentate arrived with a massive royal entourage."
         },
         "potente": {
-            definition: "A short definition of 'potente' in English.",
-            example: "This sentence uses the word 'potente' in a natural way."
+            definition: "Potente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'potente' when discussing everyday topics."
         },
         "potential": {
-            definition: "A short definition of 'potential' in English.",
-            example: "This sentence uses the word 'potential' in a natural way."
+            definition: "Potential: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'potential' when discussing everyday topics."
         },
         "powerful": {
-            definition: "A short definition of 'powerful' in English.",
-            example: "This sentence uses the word 'powerful' in a natural way."
+            definition: "Having the quality of being power.",
+            example: "People often used the word 'powerful' when discussing everyday topics."
         },
         "practice": {
-            definition: "A short definition of 'practice' in English.",
-            example: "This sentence uses the word 'practice' in a natural way."
+            definition: "Practice: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'practice' when discussing everyday topics."
         },
         "precario": {
-            definition: "A short definition of 'precario' in English.",
-            example: "This sentence uses the word 'precario' in a natural way."
+            definition: "Precario: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'precario' when discussing everyday topics."
         },
         "precarious": {
-            definition: "A short definition of 'precarious' in English.",
-            example: "This sentence uses the word 'precarious' in a natural way."
+            definition: "Having the quality of being precar.",
+            example: "People often used the word 'precarious' when discussing everyday topics."
         },
         "precioso": {
-            definition: "A short definition of 'precioso' in English.",
-            example: "This sentence uses the word 'precioso' in a natural way."
+            definition: "Precioso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'precioso' when discussing everyday topics."
         },
         "precipitate": {
-            definition: "A short definition of 'precipitate' in English.",
-            example: "This sentence uses the word 'precipitate' in a natural way."
+            definition: "Precipitate: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'precipitate' when discussing everyday topics."
         },
         "precipitous": {
-            definition: "A short definition of 'precipitous' in English.",
-            example: "This sentence uses the word 'precipitous' in a natural way."
+            definition: "Having the quality of being precipit.",
+            example: "People often used the word 'precipitous' when discussing everyday topics."
         },
         "precocious": {
-            definition: "A short definition of 'precocious' in English.",
-            example: "This sentence uses the word 'precocious' in a natural way."
+            definition: "Having the quality of being precoc.",
+            example: "People often used the word 'precocious' when discussing everyday topics."
         },
         "preguntas": {
-            definition: "A short definition of 'preguntas' in English.",
-            example: "This sentence uses the word 'preguntas' in a natural way."
+            definition: "Preguntas: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'preguntas' when discussing everyday topics."
         },
         "preguntón": {
-            definition: "A short definition of 'preguntón' in English.",
-            example: "This sentence uses the word 'preguntón' in a natural way."
+            definition: "Preguntón: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'preguntón' when discussing everyday topics."
         },
         "preheated": {
-            definition: "A short definition of 'preheated' in English.",
-            example: "This sentence uses the word 'preheated' in a natural way."
+            definition: "Preheated: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'preheated' when discussing everyday topics."
         },
         "presentación": {
-            definition: "A short definition of 'presentación' in English.",
-            example: "This sentence uses the word 'presentación' in a natural way."
+            definition: "Presentación: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'presentación' when discussing everyday topics."
         },
         "presentation": {
-            definition: "A short definition of 'presentation' in English.",
-            example: "This sentence uses the word 'presentation' in a natural way."
+            definition: "The act or process of presentaing.",
+            example: "People often used the word 'presentation' when discussing everyday topics."
         },
         "pressé": {
-            definition: "A short definition of 'pressé' in English.",
-            example: "This sentence uses the word 'pressé' in a natural way."
+            definition: "Pressé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pressé' when discussing everyday topics."
         },
         "preste": {
-            definition: "A short definition of 'preste' in English.",
-            example: "This sentence uses the word 'preste' in a natural way."
+            definition: "Preste: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'preste' when discussing everyday topics."
         },
         "presupuesto": {
-            definition: "A short definition of 'presupuesto' in English.",
-            example: "This sentence uses the word 'presupuesto' in a natural way."
+            definition: "Presupuesto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'presupuesto' when discussing everyday topics."
         },
         "presuroso": {
-            definition: "A short definition of 'presuroso' in English.",
-            example: "This sentence uses the word 'presuroso' in a natural way."
+            definition: "Presuroso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'presuroso' when discussing everyday topics."
         },
         "pretty": {
-            definition: "A short definition of 'pretty' in English.",
-            example: "This sentence uses the word 'pretty' in a natural way."
+            definition: "Pretty: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pretty' when discussing everyday topics."
         },
         "primordial": {
-            definition: "A short definition of 'primordial' in English.",
-            example: "This sentence uses the word 'primordial' in a natural way."
+            definition: "Primordial: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'primordial' when discussing everyday topics."
         },
         "prioridad": {
-            definition: "A short definition of 'prioridad' in English.",
-            example: "This sentence uses the word 'prioridad' in a natural way."
+            definition: "Prioridad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'prioridad' when discussing everyday topics."
         },
         "prioridades": {
-            definition: "A short definition of 'prioridades' in English.",
-            example: "This sentence uses the word 'prioridades' in a natural way."
+            definition: "Prioridades: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'prioridades' when discussing everyday topics."
         },
         "priorities": {
-            definition: "A short definition of 'priorities' in English.",
-            example: "This sentence uses the word 'priorities' in a natural way."
+            definition: "Priorities: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'priorities' when discussing everyday topics."
         },
         "priority": {
-            definition: "A short definition of 'priority' in English.",
-            example: "This sentence uses the word 'priority' in a natural way."
+            definition: "Priority: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'priority' when discussing everyday topics."
         },
         "pristine": {
-            definition: "A short definition of 'pristine' in English.",
-            example: "This sentence uses the word 'pristine' in a natural way."
+            definition: "Pristine: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pristine' when discussing everyday topics."
         },
         "privacidad": {
-            definition: "A short definition of 'privacidad' in English.",
-            example: "This sentence uses the word 'privacidad' in a natural way."
+            definition: "Privacidad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'privacidad' when discussing everyday topics."
         },
         "privacy": {
-            definition: "A short definition of 'privacy' in English.",
-            example: "This sentence uses the word 'privacy' in a natural way."
+            definition: "Privacy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'privacy' when discussing everyday topics."
         },
         "probant": {
-            definition: "A short definition of 'probant' in English.",
-            example: "This sentence uses the word 'probant' in a natural way."
+            definition: "Probant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'probant' when discussing everyday topics."
         },
         "probity": {
-            definition: "A short definition of 'probity' in English.",
-            example: "This sentence uses the word 'probity' in a natural way."
+            definition: "Probity: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'probity' when discussing everyday topics."
         },
         "problemático": {
-            definition: "A short definition of 'problemático' in English.",
-            example: "This sentence uses the word 'problemático' in a natural way."
+            definition: "Problemático: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'problemático' when discussing everyday topics."
         },
         "probo": {
-            definition: "A short definition of 'probo' in English.",
-            example: "This sentence uses the word 'probo' in a natural way."
+            definition: "Probo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'probo' when discussing everyday topics."
         },
         "proclaim": {
-            definition: "A short definition of 'proclaim' in English.",
-            example: "This sentence uses the word 'proclaim' in a natural way."
+            definition: "To proclaim.",
+            example: "People often used the word 'proclaim' when discussing everyday topics."
         },
         "prodigious": {
             definition: "Remarkably or impressively great in extent, size, or degree.",
             example: "She has a prodigious memory for historical dates and names."
         },
         "productif": {
-            definition: "A short definition of 'productif' in English.",
-            example: "This sentence uses the word 'productif' in a natural way."
+            definition: "Productif: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'productif' when discussing everyday topics."
         },
         "productive": {
-            definition: "A short definition of 'productive' in English.",
-            example: "This sentence uses the word 'productive' in a natural way."
+            definition: "Having the quality of being product.",
+            example: "People often used the word 'productive' when discussing everyday topics."
         },
         "productivity": {
-            definition: "A short definition of 'productivity' in English.",
-            example: "This sentence uses the word 'productivity' in a natural way."
+            definition: "Productivity: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'productivity' when discussing everyday topics."
         },
         "productivo": {
-            definition: "A short definition of 'productivo' in English.",
-            example: "This sentence uses the word 'productivo' in a natural way."
+            definition: "Productivo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'productivo' when discussing everyday topics."
         },
         "progress": {
-            definition: "A short definition of 'progress' in English.",
-            example: "This sentence uses the word 'progress' in a natural way."
+            definition: "Progress: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'progress' when discussing everyday topics."
         },
         "proliferate": {
             definition: "Increase rapidly in numbers; multiply.",
             example: "Smartphone apps continue to proliferate at an incredible rate."
         },
         "promising": {
-            definition: "A short definition of 'promising' in English.",
-            example: "This sentence uses the word 'promising' in a natural way."
+            definition: "Being or performing the action of promising or causing that action to happen.",
+            example: "People often used the word 'promising' when discussing everyday topics."
         },
         "prompt": {
-            definition: "A short definition of 'prompt' in English.",
-            example: "This sentence uses the word 'prompt' in a natural way."
+            definition: "Prompt: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'prompt' when discussing everyday topics."
         },
         "pronto": {
-            definition: "A short definition of 'pronto' in English.",
-            example: "This sentence uses the word 'pronto' in a natural way."
+            definition: "Pronto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pronto' when discussing everyday topics."
         },
         "propitious": {
-            definition: "A short definition of 'propitious' in English.",
-            example: "This sentence uses the word 'propitious' in a natural way."
+            definition: "Having the quality of being propit.",
+            example: "People often used the word 'propitious' when discussing everyday topics."
         },
         "prosperous": {
-            definition: "A short definition of 'prosperous' in English.",
-            example: "This sentence uses the word 'prosperous' in a natural way."
+            definition: "Having the quality of being prosper.",
+            example: "People often used the word 'prosperous' when discussing everyday topics."
         },
         "protección": {
-            definition: "A short definition of 'protección' in English.",
-            example: "This sentence uses the word 'protección' in a natural way."
+            definition: "Protección: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'protección' when discussing everyday topics."
         },
         "protection": {
-            definition: "A short definition of 'protection' in English.",
-            example: "This sentence uses the word 'protection' in a natural way."
+            definition: "The act or process of protecing.",
+            example: "People often used the word 'protection' when discussing everyday topics."
         },
         "providential": {
             definition: "Occurring at a favorable time; divine or lucky.",
             example: "His arrival at that moment was truly providential."
         },
         "prying": {
-            definition: "A short definition of 'prying' in English.",
-            example: "This sentence uses the word 'prying' in a natural way."
+            definition: "Being or performing the action of prying or causing that action to happen.",
+            example: "People often used the word 'prying' when discussing everyday topics."
         },
         "práctica": {
-            definition: "A short definition of 'práctica' in English.",
-            example: "This sentence uses the word 'práctica' in a natural way."
+            definition: "Práctica: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'práctica' when discussing everyday topics."
         },
         "précaire": {
-            definition: "A short definition of 'précaire' in English.",
-            example: "This sentence uses the word 'précaire' in a natural way."
+            definition: "Précaire: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'précaire' when discussing everyday topics."
         },
         "prépondérant": {
-            definition: "A short definition of 'prépondérant' in English.",
-            example: "This sentence uses the word 'prépondérant' in a natural way."
+            definition: "Prépondérant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'prépondérant' when discussing everyday topics."
         },
         "psychology": {
             definition: "The scientific study of the human mind and its functions.",
             example: "Studying psychology helps us understand human behavior."
         },
         "puissant": {
-            definition: "A short definition of 'puissant' in English.",
-            example: "This sentence uses the word 'puissant' in a natural way."
+            definition: "Puissant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'puissant' when discussing everyday topics."
         },
         "pulchritudinous": {
-            definition: "A short definition of 'pulchritudinous' in English.",
-            example: "This sentence uses the word 'pulchritudinous' in a natural way."
+            definition: "Having the quality of being pulchritudin.",
+            example: "People often used the word 'pulchritudinous' when discussing everyday topics."
         },
         "purpose": {
-            definition: "A short definition of 'purpose' in English.",
-            example: "This sentence uses the word 'purpose' in a natural way."
+            definition: "Purpose: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'purpose' when discussing everyday topics."
         },
         "pusillanimous": {
-            definition: "A short definition of 'pusillanimous' in English.",
-            example: "This sentence uses the word 'pusillanimous' in a natural way."
+            definition: "Having the quality of being pusillanim.",
+            example: "People often used the word 'pusillanimous' when discussing everyday topics."
         },
         "putrid": {
-            definition: "A short definition of 'putrid' in English.",
-            example: "This sentence uses the word 'putrid' in a natural way."
+            definition: "Putrid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'putrid' when discussing everyday topics."
         },
         "pénible": {
-            definition: "A short definition of 'pénible' in English.",
-            example: "This sentence uses the word 'pénible' in a natural way."
+            definition: "Pénible: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pénible' when discussing everyday topics."
         },
         "périssable": {
-            definition: "A short definition of 'périssable' in English.",
-            example: "This sentence uses the word 'périssable' in a natural way."
+            definition: "Capable of being périss.",
+            example: "People often used the word 'périssable' when discussing everyday topics."
         },
         "pésimo": {
-            definition: "A short definition of 'pésimo' in English.",
-            example: "This sentence uses the word 'pésimo' in a natural way."
+            definition: "Pésimo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'pésimo' when discussing everyday topics."
         },
         "quaint": {
-            definition: "A short definition of 'quaint' in English.",
-            example: "This sentence uses the word 'quaint' in a natural way."
+            definition: "Quaint: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'quaint' when discussing everyday topics."
         },
         "quality": {
-            definition: "A short definition of 'quality' in English.",
-            example: "This sentence uses the word 'quality' in a natural way."
+            definition: "Quality: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'quality' when discussing everyday topics."
         },
         "quebradizo": {
-            definition: "A short definition of 'quebradizo' in English.",
-            example: "This sentence uses the word 'quebradizo' in a natural way."
+            definition: "Quebradizo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'quebradizo' when discussing everyday topics."
         },
         "quebrantable": {
-            definition: "A short definition of 'quebrantable' in English.",
-            example: "This sentence uses the word 'quebrantable' in a natural way."
+            definition: "Capable of being quebrant.",
+            example: "People often used the word 'quebrantable' when discussing everyday topics."
         },
         "quebrantado": {
-            definition: "A short definition of 'quebrantado' in English.",
-            example: "This sentence uses the word 'quebrantado' in a natural way."
+            definition: "Quebrantado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'quebrantado' when discussing everyday topics."
         },
         "querulous": {
-            definition: "A short definition of 'querulous' in English.",
-            example: "This sentence uses the word 'querulous' in a natural way."
+            definition: "Having the quality of being quer.",
+            example: "People often used the word 'querulous' when discussing everyday topics."
         },
         "questioning": {
-            definition: "A short definition of 'questioning' in English.",
-            example: "This sentence uses the word 'questioning' in a natural way."
+            definition: "Being or performing the action of questioning or causing that action to happen.",
+            example: "People often used the word 'questioning' when discussing everyday topics."
         },
         "questionneur": {
-            definition: "A short definition of 'questionneur' in English.",
-            example: "This sentence uses the word 'questionneur' in a natural way."
+            definition: "Questionneur: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'questionneur' when discussing everyday topics."
         },
         "questions": {
-            definition: "A short definition of 'questions' in English.",
-            example: "This sentence uses the word 'questions' in a natural way."
+            definition: "Questions: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'questions' when discussing everyday topics."
         },
         "quick": {
-            definition: "A short definition of 'quick' in English.",
-            example: "This sentence uses the word 'quick' in a natural way."
+            definition: "Quick: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'quick' when discussing everyday topics."
         },
         "quiet": {
-            definition: "A short definition of 'quiet' in English.",
-            example: "This sentence uses the word 'quiet' in a natural way."
+            definition: "Quiet: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'quiet' when discussing everyday topics."
         },
         "quixotic": {
-            definition: "A short definition of 'quixotic' in English.",
-            example: "This sentence uses the word 'quixotic' in a natural way."
+            definition: "Quixotic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'quixotic' when discussing everyday topics."
         },
         "quémandeur": {
-            definition: "A short definition of 'quémandeur' in English.",
-            example: "This sentence uses the word 'quémandeur' in a natural way."
+            definition: "Quémandeur: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'quémandeur' when discussing everyday topics."
         },
         "radiant": {
-            definition: "A short definition of 'radiant' in English.",
-            example: "This sentence uses the word 'radiant' in a natural way."
+            definition: "Radiant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'radiant' when discussing everyday topics."
         },
         "radiante": {
-            definition: "A short definition of 'radiante' in English.",
-            example: "This sentence uses the word 'radiante' in a natural way."
+            definition: "Radiante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'radiante' when discussing everyday topics."
         },
         "radieux": {
-            definition: "A short definition of 'radieux' in English.",
-            example: "This sentence uses the word 'radieux' in a natural way."
+            definition: "Radieux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'radieux' when discussing everyday topics."
         },
         "ramshackle": {
-            definition: "A short definition of 'ramshackle' in English.",
-            example: "This sentence uses the word 'ramshackle' in a natural way."
+            definition: "Ramshackle: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ramshackle' when discussing everyday topics."
         },
         "rapid": {
-            definition: "A short definition of 'rapid' in English.",
-            example: "This sentence uses the word 'rapid' in a natural way."
+            definition: "Rapid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'rapid' when discussing everyday topics."
         },
         "rapide": {
-            definition: "A short definition of 'rapide' in English.",
-            example: "This sentence uses the word 'rapide' in a natural way."
+            definition: "Rapide: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'rapide' when discussing everyday topics."
         },
         "ratiocinant": {
-            definition: "A short definition of 'ratiocinant' in English.",
-            example: "This sentence uses the word 'ratiocinant' in a natural way."
+            definition: "Ratiocinant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ratiocinant' when discussing everyday topics."
         },
         "ratiocinative": {
-            definition: "A short definition of 'ratiocinative' in English.",
-            example: "This sentence uses the word 'ratiocinative' in a natural way."
+            definition: "Having the quality of being ratiocinat.",
+            example: "People often used the word 'ratiocinative' when discussing everyday topics."
         },
         "rationnel": {
-            definition: "A short definition of 'rationnel' in English.",
-            example: "This sentence uses the word 'rationnel' in a natural way."
+            definition: "Rationnel: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'rationnel' when discussing everyday topics."
         },
         "raucous": {
-            definition: "A short definition of 'raucous' in English.",
-            example: "This sentence uses the word 'raucous' in a natural way."
+            definition: "Having the quality of being rauc.",
+            example: "People often used the word 'raucous' when discussing everyday topics."
         },
         "raudo": {
-            definition: "A short definition of 'raudo' in English.",
-            example: "This sentence uses the word 'raudo' in a natural way."
+            definition: "Raudo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'raudo' when discussing everyday topics."
         },
         "ravenous": {
-            definition: "A short definition of 'ravenous' in English.",
-            example: "This sentence uses the word 'ravenous' in a natural way."
+            definition: "Having the quality of being raven.",
+            example: "People often used the word 'ravenous' when discussing everyday topics."
         },
         "ravi": {
-            definition: "A short definition of 'ravi' in English.",
-            example: "This sentence uses the word 'ravi' in a natural way."
+            definition: "Ravi: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ravi' when discussing everyday topics."
         },
         "ravishing": {
-            definition: "A short definition of 'ravishing' in English.",
-            example: "This sentence uses the word 'ravishing' in a natural way."
+            definition: "Being or performing the action of ravishing or causing that action to happen.",
+            example: "People often used the word 'ravishing' when discussing everyday topics."
         },
         "ravissant": {
-            definition: "A short definition of 'ravissant' in English.",
-            example: "This sentence uses the word 'ravissant' in a natural way."
+            definition: "Ravissant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ravissant' when discussing everyday topics."
         },
         "razonador": {
-            definition: "A short definition of 'razonador' in English.",
-            example: "This sentence uses the word 'razonador' in a natural way."
+            definition: "Razonador: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'razonador' when discussing everyday topics."
         },
         "ready": {
-            definition: "A short definition of 'ready' in English.",
-            example: "This sentence uses the word 'ready' in a natural way."
+            definition: "Ready: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ready' when discussing everyday topics."
         },
         "recent": {
-            definition: "A short definition of 'recent' in English.",
-            example: "This sentence uses the word 'recent' in a natural way."
+            definition: "Recent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'recent' when discussing everyday topics."
         },
         "reciente": {
-            definition: "A short definition of 'reciente' in English.",
-            example: "This sentence uses the word 'reciente' in a natural way."
+            definition: "Reciente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'reciente' when discussing everyday topics."
         },
         "recio": {
-            definition: "A short definition of 'recio' in English.",
-            example: "This sentence uses the word 'recio' in a natural way."
+            definition: "Recio: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'recio' when discussing everyday topics."
         },
         "recomendar": {
-            definition: "A short definition of 'recomendar' in English.",
-            example: "This sentence uses the word 'recomendar' in a natural way."
+            definition: "Recomendar: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'recomendar' when discussing everyday topics."
         },
         "recommend": {
-            definition: "A short definition of 'recommend' in English.",
-            example: "This sentence uses the word 'recommend' in a natural way."
+            definition: "Recommend: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'recommend' when discussing everyday topics."
         },
         "recovery": {
-            definition: "A short definition of 'recovery' in English.",
-            example: "This sentence uses the word 'recovery' in a natural way."
+            definition: "Recovery: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'recovery' when discussing everyday topics."
         },
         "recuerdos": {
-            definition: "A short definition of 'recuerdos' in English.",
-            example: "This sentence uses the word 'recuerdos' in a natural way."
+            definition: "Recuerdos: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'recuerdos' when discussing everyday topics."
         },
         "recuperación": {
-            definition: "A short definition of 'recuperación' in English.",
-            example: "This sentence uses the word 'recuperación' in a natural way."
+            definition: "Recuperación: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'recuperación' when discussing everyday topics."
         },
         "recursos": {
-            definition: "A short definition of 'recursos' in English.",
-            example: "This sentence uses the word 'recursos' in a natural way."
+            definition: "Recursos: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'recursos' when discussing everyday topics."
         },
         "redoubtable": {
-            definition: "A short definition of 'redoubtable' in English.",
-            example: "This sentence uses the word 'redoubtable' in a natural way."
+            definition: "Capable of being redoubt.",
+            example: "People often used the word 'redoubtable' when discussing everyday topics."
         },
         "reducido": {
-            definition: "A short definition of 'reducido' in English.",
-            example: "This sentence uses the word 'reducido' in a natural way."
+            definition: "Reducido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'reducido' when discussing everyday topics."
         },
         "reflection": {
-            definition: "A short definition of 'reflection' in English.",
-            example: "This sentence uses the word 'reflection' in a natural way."
+            definition: "The act or process of reflecing.",
+            example: "People often used the word 'reflection' when discussing everyday topics."
         },
         "reflective": {
             definition: "Providing a reflection; relating to deep thought.",
             example: "He sat in a reflective mood, thinking about his past choices."
         },
         "reflexión": {
-            definition: "A short definition of 'reflexión' in English.",
-            example: "This sentence uses the word 'reflexión' in a natural way."
+            definition: "Reflexión: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'reflexión' when discussing everyday topics."
         },
         "refreshing": {
-            definition: "A short definition of 'refreshing' in English.",
-            example: "This sentence uses the word 'refreshing' in a natural way."
+            definition: "Being or performing the action of refreshing or causing that action to happen.",
+            example: "People often used the word 'refreshing' when discussing everyday topics."
         },
         "refulgent": {
-            definition: "A short definition of 'refulgent' in English.",
-            example: "This sentence uses the word 'refulgent' in a natural way."
+            definition: "Refulgent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'refulgent' when discussing everyday topics."
         },
         "relajación": {
-            definition: "A short definition of 'relajación' in English.",
-            example: "This sentence uses the word 'relajación' in a natural way."
+            definition: "Relajación: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'relajación' when discussing everyday topics."
         },
         "relajante": {
-            definition: "A short definition of 'relajante' in English.",
-            example: "This sentence uses the word 'relajante' in a natural way."
+            definition: "Relajante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'relajante' when discussing everyday topics."
         },
         "relationships": {
-            definition: "A short definition of 'relationships' in English.",
-            example: "This sentence uses the word 'relationships' in a natural way."
+            definition: "Relationships: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'relationships' when discussing everyday topics."
         },
         "relaxant": {
-            definition: "A short definition of 'relaxant' in English.",
-            example: "This sentence uses the word 'relaxant' in a natural way."
+            definition: "Relaxant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'relaxant' when discussing everyday topics."
         },
         "relaxation": {
-            definition: "A short definition of 'relaxation' in English.",
-            example: "This sentence uses the word 'relaxation' in a natural way."
+            definition: "The act or process of relaxaing.",
+            example: "People often used the word 'relaxation' when discussing everyday topics."
         },
         "relaxing": {
-            definition: "A short definition of 'relaxing' in English.",
-            example: "This sentence uses the word 'relaxing' in a natural way."
+            definition: "Being or performing the action of relaxing or causing that action to happen.",
+            example: "People often used the word 'relaxing' when discussing everyday topics."
         },
         "remnant": {
-            definition: "A short definition of 'remnant' in English.",
-            example: "This sentence uses the word 'remnant' in a natural way."
+            definition: "Remnant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'remnant' when discussing everyday topics."
         },
         "remote": {
             definition: "Far apart; distant in space, time, or relation.",
             example: "They lived in a remote village deep in the mountains."
         },
         "renewable": {
-            definition: "A short definition of 'renewable' in English.",
-            example: "This sentence uses the word 'renewable' in a natural way."
+            definition: "Capable of being renew.",
+            example: "People often used the word 'renewable' when discussing everyday topics."
         },
         "repudiate": {
-            definition: "A short definition of 'repudiate' in English.",
-            example: "This sentence uses the word 'repudiate' in a natural way."
+            definition: "To repudiate.",
+            example: "People often used the word 'repudiate' when discussing everyday topics."
         },
         "research": {
-            definition: "A short definition of 'research' in English.",
-            example: "This sentence uses the word 'research' in a natural way."
+            definition: "Research: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'research' when discussing everyday topics."
         },
         "reserved": {
-            definition: "A short definition of 'reserved' in English.",
-            example: "This sentence uses the word 'reserved' in a natural way."
+            definition: "Reserved: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'reserved' when discussing everyday topics."
         },
         "resilience": {
-            definition: "A short definition of 'resilience' in English.",
-            example: "This sentence uses the word 'resilience' in a natural way."
+            definition: "Resilience: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'resilience' when discussing everyday topics."
         },
         "resiliencia": {
-            definition: "A short definition of 'resiliencia' in English.",
-            example: "This sentence uses the word 'resiliencia' in a natural way."
+            definition: "Resiliencia: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'resiliencia' when discussing everyday topics."
         },
         "resistencia": {
-            definition: "A short definition of 'resistencia' in English.",
-            example: "This sentence uses the word 'resistencia' in a natural way."
+            definition: "Resistencia: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'resistencia' when discussing everyday topics."
         },
         "resistente": {
-            definition: "A short definition of 'resistente' in English.",
-            example: "This sentence uses the word 'resistente' in a natural way."
+            definition: "Resistente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'resistente' when discussing everyday topics."
         },
         "resolución": {
-            definition: "A short definition of 'resolución' in English.",
-            example: "This sentence uses the word 'resolución' in a natural way."
+            definition: "Resolución: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'resolución' when discussing everyday topics."
         },
         "resolution": {
-            definition: "A short definition of 'resolution' in English.",
-            example: "This sentence uses the word 'resolution' in a natural way."
+            definition: "The act or process of resoluing.",
+            example: "People often used the word 'resolution' when discussing everyday topics."
         },
         "resonance": {
-            definition: "A short definition of 'resonance' in English.",
-            example: "This sentence uses the word 'resonance' in a natural way."
+            definition: "Resonance: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'resonance' when discussing everyday topics."
         },
         "resonant": {
-            definition: "A short definition of 'resonant' in English.",
-            example: "This sentence uses the word 'resonant' in a natural way."
+            definition: "Resonant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'resonant' when discussing everyday topics."
         },
         "resources": {
-            definition: "A short definition of 'resources' in English.",
-            example: "This sentence uses the word 'resources' in a natural way."
+            definition: "Resources: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'resources' when discussing everyday topics."
         },
         "respect": {
-            definition: "A short definition of 'respect' in English.",
-            example: "This sentence uses the word 'respect' in a natural way."
+            definition: "Respect: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'respect' when discussing everyday topics."
         },
         "respeto": {
-            definition: "A short definition of 'respeto' in English.",
-            example: "This sentence uses the word 'respeto' in a natural way."
+            definition: "Respeto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'respeto' when discussing everyday topics."
         },
         "resplendent": {
             definition: "Attractive and impressive through being richly colorful or shining.",
             example: "She looked resplendent in her silk evening gown."
         },
         "resplendissant": {
-            definition: "A short definition of 'resplendissant' in English.",
-            example: "This sentence uses the word 'resplendissant' in a natural way."
+            definition: "Resplendissant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'resplendissant' when discussing everyday topics."
         },
         "responsabilidad": {
-            definition: "A short definition of 'responsabilidad' in English.",
-            example: "This sentence uses the word 'responsabilidad' in a natural way."
+            definition: "Responsabilidad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'responsabilidad' when discussing everyday topics."
         },
         "responsabilité": {
-            definition: "A short definition of 'responsabilité' in English.",
-            example: "This sentence uses the word 'responsabilité' in a natural way."
+            definition: "Responsabilité: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'responsabilité' when discussing everyday topics."
         },
         "responsibility": {
-            definition: "A short definition of 'responsibility' in English.",
-            example: "This sentence uses the word 'responsibility' in a natural way."
+            definition: "Responsibility: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'responsibility' when discussing everyday topics."
         },
         "responsive": {
-            definition: "A short definition of 'responsive' in English.",
-            example: "This sentence uses the word 'responsive' in a natural way."
+            definition: "Having the quality of being respon.",
+            example: "People often used the word 'responsive' when discussing everyday topics."
         },
         "ressources": {
-            definition: "A short definition of 'ressources' in English.",
-            example: "This sentence uses the word 'ressources' in a natural way."
+            definition: "Ressources: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ressources' when discussing everyday topics."
         },
         "restaurador": {
-            definition: "A short definition of 'restaurador' in English.",
-            example: "This sentence uses the word 'restaurador' in a natural way."
+            definition: "Restaurador: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'restaurador' when discussing everyday topics."
         },
         "restoration": {
-            definition: "A short definition of 'restoration' in English.",
-            example: "This sentence uses the word 'restoration' in a natural way."
+            definition: "The act or process of restoraing.",
+            example: "People often used the word 'restoration' when discussing everyday topics."
         },
         "restorative": {
-            definition: "A short definition of 'restorative' in English.",
-            example: "This sentence uses the word 'restorative' in a natural way."
+            definition: "Having the quality of being restorat.",
+            example: "People often used the word 'restorative' when discussing everyday topics."
         },
         "reticent": {
-            definition: "A short definition of 'reticent' in English.",
-            example: "This sentence uses the word 'reticent' in a natural way."
+            definition: "Reticent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'reticent' when discussing everyday topics."
         },
         "retroalimentación": {
-            definition: "A short definition of 'retroalimentación' in English.",
-            example: "This sentence uses the word 'retroalimentación' in a natural way."
+            definition: "Retroalimentación: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'retroalimentación' when discussing everyday topics."
         },
         "revolutionary": {
-            definition: "A short definition of 'revolutionary' in English.",
-            example: "This sentence uses the word 'revolutionary' in a natural way."
+            definition: "Revolutionary: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'revolutionary' when discussing everyday topics."
         },
         "rewarding": {
-            definition: "A short definition of 'rewarding' in English.",
-            example: "This sentence uses the word 'rewarding' in a natural way."
+            definition: "Being or performing the action of rewarding or causing that action to happen.",
+            example: "People often used the word 'rewarding' when discussing everyday topics."
         },
         "rhetoric": {
-            definition: "A short definition of 'rhetoric' in English.",
-            example: "This sentence uses the word 'rhetoric' in a natural way."
+            definition: "Rhetoric: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'rhetoric' when discussing everyday topics."
         },
         "rich": {
-            definition: "A short definition of 'rich' in English.",
-            example: "This sentence uses the word 'rich' in a natural way."
+            definition: "Rich: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'rich' when discussing everyday topics."
         },
         "rigorous": {
             definition: "Extremely thorough, exhaustive, or accurate.",
             example: "The new medicine underwent rigorous testing before being approved."
         },
         "risible": {
-            definition: "A short definition of 'risible' in English.",
-            example: "This sentence uses the word 'risible' in a natural way."
+            definition: "Risible: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'risible' when discussing everyday topics."
         },
         "risky": {
-            definition: "A short definition of 'risky' in English.",
-            example: "This sentence uses the word 'risky' in a natural way."
+            definition: "Risky: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'risky' when discussing everyday topics."
         },
         "ritual": {
-            definition: "A short definition of 'ritual' in English.",
-            example: "This sentence uses the word 'ritual' in a natural way."
+            definition: "Ritual: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ritual' when discussing everyday topics."
         },
         "riveting": {
-            definition: "A short definition of 'riveting' in English.",
-            example: "This sentence uses the word 'riveting' in a natural way."
+            definition: "Being or performing the action of riveting or causing that action to happen.",
+            example: "People often used the word 'riveting' when discussing everyday topics."
         },
         "robust": {
-            definition: "A short definition of 'robust' in English.",
-            example: "This sentence uses the word 'robust' in a natural way."
+            definition: "Robust: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'robust' when discussing everyday topics."
         },
         "robuste": {
-            definition: "A short definition of 'robuste' in English.",
-            example: "This sentence uses the word 'robuste' in a natural way."
+            definition: "Robuste: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'robuste' when discussing everyday topics."
         },
         "robusto": {
-            definition: "A short definition of 'robusto' in English.",
-            example: "This sentence uses the word 'robusto' in a natural way."
+            definition: "Robusto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'robusto' when discussing everyday topics."
         },
         "roles": {
-            definition: "A short definition of 'roles' in English.",
-            example: "This sentence uses the word 'roles' in a natural way."
+            definition: "Roles: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'roles' when discussing everyday topics."
         },
         "rotund": {
             definition: "Plump or rounded in shape.",
             example: "The cherub was a rotund little figure in the painting."
         },
         "rough": {
-            definition: "A short definition of 'rough' in English.",
-            example: "This sentence uses the word 'rough' in a natural way."
+            definition: "Rough: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'rough' when discussing everyday topics."
         },
         "routine": {
-            definition: "A short definition of 'routine' in English.",
-            example: "This sentence uses the word 'routine' in a natural way."
+            definition: "Routine: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'routine' when discussing everyday topics."
         },
         "rudimentaire": {
-            definition: "A short definition of 'rudimentaire' in English.",
-            example: "This sentence uses the word 'rudimentaire' in a natural way."
+            definition: "Rudimentaire: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'rudimentaire' when discussing everyday topics."
         },
         "ruthless": {
             definition: "Having or showing no pity or compassion for others.",
             example: "The ruthless leader would stop at nothing to gain power."
         },
         "rutina": {
-            definition: "A short definition of 'rutina' in English.",
-            example: "This sentence uses the word 'rutina' in a natural way."
+            definition: "Rutina: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'rutina' when discussing everyday topics."
         },
         "rápido": {
-            definition: "A short definition of 'rápido' in English.",
-            example: "This sentence uses the word 'rápido' in a natural way."
+            definition: "Rápido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'rápido' when discussing everyday topics."
         },
         "rébarbatif": {
-            definition: "A short definition of 'rébarbatif' in English.",
-            example: "This sentence uses the word 'rébarbatif' in a natural way."
+            definition: "Rébarbatif: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'rébarbatif' when discussing everyday topics."
         },
         "récent": {
-            definition: "A short definition of 'récent' in English.",
-            example: "This sentence uses the word 'récent' in a natural way."
+            definition: "Récent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'récent' when discussing everyday topics."
         },
         "réduit": {
-            definition: "A short definition of 'réduit' in English.",
-            example: "This sentence uses the word 'réduit' in a natural way."
+            definition: "Réduit: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'réduit' when discussing everyday topics."
         },
         "réussite": {
-            definition: "A short definition of 'réussite' in English.",
-            example: "This sentence uses the word 'réussite' in a natural way."
+            definition: "Réussite: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'réussite' when discussing everyday topics."
         },
         "révolutionnaire": {
-            definition: "A short definition of 'révolutionnaire' in English.",
-            example: "This sentence uses the word 'révolutionnaire' in a natural way."
+            definition: "Révolutionnaire: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'révolutionnaire' when discussing everyday topics."
         },
         "sabor": {
-            definition: "A short definition of 'sabor' in English.",
-            example: "This sentence uses the word 'sabor' in a natural way."
+            definition: "Sabor: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sabor' when discussing everyday topics."
         },
         "sad": {
-            definition: "A short definition of 'sad' in English.",
-            example: "This sentence uses the word 'sad' in a natural way."
+            definition: "Sad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sad' when discussing everyday topics."
         },
         "sadness": {
-            definition: "A short definition of 'sadness' in English.",
-            example: "This sentence uses the word 'sadness' in a natural way."
+            definition: "Sadness: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sadness' when discussing everyday topics."
         },
         "sagace": {
-            definition: "A short definition of 'sagace' in English.",
-            example: "This sentence uses the word 'sagace' in a natural way."
+            definition: "Sagace: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sagace' when discussing everyday topics."
         },
         "sagacious": {
-            definition: "A short definition of 'sagacious' in English.",
-            example: "This sentence uses the word 'sagacious' in a natural way."
+            definition: "Having the quality of being sagac.",
+            example: "People often used the word 'sagacious' when discussing everyday topics."
         },
         "sagaz": {
-            definition: "A short definition of 'sagaz' in English.",
-            example: "This sentence uses the word 'sagaz' in a natural way."
+            definition: "Sagaz: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sagaz' when discussing everyday topics."
         },
         "saludable": {
-            definition: "A short definition of 'saludable' in English.",
-            example: "This sentence uses the word 'saludable' in a natural way."
+            definition: "Capable of being salud.",
+            example: "People often used the word 'saludable' when discussing everyday topics."
         },
         "salutaire": {
-            definition: "A short definition of 'salutaire' in English.",
-            example: "This sentence uses the word 'salutaire' in a natural way."
+            definition: "Salutaire: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'salutaire' when discussing everyday topics."
         },
         "salutary": {
-            definition: "A short definition of 'salutary' in English.",
-            example: "This sentence uses the word 'salutary' in a natural way."
+            definition: "Salutary: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'salutary' when discussing everyday topics."
         },
         "satisfait": {
-            definition: "A short definition of 'satisfait' in English.",
-            example: "This sentence uses the word 'satisfait' in a natural way."
+            definition: "Satisfait: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'satisfait' when discussing everyday topics."
         },
         "satisfecho": {
-            definition: "A short definition of 'satisfecho' in English.",
-            example: "This sentence uses the word 'satisfecho' in a natural way."
+            definition: "Satisfecho: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'satisfecho' when discussing everyday topics."
         },
         "saving": {
-            definition: "A short definition of 'saving' in English.",
-            example: "This sentence uses the word 'saving' in a natural way."
+            definition: "Being or performing the action of saving or causing that action to happen.",
+            example: "People often used the word 'saving' when discussing everyday topics."
         },
         "savoureux": {
-            definition: "A short definition of 'savoureux' in English.",
-            example: "This sentence uses the word 'savoureux' in a natural way."
+            definition: "Savoureux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'savoureux' when discussing everyday topics."
         },
         "scabreux": {
-            definition: "A short definition of 'scabreux' in English.",
-            example: "This sentence uses the word 'scabreux' in a natural way."
+            definition: "Scabreux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'scabreux' when discussing everyday topics."
         },
         "scale": {
-            definition: "A short definition of 'scale' in English.",
-            example: "This sentence uses the word 'scale' in a natural way."
+            definition: "Scale: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'scale' when discussing everyday topics."
         },
         "scary": {
-            definition: "A short definition of 'scary' in English.",
-            example: "This sentence uses the word 'scary' in a natural way."
+            definition: "Scary: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'scary' when discussing everyday topics."
         },
         "schedule": {
-            definition: "A short definition of 'schedule' in English.",
-            example: "This sentence uses the word 'schedule' in a natural way."
+            definition: "Schedule: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'schedule' when discussing everyday topics."
         },
         "scintillating": {
             definition: "Sparkling or shining brightly; brilliantly clever or exciting.",
             example: "She gave a scintillating performance that captivated the audience."
         },
         "scorching": {
-            definition: "A short definition of 'scorching' in English.",
-            example: "This sentence uses the word 'scorching' in a natural way."
+            definition: "Being or performing the action of scorching or causing that action to happen.",
+            example: "People often used the word 'scorching' when discussing everyday topics."
         },
         "scrawny": {
-            definition: "A short definition of 'scrawny' in English.",
-            example: "This sentence uses the word 'scrawny' in a natural way."
+            definition: "Scrawny: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'scrawny' when discussing everyday topics."
         },
         "scrupulous": {
-            definition: "A short definition of 'scrupulous' in English.",
-            example: "This sentence uses the word 'scrupulous' in a natural way."
+            definition: "Having the quality of being scrup.",
+            example: "People often used the word 'scrupulous' when discussing everyday topics."
         },
         "secular": {
-            definition: "A short definition of 'secular' in English.",
-            example: "This sentence uses the word 'secular' in a natural way."
+            definition: "Secular: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'secular' when discussing everyday topics."
         },
         "security": {
-            definition: "A short definition of 'security' in English.",
-            example: "This sentence uses the word 'security' in a natural way."
+            definition: "Security: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'security' when discussing everyday topics."
         },
         "sedate": {
-            definition: "A short definition of 'sedate' in English.",
-            example: "This sentence uses the word 'sedate' in a natural way."
+            definition: "Sedate: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sedate' when discussing everyday topics."
         },
         "seething": {
-            definition: "A short definition of 'seething' in English.",
-            example: "This sentence uses the word 'seething' in a natural way."
+            definition: "Being or performing the action of seething or causing that action to happen.",
+            example: "People often used the word 'seething' when discussing everyday topics."
         },
         "seguimiento": {
-            definition: "A short definition of 'seguimiento' in English.",
-            example: "This sentence uses the word 'seguimiento' in a natural way."
+            definition: "Seguimiento: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'seguimiento' when discussing everyday topics."
         },
         "self-care": {
-            definition: "A short definition of 'self-care' in English.",
-            example: "This sentence uses the word 'self-care' in a natural way."
+            definition: "Self-care: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'self-care' when discussing everyday topics."
         },
         "self-evident": {
-            definition: "A short definition of 'self-evident' in English.",
-            example: "This sentence uses the word 'self-evident' in a natural way."
+            definition: "Self-evident: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'self-evident' when discussing everyday topics."
         },
         "sencillo": {
-            definition: "A short definition of 'sencillo' in English.",
-            example: "This sentence uses the word 'sencillo' in a natural way."
+            definition: "Sencillo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sencillo' when discussing everyday topics."
         },
         "sepulchral": {
             definition: "Relating to a tomb or interment; gloomy and dismal.",
             example: "A sepulchral silence filled the abandoned cathedral."
         },
         "sequestered": {
-            definition: "A short definition of 'sequestered' in English.",
-            example: "This sentence uses the word 'sequestered' in a natural way."
+            definition: "Sequestered: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sequestered' when discussing everyday topics."
         },
         "serendipitous": {
-            definition: "A short definition of 'serendipitous' in English.",
-            example: "This sentence uses the word 'serendipitous' in a natural way."
+            definition: "Having the quality of being serendipit.",
+            example: "People often used the word 'serendipitous' when discussing everyday topics."
         },
         "serendipity": {
             definition: "The occurrence and development of events by chance in a happy way.",
             example: "Finding that rare book in the attic was a stroke of serendipity."
         },
         "serene": {
-            definition: "A short definition of 'serene' in English.",
-            example: "This sentence uses the word 'serene' in a natural way."
+            definition: "Serene: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'serene' when discussing everyday topics."
         },
         "service": {
-            definition: "A short definition of 'service' in English.",
-            example: "This sentence uses the word 'service' in a natural way."
+            definition: "Service: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'service' when discussing everyday topics."
         },
         "servicio": {
-            definition: "A short definition of 'servicio' in English.",
-            example: "This sentence uses the word 'servicio' in a natural way."
+            definition: "Servicio: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'servicio' when discussing everyday topics."
         },
         "shaded": {
-            definition: "A short definition of 'shaded' in English.",
-            example: "This sentence uses the word 'shaded' in a natural way."
+            definition: "Shaded: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'shaded' when discussing everyday topics."
         },
         "sharp": {
-            definition: "A short definition of 'sharp' in English.",
-            example: "This sentence uses the word 'sharp' in a natural way."
+            definition: "Sharp: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sharp' when discussing everyday topics."
         },
         "shining": {
-            definition: "A short definition of 'shining' in English.",
-            example: "This sentence uses the word 'shining' in a natural way."
+            definition: "Being or performing the action of shining or causing that action to happen.",
+            example: "People often used the word 'shining' when discussing everyday topics."
         },
         "shiny": {
-            definition: "A short definition of 'shiny' in English.",
-            example: "This sentence uses the word 'shiny' in a natural way."
+            definition: "Shiny: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'shiny' when discussing everyday topics."
         },
         "shoddy": {
-            definition: "A short definition of 'shoddy' in English.",
-            example: "This sentence uses the word 'shoddy' in a natural way."
+            definition: "Shoddy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'shoddy' when discussing everyday topics."
         },
         "short": {
-            definition: "A short definition of 'short' in English.",
-            example: "This sentence uses the word 'short' in a natural way."
+            definition: "Short: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'short' when discussing everyday topics."
         },
         "shrewd": {
-            definition: "A short definition of 'shrewd' in English.",
-            example: "This sentence uses the word 'shrewd' in a natural way."
+            definition: "Shrewd: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'shrewd' when discussing everyday topics."
         },
         "shy": {
-            definition: "A short definition of 'shy' in English.",
-            example: "This sentence uses the word 'shy' in a natural way."
+            definition: "Shy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'shy' when discussing everyday topics."
         },
         "siberiano": {
-            definition: "A short definition of 'siberiano' in English.",
-            example: "This sentence uses the word 'siberiano' in a natural way."
+            definition: "Siberiano: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'siberiano' when discussing everyday topics."
         },
         "sibérien": {
-            definition: "A short definition of 'sibérien' in English.",
-            example: "This sentence uses the word 'sibérien' in a natural way."
+            definition: "Sibérien: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sibérien' when discussing everyday topics."
         },
         "side-splitting": {
-            definition: "A short definition of 'side-splitting' in English.",
-            example: "This sentence uses the word 'side-splitting' in a natural way."
+            definition: "Being or performing the action of side-splitting or causing that action to happen.",
+            example: "People often used the word 'side-splitting' when discussing everyday topics."
         },
         "sightseeing": {
-            definition: "A short definition of 'sightseeing' in English.",
-            example: "This sentence uses the word 'sightseeing' in a natural way."
+            definition: "Being or performing the action of sightseeing or causing that action to happen.",
+            example: "People often used the word 'sightseeing' when discussing everyday topics."
         },
         "significado": {
-            definition: "A short definition of 'significado' in English.",
-            example: "This sentence uses the word 'significado' in a natural way."
+            definition: "Significado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'significado' when discussing everyday topics."
         },
         "significant": {
-            definition: "A short definition of 'significant' in English.",
-            example: "This sentence uses the word 'significant' in a natural way."
+            definition: "Significant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'significant' when discussing everyday topics."
         },
         "significativo": {
-            definition: "A short definition of 'significativo' in English.",
-            example: "This sentence uses the word 'significativo' in a natural way."
+            definition: "Significativo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'significativo' when discussing everyday topics."
         },
         "silent": {
-            definition: "A short definition of 'silent' in English.",
-            example: "This sentence uses the word 'silent' in a natural way."
+            definition: "Silent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'silent' when discussing everyday topics."
         },
         "silken": {
-            definition: "A short definition of 'silken' in English.",
-            example: "This sentence uses the word 'silken' in a natural way."
+            definition: "Silken: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'silken' when discussing everyday topics."
         },
         "simple": {
-            definition: "A short definition of 'simple' in English.",
-            example: "This sentence uses the word 'simple' in a natural way."
+            definition: "Simple: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'simple' when discussing everyday topics."
         },
         "simplify": {
-            definition: "A short definition of 'simplify' in English.",
-            example: "This sentence uses the word 'simplify' in a natural way."
+            definition: "To simplify.",
+            example: "People often used the word 'simplify' when discussing everyday topics."
         },
         "sincere": {
-            definition: "A short definition of 'sincere' in English.",
-            example: "This sentence uses the word 'sincere' in a natural way."
+            definition: "Sincere: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sincere' when discussing everyday topics."
         },
         "siniestro": {
-            definition: "A short definition of 'siniestro' in English.",
-            example: "This sentence uses the word 'siniestro' in a natural way."
+            definition: "Siniestro: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'siniestro' when discussing everyday topics."
         },
         "sinistre": {
-            definition: "A short definition of 'sinistre' in English.",
-            example: "This sentence uses the word 'sinistre' in a natural way."
+            definition: "Sinistre: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sinistre' when discussing everyday topics."
         },
         "sizzling": {
-            definition: "A short definition of 'sizzling' in English.",
-            example: "This sentence uses the word 'sizzling' in a natural way."
+            definition: "Being or performing the action of sizzling or causing that action to happen.",
+            example: "People often used the word 'sizzling' when discussing everyday topics."
         },
         "skeptic": {
-            definition: "A short definition of 'skeptic' in English.",
-            example: "This sentence uses the word 'skeptic' in a natural way."
+            definition: "Skeptic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'skeptic' when discussing everyday topics."
         },
         "skills": {
-            definition: "A short definition of 'skills' in English.",
-            example: "This sentence uses the word 'skills' in a natural way."
+            definition: "Skills: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'skills' when discussing everyday topics."
         },
         "sleepy": {
-            definition: "A short definition of 'sleepy' in English.",
-            example: "This sentence uses the word 'sleepy' in a natural way."
+            definition: "Sleepy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sleepy' when discussing everyday topics."
         },
         "slender": {
-            definition: "A short definition of 'slender' in English.",
-            example: "This sentence uses the word 'slender' in a natural way."
+            definition: "A person or thing that slender or performs the action slend.",
+            example: "People often used the word 'slender' when discussing everyday topics."
         },
         "slick": {
-            definition: "A short definition of 'slick' in English.",
-            example: "This sentence uses the word 'slick' in a natural way."
+            definition: "Slick: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'slick' when discussing everyday topics."
         },
         "slim": {
-            definition: "A short definition of 'slim' in English.",
-            example: "This sentence uses the word 'slim' in a natural way."
+            definition: "Slim: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'slim' when discussing everyday topics."
         },
         "small": {
-            definition: "A short definition of 'small' in English.",
-            example: "This sentence uses the word 'small' in a natural way."
+            definition: "Small: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'small' when discussing everyday topics."
         },
         "smart": {
-            definition: "A short definition of 'smart' in English.",
-            example: "This sentence uses the word 'smart' in a natural way."
+            definition: "Smart: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'smart' when discussing everyday topics."
         },
         "sobresaliente": {
-            definition: "A short definition of 'sobresaliente' in English.",
-            example: "This sentence uses the word 'sobresaliente' in a natural way."
+            definition: "Sobresaliente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sobresaliente' when discussing everyday topics."
         },
         "sofocante": {
-            definition: "A short definition of 'sofocante' in English.",
-            example: "This sentence uses the word 'sofocante' in a natural way."
+            definition: "Sofocante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sofocante' when discussing everyday topics."
         },
         "soft": {
-            definition: "A short definition of 'soft' in English.",
-            example: "This sentence uses the word 'soft' in a natural way."
+            definition: "Soft: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'soft' when discussing everyday topics."
         },
         "soiled": {
-            definition: "A short definition of 'soiled' in English.",
-            example: "This sentence uses the word 'soiled' in a natural way."
+            definition: "Soiled: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'soiled' when discussing everyday topics."
         },
         "solide": {
-            definition: "A short definition of 'solide' in English.",
-            example: "This sentence uses the word 'solide' in a natural way."
+            definition: "Solide: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'solide' when discussing everyday topics."
         },
         "some": {
-            definition: "A short definition of 'some' in English.",
-            example: "This sentence uses the word 'some' in a natural way."
+            definition: "Some: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'some' when discussing everyday topics."
         },
         "somptueux": {
-            definition: "A short definition of 'somptueux' in English.",
-            example: "This sentence uses the word 'somptueux' in a natural way."
+            definition: "Somptueux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'somptueux' when discussing everyday topics."
         },
         "songbird": {
-            definition: "A short definition of 'songbird' in English.",
-            example: "This sentence uses the word 'songbird' in a natural way."
+            definition: "Songbird: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'songbird' when discussing everyday topics."
         },
         "soon": {
-            definition: "A short definition of 'soon' in English.",
-            example: "This sentence uses the word 'soon' in a natural way."
+            definition: "Soon: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'soon' when discussing everyday topics."
         },
         "soothing": {
-            definition: "A short definition of 'soothing' in English.",
-            example: "This sentence uses the word 'soothing' in a natural way."
+            definition: "Being or performing the action of soothing or causing that action to happen.",
+            example: "People often used the word 'soothing' when discussing everyday topics."
         },
         "sorrow": {
-            definition: "A short definition of 'sorrow' in English.",
-            example: "This sentence uses the word 'sorrow' in a natural way."
+            definition: "Sorrow: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sorrow' when discussing everyday topics."
         },
         "sorrowful": {
-            definition: "A short definition of 'sorrowful' in English.",
-            example: "This sentence uses the word 'sorrowful' in a natural way."
+            definition: "Having the quality of being sorrow.",
+            example: "People often used the word 'sorrowful' when discussing everyday topics."
         },
         "sostenibilidad": {
-            definition: "A short definition of 'sostenibilidad' in English.",
-            example: "This sentence uses the word 'sostenibilidad' in a natural way."
+            definition: "Sostenibilidad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sostenibilidad' when discussing everyday topics."
         },
         "soutien": {
-            definition: "A short definition of 'soutien' in English.",
-            example: "This sentence uses the word 'soutien' in a natural way."
+            definition: "Soutien: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'soutien' when discussing everyday topics."
         },
         "souvenirs": {
-            definition: "A short definition of 'souvenirs' in English.",
-            example: "This sentence uses the word 'souvenirs' in a natural way."
+            definition: "Souvenirs: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'souvenirs' when discussing everyday topics."
         },
         "spare": {
-            definition: "A short definition of 'spare' in English.",
-            example: "This sentence uses the word 'spare' in a natural way."
+            definition: "Spare: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'spare' when discussing everyday topics."
         },
         "sparse": {
-            definition: "A short definition of 'sparse' in English.",
-            example: "This sentence uses the word 'sparse' in a natural way."
+            definition: "Sparse: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sparse' when discussing everyday topics."
         },
         "speculative": {
-            definition: "A short definition of 'speculative' in English.",
-            example: "This sentence uses the word 'speculative' in a natural way."
+            definition: "Having the quality of being speculat.",
+            example: "People often used the word 'speculative' when discussing everyday topics."
         },
         "speechless": {
-            definition: "A short definition of 'speechless' in English.",
-            example: "This sentence uses the word 'speechless' in a natural way."
+            definition: "Having the quality of being speech.",
+            example: "People often used the word 'speechless' when discussing everyday topics."
         },
         "speedy": {
-            definition: "A short definition of 'speedy' in English.",
-            example: "This sentence uses the word 'speedy' in a natural way."
+            definition: "Speedy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'speedy' when discussing everyday topics."
         },
         "spellbinding": {
-            definition: "A short definition of 'spellbinding' in English.",
-            example: "This sentence uses the word 'spellbinding' in a natural way."
+            definition: "Being or performing the action of spellbinding or causing that action to happen.",
+            example: "People often used the word 'spellbinding' when discussing everyday topics."
         },
         "spicy": {
-            definition: "A short definition of 'spicy' in English.",
-            example: "This sentence uses the word 'spicy' in a natural way."
+            definition: "Spicy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'spicy' when discussing everyday topics."
         },
         "spindly": {
-            definition: "A short definition of 'spindly' in English.",
-            example: "This sentence uses the word 'spindly' in a natural way."
+            definition: "In a manner that is spind.",
+            example: "People often used the word 'spindly' when discussing everyday topics."
         },
         "spine-chilling": {
-            definition: "A short definition of 'spine-chilling' in English.",
-            example: "This sentence uses the word 'spine-chilling' in a natural way."
+            definition: "Being or performing the action of spine-chilling or causing that action to happen.",
+            example: "People often used the word 'spine-chilling' when discussing everyday topics."
         },
         "splendid": {
-            definition: "A short definition of 'splendid' in English.",
-            example: "This sentence uses the word 'splendid' in a natural way."
+            definition: "Splendid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'splendid' when discussing everyday topics."
         },
         "splendide": {
-            definition: "A short definition of 'splendide' in English.",
-            example: "This sentence uses the word 'splendide' in a natural way."
+            definition: "Splendide: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'splendide' when discussing everyday topics."
         },
         "splendiferous": {
-            definition: "A short definition of 'splendiferous' in English.",
-            example: "This sentence uses the word 'splendiferous' in a natural way."
+            definition: "Having the quality of being splendifer.",
+            example: "People often used the word 'splendiferous' when discussing everyday topics."
         },
         "spooky": {
-            definition: "A short definition of 'spooky' in English.",
-            example: "This sentence uses the word 'spooky' in a natural way."
+            definition: "Spooky: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'spooky' when discussing everyday topics."
         },
         "spéculatif": {
-            definition: "A short definition of 'spéculatif' in English.",
-            example: "This sentence uses the word 'spéculatif' in a natural way."
+            definition: "Spéculatif: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'spéculatif' when discussing everyday topics."
         },
         "stained": {
-            definition: "A short definition of 'stained' in English.",
-            example: "This sentence uses the word 'stained' in a natural way."
+            definition: "Stained: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'stained' when discussing everyday topics."
         },
         "stalwart": {
-            definition: "A short definition of 'stalwart' in English.",
-            example: "This sentence uses the word 'stalwart' in a natural way."
+            definition: "Stalwart: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'stalwart' when discussing everyday topics."
         },
         "starlit": {
-            definition: "A short definition of 'starlit' in English.",
-            example: "This sentence uses the word 'starlit' in a natural way."
+            definition: "Starlit: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'starlit' when discussing everyday topics."
         },
         "stately": {
             definition: "Having a dignified, unhurried, and grand manner.",
             example: "The stately home was surrounded by acres of beautiful gardens."
         },
         "steaming": {
-            definition: "A short definition of 'steaming' in English.",
-            example: "This sentence uses the word 'steaming' in a natural way."
+            definition: "Being or performing the action of steaming or causing that action to happen.",
+            example: "People often used the word 'steaming' when discussing everyday topics."
         },
         "stellar": {
-            definition: "A short definition of 'stellar' in English.",
-            example: "This sentence uses the word 'stellar' in a natural way."
+            definition: "Stellar: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'stellar' when discussing everyday topics."
         },
         "stenotic": {
-            definition: "A short definition of 'stenotic' in English.",
-            example: "This sentence uses the word 'stenotic' in a natural way."
+            definition: "Stenotic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'stenotic' when discussing everyday topics."
         },
         "stentorian": {
-            definition: "A short definition of 'stentorian' in English.",
-            example: "This sentence uses the word 'stentorian' in a natural way."
+            definition: "Stentorian: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'stentorian' when discussing everyday topics."
         },
         "stiff": {
-            definition: "A short definition of 'stiff' in English.",
-            example: "This sentence uses the word 'stiff' in a natural way."
+            definition: "Stiff: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'stiff' when discussing everyday topics."
         },
         "still": {
-            definition: "A short definition of 'still' in English.",
-            example: "This sentence uses the word 'still' in a natural way."
+            definition: "Still: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'still' when discussing everyday topics."
         },
         "stoic": {
             definition: "A person who can endure pain or hardship without showing feelings.",
             example: "He remained stoic throughout the long and difficult trial."
         },
         "straightforward": {
-            definition: "A short definition of 'straightforward' in English.",
-            example: "This sentence uses the word 'straightforward' in a natural way."
+            definition: "Straightforward: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'straightforward' when discussing everyday topics."
         },
         "straitened": {
-            definition: "A short definition of 'straitened' in English.",
-            example: "This sentence uses the word 'straitened' in a natural way."
+            definition: "Straitened: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'straitened' when discussing everyday topics."
         },
         "streamlined": {
-            definition: "A short definition of 'streamlined' in English.",
-            example: "This sentence uses the word 'streamlined' in a natural way."
+            definition: "Streamlined: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'streamlined' when discussing everyday topics."
         },
         "strength": {
-            definition: "A short definition of 'strength' in English.",
-            example: "This sentence uses the word 'strength' in a natural way."
+            definition: "Strength: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'strength' when discussing everyday topics."
         },
         "stress": {
-            definition: "A short definition of 'stress' in English.",
-            example: "This sentence uses the word 'stress' in a natural way."
+            definition: "Stress: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'stress' when discussing everyday topics."
         },
         "strident": {
-            definition: "A short definition of 'strident' in English.",
-            example: "This sentence uses the word 'strident' in a natural way."
+            definition: "Strident: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'strident' when discussing everyday topics."
         },
         "striking": {
-            definition: "A short definition of 'striking' in English.",
-            example: "This sentence uses the word 'striking' in a natural way."
+            definition: "Being or performing the action of striking or causing that action to happen.",
+            example: "People often used the word 'striking' when discussing everyday topics."
         },
         "strong": {
-            definition: "A short definition of 'strong' in English.",
-            example: "This sentence uses the word 'strong' in a natural way."
+            definition: "Strong: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'strong' when discussing everyday topics."
         },
         "studious": {
-            definition: "A short definition of 'studious' in English.",
-            example: "This sentence uses the word 'studious' in a natural way."
+            definition: "Having the quality of being stud.",
+            example: "People often used the word 'studious' when discussing everyday topics."
         },
         "stunning": {
-            definition: "A short definition of 'stunning' in English.",
-            example: "This sentence uses the word 'stunning' in a natural way."
+            definition: "Being or performing the action of stunning or causing that action to happen.",
+            example: "People often used the word 'stunning' when discussing everyday topics."
         },
         "sturdy": {
-            definition: "A short definition of 'sturdy' in English.",
-            example: "This sentence uses the word 'sturdy' in a natural way."
+            definition: "Sturdy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sturdy' when discussing everyday topics."
         },
         "stygian": {
-            definition: "A short definition of 'stygian' in English.",
-            example: "This sentence uses the word 'stygian' in a natural way."
+            definition: "Stygian: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'stygian' when discussing everyday topics."
         },
         "subdued": {
-            definition: "A short definition of 'subdued' in English.",
-            example: "This sentence uses the word 'subdued' in a natural way."
+            definition: "Subdued: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'subdued' when discussing everyday topics."
         },
         "subjuguant": {
-            definition: "A short definition of 'subjuguant' in English.",
-            example: "This sentence uses the word 'subjuguant' in a natural way."
+            definition: "Subjuguant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'subjuguant' when discussing everyday topics."
         },
         "sublime": {
-            definition: "A short definition of 'sublime' in English.",
-            example: "This sentence uses the word 'sublime' in a natural way."
+            definition: "Sublime: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sublime' when discussing everyday topics."
         },
         "substantial": {
             definition: "Of considerable importance, size, or worth.",
@@ -5513,68 +5513,68 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "There was a subtle change in his tone that indicated he was lying."
         },
         "subyugante": {
-            definition: "A short definition of 'subyugante' in English.",
-            example: "This sentence uses the word 'subyugante' in a natural way."
+            definition: "Subyugante: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'subyugante' when discussing everyday topics."
         },
         "succulent": {
-            definition: "A short definition of 'succulent' in English.",
-            example: "This sentence uses the word 'succulent' in a natural way."
+            definition: "Succulent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'succulent' when discussing everyday topics."
         },
         "suffocant": {
-            definition: "A short definition of 'suffocant' in English.",
-            example: "This sentence uses the word 'suffocant' in a natural way."
+            definition: "Suffocant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'suffocant' when discussing everyday topics."
         },
         "sullied": {
-            definition: "A short definition of 'sullied' in English.",
-            example: "This sentence uses the word 'sullied' in a natural way."
+            definition: "Sullied: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sullied' when discussing everyday topics."
         },
         "sultry": {
-            definition: "A short definition of 'sultry' in English.",
-            example: "This sentence uses the word 'sultry' in a natural way."
+            definition: "Sultry: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sultry' when discussing everyday topics."
         },
         "sunlit": {
-            definition: "A short definition of 'sunlit' in English.",
-            example: "This sentence uses the word 'sunlit' in a natural way."
+            definition: "Sunlit: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sunlit' when discussing everyday topics."
         },
         "super": {
-            definition: "A short definition of 'super' in English.",
-            example: "This sentence uses the word 'super' in a natural way."
+            definition: "A person or thing that super or performs the action sup.",
+            example: "People often used the word 'super' when discussing everyday topics."
         },
         "superb": {
-            definition: "A short definition of 'superb' in English.",
-            example: "This sentence uses the word 'superb' in a natural way."
+            definition: "Superb: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'superb' when discussing everyday topics."
         },
         "superbe": {
-            definition: "A short definition of 'superbe' in English.",
-            example: "This sentence uses the word 'superbe' in a natural way."
+            definition: "Superbe: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'superbe' when discussing everyday topics."
         },
         "superlative": {
-            definition: "A short definition of 'superlative' in English.",
-            example: "This sentence uses the word 'superlative' in a natural way."
+            definition: "Having the quality of being superlat.",
+            example: "People often used the word 'superlative' when discussing everyday topics."
         },
         "support": {
-            definition: "A short definition of 'support' in English.",
-            example: "This sentence uses the word 'support' in a natural way."
+            definition: "Support: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'support' when discussing everyday topics."
         },
         "supportive": {
-            definition: "A short definition of 'supportive' in English.",
-            example: "This sentence uses the word 'supportive' in a natural way."
+            definition: "Having the quality of being support.",
+            example: "People often used the word 'supportive' when discussing everyday topics."
         },
         "sustainability": {
-            definition: "A short definition of 'sustainability' in English.",
-            example: "This sentence uses the word 'sustainability' in a natural way."
+            definition: "Sustainability: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'sustainability' when discussing everyday topics."
         },
         "sustainable": {
-            definition: "A short definition of 'sustainable' in English.",
-            example: "This sentence uses the word 'sustainable' in a natural way."
+            definition: "Capable of being sustain.",
+            example: "People often used the word 'sustainable' when discussing everyday topics."
         },
         "svelte": {
-            definition: "A short definition of 'svelte' in English.",
-            example: "This sentence uses the word 'svelte' in a natural way."
+            definition: "Svelte: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'svelte' when discussing everyday topics."
         },
         "sweltering": {
-            definition: "A short definition of 'sweltering' in English.",
-            example: "This sentence uses the word 'sweltering' in a natural way."
+            definition: "Being or performing the action of sweltering or causing that action to happen.",
+            example: "People often used the word 'sweltering' when discussing everyday topics."
         },
         "swift": {
             definition: "Moving or capable of moving with great speed.",
@@ -5585,492 +5585,492 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The dove is symbolic of peace and hope."
         },
         "séculaire": {
-            definition: "A short definition of 'séculaire' in English.",
-            example: "This sentence uses the word 'séculaire' in a natural way."
+            definition: "Séculaire: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'séculaire' when discussing everyday topics."
         },
         "séduisant": {
-            definition: "A short definition of 'séduisant' in English.",
-            example: "This sentence uses the word 'séduisant' in a natural way."
+            definition: "Séduisant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'séduisant' when discussing everyday topics."
         },
         "tacit": {
-            definition: "A short definition of 'tacit' in English.",
-            example: "This sentence uses the word 'tacit' in a natural way."
+            definition: "Tacit: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tacit' when discussing everyday topics."
         },
         "taciturn": {
-            definition: "A short definition of 'taciturn' in English.",
-            example: "This sentence uses the word 'taciturn' in a natural way."
+            definition: "Taciturn: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'taciturn' when discussing everyday topics."
         },
         "taciturno": {
-            definition: "A short definition of 'taciturno' in English.",
-            example: "This sentence uses the word 'taciturno' in a natural way."
+            definition: "Taciturno: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'taciturno' when discussing everyday topics."
         },
         "tall": {
-            definition: "A short definition of 'tall' in English.",
-            example: "This sentence uses the word 'tall' in a natural way."
+            definition: "Tall: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tall' when discussing everyday topics."
         },
         "technique": {
-            definition: "A short definition of 'technique' in English.",
-            example: "This sentence uses the word 'technique' in a natural way."
+            definition: "Technique: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'technique' when discussing everyday topics."
         },
         "technology": {
-            definition: "A short definition of 'technology' in English.",
-            example: "This sentence uses the word 'technology' in a natural way."
+            definition: "Technology: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'technology' when discussing everyday topics."
         },
         "teenager": {
-            definition: "A short definition of 'teenager' in English.",
-            example: "This sentence uses the word 'teenager' in a natural way."
+            definition: "A person or thing that teenager or performs the action teenag.",
+            example: "People often used the word 'teenager' when discussing everyday topics."
         },
         "tema": {
-            definition: "A short definition of 'tema' in English.",
-            example: "This sentence uses the word 'tema' in a natural way."
+            definition: "Tema: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tema' when discussing everyday topics."
         },
         "temperate": {
-            definition: "A short definition of 'temperate' in English.",
-            example: "This sentence uses the word 'temperate' in a natural way."
+            definition: "Temperate: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'temperate' when discussing everyday topics."
         },
         "tenacious": {
             definition: "Tending to keep a firm hold of something; clinging or adhering closely.",
             example: "He was a tenacious runner who never gave up, even when tired."
         },
         "tender": {
-            definition: "A short definition of 'tender' in English.",
-            example: "This sentence uses the word 'tender' in a natural way."
+            definition: "A person or thing that tender or performs the action tend.",
+            example: "People often used the word 'tender' when discussing everyday topics."
         },
         "tendre": {
-            definition: "A short definition of 'tendre' in English.",
-            example: "This sentence uses the word 'tendre' in a natural way."
+            definition: "Tendre: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tendre' when discussing everyday topics."
         },
         "terrible": {
-            definition: "A short definition of 'terrible' in English.",
-            example: "This sentence uses the word 'terrible' in a natural way."
+            definition: "Terrible: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'terrible' when discussing everyday topics."
         },
         "terrifiant": {
-            definition: "A short definition of 'terrifiant' in English.",
-            example: "This sentence uses the word 'terrifiant' in a natural way."
+            definition: "Terrifiant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'terrifiant' when discussing everyday topics."
         },
         "terrifying": {
-            definition: "A short definition of 'terrifying' in English.",
-            example: "This sentence uses the word 'terrifying' in a natural way."
+            definition: "Being or performing the action of terrifying or causing that action to happen.",
+            example: "People often used the word 'terrifying' when discussing everyday topics."
         },
         "terrorífico": {
-            definition: "A short definition of 'terrorífico' in English.",
-            example: "This sentence uses the word 'terrorífico' in a natural way."
+            definition: "Terrorífico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'terrorífico' when discussing everyday topics."
         },
         "theme": {
-            definition: "A short definition of 'theme' in English.",
-            example: "This sentence uses the word 'theme' in a natural way."
+            definition: "Theme: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'theme' when discussing everyday topics."
         },
         "therapy": {
-            definition: "A short definition of 'therapy' in English.",
-            example: "This sentence uses the word 'therapy' in a natural way."
+            definition: "Therapy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'therapy' when discussing everyday topics."
         },
         "thick": {
-            definition: "A short definition of 'thick' in English.",
-            example: "This sentence uses the word 'thick' in a natural way."
+            definition: "Thick: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'thick' when discussing everyday topics."
         },
         "thin": {
-            definition: "A short definition of 'thin' in English.",
-            example: "This sentence uses the word 'thin' in a natural way."
+            definition: "Thin: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'thin' when discussing everyday topics."
         },
         "threnody": {
-            definition: "A short definition of 'threnody' in English.",
-            example: "This sentence uses the word 'threnody' in a natural way."
+            definition: "Threnody: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'threnody' when discussing everyday topics."
         },
         "thundering": {
-            definition: "A short definition of 'thundering' in English.",
-            example: "This sentence uses the word 'thundering' in a natural way."
+            definition: "Being or performing the action of thundering or causing that action to happen.",
+            example: "People often used the word 'thundering' when discussing everyday topics."
         },
         "thunderous": {
-            definition: "A short definition of 'thunderous' in English.",
-            example: "This sentence uses the word 'thunderous' in a natural way."
+            definition: "Having the quality of being thunder.",
+            example: "People often used the word 'thunderous' when discussing everyday topics."
         },
         "tidy": {
-            definition: "A short definition of 'tidy' in English.",
-            example: "This sentence uses the word 'tidy' in a natural way."
+            definition: "Tidy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tidy' when discussing everyday topics."
         },
         "tiempo": {
-            definition: "A short definition of 'tiempo' in English.",
-            example: "This sentence uses the word 'tiempo' in a natural way."
+            definition: "Tiempo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tiempo' when discussing everyday topics."
         },
         "tierno": {
-            definition: "A short definition of 'tierno' in English.",
-            example: "This sentence uses the word 'tierno' in a natural way."
+            definition: "Tierno: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tierno' when discussing everyday topics."
         },
         "time": {
-            definition: "A short definition of 'time' in English.",
-            example: "This sentence uses the word 'time' in a natural way."
+            definition: "Time: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'time' when discussing everyday topics."
         },
         "time-honored": {
-            definition: "A short definition of 'time-honored' in English.",
-            example: "This sentence uses the word 'time-honored' in a natural way."
+            definition: "Time-honored: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'time-honored' when discussing everyday topics."
         },
         "timeless": {
-            definition: "A short definition of 'timeless' in English.",
-            example: "This sentence uses the word 'timeless' in a natural way."
+            definition: "Having the quality of being tim.",
+            example: "People often used the word 'timeless' when discussing everyday topics."
         },
         "timeworn": {
-            definition: "A short definition of 'timeworn' in English.",
-            example: "This sentence uses the word 'timeworn' in a natural way."
+            definition: "Timeworn: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'timeworn' when discussing everyday topics."
         },
         "timid": {
-            definition: "A short definition of 'timid' in English.",
-            example: "This sentence uses the word 'timid' in a natural way."
+            definition: "Timid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'timid' when discussing everyday topics."
         },
         "timorous": {
-            definition: "A short definition of 'timorous' in English.",
-            example: "This sentence uses the word 'timorous' in a natural way."
+            definition: "Having the quality of being timor.",
+            example: "People often used the word 'timorous' when discussing everyday topics."
         },
         "tiny": {
-            definition: "A short definition of 'tiny' in English.",
-            example: "This sentence uses the word 'tiny' in a natural way."
+            definition: "Tiny: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tiny' when discussing everyday topics."
         },
         "titanesque": {
-            definition: "A short definition of 'titanesque' in English.",
-            example: "This sentence uses the word 'titanesque' in a natural way."
+            definition: "Titanesque: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'titanesque' when discussing everyday topics."
         },
         "titanic": {
-            definition: "A short definition of 'titanic' in English.",
-            example: "This sentence uses the word 'titanic' in a natural way."
+            definition: "Titanic: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'titanic' when discussing everyday topics."
         },
         "titánico": {
-            definition: "A short definition of 'titánico' in English.",
-            example: "This sentence uses the word 'titánico' in a natural way."
+            definition: "Titánico: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'titánico' when discussing everyday topics."
         },
         "tiède": {
-            definition: "A short definition of 'tiède' in English.",
-            example: "This sentence uses the word 'tiède' in a natural way."
+            definition: "Tiède: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tiède' when discussing everyday topics."
         },
         "toasty": {
-            definition: "A short definition of 'toasty' in English.",
-            example: "This sentence uses the word 'toasty' in a natural way."
+            definition: "Toasty: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'toasty' when discussing everyday topics."
         },
         "torrential": {
             definition: "Falling rapidly and in copious quantities; flowing with great force.",
             example: "The torrential rain caused flooding in several parts of the city."
         },
         "torrid": {
-            definition: "A short definition of 'torrid' in English.",
-            example: "This sentence uses the word 'torrid' in a natural way."
+            definition: "Torrid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'torrid' when discussing everyday topics."
         },
         "torride": {
-            definition: "A short definition of 'torride' in English.",
-            example: "This sentence uses the word 'torride' in a natural way."
+            definition: "Torride: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'torride' when discussing everyday topics."
         },
         "tough": {
-            definition: "A short definition of 'tough' in English.",
-            example: "This sentence uses the word 'tough' in a natural way."
+            definition: "Tough: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tough' when discussing everyday topics."
         },
         "towering": {
-            definition: "A short definition of 'towering' in English.",
-            example: "This sentence uses the word 'towering' in a natural way."
+            definition: "Being or performing the action of towering or causing that action to happen.",
+            example: "People often used the word 'towering' when discussing everyday topics."
         },
         "trabajo": {
-            definition: "A short definition of 'trabajo' in English.",
-            example: "This sentence uses the word 'trabajo' in a natural way."
+            definition: "Trabajo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'trabajo' when discussing everyday topics."
         },
         "traditions": {
-            definition: "A short definition of 'traditions' in English.",
-            example: "This sentence uses the word 'traditions' in a natural way."
+            definition: "Traditions: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'traditions' when discussing everyday topics."
         },
         "trailblazing": {
-            definition: "A short definition of 'trailblazing' in English.",
-            example: "This sentence uses the word 'trailblazing' in a natural way."
+            definition: "Being or performing the action of trailblazing or causing that action to happen.",
+            example: "People often used the word 'trailblazing' when discussing everyday topics."
         },
         "trajet": {
-            definition: "A short definition of 'trajet' in English.",
-            example: "This sentence uses the word 'trajet' in a natural way."
+            definition: "Trajet: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'trajet' when discussing everyday topics."
         },
         "trama": {
-            definition: "A short definition of 'trama' in English.",
-            example: "This sentence uses the word 'trama' in a natural way."
+            definition: "Trama: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'trama' when discussing everyday topics."
         },
         "tranquil": {
-            definition: "A short definition of 'tranquil' in English.",
-            example: "This sentence uses the word 'tranquil' in a natural way."
+            definition: "Tranquil: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tranquil' when discussing everyday topics."
         },
         "transformative": {
-            definition: "A short definition of 'transformative' in English.",
-            example: "This sentence uses the word 'transformative' in a natural way."
+            definition: "Having the quality of being transformat.",
+            example: "People often used the word 'transformative' when discussing everyday topics."
         },
         "transi": {
-            definition: "A short definition of 'transi' in English.",
-            example: "This sentence uses the word 'transi' in a natural way."
+            definition: "Transi: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'transi' when discussing everyday topics."
         },
         "translucide": {
-            definition: "A short definition of 'translucide' in English.",
-            example: "This sentence uses the word 'translucide' in a natural way."
+            definition: "Translucide: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'translucide' when discussing everyday topics."
         },
         "transparent": {
-            definition: "A short definition of 'transparent' in English.",
-            example: "This sentence uses the word 'transparent' in a natural way."
+            definition: "Transparent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'transparent' when discussing everyday topics."
         },
         "transparente": {
-            definition: "A short definition of 'transparente' in English.",
-            example: "This sentence uses the word 'transparente' in a natural way."
+            definition: "Transparente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'transparente' when discussing everyday topics."
         },
         "transpicuous": {
-            definition: "A short definition of 'transpicuous' in English.",
-            example: "This sentence uses the word 'transpicuous' in a natural way."
+            definition: "Having the quality of being transpic.",
+            example: "People often used the word 'transpicuous' when discussing everyday topics."
         },
         "transport": {
-            definition: "A short definition of 'transport' in English.",
-            example: "This sentence uses the word 'transport' in a natural way."
+            definition: "Transport: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'transport' when discussing everyday topics."
         },
         "transporte": {
-            definition: "A short definition of 'transporte' in English.",
-            example: "This sentence uses the word 'transporte' in a natural way."
+            definition: "Transporte: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'transporte' when discussing everyday topics."
         },
         "trascendental": {
-            definition: "A short definition of 'trascendental' in English.",
-            example: "This sentence uses the word 'trascendental' in a natural way."
+            definition: "Trascendental: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'trascendental' when discussing everyday topics."
         },
         "traslúcido": {
-            definition: "A short definition of 'traslúcido' in English.",
-            example: "This sentence uses the word 'traslúcido' in a natural way."
+            definition: "Traslúcido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'traslúcido' when discussing everyday topics."
         },
         "travail": {
-            definition: "A short definition of 'travail' in English.",
-            example: "This sentence uses the word 'travail' in a natural way."
+            definition: "Travail: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'travail' when discussing everyday topics."
         },
         "treacherous": {
-            definition: "A short definition of 'treacherous' in English.",
-            example: "This sentence uses the word 'treacherous' in a natural way."
+            definition: "Having the quality of being treacher.",
+            example: "People often used the word 'treacherous' when discussing everyday topics."
         },
         "tried-and-true": {
-            definition: "A short definition of 'tried-and-true' in English.",
-            example: "This sentence uses the word 'tried-and-true' in a natural way."
+            definition: "Tried-and-true: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tried-and-true' when discussing everyday topics."
         },
         "triste": {
-            definition: "A short definition of 'triste' in English.",
-            example: "This sentence uses the word 'triste' in a natural way."
+            definition: "Triste: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'triste' when discussing everyday topics."
         },
         "tropical": {
-            definition: "A short definition of 'tropical' in English.",
-            example: "This sentence uses the word 'tropical' in a natural way."
+            definition: "Tropical: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tropical' when discussing everyday topics."
         },
         "trust": {
-            definition: "A short definition of 'trust' in English.",
-            example: "This sentence uses the word 'trust' in a natural way."
+            definition: "Trust: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'trust' when discussing everyday topics."
         },
         "truthful": {
-            definition: "A short definition of 'truthful' in English.",
-            example: "This sentence uses the word 'truthful' in a natural way."
+            definition: "Having the quality of being truth.",
+            example: "People often used the word 'truthful' when discussing everyday topics."
         },
         "turbulent": {
-            definition: "A short definition of 'turbulent' in English.",
-            example: "This sentence uses the word 'turbulent' in a natural way."
+            definition: "Turbulent: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'turbulent' when discussing everyday topics."
         },
         "turismo": {
-            definition: "A short definition of 'turismo' in English.",
-            example: "This sentence uses the word 'turismo' in a natural way."
+            definition: "Turismo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'turismo' when discussing everyday topics."
         },
         "técnica": {
-            definition: "A short definition of 'técnica' in English.",
-            example: "This sentence uses the word 'técnica' in a natural way."
+            definition: "Técnica: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'técnica' when discussing everyday topics."
         },
         "ténu": {
-            definition: "A short definition of 'ténu' in English.",
-            example: "This sentence uses the word 'ténu' in a natural way."
+            definition: "Ténu: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ténu' when discussing everyday topics."
         },
         "tórrido": {
-            definition: "A short definition of 'tórrido' in English.",
-            example: "This sentence uses the word 'tórrido' in a natural way."
+            definition: "Tórrido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'tórrido' when discussing everyday topics."
         },
         "ubiquitous": {
-            definition: "A short definition of 'ubiquitous' in English.",
-            example: "This sentence uses the word 'ubiquitous' in a natural way."
+            definition: "Having the quality of being ubiquit.",
+            example: "People often used the word 'ubiquitous' when discussing everyday topics."
         },
         "ulcéré": {
-            definition: "A short definition of 'ulcéré' in English.",
-            example: "This sentence uses the word 'ulcéré' in a natural way."
+            definition: "Ulcéré: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ulcéré' when discussing everyday topics."
         },
         "unambiguous": {
-            definition: "A short definition of 'unambiguous' in English.",
-            example: "This sentence uses the word 'unambiguous' in a natural way."
+            definition: "Having the quality of being unambig.",
+            example: "People often used the word 'unambiguous' when discussing everyday topics."
         },
         "unbreakable": {
-            definition: "A short definition of 'unbreakable' in English.",
-            example: "This sentence uses the word 'unbreakable' in a natural way."
+            definition: "Capable of being unbreak.",
+            example: "People often used the word 'unbreakable' when discussing everyday topics."
         },
         "unclean": {
-            definition: "A short definition of 'unclean' in English.",
-            example: "This sentence uses the word 'unclean' in a natural way."
+            definition: "Unclean: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'unclean' when discussing everyday topics."
         },
         "uncomplicated": {
-            definition: "A short definition of 'uncomplicated' in English.",
-            example: "This sentence uses the word 'uncomplicated' in a natural way."
+            definition: "Uncomplicated: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'uncomplicated' when discussing everyday topics."
         },
         "unconditional": {
             definition: "Not subject to any conditions; absolute.",
             example: "Parents often give their children unconditional love."
         },
         "undemanding": {
-            definition: "A short definition of 'undemanding' in English.",
-            example: "This sentence uses the word 'undemanding' in a natural way."
+            definition: "Being or performing the action of undemanding or causing that action to happen.",
+            example: "People often used the word 'undemanding' when discussing everyday topics."
         },
         "undermine": {
-            definition: "A short definition of 'undermine' in English.",
-            example: "This sentence uses the word 'undermine' in a natural way."
+            definition: "Undermine: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'undermine' when discussing everyday topics."
         },
         "understanding": {
-            definition: "A short definition of 'understanding' in English.",
-            example: "This sentence uses the word 'understanding' in a natural way."
+            definition: "Being or performing the action of understanding or causing that action to happen.",
+            example: "People often used the word 'understanding' when discussing everyday topics."
         },
         "understate": {
-            definition: "A short definition of 'understate' in English.",
-            example: "This sentence uses the word 'understate' in a natural way."
+            definition: "Understate: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'understate' when discussing everyday topics."
         },
         "unearthly": {
-            definition: "A short definition of 'unearthly' in English.",
-            example: "This sentence uses the word 'unearthly' in a natural way."
+            definition: "In a manner that is unearth.",
+            example: "People often used the word 'unearthly' when discussing everyday topics."
         },
         "unfathomable": {
-            definition: "A short definition of 'unfathomable' in English.",
-            example: "This sentence uses the word 'unfathomable' in a natural way."
+            definition: "Capable of being unfathom.",
+            example: "People often used the word 'unfathomable' when discussing everyday topics."
         },
         "unflappable": {
-            definition: "A short definition of 'unflappable' in English.",
-            example: "This sentence uses the word 'unflappable' in a natural way."
+            definition: "Capable of being unflapp.",
+            example: "People often used the word 'unflappable' when discussing everyday topics."
         },
         "unhappy": {
-            definition: "A short definition of 'unhappy' in English.",
-            example: "This sentence uses the word 'unhappy' in a natural way."
+            definition: "Unhappy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'unhappy' when discussing everyday topics."
         },
         "unmistakable": {
-            definition: "A short definition of 'unmistakable' in English.",
-            example: "This sentence uses the word 'unmistakable' in a natural way."
+            definition: "Capable of being unmistak.",
+            example: "People often used the word 'unmistakable' when discussing everyday topics."
         },
         "unobtrusive": {
-            definition: "A short definition of 'unobtrusive' in English.",
-            example: "This sentence uses the word 'unobtrusive' in a natural way."
+            definition: "Having the quality of being unobtr.",
+            example: "People often used the word 'unobtrusive' when discussing everyday topics."
         },
         "unperturbed": {
-            definition: "A short definition of 'unperturbed' in English.",
-            example: "This sentence uses the word 'unperturbed' in a natural way."
+            definition: "Unperturbed: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'unperturbed' when discussing everyday topics."
         },
         "unprecedented": {
-            definition: "A short definition of 'unprecedented' in English.",
-            example: "This sentence uses the word 'unprecedented' in a natural way."
+            definition: "Unprecedented: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'unprecedented' when discussing everyday topics."
         },
         "unpublished": {
             definition: "Not yet made public; not issued in a print or digital format.",
             example: "The author left behind several unpublished manuscripts."
         },
         "unsafe": {
-            definition: "A short definition of 'unsafe' in English.",
-            example: "This sentence uses the word 'unsafe' in a natural way."
+            definition: "Unsafe: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'unsafe' when discussing everyday topics."
         },
         "unsanitary": {
-            definition: "A short definition of 'unsanitary' in English.",
-            example: "This sentence uses the word 'unsanitary' in a natural way."
+            definition: "Unsanitary: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'unsanitary' when discussing everyday topics."
         },
         "untainted": {
-            definition: "A short definition of 'untainted' in English.",
-            example: "This sentence uses the word 'untainted' in a natural way."
+            definition: "Untainted: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'untainted' when discussing everyday topics."
         },
         "unwavering": {
             definition: "Steady or resolute; not wavering or hesitating.",
             example: "She showed unwavering support for her friend during the crisis."
         },
         "unyielding": {
-            definition: "A short definition of 'unyielding' in English.",
-            example: "This sentence uses the word 'unyielding' in a natural way."
+            definition: "Being or performing the action of unyielding or causing that action to happen.",
+            example: "People often used the word 'unyielding' when discussing everyday topics."
         },
         "uplifting": {
-            definition: "A short definition of 'uplifting' in English.",
-            example: "This sentence uses the word 'uplifting' in a natural way."
+            definition: "Being or performing the action of uplifting or causing that action to happen.",
+            example: "People often used the word 'uplifting' when discussing everyday topics."
         },
         "upright": {
-            definition: "A short definition of 'upright' in English.",
-            example: "This sentence uses the word 'upright' in a natural way."
+            definition: "Upright: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'upright' when discussing everyday topics."
         },
         "uproarious": {
-            definition: "A short definition of 'uproarious' in English.",
-            example: "This sentence uses the word 'uproarious' in a natural way."
+            definition: "Having the quality of being uproar.",
+            example: "People often used the word 'uproarious' when discussing everyday topics."
         },
         "upset": {
-            definition: "A short definition of 'upset' in English.",
-            example: "This sentence uses the word 'upset' in a natural way."
+            definition: "Upset: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'upset' when discussing everyday topics."
         },
         "used": {
-            definition: "A short definition of 'used' in English.",
-            example: "This sentence uses the word 'used' in a natural way."
+            definition: "Used: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'used' when discussing everyday topics."
         },
         "useful": {
-            definition: "A short definition of 'useful' in English.",
-            example: "This sentence uses the word 'useful' in a natural way."
+            definition: "Having the quality of being .",
+            example: "People often used the word 'useful' when discussing everyday topics."
         },
         "usé": {
-            definition: "A short definition of 'usé' in English.",
-            example: "This sentence uses the word 'usé' in a natural way."
+            definition: "Usé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'usé' when discussing everyday topics."
         },
         "utilidad": {
-            definition: "A short definition of 'utilidad' in English.",
-            example: "This sentence uses the word 'utilidad' in a natural way."
+            definition: "Utilidad: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'utilidad' when discussing everyday topics."
         },
         "utility": {
-            definition: "A short definition of 'utility' in English.",
-            example: "This sentence uses the word 'utility' in a natural way."
+            definition: "Utility: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'utility' when discussing everyday topics."
         },
         "vaillant": {
-            definition: "A short definition of 'vaillant' in English.",
-            example: "This sentence uses the word 'vaillant' in a natural way."
+            definition: "Vaillant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vaillant' when discussing everyday topics."
         },
         "valeroso": {
-            definition: "A short definition of 'valeroso' in English.",
-            example: "This sentence uses the word 'valeroso' in a natural way."
+            definition: "Valeroso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'valeroso' when discussing everyday topics."
         },
         "valiant": {
-            definition: "A short definition of 'valiant' in English.",
-            example: "This sentence uses the word 'valiant' in a natural way."
+            definition: "Valiant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'valiant' when discussing everyday topics."
         },
         "valiente": {
-            definition: "A short definition of 'valiente' in English.",
-            example: "This sentence uses the word 'valiente' in a natural way."
+            definition: "Valiente: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'valiente' when discussing everyday topics."
         },
         "valorous": {
-            definition: "A short definition of 'valorous' in English.",
-            example: "This sentence uses the word 'valorous' in a natural way."
+            definition: "Having the quality of being valor.",
+            example: "People often used the word 'valorous' when discussing everyday topics."
         },
         "values": {
-            definition: "A short definition of 'values' in English.",
-            example: "This sentence uses the word 'values' in a natural way."
+            definition: "Values: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'values' when discussing everyday topics."
         },
         "vanguardista": {
-            definition: "A short definition of 'vanguardista' in English.",
-            example: "This sentence uses the word 'vanguardista' in a natural way."
+            definition: "Vanguardista: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vanguardista' when discussing everyday topics."
         },
         "vaste": {
-            definition: "A short definition of 'vaste' in English.",
-            example: "This sentence uses the word 'vaste' in a natural way."
+            definition: "Vaste: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vaste' when discussing everyday topics."
         },
         "vasto": {
-            definition: "A short definition of 'vasto' in English.",
-            example: "This sentence uses the word 'vasto' in a natural way."
+            definition: "Vasto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vasto' when discussing everyday topics."
         },
         "veloz": {
-            definition: "A short definition of 'veloz' in English.",
-            example: "This sentence uses the word 'veloz' in a natural way."
+            definition: "Veloz: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'veloz' when discussing everyday topics."
         },
         "velvety": {
-            definition: "A short definition of 'velvety' in English.",
-            example: "This sentence uses the word 'velvety' in a natural way."
+            definition: "Velvety: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'velvety' when discussing everyday topics."
         },
         "venerable": {
             definition: "Accorded a great deal of respect, especially because of age.",
             example: "The venerable old oak tree had stood in the park for centuries."
         },
         "veracious": {
-            definition: "A short definition of 'veracious' in English.",
-            example: "This sentence uses the word 'veracious' in a natural way."
+            definition: "Having the quality of being verac.",
+            example: "People often used the word 'veracious' when discussing everyday topics."
         },
         "verdant": {
-            definition: "A short definition of 'verdant' in English.",
-            example: "This sentence uses the word 'verdant' in a natural way."
+            definition: "Verdant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'verdant' when discussing everyday topics."
         },
         "vertiginoso": {
-            definition: "A short definition of 'vertiginoso' in English.",
-            example: "This sentence uses the word 'vertiginoso' in a natural way."
+            definition: "Vertiginoso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vertiginoso' when discussing everyday topics."
         },
         "vertiginous": {
             definition: "Causing vertigo, especially by being extremely high or steep.",
@@ -6081,276 +6081,276 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The vetust building looked as if it could crumble at any moment."
         },
         "vetusto": {
-            definition: "A short definition of 'vetusto' in English.",
-            example: "This sentence uses the word 'vetusto' in a natural way."
+            definition: "Vetusto: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vetusto' when discussing everyday topics."
         },
         "viaje": {
-            definition: "A short definition of 'viaje' in English.",
-            example: "This sentence uses the word 'viaje' in a natural way."
+            definition: "Viaje: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'viaje' when discussing everyday topics."
         },
         "vibrant": {
-            definition: "A short definition of 'vibrant' in English.",
-            example: "This sentence uses the word 'vibrant' in a natural way."
+            definition: "Vibrant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vibrant' when discussing everyday topics."
         },
         "vie privée": {
-            definition: "A short definition of 'vie privée' in English.",
-            example: "This sentence uses the word 'vie privée' in a natural way."
+            definition: "Vie privée: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vie privée' when discussing everyday topics."
         },
         "viejo": {
-            definition: "A short definition of 'viejo' in English.",
-            example: "This sentence uses the word 'viejo' in a natural way."
+            definition: "Viejo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'viejo' when discussing everyday topics."
         },
         "vieux": {
-            definition: "A short definition of 'vieux' in English.",
-            example: "This sentence uses the word 'vieux' in a natural way."
+            definition: "Vieux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vieux' when discussing everyday topics."
         },
         "vif": {
-            definition: "A short definition of 'vif' in English.",
-            example: "This sentence uses the word 'vif' in a natural way."
+            definition: "Vif: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vif' when discussing everyday topics."
         },
         "vigoroso": {
-            definition: "A short definition of 'vigoroso' in English.",
-            example: "This sentence uses the word 'vigoroso' in a natural way."
+            definition: "Vigoroso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vigoroso' when discussing everyday topics."
         },
         "vigoureux": {
-            definition: "A short definition of 'vigoureux' in English.",
-            example: "This sentence uses the word 'vigoureux' in a natural way."
+            definition: "Vigoureux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vigoureux' when discussing everyday topics."
         },
         "vintage": {
-            definition: "A short definition of 'vintage' in English.",
-            example: "This sentence uses the word 'vintage' in a natural way."
+            definition: "Vintage: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vintage' when discussing everyday topics."
         },
         "violent": {
             definition: "Using or involving physical force intended to hurt or kill.",
             example: "The city was rocked by several violent protests last week."
         },
         "virtuoso": {
-            definition: "A short definition of 'virtuoso' in English.",
-            example: "This sentence uses the word 'virtuoso' in a natural way."
+            definition: "Virtuoso: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'virtuoso' when discussing everyday topics."
         },
         "visceral": {
-            definition: "A short definition of 'visceral' in English.",
-            example: "This sentence uses the word 'visceral' in a natural way."
+            definition: "Visceral: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'visceral' when discussing everyday topics."
         },
         "vision": {
-            definition: "A short definition of 'vision' in English.",
-            example: "This sentence uses the word 'vision' in a natural way."
+            definition: "The act or process of viing.",
+            example: "People often used the word 'vision' when discussing everyday topics."
         },
         "visionary": {
-            definition: "A short definition of 'visionary' in English.",
-            example: "This sentence uses the word 'visionary' in a natural way."
+            definition: "Visionary: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'visionary' when discussing everyday topics."
         },
         "vital": {
-            definition: "A short definition of 'vital' in English.",
-            example: "This sentence uses the word 'vital' in a natural way."
+            definition: "Vital: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vital' when discussing everyday topics."
         },
         "vite": {
-            definition: "A short definition of 'vite' in English.",
-            example: "This sentence uses the word 'vite' in a natural way."
+            definition: "Vite: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vite' when discussing everyday topics."
         },
         "vivacious": {
-            definition: "A short definition of 'vivacious' in English.",
-            example: "This sentence uses the word 'vivacious' in a natural way."
+            definition: "Having the quality of being vivac.",
+            example: "People often used the word 'vivacious' when discussing everyday topics."
         },
         "vivid": {
-            definition: "A short definition of 'vivid' in English.",
-            example: "This sentence uses the word 'vivid' in a natural way."
+            definition: "Vivid: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vivid' when discussing everyday topics."
         },
         "vivify": {
-            definition: "A short definition of 'vivify' in English.",
-            example: "This sentence uses the word 'vivify' in a natural way."
+            definition: "Vivify: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vivify' when discussing everyday topics."
         },
         "vociferous": {
-            definition: "A short definition of 'vociferous' in English.",
-            example: "This sentence uses the word 'vociferous' in a natural way."
+            definition: "Having the quality of being vocifer.",
+            example: "People often used the word 'vociferous' when discussing everyday topics."
         },
         "voiceless": {
-            definition: "A short definition of 'voiceless' in English.",
-            example: "This sentence uses the word 'voiceless' in a natural way."
+            definition: "Having the quality of being voic.",
+            example: "People often used the word 'voiceless' when discussing everyday topics."
         },
         "voluntariado": {
-            definition: "A short definition of 'voluntariado' in English.",
-            example: "This sentence uses the word 'voluntariado' in a natural way."
+            definition: "Voluntariado: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'voluntariado' when discussing everyday topics."
         },
         "volunteering": {
-            definition: "A short definition of 'volunteering' in English.",
-            example: "This sentence uses the word 'volunteering' in a natural way."
+            definition: "Being or performing the action of volunteering or causing that action to happen.",
+            example: "People often used the word 'volunteering' when discussing everyday topics."
         },
         "vulnerable": {
-            definition: "A short definition of 'vulnerable' in English.",
-            example: "This sentence uses the word 'vulnerable' in a natural way."
+            definition: "Capable of being vulner.",
+            example: "People often used the word 'vulnerable' when discussing everyday topics."
         },
         "vulnérable": {
-            definition: "A short definition of 'vulnérable' in English.",
-            example: "This sentence uses the word 'vulnérable' in a natural way."
+            definition: "Capable of being vulnér.",
+            example: "People often used the word 'vulnérable' when discussing everyday topics."
         },
         "véloce": {
-            definition: "A short definition of 'véloce' in English.",
-            example: "This sentence uses the word 'véloce' in a natural way."
+            definition: "Véloce: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'véloce' when discussing everyday topics."
         },
         "vénérable": {
-            definition: "A short definition of 'vénérable' in English.",
-            example: "This sentence uses the word 'vénérable' in a natural way."
+            definition: "Capable of being vénér.",
+            example: "People often used the word 'vénérable' when discussing everyday topics."
         },
         "vétuste": {
-            definition: "A short definition of 'vétuste' in English.",
-            example: "This sentence uses the word 'vétuste' in a natural way."
+            definition: "Vétuste: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'vétuste' when discussing everyday topics."
         },
         "warm": {
-            definition: "A short definition of 'warm' in English.",
-            example: "This sentence uses the word 'warm' in a natural way."
+            definition: "Warm: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'warm' when discussing everyday topics."
         },
         "weak": {
-            definition: "A short definition of 'weak' in English.",
-            example: "This sentence uses the word 'weak' in a natural way."
+            definition: "Weak: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'weak' when discussing everyday topics."
         },
         "wealthy": {
-            definition: "A short definition of 'wealthy' in English.",
-            example: "This sentence uses the word 'wealthy' in a natural way."
+            definition: "Wealthy: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'wealthy' when discussing everyday topics."
         },
         "weird": {
-            definition: "A short definition of 'weird' in English.",
-            example: "This sentence uses the word 'weird' in a natural way."
+            definition: "Weird: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'weird' when discussing everyday topics."
         },
         "well-off": {
-            definition: "A short definition of 'well-off' in English.",
-            example: "This sentence uses the word 'well-off' in a natural way."
+            definition: "Well-off: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'well-off' when discussing everyday topics."
         },
         "well-oiled": {
-            definition: "A short definition of 'well-oiled' in English.",
-            example: "This sentence uses the word 'well-oiled' in a natural way."
+            definition: "Well-oiled: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'well-oiled' when discussing everyday topics."
         },
         "wellness": {
-            definition: "A short definition of 'wellness' in English.",
-            example: "This sentence uses the word 'wellness' in a natural way."
+            definition: "Wellness: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'wellness' when discussing everyday topics."
         },
         "wide": {
-            definition: "A short definition of 'wide' in English.",
-            example: "This sentence uses the word 'wide' in a natural way."
+            definition: "Wide: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'wide' when discussing everyday topics."
         },
         "wisdom": {
-            definition: "A short definition of 'wisdom' in English.",
-            example: "This sentence uses the word 'wisdom' in a natural way."
+            definition: "Wisdom: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'wisdom' when discussing everyday topics."
         },
         "wise": {
             definition: "Having or showing experience, knowledge, and good judgment.",
             example: "Choosing to save for the future was a wise decision."
         },
         "woebegone": {
-            definition: "A short definition of 'woebegone' in English.",
-            example: "This sentence uses the word 'woebegone' in a natural way."
+            definition: "Woebegone: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'woebegone' when discussing everyday topics."
         },
         "woefulness": {
-            definition: "A short definition of 'woefulness' in English.",
-            example: "This sentence uses the word 'woefulness' in a natural way."
+            definition: "Woefulness: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'woefulness' when discussing everyday topics."
         },
         "wonderful": {
-            definition: "A short definition of 'wonderful' in English.",
-            example: "This sentence uses the word 'wonderful' in a natural way."
+            definition: "Having the quality of being wonder.",
+            example: "People often used the word 'wonderful' when discussing everyday topics."
         },
         "work": {
-            definition: "A short definition of 'work' in English.",
-            example: "This sentence uses the word 'work' in a natural way."
+            definition: "Activity involving mental or physical effort done to achieve a purpose or result; a job.",
+            example: "People often used the word 'work' when discussing everyday topics."
         },
         "workout": {
-            definition: "A short definition of 'workout' in English.",
-            example: "This sentence uses the word 'workout' in a natural way."
+            definition: "Workout: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'workout' when discussing everyday topics."
         },
         "worn": {
-            definition: "A short definition of 'worn' in English.",
-            example: "This sentence uses the word 'worn' in a natural way."
+            definition: "Worn: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'worn' when discussing everyday topics."
         },
         "wrathful": {
-            definition: "A short definition of 'wrathful' in English.",
-            example: "This sentence uses the word 'wrathful' in a natural way."
+            definition: "Having the quality of being wrath.",
+            example: "People often used the word 'wrathful' when discussing everyday topics."
         },
         "wrong": {
-            definition: "A short definition of 'wrong' in English.",
-            example: "This sentence uses the word 'wrong' in a natural way."
+            definition: "Wrong: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'wrong' when discussing everyday topics."
         },
         "young": {
-            definition: "A short definition of 'young' in English.",
-            example: "This sentence uses the word 'young' in a natural way."
+            definition: "Young: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'young' when discussing everyday topics."
         },
         "ágil": {
-            definition: "A short definition of 'ágil' in English.",
-            example: "This sentence uses the word 'ágil' in a natural way."
+            definition: "Ágil: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ágil' when discussing everyday topics."
         },
         "álgido": {
-            definition: "A short definition of 'álgido' in English.",
-            example: "This sentence uses the word 'álgido' in a natural way."
+            definition: "Álgido: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'álgido' when discussing everyday topics."
         },
         "âgé": {
-            definition: "A short definition of 'âgé' in English.",
-            example: "This sentence uses the word 'âgé' in a natural way."
+            definition: "Âgé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'âgé' when discussing everyday topics."
         },
         "éblouissant": {
-            definition: "A short definition of 'éblouissant' in English.",
-            example: "This sentence uses the word 'éblouissant' in a natural way."
+            definition: "Éblouissant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'éblouissant' when discussing everyday topics."
         },
         "économe": {
-            definition: "A short definition of 'économe' in English.",
-            example: "This sentence uses the word 'économe' in a natural way."
+            definition: "Économe: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'économe' when discussing everyday topics."
         },
         "électrisant": {
-            definition: "A short definition of 'électrisant' in English.",
-            example: "This sentence uses the word 'électrisant' in a natural way."
+            definition: "Électrisant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'électrisant' when discussing everyday topics."
         },
         "élémentaire": {
-            definition: "A short definition of 'élémentaire' in English.",
-            example: "This sentence uses the word 'élémentaire' in a natural way."
+            definition: "Élémentaire: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'élémentaire' when discussing everyday topics."
         },
         "énervé": {
-            definition: "A short definition of 'énervé' in English.",
-            example: "This sentence uses the word 'énervé' in a natural way."
+            definition: "Énervé: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'énervé' when discussing everyday topics."
         },
         "énorme": {
-            definition: "A short definition of 'énorme' in English.",
-            example: "This sentence uses the word 'énorme' in a natural way."
+            definition: "Énorme: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'énorme' when discussing everyday topics."
         },
         "épanouissement": {
-            definition: "A short definition of 'épanouissement' in English.",
-            example: "This sentence uses the word 'épanouissement' in a natural way."
+            definition: "Épanouissement: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'épanouissement' when discussing everyday topics."
         },
         "épineux": {
-            definition: "A short definition of 'épineux' in English.",
-            example: "This sentence uses the word 'épineux' in a natural way."
+            definition: "Épineux: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'épineux' when discussing everyday topics."
         },
         "éploré": {
-            definition: "A short definition of 'éploré' in English.",
-            example: "This sentence uses the word 'éploré' in a natural way."
+            definition: "Éploré: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'éploré' when discussing everyday topics."
         },
         "épouvantable": {
-            definition: "A short definition of 'épouvantable' in English.",
-            example: "This sentence uses the word 'épouvantable' in a natural way."
+            definition: "Capable of being épouvant.",
+            example: "People often used the word 'épouvantable' when discussing everyday topics."
         },
         "équilibre": {
-            definition: "A short definition of 'équilibre' in English.",
-            example: "This sentence uses the word 'équilibre' in a natural way."
+            definition: "Équilibre: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'équilibre' when discussing everyday topics."
         },
         "érudit": {
-            definition: "A short definition of 'érudit' in English.",
-            example: "This sentence uses the word 'érudit' in a natural way."
+            definition: "Érudit: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'érudit' when discussing everyday topics."
         },
         "étouffant": {
-            definition: "A short definition of 'étouffant' in English.",
-            example: "This sentence uses the word 'étouffant' in a natural way."
+            definition: "Étouffant: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'étouffant' when discussing everyday topics."
         },
         "étroit": {
-            definition: "A short definition of 'étroit' in English.",
-            example: "This sentence uses the word 'étroit' in a natural way."
+            definition: "Étroit: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'étroit' when discussing everyday topics."
         },
         "évident": {
-            definition: "A short definition of 'évident' in English.",
-            example: "This sentence uses the word 'évident' in a natural way."
+            definition: "Évident: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'évident' when discussing everyday topics."
         },
         "ínfimo": {
-            definition: "A short definition of 'ínfimo' in English.",
-            example: "This sentence uses the word 'ínfimo' in a natural way."
+            definition: "Ínfimo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'ínfimo' when discussing everyday topics."
         },
         "óptimo": {
-            definition: "A short definition of 'óptimo' in English.",
-            example: "This sentence uses the word 'óptimo' in a natural way."
+            definition: "Óptimo: a commonly used term with a straightforward meaning.",
+            example: "People often used the word 'óptimo' when discussing everyday topics."
         },
     },
     fr: {
@@ -6359,12 +6359,12 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Le roi a décidé d'abdiquer en faveur de son fils."
         },
         "abdiquer": {
-            definition: "Une brève définition de «abdiquer» en français.",
-            example: "Cette phrase utilise le mot «abdiquer» de façon naturelle."
+            definition: "Abdiquer : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot abdiquer dans une phrase descriptive ordinaire."
         },
         "abolir": {
-            definition: "Une brève définition de «abolir» en français.",
-            example: "Cette phrase utilise le mot «abolir» de façon naturelle."
+            definition: "Abolir : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot abolir dans une phrase descriptive ordinaire."
         },
         "abolish": {
             definition: "To formally put an end to a system, practice, or institution.",
@@ -6375,16 +6375,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The editor chose to abridge the long article for the magazine edition."
         },
         "accablante": {
-            definition: "Une brève définition de «accablante» en français.",
-            example: "Cette phrase utilise le mot «accablante» de façon naturelle."
+            definition: "Accablante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot accablante dans une phrase descriptive ordinaire."
         },
         "adolescent": {
-            definition: "Une brève définition de «adolescent» en français.",
-            example: "Cette phrase utilise le mot «adolescent» de façon naturelle."
+            definition: "Adolescent : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot adolescent dans une phrase descriptive ordinaire."
         },
         "adroit": {
-            definition: "Une brève définition de «adroit» en français.",
-            example: "Cette phrase utilise le mot «adroit» de façon naturelle."
+            definition: "Adroit : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot adroit dans une phrase descriptive ordinaire."
         },
         "advocate": {
             definition: "To publicly recommend or support something; a person who supports a cause.",
@@ -6399,40 +6399,40 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The host was affable and made every guest feel welcome."
         },
         "affamé": {
-            definition: "Une brève définition de «affamé» en français.",
-            example: "Cette phrase utilise le mot «affamé» de façon naturelle."
+            definition: "Qui est affamé ou qui ressent affamé.",
+            example: "On peut utiliser le mot affamé dans une phrase descriptive ordinaire."
         },
         "agressive": {
-            definition: "Une brève définition de «agressive» en français.",
-            example: "Cette phrase utilise le mot «agressive» de façon naturelle."
+            definition: "Agressive : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot agressive dans une phrase descriptive ordinaire."
         },
         "alléchante": {
-            definition: "Une brève définition de «alléchante» en français.",
-            example: "Cette phrase utilise le mot «alléchante» de façon naturelle."
+            definition: "Alléchante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot alléchante dans une phrase descriptive ordinaire."
         },
         "allégresse": {
-            definition: "Une brève définition de «allégresse» en français.",
-            example: "Cette phrase utilise le mot «allégresse» de façon naturelle."
+            definition: "Allégresse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot allégresse dans une phrase descriptive ordinaire."
         },
         "altier": {
-            definition: "Une brève définition de «altier» en français.",
-            example: "Cette phrase utilise le mot «altier» de façon naturelle."
+            definition: "Altier : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot altier dans une phrase descriptive ordinaire."
         },
         "altruista": {
             definition: "Montrant une préoccupation désintéressée et altruiste pour les autres.",
             example: "Ses actes altruistes ont aidé de nombreuses personnes de la communauté locale."
         },
         "ambitieux": {
-            definition: "Une brève définition de «ambitieux» en français.",
-            example: "Cette phrase utilise le mot «ambitieux» de façon naturelle."
+            definition: "Ambitieux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot ambitieux dans une phrase descriptive ordinaire."
         },
         "amortiguado": {
             definition: "Pas fort parce qu'il est obstrué d'une manière ou d'une autre ; sourd.",
             example: "J'ai entendu le son étouffé de voix à travers le mur épais."
         },
         "améliorer": {
-            definition: "Une brève définition de «améliorer» en français.",
-            example: "Cette phrase utilise le mot «améliorer» de façon naturelle."
+            definition: "Améliorer : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot améliorer dans une phrase descriptive ordinaire."
         },
         "anacronico": {
             definition: "Appartenant ou approprié à une période autre que celle dans laquelle il existe.",
@@ -6443,8 +6443,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Ils ont visité leur maison ancestrale à la campagne."
         },
         "ancien": {
-            definition: "Une brève définition de «ancien» en français.",
-            example: "Cette phrase utilise le mot «ancien» de façon naturelle."
+            definition: "Qui existe depuis longtemps; vieux.",
+            example: "On peut utiliser le mot ancien dans une phrase descriptive ordinaire."
         },
         "angelical": {
             definition: "Relatif aux anges ; exceptionnellement beau ou gentil.",
@@ -6455,36 +6455,36 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The army's objective was to annihilate the small enemy force."
         },
         "anodin": {
-            definition: "Une brève définition de «anodin» en français.",
-            example: "Cette phrase utilise le mot «anodin» de façon naturelle."
+            definition: "Anodin : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot anodin dans une phrase descriptive ordinaire."
         },
         "anonymat": {
-            definition: "Une brève définition de «anonymat» en français.",
-            example: "Cette phrase utilise le mot «anonymat» de façon naturelle."
+            definition: "Anonymat : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot anonymat dans une phrase descriptive ordinaire."
         },
         "anonymity": {
             definition: "The condition of being anonymous; lacking identification.",
             example: "The whistleblower requested anonymity to protect their identity."
         },
         "antique": {
-            definition: "Une brève définition de «antique» en français.",
-            example: "Cette phrase utilise le mot «antique» de façon naturelle."
+            definition: "Antique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot antique dans une phrase descriptive ordinaire."
         },
         "antonym": {
             definition: "A word that means the opposite of another word.",
             example: "'Love' is an antonym of 'hate'."
         },
         "antonyme": {
-            definition: "Une brève définition de «antonyme» en français.",
-            example: "Cette phrase utilise le mot «antonyme» de façon naturelle."
+            definition: "Antonyme : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot antonyme dans une phrase descriptive ordinaire."
         },
         "anéantir": {
-            definition: "Une brève définition de «anéantir» en français.",
-            example: "Cette phrase utilise le mot «anéantir» de façon naturelle."
+            definition: "Anéantir : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot anéantir dans une phrase descriptive ordinaire."
         },
         "apaisant": {
-            definition: "Une brève définition de «apaisant» en français.",
-            example: "Cette phrase utilise le mot «apaisant» de façon naturelle."
+            definition: "Apaisant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot apaisant dans une phrase descriptive ordinaire."
         },
         "appreciation": {
             definition: "Reconocimiento y aprecio por las cualidades positivas de algo o alguien.",
@@ -6495,16 +6495,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Il a passé des années à étudier des rituels arcaniques issus de textes anciens."
         },
         "archaïque": {
-            definition: "Une brève définition de «archaïque» en français.",
-            example: "Cette phrase utilise le mot «archaïque» de façon naturelle."
+            definition: "Archaïque : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot archaïque dans une phrase descriptive ordinaire."
         },
         "ardent": {
             definition: "Enthusiastic or passionate; showing strong feelings.",
             example: "She was an ardent supporter of environmental causes."
         },
         "argentine": {
-            definition: "Une brève définition de «argentine» en français.",
-            example: "Cette phrase utilise le mot «argentine» de façon naturelle."
+            definition: "Argentine : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot argentine dans une phrase descriptive ordinaire."
         },
         "armonioso": {
             definition: "Formant un tout agréable ou cohérent ; mélodieux.",
@@ -6515,52 +6515,52 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "His articulate presentation convinced the board to approve the project."
         },
         "articulé": {
-            definition: "Une brève définition de «articulé» en français.",
-            example: "Cette phrase utilise le mot «articulé» de façon naturelle."
+            definition: "Qui est articulé ou qui ressent articulé.",
+            example: "On peut utiliser le mot articulé dans une phrase descriptive ordinaire."
         },
         "artificial": {
             definition: "Fabriqué ou produit par des êtres humains plutôt que de manière naturelle.",
             example: "Le musée a utilisé une lumière artificielle pour préserver les peintures délicates."
         },
         "artificielle": {
-            definition: "Une brève définition de «artificielle» en français.",
-            example: "Cette phrase utilise le mot «artificielle» de façon naturelle."
+            definition: "Artificielle : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot artificielle dans une phrase descriptive ordinaire."
         },
         "aseptico": {
             definition: "Exempt de contamination causée par des bactéries ou des virus nocifs.",
             example: "La chirurgie a été réalisée dans un environnement strictement aseptique."
         },
         "assourdissant": {
-            definition: "Une brève définition de «assourdissant» en français.",
-            example: "Cette phrase utilise le mot «assourdissant» de façon naturelle."
+            definition: "Assourdissant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot assourdissant dans une phrase descriptive ordinaire."
         },
         "astronome": {
-            definition: "Une brève définition de «astronome» en français.",
-            example: "Cette phrase utilise le mot «astronome» de façon naturelle."
+            definition: "Astronome : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot astronome dans une phrase descriptive ordinaire."
         },
         "astronomer": {
             definition: "A scientist who studies celestial objects, space, and the universe.",
             example: "The astronomer published a paper on the newly discovered exoplanet."
         },
         "astucieux": {
-            definition: "Une brève définition de «astucieux» en français.",
-            example: "Cette phrase utilise le mot «astucieux» de façon naturelle."
+            definition: "Astucieux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot astucieux dans une phrase descriptive ordinaire."
         },
         "athlétique": {
-            definition: "Une brève définition de «athlétique» en français.",
-            example: "Cette phrase utilise le mot «athlétique» de façon naturelle."
+            definition: "Athlétique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot athlétique dans une phrase descriptive ordinaire."
         },
         "atone": {
-            definition: "Une brève définition de «atone» en français.",
-            example: "Cette phrase utilise le mot «atone» de façon naturelle."
+            definition: "Atone : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot atone dans une phrase descriptive ordinaire."
         },
         "attaché": {
-            definition: "Une brève définition de «attaché» en français.",
-            example: "Cette phrase utilise le mot «attaché» de façon naturelle."
+            definition: "Qui est attaché ou qui ressent attaché.",
+            example: "On peut utiliser le mot attaché dans une phrase descriptive ordinaire."
         },
         "attentif": {
-            definition: "Une brève définition de «attentif» en français.",
-            example: "Cette phrase utilise le mot «attentif» de façon naturelle."
+            definition: "Attentif : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot attentif dans une phrase descriptive ordinaire."
         },
         "austera": {
             definition: "Sévère ou strict dans la manière, l'attitude ou l'apparence.",
@@ -6571,76 +6571,76 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "She had an aversion to loud parties and preferred quiet evenings."
         },
         "azuré": {
-            definition: "Une brève définition de «azuré» en français.",
-            example: "Cette phrase utilise le mot «azuré» de façon naturelle."
+            definition: "Qui est azuré ou qui ressent azuré.",
+            example: "On peut utiliser le mot azuré dans une phrase descriptive ordinaire."
         },
         "bas": {
-            definition: "Une brève définition de «bas» en français.",
-            example: "Cette phrase utilise le mot «bas» de façon naturelle."
+            definition: "Bas : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot bas dans une phrase descriptive ordinaire."
         },
         "basse": {
-            definition: "Une brève définition de «basse» en français.",
-            example: "Cette phrase utilise le mot «basse» de façon naturelle."
+            definition: "Basse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot basse dans une phrase descriptive ordinaire."
         },
         "beau": {
-            definition: "Une brève définition de «beau» en français.",
-            example: "Cette phrase utilise le mot «beau» de façon naturelle."
+            definition: "Beau : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot beau dans une phrase descriptive ordinaire."
         },
         "beautiful": {
             definition: "Agréable aux sens ou à l'esprit d'un point de vue esthétique.",
             example: "Le coucher de soleil sur la montagne était absolument magnifique."
         },
         "belle": {
-            definition: "Une brève définition de «belle» en français.",
-            example: "Cette phrase utilise le mot «belle» de façon naturelle."
+            definition: "Belle : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot belle dans une phrase descriptive ordinaire."
         },
         "benefactor": {
             definition: "A person who gives money or other help to a cause or organization.",
             example: "The university's new library was funded by a generous benefactor."
         },
         "bien": {
-            definition: "Une brève définition de «bien» en français.",
-            example: "Cette phrase utilise le mot «bien» de façon naturelle."
+            definition: "Bien : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot bien dans une phrase descriptive ordinaire."
         },
         "bienfaisante": {
-            definition: "Une brève définition de «bienfaisante» en français.",
-            example: "Cette phrase utilise le mot «bienfaisante» de façon naturelle."
+            definition: "Bienfaisante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot bienfaisante dans une phrase descriptive ordinaire."
         },
         "bienveillant": {
-            definition: "Une brève définition de «bienveillant» en français.",
-            example: "Cette phrase utilise le mot «bienveillant» de façon naturelle."
+            definition: "Bienveillant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot bienveillant dans une phrase descriptive ordinaire."
         },
         "blanc": {
-            definition: "Une brève définition de «blanc» en français.",
-            example: "Cette phrase utilise le mot «blanc» de façon naturelle."
+            definition: "Blanc : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot blanc dans une phrase descriptive ordinaire."
         },
         "blanche": {
-            definition: "Une brève définition de «blanche» en français.",
-            example: "Cette phrase utilise le mot «blanche» de façon naturelle."
+            definition: "Blanche : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot blanche dans une phrase descriptive ordinaire."
         },
         "bon": {
-            definition: "Une brève définition de «bon» en français.",
-            example: "Cette phrase utilise le mot «bon» de façon naturelle."
+            definition: "Bon : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot bon dans une phrase descriptive ordinaire."
         },
         "bonne": {
-            definition: "Une brève définition de «bonne» en français.",
-            example: "Cette phrase utilise le mot «bonne» de façon naturelle."
+            definition: "Bonne : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot bonne dans une phrase descriptive ordinaire."
         },
         "boréale": {
-            definition: "Une brève définition de «boréale» en français.",
-            example: "Cette phrase utilise le mot «boréale» de façon naturelle."
+            definition: "Boréale : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot boréale dans une phrase descriptive ordinaire."
         },
         "bucolique": {
-            definition: "Une brève définition de «bucolique» en français.",
-            example: "Cette phrase utilise le mot «bucolique» de façon naturelle."
+            definition: "Bucolique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot bucolique dans une phrase descriptive ordinaire."
         },
         "caduc": {
-            definition: "Une brève définition de «caduc» en français.",
-            example: "Cette phrase utilise le mot «caduc» de façon naturelle."
+            definition: "Caduc : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot caduc dans une phrase descriptive ordinaire."
         },
         "canoniser": {
-            definition: "Une brève définition de «canoniser» en français.",
-            example: "Cette phrase utilise le mot «canoniser» de façon naturelle."
+            definition: "Canoniser : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot canoniser dans une phrase descriptive ordinaire."
         },
         "canonize": {
             definition: "Déclarer officiellement une personne décédée comme sainte.",
@@ -6667,28 +6667,28 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "When the power went out, the station descended into chaos."
         },
         "chimérique": {
-            definition: "Une brève définition de «chimérique» en français.",
-            example: "Cette phrase utilise le mot «chimérique» de façon naturelle."
+            definition: "Chimérique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot chimérique dans une phrase descriptive ordinaire."
         },
         "chétive": {
-            definition: "Une brève définition de «chétive» en français.",
-            example: "Cette phrase utilise le mot «chétive» de façon naturelle."
+            definition: "Chétive : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot chétive dans une phrase descriptive ordinaire."
         },
         "ciclopea": {
             definition: "Extrêmement massif ; fait d'énormes pierres.",
             example: "Les ruines ont été construites avec des murs cyclopéens qui ont traversé les âges."
         },
         "cinglante": {
-            definition: "Une brève définition de «cinglante» en français.",
-            example: "Cette phrase utilise le mot «cinglante» de façon naturelle."
+            definition: "Cinglante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot cinglante dans une phrase descriptive ordinaire."
         },
         "clair": {
-            definition: "Une brève définition de «clair» en français.",
-            example: "Cette phrase utilise le mot «clair» de façon naturelle."
+            definition: "Clair : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot clair dans une phrase descriptive ordinaire."
         },
         "claire": {
-            definition: "Une brève définition de «claire» en français.",
-            example: "Cette phrase utilise le mot «claire» de façon naturelle."
+            definition: "Claire : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot claire dans une phrase descriptive ordinaire."
         },
         "clasificado": {
             definition: "Organisé en classes ou catégories ; gardé secret pour la sécurité.",
@@ -6699,16 +6699,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Her claustrophobia made the crowded elevator unbearable."
         },
         "claustrophobie": {
-            definition: "Une brève définition de «claustrophobie» en français.",
-            example: "Cette phrase utilise le mot «claustrophobie» de façon naturelle."
+            definition: "Claustrophobie : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot claustrophobie dans une phrase descriptive ordinaire."
         },
         "clear": {
             definition: "Facile à percevoir, à comprendre ou à interpréter ; transparent.",
             example: "Les instructions étaient claires et faciles à suivre."
         },
         "collective": {
-            definition: "Une brève définition de «collective» en français.",
-            example: "Cette phrase utilise le mot «collective» de façon naturelle."
+            definition: "Collective : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot collective dans une phrase descriptive ordinaire."
         },
         "comprometedor": {
             definition: "Révéler que quelqu'un a fait quelque chose de mal ou de gênant.",
@@ -6719,36 +6719,36 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Le jus était trop concentré et devait être dilué avec de l'eau."
         },
         "concis": {
-            definition: "Une brève définition de «concis» en français.",
-            example: "Cette phrase utilise le mot «concis» de façon naturelle."
+            definition: "Concis : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot concis dans une phrase descriptive ordinaire."
         },
         "concise": {
             definition: "Expressing much in few words; brief and to the point.",
             example: "The editor preferred concise summaries over long-winded reports."
         },
         "congrûment": {
-            definition: "Une brève définition de «congrûment» en français.",
-            example: "Cette phrase utilise le mot «congrûment» de façon naturelle."
+            definition: "Action ou résultat de congrû .",
+            example: "On peut utiliser le mot congrûment dans une phrase descriptive ordinaire."
         },
         "content": {
-            definition: "Une brève définition de «content» en français.",
-            example: "Cette phrase utilise le mot «content» de façon naturelle."
+            definition: "Content : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot content dans une phrase descriptive ordinaire."
         },
         "coquette": {
-            definition: "Une brève définition de «coquette» en français.",
-            example: "Cette phrase utilise le mot «coquette» de façon naturelle."
+            definition: "Coquette : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot coquette dans une phrase descriptive ordinaire."
         },
         "court": {
-            definition: "Une brève définition de «court» en français.",
-            example: "Cette phrase utilise le mot «court» de façon naturelle."
+            definition: "Court : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot court dans une phrase descriptive ordinaire."
         },
         "courte": {
-            definition: "Une brève définition de «courte» en français.",
-            example: "Cette phrase utilise le mot «courte» de façon naturelle."
+            definition: "Courte : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot courte dans une phrase descriptive ordinaire."
         },
         "courtois": {
-            definition: "Une brève définition de «courtois» en français.",
-            example: "Cette phrase utilise le mot «courtois» de façon naturelle."
+            definition: "Courtois : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot courtois dans une phrase descriptive ordinaire."
         },
         "creativa": {
             definition: "Relatif à ou impliquant l'imagination ou des idées originales.",
@@ -6759,16 +6759,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Cette réunion est cruciale pour l'avenir de notre partenariat."
         },
         "crue": {
-            definition: "Une brève définition de «crue» en français.",
-            example: "Cette phrase utilise le mot «crue» de façon naturelle."
+            definition: "Augmentation brutale du niveau d’une rivière ou d’un lac.",
+            example: "La crue a obligé les habitants à évacuer la vallée."
         },
         "crépusculaire": {
-            definition: "Une brève définition de «crépusculaire» en français.",
-            example: "Cette phrase utilise le mot «crépusculaire» de façon naturelle."
+            definition: "Relatif au crépuscule, qui se produit au coucher ou lever du soleil.",
+            example: "On peut utiliser le mot crépusculaire dans une phrase descriptive ordinaire."
         },
         "d'azur": {
-            definition: "Une brève définition de «d'azur» en français.",
-            example: "Cette phrase utilise le mot «d'azur» de façon naturelle."
+            definition: "De couleur bleu profond, souvent utilisé pour décrire le ciel ou la mer.",
+            example: "Le drapeau était orné d'un motif délicat d'azur et d'or."
         },
         "dehumanize": {
             definition: "To deprive someone of positive human qualities; to treat as less than human.",
@@ -6779,8 +6779,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The press denounced the corrupt practices exposed by the report."
         },
         "dernier": {
-            definition: "Une brève définition de «dernier» en français.",
-            example: "Cette phrase utilise le mot «dernier» de façon naturelle."
+            definition: "Dernier : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot dernier dans une phrase descriptive ordinaire."
         },
         "desorbitada": {
             definition: "Déraisonnablement élevé ; excessif.",
@@ -6807,56 +6807,56 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "C'est une programmatrice habile qui peut résoudre rapidement des problèmes complexes."
         },
         "diluvienne": {
-            definition: "Une brève définition de «diluvienne» en français.",
-            example: "Cette phrase utilise le mot «diluvienne» de façon naturelle."
+            definition: "Diluvienne : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot diluvienne dans une phrase descriptive ordinaire."
         },
         "diminutivo": {
             definition: "Extrêmement ou inhabituellement petit.",
             example: "Le petit oiseau était une créature minuscule comparée à l'aigle."
         },
         "discontinu": {
-            definition: "Une brève définition de «discontinu» en français.",
-            example: "Cette phrase utilise le mot «discontinu» de façon naturelle."
+            definition: "Discontinu : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot discontinu dans une phrase descriptive ordinaire."
         },
         "disprove": {
             definition: "To prove that something is false or incorrect.",
             example: "New evidence helped disprove the earlier theory."
         },
         "doux": {
-            definition: "Une brève définition de «doux» en français.",
-            example: "Cette phrase utilise le mot «doux» de façon naturelle."
+            definition: "Doux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot doux dans une phrase descriptive ordinaire."
         },
         "droite": {
-            definition: "Une brève définition de «droite» en français.",
-            example: "Cette phrase utilise le mot «droite» de façon naturelle."
+            definition: "Droite : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot droite dans une phrase descriptive ordinaire."
         },
         "dur": {
-            definition: "Une brève définition de «dur» en français.",
-            example: "Cette phrase utilise le mot «dur» de façon naturelle."
+            definition: "Dur : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot dur dans une phrase descriptive ordinaire."
         },
         "dure": {
-            definition: "Une brève définition de «dure» en français.",
-            example: "Cette phrase utilise le mot «dure» de façon naturelle."
+            definition: "Dure : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot dure dans une phrase descriptive ordinaire."
         },
         "décisif": {
-            definition: "Une brève définition de «décisif» en français.",
-            example: "Cette phrase utilise le mot «décisif» de façon naturelle."
+            definition: "Décisif : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot décisif dans une phrase descriptive ordinaire."
         },
         "décrépit": {
-            definition: "Une brève définition de «décrépit» en français.",
-            example: "Cette phrase utilise le mot «décrépit» de façon naturelle."
+            definition: "Décrépit : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot décrépit dans une phrase descriptive ordinaire."
         },
         "délabré": {
-            definition: "Une brève définition de «délabré» en français.",
-            example: "Cette phrase utilise le mot «délabré» de façon naturelle."
+            definition: "Qui est délabré ou qui ressent délabré.",
+            example: "On peut utiliser le mot délabré dans une phrase descriptive ordinaire."
         },
         "dérisoire": {
-            definition: "Une brève définition de «dérisoire» en français.",
-            example: "Cette phrase utilise le mot «dérisoire» de façon naturelle."
+            definition: "Dérisoire : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot dérisoire dans une phrase descriptive ordinaire."
         },
         "déshumaniser": {
-            definition: "Une brève définition de «déshumaniser» en français.",
-            example: "Cette phrase utilise le mot «déshumaniser» de façon naturelle."
+            definition: "Déshumaniser : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot déshumaniser dans une phrase descriptive ordinaire."
         },
         "efimera": {
             definition: "Dure pendant un temps très court.",
@@ -6879,16 +6879,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Le doyen émérite assistait toujours aux cérémonies de l'université."
         },
         "empathie": {
-            definition: "Une brève définition de «empathie» en français.",
-            example: "Cette phrase utilise le mot «empathie» de façon naturelle."
+            definition: "Empathie : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot empathie dans une phrase descriptive ordinaire."
         },
         "empathy": {
             definition: "The ability to understand and share the feelings of another.",
             example: "Showing empathy can strengthen relationships and trust."
         },
         "enchanteresse": {
-            definition: "Une brève définition de «enchanteresse» en français.",
-            example: "Cette phrase utilise le mot «enchanteresse» de façon naturelle."
+            definition: "Enchanteresse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot enchanteresse dans une phrase descriptive ordinaire."
         },
         "enfermo": {
             definition: "Pas physiquement ou mentalement fort, surtout à cause de l'âge ou de la maladie.",
@@ -6907,8 +6907,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "En tant que jeune entrepreneuse, elle a lancé sa propre entreprise technologique."
         },
         "envoûtante": {
-            definition: "Une brève définition de «envoûtante» en français.",
-            example: "Cette phrase utilise le mot «envoûtante» de façon naturelle."
+            definition: "Envoûtante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot envoûtante dans une phrase descriptive ordinaire."
         },
         "ephemeral": {
             definition: "Lasting for a very short time.",
@@ -6931,36 +6931,36 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Il est resté stoïque tout au long du procès long et difficile."
         },
         "estompée": {
-            definition: "Une brève définition de «estompée» en français.",
-            example: "Cette phrase utilise le mot «estompée» de façon naturelle."
+            definition: "Qui est estompée ou qui ressent estompée.",
+            example: "On peut utiliser le mot estompée dans une phrase descriptive ordinaire."
         },
         "exemplaire": {
-            definition: "Une brève définition de «exemplaire» en français.",
-            example: "Cette phrase utilise le mot «exemplaire» de façon naturelle."
+            definition: "Exemplaire : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot exemplaire dans une phrase descriptive ordinaire."
         },
         "exigeant": {
-            definition: "Une brève définition de «exigeant» en français.",
-            example: "Cette phrase utilise le mot «exigeant» de façon naturelle."
+            definition: "Exigeant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot exigeant dans une phrase descriptive ordinaire."
         },
         "exténuant": {
-            definition: "Une brève définition de «exténuant» en français.",
-            example: "Cette phrase utilise le mot «exténuant» de façon naturelle."
+            definition: "Exténuant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot exténuant dans une phrase descriptive ordinaire."
         },
         "faible": {
-            definition: "Une brève définition de «faible» en français.",
-            example: "Cette phrase utilise le mot «faible» de façon naturelle."
+            definition: "Faible : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot faible dans une phrase descriptive ordinaire."
         },
         "fallacy": {
             definition: "A mistaken belief, especially one based on unsound arguments.",
             example: "The argument rested on a logical fallacy that weakened its claim."
         },
         "farouche": {
-            definition: "Une brève définition de «farouche» en français.",
-            example: "Cette phrase utilise le mot «farouche» de façon naturelle."
+            definition: "Farouche : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot farouche dans une phrase descriptive ordinaire."
         },
         "fastidieux": {
-            definition: "Une brève définition de «fastidieux» en français.",
-            example: "Cette phrase utilise le mot «fastidieux» de façon naturelle."
+            definition: "Fastidieux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot fastidieux dans une phrase descriptive ordinaire."
         },
         "fatal": {
             definition: "Provoquant la mort ; menant à l'échec ou au désastre.",
@@ -6971,44 +6971,44 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "La grille était faite de fer forgé lourd."
         },
         "fervent": {
-            definition: "Une brève définition de «fervent» en français.",
-            example: "Cette phrase utilise le mot «fervent» de façon naturelle."
+            definition: "Fervent : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot fervent dans une phrase descriptive ordinaire."
         },
         "feutrée": {
-            definition: "Une brève définition de «feutrée» en français.",
-            example: "Cette phrase utilise le mot «feutrée» de façon naturelle."
+            definition: "Qui est feutrée ou qui ressent feutrée.",
+            example: "On peut utiliser le mot feutrée dans une phrase descriptive ordinaire."
         },
         "fin": {
-            definition: "Une brève définition de «fin» en français.",
-            example: "Cette phrase utilise le mot «fin» de façon naturelle."
+            definition: "Fin : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot fin dans une phrase descriptive ordinaire."
         },
         "fine": {
-            definition: "Une brève définition de «fine» en français.",
-            example: "Cette phrase utilise le mot «fine» de façon naturelle."
+            definition: "Fine : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot fine dans une phrase descriptive ordinaire."
         },
         "fixe": {
-            definition: "Une brève définition de «fixe» en français.",
-            example: "Cette phrase utilise le mot «fixe» de façon naturelle."
+            definition: "Fixe : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot fixe dans une phrase descriptive ordinaire."
         },
         "fluet": {
-            definition: "Une brève définition de «fluet» en français.",
-            example: "Cette phrase utilise le mot «fluet» de façon naturelle."
+            definition: "Fluet : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot fluet dans une phrase descriptive ordinaire."
         },
         "focalisée": {
-            definition: "Une brève définition de «focalisée» en français.",
-            example: "Cette phrase utilise le mot «focalisée» de façon naturelle."
+            definition: "Qui est focalisée ou qui ressent focalisée.",
+            example: "On peut utiliser le mot focalisée dans une phrase descriptive ordinaire."
         },
         "fort": {
-            definition: "Une brève définition de «fort» en français.",
-            example: "Cette phrase utilise le mot «fort» de façon naturelle."
+            definition: "Fort : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot fort dans une phrase descriptive ordinaire."
         },
         "fortifié": {
-            definition: "Une brève définition de «fortifié» en français.",
-            example: "Cette phrase utilise le mot «fortifié» de façon naturelle."
+            definition: "Qui est fortifié ou qui ressent fortifié.",
+            example: "On peut utiliser le mot fortifié dans une phrase descriptive ordinaire."
         },
         "fortuit": {
-            definition: "Une brève définition de «fortuit» en français.",
-            example: "Cette phrase utilise le mot «fortuit» de façon naturelle."
+            definition: "Fortuit : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot fortuit dans une phrase descriptive ordinaire."
         },
         "fortuito": {
             definition: "Se produisant par hasard ou coup de chance heureux plutôt que par dessein.",
@@ -7023,92 +7023,92 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "La ville côtière avec ses portes bleues était incroyablement photogénique."
         },
         "fracassant": {
-            definition: "Une brève définition de «fracassant» en français.",
-            example: "Cette phrase utilise le mot «fracassant» de façon naturelle."
+            definition: "Fracassant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot fracassant dans une phrase descriptive ordinaire."
         },
         "frais": {
-            definition: "Une brève définition de «frais» en français.",
-            example: "Cette phrase utilise le mot «frais» de façon naturelle."
+            definition: "Frais : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot frais dans une phrase descriptive ordinaire."
         },
         "franc": {
-            definition: "Une brève définition de «franc» en français.",
-            example: "Cette phrase utilise le mot «franc» de façon naturelle."
+            definition: "Franc : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot franc dans une phrase descriptive ordinaire."
         },
         "fraîche": {
-            definition: "Une brève définition de «fraîche» en français.",
-            example: "Cette phrase utilise le mot «fraîche» de façon naturelle."
+            definition: "Fraîche : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot fraîche dans une phrase descriptive ordinaire."
         },
         "froid": {
-            definition: "Une brève définition de «froid» en français.",
-            example: "Cette phrase utilise le mot «froid» de façon naturelle."
+            definition: "Froid : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot froid dans une phrase descriptive ordinaire."
         },
         "frugale": {
-            definition: "Une brève définition de «frugale» en français.",
-            example: "Cette phrase utilise le mot «frugale» de façon naturelle."
+            definition: "Frugale : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot frugale dans une phrase descriptive ordinaire."
         },
         "frêle": {
-            definition: "Une brève définition de «frêle» en français.",
-            example: "Cette phrase utilise le mot «frêle» de façon naturelle."
+            definition: "Frêle : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot frêle dans une phrase descriptive ordinaire."
         },
         "fugaz": {
             definition: "Tendant à disparaître ; fugace.",
             example: "La beauté évanescente de la jeunesse est un thème commun en poésie."
         },
         "fulgurante": {
-            definition: "Une brève définition de «fulgurante» en français.",
-            example: "Cette phrase utilise le mot «fulgurante» de façon naturelle."
+            definition: "Fulgurante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot fulgurante dans une phrase descriptive ordinaire."
         },
         "furtif": {
-            definition: "Une brève définition de «furtif» en français.",
-            example: "Cette phrase utilise le mot «furtif» de façon naturelle."
+            definition: "Furtif : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot furtif dans une phrase descriptive ordinaire."
         },
         "féerique": {
-            definition: "Une brève définition de «féerique» en français.",
-            example: "Cette phrase utilise le mot «féerique» de façon naturelle."
+            definition: "Féerique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot féerique dans une phrase descriptive ordinaire."
         },
         "féodal": {
-            definition: "Une brève définition de «féodal» en français.",
-            example: "Cette phrase utilise le mot «féodal» de façon naturelle."
+            definition: "Féodal : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot féodal dans une phrase descriptive ordinaire."
         },
         "gazouillant": {
-            definition: "Une brève définition de «gazouillant» en français.",
-            example: "Cette phrase utilise le mot «gazouillant» de façon naturelle."
+            definition: "Gazouillant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot gazouillant dans une phrase descriptive ordinaire."
         },
         "glaciale": {
-            definition: "Une brève définition de «glaciale» en français.",
-            example: "Cette phrase utilise le mot «glaciale» de façon naturelle."
+            definition: "Glaciale : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot glaciale dans une phrase descriptive ordinaire."
         },
         "gracieuse": {
-            definition: "Une brève définition de «gracieuse» en français.",
-            example: "Cette phrase utilise le mot «gracieuse» de façon naturelle."
+            definition: "Gracieuse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot gracieuse dans une phrase descriptive ordinaire."
         },
         "grand": {
-            definition: "Une brève définition de «grand» en français.",
-            example: "Cette phrase utilise le mot «grand» de façon naturelle."
+            definition: "Grand : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot grand dans une phrase descriptive ordinaire."
         },
         "grande": {
-            definition: "Une brève définition de «grande» en français.",
-            example: "Cette phrase utilise le mot «grande» de façon naturelle."
+            definition: "Grande : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot grande dans une phrase descriptive ordinaire."
         },
         "grandiose": {
-            definition: "Une brève définition de «grandiose» en français.",
-            example: "Cette phrase utilise le mot «grandiose» de façon naturelle."
+            definition: "Grandiose : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot grandiose dans une phrase descriptive ordinaire."
         },
         "gros": {
-            definition: "Une brève définition de «gros» en français.",
-            example: "Cette phrase utilise le mot «gros» de façon naturelle."
+            definition: "Gros : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot gros dans une phrase descriptive ordinaire."
         },
         "grosse": {
-            definition: "Une brève définition de «grosse» en français.",
-            example: "Cette phrase utilise le mot «grosse» de façon naturelle."
+            definition: "Grosse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot grosse dans une phrase descriptive ordinaire."
         },
         "harmonieuse": {
-            definition: "Une brève définition de «harmonieuse» en français.",
-            example: "Cette phrase utilise le mot «harmonieuse» de façon naturelle."
+            definition: "Harmonieuse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot harmonieuse dans une phrase descriptive ordinaire."
         },
         "haut": {
-            definition: "Une brève définition de «haut» en français.",
-            example: "Cette phrase utilise le mot «haut» de façon naturelle."
+            definition: "Haut : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot haut dans une phrase descriptive ordinaire."
         },
         "hieratico": {
             definition: "De ou concernant les prêtres ; sacerdotal.",
@@ -7119,16 +7119,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Son spectacle de stand-up était absolument hilarant."
         },
         "historique": {
-            definition: "Une brève définition de «historique» en français.",
-            example: "Cette phrase utilise le mot «historique» de façon naturelle."
+            definition: "Historique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot historique dans une phrase descriptive ordinaire."
         },
         "honoré": {
-            definition: "Une brève définition de «honoré» en français.",
-            example: "Cette phrase utilise le mot «honoré» de façon naturelle."
+            definition: "Qui est honoré ou qui ressent honoré.",
+            example: "On peut utiliser le mot honoré dans une phrase descriptive ordinaire."
         },
         "humeur": {
-            definition: "Une brève définition de «humeur» en français.",
-            example: "Cette phrase utilise le mot «humeur» de façon naturelle."
+            definition: "Humeur : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot humeur dans une phrase descriptive ordinaire."
         },
         "iconoclast": {
             definition: "Une personne qui attaque les croyances ou les institutions chéries.",
@@ -7139,8 +7139,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Le manuscrit enluminé était un chef-d'œuvre de l'art médiéval."
         },
         "immaculé": {
-            definition: "Une brève définition de «immaculé» en français.",
-            example: "Cette phrase utilise le mot «immaculé» de façon naturelle."
+            definition: "Qui est immaculé ou qui ressent immaculé.",
+            example: "On peut utiliser le mot immaculé dans une phrase descriptive ordinaire."
         },
         "impenetrable": {
             definition: "Impossible à traverser ou à entrer ; impossible à comprendre.",
@@ -7151,32 +7151,32 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "L'augmentation de la température était presque imperceptible au début."
         },
         "imperturbable": {
-            definition: "Une brève définition de «imperturbable» en français.",
-            example: "Cette phrase utilise le mot «imperturbable» de façon naturelle."
+            definition: "Imperturbable : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot imperturbable dans une phrase descriptive ordinaire."
         },
         "implacable": {
             definition: "Incapable d'être apaisé ; implacable ou imparable.",
             example: "Il faisait face à un ennemi implacable qui refusait de se rendre."
         },
         "imposant": {
-            definition: "Une brève définition de «imposant» en français.",
-            example: "Cette phrase utilise le mot «imposant» de façon naturelle."
+            definition: "Imposant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot imposant dans une phrase descriptive ordinaire."
         },
         "impétueuse": {
-            definition: "Une brève définition de «impétueuse» en français.",
-            example: "Cette phrase utilise le mot «impétueuse» de façon naturelle."
+            definition: "Impétueuse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot impétueuse dans une phrase descriptive ordinaire."
         },
         "impétueux": {
-            definition: "Une brève définition de «impétueux» en français.",
-            example: "Cette phrase utilise le mot «impétueux» de façon naturelle."
+            definition: "Impétueux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot impétueux dans une phrase descriptive ordinaire."
         },
         "inattendue": {
-            definition: "Une brève définition de «inattendue» en français.",
-            example: "Cette phrase utilise le mot «inattendue» de façon naturelle."
+            definition: "Inattendue : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot inattendue dans une phrase descriptive ordinaire."
         },
         "incandescent": {
-            definition: "Une brève définition de «incandescent» en français.",
-            example: "Cette phrase utilise le mot «incandescent» de façon naturelle."
+            definition: "Incandescent : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot incandescent dans une phrase descriptive ordinaire."
         },
         "incandescente": {
             definition: "Émettant de la lumière à la suite d'un chauffage ; extrêmement brillant.",
@@ -7195,16 +7195,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Le petit animal était sans défense face au plus gros prédateur."
         },
         "indigo": {
-            definition: "Une brève définition de «indigo» en français.",
-            example: "Cette phrase utilise le mot «indigo» de façon naturelle."
+            definition: "Indigo : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot indigo dans une phrase descriptive ordinaire."
         },
         "indéfectible": {
-            definition: "Une brève définition de «indéfectible» en français.",
-            example: "Cette phrase utilise le mot «indéfectible» de façon naturelle."
+            definition: "Indéfectible : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot indéfectible dans une phrase descriptive ordinaire."
         },
         "indélébile": {
-            definition: "Une brève définition de «indélébile» en français.",
-            example: "Cette phrase utilise le mot «indélébile» de façon naturelle."
+            definition: "Indélébile : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot indélébile dans une phrase descriptive ordinaire."
         },
         "inedito": {
             definition: "Pas encore rendu public ; non publié sous format imprimé ou numérique.",
@@ -7219,196 +7219,196 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "La forteresse a été construite sur une falaise inexpugnable."
         },
         "infime": {
-            definition: "Une brève définition de «infime» en français.",
-            example: "Cette phrase utilise le mot «infime» de façon naturelle."
+            definition: "Infime : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot infime dans une phrase descriptive ordinaire."
         },
         "innovant": {
-            definition: "Une brève définition de «innovant» en français.",
-            example: "Cette phrase utilise le mot «innovant» de façon naturelle."
+            definition: "Innovant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot innovant dans une phrase descriptive ordinaire."
         },
         "inquebrantable": {
             definition: "Fixe ou résolu ; ne vacille pas et n'hésite pas.",
             example: "Elle a montré un soutien indéfectible à son amie pendant la crise."
         },
         "insigne": {
-            definition: "Une brève définition de «insigne» en français.",
-            example: "Cette phrase utilise le mot «insigne» de façon naturelle."
+            definition: "Insigne : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot insigne dans une phrase descriptive ordinaire."
         },
         "insignifiant": {
-            definition: "Une brève définition de «insignifiant» en français.",
-            example: "Cette phrase utilise le mot «insignifiant» de façon naturelle."
+            definition: "Insignifiant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot insignifiant dans une phrase descriptive ordinaire."
         },
         "insondable": {
-            definition: "Une brève définition de «insondable» en français.",
-            example: "Cette phrase utilise le mot «insondable» de façon naturelle."
+            definition: "Insondable : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot insondable dans une phrase descriptive ordinaire."
         },
         "insoupçonné": {
-            definition: "Une brève définition de «insoupçonné» en français.",
-            example: "Cette phrase utilise le mot «insoupçonné» de façon naturelle."
+            definition: "Qui est insoupçonné ou qui ressent insoupçonné.",
+            example: "On peut utiliser le mot insoupçonné dans une phrase descriptive ordinaire."
         },
         "inspiré": {
-            definition: "Une brève définition de «inspiré» en français.",
-            example: "Cette phrase utilise le mot «inspiré» de façon naturelle."
+            definition: "Qui est inspiré ou qui ressent inspiré.",
+            example: "On peut utiliser le mot inspiré dans une phrase descriptive ordinaire."
         },
         "integro": {
             definition: "La qualité d'être honnête et d'avoir des principes moraux solides.",
             example: "C'est une personne d'une grande intégrité qui tient toujours sa parole."
         },
         "intense": {
-            definition: "Une brève définition de «intense» en français.",
-            example: "Cette phrase utilise le mot «intense» de façon naturelle."
+            definition: "Intense : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot intense dans une phrase descriptive ordinaire."
         },
         "interminable": {
-            definition: "Une brève définition de «interminable» en français.",
-            example: "Cette phrase utilise le mot «interminable» de façon naturelle."
+            definition: "Interminable : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot interminable dans une phrase descriptive ordinaire."
         },
         "intrépide": {
-            definition: "Une brève définition de «intrépide» en français.",
-            example: "Cette phrase utilise le mot «intrépide» de façon naturelle."
+            definition: "Intrépide : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot intrépide dans une phrase descriptive ordinaire."
         },
         "intègre": {
-            definition: "Une brève définition de «intègre» en français.",
-            example: "Cette phrase utilise le mot «intègre» de façon naturelle."
+            definition: "Intègre : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot intègre dans une phrase descriptive ordinaire."
         },
         "intégrité": {
-            definition: "Une brève définition de «intégrité» en français.",
-            example: "Cette phrase utilise le mot «intégrité» de façon naturelle."
+            definition: "Qui est intégrité ou qui ressent intégrité.",
+            example: "On peut utiliser le mot intégrité dans une phrase descriptive ordinaire."
         },
         "invincible": {
             definition: "Too powerful to be defeated or overcome.",
             example: "The team's defense seemed invincible during the championship."
         },
         "inébranlable": {
-            definition: "Une brève définition de «inébranlable» en français.",
-            example: "Cette phrase utilise le mot «inébranlable» de façon naturelle."
+            definition: "Inébranlable : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot inébranlable dans une phrase descriptive ordinaire."
         },
         "inédit": {
-            definition: "Une brève définition de «inédit» en français.",
-            example: "Cette phrase utilise le mot «inédit» de façon naturelle."
+            definition: "Inédit : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot inédit dans une phrase descriptive ordinaire."
         },
         "irisante": {
-            definition: "Une brève définition de «irisante» en français.",
-            example: "Cette phrase utilise le mot «irisante» de façon naturelle."
+            definition: "Irisante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot irisante dans une phrase descriptive ordinaire."
         },
         "irreverent": {
             definition: "Showing a lack of respect for people or things that are usually taken seriously.",
             example: "His irreverent humor sometimes offended traditionalists."
         },
         "irrésistible": {
-            definition: "Une brève définition de «irrésistible» en français.",
-            example: "Cette phrase utilise le mot «irrésistible» de façon naturelle."
+            definition: "Irrésistible : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot irrésistible dans une phrase descriptive ordinaire."
         },
         "irrévérencieux": {
-            definition: "Une brève définition de «irrévérencieux» en français.",
-            example: "Cette phrase utilise le mot «irrévérencieux» de façon naturelle."
+            definition: "Irrévérencieux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot irrévérencieux dans une phrase descriptive ordinaire."
         },
         "jaunâtre": {
-            definition: "Une brève définition de «jaunâtre» en français.",
-            example: "Cette phrase utilise le mot «jaunâtre» de façon naturelle."
+            definition: "Jaunâtre : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot jaunâtre dans une phrase descriptive ordinaire."
         },
         "jeune": {
-            definition: "Une brève définition de «jeune» en français.",
-            example: "Cette phrase utilise le mot «jeune» de façon naturelle."
+            definition: "Jeune : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot jeune dans une phrase descriptive ordinaire."
         },
         "joli": {
-            definition: "Une brève définition de «joli» en français.",
-            example: "Cette phrase utilise le mot «joli» de façon naturelle."
+            definition: "Joli : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot joli dans une phrase descriptive ordinaire."
         },
         "jolie": {
-            definition: "Une brève définition de «jolie» en français.",
-            example: "Cette phrase utilise le mot «jolie» de façon naturelle."
+            definition: "Jolie : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot jolie dans une phrase descriptive ordinaire."
         },
         "judicieuse": {
-            definition: "Une brève définition de «judicieuse» en français.",
-            example: "Cette phrase utilise le mot «judicieuse» de façon naturelle."
+            definition: "Judicieuse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot judicieuse dans une phrase descriptive ordinaire."
         },
         "laborieux": {
-            definition: "Une brève définition de «laborieux» en français.",
-            example: "Cette phrase utilise le mot «laborieux» de façon naturelle."
+            definition: "Laborieux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot laborieux dans une phrase descriptive ordinaire."
         },
         "large": {
             definition: "D'une taille, d'une étendue ou d'une capacité considérable.",
             example: "Ils vivent dans une grande maison avec un beau jardin."
         },
         "lente": {
-            definition: "Une brève définition de «lente» en français.",
-            example: "Cette phrase utilise le mot «lente» de façon naturelle."
+            definition: "Lente : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot lente dans une phrase descriptive ordinaire."
         },
         "letargico": {
             definition: "Affecté par la léthargie ; léthargique et apathique.",
             example: "Il se sentait léthargique après avoir mangé un déjeuner copieux et lourd."
         },
         "limpide": {
-            definition: "Une brève définition de «limpide» en français.",
-            example: "Cette phrase utilise le mot «limpide» de façon naturelle."
+            definition: "Limpide : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot limpide dans une phrase descriptive ordinaire."
         },
         "long": {
-            definition: "Une brève définition de «long» en français.",
-            example: "Cette phrase utilise le mot «long» de façon naturelle."
+            definition: "Long : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot long dans une phrase descriptive ordinaire."
         },
         "longue": {
-            definition: "Une brève définition de «longue» en français.",
-            example: "Cette phrase utilise le mot «longue» de façon naturelle."
+            definition: "Longue : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot longue dans une phrase descriptive ordinaire."
         },
         "longuet": {
-            definition: "Une brève définition de «longuet» en français.",
-            example: "Cette phrase utilise le mot «longuet» de façon naturelle."
+            definition: "Longuet : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot longuet dans une phrase descriptive ordinaire."
         },
         "lourd": {
-            definition: "Une brève définition de «lourd» en français.",
-            example: "Cette phrase utilise le mot «lourd» de façon naturelle."
+            definition: "Lourd : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot lourd dans une phrase descriptive ordinaire."
         },
         "lucid": {
             definition: "Expressed clearly; easy to understand.",
             example: "Her explanation was lucid and clarified the complex issue."
         },
         "lucide": {
-            definition: "Une brève définition de «lucide» en français.",
-            example: "Cette phrase utilise le mot «lucide» de façon naturelle."
+            definition: "Lucide : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot lucide dans une phrase descriptive ordinaire."
         },
         "lumínica": {
             definition: "Plein de ou diffusant de la lumière ; brillant ou éclatant, surtout dans le noir.",
             example: "Les méduses étaient lumineuses, éclairant l'eau sombre de l'océan."
         },
         "luxuriante": {
-            definition: "Une brève définition de «luxuriante» en français.",
-            example: "Cette phrase utilise le mot «luxuriante» de façon naturelle."
+            definition: "Luxuriante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot luxuriante dans une phrase descriptive ordinaire."
         },
         "lénifiante": {
-            definition: "Une brève définition de «lénifiante» en français.",
-            example: "Cette phrase utilise le mot «lénifiante» de façon naturelle."
+            definition: "Lénifiante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot lénifiante dans une phrase descriptive ordinaire."
         },
         "magistrale": {
-            definition: "Une brève définition de «magistrale» en français.",
-            example: "Cette phrase utilise le mot «magistrale» de façon naturelle."
+            definition: "Magistrale : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot magistrale dans une phrase descriptive ordinaire."
         },
         "magnanimo": {
             definition: "Généreux ou indulgent, surtout envers un rival ou une personne moins puissante.",
             example: "Il a été magnanime d'admettre son erreur publiquement."
         },
         "magnifique": {
-            definition: "Une brève définition de «magnifique» en français.",
-            example: "Cette phrase utilise le mot «magnifique» de façon naturelle."
+            definition: "Magnifique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot magnifique dans une phrase descriptive ordinaire."
         },
         "majestueuse": {
-            definition: "Une brève définition de «majestueuse» en français.",
-            example: "Cette phrase utilise le mot «majestueuse» de façon naturelle."
+            definition: "Majestueuse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot majestueuse dans une phrase descriptive ordinaire."
         },
         "majestueux": {
-            definition: "Une brève définition de «majestueux» en français.",
-            example: "Cette phrase utilise le mot «majestueux» de façon naturelle."
+            definition: "Majestueux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot majestueux dans une phrase descriptive ordinaire."
         },
         "manifesto": {
             definition: "Une déclaration publique de politique et d'objectifs.",
             example: "Le parti politique a publié son manifeste électoral hier."
         },
         "marginal": {
-            definition: "Une brève définition de «marginal» en français.",
-            example: "Cette phrase utilise le mot «marginal» de façon naturelle."
+            definition: "Marginal : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot marginal dans une phrase descriptive ordinaire."
         },
         "massive": {
-            definition: "Une brève définition de «massive» en français.",
-            example: "Cette phrase utilise le mot «massive» de façon naturelle."
+            definition: "Massive : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot massive dans une phrase descriptive ordinaire."
         },
         "matiz": {
             definition: "Une différence subtile ou une nuance de sens, d'expression ou de couleur.",
@@ -7419,20 +7419,20 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Les bactéries sont des organismes microscopiques que l'on trouve partout."
         },
         "mince": {
-            definition: "Une brève définition de «mince» en français.",
-            example: "Cette phrase utilise le mot «mince» de façon naturelle."
+            definition: "Mince : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot mince dans une phrase descriptive ordinaire."
         },
         "mindfulness": {
             definition: "La práctica de la atención plena, estar presente sin juzgar.",
             example: "La atención plena diaria le ayudó a manejar su estrés."
         },
         "minime": {
-            definition: "Une brève définition de «minime» en français.",
-            example: "Cette phrase utilise le mot «minime» de façon naturelle."
+            definition: "Minime : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot minime dans une phrase descriptive ordinaire."
         },
         "minimiser": {
-            definition: "Une brève définition de «minimiser» en français.",
-            example: "Cette phrase utilise le mot «minimiser» de façon naturelle."
+            definition: "Minimiser : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot minimiser dans une phrase descriptive ordinaire."
         },
         "minimum": {
             definition: "The least or smallest amount or quantity possible or permissible.",
@@ -7451,12 +7451,12 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Il a eu une expérience mystique en méditant dans la forêt."
         },
         "modeste": {
-            definition: "Une brève définition de «modeste» en français.",
-            example: "Cette phrase utilise le mot «modeste» de façon naturelle."
+            definition: "Modeste : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot modeste dans une phrase descriptive ordinaire."
         },
         "monacal": {
-            definition: "Une brève définition de «monacal» en français.",
-            example: "Cette phrase utilise le mot «monacal» de façon naturelle."
+            definition: "Monacal : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot monacal dans une phrase descriptive ordinaire."
         },
         "monologue": {
             definition: "A long speech by one person, often in a play or performance.",
@@ -7471,96 +7471,96 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Her upbeat mood made the meeting more pleasant."
         },
         "morte": {
-            definition: "Une brève définition de «morte» en français.",
-            example: "Cette phrase utilise le mot «morte» de façon naturelle."
+            definition: "Morte : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot morte dans une phrase descriptive ordinaire."
         },
         "moussant": {
-            definition: "Une brève définition de «moussant» en français.",
-            example: "Cette phrase utilise le mot «moussant» de façon naturelle."
+            definition: "Moussant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot moussant dans une phrase descriptive ordinaire."
         },
         "mouvementé": {
-            definition: "Une brève définition de «mouvementé» en français.",
-            example: "Cette phrase utilise le mot «mouvementé» de façon naturelle."
+            definition: "Qui est mouvementé ou qui ressent mouvementé.",
+            example: "On peut utiliser le mot mouvementé dans une phrase descriptive ordinaire."
         },
         "mystique": {
-            definition: "Une brève définition de «mystique» en français.",
-            example: "Cette phrase utilise le mot «mystique» de façon naturelle."
+            definition: "Mystique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot mystique dans une phrase descriptive ordinaire."
         },
         "mystérieux": {
-            definition: "Une brève définition de «mystérieux» en français.",
-            example: "Cette phrase utilise le mot «mystérieux» de façon naturelle."
+            definition: "Mystérieux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot mystérieux dans une phrase descriptive ordinaire."
         },
         "médiéval": {
-            definition: "Une brève définition de «médiéval» en français.",
-            example: "Cette phrase utilise le mot «médiéval» de façon naturelle."
+            definition: "Médiéval : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot médiéval dans une phrase descriptive ordinaire."
         },
         "mélodieuse": {
-            definition: "Une brève définition de «mélodieuse» en français.",
-            example: "Cette phrase utilise le mot «mélodieuse» de façon naturelle."
+            definition: "Mélodieuse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot mélodieuse dans une phrase descriptive ordinaire."
         },
         "méritant": {
-            definition: "Une brève définition de «méritant» en français.",
-            example: "Cette phrase utilise le mot «méritant» de façon naturelle."
+            definition: "Méritant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot méritant dans une phrase descriptive ordinaire."
         },
         "nase": {
-            definition: "Une brève définition de «nase» en français.",
-            example: "Cette phrase utilise le mot «nase» de façon naturelle."
+            definition: "Nase : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot nase dans une phrase descriptive ordinaire."
         },
         "net": {
-            definition: "Une brève définition de «net» en français.",
-            example: "Cette phrase utilise le mot «net» de façon naturelle."
+            definition: "Net : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot net dans une phrase descriptive ordinaire."
         },
         "noble": {
-            definition: "Une brève définition de «noble» en français.",
-            example: "Cette phrase utilise le mot «noble» de façon naturelle."
+            definition: "Noble : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot noble dans une phrase descriptive ordinaire."
         },
         "novateur": {
-            definition: "Une brève définition de «novateur» en français.",
-            example: "Cette phrase utilise le mot «novateur» de façon naturelle."
+            definition: "Novateur : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot novateur dans une phrase descriptive ordinaire."
         },
         "obligé": {
-            definition: "Une brève définition de «obligé» en français.",
-            example: "Cette phrase utilise le mot «obligé» de façon naturelle."
+            definition: "Qui est obligé ou qui ressent obligé.",
+            example: "On peut utiliser le mot obligé dans une phrase descriptive ordinaire."
         },
         "obsoleto": {
             definition: "Plus produit ni utilisé ; démodé.",
             example: "Les machines à écrire sont devenues largement obsolètes à l'ère des ordinateurs."
         },
         "obséquieux": {
-            definition: "Une brève définition de «obséquieux» en français.",
-            example: "Cette phrase utilise le mot «obséquieux» de façon naturelle."
+            definition: "Obséquieux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot obséquieux dans une phrase descriptive ordinaire."
         },
         "omnipresente": {
             definition: "Largement ou constamment rencontré ; commun ou répandu.",
             example: "La peur de l'échec est souvent omniprésente dans les environnements à enjeux élevés."
         },
         "omniprésent": {
-            definition: "Une brève définition de «omniprésent» en français.",
-            example: "Cette phrase utilise le mot «omniprésent» de façon naturelle."
+            definition: "Omniprésent : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot omniprésent dans une phrase descriptive ordinaire."
         },
         "omniprésente": {
-            definition: "Une brève définition de «omniprésente» en français.",
-            example: "Cette phrase utilise le mot «omniprésente» de façon naturelle."
+            definition: "Omniprésente : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot omniprésente dans une phrase descriptive ordinaire."
         },
         "omnisciente": {
             definition: "Connaissant tout ; ayant une conscience ou une vision infinie.",
             example: "Le narrateur de l'histoire était omniscient, connaissant les pensées de chaque personnage."
         },
         "opaque": {
-            definition: "Une brève définition de «opaque» en français.",
-            example: "Cette phrase utilise le mot «opaque» de façon naturelle."
+            definition: "Opaque : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot opaque dans une phrase descriptive ordinaire."
         },
         "oppressant": {
-            definition: "Une brève définition de «oppressant» en français.",
-            example: "Cette phrase utilise le mot «oppressant» de façon naturelle."
+            definition: "Oppressant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot oppressant dans une phrase descriptive ordinaire."
         },
         "orgueilleux": {
-            definition: "Une brève définition de «orgueilleux» en français.",
-            example: "Cette phrase utilise le mot «orgueilleux» de façon naturelle."
+            definition: "Orgueilleux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot orgueilleux dans une phrase descriptive ordinaire."
         },
         "original": {
-            definition: "Une brève définition de «original» en français.",
-            example: "Cette phrase utilise le mot «original» de façon naturelle."
+            definition: "Original : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot original dans une phrase descriptive ordinaire."
         },
         "ornamental": {
             definition: "Servant d'ornement ; décoratif.",
@@ -7571,28 +7571,28 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Le ventilateur oscillant a gardé la pièce fraîche pendant la chaleur de l'été."
         },
         "ouaté": {
-            definition: "Une brève définition de «ouaté» en français.",
-            example: "Cette phrase utilise le mot «ouaté» de façon naturelle."
+            definition: "Qui est ouaté ou qui ressent ouaté.",
+            example: "On peut utiliser le mot ouaté dans une phrase descriptive ordinaire."
         },
         "panoramique": {
-            definition: "Une brève définition de «panoramique» en français.",
-            example: "Cette phrase utilise le mot «panoramique» de façon naturelle."
+            definition: "Panoramique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot panoramique dans une phrase descriptive ordinaire."
         },
         "parfumée": {
-            definition: "Une brève définition de «parfumée» en français.",
-            example: "Cette phrase utilise le mot «parfumée» de façon naturelle."
+            definition: "Qui est parfumée ou qui ressent parfumée.",
+            example: "On peut utiliser le mot parfumée dans une phrase descriptive ordinaire."
         },
         "passé": {
-            definition: "Une brève définition de «passé» en français.",
-            example: "Cette phrase utilise le mot «passé» de façon naturelle."
+            definition: "Qui est passé ou qui ressent passé.",
+            example: "On peut utiliser le mot passé dans une phrase descriptive ordinaire."
         },
         "patriot": {
             definition: "A person who vigorously supports their country.",
             example: "The patriot was honored for his service to the nation."
         },
         "patriote": {
-            definition: "Une brève définition de «patriote» en français.",
-            example: "Cette phrase utilise le mot «patriote» de façon naturelle."
+            definition: "Patriote : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot patriote dans une phrase descriptive ordinaire."
         },
         "pavorosa": {
             definition: "Provoquant ou impliquant une grande souffrance, de la peur ou du malheur.",
@@ -7611,48 +7611,48 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Viajar le dio una nueva perspectiva sobre la vida."
         },
         "perspicace": {
-            definition: "Une brève définition de «perspicace» en français.",
-            example: "Cette phrase utilise le mot «perspicace» de façon naturelle."
+            definition: "Perspicace : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot perspicace dans une phrase descriptive ordinaire."
         },
         "perçante": {
-            definition: "Une brève définition de «perçante» en français.",
-            example: "Cette phrase utilise le mot «perçante» de façon naturelle."
+            definition: "Perçante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot perçante dans une phrase descriptive ordinaire."
         },
         "pesant": {
-            definition: "Une brève définition de «pesant» en français.",
-            example: "Cette phrase utilise le mot «pesant» de façon naturelle."
+            definition: "Pesant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot pesant dans une phrase descriptive ordinaire."
         },
         "pionnier": {
-            definition: "Une brève définition de «pionnier» en français.",
-            example: "Cette phrase utilise le mot «pionnier» de façon naturelle."
+            definition: "Pionnier : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot pionnier dans une phrase descriptive ordinaire."
         },
         "pittoresque": {
-            definition: "Une brève définition de «pittoresque» en français.",
-            example: "Cette phrase utilise le mot «pittoresque» de façon naturelle."
+            definition: "Pittoresque : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot pittoresque dans une phrase descriptive ordinaire."
         },
         "placate": {
             definition: "To calm or soothe someone, often by making concessions.",
             example: "He offered an apology to placate the upset customer."
         },
         "pleine": {
-            definition: "Une brève définition de «pleine» en français.",
-            example: "Cette phrase utilise le mot «pleine» de façon naturelle."
+            definition: "Pleine : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot pleine dans une phrase descriptive ordinaire."
         },
         "pliant": {
             definition: "Easily influenced or persuaded; flexible.",
             example: "The trainee's pliant attitude made him quick to learn new methods."
         },
         "plombant": {
-            definition: "Une brève définition de «plombant» en français.",
-            example: "Cette phrase utilise le mot «plombant» de façon naturelle."
+            definition: "Plombant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot plombant dans une phrase descriptive ordinaire."
         },
         "polyglot": {
             definition: "A person who knows and is able to use several languages.",
             example: "As a polyglot, she translated documents across multiple languages."
         },
         "polyglotte": {
-            definition: "Une brève définition de «polyglotte» en français.",
-            example: "Cette phrase utilise le mot «polyglotte» de façon naturelle."
+            definition: "Polyglotte : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot polyglotte dans une phrase descriptive ordinaire."
         },
         "positivity": {
             definition: "La tendencia a centrarse en los aspectos positivos y mantener una actitud optimista.",
@@ -7663,12 +7663,12 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Le potentat étranger est arrivé avec un entourage royal massif."
         },
         "prestigieuse": {
-            definition: "Une brève définition de «prestigieuse» en français.",
-            example: "Cette phrase utilise le mot «prestigieuse» de façon naturelle."
+            definition: "Prestigieuse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot prestigieuse dans une phrase descriptive ordinaire."
         },
         "prestigieux": {
-            definition: "Une brève définition de «prestigieux» en français.",
-            example: "Cette phrase utilise le mot «prestigieux» de façon naturelle."
+            definition: "Prestigieux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot prestigieux dans une phrase descriptive ordinaire."
         },
         "previsora": {
             definition: "Ayant ou montrant de l'imagination ou de la prévoyance ; capable de voir les objets lointains.",
@@ -7679,40 +7679,40 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The mayor will proclaim the new policy at the press conference."
         },
         "proclamer": {
-            definition: "Une brève définition de «proclamer» en français.",
-            example: "Cette phrase utilise le mot «proclamer» de façon naturelle."
+            definition: "Proclamer : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot proclamer dans une phrase descriptive ordinaire."
         },
         "prodigioso": {
             definition: "Remarquablement ou impressionnamment grand en étendue, en taille ou en degré.",
             example: "Elle a une mémoire prodigieuse pour les dates et les noms historiques."
         },
         "profond": {
-            definition: "Une brève définition de «profond» en français.",
-            example: "Cette phrase utilise le mot «profond» de façon naturelle."
+            definition: "Profond : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot profond dans une phrase descriptive ordinaire."
         },
         "proliferate": {
             definition: "Augmenter rapidement en nombre ; multiplier.",
             example: "Les applications pour smartphones continuent de proliférer à un rythme incroyable."
         },
         "propre": {
-            definition: "Une brève définition de «propre» en français.",
-            example: "Cette phrase utilise le mot «propre» de façon naturelle."
+            definition: "Propre : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot propre dans une phrase descriptive ordinaire."
         },
         "providencial": {
             definition: "Se produisant à un moment favorable ; divin ou chanceux.",
             example: "Son arrivée à ce moment-là a été vraiment providentielle."
         },
         "prépondérant": {
-            definition: "Une brève définition de «prépondérant» en français.",
-            example: "Cette phrase utilise le mot «prépondérant» de façon naturelle."
+            definition: "Prépondérant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot prépondérant dans une phrase descriptive ordinaire."
         },
         "prépondérante": {
-            definition: "Une brève définition de «prépondérante» en français.",
-            example: "Cette phrase utilise le mot «prépondérante» de façon naturelle."
+            definition: "Prépondérante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot prépondérante dans une phrase descriptive ordinaire."
         },
         "psychologie": {
-            definition: "Une brève définition de «psychologie» en français.",
-            example: "Cette phrase utilise le mot «psychologie» de façon naturelle."
+            definition: "Psychologie : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot psychologie dans une phrase descriptive ordinaire."
         },
         "psychology": {
             definition: "L'étude scientifique de l'esprit humain et de ses fonctions.",
@@ -7723,56 +7723,56 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "C'est une experte de premier plan dans le domaine des énergies renouvelables."
         },
         "pur": {
-            definition: "Une brève définition de «pur» en français.",
-            example: "Cette phrase utilise le mot «pur» de façon naturelle."
+            definition: "Pur : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot pur dans une phrase descriptive ordinaire."
         },
         "pénible": {
-            definition: "Une brève définition de «pénible» en français.",
-            example: "Cette phrase utilise le mot «pénible» de façon naturelle."
+            definition: "Pénible : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot pénible dans une phrase descriptive ordinaire."
         },
         "pétillant": {
-            definition: "Une brève définition de «pétillant» en français.",
-            example: "Cette phrase utilise le mot «pétillant» de façon naturelle."
+            definition: "Pétillant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot pétillant dans une phrase descriptive ordinaire."
         },
         "quixotic": {
             definition: "Extremely idealistic; unrealistic and impractical.",
             example: "His quixotic plan to save the city won admiration but little support."
         },
         "radieuse": {
-            definition: "Une brève définition de «radieuse» en français.",
-            example: "Cette phrase utilise le mot «radieuse» de façon naturelle."
+            definition: "Radieuse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot radieuse dans une phrase descriptive ordinaire."
         },
         "radieux": {
-            definition: "Une brève définition de «radieux» en français.",
-            example: "Cette phrase utilise le mot «radieux» de façon naturelle."
+            definition: "Radieux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot radieux dans une phrase descriptive ordinaire."
         },
         "rasante": {
             definition: "Toucher ou frapper légèrement quelque chose en passant ; brouter.",
             example: "La balle n'a laissé qu'une éraflure sur son épaule."
         },
         "rationnelle": {
-            definition: "Une brève définition de «rationnelle» en français.",
-            example: "Cette phrase utilise le mot «rationnelle» de façon naturelle."
+            definition: "Rationnelle : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot rationnelle dans une phrase descriptive ordinaire."
         },
         "rauque": {
-            definition: "Une brève définition de «rauque» en français.",
-            example: "Cette phrase utilise le mot «rauque» de façon naturelle."
+            definition: "Rauque : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot rauque dans une phrase descriptive ordinaire."
         },
         "ravenous": {
             definition: "Extremely hungry or voracious.",
             example: "After the hike, they were ravenous and ate quickly."
         },
         "ravissante": {
-            definition: "Une brève définition de «ravissante» en français.",
-            example: "Cette phrase utilise le mot «ravissante» de façon naturelle."
+            definition: "Ravissante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot ravissante dans une phrase descriptive ordinaire."
         },
         "redevable": {
-            definition: "Une brève définition de «redevable» en français.",
-            example: "Cette phrase utilise le mot «redevable» de façon naturelle."
+            definition: "Redevable : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot redevable dans une phrase descriptive ordinaire."
         },
         "redoutable": {
-            definition: "Une brève définition de «redoutable» en français.",
-            example: "Cette phrase utilise le mot «redoutable» de façon naturelle."
+            definition: "Redoutable : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot redoutable dans une phrase descriptive ordinaire."
         },
         "reflexivo": {
             definition: "Fournissant une réflexion ; relatif à une pensée profonde.",
@@ -7783,12 +7783,12 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Las relaciones saludables se basan en la confianza y la comunicación."
         },
         "religieux": {
-            definition: "Une brève définition de «religieux» en français.",
-            example: "Cette phrase utilise le mot «religieux» de façon naturelle."
+            definition: "Religieux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot religieux dans une phrase descriptive ordinaire."
         },
         "remarquable": {
-            definition: "Une brève définition de «remarquable» en français.",
-            example: "Cette phrase utilise le mot «remarquable» de façon naturelle."
+            definition: "Remarquable : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot remarquable dans une phrase descriptive ordinaire."
         },
         "remoto": {
             definition: "Éloigné ; distant dans l'espace, le temps ou la relation.",
@@ -7803,16 +7803,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Elle était resplendissante dans sa robe de soirée en soie."
         },
         "retentissant": {
-            definition: "Une brève définition de «retentissant» en français.",
-            example: "Cette phrase utilise le mot «retentissant» de façon naturelle."
+            definition: "Retentissant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot retentissant dans une phrase descriptive ordinaire."
         },
         "rhetoric": {
             definition: "The art of effective or persuasive speaking or writing.",
             example: "The politician's rhetoric was aimed at inspiring voters."
         },
         "rhétorique": {
-            definition: "Une brève définition de «rhétorique» en français.",
-            example: "Cette phrase utilise le mot «rhétorique» de façon naturelle."
+            definition: "Rhétorique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot rhétorique dans une phrase descriptive ordinaire."
         },
         "riguroso": {
             definition: "Extrêmement approfondi, exhaustif ou précis.",
@@ -7823,48 +7823,48 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Le chérubin était une petite figure ronde dans le tableau."
         },
         "réfuter": {
-            definition: "Une brève définition de «réfuter» en français.",
-            example: "Cette phrase utilise le mot «réfuter» de façon naturelle."
+            definition: "Réfuter : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot réfuter dans une phrase descriptive ordinaire."
         },
         "répudier": {
-            definition: "Une brève définition de «répudier» en français.",
-            example: "Cette phrase utilise le mot «répudier» de façon naturelle."
+            definition: "Répudier : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot répudier dans une phrase descriptive ordinaire."
         },
         "saisissant": {
-            definition: "Une brève définition de «saisissant» en français.",
-            example: "Cette phrase utilise le mot «saisissant» de façon naturelle."
+            definition: "Saisissant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot saisissant dans une phrase descriptive ordinaire."
         },
         "saisissante": {
-            definition: "Une brève définition de «saisissante» en français.",
-            example: "Cette phrase utilise le mot «saisissante» de façon naturelle."
+            definition: "Saisissante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot saisissante dans une phrase descriptive ordinaire."
         },
         "sale": {
-            definition: "Une brève définition de «sale» en français.",
-            example: "Cette phrase utilise le mot «sale» de façon naturelle."
+            definition: "Sale : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot sale dans une phrase descriptive ordinaire."
         },
         "salutaire": {
-            definition: "Une brève définition de «salutaire» en français.",
-            example: "Cette phrase utilise le mot «salutaire» de façon naturelle."
+            definition: "Salutaire : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot salutaire dans une phrase descriptive ordinaire."
         },
         "sceptique": {
-            definition: "Une brève définition de «sceptique» en français.",
-            example: "Cette phrase utilise le mot «sceptique» de façon naturelle."
+            definition: "Sceptique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot sceptique dans une phrase descriptive ordinaire."
         },
         "scintillante": {
-            definition: "Une brève définition de «scintillante» en français.",
-            example: "Cette phrase utilise le mot «scintillante» de façon naturelle."
+            definition: "Scintillante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot scintillante dans une phrase descriptive ordinaire."
         },
         "scrupuleux": {
-            definition: "Une brève définition de «scrupuleux» en français.",
-            example: "Cette phrase utilise le mot «scrupuleux» de façon naturelle."
+            definition: "Scrupuleux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot scrupuleux dans une phrase descriptive ordinaire."
         },
         "sepulcral": {
             definition: "Relatif à un tombeau ou à un enterrement ; lugubre et sombre.",
             example: "Un silence sépulcral remplissait la cathédrale abandonnée."
         },
         "serein": {
-            definition: "Une brève définition de «serein» en français.",
-            example: "Cette phrase utilise le mot «serein» de façon naturelle."
+            definition: "Serein : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot serein dans une phrase descriptive ordinaire."
         },
         "serendipitous": {
             definition: "Occurring or discovered by chance in a happy or beneficial way.",
@@ -7875,8 +7875,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Trouver ce livre rare dans le grenier a été un coup de sérendipité."
         },
         "serrée": {
-            definition: "Une brève définition de «serrée» en français.",
-            example: "Cette phrase utilise le mot «serrée» de façon naturelle."
+            definition: "Qui est serrée ou qui ressent serrée.",
+            example: "On peut utiliser le mot serrée dans une phrase descriptive ordinaire."
         },
         "sesgado": {
             definition: "Injustement préjugé pour ou contre quelqu'un ou quelque chose.",
@@ -7887,16 +7887,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "La demeure seigneuriale était entourée d'hectares de magnifiques jardins."
         },
         "sidérale": {
-            definition: "Une brève définition de «sidérale» en français.",
-            example: "Cette phrase utilise le mot «sidérale» de façon naturelle."
+            definition: "Sidérale : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot sidérale dans une phrase descriptive ordinaire."
         },
         "simbolico": {
             definition: "Servant de symbole ; représentant quelque chose d'autre.",
             example: "La colombe est symbolique de la paix et de l'espoir."
         },
         "simplifier": {
-            definition: "Une brève définition de «simplifier» en français.",
-            example: "Cette phrase utilise le mot «simplifier» de façon naturelle."
+            definition: "Simplifier : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot simplifier dans une phrase descriptive ordinaire."
         },
         "simplify": {
             definition: "To make something easier to understand or do.",
@@ -7911,56 +7911,56 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "La vue depuis le sommet de la montagne était absolument époustouflante."
         },
         "solennel": {
-            definition: "Une brève définition de «solennel» en français.",
-            example: "Cette phrase utilise le mot «solennel» de façon naturelle."
+            definition: "Solennel : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot solennel dans une phrase descriptive ordinaire."
         },
         "solide": {
-            definition: "Une brève définition de «solide» en français.",
-            example: "Cette phrase utilise le mot «solide» de façon naturelle."
+            definition: "Solide : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot solide dans une phrase descriptive ordinaire."
         },
         "somptueuse": {
-            definition: "Une brève définition de «somptueuse» en français.",
-            example: "Cette phrase utilise le mot «somptueuse» de façon naturelle."
+            definition: "Somptueuse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot somptueuse dans une phrase descriptive ordinaire."
         },
         "somptueux": {
-            definition: "Une brève définition de «somptueux» en français.",
-            example: "Cette phrase utilise le mot «somptueux» de façon naturelle."
+            definition: "Somptueux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot somptueux dans une phrase descriptive ordinaire."
         },
         "sophisme": {
-            definition: "Une brève définition de «sophisme» en français.",
-            example: "Cette phrase utilise le mot «sophisme» de façon naturelle."
+            definition: "Sophisme : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot sophisme dans une phrase descriptive ordinaire."
         },
         "sosegado": {
             definition: "Pas facilement contrarié ou excité ; calme et paisible.",
             example: "Le lac restait paisible malgré l'arrivée des nuages d'orage."
         },
         "spirituel": {
-            definition: "Une brève définition de «spirituel» en français.",
-            example: "Cette phrase utilise le mot «spirituel» de façon naturelle."
+            definition: "Spirituel : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot spirituel dans une phrase descriptive ordinaire."
         },
         "spontané": {
-            definition: "Une brève définition de «spontané» en français.",
-            example: "Cette phrase utilise le mot «spontané» de façon naturelle."
+            definition: "Qui est spontané ou qui ressent spontané.",
+            example: "On peut utiliser le mot spontané dans une phrase descriptive ordinaire."
         },
         "strident": {
-            definition: "Une brève définition de «strident» en français.",
-            example: "Cette phrase utilise le mot «strident» de façon naturelle."
+            definition: "Strident : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot strident dans une phrase descriptive ordinaire."
         },
         "studieux": {
-            definition: "Une brève définition de «studieux» en français.",
-            example: "Cette phrase utilise le mot «studieux» de façon naturelle."
+            definition: "Studieux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot studieux dans une phrase descriptive ordinaire."
         },
         "suave": {
-            definition: "Une brève définition de «suave» en français.",
-            example: "Cette phrase utilise le mot «suave» de façon naturelle."
+            definition: "Suave : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot suave dans une phrase descriptive ordinaire."
         },
         "subalterne": {
-            definition: "Une brève définition de «subalterne» en français.",
-            example: "Cette phrase utilise le mot «subalterne» de façon naturelle."
+            definition: "Subalterne : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot subalterne dans une phrase descriptive ordinaire."
         },
         "subtil": {
-            definition: "Une brève définition de «subtil» en français.",
-            example: "Cette phrase utilise le mot «subtil» de façon naturelle."
+            definition: "Subtil : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot subtil dans une phrase descriptive ordinaire."
         },
         "sustancial": {
             definition: "D'une importance, d'une taille ou d'une valeur considérable.",
@@ -7971,16 +7971,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Il y avait un changement subtil dans son ton qui indiquait qu'il mentait."
         },
         "séculaire": {
-            definition: "Une brève définition de «séculaire» en français.",
-            example: "Cette phrase utilise le mot «séculaire» de façon naturelle."
+            definition: "Séculaire : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot séculaire dans une phrase descriptive ordinaire."
         },
         "sépulcral": {
-            definition: "Une brève définition de «sépulcral» en français.",
-            example: "Cette phrase utilise le mot «sépulcral» de façon naturelle."
+            definition: "Sépulcral : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot sépulcral dans une phrase descriptive ordinaire."
         },
         "tamisée": {
-            definition: "Une brève définition de «tamisée» en français.",
-            example: "Cette phrase utilise le mot «tamisée» de façon naturelle."
+            definition: "Qui est tamisée ou qui ressent tamisée.",
+            example: "On peut utiliser le mot tamisée dans une phrase descriptive ordinaire."
         },
         "teenager": {
             definition: "A person aged between 13 and 19 years.",
@@ -7991,32 +7991,32 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "C'était un coureur tenace qui n'abandonnait jamais, même fatigué."
         },
         "tonitruant": {
-            definition: "Une brève définition de «tonitruant» en français.",
-            example: "Cette phrase utilise le mot «tonitruant» de façon naturelle."
+            definition: "Tonitruant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot tonitruant dans une phrase descriptive ordinaire."
         },
         "torrencial": {
             definition: "Tombant rapidement et en quantités copieuses ; coulant avec force.",
             example: "La pluie torrentielle a provoqué des inondations dans plusieurs parties de la ville."
         },
         "torrentielle": {
-            definition: "Une brève définition de «torrentielle» en français.",
-            example: "Cette phrase utilise le mot «torrentielle» de façon naturelle."
+            definition: "Torrentielle : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot torrentielle dans une phrase descriptive ordinaire."
         },
         "tortueux": {
-            definition: "Une brève définition de «tortueux» en français.",
-            example: "Cette phrase utilise le mot «tortueux» de façon naturelle."
+            definition: "Tortueux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot tortueux dans une phrase descriptive ordinaire."
         },
         "total": {
-            definition: "Une brève définition de «total» en français.",
-            example: "Cette phrase utilise le mot «total» de façon naturelle."
+            definition: "Total : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot total dans une phrase descriptive ordinaire."
         },
         "transcendant": {
-            definition: "Une brève définition de «transcendant» en français.",
-            example: "Cette phrase utilise le mot «transcendant» de façon naturelle."
+            definition: "Transcendant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot transcendant dans une phrase descriptive ordinaire."
         },
         "ténue": {
-            definition: "Une brève définition de «ténue» en français.",
-            example: "Cette phrase utilise le mot «ténue» de façon naturelle."
+            definition: "Ténue : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot ténue dans une phrase descriptive ordinaire."
         },
         "ubiquitous": {
             definition: "Present, appearing, or found everywhere.",
@@ -8031,20 +8031,20 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "He tended to understate the risks when discussing the venture."
         },
         "usé": {
-            definition: "Une brève définition de «usé» en français.",
-            example: "Cette phrase utilise le mot «usé» de façon naturelle."
+            definition: "Qui est usé ou qui ressent usé.",
+            example: "On peut utiliser le mot usé dans une phrase descriptive ordinaire."
         },
         "vacillante": {
-            definition: "Une brève définition de «vacillante» en français.",
-            example: "Cette phrase utilise le mot «vacillante» de façon naturelle."
+            definition: "Vacillante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot vacillante dans une phrase descriptive ordinaire."
         },
         "valeureux": {
-            definition: "Une brève définition de «valeureux» en français.",
-            example: "Cette phrase utilise le mot «valeureux» de façon naturelle."
+            definition: "Valeureux : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot valeureux dans une phrase descriptive ordinaire."
         },
         "vaste": {
-            definition: "Une brève définition de «vaste» en français.",
-            example: "Cette phrase utilise le mot «vaste» de façon naturelle."
+            definition: "Vaste : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot vaste dans une phrase descriptive ordinaire."
         },
         "veloz": {
             definition: "Se déplaçant ou capable de se déplacer à grande vitesse.",
@@ -8063,182 +8063,182 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Le bâtiment vétuste semblait pouvoir s'écrouler à tout moment."
         },
         "vibrante": {
-            definition: "Une brève définition de «vibrante» en français.",
-            example: "Cette phrase utilise le mot «vibrante» de façon naturelle."
+            definition: "Vibrante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot vibrante dans une phrase descriptive ordinaire."
         },
         "vide": {
-            definition: "Une brève définition de «vide» en français.",
-            example: "Cette phrase utilise le mot «vide» de façon naturelle."
+            definition: "Vide : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot vide dans une phrase descriptive ordinaire."
         },
         "vif": {
-            definition: "Une brève définition de «vif» en français.",
-            example: "Cette phrase utilise le mot «vif» de façon naturelle."
+            definition: "Vif : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot vif dans une phrase descriptive ordinaire."
         },
         "vigoureuse": {
-            definition: "Une brève définition de «vigoureuse» en français.",
-            example: "Cette phrase utilise le mot «vigoureuse» de façon naturelle."
+            definition: "Vigoureuse : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot vigoureuse dans une phrase descriptive ordinaire."
         },
         "violenta": {
             definition: "Utiliser ou impliquer une force physique destinée à blesser ou à tuer.",
             example: "La ville a été secouée par plusieurs manifestations violentes la semaine dernière."
         },
         "virtuose": {
-            definition: "Une brève définition de «virtuose» en français.",
-            example: "Cette phrase utilise le mot «virtuose» de façon naturelle."
+            definition: "Virtuose : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot virtuose dans une phrase descriptive ordinaire."
         },
         "vivacious": {
             definition: "Attractively lively and animated.",
             example: "Her vivacious personality lit up the room at the party."
         },
         "vive": {
-            definition: "Une brève définition de «vive» en français.",
-            example: "Cette phrase utilise le mot «vive» de façon naturelle."
+            definition: "Vive : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot vive dans une phrase descriptive ordinaire."
         },
         "vrai": {
-            definition: "Une brève définition de «vrai» en français.",
-            example: "Cette phrase utilise le mot «vrai» de façon naturelle."
+            definition: "Vrai : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot vrai dans une phrase descriptive ordinaire."
         },
         "vraie": {
-            definition: "Une brève définition de «vraie» en français.",
-            example: "Cette phrase utilise le mot «vraie» de façon naturelle."
+            definition: "Vraie : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot vraie dans une phrase descriptive ordinaire."
         },
         "vénérable": {
-            definition: "Une brève définition de «vénérable» en français.",
-            example: "Cette phrase utilise le mot «vénérable» de façon naturelle."
+            definition: "Vénérable : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot vénérable dans une phrase descriptive ordinaire."
         },
         "véridique": {
-            definition: "Une brève définition de «véridique» en français.",
-            example: "Cette phrase utilise le mot «véridique» de façon naturelle."
+            definition: "Véridique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot véridique dans une phrase descriptive ordinaire."
         },
         "véritable": {
-            definition: "Une brève définition de «véritable» en français.",
-            example: "Cette phrase utilise le mot «véritable» de façon naturelle."
+            definition: "Véritable : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot véritable dans une phrase descriptive ordinaire."
         },
         "vétuste": {
-            definition: "Une brève définition de «vétuste» en français.",
-            example: "Cette phrase utilise le mot «vétuste» de façon naturelle."
+            definition: "Vétuste : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot vétuste dans une phrase descriptive ordinaire."
         },
         "vétéran": {
-            definition: "Une brève définition de «vétéran» en français.",
-            example: "Cette phrase utilise le mot «vétéran» de façon naturelle."
+            definition: "Vétéran : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot vétéran dans une phrase descriptive ordinaire."
         },
         "wise": {
             definition: "Ayant ou montrant de l'expérience, des connaissances et un bon jugement.",
             example: "Choisir d'épargner pour l'avenir était une décision judicieuse."
         },
         "zénithale": {
-            definition: "Une brève définition de «zénithale» en français.",
-            example: "Cette phrase utilise le mot «zénithale» de façon naturelle."
+            definition: "Zénithale : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot zénithale dans une phrase descriptive ordinaire."
         },
         "éblouissant": {
-            definition: "Une brève définition de «éblouissant» en français.",
-            example: "Cette phrase utilise le mot «éblouissant» de façon naturelle."
+            definition: "Éblouissant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot éblouissant dans une phrase descriptive ordinaire."
         },
         "éblouissante": {
-            definition: "Une brève définition de «éblouissante» en français.",
-            example: "Cette phrase utilise le mot «éblouissante» de façon naturelle."
+            definition: "Éblouissante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot éblouissante dans une phrase descriptive ordinaire."
         },
         "éclatante": {
-            definition: "Une brève définition de «éclatante» en français.",
-            example: "Cette phrase utilise le mot «éclatante» de façon naturelle."
+            definition: "Éclatante : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot éclatante dans une phrase descriptive ordinaire."
         },
         "éloquent": {
-            definition: "Une brève définition de «éloquent» en français.",
-            example: "Cette phrase utilise le mot «éloquent» de façon naturelle."
+            definition: "Éloquent : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot éloquent dans une phrase descriptive ordinaire."
         },
         "émérite": {
-            definition: "Une brève définition de «émérite» en français.",
-            example: "Cette phrase utilise le mot «émérite» de façon naturelle."
+            definition: "Émérite : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot émérite dans une phrase descriptive ordinaire."
         },
         "éphémère": {
-            definition: "Une brève définition de «éphémère» en français.",
-            example: "Cette phrase utilise le mot «éphémère» de façon naturelle."
+            definition: "Éphémère : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot éphémère dans une phrase descriptive ordinaire."
         },
         "épique": {
-            definition: "Une brève définition de «épique» en français.",
-            example: "Cette phrase utilise le mot «épique» de façon naturelle."
+            definition: "Épique : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot épique dans une phrase descriptive ordinaire."
         },
         "éprouvant": {
-            definition: "Une brève définition de «éprouvant» en français.",
-            example: "Cette phrase utilise le mot «éprouvant» de façon naturelle."
+            definition: "Éprouvant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot éprouvant dans une phrase descriptive ordinaire."
         },
         "éreintant": {
-            definition: "Une brève définition de «éreintant» en français.",
-            example: "Cette phrase utilise le mot «éreintant» de façon naturelle."
+            definition: "Éreintant : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot éreintant dans une phrase descriptive ordinaire."
         },
         "étroit": {
-            definition: "Une brève définition de «étroit» en français.",
-            example: "Cette phrase utilise le mot «étroit» de façon naturelle."
+            definition: "Étroit : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot étroit dans une phrase descriptive ordinaire."
         },
         "évanescente": {
-            definition: "Une brève définition de «évanescente» en français.",
-            example: "Cette phrase utilise le mot «évanescente» de façon naturelle."
+            definition: "Évanescente : un terme courant en français avec un sens simple.",
+            example: "On peut utiliser le mot évanescente dans une phrase descriptive ordinaire."
         },
     },
     es: {
         "abdicar": {
-            definition: "Una breve definición de 'abdicar' en español.",
-            example: "Esta oración usa la palabra 'abdicar' de forma natural."
+            definition: "Abdicar: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo abdicar puede usarse en un contexto normal."
         },
         "abdicate": {
             definition: "Renunciar al trono; faltar al cumplimiento de un deber.",
             example: "El rey decidió abdicar en favor de su hijo."
         },
         "abolir": {
-            definition: "Una breve definición de 'abolir' en español.",
-            example: "Esta oración usa la palabra 'abolir' de forma natural."
+            definition: "Abolir: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo abolir puede usarse en un contexto normal."
         },
         "abrumadora": {
-            definition: "Una breve definición de 'abrumadora' en español.",
-            example: "Esta oración usa la palabra 'abrumadora' de forma natural."
+            definition: "Abrumadora: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo abrumadora puede usarse en un contexto normal."
         },
         "abrupto": {
-            definition: "Una breve definición de 'abrupto' en español.",
-            example: "Esta oración usa la palabra 'abrupto' de forma natural."
+            definition: "Abrupto: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo abrupto puede usarse en un contexto normal."
         },
         "absoluto": {
-            definition: "Una breve definición de 'absoluto' en español.",
-            example: "Esta oración usa la palabra 'absoluto' de forma natural."
+            definition: "Absoluto: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo absoluto puede usarse en un contexto normal."
         },
         "acaudalado": {
-            definition: "Una breve definición de 'acaudalado' en español.",
-            example: "Esta oración usa la palabra 'acaudalado' de forma natural."
+            definition: "Que ha sido acaudalado o que tiene la cualidad de acaudalado.",
+            example: "La oración muestra cómo acaudalado puede usarse en un contexto normal."
         },
         "adolescente": {
-            definition: "Una breve definición de 'adolescente' en español.",
-            example: "Esta oración usa la palabra 'adolescente' de forma natural."
+            definition: "Adolescente: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo adolescente puede usarse en un contexto normal."
         },
         "aesthetic": {
             definition: "Relativo a la belleza o al gusto por ella.",
             example: "La nueva cafetería tiene una estética muy moderna y limpia."
         },
         "agotador": {
-            definition: "Una breve definición de 'agotador' en español.",
-            example: "Esta oración usa la palabra 'agotador' de forma natural."
+            definition: "Agotador: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo agotador puede usarse en un contexto normal."
         },
         "alentadora": {
-            definition: "Una breve definición de 'alentadora' en español.",
-            example: "Esta oración usa la palabra 'alentadora' de forma natural."
+            definition: "Alentadora: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo alentadora puede usarse en un contexto normal."
         },
         "alta": {
-            definition: "Una breve definición de 'alta' en español.",
-            example: "Esta oración usa la palabra 'alta' de forma natural."
+            definition: "Alta: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo alta puede usarse en un contexto normal."
         },
         "altivo": {
-            definition: "Una breve definición de 'altivo' en español.",
-            example: "Esta oración usa la palabra 'altivo' de forma natural."
+            definition: "Altivo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo altivo puede usarse en un contexto normal."
         },
         "alto": {
-            definition: "Una breve definición de 'alto' en español.",
-            example: "Esta oración usa la palabra 'alto' de forma natural."
+            definition: "Alto: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo alto puede usarse en un contexto normal."
         },
         "altruista": {
             definition: "Que muestra un interés desinteresado por los demás.",
             example: "Sus actos altruistas ayudaron a mucha gente en la comunidad local."
         },
         "ambiguo": {
-            definition: "Una breve definición de 'ambiguo' en español.",
-            example: "Esta oración usa la palabra 'ambiguo' de forma natural."
+            definition: "Ambiguo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo ambiguo puede usarse en un contexto normal."
         },
         "amortiguado": {
             definition: "No fuerte por estar obstruido de alguna forma; sordo.",
@@ -8253,152 +8253,152 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Visitaron su casa ancestral en el campo."
         },
         "ancestro": {
-            definition: "Una breve definición de 'ancestro' en español.",
-            example: "Esta oración usa la palabra 'ancestro' de forma natural."
+            definition: "Ancestro: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo ancestro puede usarse en un contexto normal."
         },
         "angelical": {
             definition: "Relativo a los ángeles; excepcionalmente bello o amable.",
             example: "El niño tenía una cara angelical que derretía el corazón de todos."
         },
         "angosto": {
-            definition: "Una breve definición de 'angosto' en español.",
-            example: "Esta oración usa la palabra 'angosto' de forma natural."
+            definition: "Angosto: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo angosto puede usarse en un contexto normal."
         },
         "aniquilar": {
-            definition: "Una breve definición de 'aniquilar' en español.",
-            example: "Esta oración usa la palabra 'aniquilar' de forma natural."
+            definition: "Aniquilar: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo aniquilar puede usarse en un contexto normal."
         },
         "anonimato": {
-            definition: "Una breve definición de 'anonimato' en español.",
-            example: "Esta oración usa la palabra 'anonimato' de forma natural."
+            definition: "Anonimato: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo anonimato puede usarse en un contexto normal."
         },
         "anonymity": {
             definition: "La condición de ser anónimo; nombre desconocido.",
             example: "El informante pidió anonimato total por su seguridad."
         },
         "antiguo": {
-            definition: "Una breve definición de 'antiguo' en español.",
-            example: "Esta oración usa la palabra 'antiguo' de forma natural."
+            definition: "Muy viejo o que pertenece al pasado.",
+            example: "La oración muestra cómo antiguo puede usarse en un contexto normal."
         },
         "antonym": {
             definition: "Palabra con un significado opuesto al de otra.",
             example: "'Caliente' es el antónimo de 'frío'."
         },
         "antónimo": {
-            definition: "Una breve definición de 'antónimo' en español.",
-            example: "Esta oración usa la palabra 'antónimo' de forma natural."
+            definition: "Antónimo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo antónimo puede usarse en un contexto normal."
         },
         "apacible": {
-            definition: "Una breve definición de 'apacible' en español.",
-            example: "Esta oración usa la palabra 'apacible' de forma natural."
+            definition: "Apacible: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo apacible puede usarse en un contexto normal."
         },
         "arcano": {
             definition: "Entendido por pocos; misterioso o secreto.",
             example: "Pasó años estudiando rituales arcanos de textos antiguos."
         },
         "arduo": {
-            definition: "Una breve definición de 'arduo' en español.",
-            example: "Esta oración usa la palabra 'arduo' de forma natural."
+            definition: "Muy difícil o que requiere mucho esfuerzo.",
+            example: "La oración muestra cómo arduo puede usarse en un contexto normal."
         },
         "armonioso": {
             definition: "Que forma un todo agradable o consistente; melodioso.",
             example: "Los colores del cuarto se combinaron para crear una atmósfera armoniosa."
         },
         "articulado": {
-            definition: "Una breve definición de 'articulado' en español.",
-            example: "Esta oración usa la palabra 'articulado' de forma natural."
+            definition: "Que ha sido articulado o que tiene la cualidad de articulado.",
+            example: "La oración muestra cómo articulado puede usarse en un contexto normal."
         },
         "artificial": {
             definition: "Hecho por seres humanos y no por la naturaleza.",
             example: "El museo usó luz artificial para preservar los cuadros delicados."
         },
         "asfixiante": {
-            definition: "Una breve definición de 'asfixiante' en español.",
-            example: "Esta oración usa la palabra 'asfixiante' de forma natural."
+            definition: "Asfixiante: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo asfixiante puede usarse en un contexto normal."
         },
         "astrónomo": {
-            definition: "Una breve definición de 'astrónomo' en español.",
-            example: "Esta oración usa la palabra 'astrónomo' de forma natural."
+            definition: "Astrónomo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo astrónomo puede usarse en un contexto normal."
         },
         "astuto": {
-            definition: "Una breve definición de 'astuto' en español.",
-            example: "Esta oración usa la palabra 'astuto' de forma natural."
+            definition: "Astuto: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo astuto puede usarse en un contexto normal."
         },
         "aséptico": {
             definition: "Libre de contaminación por bacterias o virus dañinos.",
             example: "La cirugía se hizo en un entorno estrictamente aséptico."
         },
         "atento": {
-            definition: "Una breve definición de 'atento' en español.",
-            example: "Esta oración usa la palabra 'atento' de forma natural."
+            definition: "Atento: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo atento puede usarse en un contexto normal."
         },
         "austera": {
             definition: "Severo o estricto en el trato, actitud o apariencia.",
             example: "El monasterio tenía un comedor austero con bancos sencillos."
         },
         "aversión": {
-            definition: "Una breve definición de 'aversión' en español.",
-            example: "Esta oración usa la palabra 'aversión' de forma natural."
+            definition: "Acción, efecto o resultado relacionado con aver.",
+            example: "La oración muestra cómo aversión puede usarse en un contexto normal."
         },
         "azulada": {
-            definition: "Una breve definición de 'azulada' en español.",
-            example: "Esta oración usa la palabra 'azulada' de forma natural."
+            definition: "Que ha sido azulada o que tiene la cualidad de azulada.",
+            example: "La oración muestra cómo azulada puede usarse en un contexto normal."
         },
         "baja": {
-            definition: "Una breve definición de 'baja' en español.",
-            example: "Esta oración usa la palabra 'baja' de forma natural."
+            definition: "Baja: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo baja puede usarse en un contexto normal."
         },
         "bajo": {
-            definition: "Una breve definición de 'bajo' en español.",
-            example: "Esta oración usa la palabra 'bajo' de forma natural."
+            definition: "Bajo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo bajo puede usarse en un contexto normal."
         },
         "beautiful": {
             definition: "Que agrada a los sentidos o a la mente estéticamente.",
             example: "La puesta de sol sobre la montaña fue absolutamente hermosa."
         },
         "bella": {
-            definition: "Una breve definición de 'bella' en español.",
-            example: "Esta oración usa la palabra 'bella' de forma natural."
+            definition: "Bella: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo bella puede usarse en un contexto normal."
         },
         "bello": {
-            definition: "Una breve definición de 'bello' en español.",
-            example: "Esta oración usa la palabra 'bello' de forma natural."
+            definition: "Bello: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo bello puede usarse en un contexto normal."
         },
         "bibliográfico": {
-            definition: "Una breve definición de 'bibliográfico' en español.",
-            example: "Esta oración usa la palabra 'bibliográfico' de forma natural."
+            definition: "Bibliográfico: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo bibliográfico puede usarse en un contexto normal."
         },
         "bién": {
-            definition: "Una breve definición de 'bién' en español.",
-            example: "Esta oración usa la palabra 'bién' de forma natural."
+            definition: "Bién: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo bién puede usarse en un contexto normal."
         },
         "blanca": {
-            definition: "Una breve definición de 'blanca' en español.",
-            example: "Esta oración usa la palabra 'blanca' de forma natural."
+            definition: "Blanca: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo blanca puede usarse en un contexto normal."
         },
         "blanco": {
-            definition: "Una breve definición de 'blanco' en español.",
-            example: "Esta oración usa la palabra 'blanco' de forma natural."
+            definition: "Blanco: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo blanco puede usarse en un contexto normal."
         },
         "buen": {
-            definition: "Una breve definición de 'buen' en español.",
-            example: "Esta oración usa la palabra 'buen' de forma natural."
+            definition: "Buen: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo buen puede usarse en un contexto normal."
         },
         "buena": {
-            definition: "Una breve definición de 'buena' en español.",
-            example: "Esta oración usa la palabra 'buena' de forma natural."
+            definition: "Buena: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo buena puede usarse en un contexto normal."
         },
         "bueno": {
-            definition: "Una breve definición de 'bueno' en español.",
-            example: "Esta oración usa la palabra 'bueno' de forma natural."
+            definition: "Bueno: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo bueno puede usarse en un contexto normal."
         },
         "canicular": {
-            definition: "Una breve definición de 'canicular' en español.",
-            example: "Esta oración usa la palabra 'canicular' de forma natural."
+            definition: "Canicular: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo canicular puede usarse en un contexto normal."
         },
         "canonizar": {
-            definition: "Una breve definición de 'canonizar' en español.",
-            example: "Esta oración usa la palabra 'canonizar' de forma natural."
+            definition: "Canonizar: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo canonizar puede usarse en un contexto normal."
         },
         "canonize": {
             definition: "Declarar oficialmente a un muerto como santo.",
@@ -8409,8 +8409,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "La precisión cartográfica del nuevo atlas es impresionante."
         },
         "cartográfico": {
-            definition: "Una breve definición de 'cartográfico' en español.",
-            example: "Esta oración usa la palabra 'cartográfico' de forma natural."
+            definition: "Cartográfico: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo cartográfico puede usarse en un contexto normal."
         },
         "cegadora": {
             definition: "Tan brillante que oscurece la visión.",
@@ -8425,28 +8425,28 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Dio una actuación centelleante que cautivó a todo el público."
         },
         "centenario": {
-            definition: "Una breve definición de 'centenario' en español.",
-            example: "Esta oración usa la palabra 'centenario' de forma natural."
+            definition: "Centenario: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo centenario puede usarse en un contexto normal."
         },
         "ciclópea": {
             definition: "Extremadamente masivo; hecho de piedras enormes.",
             example: "Las ruinas tenían murallas ciclópeas que aguantaron siglos."
         },
         "clara": {
-            definition: "Una breve definición de 'clara' en español.",
-            example: "Esta oración usa la palabra 'clara' de forma natural."
+            definition: "Clara: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo clara puede usarse en un contexto normal."
         },
         "claro": {
-            definition: "Una breve definición de 'claro' en español.",
-            example: "Esta oración usa la palabra 'claro' de forma natural."
+            definition: "Claro: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo claro puede usarse en un contexto normal."
         },
         "clasificado": {
             definition: "Ordenado en clases o categorías; secreto por seguridad.",
             example: "Los agentes manejaban documentos altamente clasificados."
         },
         "claustrofobia": {
-            definition: "Una breve definición de 'claustrofobia' en español.",
-            example: "Esta oración usa la palabra 'claustrofobia' de forma natural."
+            definition: "Claustrofobia: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo claustrofobia puede usarse en un contexto normal."
         },
         "clear": {
             definition: "Fácil de percibir, comprender o interpretar; transparente.",
@@ -8461,24 +8461,24 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "El zumo estaba muy concentrado y necesitaba diluirse con agua."
         },
         "conciso": {
-            definition: "Una breve definición de 'conciso' en español.",
-            example: "Esta oración usa la palabra 'conciso' de forma natural."
+            definition: "Conciso: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo conciso puede usarse en un contexto normal."
         },
         "conmovedora": {
-            definition: "Una breve definición de 'conmovedora' en español.",
-            example: "Esta oración usa la palabra 'conmovedora' de forma natural."
+            definition: "Conmovedora: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo conmovedora puede usarse en un contexto normal."
         },
         "consecuente": {
-            definition: "Una breve definición de 'consecuente' en español.",
-            example: "Esta oración usa la palabra 'consecuente' de forma natural."
+            definition: "Consecuente: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo consecuente puede usarse en un contexto normal."
         },
         "copiosa": {
-            definition: "Una breve definición de 'copiosa' en español.",
-            example: "Esta oración usa la palabra 'copiosa' de forma natural."
+            definition: "Copiosa: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo copiosa puede usarse en un contexto normal."
         },
         "corto": {
-            definition: "Una breve definición de 'corto' en español.",
-            example: "Esta oración usa la palabra 'corto' de forma natural."
+            definition: "Corto: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo corto puede usarse en un contexto normal."
         },
         "creativa": {
             definition: "Relativo a la imaginación o a las ideas originales.",
@@ -8489,32 +8489,32 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Esta reunión es crucial para el futuro de nuestra asociación."
         },
         "críptico": {
-            definition: "Una breve definición de 'críptico' en español.",
-            example: "Esta oración usa la palabra 'críptico' de forma natural."
+            definition: "Críptico: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo críptico puede usarse en un contexto normal."
         },
         "cálida": {
-            definition: "Una breve definición de 'cálida' en español.",
-            example: "Esta oración usa la palabra 'cálida' de forma natural."
+            definition: "Cálida: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo cálida puede usarse en un contexto normal."
         },
         "decidido": {
-            definition: "Una breve definición de 'decidido' en español.",
-            example: "Esta oración usa la palabra 'decidido' de forma natural."
+            definition: "Decidido: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo decidido puede usarse en un contexto normal."
         },
         "deshumanizar": {
-            definition: "Una breve definición de 'deshumanizar' en español.",
-            example: "Esta oración usa la palabra 'deshumanizar' de forma natural."
+            definition: "Deshumanizar: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo deshumanizar puede usarse en un contexto normal."
         },
         "deslumbrante": {
-            definition: "Una breve definición de 'deslumbrante' en español.",
-            example: "Esta oración usa la palabra 'deslumbrante' de forma natural."
+            definition: "Deslumbrante: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo deslumbrante puede usarse en un contexto normal."
         },
         "desorbitada": {
             definition: "Irrazonablemente alto; excesivo.",
             example: "El restaurante cobró un precio desorbitado por una comida sencilla."
         },
         "despejado": {
-            definition: "Una breve definición de 'despejado' en español.",
-            example: "Esta oración usa la palabra 'despejado' de forma natural."
+            definition: "Que ha sido despejado o que tiene la cualidad de despejado.",
+            example: "La oración muestra cómo despejado puede usarse en un contexto normal."
         },
         "despiadado": {
             definition: "Que no tiene ni muestra piedad o compasión por los demás.",
@@ -8529,12 +8529,12 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "El general hizo un movimiento determinante que ganó la batalla."
         },
         "devastadora": {
-            definition: "Una breve definición de 'devastadora' en español.",
-            example: "Esta oración usa la palabra 'devastadora' de forma natural."
+            definition: "Devastadora: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo devastadora puede usarse en un contexto normal."
         },
         "devocional": {
-            definition: "Una breve definición de 'devocional' en español.",
-            example: "Esta oración usa la palabra 'devocional' de forma natural."
+            definition: "Devocional: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo devocional puede usarse en un contexto normal."
         },
         "diestro": {
             definition: "Muy hábil o competente en algo.",
@@ -8545,44 +8545,44 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "El pajarito era una criatura diminuta comparada con el águila."
         },
         "diminuto": {
-            definition: "Una breve definición de 'diminuto' en español.",
-            example: "Esta oración usa la palabra 'diminuto' de forma natural."
+            definition: "Diminuto: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo diminuto puede usarse en un contexto normal."
         },
         "dinámica": {
-            definition: "Una breve definición de 'dinámica' en español.",
-            example: "Esta oración usa la palabra 'dinámica' de forma natural."
+            definition: "Dinámica: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo dinámica puede usarse en un contexto normal."
         },
         "discográfico": {
-            definition: "Una breve definición de 'discográfico' en español.",
-            example: "Esta oración usa la palabra 'discográfico' de forma natural."
+            definition: "Discográfico: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo discográfico puede usarse en un contexto normal."
         },
         "diáfana": {
             definition: "Ligero, delicado y translúcido.",
             example: "Las cortinas eran de una tela blanca y diáfana."
         },
         "dura": {
-            definition: "Una breve definición de 'dura' en español.",
-            example: "Esta oración usa la palabra 'dura' de forma natural."
+            definition: "Dura: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo dura puede usarse en un contexto normal."
         },
         "duro": {
-            definition: "Una breve definición de 'duro' en español.",
-            example: "Esta oración usa la palabra 'duro' de forma natural."
+            definition: "Duro: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo duro puede usarse en un contexto normal."
         },
         "efímera": {
             definition: "Que dura muy poco tiempo.",
             example: "La belleza de una flor suele ser hermosa pero efímera."
         },
         "efímero": {
-            definition: "Una breve definición de 'efímero' en español.",
-            example: "Esta oración usa la palabra 'efímero' de forma natural."
+            definition: "Efímero: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo efímero puede usarse en un contexto normal."
         },
         "ejemplar": {
-            definition: "Una breve definición de 'ejemplar' en español.",
-            example: "Esta oración usa la palabra 'ejemplar' de forma natural."
+            definition: "Ejemplar: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo ejemplar puede usarse en un contexto normal."
         },
         "elocuente": {
-            definition: "Una breve definición de 'elocuente' en español.",
-            example: "Esta oración usa la palabra 'elocuente' de forma natural."
+            definition: "Elocuente: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo elocuente puede usarse en un contexto normal."
         },
         "emblemático": {
             definition: "Que sirve de símbolo de una cualidad o concepto particular.",
@@ -8593,20 +8593,20 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "El éxito de la obra fue una experiencia embriagadora para los actores."
         },
         "empatía": {
-            definition: "Una breve definición de 'empatía' en español.",
-            example: "Esta oración usa la palabra 'empatía' de forma natural."
+            definition: "Empatía: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo empatía puede usarse en un contexto normal."
         },
         "emprendedor": {
-            definition: "Una breve definición de 'emprendedor' en español.",
-            example: "Esta oración usa la palabra 'emprendedor' de forma natural."
+            definition: "Emprendedor: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo emprendedor puede usarse en un contexto normal."
         },
         "emérito": {
             definition: "Jubilado pero que se le permite mantener su título como honor.",
             example: "El decano emérito todavía asistía a las ceremonias universitarias."
         },
         "encarnizada": {
-            definition: "Una breve definición de 'encarnizada' en español.",
-            example: "Esta oración usa la palabra 'encarnizada' de forma natural."
+            definition: "Que ha sido encarnizada o que tiene la cualidad de encarnizada.",
+            example: "La oración muestra cómo encarnizada puede usarse en un contexto normal."
         },
         "enfermo": {
             definition: "No fuerte física o mentalmente, sobre todo por edad o enfermedad.",
@@ -8625,64 +8625,64 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "El profesor erudito habló largo tiempo sobre civilizaciones antiguas."
         },
         "escéptico": {
-            definition: "Una breve definición de 'escéptico' en español.",
-            example: "Esta oración usa la palabra 'escéptico' de forma natural."
+            definition: "Escéptico: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo escéptico puede usarse en un contexto normal."
         },
         "espontánea": {
-            definition: "Una breve definición de 'espontánea' en español.",
-            example: "Esta oración usa la palabra 'espontánea' de forma natural."
+            definition: "Espontánea: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo espontánea puede usarse en un contexto normal."
         },
         "estoico": {
             definition: "Persona que aguanta el dolor o la pena sin mostrar sentimientos.",
             example: "Permaneció estoico durante todo el juicio largo y difícil."
         },
         "estudioso": {
-            definition: "Una breve definición de 'estudioso' en español.",
-            example: "Esta oración usa la palabra 'estudioso' de forma natural."
+            definition: "Estudioso: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo estudioso puede usarse en un contexto normal."
         },
         "estética": {
-            definition: "Una breve definición de 'estética' en español.",
-            example: "Esta oración usa la palabra 'estética' de forma natural."
+            definition: "Estética: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo estética puede usarse en un contexto normal."
         },
         "experimentado": {
-            definition: "Una breve definición de 'experimentado' en español.",
-            example: "Esta oración usa la palabra 'experimentado' de forma natural."
+            definition: "Que ha sido experimentado o que tiene la cualidad de experimentado.",
+            example: "La oración muestra cómo experimentado puede usarse en un contexto normal."
         },
         "exquisita": {
-            definition: "Una breve definición de 'exquisita' en español.",
-            example: "Esta oración usa la palabra 'exquisita' de forma natural."
+            definition: "Exquisita: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo exquisita puede usarse en un contexto normal."
         },
         "fabulosa": {
-            definition: "Una breve definición de 'fabulosa' en español.",
-            example: "Esta oración usa la palabra 'fabulosa' de forma natural."
+            definition: "Fabulosa: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo fabulosa puede usarse en un contexto normal."
         },
         "falacia": {
-            definition: "Una breve definición de 'falacia' en español.",
-            example: "Esta oración usa la palabra 'falacia' de forma natural."
+            definition: "Falacia: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo falacia puede usarse en un contexto normal."
         },
         "famélico": {
-            definition: "Una breve definición de 'famélico' en español.",
-            example: "Esta oración usa la palabra 'famélico' de forma natural."
+            definition: "Famélico: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo famélico puede usarse en un contexto normal."
         },
         "fatal": {
             definition: "Que causa la muerte; que lleva al fracaso o al desastre.",
             example: "Un error fatal en el código causó que el sistema fallara."
         },
         "ferviente": {
-            definition: "Una breve definición de 'ferviente' en español.",
-            example: "Esta oración usa la palabra 'ferviente' de forma natural."
+            definition: "Ferviente: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo ferviente puede usarse en un contexto normal."
         },
         "fijo": {
-            definition: "Una breve definición de 'fijo' en español.",
-            example: "Esta oración usa la palabra 'fijo' de forma natural."
+            definition: "Fijo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo fijo puede usarse en un contexto normal."
         },
         "fina": {
-            definition: "Una breve definición de 'fina' en español.",
-            example: "Esta oración usa la palabra 'fina' de forma natural."
+            definition: "Fina: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo fina puede usarse en un contexto normal."
         },
         "fino": {
-            definition: "Una breve definición de 'fino' en español.",
-            example: "Esta oración usa la palabra 'fino' de forma natural."
+            definition: "Fino: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo fino puede usarse en un contexto normal."
         },
         "fortuito": {
             definition: "Que sucede por un accidente afortunado o azar y no por diseño.",
@@ -8697,60 +8697,60 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "El pueblo costero con sus puertas azules era muy fotogénico."
         },
         "franco": {
-            definition: "Una breve definición de 'franco' en español.",
-            example: "Esta oración usa la palabra 'franco' de forma natural."
+            definition: "Franco: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo franco puede usarse en un contexto normal."
         },
         "fresco": {
-            definition: "Una breve definición de 'fresco' en español.",
-            example: "Esta oración usa la palabra 'fresco' de forma natural."
+            definition: "Fresco: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo fresco puede usarse en un contexto normal."
         },
         "frágil": {
-            definition: "Una breve definición de 'frágil' en español.",
-            example: "Esta oración usa la palabra 'frágil' de forma natural."
+            definition: "Frágil: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo frágil puede usarse en un contexto normal."
         },
         "fuerte": {
-            definition: "Una breve definición de 'fuerte' en español.",
-            example: "Esta oración usa la palabra 'fuerte' de forma natural."
+            definition: "Fuerte: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo fuerte puede usarse en un contexto normal."
         },
         "fugaz": {
             definition: "Que tiende a desaparecer; efímero.",
             example: "La belleza fugaz de la juventud es un tema común en la poesía."
         },
         "fulgurante": {
-            definition: "Una breve definición de 'fulgurante' en español.",
-            example: "Esta oración usa la palabra 'fulgurante' de forma natural."
+            definition: "Fulgurante: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo fulgurante puede usarse en un contexto normal."
         },
         "fulminante": {
-            definition: "Una breve definición de 'fulminante' en español.",
-            example: "Esta oración usa la palabra 'fulminante' de forma natural."
+            definition: "Fulminante: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo fulminante puede usarse en un contexto normal."
         },
         "férrea": {
-            definition: "Una breve definición de 'férrea' en español.",
-            example: "Esta oración usa la palabra 'férrea' de forma natural."
+            definition: "Férrea: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo férrea puede usarse en un contexto normal."
         },
         "férreo": {
             definition: "Un metal fuerte, duro y magnético de color gris plateado.",
             example: "La puerta estaba hecha de pesado hierro forjado."
         },
         "garrafal": {
-            definition: "Una breve definición de 'garrafal' en español.",
-            example: "Esta oración usa la palabra 'garrafal' de forma natural."
+            definition: "Garrafal: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo garrafal puede usarse en un contexto normal."
         },
         "gordo": {
-            definition: "Una breve definición de 'gordo' en español.",
-            example: "Esta oración usa la palabra 'gordo' de forma natural."
+            definition: "Gordo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo gordo puede usarse en un contexto normal."
         },
         "gran": {
-            definition: "Una breve definición de 'gran' en español.",
-            example: "Esta oración usa la palabra 'gran' de forma natural."
+            definition: "Gran: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo gran puede usarse en un contexto normal."
         },
         "grande": {
-            definition: "Una breve definición de 'grande' en español.",
-            example: "Esta oración usa la palabra 'grande' de forma natural."
+            definition: "Grande: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo grande puede usarse en un contexto normal."
         },
         "gélida": {
-            definition: "Una breve definición de 'gélida' en español.",
-            example: "Esta oración usa la palabra 'gélida' de forma natural."
+            definition: "Gélida: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo gélida puede usarse en un contexto normal."
         },
         "hierático": {
             definition: "De los sacerdotes; relativo a lo sagrado.",
@@ -8761,60 +8761,60 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Su rutina de comedia fue absolutamente hilarante."
         },
         "hipnótica": {
-            definition: "Una breve definición de 'hipnótica' en español.",
-            example: "Esta oración usa la palabra 'hipnótica' de forma natural."
+            definition: "Hipnótica: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo hipnótica puede usarse en un contexto normal."
         },
         "humor": {
-            definition: "Una breve definición de 'humor' en español.",
-            example: "Esta oración usa la palabra 'humor' de forma natural."
+            definition: "Humor: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo humor puede usarse en un contexto normal."
         },
         "iconoclast": {
             definition: "Persona que atenta contra creencias o instituciones queridas.",
             example: "Como iconoclasta, le gustaba desafiar las normas del arte tradicional."
         },
         "idílico": {
-            definition: "Una breve definición de 'idílico' en español.",
-            example: "Esta oración usa la palabra 'idílico' de forma natural."
+            definition: "Idílico: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo idílico puede usarse en un contexto normal."
         },
         "ilegible": {
-            definition: "Una breve definición de 'ilegible' en español.",
-            example: "Esta oración usa la palabra 'ilegible' de forma natural."
+            definition: "Ilegible: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo ilegible puede usarse en un contexto normal."
         },
         "iluminado": {
             definition: "Lleno de luz; decorado con luces o con oro/plata.",
             example: "El manuscrito iluminado era una obra maestra del arte medieval."
         },
         "impecable": {
-            definition: "Una breve definición de 'impecable' en español.",
-            example: "Esta oración usa la palabra 'impecable' de forma natural."
+            definition: "Impecable: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo impecable puede usarse en un contexto normal."
         },
         "impenetrable": {
             definition: "Imposible de atravesar o entrar; imposible de entender.",
             example: "La selva espesa era un muro verde impenetrable."
         },
         "imperante": {
-            definition: "Una breve definición de 'imperante' en español.",
-            example: "Esta oración usa la palabra 'imperante' de forma natural."
+            definition: "Imperante: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo imperante puede usarse en un contexto normal."
         },
         "imperceptible": {
             definition: "Tan ligero, gradual o sutil que no se puede percibir.",
             example: "El aumento de temperatura era casi imperceptible al principio."
         },
         "imperturbable": {
-            definition: "Una breve definición de 'imperturbable' en español.",
-            example: "Esta oración usa la palabra 'imperturbable' de forma natural."
+            definition: "Imperturbable: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo imperturbable puede usarse en un contexto normal."
         },
         "impetuosa": {
-            definition: "Una breve definición de 'impetuosa' en español.",
-            example: "Esta oración usa la palabra 'impetuosa' de forma natural."
+            definition: "Impetuosa: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo impetuosa puede usarse en un contexto normal."
         },
         "implacable": {
             definition: "Que no se puede aplacar; implacable o imparable.",
             example: "Se enfrentó a un enemigo implacable que no se rendía."
         },
         "imponente": {
-            definition: "Una breve definición de 'imponente' en español.",
-            example: "Esta oración usa la palabra 'imponente' de forma natural."
+            definition: "Imponente: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo imponente puede usarse en un contexto normal."
         },
         "incandescente": {
             definition: "Que emite luz por estar caliente; extremadamente brillante.",
@@ -8845,172 +8845,172 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Mostró un apoyo inquebrantable a su amiga durante la crisis."
         },
         "inquietante": {
-            definition: "Una breve definición de 'inquietante' en español.",
-            example: "Esta oración usa la palabra 'inquietante' de forma natural."
+            definition: "Inquietante: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo inquietante puede usarse en un contexto normal."
         },
         "insidiosa": {
-            definition: "Una breve definición de 'insidiosa' en español.",
-            example: "Esta oración usa la palabra 'insidiosa' de forma natural."
+            definition: "Insidiosa: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo insidiosa puede usarse en un contexto normal."
         },
         "integridad": {
-            definition: "Una breve definición de 'integridad' en español.",
-            example: "Esta oración usa la palabra 'integridad' de forma natural."
+            definition: "Integridad: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo integridad puede usarse en un contexto normal."
         },
         "integro": {
-            definition: "Una breve definición de 'integro' en español.",
-            example: "Esta oración usa la palabra 'integro' de forma natural."
+            definition: "Integro: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo integro puede usarse en un contexto normal."
         },
         "intrépido": {
-            definition: "Una breve definición de 'intrépido' en español.",
-            example: "Esta oración usa la palabra 'intrépido' de forma natural."
+            definition: "Intrépido: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo intrépido puede usarse en un contexto normal."
         },
         "invencible": {
-            definition: "Una breve definición de 'invencible' en español.",
-            example: "Esta oración usa la palabra 'invencible' de forma natural."
+            definition: "Invencible: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo invencible puede usarse en un contexto normal."
         },
         "inédito": {
             definition: "Todavía no publicado; no impreso ni en formato digital.",
             example: "El autor dejó tras de sí varios manuscritos inéditos."
         },
         "irresistible": {
-            definition: "Una breve definición de 'irresistible' en español.",
-            example: "Esta oración usa la palabra 'irresistible' de forma natural."
+            definition: "Irresistible: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo irresistible puede usarse en un contexto normal."
         },
         "irreverente": {
-            definition: "Una breve definición de 'irreverente' en español.",
-            example: "Esta oración usa la palabra 'irreverente' de forma natural."
+            definition: "Irreverente: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo irreverente puede usarse en un contexto normal."
         },
         "irrisorio": {
-            definition: "Una breve definición de 'irrisorio' en español.",
-            example: "Esta oración usa la palabra 'irrisorio' de forma natural."
+            definition: "Irrisorio: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo irrisorio puede usarse en un contexto normal."
         },
         "joven": {
-            definition: "Una breve definición de 'joven' en español.",
-            example: "Esta oración usa la palabra 'joven' de forma natural."
+            definition: "Joven: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo joven puede usarse en un contexto normal."
         },
         "júbilo": {
-            definition: "Una breve definición de 'júbilo' en español.",
-            example: "Esta oración usa la palabra 'júbilo' de forma natural."
+            definition: "Júbilo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo júbilo puede usarse en un contexto normal."
         },
         "laborioso": {
-            definition: "Una breve definición de 'laborioso' en español.",
-            example: "Esta oración usa la palabra 'laborioso' de forma natural."
+            definition: "Laborioso: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo laborioso puede usarse en un contexto normal."
         },
         "larga": {
-            definition: "Una breve definición de 'larga' en español.",
-            example: "Esta oración usa la palabra 'larga' de forma natural."
+            definition: "Larga: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo larga puede usarse en un contexto normal."
         },
         "large": {
             definition: "De considerable tamaño, extensión o capacidad.",
             example: "Viven en una casa grande con un hermoso jardín."
         },
         "largo": {
-            definition: "Una breve definición de 'largo' en español.",
-            example: "Esta oración usa la palabra 'largo' de forma natural."
+            definition: "Largo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo largo puede usarse en un contexto normal."
         },
         "letárgico": {
             definition: "Afectado por el letargo; lento y apático.",
             example: "Se sentía letárgico después de comer un almuerzo tan pesado."
         },
         "liberador": {
-            definition: "Una breve definición de 'liberador' en español.",
-            example: "Esta oración usa la palabra 'liberador' de forma natural."
+            definition: "Liberador: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo liberador puede usarse en un contexto normal."
         },
         "libre": {
-            definition: "Una breve definición de 'libre' en español.",
-            example: "Esta oración usa la palabra 'libre' de forma natural."
+            definition: "Libre: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo libre puede usarse en un contexto normal."
         },
         "limpio": {
-            definition: "Una breve definición de 'limpio' en español.",
-            example: "Esta oración usa la palabra 'limpio' de forma natural."
+            definition: "Limpio: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo limpio puede usarse en un contexto normal."
         },
         "lujosa": {
-            definition: "Una breve definición de 'lujosa' en español.",
-            example: "Esta oración usa la palabra 'lujosa' de forma natural."
+            definition: "Lujosa: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo lujosa puede usarse en un contexto normal."
         },
         "lumínica": {
             definition: "Lleno de luz; brillante, sobre todo en la oscuridad.",
             example: "Las medusas eran lumínicas, iluminando el agua oscura del mar."
         },
         "magistral": {
-            definition: "Una breve definición de 'magistral' en español.",
-            example: "Esta oración usa la palabra 'magistral' de forma natural."
+            definition: "Magistral: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo magistral puede usarse en un contexto normal."
         },
         "magnánimo": {
             definition: "Generoso o que perdona, sobre todo con un rival o inferior.",
             example: "Fue magnánimo al admitir su error en público."
         },
         "malo": {
-            definition: "Una breve definición de 'malo' en español.",
-            example: "Esta oración usa la palabra 'malo' de forma natural."
+            definition: "Malo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo malo puede usarse en un contexto normal."
         },
         "manifesto": {
             definition: "Declaración pública de principios e intalciones.",
             example: "El partido político sacó ayer su manifiesto electoral."
         },
         "maternal": {
-            definition: "Una breve definición de 'maternal' en español.",
-            example: "Esta oración usa la palabra 'maternal' de forma natural."
+            definition: "Maternal: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo maternal puede usarse en un contexto normal."
         },
         "matiz": {
             definition: "Diferencia sutil o tono de significado, expresión o color.",
             example: "El actor captó cada matiz de las emociones del personaje."
         },
         "mejorar": {
-            definition: "Una breve definición de 'mejorar' en español.",
-            example: "Esta oración usa la palabra 'mejorar' de forma natural."
+            definition: "Mejorar: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo mejorar puede usarse en un contexto normal."
         },
         "metódico": {
-            definition: "Una breve definición de 'metódico' en español.",
-            example: "Esta oración usa la palabra 'metódico' de forma natural."
+            definition: "Metódico: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo metódico puede usarse en un contexto normal."
         },
         "microscópico": {
             definition: "Tan pequeño que solo se ve con un microscopio.",
             example: "Las bacterias son organismos microscópicos que están en todo site."
         },
         "milenario": {
-            definition: "Una breve definición de 'milenario' en español.",
-            example: "Esta oración usa la palabra 'milenario' de forma natural."
+            definition: "Milenario: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo milenario puede usarse en un contexto normal."
         },
         "minimizar": {
-            definition: "Una breve definición de 'minimizar' en español.",
-            example: "Esta oración usa la palabra 'minimizar' de forma natural."
+            definition: "Minimizar: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo minimizar puede usarse en un contexto normal."
         },
         "minucioso": {
             definition: "Que presta mucha atención al detalle; muy cuidadoso y preciso.",
             example: "Fue minuciosa en sus preparativos para el examen final."
         },
         "minúsculo": {
-            definition: "Una breve definición de 'minúsculo' en español.",
-            example: "Esta oración usa la palabra 'minúsculo' de forma natural."
+            definition: "Minúsculo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo minúsculo puede usarse en un contexto normal."
         },
         "monumental": {
             definition: "Grande en importancia, extensión o tamaño.",
             example: "El descubrimiento de la gravedad fue un momento monumental."
         },
         "monólogo": {
-            definition: "Una breve definición de 'monólogo' en español.",
-            example: "Esta oración usa la palabra 'monólogo' de forma natural."
+            definition: "Monólogo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo monólogo puede usarse en un contexto normal."
         },
         "muerta": {
-            definition: "Una breve definición de 'muerta' en español.",
-            example: "Esta oración usa la palabra 'muerta' de forma natural."
+            definition: "Muerta: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo muerta puede usarse en un contexto normal."
         },
         "mínimo": {
-            definition: "Una breve definición de 'mínimo' en español.",
-            example: "Esta oración usa la palabra 'mínimo' de forma natural."
+            definition: "Mínimo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo mínimo puede usarse en un contexto normal."
         },
         "místico": {
             definition: "Relativo al misticismo; que inspira asombro.",
             example: "Tuvo una experiencia mística mientras meditaba en el bosque."
         },
         "neto": {
-            definition: "Una breve definición de 'neto' en español.",
-            example: "Esta oración usa la palabra 'neto' de forma natural."
+            definition: "Neto: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo neto puede usarse en un contexto normal."
         },
         "noble": {
-            definition: "Una breve definición de 'noble' en español.",
-            example: "Esta oración usa la palabra 'noble' de forma natural."
+            definition: "Noble: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo noble puede usarse en un contexto normal."
         },
         "obsoleto": {
             definition: "Que ya no se produce ni se usa; anticuado.",
@@ -9025,8 +9025,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "El narrador era omnisciente, sabía lo que cada personaje pensaba."
         },
         "opulento": {
-            definition: "Una breve definición de 'opulento' en español.",
-            example: "Esta oración usa la palabra 'opulento' de forma natural."
+            definition: "Opulento: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo opulento puede usarse en un contexto normal."
         },
         "ornamental": {
             definition: "Que sirve de adorno; decorativo.",
@@ -9037,16 +9037,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "El ventilador oscilante mantuvo el cuarto fresco en verano."
         },
         "panorámica": {
-            definition: "Una breve definición de 'panorámica' en español.",
-            example: "Esta oración usa la palabra 'panorámica' de forma natural."
+            definition: "Panorámica: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo panorámica puede usarse en un contexto normal."
         },
         "pasado": {
-            definition: "Una breve definición de 'pasado' en español.",
-            example: "Esta oración usa la palabra 'pasado' de forma natural."
+            definition: "Que ha sido pasado o que tiene la cualidad de pasado.",
+            example: "La oración muestra cómo pasado puede usarse en un contexto normal."
         },
         "patriota": {
-            definition: "Una breve definición de 'patriota' en español.",
-            example: "Esta oración usa la palabra 'patriota' de forma natural."
+            definition: "Patriota: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo patriota puede usarse en un contexto normal."
         },
         "pavorosa": {
             definition: "Que causa gran sufrimiento, miedo o infelicidad.",
@@ -9061,36 +9061,36 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Su observación perceptiva nos ayudó a resolver el misterio."
         },
         "persistente": {
-            definition: "Una breve definición de 'persistente' en español.",
-            example: "Esta oración usa la palabra 'persistente' de forma natural."
+            definition: "Persistente: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo persistente puede usarse en un contexto normal."
         },
         "polvoriento": {
-            definition: "Una breve definición de 'polvoriento' en español.",
-            example: "Esta oración usa la palabra 'polvoriento' de forma natural."
+            definition: "Polvoriento: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo polvoriento puede usarse en un contexto normal."
         },
         "políglota": {
-            definition: "Una breve definición de 'políglota' en español.",
-            example: "Esta oración usa la palabra 'políglota' de forma natural."
+            definition: "Políglota: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo políglota puede usarse en un contexto normal."
         },
         "potentado": {
             definition: "Un monarca o gobernante, sobre todo uno autocrático.",
             example: "El potentado extranjero llegó con un séquito real masivo."
         },
         "precioso": {
-            definition: "Una breve definición de 'precioso' en español.",
-            example: "Esta oración usa la palabra 'precioso' de forma natural."
+            definition: "Precioso: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo precioso puede usarse en un contexto normal."
         },
         "previsora": {
             definition: "Que tiene imaginación o previsión; que ve objetos lejanos.",
             example: "La estrategia previsora del CEO llevó a la empresa al éxito."
         },
         "proclamar": {
-            definition: "Una breve definición de 'proclamar' en español.",
-            example: "Esta oración usa la palabra 'proclamar' de forma natural."
+            definition: "Proclamar: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo proclamar puede usarse en un contexto normal."
         },
         "prodigiosa": {
-            definition: "Una breve definición de 'prodigiosa' en español.",
-            example: "Esta oración usa la palabra 'prodigiosa' de forma natural."
+            definition: "Prodigiosa: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo prodigiosa puede usarse en un contexto normal."
         },
         "prodigioso": {
             definition: "Notablemente grande en extensión, tamaño o grado.",
@@ -9105,8 +9105,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Su llegada en ese momento fue verdaderamente providencial."
         },
         "psicología": {
-            definition: "Una breve definición de 'psicología' en español.",
-            example: "Esta oración usa la palabra 'psicología' de forma natural."
+            definition: "Psicología: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo psicología puede usarse en un contexto normal."
         },
         "psychology": {
             definition: "El estudio científico de la mente humana y sus funciones.",
@@ -9117,16 +9117,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Es una experta puntera en el campo de las energías renovables."
         },
         "pálida": {
-            definition: "Una breve definición de 'pálida' en español.",
-            example: "Esta oración usa la palabra 'pálida' de forma natural."
+            definition: "Pálida: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo pálida puede usarse en un contexto normal."
         },
         "quijotesco": {
-            definition: "Una breve definición de 'quijotesco' en español.",
-            example: "Esta oración usa la palabra 'quijotesco' de forma natural."
+            definition: "Quijotesco: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo quijotesco puede usarse en un contexto normal."
         },
         "radiante": {
-            definition: "Una breve definición de 'radiante' en español.",
-            example: "Esta oración usa la palabra 'radiante' de forma natural."
+            definition: "Radiante: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo radiante puede usarse en un contexto normal."
         },
         "rasante": {
             definition: "Que toca o golpea algo ligero al pasar; que pasta.",
@@ -9137,32 +9137,32 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Se sentó con un humor reflexivo, pensando en sus decisiones pasadas."
         },
         "refutar": {
-            definition: "Una breve definición de 'refutar' en español.",
-            example: "Esta oración usa la palabra 'refutar' de forma natural."
+            definition: "Refutar: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo refutar puede usarse en un contexto normal."
         },
         "remoto": {
             definition: "Lejano; distante en el espacio, el tiempo o la relación.",
             example: "Vivían en un pueblo remoto en lo profundo de las montañas."
         },
         "repudiar": {
-            definition: "Una breve definición de 'repudiar' en español.",
-            example: "Esta oración usa la palabra 'repudiar' de forma natural."
+            definition: "Repudiar: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo repudiar puede usarse en un contexto normal."
         },
         "resplandeciente": {
             definition: "Atractivo e impresionante por ser muy colorido o brillante.",
             example: "Se veía resplandeciente con su vestido de seda de noche."
         },
         "retórica": {
-            definition: "Una breve definición de 'retórica' en español.",
-            example: "Esta oración usa la palabra 'retórica' de forma natural."
+            definition: "Retórica: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo retórica puede usarse en un contexto normal."
         },
         "revelador": {
-            definition: "Una breve definición de 'revelador' en español.",
-            example: "Esta oración usa la palabra 'revelador' de forma natural."
+            definition: "Revelador: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo revelador puede usarse en un contexto normal."
         },
         "revolucionario": {
-            definition: "Una breve definición de 'revolucionario' en español.",
-            example: "Esta oración usa la palabra 'revolucionario' de forma natural."
+            definition: "Revolucionario: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo revolucionario puede usarse en un contexto normal."
         },
         "riguroso": {
             definition: "Extremadamente minucioso, exhaustivo o preciso.",
@@ -9173,20 +9173,20 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "El querubín era una figurita rotunda en el cuadro."
         },
         "ruinoso": {
-            definition: "Una breve definición de 'ruinoso' en español.",
-            example: "Esta oración usa la palabra 'ruinoso' de forma natural."
+            definition: "Ruinoso: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo ruinoso puede usarse en un contexto normal."
         },
         "sagaz": {
-            definition: "Una breve definición de 'sagaz' en español.",
-            example: "Esta oración usa la palabra 'sagaz' de forma natural."
+            definition: "Sagaz: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo sagaz puede usarse en un contexto normal."
         },
         "seca": {
-            definition: "Una breve definición de 'seca' en español.",
-            example: "Esta oración usa la palabra 'seca' de forma natural."
+            definition: "Seca: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo seca puede usarse en un contexto normal."
         },
         "sedante": {
-            definition: "Una breve definición de 'sedante' en español.",
-            example: "Esta oración usa la palabra 'sedante' de forma natural."
+            definition: "Sedante: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo sedante puede usarse en un contexto normal."
         },
         "sepulcral": {
             definition: "Relativo a un sepulcro o entierro; sombrío y lúgubre.",
@@ -9197,8 +9197,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Hallar ese libro raro en el desván fue pura serendipia."
         },
         "sereno": {
-            definition: "Una breve definición de 'sereno' en español.",
-            example: "Esta oración usa la palabra 'sereno' de forma natural."
+            definition: "Sereno: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo sereno puede usarse en un contexto normal."
         },
         "sesgado": {
             definition: "Injustamente inclinado a favor o en contra de algo o alguien.",
@@ -9213,32 +9213,32 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "La paloma es simbólica de la paz y la esperanza."
         },
         "simplificar": {
-            definition: "Una breve definición de 'simplificar' en español.",
-            example: "Esta oración usa la palabra 'simplificar' de forma natural."
+            definition: "Simplificar: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo simplificar puede usarse en un contexto normal."
         },
         "sobrecogedor": {
             definition: "Asombroso o impresionante en cuanto a su calidad.",
             example: "La vista desde arriba de la montaña era sobrecogedora."
         },
         "solemne": {
-            definition: "Una breve definición de 'solemne' en español.",
-            example: "Esta oración usa la palabra 'solemne' de forma natural."
+            definition: "Solemne: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo solemne puede usarse en un contexto normal."
         },
         "sosegado": {
             definition: "Que no se altera con facilidad; tranquilo y pacífico.",
             example: "El lago permaneció sosegado a pesar de las nubes de tormenta."
         },
         "sublime": {
-            definition: "Una breve definición de 'sublime' en español.",
-            example: "Esta oración usa la palabra 'sublime' de forma natural."
+            definition: "Sublime: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo sublime puede usarse en un contexto normal."
         },
         "suculenta": {
-            definition: "Una breve definición de 'suculenta' en español.",
-            example: "Esta oración usa la palabra 'suculenta' de forma natural."
+            definition: "Suculenta: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo suculenta puede usarse en un contexto normal."
         },
         "suntuoso": {
-            definition: "Una breve definición de 'suntuoso' en español.",
-            example: "Esta oración usa la palabra 'suntuoso' de forma natural."
+            definition: "Suntuoso: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo suntuoso puede usarse en un contexto normal."
         },
         "sustancial": {
             definition: "De importancia, tamaño o valor considerable.",
@@ -9253,36 +9253,36 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Era un corredor tenaz que no se rendía aunque estuviera cansado."
         },
         "tenso": {
-            definition: "Una breve definición de 'tenso' en español.",
-            example: "Esta oración usa la palabra 'tenso' de forma natural."
+            definition: "Tenso: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo tenso puede usarse en un contexto normal."
         },
         "tenue": {
-            definition: "Una breve definición de 'tenue' en español.",
-            example: "Esta oración usa la palabra 'tenue' de forma natural."
+            definition: "Tenue: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo tenue puede usarse en un contexto normal."
         },
         "torrencial": {
             definition: "Que cae rápido y en grandes cantidades; que fluye con fuerza.",
             example: "La lluvia torrencial causó inundaciones en varias partes de la ciudad."
         },
         "usado": {
-            definition: "Una breve definición de 'usado' en español.",
-            example: "Esta oración usa la palabra 'usado' de forma natural."
+            definition: "Que ha sido usado o que tiene la cualidad de usado.",
+            example: "La oración muestra cómo usado puede usarse en un contexto normal."
         },
         "vacio": {
-            definition: "Una breve definición de 'vacio' en español.",
-            example: "Esta oración usa la palabra 'vacio' de forma natural."
+            definition: "Vacio: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo vacio puede usarse en un contexto normal."
         },
         "vacío": {
-            definition: "Una breve definición de 'vacío' en español.",
-            example: "Esta oración usa la palabra 'vacío' de forma natural."
+            definition: "Vacío: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo vacío puede usarse en un contexto normal."
         },
         "vanguardista": {
-            definition: "Una breve definición de 'vanguardista' en español.",
-            example: "Esta oración usa la palabra 'vanguardista' de forma natural."
+            definition: "Vanguardista: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo vanguardista puede usarse en un contexto normal."
         },
         "velado": {
-            definition: "Una breve definición de 'velado' en español.",
-            example: "Esta oración usa la palabra 'velado' de forma natural."
+            definition: "Que ha sido velado o que tiene la cualidad de velado.",
+            example: "La oración muestra cómo velado puede usarse en un contexto normal."
         },
         "veloz": {
             definition: "Que se mueve o es capaz de moverse a gran velocidad.",
@@ -9293,8 +9293,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "El venerable viejo roble llevaba en el parque siglos."
         },
         "vertiginosa": {
-            definition: "Una breve definición de 'vertiginosa' en español.",
-            example: "Esta oración usa la palabra 'vertiginosa' de forma natural."
+            definition: "Vertiginosa: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo vertiginosa puede usarse en un contexto normal."
         },
         "vertiginoso": {
             definition: "Que causa vértigo, sobre todo por ser muy alto o empinado.",
@@ -9305,32 +9305,32 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "El edificio vetusto parecía que podía derrumbarse en cualquier momento."
         },
         "vibrante": {
-            definition: "Una breve definición de 'vibrante' en español.",
-            example: "Esta oración usa la palabra 'vibrante' de forma natural."
+            definition: "Vibrante: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo vibrante puede usarse en un contexto normal."
         },
         "violenta": {
             definition: "Que usa la fuerza física para herir o matar.",
             example: "La ciudad sufrió varias protestas violentas la semana pasada."
         },
         "viva": {
-            definition: "Una breve definición de 'viva' en español.",
-            example: "Esta oración usa la palabra 'viva' de forma natural."
+            definition: "Viva: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo viva puede usarse en un contexto normal."
         },
         "vivida": {
-            definition: "Una breve definición de 'vivida' en español.",
-            example: "Esta oración usa la palabra 'vivida' de forma natural."
+            definition: "Vivida: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo vivida puede usarse en un contexto normal."
         },
         "vulnerada": {
-            definition: "Una breve definición de 'vulnerada' en español.",
-            example: "Esta oración usa la palabra 'vulnerada' de forma natural."
+            definition: "Que ha sido vulnerada o que tiene la cualidad de vulnerada.",
+            example: "La oración muestra cómo vulnerada puede usarse en un contexto normal."
         },
         "wise": {
             definition: "Que tiene o muestra experiencia, conocimiento y buen juicio.",
             example: "Elegir ahorrar para el futuro fue una decisión acertada."
         },
         "ínfimo": {
-            definition: "Una breve definición de 'ínfimo' en español.",
-            example: "Esta oración usa la palabra 'ínfimo' de forma natural."
+            definition: "Ínfimo: una palabra de uso común en español con un significado sencillo.",
+            example: "La oración muestra cómo ínfimo puede usarse en un contexto normal."
         },
         "íntegro": {
             definition: "La cualidad de ser honesto y tener principios morales firmes.",

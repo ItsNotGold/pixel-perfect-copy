@@ -6,6 +6,8 @@ import { toast } from "sonner";
 import { useSettings } from "@/hooks/useSettings";
 import type { Json } from "@/integrations/supabase/types";
 import { exercises } from "@/data/exercises";
+import { BADGES } from "@/data/badges";
+import { unlockBadge } from "@/lib/badgeUtils";
 
 export interface ExerciseAttempt {
   exerciseId: string;
@@ -46,10 +48,10 @@ export function useProgress() {
     const totalExercises = exercises.length;
 
     // fetch user records
-    const [progressResult, streakResult, achievementsResult, attemptsResult, lastYearAttempts] = await Promise.all([
+    const [progressResult, streakResult, userBadgesResult, attemptsResult, lastYearAttempts] = await Promise.all([
       supabase.from("user_progress").select("*").eq("user_id", user.id),
       supabase.from("user_streaks").select("*").eq("user_id", user.id).maybeSingle(),
-      supabase.from("achievements").select("*").eq("user_id", user.id),
+      supabase.from("user_badges").select("*").eq("user_id", user.id),
       supabase.from("exercise_attempts").select("*").eq("user_id", user.id).order("completed_at", { ascending: false }).limit(50),
       supabase.from("exercise_attempts").select("*").eq("user_id", user.id).gte("completed_at", new Date(Date.now() - 365 * 24 * 60 * 60 * 1000).toISOString()),
     ]);
@@ -127,7 +129,7 @@ export function useProgress() {
     const result = {
       exerciseProgress: Object.values(aggregated),
       streaks: streakResult.data,
-      achievements: achievementsResult.data || [],
+      userBadges: userBadgesResult.data || [],
       recentAttempts,
       todaysCompletedCount,
       totalExercises,
@@ -292,27 +294,48 @@ export function useProgress() {
     if (streak >= 7) toAward.push("streak:7");
     if (streak >= 30) toAward.push("streak:30");
 
-    // Insert achievements (only when not already unlocked)
+    // Award badges instead of legacy achievements: map computed achievement tokens to badge ids and unlock them
     for (const achievement of toAward) {
       try {
-        const { data: exists } = await supabase.from("achievements").select("id, created_at").eq("user_id", user.id).eq("achievement_type", achievement).maybeSingle();
-        if (exists) continue;
-
-        const { data: inserted } = await supabase.from("achievements").insert([{ user_id: user.id, achievement_type: achievement }]).select().single();
-
-        const names: Record<string, string> = {};
-        names["total:gold"] = "Total Score — Gold";
-        names["total:silver"] = "Total Score — Silver";
-        names["total:bronze"] = "Total Score — Bronze";
-
-        if (!settings || settings.notifications?.achievementAlerts) {
-          // only notify when the achievement was just inserted
-          if (inserted) {
-            toast.success("Achievement Unlocked!", { description: names[achievement] || achievement });
-          }
+        // map exercise achievements e.g. "exercise:precision-swap:gold" -> Mastery badge for that exercise and level
+        if (achievement.startsWith("exercise:")) {
+          const parts = achievement.split(":");
+          const exId = parts[1];
+          const level = parts[2];
+          const badge = BADGES.find((b) => b.category === "Mastery" && b.level === level && (b.exercises || []).includes(exId));
+          if (badge) await unlockBadge(badge.id);
+          continue;
         }
+
+        if (achievement.startsWith("total:")) {
+          const parts = achievement.split(":");
+          const level = parts[1];
+          const id = `total_progress_${level}`;
+          const badge = BADGES.find((b) => b.id === id);
+          if (badge) await unlockBadge(badge.id);
+          continue;
+        }
+
+        if (achievement.startsWith("days:")) {
+          // days:1 -> first step, days:7 -> weekly, days:30 -> monthly
+          if (achievement === "days:1") await unlockBadge("completion_first_step_bronze");
+          if (achievement === "days:7") await unlockBadge("streak_daily_week_bronze");
+          if (achievement === "days:30") await unlockBadge("streak_monthly_consistency_silver");
+          continue;
+        }
+
+        if (achievement.startsWith("streak:")) {
+          const parts = achievement.split(":");
+          const days = Number(parts[1]);
+          if (days === 3) await unlockBadge("streak_short_bronze");
+          if (days === 7) await unlockBadge("streak_daily_week_bronze");
+          if (days === 30) await unlockBadge("streak_monthly_consistency_silver");
+          continue;
+        }
+
+        // Fallback: no mapping found, ignore
       } catch (e) {
-        // insertion failed, ignore
+        // ignore failures to unlock individual badges
       }
     }
   }, [user, settings]);
@@ -360,28 +383,15 @@ export function useProgress() {
 
     for (const achievement of achievements) {
       try {
-        const { data: exists } = await supabase.from("achievements").select("id, created_at").eq("user_id", user.id).eq("achievement_type", achievement).maybeSingle();
-        if (exists) continue;
-        const { data: inserted } = await supabase.from("achievements").insert([{ user_id: user.id, achievement_type: achievement }]).select().single();
-        const achievementNames: Record<string, string> = {
-          first_exercise: "First Steps",
-          ten_exercises: "Getting Started",
-          fifty_exercises: "Dedicated Learner",
-          hundred_exercises: "Century Club",
-          streak_3: "3-Day Streak",
-          streak_7: "Week Warrior",
-          streak_30: "Monthly Master",
-        };
-
-        if (!settings || settings.notifications?.achievementAlerts) {
-          if (inserted) {
-            toast.success("Achievement Unlocked!", {
-              description: achievementNames[achievement],
-            });
-          }
-        }
-      } catch {
-        // Achievement already exists or failed, ignore
+        if (achievement === "first_exercise") await unlockBadge("completion_first_step_bronze");
+        if (achievement === "ten_exercises") await unlockBadge("completion_committed_silver");
+        if (achievement === "fifty_exercises") await unlockBadge("completion_fifty_bronze");
+        if (achievement === "hundred_exercises") await unlockBadge("completion_marathon_gold");
+        if (achievement === "streak_3") await unlockBadge("streak_short_bronze");
+        if (achievement === "streak_7") await unlockBadge("streak_daily_week_bronze");
+        if (achievement === "streak_30") await unlockBadge("streak_monthly_consistency_silver");
+      } catch (e) {
+        // ignore failures to unlock badges
       }
     }
   }, [user, settings]);

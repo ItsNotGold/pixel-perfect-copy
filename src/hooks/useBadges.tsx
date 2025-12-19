@@ -19,6 +19,21 @@ export function useBadges() {
     return result;
   }
 
+  // Listen for global "badge-unlocked" events (dispatched by unlockBadge helper)
+  React.useEffect(() => {
+    function onEvent(e: any) {
+      const id = e?.detail?.badgeId as string | undefined;
+      if (id) {
+        setActive(id);
+        setLastUnlocked(e.detail?.row ?? null);
+      }
+    }
+
+    window.addEventListener("badge-unlocked", onEvent as EventListener);
+    return () => window.removeEventListener("badge-unlocked", onEvent as EventListener);
+  }, []);
+
+
   function onAnimationComplete() {
     setActive(null);
   }

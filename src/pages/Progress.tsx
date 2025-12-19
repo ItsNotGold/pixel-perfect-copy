@@ -86,7 +86,7 @@ export default function Progress() {
   const exerciseProgress = (data?.exerciseProgress || []) as any[];
   const recentAttempts = (data?.recentAttempts || []) as any[];
   const streaks = data?.streaks || null;
-  const achievements = data?.achievements || [];
+  const userBadges = data?.userBadges || [];
 
   // totalScore removed — we no longer surface a global total score
   const exercisesCompleted = exerciseProgress.reduce((sum, p) => sum + (Number(p.times_completed) || 0), 0);

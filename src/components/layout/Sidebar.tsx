@@ -16,6 +16,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { useSettings } from "@/hooks/useSettings";
 import { supabase } from "@/integrations/supabase/client";
 import { parseAchievementId } from "@/data/achievements";
+import { BADGES } from "@/data/badges";
 
 import { Avatar } from "@/components/ui/avatar";
 
@@ -184,8 +185,8 @@ export function Sidebar() {
                       <div className="text-sm font-medium truncate">{user.user_metadata?.display_name || user.email}</div>
                       {settings?.profile?.selectedBadges?.length ? (
                         <div className="mt-1 flex items-center gap-2">
-                          {settings.profile.selectedBadges.slice(0, 3).map((id) => {
-                            const p = parseAchievementId(id);
+                          {settings.profile.selectedBadges.slice(0, 3).map((id) => {                            const badge = BADGES.find((b) => b.id === id);
+                            if (badge) return <img key={id} src={badge.imageUrl} alt={badge.name} className="h-4 w-4 rounded-full" />;                            const p = parseAchievementId(id);
                             const level = p.level || '';
                             const color = level === 'gold' ? 'bg-yellow-300' : level === 'silver' ? 'bg-slate-300' : level === 'bronze' ? 'bg-amber-300' : 'bg-muted';
                             return <div key={id} className={`h-4 w-4 rounded-full ${color} ring-1 ring-offset-1`} title={id} />;

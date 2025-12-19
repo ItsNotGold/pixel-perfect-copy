@@ -8,7 +8,8 @@ import { useToast } from "@/hooks/use-toast";
 import { useNavigate, Link } from "react-router-dom";
 import { Crown } from "lucide-react";
 import { useSettings } from "@/hooks/useSettings";
-import { achievementDefs, parseAchievementId, highestLevelFromTypes } from "@/data/achievements";
+import { BADGES } from "@/data/badges";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function ManageAccount() {
   const { user } = useAuth();
@@ -37,9 +38,9 @@ export default function ManageAccount() {
         const { data: profile } = await supabase.from('profiles').select('avatar_url').eq('user_id', user.id).single();
         setAvatarUrl(profile?.avatar_url || '');
 
-        const { data } = await supabase.from('achievements').select('achievement_type, created_at').eq('user_id', user.id);
+        const { data } = await supabase.from('user_badges').select('badge_id, unlocked_at').eq('user_id', user.id);
         const map: Record<string, any> = {};
-        (data || []).forEach((d: any) => map[d.achievement_type] = { created_at: d.created_at });
+        (data || []).forEach((d: any) => map[d.badge_id] = { unlocked_at: d.unlocked_at });
         setUnlockedMap(map);
       } catch (err) {
         console.error(err);
@@ -49,7 +50,35 @@ export default function ManageAccount() {
 
   // keep local selected badges & bio in sync when settings load
   useEffect(() => {
-    setSelectedBadges(settings.profile?.selectedBadges || []);
+    const legacy = settings.profile?.selectedBadges || [];
+    // convert legacy achievement ids (exercise:..., total:..., days:, streak:) into badge ids if possible
+    function mapLegacy(id: string): string | null {
+      if (!id) return null;
+      if (id.startsWith("exercise:")) {
+        const parts = id.split(":");
+        const exId = parts[1];
+        const level = parts[2];
+        const badge = BADGES.find((b) => b.category === 'Mastery' && b.level === level && (b.exercises || []).includes(exId));
+        return badge ? badge.id : null;
+      }
+      if (id.startsWith("total:")) {
+        const level = id.split(":")[1];
+        const badge = BADGES.find((b) => b.id === `total_progress_${level}`);
+        return badge ? badge.id : null;
+      }
+      if (id.startsWith("streak:")) {
+        const days = Number(id.split(":")[1]);
+        if (days === 3) return 'streak_short_bronze';
+        if (days === 7) return 'streak_daily_week_bronze';
+        if (days === 30) return 'streak_monthly_consistency_silver';
+      }
+      // if it's already a badge id and exists, keep it
+      if (BADGES.some((b) => b.id === id)) return id;
+      return null;
+    }
+
+    const mapped = legacy.map(mapLegacy).filter(Boolean) as string[];
+    setSelectedBadges(mapped);
     setBio(settings.profile?.bio || "");
   }, [settings]);
 
@@ -155,30 +184,12 @@ export default function ManageAccount() {
           <div className="mt-4">
             <h3 className="font-medium mb-2">Select up to 3 badges to show on your profile</h3>
             <div className="flex flex-wrap gap-2">
-              {/* Build list of selectable badges from unlockedMap grouped per exercise */}
-              {achievementDefs.filter(a => a.category !== 'exercise').map((a) => (
-                unlockedMap[a.id] ? (
-                  <button key={a.id} onClick={() => toggleBadge(a.id)} className={`px-3 py-1 rounded ${selectedBadges.includes(a.id) ? 'bg-primary text-primary-foreground' : 'bg-muted/20'}`}>{a.title}</button>
-                ) : null
+              {BADGES.filter(b => unlockedMap[b.id]).map((b) => (
+                <button key={b.id} onClick={() => toggleBadge(b.id)} className={`px-3 py-1 rounded flex items-center gap-2 ${selectedBadges.includes(b.id) ? 'bg-primary text-primary-foreground' : 'bg-muted/20'}`}>
+                  <img src={b.imageUrl} alt={b.name} className="h-5 w-5" />
+                  <span className="text-sm">{b.name}</span>
+                </button>
               ))}
-
-              { /* exercise grouped badges: show only one per exercise if unlocked */ }
-              {achievementDefs.filter(a => a.category === 'exercise').reduce<Record<string, string[]>>((acc, a) => {
-                const ns = parseAchievementId(a.id).key as string;
-                acc[ns] = acc[ns] || [];
-                acc[ns].push(a.id);
-                return acc;
-              }, {}) && Object.entries(achievementDefs.filter(a => a.category === 'exercise').reduce<Record<string, string[]>>((acc, a) => { const ns = parseAchievementId(a.id).key as string; acc[ns] = acc[ns] || []; acc[ns].push(a.id); return acc; }, {})).map(([exerciseId, ids]) => {
-                const unlockedTypes = ids.filter((id) => unlockedMap[id]);
-                if (!unlockedTypes.length) return null;
-                // pick highest unlocked level
-                const level = highestLevelFromTypes(unlockedTypes);
-                const idForStorage = `exercise:${exerciseId}:${level}`;
-                const title = achievementDefs.find((d) => d.id.startsWith(`exercise:${exerciseId}`) && d.id.includes(level || ''))?.title || exerciseId;
-                return (
-                  <button key={exerciseId} onClick={() => toggleBadge(idForStorage)} className={`px-3 py-1 rounded ${selectedBadges.includes(idForStorage) ? 'bg-primary text-primary-foreground' : 'bg-muted/20'}`}>{title}</button>
-                );
-              })}
             </div>
             <div className="mt-3 text-sm text-muted-foreground">Selected: {selectedBadges.length}/3</div>
           </div>
@@ -195,10 +206,13 @@ export default function ManageAccount() {
               <div className="text-sm text-muted-foreground">{bio}</div>
               <div className="mt-2 flex items-center gap-2">
                 {selectedBadges.map((id) => {
-                  const p = parseAchievementId(id);
-                  const level = p.level || '';
-                  const color = level === 'gold' ? 'bg-yellow-300' : level === 'silver' ? 'bg-slate-300' : level === 'bronze' ? 'bg-amber-300' : 'bg-muted';
-                  return <div key={id} className={`h-8 w-8 rounded-full ${color} ring-1 ring-offset-1`} title={id} />;
+                  const b = BADGES.find((x) => x.id === id);
+                  if (!b) return <div key={id} className={`h-8 w-8 rounded-full bg-muted ring-1 ring-offset-1`} title={id} />;
+                  return (
+                    <div key={id} className="h-8 w-8 rounded-full overflow-hidden ring-1 ring-offset-1 bg-background">
+                      <img src={b.imageUrl} alt={b.name} className="h-full w-full object-cover" />
+                    </div>
+                  );
                 })}
               </div>
             </div>

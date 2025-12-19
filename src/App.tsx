@@ -7,6 +7,7 @@ import { AuthProvider } from "@/hooks/useAuth";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { SubscriptionProvider } from "@/hooks/useSubscription";
 import { useEffect } from "react";
+import { useBadges } from "@/hooks/useBadges";
 import { useSettings } from "@/hooks/useSettings";
 import { useProgress } from "@/hooks/useProgress";
 import { useAuth } from "@/hooks/useAuth";
@@ -31,43 +32,47 @@ import QuestionDetailPage from "./pages/library/QuestionDetailPage";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <AuthProvider>
-      <SubscriptionProvider>
-        <LanguageProvider>
-          <TooltipProvider>
-            <Toaster />
-            <Sonner position="top-center" />
-            <SettingsReminders />
-            <BrowserRouter>
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/auth" element={<Auth />} />
-                <Route path="/exercise/precision-swap" element={<PrecisionSwap />} />
-                <Route path="/exercise/filler-word-eliminator" element={<FillerWordEliminator />} />
-                <Route path="/exercise/reverse-definitions" element={<ReverseDefinitions />} />
-                <Route path="/exercise/synonym-speed-chain" element={<SynonymSpeedChain />} />
-                <Route path="/exercise/word-incorporation" element={<WordIncorporation />} />
-                <Route path="/exercise/:id/stats" element={<ExerciseStats />} />
-                <Route path="/progress" element={<Progress />} />
-                <Route path="/achievements" element={<Achievements />} />
-                <Route path="/settings" element={<Settings />} />
-                <Route path="/account" element={<ManageAccount />} />
-                <Route path="/subscription" element={<Subscription />} />
-                <Route path="/library" element={<LibraryPage />} />
-                <Route path="/library/:exerciseId" element={<ExerciseContentPage />} />
-                <Route path="/library/:exerciseId/:questionId" element={<QuestionDetailPage />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </BrowserRouter>
-          </TooltipProvider>
-        </LanguageProvider>
-      </SubscriptionProvider>
-    </AuthProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  const { ActiveAnimation } = useBadges();
 
+  return (
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <SubscriptionProvider>
+          <LanguageProvider>
+            <TooltipProvider>
+              <Toaster />
+              <Sonner position="top-center" />
+              {ActiveAnimation}
+              <SettingsReminders />
+              <BrowserRouter>
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  <Route path="/auth" element={<Auth />} />
+                  <Route path="/exercise/precision-swap" element={<PrecisionSwap />} />
+                  <Route path="/exercise/filler-word-eliminator" element={<FillerWordEliminator />} />
+                  <Route path="/exercise/reverse-definitions" element={<ReverseDefinitions />} />
+                  <Route path="/exercise/synonym-speed-chain" element={<SynonymSpeedChain />} />
+                  <Route path="/exercise/word-incorporation" element={<WordIncorporation />} />
+                  <Route path="/exercise/:id/stats" element={<ExerciseStats />} />
+                  <Route path="/progress" element={<Progress />} />
+                  <Route path="/achievements" element={<Achievements />} />
+                  <Route path="/settings" element={<Settings />} />
+                  <Route path="/account" element={<ManageAccount />} />
+                  <Route path="/subscription" element={<Subscription />} />
+                  <Route path="/library" element={<LibraryPage />} />
+                  <Route path="/library/:exerciseId" element={<ExerciseContentPage />} />
+                  <Route path="/library/:exerciseId/:questionId" element={<QuestionDetailPage />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </BrowserRouter>
+            </TooltipProvider>
+          </LanguageProvider>
+        </SubscriptionProvider>
+      </AuthProvider>
+    </QueryClientProvider>
+  );
+};
 function SettingsReminders() {
   const { user } = useAuth();
   const { settings } = useSettings();

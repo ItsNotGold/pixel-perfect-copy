@@ -26,6 +26,16 @@ export async function unlockBadge(badgeId: string): Promise<{ success: boolean; 
       parsed = data;
     }
 
+    // If newly unlocked, broadcast an event so UI can react (play animation, toast, etc.)
+    if (parsed && parsed.alreadyUnlocked === false && parsed.row) {
+      try {
+        const evt = new CustomEvent("badge-unlocked", { detail: { badgeId, row: parsed.row } });
+        window.dispatchEvent(evt);
+      } catch (_) {
+        // ignore if window not available
+      }
+    }
+
     return {
       success: true,
       row: parsed?.row ?? undefined,

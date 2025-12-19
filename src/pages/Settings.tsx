@@ -103,8 +103,8 @@ export default function Settings() {
               
               <div className="flex items-center justify-between">
                 <div>
-                  <div className="font-medium text-foreground">Achievement Alerts</div>
-                  <div className="text-sm text-muted-foreground">Celebrate your wins</div>
+                  <div className="font-medium text-foreground">Badge Alerts</div>
+                  <div className="text-sm text-muted-foreground">Celebrate when you unlock new badges</div>
                 </div>
                 <Switch checked={settings.notifications.achievementAlerts} onCheckedChange={(v) => update((s) => ({ ...s, notifications: { ...s.notifications, achievementAlerts: v } }))} />
               </div>

@@ -409,7 +409,8 @@ export const BADGES: Badge[] = [
     colorPalette: ["#FDE68A","#FCD34D","#F97316"],
     animation: "small ribbon pop",
     points: 25
-  }  {
+  },
+  {
     id: "special_founders_platinum",
     name: "Founder's Laurels",
     description: {

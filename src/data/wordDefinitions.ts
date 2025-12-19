@@ -544,8 +544,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They described the event as añejo during the debrief."
         },
         "bad": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word bad when describing a common situation."
+            definition: "Not meeting an acceptable standard; harmful, faulty, or unpleasant.",
+            example: "Forgetting to lock the door proved to be a bad mistake."
         },
         "baked": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
@@ -616,8 +616,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word bienestar when describing a common situation."
         },
         "big": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word big when describing a common situation."
+            definition: "Large in physical size, extent, or importance; noticeably larger than typical.",
+            example: "They drove a big truck that barely fit down the narrow lane."
         },
         "biting": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
@@ -668,8 +668,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They described the event as bold during the debrief."
         },
         "bon": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word bon when describing a common situation."
+            definition: "Qui possède des qualités appréciables; satisfaisant ou moralement acceptable.",
+            example: "C'était une bonne explication qui a clarifié la notion pour tous."
         },
                                                                                         "bonito": {
             definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",
@@ -768,8 +768,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Budgeting every day helped him improve quickly."
         },
         "bueno": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word bueno when describing a common situation."
+            definition: "Que posee cualidades deseables; satisfactorio o moralmente correcto.",
+            example: "Fue una buena explicación que aclaró la idea para todos."
         },
                                                                                         "burning": {
             definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",
@@ -900,8 +900,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word chaud when describing a common situation."
         },
         "cheap": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word cheap when describing a common situation."
+            definition: "Low in price; costing little compared with similar items, sometimes implying lower durability or quality.",
+            example: "He bought a cheap umbrella that broke in the first heavy rain."
         },
                                                                                         "cheer": {
             definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",
@@ -1508,20 +1508,20 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They described the event as dichoso during the debrief."
         },
         "difficile": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word difficile when describing a common situation."
+            definition: "Qui exige beaucoup d'effort, de compétence ou de réflexion; pas facilement réalisable ou compréhensible.",
+            example: "Traduire ce poème était difficile à cause de ses images subtiles."
         },
         "difficult": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word difficult when describing a common situation."
+            definition: "Requiring great effort, skill, or thought; not easily accomplished or understood.",
+            example: "Restoring the old painting was difficult because of its fragile surface."
         },
                                                                                         "diffident": {
             definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",
             example: "They described the event as diffident during the debrief."
         },
         "difícil": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word difícil when describing a common situation."
+            definition: "Que requiere mucho esfuerzo, habilidad o pensamiento; no es fácil de realizar o comprender.",
+            example: "Restaurar la pintura antigua fue difícil por su superficie frágil."
         },
                                                                                         "dignes": {
             definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",
@@ -1668,8 +1668,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word développement when describing a common situation."
         },
         "easy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word easy when describing a common situation."
+            definition: "Not difficult to do, understand, or accomplish; requiring little effort.",
+            example: "The task was easy to finish in under ten minutes."
         },
                                                                                         "economical": {
             definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",
@@ -1712,8 +1712,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word efficiency when describing a common situation."
         },
         "efficient": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word efficient when describing a common situation."
+            definition: "Producing the intended result with minimal wasted time, effort, or resources.",
+            example: "Her efficient plan cut the team's work time in half."
         },
         "effort": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -1736,8 +1736,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word eficiencia when describing a common situation."
         },
         "eficiente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word eficiente when describing a common situation."
+            definition: "Que logra el resultado deseado con un mínimo de tiempo, esfuerzo o recursos desperdiciados.",
+            example: "Su planificación eficiente redujo a la mitad el tiempo del proyecto."
         },
         "ejercicio": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -2124,8 +2124,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They described the event as exécrable during the debrief."
         },
                                                                                         "facile": {
-            definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",
-            example: "They described the event as facile during the debrief."
+            definition: "Qui demande peu d'effort ou de compétence; simple à réaliser ou à comprendre.",
+            example: "La recette était facile à suivre et a bien réussi."
         },
                                                                                         "factible": {
             definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",
@@ -2268,8 +2268,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They described the event as fornido during the debrief."
         },
         "fort": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word fort when describing a common situation."
+            definition: "Qui possède une grande force physique ou une grande résistance; aussi utilisé pour une intensité notable.",
+            example: "Des cordes très fortes ont maintenu le bateau pendant la tempête."
         },
                                                                                         "forthright": {
             definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",
@@ -2380,8 +2380,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word frío when describing a common situation."
         },
         "fuerte": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word fuerte when describing a common situation."
+            definition: "Que tiene gran fuerza física o resistencia; también usado para describir intensidad o efecto potente.",
+            example: "Las cuerdas fuertes mantuvieron el puente estable durante la tormenta."
         },
         "fulfillment": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -2428,8 +2428,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word futuro when describing a common situation."
         },
         "fácil": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word fácil when describing a common situation."
+            definition: "Que no es difícil de hacer, entender o lograr; requiere poco esfuerzo.",
+            example: "La tarea fue fácil de completar en menos de diez minutos."
         },
         "fâché": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2536,8 +2536,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word goals when describing a common situation."
         },
         "good": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word good when describing a common situation."
+            definition: "Having desirable qualities; meeting a standard of correctness, usefulness, or moral approval.",
+            example: "That was a good explanation that finally made the idea clear."
         },
                                                                                 "gorgeous": {
             definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",
@@ -2548,12 +2548,12 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They described the event as gozoso during the debrief."
         },
         "grand": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word grand when describing a common situation."
+            definition: "Qui a une taille, une étendue ou une importance supérieure à la normale.",
+            example: "Ils ont une grande maison avec un atelier spacieux."
         },
         "grande": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word grande when describing a common situation."
+            definition: "De tamaño, alcance o importancia mayor a lo habitual.",
+            example: "Compraron un granero tan grande que cabían dos coches dentro."
         },
         "gratifiant": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -3452,8 +3452,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They described the event as malin during the debrief."
         },
         "malo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word malo when describing a common situation."
+            definition: "Que no cumple un estándar aceptable; perjudicial, defectuoso o desagradable.",
+            example: "Dejar la estufa encendida fue una mala decisión."
         },
                                                                                         "mammoth": {
             definition: "Emphasizes an extent that becomes a planning consideration rather than a mere descriptor.",
@@ -3972,8 +3972,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They described the event as penurious during the debrief."
         },
         "pequeño": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word pequeño when describing a common situation."
+            definition: "De tamaño, cantidad o alcance reducido; menor que lo normal.",
+            example: "Ella llevaba una libreta pequeña que cabía en su bolsillo."
         },
                                                                                         "perecedero": {
             definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",
@@ -4036,8 +4036,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They described the event as perspicuous during the debrief."
         },
         "petit": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word petit when describing a common situation."
+            definition: "De taille ou d'ampleur réduite; plus petit que la moyenne.",
+            example: "Elle garde un petit carnet dans sa poche."
         },
         "petit-déjeuner": {
             definition: "A person or thing whose job or role involves a particular activity or function.",
@@ -5040,8 +5040,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They described the event as slim during the debrief."
         },
         "small": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word small when describing a common situation."
+            definition: "Of limited size, amount, or degree; noticeably smaller than typical.",
+            example: "She carried a small notebook that fit inside her pocket."
         },
                                                                                         "smart": {
             definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",
@@ -5228,8 +5228,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Striking every day helped him improve quickly."
         },
         "strong": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word strong when describing a common situation."
+            definition: "Possessing great physical power or the capacity to withstand force; also used for intense influence or effect.",
+            example: "Strong cables held the bridge steady during the storm."
         },
         "studious": {
             definition: "Having a quality or characteristic that is often noticeable or strong.",
@@ -5412,8 +5412,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word thick when describing a common situation."
         },
         "thin": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word thin when describing a common situation."
+            definition: "Having little thickness; with two surfaces or edges close together.",
+            example: "The thin paperback slipped into my bag without taking up much space."
         },
                                                                                         "threnody": {
             definition: "A commonly used term in everyday speech to denote this characteristic in ordinary contexts.",

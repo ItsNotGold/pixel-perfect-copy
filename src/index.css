@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -65,7 +65,7 @@
     --sidebar-border: 30 10% 90%;
     --sidebar-ring: 174 60% 41%;
 
-    --font-display: 'Gothic A1', 'DM Serif Display', serif;
+    --font-display: 'DM Serif Display', serif;
     --font-body: 'Inter', sans-serif;
   }
 
@@ -218,110 +218,6 @@
     opacity: 0.03;
     pointer-events: none;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  }
-
-  /* Nature-inspired background + parallax layer */
-  .app-bg-nature {
-    position: relative;
-    background-color: hsl(var(--background));
-    overflow: hidden;
-  }
-  .app-bg-nature::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -3;
-    background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=60&ixlib=rb-4.0.3&s=');
-    background-size: cover;
-    background-position: center;
-    filter: saturate(0.9) contrast(0.92) brightness(0.72);
-    transform: translateZ(0);
-    will-change: transform;
-  }
-  .app-bg-nature::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -2;
-    background: linear-gradient(180deg, rgba(7,24,32,0.28), rgba(255,255,255,0.04));
-    backdrop-filter: blur(8px);
-  }
-
-  /* Glass reflection helper */
-  .glass-reflection {
-    position: relative;
-    overflow: hidden;
-  }
-  .glass-reflection::before {
-    content: "";
-    position: absolute;
-    top: -40%;
-    left: -10%;
-    width: 160%;
-    height: 160%;
-    background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
-    transform: rotate(-18deg) translateY(-20%);
-    opacity: 0.6;
-    pointer-events: none;
-    filter: blur(20px);
-  }
-
-  /* Stronger glass variant for key surfaces */
-  .glass-strong {
-    @apply bg-white/80 dark:bg-black/60 border border-white/10 dark:border-white/10 backdrop-blur-lg shadow-glow;
-  }
-
-  /* Headline parentheses accent */
-  .paren-accent {
-    position: relative;
-    display: inline-block;
-    padding: 0 0.35rem;
-  }
-  .paren-accent::before,
-  .paren-accent::after {
-    color: var(--primary-foreground);
-    content: "(";
-    opacity: 0.36;
-    font-weight: 600;
-  }
-  .paren-accent::after { content: ")"; opacity: 0.36; }
-
-  /* Motion utilities */
-  @keyframes primary-entrance {
-    from { opacity: 0; transform: translateY(18px) scale(0.98); }
-    to { opacity: 1; transform: translateY(0) scale(1); }
-  }
-  @keyframes secondary-entrance {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes micro-pop {
-    from { transform: scale(0.98); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-  }
-  .animate-primary {
-    animation: primary-entrance 420ms cubic-bezier(.2,.9,.3,1) both;
-  }
-  .animate-secondary {
-    animation: secondary-entrance 300ms cubic-bezier(.25,.8,.25,1) both;
-  }
-  .animate-micro {
-    animation: micro-pop 160ms ease-out both;
-  }
-
-  /* Respect reduced motion */
-  @media (prefers-reduced-motion: reduce) {
-    .animate-primary,
-    .animate-secondary,
-    .animate-micro,
-    .animate-float,
-    .animate-pulse-slow,
-    .animate-fade-in,
-    .animate-fade-up,
-    .animate-scale-in {
-      animation: none !important;
-      transition: none !important;
-    }
   }
 
   .animate-float {

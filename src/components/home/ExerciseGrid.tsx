@@ -23,8 +23,8 @@ export function ExerciseGrid() {
               <Link
                 key={exercise.id}
                 to={exercise.path}
-                className="group relative overflow-hidden rounded-2xl glass p-6 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 animate-secondary"
-                style={{ animationDelay: `${index * 0.08 + 0.08}s`, animationFillMode: "forwards" }}
+                className="group relative overflow-hidden rounded-2xl glass p-6 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 animate-fade-up opacity-0"
+                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: "forwards" }}
               >
                 {/* Exercise Number Badge */}
                 <div className="absolute top-4 right-4 flex h-6 w-6 items-center justify-center rounded-full bg-muted text-xs font-semibold text-muted-foreground">

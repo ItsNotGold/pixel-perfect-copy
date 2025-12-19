@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Gothic A1', 'DM Serif Display', 'serif'],
+        display: ['DM Serif Display', 'serif'],
         body: ['Inter', 'sans-serif'],
       },
       colors: {

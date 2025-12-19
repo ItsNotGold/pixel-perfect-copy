@@ -18,14 +18,14 @@ export function MainLayout({ children, className }: MainLayoutProps) {
   const showLang = !!(match && exercises.some((e) => e.id === match.groups?.id));
 
   return (
-    <div className="min-h-screen app-bg-nature bg-noise">
+    <div className="min-h-screen gradient-surface">
       <Sidebar />
       {showLang && (
         <div className="fixed top-4 right-4 z-50">
           <LanguageSelector />
         </div>
       )}
-      <main className={cn("ml-64 min-h-screen transition-all duration-300 relative z-10", className)}>
+      <main className={cn("ml-64 min-h-screen transition-all duration-300", className)}>
         <PageTransition>
           {children}
         </PageTransition>

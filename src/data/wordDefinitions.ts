@@ -7,13 +7,13 @@ export interface WordDefinition {
 
 export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = {
     en: {
-        "abatido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word abatido when describing a common situation."
+                                        "abatido": {
+            definition: "abatido: commonly like triste.",
+            example: "A abatido change made the project easier to finish."
         },
-        "abattu": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word abattu when describing a common situation."
+                                        "abattu": {
+            definition: "abattu: somewhat like triste.",
+            example: "A abattu change made the project easier to finish."
         },
         "abdicate": {
             definition: "To formally give up a position of power or responsibility, especially a throne or authority.",
@@ -23,17 +23,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "To officially end or stop a law, system, or practice so it is no longer used.",
             example: "The committee recommended abolish-ing outdated regulations to modernize the code."
         },
-        "abominable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word abominable when describing a common situation."
+                                        "abominable": {
+            definition: "abominable: remarkably bad.",
+            example: "The abominable size of the ship surprised everyone."
         },
-        "abordable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word abordable when describing a common situation."
+                                        "abordable": {
+            definition: "abordable: very facile.",
+            example: "The abordable size of the ship surprised everyone."
         },
-        "abrasador": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word abrasador when describing a common situation."
+                                        "abrasador": {
+            definition: "abrasador: rather like caliente.",
+            example: "A abrasador change made the project easier to finish."
         },
         "abridge": {
             definition: "To shorten a text while keeping the core meaning intact.",
@@ -43,37 +43,37 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word abrupt when describing a common situation."
         },
-        "absorbente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word absorbente when describing a common situation."
+                                        "absorbente": {
+            definition: "absorbente: remarkably interesante.",
+            example: "The absorbente size of the ship surprised everyone."
         },
-        "absorbing": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Absorbing every day helped him improve quickly."
+                                        "absorbing": {
+            definition: "absorbing: the act of doing interesting.",
+            example: "Absorbing the data helped us see the trend."
         },
         "abundant": {
             definition: "Existing in large quantities; more than enough.",
             example: "Wildflowers were abundant in the fields after the rain."
         },
-        "abysmal": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word abysmal when describing a common situation."
+                                        "abysmal": {
+            definition: "abysmal: exceptionally bad.",
+            example: "The abysmal size of the ship surprised everyone."
         },
-        "accablé": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word accablé when describing a common situation."
+                                        "accablé": {
+            definition: "accablé: exceptionally triste.",
+            example: "The accablé size of the ship surprised everyone."
         },
         "accelerated": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
             example: "They used the word accelerated when describing a common situation."
         },
-        "accesible": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word accesible when describing a common situation."
+                                        "accesible": {
+            definition: "accesible: rather like fácil.",
+            example: "A accesible change made the project easier to finish."
         },
-        "accessible": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word accessible when describing a common situation."
+                                        "accessible": {
+            definition: "accessible: somewhat like facile.",
+            example: "A accessible change made the project easier to finish."
         },
         "acción": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -83,21 +83,21 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "An act, process, or result related to accommoda, describing a specific action or condition.",
             example: "The decision came after a lengthy accommodation process that changed the plan."
         },
-        "acelerado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word acelerado when describing a common situation."
+                                        "acelerado": {
+            definition: "acelerado: rather like rápido.",
+            example: "A acelerado change made the project easier to finish."
         },
-        "achicharrante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word achicharrante when describing a common situation."
+                                        "achicharrante": {
+            definition: "achicharrante: very caliente.",
+            example: "The achicharrante size of the ship surprised everyone."
         },
         "achievement": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word achievement when describing a common situation."
         },
-        "acongojado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word acongojado when describing a common situation."
+                                        "acongojado": {
+            definition: "acongojado: remarkably triste.",
+            example: "The acongojado size of the ship surprised everyone."
         },
         "acrid": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -111,13 +111,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word active when describing a common situation."
         },
-        "actual": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word actual when describing a common situation."
+                                        "actual": {
+            definition: "actual: somewhat like nuevo.",
+            example: "A actual change made the project easier to finish."
         },
-        "actuel": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word actuel when describing a common situation."
+                                        "actuel": {
+            definition: "actuel: somewhat like nouveau.",
+            example: "A actuel change made the project easier to finish."
         },
         "adamantine": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -143,9 +143,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "An act, process, or result related to adop, describing a specific action or condition.",
             example: "The decision came after a lengthy adoption process that changed the plan."
         },
-        "advantageous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word advantageous when describing a common situation."
+                                        "advantageous": {
+            definition: "advantageous: fairly like helpful.",
+            example: "A advantageous change made the project easier to finish."
         },
         "adventure": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -159,61 +159,61 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Concerning the appreciation of beauty or artistic taste; relating to what is visually pleasing.",
             example: "The designer focused on creating an aesthetic that felt modern and warm."
         },
-        "affable": {
-            definition: "Friendly, pleasant, and easy to talk to.",
-            example: "He was affable with every guest at the reception."
+                                        "affable": {
+            definition: "affable: exceptionally friendly.",
+            example: "The affable size of the ship surprised everyone."
         },
-        "affluent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word affluent when describing a common situation."
+                                        "affluent": {
+            definition: "affluent: fairly like rich.",
+            example: "A affluent change made the project easier to finish."
         },
-        "affordable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word affordable when describing a common situation."
+                                        "affordable": {
+            definition: "affordable: somewhat like cheap.",
+            example: "A affordable change made the project easier to finish."
         },
-        "affreux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word affreux when describing a common situation."
+                                        "affreux": {
+            definition: "affreux: commonly like mauvais.",
+            example: "A affreux change made the project easier to finish."
         },
-        "afligido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word afligido when describing a common situation."
+                                        "afligido": {
+            definition: "afligido: fairly like triste.",
+            example: "A afligido change made the project easier to finish."
         },
-        "agacé": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word agacé when describing a common situation."
+                                        "agacé": {
+            definition: "agacé: rather like fâché.",
+            example: "A agacé change made the project easier to finish."
         },
-        "age-old": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word age-old when describing a common situation."
+                                        "age-old": {
+            definition: "age-old: commonly like ancient.",
+            example: "A age-old change made the project easier to finish."
         },
-        "aged": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word aged when describing a common situation."
+                                        "aged": {
+            definition: "aged: fairly like old.",
+            example: "A aged change made the project easier to finish."
         },
-        "agile": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word agile when describing a common situation."
+                                        "agile": {
+            definition: "agile: rather like rapide.",
+            example: "A agile change made the project easier to finish."
         },
-        "agréable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word agréable when describing a common situation."
+                                        "agréable": {
+            definition: "agréable: fairly like bon.",
+            example: "A agréable change made the project easier to finish."
         },
-        "agudo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word agudo when describing a common situation."
+                                        "agudo": {
+            definition: "agudo: rather like inteligente.",
+            example: "A agudo change made the project easier to finish."
         },
         "ahorro": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word ahorro when describing a common situation."
         },
-        "airado": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word airado when describing a common situation."
+                                        "airado": {
+            definition: "airado: somewhat like enfadado.",
+            example: "A airado change made the project easier to finish."
         },
-        "aisé": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word aisé when describing a common situation."
+                                        "aisé": {
+            definition: "aisé: fairly like facile.",
+            example: "A aisé change made the project easier to finish."
         },
         "ajuste": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -223,9 +223,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word alcance when describing a common situation."
         },
-        "alegre": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word alegre when describing a common situation."
+                                        "alegre": {
+            definition: "alegre: somewhat like feliz.",
+            example: "A alegre change made the project easier to finish."
         },
         "almuerzo": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -251,37 +251,37 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "An act, process, or result related to ambi, describing a specific action or condition.",
             example: "The decision came after a lengthy ambition process that changed the plan."
         },
-        "amiable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word amiable when describing a common situation."
+                                        "amiable": {
+            definition: "amiable: commonly like friendly.",
+            example: "A amiable change made the project easier to finish."
         },
-        "amicable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word amicable when describing a common situation."
+                                        "amicable": {
+            definition: "amicable: extremely friendly.",
+            example: "The amicable size of the ship surprised everyone."
         },
-        "amusing": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Amusing every day helped him improve quickly."
+                                        "amusing": {
+            definition: "amusing: an action similar to funny.",
+            example: "Amusing the document took longer than expected."
         },
-        "ancestral": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word ancestral when describing a common situation."
+                                        "ancestral": {
+            definition: "ancestral: very vieux.",
+            example: "The ancestral size of the ship surprised everyone."
         },
-        "anciano": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word anciano when describing a common situation."
+                                        "anciano": {
+            definition: "anciano: commonly like viejo.",
+            example: "A anciano change made the project easier to finish."
         },
-        "ancien": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word ancien when describing a common situation."
+                                        "ancien": {
+            definition: "ancien: somewhat like vieux.",
+            example: "A ancien change made the project easier to finish."
         },
-        "ancient": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word ancient when describing a common situation."
+                                        "ancient": {
+            definition: "ancient: commonly like old.",
+            example: "A ancient change made the project easier to finish."
         },
-        "angoissant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word angoissant when describing a common situation."
+                                        "angoissant": {
+            definition: "angoissant: somewhat like effrayant.",
+            example: "A angoissant change made the project easier to finish."
         },
         "angry": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -291,37 +291,37 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "To destroy completely so that nothing remains useful or recognizable.",
             example: "The old building was annihilated to make room for the new highway."
         },
-        "annoyed": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word annoyed when describing a common situation."
+                                        "annoyed": {
+            definition: "annoyed: commonly like angry.",
+            example: "A annoyed change made the project easier to finish."
         },
         "anonymity": {
             definition: "The condition of being unnamed or unidentifiable, so that a person's identity is not known.",
             example: "Users could post comments with anonymity to protect their privacy."
         },
-        "antediluvian": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word antediluvian when describing a common situation."
+                                        "antediluvian": {
+            definition: "antediluvian: extremely ancient.",
+            example: "The antediluvian size of the ship surprised everyone."
         },
-        "antediluviano": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word antediluviano when describing a common situation."
+                                        "antediluviano": {
+            definition: "antediluviano: very viejo.",
+            example: "The antediluviano size of the ship surprised everyone."
         },
-        "antiguo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word antiguo when describing a common situation."
+                                        "antiguo": {
+            definition: "antiguo: commonly like viejo.",
+            example: "A antiguo change made the project easier to finish."
         },
         "antiquarian": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word antiquarian when describing a common situation."
         },
-        "antiquated": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word antiquated when describing a common situation."
+                                        "antiquated": {
+            definition: "antiquated: remarkably old.",
+            example: "The antiquated size of the ship surprised everyone."
         },
-        "antique": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word antique when describing a common situation."
+                                        "antique": {
+            definition: "antique: commonly like old.",
+            example: "A antique change made the project easier to finish."
         },
         "antonym": {
             definition: "A word that has the opposite meaning of another word.",
@@ -331,93 +331,93 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word apasionado when describing a common situation."
         },
-        "apasionante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word apasionante when describing a common situation."
+                                        "apasionante": {
+            definition: "apasionante: commonly like interesante.",
+            example: "A apasionante change made the project easier to finish."
         },
-        "apesadumbrado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word apesadumbrado when describing a common situation."
+                                        "apesadumbrado": {
+            definition: "apesadumbrado: very triste.",
+            example: "The apesadumbrado size of the ship surprised everyone."
         },
-        "apollonian": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word apollonian when describing a common situation."
+                                        "apollonian": {
+            definition: "apollonian: remarkably brilliant.",
+            example: "The apollonian size of the ship surprised everyone."
         },
-        "apoplectic": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word apoplectic when describing a common situation."
+                                        "apoplectic": {
+            definition: "apoplectic: remarkably angry.",
+            example: "The apoplectic size of the ship surprised everyone."
         },
         "apoyo": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word apoyo when describing a common situation."
         },
-        "apparent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word apparent when describing a common situation."
+                                        "apparent": {
+            definition: "apparent: fairly like transparent.",
+            example: "A apparent change made the project easier to finish."
         },
         "appreciation": {
             definition: "An act, process, or result related to apprecia, describing a specific action or condition.",
             example: "The decision came after a lengthy appreciation process that changed the plan."
         },
-        "approachable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word approachable when describing a common situation."
+                                        "approachable": {
+            definition: "approachable: fairly like friendly.",
+            example: "A approachable change made the project easier to finish."
         },
         "aprendizaje": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word aprendizaje when describing a common situation."
         },
-        "arcaico": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word arcaico when describing a common situation."
+                                        "arcaico": {
+            definition: "arcaico: commonly like viejo.",
+            example: "A arcaico change made the project easier to finish."
         },
-        "archaic": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word archaic when describing a common situation."
+                                        "archaic": {
+            definition: "archaic: exceptionally old.",
+            example: "The archaic size of the ship surprised everyone."
         },
-        "archaïque": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word archaïque when describing a common situation."
+                                        "archaïque": {
+            definition: "archaïque: very vieux.",
+            example: "The archaïque size of the ship surprised everyone."
         },
-        "arctic": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word arctic when describing a common situation."
+                                        "arctic": {
+            definition: "arctic: remarkably cold.",
+            example: "The arctic size of the ship surprised everyone."
         },
-        "ardent": {
-            definition: "Very enthusiastic or passionate about a cause or activity.",
-            example: "He was an ardent supporter of environmental conservation."
+                                        "ardent": {
+            definition: "ardent: somewhat like chaud.",
+            example: "A ardent change made the project easier to finish."
         },
-        "ardiente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word ardiente when describing a common situation."
+                                        "ardiente": {
+            definition: "ardiente: fairly like caliente.",
+            example: "A ardiente change made the project easier to finish."
         },
-        "ardu": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word ardu when describing a common situation."
+                                        "ardu": {
+            definition: "ardu: fairly like difficile.",
+            example: "A ardu change made the project easier to finish."
         },
-        "arduo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word arduo when describing a common situation."
+                                        "arduo": {
+            definition: "arduo: rather like difícil.",
+            example: "A arduo change made the project easier to finish."
         },
-        "arduous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word arduous when describing a common situation."
+                                        "arduous": {
+            definition: "arduous: exceptionally difficult.",
+            example: "The arduous size of the ship surprised everyone."
         },
         "aromatic": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word aromatic when describing a common situation."
         },
-        "arrebatador": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word arrebatador when describing a common situation."
+                                        "arrebatador": {
+            definition: "arrebatador: exceptionally interesante.",
+            example: "The arrebatador size of the ship surprised everyone."
         },
         "articulate": {
             definition: "Able to express thoughts and ideas clearly and effectively in speech or writing.",
             example: "He is very articulate and explained the process step by step."
         },
-        "asequible": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word asequible when describing a common situation."
+                                        "asequible": {
+            definition: "asequible: very fácil.",
+            example: "The asequible size of the ship surprised everyone."
         },
         "asistencia": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -427,73 +427,73 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A scientist who studies celestial objects, space, and the physical universe beyond Earth.",
             example: "The astronomer charted the positions of newly discovered comets."
         },
-        "astucieux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word astucieux when describing a common situation."
+                                        "astucieux": {
+            definition: "astucieux: rather like intelligent.",
+            example: "A astucieux change made the project easier to finish."
         },
-        "astute": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word astute when describing a common situation."
+                                        "astute": {
+            definition: "astute: remarkably smart.",
+            example: "The astute size of the ship surprised everyone."
         },
-        "astuto": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word astuto when describing a common situation."
+                                        "astuto": {
+            definition: "astuto: somewhat like inteligente.",
+            example: "A astuto change made the project easier to finish."
         },
-        "aterido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word aterido when describing a common situation."
+                                        "aterido": {
+            definition: "aterido: exceptionally frío.",
+            example: "The aterido size of the ship surprised everyone."
         },
         "aterrador": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word aterrador when describing a common situation."
         },
-        "athlétique": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word athlétique when describing a common situation."
+                                        "athlétique": {
+            definition: "athlétique: remarkably fort.",
+            example: "The athlétique size of the ship surprised everyone."
         },
-        "atractivo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word atractivo when describing a common situation."
+                                        "atractivo": {
+            definition: "atractivo: rather like interesante.",
+            example: "A atractivo change made the project easier to finish."
         },
-        "atroce": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word atroce when describing a common situation."
+                                        "atroce": {
+            definition: "atroce: somewhat like mauvais.",
+            example: "A atroce change made the project easier to finish."
         },
-        "atrocious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word atrocious when describing a common situation."
+                                        "atrocious": {
+            definition: "atrocious: very bad.",
+            example: "The atrocious size of the ship surprised everyone."
         },
         "attendance": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word attendance when describing a common situation."
         },
-        "attenuated": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word attenuated when describing a common situation."
+                                        "attenuated": {
+            definition: "attenuated: remarkably thin.",
+            example: "The attenuated size of the ship surprised everyone."
         },
-        "attractive": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word attractive when describing a common situation."
+                                        "attractive": {
+            definition: "attractive: somewhat like beautiful.",
+            example: "A attractive change made the project easier to finish."
         },
-        "attrayant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word attrayant when describing a common situation."
+                                        "attrayant": {
+            definition: "attrayant: rather like intéressant.",
+            example: "A attrayant change made the project easier to finish."
         },
-        "audacieux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word audacieux when describing a common situation."
+                                        "audacieux": {
+            definition: "audacieux: rather like courageux.",
+            example: "A audacieux change made the project easier to finish."
         },
-        "audacious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word audacious when describing a common situation."
+                                        "audacious": {
+            definition: "audacious: very brave.",
+            example: "The audacious size of the ship surprised everyone."
         },
-        "audaz": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word audaz when describing a common situation."
+                                        "audaz": {
+            definition: "audaz: rather like valiente.",
+            example: "A audaz change made the project easier to finish."
         },
-        "auspicious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word auspicious when describing a common situation."
+                                        "auspicious": {
+            definition: "auspicious: remarkably helpful.",
+            example: "The auspicious size of the ship surprised everyone."
         },
         "autocuidado": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -503,9 +503,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Having a quality or characteristic that is often noticeable or strong.",
             example: "They used the word autonomous when describing a common situation."
         },
-        "avant-gardiste": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word avant-gardiste when describing a common situation."
+                                        "avant-gardiste": {
+            definition: "avant-gardiste: remarkably nouveau.",
+            example: "The avant-gardiste size of the ship surprised everyone."
         },
         "avenir": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -523,25 +523,25 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A strong dislike or reluctance to do or experience something.",
             example: "She has an aversion to loud noises and avoids crowded places."
         },
-        "avide": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word avide when describing a common situation."
+                                        "avide": {
+            definition: "avide: rather like curieux.",
+            example: "A avide change made the project easier to finish."
         },
-        "avisé": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word avisé when describing a common situation."
+                                        "avisé": {
+            definition: "avisé: very intelligent.",
+            example: "The avisé size of the ship surprised everyone."
         },
         "awareness": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word awareness when describing a common situation."
         },
-        "awful": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word awful when describing a common situation."
+                                        "awful": {
+            definition: "awful: rather like bad.",
+            example: "A awful change made the project easier to finish."
         },
-        "añejo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word añejo when describing a common situation."
+                                        "añejo": {
+            definition: "añejo: rather like viejo.",
+            example: "A añejo change made the project easier to finish."
         },
         "bad": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -555,29 +555,29 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word balance when describing a common situation."
         },
-        "baleful": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word baleful when describing a common situation."
+                                        "baleful": {
+            definition: "baleful: exceptionally dangerous.",
+            example: "The baleful size of the ship surprised everyone."
         },
-        "balmy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word balmy when describing a common situation."
+                                        "balmy": {
+            definition: "balmy: rather like warm.",
+            example: "A balmy change made the project easier to finish."
         },
-        "bashful": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word bashful when describing a common situation."
+                                        "bashful": {
+            definition: "bashful: commonly like timid.",
+            example: "A bashful change made the project easier to finish."
         },
-        "basic": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word basic when describing a common situation."
+                                        "basic": {
+            definition: "basic: rather like easy.",
+            example: "A basic change made the project easier to finish."
         },
-        "beatific": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word beatific when describing a common situation."
+                                        "beatific": {
+            definition: "beatific: extremely joyful.",
+            example: "The beatific size of the ship surprised everyone."
         },
-        "beatífico": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word beatífico when describing a common situation."
+                                        "beatífico": {
+            definition: "beatífico: very feliz.",
+            example: "The beatífico size of the ship surprised everyone."
         },
         "beau": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -587,25 +587,25 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word beautiful when describing a common situation."
         },
-        "bello": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word bello when describing a common situation."
+                                        "bello": {
+            definition: "bello: rather like hermoso.",
+            example: "A bello change made the project easier to finish."
         },
         "benefactor": {
             definition: "A person who gives money or help to a person or cause, especially in a generous way.",
             example: "The scholarship was funded by a generous benefactor."
         },
-        "beneficial": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word beneficial when describing a common situation."
+                                        "beneficial": {
+            definition: "beneficial: somewhat like helpful.",
+            example: "A beneficial change made the project easier to finish."
         },
-        "benignant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word benignant when describing a common situation."
+                                        "benignant": {
+            definition: "benignant: very helpful.",
+            example: "The benignant size of the ship surprised everyone."
         },
-        "besmirched": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word besmirched when describing a common situation."
+                                        "besmirched": {
+            definition: "besmirched: remarkably dirty.",
+            example: "The besmirched size of the ship surprised everyone."
         },
         "bien-être": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -631,57 +631,57 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word blank when describing a common situation."
         },
-        "blaring": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Blaring every day helped him improve quickly."
+                                        "blaring": {
+            definition: "blaring: an action similar to loud.",
+            example: "Blaring the document took longer than expected."
         },
         "blazing": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Blazing every day helped him improve quickly."
         },
-        "blissful": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word blissful when describing a common situation."
+                                        "blissful": {
+            definition: "blissful: extremely happy.",
+            example: "The blissful size of the ship surprised everyone."
         },
-        "blistering": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Blistering every day helped him improve quickly."
+                                        "blistering": {
+            definition: "blistering: the act of doing hot.",
+            example: "Blistering the data helped us see the trend."
         },
-        "bloodcurdling": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Bloodcurdling every day helped him improve quickly."
+                                        "bloodcurdling": {
+            definition: "bloodcurdling: the act of doing scary.",
+            example: "Bloodcurdling the data helped us see the trend."
         },
         "blue": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word blue when describing a common situation."
         },
-        "bochornoso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word bochornoso when describing a common situation."
+                                        "bochornoso": {
+            definition: "bochornoso: remarkably caliente.",
+            example: "The bochornoso size of the ship surprised everyone."
         },
-        "boiling": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Boiling every day helped him improve quickly."
+                                        "boiling": {
+            definition: "boiling: an action similar to hot.",
+            example: "Boiling the document took longer than expected."
         },
-        "bold": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word bold when describing a common situation."
+                                        "bold": {
+            definition: "bold: fairly like brave.",
+            example: "A bold change made the project easier to finish."
         },
         "bon": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word bon when describing a common situation."
         },
-        "bonito": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word bonito when describing a common situation."
+                                        "bonito": {
+            definition: "bonito: somewhat like hermoso.",
+            example: "A bonito change made the project easier to finish."
         },
-        "booming": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Booming every day helped him improve quickly."
+                                        "booming": {
+            definition: "booming: an action similar to loud.",
+            example: "Booming the document took longer than expected."
         },
-        "bouillant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word bouillant when describing a common situation."
+                                        "bouillant": {
+            definition: "bouillant: rather like chaud.",
+            example: "A bouillant change made the project easier to finish."
         },
         "boundaries": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -691,17 +691,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Bracing every day helped him improve quickly."
         },
-        "brave": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word brave when describing a common situation."
+                                        "brave": {
+            definition: "brave: rather like courageux.",
+            example: "A brave change made the project easier to finish."
         },
-        "bravo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word bravo when describing a common situation."
+                                        "bravo": {
+            definition: "bravo: rather like valiente.",
+            example: "A bravo change made the project easier to finish."
         },
-        "breakable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word breakable when describing a common situation."
+                                        "breakable": {
+            definition: "breakable: rather like fragile.",
+            example: "A breakable change made the project easier to finish."
         },
         "breakfast": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -715,53 +715,53 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word brief when describing a common situation."
         },
-        "bright": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word bright when describing a common situation."
+                                        "bright": {
+            definition: "bright: somewhat like smart.",
+            example: "A bright change made the project easier to finish."
         },
         "brighten": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word brighten when describing a common situation."
         },
-        "brillant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word brillant when describing a common situation."
+                                        "brillant": {
+            definition: "brillant: fairly like intelligent.",
+            example: "A brillant change made the project easier to finish."
         },
-        "brillante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word brillante when describing a common situation."
+                                        "brillante": {
+            definition: "brillante: rather like inteligente.",
+            example: "A brillante change made the project easier to finish."
         },
-        "brilliant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word brilliant when describing a common situation."
+                                        "brilliant": {
+            definition: "brilliant: rather like bright.",
+            example: "A brilliant change made the project easier to finish."
         },
-        "brio": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word brio when describing a common situation."
+                                        "brio": {
+            definition: "brio: extremely brilliant.",
+            example: "The brio size of the ship surprised everyone."
         },
-        "brisable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word brisable when describing a common situation."
+                                        "brisable": {
+            definition: "brisable: fairly like fragile.",
+            example: "A brisable change made the project easier to finish."
         },
-        "brisk": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word brisk when describing a common situation."
+                                        "brisk": {
+            definition: "brisk: very fast.",
+            example: "The brisk size of the ship surprised everyone."
         },
-        "brittle": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word brittle when describing a common situation."
+                                        "brittle": {
+            definition: "brittle: commonly like fragile.",
+            example: "A brittle change made the project easier to finish."
         },
-        "broke": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word broke when describing a common situation."
+                                        "broke": {
+            definition: "broke: rather like poor.",
+            example: "A broke change made the project easier to finish."
         },
-        "brûlant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word brûlant when describing a common situation."
+                                        "brûlant": {
+            definition: "brûlant: commonly like chaud.",
+            example: "A brûlant change made the project easier to finish."
         },
-        "budget": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word budget when describing a common situation."
+                                        "budget": {
+            definition: "budget: somewhat like cheap.",
+            example: "A budget change made the project easier to finish."
         },
         "budgeting": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
@@ -771,17 +771,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word bueno when describing a common situation."
         },
-        "burning": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Burning every day helped him improve quickly."
+                                        "burning": {
+            definition: "burning: an action similar to hot.",
+            example: "Burning the document took longer than expected."
         },
         "busy": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word busy when describing a common situation."
         },
-        "béat": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word béat when describing a common situation."
+                                        "béat": {
+            definition: "béat: extremely heureux.",
+            example: "The béat size of the ship surprised everyone."
         },
         "calamitous": {
             definition: "Having a quality or characteristic that is often noticeable or strong.",
@@ -795,69 +795,69 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word caliente when describing a common situation."
         },
-        "calm": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word calm when describing a common situation."
+                                        "calm": {
+            definition: "calm: fairly like quiet.",
+            example: "A calm change made the project easier to finish."
         },
-        "candente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word candente when describing a common situation."
+                                        "candente": {
+            definition: "candente: fairly like caliente.",
+            example: "A candente change made the project easier to finish."
         },
-        "candor": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word candor when describing a common situation."
+                                        "candor": {
+            definition: "candor: remarkably honest.",
+            example: "The candor size of the ship surprised everyone."
         },
-        "caniculaire": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word caniculaire when describing a common situation."
+                                        "caniculaire": {
+            definition: "caniculaire: exceptionally chaud.",
+            example: "The caniculaire size of the ship surprised everyone."
         },
-        "canicular": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word canicular when describing a common situation."
+                                        "canicular": {
+            definition: "canicular: very caliente.",
+            example: "The canicular size of the ship surprised everyone."
         },
         "canonize": {
             definition: "To officially declare someone a saint in certain religious traditions.",
             example: "The church decided to canonize the missionary for his lifetime of service."
         },
-        "capable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word capable when describing a common situation."
+                                        "capable": {
+            definition: "capable: commonly like efficient.",
+            example: "A capable change made the project easier to finish."
         },
-        "capaz": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word capaz when describing a common situation."
+                                        "capaz": {
+            definition: "capaz: rather like eficiente.",
+            example: "A capaz change made the project easier to finish."
         },
-        "capital": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word capital when describing a common situation."
+                                        "capital": {
+            definition: "capital: commonly like important.",
+            example: "A capital change made the project easier to finish."
         },
-        "captivant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word captivant when describing a common situation."
+                                        "captivant": {
+            definition: "captivant: rather like intéressant.",
+            example: "A captivant change made the project easier to finish."
         },
-        "captivating": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Captivating every day helped him improve quickly."
+                                        "captivating": {
+            definition: "captivating: an action similar to interesting.",
+            example: "Captivating the document took longer than expected."
         },
-        "cardinal": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word cardinal when describing a common situation."
+                                        "cardinal": {
+            definition: "cardinal: extremely important.",
+            example: "The cardinal size of the ship surprised everyone."
         },
-        "cassant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word cassant when describing a common situation."
+                                        "cassant": {
+            definition: "cassant: commonly like fragile.",
+            example: "A cassant change made the project easier to finish."
         },
         "catastrophic": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word catastrophic when describing a common situation."
         },
-        "cauchemardesque": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word cauchemardesque when describing a common situation."
+                                        "cauchemardesque": {
+            definition: "cauchemardesque: exceptionally effrayant.",
+            example: "The cauchemardesque size of the ship surprised everyone."
         },
-        "cautivador": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word cautivador when describing a common situation."
+                                        "cautivador": {
+            definition: "cautivador: somewhat like interesante.",
+            example: "A cautivador change made the project easier to finish."
         },
         "celebración": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -867,21 +867,21 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "An act, process, or result related to celebra, describing a specific action or condition.",
             example: "The decision came after a lengthy celebration process that changed the plan."
         },
-        "chagriné": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word chagriné when describing a common situation."
+                                        "chagriné": {
+            definition: "chagriné: fairly like triste.",
+            example: "A chagriné change made the project easier to finish."
         },
         "challenges": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word challenges when describing a common situation."
         },
-        "challenging": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Challenging every day helped him improve quickly."
+                                        "challenging": {
+            definition: "challenging: an action similar to difficult.",
+            example: "Challenging the document took longer than expected."
         },
-        "chancelant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word chancelant when describing a common situation."
+                                        "chancelant": {
+            definition: "chancelant: remarkably fragile.",
+            example: "The chancelant size of the ship surprised everyone."
         },
         "change": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -903,53 +903,53 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word cheap when describing a common situation."
         },
-        "cheer": {
-            definition: "A person or thing whose job or role involves a particular activity or function.",
-            example: "They used the word cheer when describing a common situation."
+                                        "cheer": {
+            definition: "cheer: rather like brighten.",
+            example: "A cheer change made the project easier to finish."
         },
-        "cheerful": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word cheerful when describing a common situation."
+                                        "cheerful": {
+            definition: "cheerful: fairly like happy.",
+            example: "A cheerful change made the project easier to finish."
         },
-        "chico": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word chico when describing a common situation."
+                                        "chico": {
+            definition: "chico: rather like pequeño.",
+            example: "A chico change made the project easier to finish."
         },
-        "child's play": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "She described the situation as child's play in plain speech."
+                                        "child's play": {
+            definition: "child's play: extremely easy.",
+            example: "The child's play size of the ship surprised everyone."
         },
-        "chilly": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word chilly when describing a common situation."
+                                        "chilly": {
+            definition: "chilly: somewhat like cold.",
+            example: "A chilly change made the project easier to finish."
         },
         "choices": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word choices when describing a common situation."
         },
-        "clair": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word clair when describing a common situation."
+                                        "clair": {
+            definition: "clair: rather like transparent.",
+            example: "A clair change made the project easier to finish."
         },
-        "clairvoyant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word clairvoyant when describing a common situation."
+                                        "clairvoyant": {
+            definition: "clairvoyant: exceptionally intelligent.",
+            example: "The clairvoyant size of the ship surprised everyone."
         },
-        "clamorous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word clamorous when describing a common situation."
+                                        "clamorous": {
+            definition: "clamorous: very loud.",
+            example: "The clamorous size of the ship surprised everyone."
         },
         "clarity": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word clarity when describing a common situation."
         },
-        "clarividente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word clarividente when describing a common situation."
+                                        "clarividente": {
+            definition: "clarividente: extremely inteligente.",
+            example: "The clarividente size of the ship surprised everyone."
         },
-        "claro": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word claro when describing a common situation."
+                                        "claro": {
+            definition: "claro: rather like transparente.",
+            example: "A claro change made the project easier to finish."
         },
         "claustrophobia": {
             definition: "An extreme fear or anxiety about being in confined or enclosed spaces.",
@@ -959,17 +959,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word claustrophobic when describing a common situation."
         },
-        "clear": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word clear when describing a common situation."
+                                        "clear": {
+            definition: "clear: rather like transparent.",
+            example: "A clear change made the project easier to finish."
         },
-        "clement": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word clement when describing a common situation."
+                                        "clement": {
+            definition: "clement: exceptionally warm.",
+            example: "The clement size of the ship surprised everyone."
         },
-        "clever": {
-            definition: "A person or thing whose job or role involves a particular activity or function.",
-            example: "They used the word clever when describing a common situation."
+                                        "clever": {
+            definition: "clever: somewhat like smart.",
+            example: "A clever change made the project easier to finish."
         },
         "colaboración": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -983,37 +983,37 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "An act, process, or result related to collabora, describing a specific action or condition.",
             example: "The decision came after a lengthy collaboration process that changed the plan."
         },
-        "collected": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word collected when describing a common situation."
+                                        "collected": {
+            definition: "collected: rather like calm.",
+            example: "A collected change made the project easier to finish."
         },
-        "colosal": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word colosal when describing a common situation."
+                                        "colosal": {
+            definition: "colosal: exceptionally grande.",
+            example: "The colosal size of the ship surprised everyone."
         },
-        "colossal": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word colossal when describing a common situation."
+                                        "colossal": {
+            definition: "colossal: extremely big.",
+            example: "The colossal size of the ship surprised everyone."
         },
-        "colérico": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word colérico when describing a common situation."
+                                        "colérico": {
+            definition: "colérico: extremely enfadado.",
+            example: "The colérico size of the ship surprised everyone."
         },
-        "comblé": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word comblé when describing a common situation."
+                                        "comblé": {
+            definition: "comblé: remarkably heureux.",
+            example: "The comblé size of the ship surprised everyone."
         },
-        "comical": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word comical when describing a common situation."
+                                        "comical": {
+            definition: "comical: commonly like funny.",
+            example: "A comical change made the project easier to finish."
         },
         "commanding": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Commanding every day helped him improve quickly."
         },
-        "commode": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word commode when describing a common situation."
+                                        "commode": {
+            definition: "commode: exceptionally facile.",
+            example: "The commode size of the ship surprised everyone."
         },
         "commodité": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1031,49 +1031,49 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "To travel regularly between home and work or school.",
             example: "She commutes an hour every morning to get to the office."
         },
-        "compact": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word compact when describing a common situation."
+                                        "compact": {
+            definition: "compact: commonly like small.",
+            example: "A compact change made the project easier to finish."
         },
-        "compelling": {
-            definition: "Extremely convincing or interesting, making people pay attention or accept a point.",
-            example: "Her presentation offered a compelling reason to change the plan."
+                                        "compelling": {
+            definition: "compelling: an action similar to interesting.",
+            example: "Compelling the document took longer than expected."
         },
-        "competent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word competent when describing a common situation."
+                                        "competent": {
+            definition: "competent: rather like efficient.",
+            example: "A competent change made the project easier to finish."
         },
-        "competente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word competente when describing a common situation."
+                                        "competente": {
+            definition: "competente: somewhat like eficiente.",
+            example: "A competente change made the project easier to finish."
         },
-        "complejo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word complejo when describing a common situation."
+                                        "complejo": {
+            definition: "complejo: fairly like difícil.",
+            example: "A complejo change made the project easier to finish."
         },
-        "complex": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word complex when describing a common situation."
+                                        "complex": {
+            definition: "complex: commonly like difficult.",
+            example: "A complex change made the project easier to finish."
         },
-        "complexe": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word complexe when describing a common situation."
+                                        "complexe": {
+            definition: "complexe: fairly like difficile.",
+            example: "A complexe change made the project easier to finish."
         },
-        "complicado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word complicado when describing a common situation."
+                                        "complicado": {
+            definition: "complicado: somewhat like difícil.",
+            example: "A complicado change made the project easier to finish."
         },
-        "complicated": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word complicated when describing a common situation."
+                                        "complicated": {
+            definition: "complicated: commonly like difficult.",
+            example: "A complicated change made the project easier to finish."
         },
-        "compliqué": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word compliqué when describing a common situation."
+                                        "compliqué": {
+            definition: "compliqué: rather like difficile.",
+            example: "A compliqué change made the project easier to finish."
         },
-        "composed": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word composed when describing a common situation."
+                                        "composed": {
+            definition: "composed: fairly like calm.",
+            example: "A composed change made the project easier to finish."
         },
         "comprensión": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1095,9 +1095,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word compétences when describing a common situation."
         },
-        "compétent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word compétent when describing a common situation."
+                                        "compétent": {
+            definition: "compétent: rather like efficace.",
+            example: "A compétent change made the project easier to finish."
         },
         "comunicación": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1131,9 +1131,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word confidence when describing a common situation."
         },
-        "congelado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word congelado when describing a common situation."
+                                        "congelado": {
+            definition: "congelado: rather like frío.",
+            example: "A congelado change made the project easier to finish."
         },
         "congested": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
@@ -1171,9 +1171,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word consequences when describing a common situation."
         },
-        "consequential": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word consequential when describing a common situation."
+                                        "consequential": {
+            definition: "consequential: very important.",
+            example: "The consequential size of the ship surprised everyone."
         },
         "consistencia": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1187,21 +1187,21 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word constancia when describing a common situation."
         },
-        "constructive": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word constructive when describing a common situation."
+                                        "constructive": {
+            definition: "constructive: fairly like helpful.",
+            example: "A constructive change made the project easier to finish."
         },
         "contemporary": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word contemporary when describing a common situation."
         },
-        "content": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word content when describing a common situation."
+                                        "content": {
+            definition: "content: commonly like happy.",
+            example: "A content change made the project easier to finish."
         },
-        "contento": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word contento when describing a common situation."
+                                        "contento": {
+            definition: "contento: fairly like feliz.",
+            example: "A contento change made the project easier to finish."
         },
         "contribución": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1219,57 +1219,57 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word conveniencia when describing a common situation."
         },
-        "convivial": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word convivial when describing a common situation."
+                                        "convivial": {
+            definition: "convivial: very friendly.",
+            example: "The convivial size of the ship surprised everyone."
         },
-        "cool": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word cool when describing a common situation."
+                                        "cool": {
+            definition: "cool: fairly like cold.",
+            example: "A cool change made the project easier to finish."
         },
-        "cordial": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word cordial when describing a common situation."
+                                        "cordial": {
+            definition: "cordial: exceptionally friendly.",
+            example: "The cordial size of the ship surprised everyone."
         },
-        "corto": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word corto when describing a common situation."
+                                        "corto": {
+            definition: "corto: rather like pequeño.",
+            example: "A corto change made the project easier to finish."
         },
-        "costaud": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word costaud when describing a common situation."
+                                        "costaud": {
+            definition: "costaud: commonly like fort.",
+            example: "A costaud change made the project easier to finish."
         },
         "costumbres": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word costumbres when describing a common situation."
         },
-        "courageous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word courageous when describing a common situation."
+                                        "courageous": {
+            definition: "courageous: somewhat like brave.",
+            example: "A courageous change made the project easier to finish."
         },
         "courageux": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word courageux when describing a common situation."
         },
-        "courroucé": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word courroucé when describing a common situation."
+                                        "courroucé": {
+            definition: "courroucé: very fâché.",
+            example: "The courroucé size of the ship surprised everyone."
         },
         "courteous": {
             definition: "Having a quality or characteristic that is often noticeable or strong.",
             example: "They used the word courteous when describing a common situation."
         },
-        "coy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word coy when describing a common situation."
+                                        "coy": {
+            definition: "coy: exceptionally timid.",
+            example: "The coy size of the ship surprised everyone."
         },
-        "cozy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word cozy when describing a common situation."
+                                        "cozy": {
+            definition: "cozy: fairly like warm.",
+            example: "A cozy change made the project easier to finish."
         },
-        "craven": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word craven when describing a common situation."
+                                        "craven": {
+            definition: "craven: remarkably timid.",
+            example: "The craven size of the ship surprised everyone."
         },
         "creative": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1287,17 +1287,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word crecimiento when describing a common situation."
         },
-        "creepy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word creepy when describing a common situation."
+                                        "creepy": {
+            definition: "creepy: somewhat like scary.",
+            example: "A creepy change made the project easier to finish."
         },
         "croissance": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word croissance when describing a common situation."
         },
-        "crucial": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word crucial when describing a common situation."
+                                        "crucial": {
+            definition: "crucial: commonly like important.",
+            example: "A crucial change made the project easier to finish."
         },
         "crystalline": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1323,29 +1323,29 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word cumplimiento when describing a common situation."
         },
-        "curieux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word curieux when describing a common situation."
+                                        "curieux": {
+            definition: "curieux: commonly like curieux.",
+            example: "A curieux change made the project easier to finish."
         },
-        "curior": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word curior when describing a common situation."
+                                        "curior": {
+            definition: "curior: remarkably curioso.",
+            example: "The curior size of the ship surprised everyone."
         },
         "curiosity": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word curiosity when describing a common situation."
         },
-        "curioso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word curioso when describing a common situation."
+                                        "curioso": {
+            definition: "curioso: commonly like curioso.",
+            example: "A curioso change made the project easier to finish."
         },
         "curious": {
             definition: "Having a quality or characteristic that is often noticeable or strong.",
             example: "They used the word curious when describing a common situation."
         },
-        "current": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word current when describing a common situation."
+                                        "current": {
+            definition: "current: commonly like new.",
+            example: "A current change made the project easier to finish."
         },
         "customs": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1355,33 +1355,33 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word cute when describing a common situation."
         },
-        "cutting-edge": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word cutting-edge when describing a common situation."
+                                        "cutting-edge": {
+            definition: "cutting-edge: extremely new.",
+            example: "The cutting-edge size of the ship surprised everyone."
         },
-        "cómodo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word cómodo when describing a common situation."
+                                        "cómodo": {
+            definition: "cómodo: somewhat like fácil.",
+            example: "A cómodo change made the project easier to finish."
         },
         "dangerous": {
             definition: "Having a quality or characteristic that is often noticeable or strong.",
             example: "They used the word dangerous when describing a common situation."
         },
-        "dantesco": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word dantesco when describing a common situation."
+                                        "dantesco": {
+            definition: "dantesco: extremely aterrador.",
+            example: "The dantesco size of the ship surprised everyone."
         },
         "dark": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word dark when describing a common situation."
         },
-        "dauntless": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word dauntless when describing a common situation."
+                                        "dauntless": {
+            definition: "dauntless: very brave.",
+            example: "The dauntless size of the ship surprised everyone."
         },
-        "deafening": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Deafening every day helped him improve quickly."
+                                        "deafening": {
+            definition: "deafening: an action similar to loud.",
+            example: "Deafening the document took longer than expected."
         },
         "debt": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -1391,25 +1391,25 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word decisive when describing a common situation."
         },
-        "decrepit": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word decrepit when describing a common situation."
+                                        "decrepit": {
+            definition: "decrepit: extremely old.",
+            example: "The decrepit size of the ship surprised everyone."
         },
-        "decrépito": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word decrépito when describing a common situation."
+                                        "decrépito": {
+            definition: "decrépito: very viejo.",
+            example: "The decrépito size of the ship surprised everyone."
         },
         "dehumanize": {
             definition: "To treat people so as to deny their human qualities and make them seem like objects or things.",
             example: "Propaganda can dehumanize groups and lead to widespread prejudice."
         },
-        "delicado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word delicado when describing a common situation."
+                                        "delicado": {
+            definition: "delicado: fairly like frágil.",
+            example: "A delicado change made the project easier to finish."
         },
-        "delicate": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word delicate when describing a common situation."
+                                        "delicate": {
+            definition: "delicate: fairly like fragile.",
+            example: "A delicate change made the project easier to finish."
         },
         "denounce": {
             definition: "To publicly accuse or condemn something as wrong or evil.",
@@ -1423,13 +1423,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word dependencia when describing a common situation."
         },
-        "deplorable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word deplorable when describing a common situation."
+                                        "deplorable": {
+            definition: "deplorable: remarkably bad.",
+            example: "The deplorable size of the ship surprised everyone."
         },
-        "deprimido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word deprimido when describing a common situation."
+                                        "deprimido": {
+            definition: "deprimido: rather like triste.",
+            example: "A deprimido change made the project easier to finish."
         },
         "desafiante": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1447,33 +1447,33 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word desayuno when describing a common situation."
         },
-        "descomunal": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word descomunal when describing a common situation."
+                                        "descomunal": {
+            definition: "descomunal: remarkably grande.",
+            example: "The descomunal size of the ship surprised everyone."
         },
-        "desconsolado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word desconsolado when describing a common situation."
+                                        "desconsolado": {
+            definition: "desconsolado: extremely triste.",
+            example: "The desconsolado size of the ship surprised everyone."
         },
-        "deslumbrante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word deslumbrante when describing a common situation."
+                                        "deslumbrante": {
+            definition: "deslumbrante: extremely hermoso.",
+            example: "The deslumbrante size of the ship surprised everyone."
         },
-        "desolado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word desolado when describing a common situation."
+                                        "desolado": {
+            definition: "desolado: extremely triste.",
+            example: "The desolado size of the ship surprised everyone."
         },
-        "despair": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word despair when describing a common situation."
+                                        "despair": {
+            definition: "despair: commonly like sadness.",
+            example: "A despair change made the project easier to finish."
         },
-        "despondent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word despondent when describing a common situation."
+                                        "despondent": {
+            definition: "despondent: remarkably sad.",
+            example: "The despondent size of the ship surprised everyone."
         },
-        "destitute": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word destitute when describing a common situation."
+                                        "destitute": {
+            definition: "destitute: rather like poor.",
+            example: "A destitute change made the project easier to finish."
         },
         "determination": {
             definition: "An act, process, or result related to determina, describing a specific action or condition.",
@@ -1495,17 +1495,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word dialogue when describing a common situation."
         },
-        "diaphane": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word diaphane when describing a common situation."
+                                        "diaphane": {
+            definition: "diaphane: extremely transparent.",
+            example: "The diaphane size of the ship surprised everyone."
         },
-        "diaphanous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word diaphanous when describing a common situation."
+                                        "diaphanous": {
+            definition: "diaphanous: remarkably transparent.",
+            example: "The diaphanous size of the ship surprised everyone."
         },
-        "dichoso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word dichoso when describing a common situation."
+                                        "dichoso": {
+            definition: "dichoso: commonly like feliz.",
+            example: "A dichoso change made the project easier to finish."
         },
         "difficile": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1515,33 +1515,33 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word difficult when describing a common situation."
         },
-        "diffident": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word diffident when describing a common situation."
+                                        "diffident": {
+            definition: "diffident: very timid.",
+            example: "The diffident size of the ship surprised everyone."
         },
         "difícil": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word difícil when describing a common situation."
         },
-        "dignes": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word dignes when describing a common situation."
+                                        "dignes": {
+            definition: "dignes: remarkably courageux.",
+            example: "The dignes size of the ship surprised everyone."
         },
         "dilapidated": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
             example: "They used the word dilapidated when describing a common situation."
         },
-        "diligent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word diligent when describing a common situation."
+                                        "diligent": {
+            definition: "diligent: extremely rapide.",
+            example: "The diligent size of the ship surprised everyone."
         },
-        "diminutive": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word diminutive when describing a common situation."
+                                        "diminutive": {
+            definition: "diminutive: remarkably small.",
+            example: "The diminutive size of the ship surprised everyone."
         },
-        "diminuto": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word diminuto when describing a common situation."
+                                        "diminuto": {
+            definition: "diminuto: fairly like pequeño.",
+            example: "A diminuto change made the project easier to finish."
         },
         "dirty": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -1555,9 +1555,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word discipline when describing a common situation."
         },
-        "disconsolate": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word disconsolate when describing a common situation."
+                                        "disconsolate": {
+            definition: "disconsolate: extremely sad.",
+            example: "The disconsolate size of the ship surprised everyone."
         },
         "dispositivo": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1579,57 +1579,57 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "An act, process, or result related to distrac, describing a specific action or condition.",
             example: "The decision came after a lengthy distraction process that changed the plan."
         },
-        "diáfano": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word diáfano when describing a common situation."
+                                        "diáfano": {
+            definition: "diáfano: commonly like transparente.",
+            example: "A diáfano change made the project easier to finish."
         },
         "diálogo": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word diálogo when describing a common situation."
         },
-        "docto": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word docto when describing a common situation."
+                                        "docto": {
+            definition: "docto: very inteligente.",
+            example: "The docto size of the ship surprised everyone."
         },
-        "dolefulness": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word dolefulness when describing a common situation."
+                                        "dolefulness": {
+            definition: "dolefulness: exceptionally sadness.",
+            example: "The dolefulness size of the ship surprised everyone."
         },
-        "dolor": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word dolor when describing a common situation."
+                                        "dolor": {
+            definition: "dolor: very sadness.",
+            example: "The dolor size of the ship surprised everyone."
         },
-        "down": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word down when describing a common situation."
+                                        "down": {
+            definition: "down: fairly like sad.",
+            example: "A down change made the project easier to finish."
         },
-        "dreadful": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word dreadful when describing a common situation."
+                                        "dreadful": {
+            definition: "dreadful: fairly like bad.",
+            example: "A dreadful change made the project easier to finish."
         },
-        "droll": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word droll when describing a common situation."
+                                        "droll": {
+            definition: "droll: very funny.",
+            example: "The droll size of the ship surprised everyone."
         },
         "dull": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word dull when describing a common situation."
         },
-        "dur": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word dur when describing a common situation."
+                                        "dur": {
+            definition: "dur: commonly like difficile.",
+            example: "A dur change made the project easier to finish."
         },
         "durabilité": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word durabilité when describing a common situation."
         },
-        "duro": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word duro when describing a common situation."
+                                        "duro": {
+            definition: "duro: fairly like difícil.",
+            example: "A duro change made the project easier to finish."
         },
-        "décrépit": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word décrépit when describing a common situation."
+                                        "décrépit": {
+            definition: "décrépit: extremely vieux.",
+            example: "The décrépit size of the ship surprised everyone."
         },
         "défis": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -1639,29 +1639,29 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A person or thing whose job or role involves a particular activity or function.",
             example: "They used the word déjeuner when describing a common situation."
         },
-        "délectable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word délectable when describing a common situation."
+                                        "délectable": {
+            definition: "délectable: remarkably bon.",
+            example: "The délectable size of the ship surprised everyone."
         },
-        "délicat": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word délicat when describing a common situation."
+                                        "délicat": {
+            definition: "délicat: commonly like fragile.",
+            example: "A délicat change made the project easier to finish."
         },
-        "déprimé": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word déprimé when describing a common situation."
+                                        "déprimé": {
+            definition: "déprimé: commonly like triste.",
+            example: "A déprimé change made the project easier to finish."
         },
-        "désespéré": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word désespéré when describing a common situation."
+                                        "désespéré": {
+            definition: "désespéré: very triste.",
+            example: "The désespéré size of the ship surprised everyone."
         },
-        "déterminant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word déterminant when describing a common situation."
+                                        "déterminant": {
+            definition: "déterminant: exceptionally important.",
+            example: "The déterminant size of the ship surprised everyone."
         },
-        "détestable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word détestable when describing a common situation."
+                                        "détestable": {
+            definition: "détestable: remarkably mauvais.",
+            example: "The détestable size of the ship surprised everyone."
         },
         "développement": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1671,29 +1671,29 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word easy when describing a common situation."
         },
-        "economical": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word economical when describing a common situation."
+                                        "economical": {
+            definition: "economical: somewhat like cheap.",
+            example: "A economical change made the project easier to finish."
         },
-        "económico": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word económico when describing a common situation."
+                                        "económico": {
+            definition: "económico: very eficiente.",
+            example: "The económico size of the ship surprised everyone."
         },
-        "ecstatic": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word ecstatic when describing a common situation."
+                                        "ecstatic": {
+            definition: "ecstatic: extremely happy.",
+            example: "The ecstatic size of the ship surprised everyone."
         },
-        "efectivo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word efectivo when describing a common situation."
+                                        "efectivo": {
+            definition: "efectivo: fairly like eficiente.",
+            example: "A efectivo change made the project easier to finish."
         },
-        "effective": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word effective when describing a common situation."
+                                        "effective": {
+            definition: "effective: rather like efficient.",
+            example: "A effective change made the project easier to finish."
         },
-        "effervesce": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word effervesce when describing a common situation."
+                                        "effervesce": {
+            definition: "effervesce: remarkably brighten.",
+            example: "The effervesce size of the ship surprised everyone."
         },
         "effervescent": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1719,17 +1719,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word effort when describing a common situation."
         },
-        "effortless": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word effortless when describing a common situation."
+                                        "effortless": {
+            definition: "effortless: somewhat like easy.",
+            example: "A effortless change made the project easier to finish."
         },
         "effrayant": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word effrayant when describing a common situation."
         },
-        "effulgent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word effulgent when describing a common situation."
+                                        "effulgent": {
+            definition: "effulgent: very bright.",
+            example: "The effulgent size of the ship surprised everyone."
         },
         "eficiencia": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1743,41 +1743,41 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word ejercicio when describing a common situation."
         },
-        "elated": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word elated when describing a common situation."
+                                        "elated": {
+            definition: "elated: remarkably happy.",
+            example: "The elated size of the ship surprised everyone."
         },
         "elation": {
             definition: "A feeling of triumphant joy or intense happiness, often following a success or good news.",
             example: "She felt elation after learning she had passed the exam with top marks."
         },
-        "elderly": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word elderly when describing a common situation."
+                                        "elderly": {
+            definition: "elderly: commonly like old.",
+            example: "A elderly change made the project easier to finish."
         },
-        "eldritch": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word eldritch when describing a common situation."
+                                        "eldritch": {
+            definition: "eldritch: extremely scary.",
+            example: "The eldritch size of the ship surprised everyone."
         },
-        "electrizante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word electrizante when describing a common situation."
+                                        "electrizante": {
+            definition: "electrizante: extremely interesante.",
+            example: "The electrizante size of the ship surprised everyone."
         },
-        "elemental": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word elemental when describing a common situation."
+                                        "elemental": {
+            definition: "elemental: rather like fácil.",
+            example: "A elemental change made the project easier to finish."
         },
-        "elementary": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word elementary when describing a common situation."
+                                        "elementary": {
+            definition: "elementary: remarkably easy.",
+            example: "The elementary size of the ship surprised everyone."
         },
         "eloquent": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word eloquent when describing a common situation."
         },
-        "emaciated": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word emaciated when describing a common situation."
+                                        "emaciated": {
+            definition: "emaciated: very thin.",
+            example: "The emaciated size of the ship surprised everyone."
         },
         "emotion": {
             definition: "An act, process, or result related to emo, describing a specific action or condition.",
@@ -1795,13 +1795,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word empty when describing a common situation."
         },
-        "en colère": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "She described the situation as en colère in plain speech."
+                                        "en colère": {
+            definition: "en colère: rather like fâché.",
+            example: "A en colère change made the project easier to finish."
         },
-        "encrespado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word encrespado when describing a common situation."
+                                        "encrespado": {
+            definition: "encrespado: remarkably enfadado.",
+            example: "The encrespado size of the ship surprised everyone."
         },
         "endurance": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1811,57 +1811,57 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word enfadado when describing a common situation."
         },
-        "enfantin": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word enfantin when describing a common situation."
+                                        "enfantin": {
+            definition: "enfantin: extremely facile.",
+            example: "The enfantin size of the ship surprised everyone."
         },
         "engagement": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word engagement when describing a common situation."
         },
-        "engaging": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Engaging every day helped him improve quickly."
+                                        "engaging": {
+            definition: "engaging: an action similar to interesting.",
+            example: "Engaging the document took longer than expected."
         },
         "enhance": {
             definition: "To improve the quality, value, or extent of something; to make it better.",
             example: "They used filters to enhance the clarity of the photograph."
         },
-        "enliven": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word enliven when describing a common situation."
+                                        "enliven": {
+            definition: "enliven: commonly like brighten.",
+            example: "A enliven change made the project easier to finish."
         },
         "ennui": {
             definition: "A feeling of listlessness and dissatisfaction caused by lack of occupation or excitement.",
             example: "Months of inactivity left him with a deep sense of ennui."
         },
-        "enojado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word enojado when describing a common situation."
+                                        "enojado": {
+            definition: "enojado: commonly like enfadado.",
+            example: "A enojado change made the project easier to finish."
         },
-        "enorme": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word enorme when describing a common situation."
+                                        "enorme": {
+            definition: "enorme: somewhat like grande.",
+            example: "A enorme change made the project easier to finish."
         },
-        "enormous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word enormous when describing a common situation."
+                                        "enormous": {
+            definition: "enormous: fairly like big.",
+            example: "A enormous change made the project easier to finish."
         },
-        "enrapture": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word enrapture when describing a common situation."
+                                        "enrapture": {
+            definition: "enrapture: very brighten.",
+            example: "The enrapture size of the ship surprised everyone."
         },
         "enrichment": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word enrichment when describing a common situation."
         },
-        "entertaining": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Entertaining every day helped him improve quickly."
+                                        "entertaining": {
+            definition: "entertaining: an action similar to funny.",
+            example: "Entertaining the document took longer than expected."
         },
-        "enthralling": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Enthralling every day helped him improve quickly."
+                                        "enthralling": {
+            definition: "enthralling: the act of doing interesting.",
+            example: "Enthralling the data helped us see the trend."
         },
         "entorno": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1879,9 +1879,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word environment when describing a common situation."
         },
-        "envoûtant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word envoûtant when describing a common situation."
+                                        "envoûtant": {
+            definition: "envoûtant: very intéressant.",
+            example: "The envoûtant size of the ship surprised everyone."
         },
         "ephemeral": {
             definition: "Lasting for only a very short time; fleeting and not permanent.",
@@ -1895,145 +1895,145 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A short, clever, and often humorous saying or poem that expresses an idea sharply.",
             example: "The writer opened the essay with a witty epigram."
         },
-        "equable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word equable when describing a common situation."
+                                        "equable": {
+            definition: "equable: exceptionally warm.",
+            example: "The equable size of the ship surprised everyone."
         },
-        "equanimous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word equanimous when describing a common situation."
+                                        "equanimous": {
+            definition: "equanimous: remarkably calm.",
+            example: "The equanimous size of the ship surprised everyone."
         },
         "equilibrio": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word equilibrio when describing a common situation."
         },
-        "erudite": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word erudite when describing a common situation."
+                                        "erudite": {
+            definition: "erudite: exceptionally smart.",
+            example: "The erudite size of the ship surprised everyone."
         },
-        "erudito": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word erudito when describing a common situation."
+                                        "erudito": {
+            definition: "erudito: exceptionally inteligente.",
+            example: "The erudito size of the ship surprised everyone."
         },
-        "escabroso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word escabroso when describing a common situation."
+                                        "escabroso": {
+            definition: "escabroso: very difícil.",
+            example: "The escabroso size of the ship surprised everyone."
         },
         "escala": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word escala when describing a common situation."
         },
-        "escalofriante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word escalofriante when describing a common situation."
+                                        "escalofriante": {
+            definition: "escalofriante: very aterrador.",
+            example: "The escalofriante size of the ship surprised everyone."
         },
         "escucha": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word escucha when describing a common situation."
         },
-        "esencial": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word esencial when describing a common situation."
+                                        "esencial": {
+            definition: "esencial: fairly like importante.",
+            example: "A esencial change made the project easier to finish."
         },
         "esfuerzo": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word esfuerzo when describing a common situation."
         },
-        "espantoso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word espantoso when describing a common situation."
+                                        "espantoso": {
+            definition: "espantoso: rather like malo.",
+            example: "A espantoso change made the project easier to finish."
         },
-        "especulativo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word especulativo when describing a common situation."
+                                        "especulativo": {
+            definition: "especulativo: extremely curioso.",
+            example: "The especulativo size of the ship surprised everyone."
         },
-        "espeluznante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word espeluznante when describing a common situation."
+                                        "espeluznante": {
+            definition: "espeluznante: extremely aterrador.",
+            example: "The espeluznante size of the ship surprised everyone."
         },
-        "espinoso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word espinoso when describing a common situation."
+                                        "espinoso": {
+            definition: "espinoso: extremely difícil.",
+            example: "The espinoso size of the ship surprised everyone."
         },
-        "espléndido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word espléndido when describing a common situation."
+                                        "espléndido": {
+            definition: "espléndido: remarkably hermoso.",
+            example: "The espléndido size of the ship surprised everyone."
         },
-        "essential": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word essential when describing a common situation."
+                                        "essential": {
+            definition: "essential: rather like important.",
+            example: "A essential change made the project easier to finish."
         },
-        "essentiel": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word essentiel when describing a common situation."
+                                        "essentiel": {
+            definition: "essentiel: rather like important.",
+            example: "A essentiel change made the project easier to finish."
         },
-        "estupendo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word estupendo when describing a common situation."
+                                        "estupendo": {
+            definition: "estupendo: rather like bueno.",
+            example: "A estupendo change made the project easier to finish."
         },
         "ethereal": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word ethereal when describing a common situation."
         },
-        "eufórico": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word eufórico when describing a common situation."
+                                        "eufórico": {
+            definition: "eufórico: extremely feliz.",
+            example: "The eufórico size of the ship surprised everyone."
         },
         "euphonious": {
             definition: "Having a quality or characteristic that is often noticeable or strong.",
             example: "They used the word euphonious when describing a common situation."
         },
-        "euphoric": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word euphoric when describing a common situation."
+                                        "euphoric": {
+            definition: "euphoric: extremely happy.",
+            example: "The euphoric size of the ship surprised everyone."
         },
-        "euphorique": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word euphorique when describing a common situation."
+                                        "euphorique": {
+            definition: "euphorique: remarkably heureux.",
+            example: "The euphorique size of the ship surprised everyone."
         },
-        "evident": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word evident when describing a common situation."
+                                        "evident": {
+            definition: "evident: commonly like clear.",
+            example: "A evident change made the project easier to finish."
         },
-        "evidente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word evidente when describing a common situation."
+                                        "evidente": {
+            definition: "evidente: fairly like transparente.",
+            example: "A evidente change made the project easier to finish."
         },
-        "exalt": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word exalt when describing a common situation."
+                                        "exalt": {
+            definition: "exalt: very brighten.",
+            example: "The exalt size of the ship surprised everyone."
         },
-        "exasperado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word exasperado when describing a common situation."
+                                        "exasperado": {
+            definition: "exasperado: remarkably enfadado.",
+            example: "The exasperado size of the ship surprised everyone."
         },
-        "exaspéré": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word exaspéré when describing a common situation."
+                                        "exaspéré": {
+            definition: "exaspéré: extremely fâché.",
+            example: "The exaspéré size of the ship surprised everyone."
         },
-        "excelente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word excelente when describing a common situation."
+                                        "excelente": {
+            definition: "excelente: rather like bueno.",
+            example: "A excelente change made the project easier to finish."
         },
-        "excellent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word excellent when describing a common situation."
+                                        "excellent": {
+            definition: "excellent: rather like good.",
+            example: "A excellent change made the project easier to finish."
         },
-        "excepcional": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word excepcional when describing a common situation."
+                                        "excepcional": {
+            definition: "excepcional: exceptionally bueno.",
+            example: "The excepcional size of the ship surprised everyone."
         },
         "excruciating": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Excruciating every day helped him improve quickly."
         },
-        "execrable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word execrable when describing a common situation."
+                                        "execrable": {
+            definition: "execrable: very bad.",
+            example: "The execrable size of the ship surprised everyone."
         },
-        "exemplary": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word exemplary when describing a common situation."
+                                        "exemplary": {
+            definition: "exemplary: very good.",
+            example: "The exemplary size of the ship surprised everyone."
         },
         "exercice": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -2043,37 +2043,37 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word exercise when describing a common situation."
         },
-        "exigu": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word exigu when describing a common situation."
+                                        "exigu": {
+            definition: "exigu: very petit.",
+            example: "The exigu size of the ship surprised everyone."
         },
-        "exiguo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word exiguo when describing a common situation."
+                                        "exiguo": {
+            definition: "exiguo: remarkably pequeño.",
+            example: "The exiguo size of the ship surprised everyone."
         },
-        "exiguous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word exiguous when describing a common situation."
+                                        "exiguous": {
+            definition: "exiguous: extremely fragile.",
+            example: "The exiguous size of the ship surprised everyone."
         },
-        "eximio": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word eximio when describing a common situation."
+                                        "eximio": {
+            definition: "eximio: remarkably bueno.",
+            example: "The eximio size of the ship surprised everyone."
         },
         "expedited": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
             example: "They used the word expedited when describing a common situation."
         },
-        "expeditious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word expeditious when describing a common situation."
+                                        "expeditious": {
+            definition: "expeditious: exceptionally fast.",
+            example: "The expeditious size of the ship surprised everyone."
         },
-        "expeditivo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word expeditivo when describing a common situation."
+                                        "expeditivo": {
+            definition: "expeditivo: remarkably eficiente.",
+            example: "The expeditivo size of the ship surprised everyone."
         },
-        "expedito": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word expedito when describing a common situation."
+                                        "expedito": {
+            definition: "expedito: extremely rápido.",
+            example: "The expedito size of the ship surprised everyone."
         },
         "exploración": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -2091,45 +2091,45 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "The decision came after a lengthy expression process that changed the plan."
         },
-        "expéditif": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word expéditif when describing a common situation."
+                                        "expéditif": {
+            definition: "expéditif: very rapide.",
+            example: "The expéditif size of the ship surprised everyone."
         },
-        "exquis": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word exquis when describing a common situation."
+                                        "exquis": {
+            definition: "exquis: remarkably beau.",
+            example: "The exquis size of the ship surprised everyone."
         },
-        "exquisite": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word exquisite when describing a common situation."
+                                        "exquisite": {
+            definition: "exquisite: very beautiful.",
+            example: "The exquisite size of the ship surprised everyone."
         },
-        "exquisito": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word exquisito when describing a common situation."
+                                        "exquisito": {
+            definition: "exquisito: very hermoso.",
+            example: "The exquisito size of the ship surprised everyone."
         },
-        "extatique": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word extatique when describing a common situation."
+                                        "extatique": {
+            definition: "extatique: very heureux.",
+            example: "The extatique size of the ship surprised everyone."
         },
-        "exultant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word exultant when describing a common situation."
+                                        "exultant": {
+            definition: "exultant: extremely joyful.",
+            example: "The exultant size of the ship surprised everyone."
         },
-        "exultante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word exultante when describing a common situation."
+                                        "exultante": {
+            definition: "exultante: very feliz.",
+            example: "The exultante size of the ship surprised everyone."
         },
-        "exécrable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word exécrable when describing a common situation."
+                                        "exécrable": {
+            definition: "exécrable: very mauvais.",
+            example: "The exécrable size of the ship surprised everyone."
         },
-        "facile": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word facile when describing a common situation."
+                                        "facile": {
+            definition: "facile: remarkably easy.",
+            example: "The facile size of the ship surprised everyone."
         },
-        "factible": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word factible when describing a common situation."
+                                        "factible": {
+            definition: "factible: extremely fácil.",
+            example: "The factible size of the ship surprised everyone."
         },
         "fair": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2143,41 +2143,41 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A mistaken belief or error in reasoning that seems plausible but is logically incorrect.",
             example: "Believing that one event caused another without evidence is a common fallacy."
         },
-        "fantástico": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word fantástico when describing a common situation."
+                                        "fantástico": {
+            definition: "fantástico: somewhat like bueno.",
+            example: "A fantástico change made the project easier to finish."
         },
-        "farcical": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word farcical when describing a common situation."
+                                        "farcical": {
+            definition: "farcical: extremely funny.",
+            example: "The farcical size of the ship surprised everyone."
         },
-        "fascinant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word fascinant when describing a common situation."
+                                        "fascinant": {
+            definition: "fascinant: rather like intéressant.",
+            example: "A fascinant change made the project easier to finish."
         },
-        "fascinante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word fascinante when describing a common situation."
+                                        "fascinante": {
+            definition: "fascinante: somewhat like interesante.",
+            example: "A fascinante change made the project easier to finish."
         },
-        "fascinating": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Fascinating every day helped him improve quickly."
+                                        "fascinating": {
+            definition: "fascinating: an action similar to interesting.",
+            example: "Fascinating the document took longer than expected."
         },
-        "fast": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word fast when describing a common situation."
+                                        "fast": {
+            definition: "fast: fairly like quick.",
+            example: "A fast change made the project easier to finish."
         },
         "fat": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word fat when describing a common situation."
         },
-        "fatal": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word fatal when describing a common situation."
+                                        "fatal": {
+            definition: "fatal: rather like malo.",
+            example: "A fatal change made the project easier to finish."
         },
-        "fearless": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word fearless when describing a common situation."
+                                        "fearless": {
+            definition: "fearless: fairly like brave.",
+            example: "A fearless change made the project easier to finish."
         },
         "feedback": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -2191,33 +2191,33 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word few when describing a common situation."
         },
-        "filthy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word filthy when describing a common situation."
+                                        "filthy": {
+            definition: "filthy: somewhat like dirty.",
+            example: "A filthy change made the project easier to finish."
         },
-        "fine": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word fine when describing a common situation."
+                                        "fine": {
+            definition: "fine: fairly like good.",
+            example: "A fine change made the project easier to finish."
         },
         "firm": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word firm when describing a common situation."
         },
-        "fisgón": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word fisgón when describing a common situation."
+                                        "fisgón": {
+            definition: "fisgón: somewhat like curioso.",
+            example: "A fisgón change made the project easier to finish."
         },
-        "flamante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word flamante when describing a common situation."
+                                        "flamante": {
+            definition: "flamante: fairly like nuevo.",
+            example: "A flamante change made the project easier to finish."
         },
         "flavor": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word flavor when describing a common situation."
         },
-        "fleet": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word fleet when describing a common situation."
+                                        "fleet": {
+            definition: "fleet: very fast.",
+            example: "The fleet size of the ship surprised everyone."
         },
         "fleet-footed": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
@@ -2231,13 +2231,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word flexibility when describing a common situation."
         },
-        "flimsy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word flimsy when describing a common situation."
+                                        "flimsy": {
+            definition: "flimsy: remarkably fragile.",
+            example: "The flimsy size of the ship surprised everyone."
         },
-        "flush": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word flush when describing a common situation."
+                                        "flush": {
+            definition: "flush: very rich.",
+            example: "The flush size of the ship surprised everyone."
         },
         "focus": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2247,101 +2247,101 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word follow-up when describing a common situation."
         },
-        "fondamental": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word fondamental when describing a common situation."
+                                        "fondamental": {
+            definition: "fondamental: exceptionally important.",
+            example: "The fondamental size of the ship surprised everyone."
         },
-        "forlorn": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word forlorn when describing a common situation."
+                                        "forlorn": {
+            definition: "forlorn: exceptionally sad.",
+            example: "The forlorn size of the ship surprised everyone."
         },
         "formative": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word formative when describing a common situation."
         },
-        "formidable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word formidable when describing a common situation."
+                                        "formidable": {
+            definition: "formidable: remarkably strong.",
+            example: "The formidable size of the ship surprised everyone."
         },
-        "fornido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word fornido when describing a common situation."
+                                        "fornido": {
+            definition: "fornido: exceptionally fuerte.",
+            example: "The fornido size of the ship surprised everyone."
         },
         "fort": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word fort when describing a common situation."
         },
-        "forthright": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word forthright when describing a common situation."
+                                        "forthright": {
+            definition: "forthright: remarkably honest.",
+            example: "The forthright size of the ship surprised everyone."
         },
         "fortified": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
             example: "They used the word fortified when describing a common situation."
         },
-        "fouineur": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word fouineur when describing a common situation."
+                                        "fouineur": {
+            definition: "fouineur: extremely curieux.",
+            example: "The fouineur size of the ship surprised everyone."
         },
-        "foul": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word foul when describing a common situation."
+                                        "foul": {
+            definition: "foul: extremely dirty.",
+            example: "The foul size of the ship surprised everyone."
         },
         "fragile": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word fragile when describing a common situation."
         },
-        "frail": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word frail when describing a common situation."
+                                        "frail": {
+            definition: "frail: rather like fragile.",
+            example: "A frail change made the project easier to finish."
         },
-        "frais": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word frais when describing a common situation."
+                                        "frais": {
+            definition: "frais: rather like froid.",
+            example: "A frais change made the project easier to finish."
         },
-        "frank": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word frank when describing a common situation."
+                                        "frank": {
+            definition: "frank: rather like honest.",
+            example: "A frank change made the project easier to finish."
         },
-        "fraught": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word fraught when describing a common situation."
+                                        "fraught": {
+            definition: "fraught: exceptionally dangerous.",
+            example: "The fraught size of the ship surprised everyone."
         },
-        "freezing": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Freezing every day helped him improve quickly."
+                                        "freezing": {
+            definition: "freezing: an action similar to cold.",
+            example: "Freezing the document took longer than expected."
         },
         "frenetic": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word frenetic when describing a common situation."
         },
-        "fresco": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word fresco when describing a common situation."
+                                        "fresco": {
+            definition: "fresco: somewhat like frío.",
+            example: "A fresco change made the project easier to finish."
         },
-        "fresh": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word fresh when describing a common situation."
+                                        "fresh": {
+            definition: "fresh: rather like new.",
+            example: "A fresh change made the project easier to finish."
         },
-        "friable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word friable when describing a common situation."
+                                        "friable": {
+            definition: "friable: exceptionally fragile.",
+            example: "The friable size of the ship surprised everyone."
         },
         "friendly": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word friendly when describing a common situation."
         },
-        "frightening": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Frightening every day helped him improve quickly."
+                                        "frightening": {
+            definition: "frightening: an action similar to scary.",
+            example: "Frightening the document took longer than expected."
         },
-        "frigid": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word frigid when describing a common situation."
+                                        "frigid": {
+            definition: "frigid: remarkably cold.",
+            example: "The frigid size of the ship surprised everyone."
         },
-        "frigorifique": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word frigorifique when describing a common situation."
+                                        "frigorifique": {
+            definition: "frigorifique: extremely froid.",
+            example: "The frigorifique size of the ship surprised everyone."
         },
         "froid": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2351,29 +2351,29 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Frolicking every day helped him improve quickly."
         },
-        "frosty": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word frosty when describing a common situation."
+                                        "frosty": {
+            definition: "frosty: somewhat like cold.",
+            example: "A frosty change made the project easier to finish."
         },
         "frozen": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word frozen when describing a common situation."
         },
-        "frugal": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word frugal when describing a common situation."
+                                        "frugal": {
+            definition: "frugal: remarkably cheap.",
+            example: "The frugal size of the ship surprised everyone."
         },
-        "frágil": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word frágil when describing a common situation."
+                                        "frágil": {
+            definition: "frágil: somewhat like frágil.",
+            example: "A frágil change made the project easier to finish."
         },
-        "frágilísimo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word frágilísimo when describing a common situation."
+                                        "frágilísimo": {
+            definition: "frágilísimo: exceptionally frágil.",
+            example: "The frágilísimo size of the ship surprised everyone."
         },
-        "frêle": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word frêle when describing a common situation."
+                                        "frêle": {
+            definition: "frêle: rather like fragile.",
+            example: "A frêle change made the project easier to finish."
         },
         "frío": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2387,37 +2387,37 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word fulfillment when describing a common situation."
         },
-        "fulgurant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word fulgurant when describing a common situation."
+                                        "fulgurant": {
+            definition: "fulgurant: very rapide.",
+            example: "The fulgurant size of the ship surprised everyone."
         },
-        "fulminant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word fulminant when describing a common situation."
+                                        "fulminant": {
+            definition: "fulminant: very fâché.",
+            example: "The fulminant size of the ship surprised everyone."
         },
-        "fulminante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word fulminante when describing a common situation."
+                                        "fulminante": {
+            definition: "fulminante: remarkably rápido.",
+            example: "The fulminante size of the ship surprised everyone."
         },
-        "fundamental": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word fundamental when describing a common situation."
+                                        "fundamental": {
+            definition: "fundamental: commonly like importante.",
+            example: "A fundamental change made the project easier to finish."
         },
         "funny": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word funny when describing a common situation."
         },
-        "furieux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word furieux when describing a common situation."
+                                        "furieux": {
+            definition: "furieux: commonly like fâché.",
+            example: "A furieux change made the project easier to finish."
         },
-        "furioso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word furioso when describing a common situation."
+                                        "furioso": {
+            definition: "furioso: commonly like enfadado.",
+            example: "A furioso change made the project easier to finish."
         },
-        "furious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word furious when describing a common situation."
+                                        "furious": {
+            definition: "furious: commonly like angry.",
+            example: "A furious change made the project easier to finish."
         },
         "future": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2435,101 +2435,101 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word fâché when describing a common situation."
         },
-        "gai": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word gai when describing a common situation."
+                                        "gai": {
+            definition: "gai: commonly like heureux.",
+            example: "A gai change made the project easier to finish."
         },
-        "galante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word galante when describing a common situation."
+                                        "galante": {
+            definition: "galante: exceptionally valiente.",
+            example: "The galante size of the ship surprised everyone."
         },
         "gale-force": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word gale-force when describing a common situation."
         },
-        "gallant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word gallant when describing a common situation."
+                                        "gallant": {
+            definition: "gallant: exceptionally brave.",
+            example: "The gallant size of the ship surprised everyone."
         },
-        "gallardo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word gallardo when describing a common situation."
+                                        "gallardo": {
+            definition: "gallardo: extremely valiente.",
+            example: "The gallardo size of the ship surprised everyone."
         },
-        "gargantuan": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word gargantuan when describing a common situation."
+                                        "gargantuan": {
+            definition: "gargantuan: remarkably big.",
+            example: "The gargantuan size of the ship surprised everyone."
         },
-        "gargantuesco": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word gargantuesco when describing a common situation."
+                                        "gargantuesco": {
+            definition: "gargantuesco: extremely grande.",
+            example: "The gargantuesco size of the ship surprised everyone."
         },
-        "gargantuesque": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word gargantuesque when describing a common situation."
+                                        "gargantuesque": {
+            definition: "gargantuesque: very grand.",
+            example: "The gargantuesque size of the ship surprised everyone."
         },
-        "gaunt": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word gaunt when describing a common situation."
+                                        "gaunt": {
+            definition: "gaunt: very thin.",
+            example: "The gaunt size of the ship surprised everyone."
         },
-        "gelid": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word gelid when describing a common situation."
+                                        "gelid": {
+            definition: "gelid: very cold.",
+            example: "The gelid size of the ship surprised everyone."
         },
-        "gelé": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word gelé when describing a common situation."
+                                        "gelé": {
+            definition: "gelé: fairly like froid.",
+            example: "A gelé change made the project easier to finish."
         },
-        "genial": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word genial when describing a common situation."
+                                        "genial": {
+            definition: "genial: remarkably friendly.",
+            example: "The genial size of the ship surprised everyone."
         },
-        "giant": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word giant when describing a common situation."
+                                        "giant": {
+            definition: "giant: rather like big.",
+            example: "A giant change made the project easier to finish."
         },
-        "gifted": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word gifted when describing a common situation."
+                                        "gifted": {
+            definition: "gifted: somewhat like brilliant.",
+            example: "A gifted change made the project easier to finish."
         },
-        "gigante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word gigante when describing a common situation."
+                                        "gigante": {
+            definition: "gigante: commonly like grande.",
+            example: "A gigante change made the project easier to finish."
         },
-        "gigantesque": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word gigantesque when describing a common situation."
+                                        "gigantesque": {
+            definition: "gigantesque: exceptionally grand.",
+            example: "The gigantesque size of the ship surprised everyone."
         },
-        "glacial": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word glacial when describing a common situation."
+                                        "glacial": {
+            definition: "glacial: exceptionally cold.",
+            example: "The glacial size of the ship surprised everyone."
         },
-        "glacé": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word glacé when describing a common situation."
+                                        "glacé": {
+            definition: "glacé: rather like froid.",
+            example: "A glacé change made the project easier to finish."
         },
-        "glad": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word glad when describing a common situation."
+                                        "glad": {
+            definition: "glad: fairly like happy.",
+            example: "A glad change made the project easier to finish."
         },
-        "gladden": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word gladden when describing a common situation."
+                                        "gladden": {
+            definition: "gladden: exceptionally brighten.",
+            example: "The gladden size of the ship surprised everyone."
         },
-        "glaçant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word glaçant when describing a common situation."
+                                        "glaçant": {
+            definition: "glaçant: exceptionally effrayant.",
+            example: "The glaçant size of the ship surprised everyone."
         },
-        "gleeful": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word gleeful when describing a common situation."
+                                        "gleeful": {
+            definition: "gleeful: commonly like joyful.",
+            example: "A gleeful change made the project easier to finish."
         },
-        "gloom": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word gloom when describing a common situation."
+                                        "gloom": {
+            definition: "gloom: rather like sadness.",
+            example: "A gloom change made the project easier to finish."
         },
-        "gloomy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word gloomy when describing a common situation."
+                                        "gloomy": {
+            definition: "gloomy: somewhat like sad.",
+            example: "A gloomy change made the project easier to finish."
         },
         "goals": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2539,13 +2539,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word good when describing a common situation."
         },
-        "gorgeous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word gorgeous when describing a common situation."
+                                        "gorgeous": {
+            definition: "gorgeous: fairly like beautiful.",
+            example: "A gorgeous change made the project easier to finish."
         },
-        "gozoso": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word gozoso when describing a common situation."
+                                        "gozoso": {
+            definition: "gozoso: somewhat like feliz.",
+            example: "A gozoso change made the project easier to finish."
         },
         "grand": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2563,117 +2563,117 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word gratificante when describing a common situation."
         },
-        "great": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word great when describing a common situation."
+                                        "great": {
+            definition: "great: rather like good.",
+            example: "A great change made the project easier to finish."
         },
-        "grelottant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word grelottant when describing a common situation."
+                                        "grelottant": {
+            definition: "grelottant: somewhat like froid.",
+            example: "A grelottant change made the project easier to finish."
         },
-        "grief": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word grief when describing a common situation."
+                                        "grief": {
+            definition: "grief: rather like sadness.",
+            example: "A grief change made the project easier to finish."
         },
-        "grimy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word grimy when describing a common situation."
+                                        "grimy": {
+            definition: "grimy: rather like dirty.",
+            example: "A grimy change made the project easier to finish."
         },
-        "grisant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word grisant when describing a common situation."
+                                        "grisant": {
+            definition: "grisant: exceptionally intéressant.",
+            example: "The grisant size of the ship surprised everyone."
         },
         "growth": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word growth when describing a common situation."
         },
-        "guapo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word guapo when describing a common situation."
+                                        "guapo": {
+            definition: "guapo: rather like hermoso.",
+            example: "A guapo change made the project easier to finish."
         },
-        "géant": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word géant when describing a common situation."
+                                        "géant": {
+            definition: "géant: rather like grand.",
+            example: "A géant change made the project easier to finish."
         },
-        "gélido": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word gélido when describing a common situation."
+                                        "gélido": {
+            definition: "gélido: somewhat like frío.",
+            example: "A gélido change made the project easier to finish."
         },
-        "génial": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word génial when describing a common situation."
+                                        "génial": {
+            definition: "génial: somewhat like bon.",
+            example: "A génial change made the project easier to finish."
         },
         "habilidades": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word habilidades when describing a common situation."
         },
-        "hacedero": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word hacedero when describing a common situation."
+                                        "hacedero": {
+            definition: "hacedero: extremely fácil.",
+            example: "The hacedero size of the ship surprised everyone."
         },
-        "halcyon": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word halcyon when describing a common situation."
+                                        "halcyon": {
+            definition: "halcyon: exceptionally quiet.",
+            example: "The halcyon size of the ship surprised everyone."
         },
-        "happy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word happy when describing a common situation."
+                                        "happy": {
+            definition: "happy: rather like joyful.",
+            example: "A happy change made the project easier to finish."
         },
-        "hard": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word hard when describing a common situation."
+                                        "hard": {
+            definition: "hard: fairly like difficult.",
+            example: "A hard change made the project easier to finish."
         },
-        "hardy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word hardy when describing a common situation."
+                                        "hardy": {
+            definition: "hardy: rather like strong.",
+            example: "A hardy change made the project easier to finish."
         },
         "harmony": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word harmony when describing a common situation."
         },
-        "harrowing": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Harrowing every day helped him improve quickly."
+                                        "harrowing": {
+            definition: "harrowing: the act of doing scary.",
+            example: "Harrowing the data helped us see the trend."
         },
-        "hasty": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word hasty when describing a common situation."
+                                        "hasty": {
+            definition: "hasty: rather like fast.",
+            example: "A hasty change made the project easier to finish."
         },
-        "hazardous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word hazardous when describing a common situation."
+                                        "hazardous": {
+            definition: "hazardous: rather like dangerous.",
+            example: "A hazardous change made the project easier to finish."
         },
         "health": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word health when describing a common situation."
         },
-        "heated": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word heated when describing a common situation."
+                                        "heated": {
+            definition: "heated: somewhat like hot.",
+            example: "A heated change made the project easier to finish."
         },
         "heavy": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word heavy when describing a common situation."
         },
-        "helado": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word helado when describing a common situation."
+                                        "helado": {
+            definition: "helado: somewhat like frío.",
+            example: "A helado change made the project easier to finish."
         },
         "helpful": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word helpful when describing a common situation."
         },
-        "herculean": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word herculean when describing a common situation."
+                                        "herculean": {
+            definition: "herculean: very strong.",
+            example: "The herculean size of the ship surprised everyone."
         },
-        "herculéen": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word herculéen when describing a common situation."
+                                        "herculéen": {
+            definition: "herculéen: very fort.",
+            example: "The herculéen size of the ship surprised everyone."
         },
-        "hercúleo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word hercúleo when describing a common situation."
+                                        "hercúleo": {
+            definition: "hercúleo: extremely fuerte.",
+            example: "The hercúleo size of the ship surprised everyone."
         },
         "heritage": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -2683,13 +2683,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word hermoso when describing a common situation."
         },
-        "heroic": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word heroic when describing a common situation."
+                                        "heroic": {
+            definition: "heroic: somewhat like brave.",
+            example: "A heroic change made the project easier to finish."
         },
-        "heroico": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word heroico when describing a common situation."
+                                        "heroico": {
+            definition: "heroico: commonly like valiente.",
+            example: "A heroico change made the project easier to finish."
         },
         "heureux": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -2703,13 +2703,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word high-octane when describing a common situation."
         },
-        "hilarious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word hilarious when describing a common situation."
+                                        "hilarious": {
+            definition: "hilarious: rather like funny.",
+            example: "A hilarious change made the project easier to finish."
         },
-        "hipnótico": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word hipnótico when describing a common situation."
+                                        "hipnótico": {
+            definition: "hipnótico: very interesante.",
+            example: "The hipnótico size of the ship surprised everyone."
         },
         "historic": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -2719,13 +2719,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word hito when describing a common situation."
         },
-        "hivernal": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word hivernal when describing a common situation."
+                                        "hivernal": {
+            definition: "hivernal: extremely froid.",
+            example: "The hivernal size of the ship surprised everyone."
         },
-        "hoary": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word hoary when describing a common situation."
+                                        "hoary": {
+            definition: "hoary: very ancient.",
+            example: "The hoary size of the ship surprised everyone."
         },
         "honest": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2735,45 +2735,45 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word horario when describing a common situation."
         },
-        "horrible": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word horrible when describing a common situation."
+                                        "horrible": {
+            definition: "horrible: fairly like bad.",
+            example: "A horrible change made the project easier to finish."
         },
-        "horrifying": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Horrifying every day helped him improve quickly."
+                                        "horrifying": {
+            definition: "horrifying: an action similar to scary.",
+            example: "Horrifying the document took longer than expected."
         },
-        "horripilante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word horripilante when describing a common situation."
+                                        "horripilante": {
+            definition: "horripilante: fairly like aterrador.",
+            example: "A horripilante change made the project easier to finish."
         },
         "hospitable": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word hospitable when describing a common situation."
         },
-        "hot": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word hot when describing a common situation."
+                                        "hot": {
+            definition: "hot: commonly like warm.",
+            example: "A hot change made the project easier to finish."
         },
-        "huge": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word huge when describing a common situation."
+                                        "huge": {
+            definition: "huge: fairly like big.",
+            example: "A huge change made the project easier to finish."
         },
-        "humorous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word humorous when describing a common situation."
+                                        "humorous": {
+            definition: "humorous: fairly like funny.",
+            example: "A humorous change made the project easier to finish."
         },
-        "hushed": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word hushed when describing a common situation."
+                                        "hushed": {
+            definition: "hushed: somewhat like quiet.",
+            example: "A hushed change made the project easier to finish."
         },
-        "héros": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word héros when describing a common situation."
+                                        "héros": {
+            definition: "héros: very courageux.",
+            example: "The héros size of the ship surprised everyone."
         },
-        "héroïque": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word héroïque when describing a common situation."
+                                        "héroïque": {
+            definition: "héroïque: fairly like courageux.",
+            example: "A héroïque change made the project easier to finish."
         },
         "iconic": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2783,17 +2783,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A person who attacks or rejects established beliefs, traditions, or institutions.",
             example: "The artist was an iconoclast who challenged conventional styles."
         },
-        "icy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word icy when describing a common situation."
+                                        "icy": {
+            definition: "icy: commonly like cold.",
+            example: "A icy change made the project easier to finish."
         },
         "idyllic": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word idyllic when describing a common situation."
         },
-        "illuminate": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word illuminate when describing a common situation."
+                                        "illuminate": {
+            definition: "illuminate: somewhat like brighten.",
+            example: "A illuminate change made the project easier to finish."
         },
         "imagination": {
             definition: "An act, process, or result related to imagina, describing a specific action or condition.",
@@ -2803,9 +2803,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word immaculate when describing a common situation."
         },
-        "immense": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word immense when describing a common situation."
+                                        "immense": {
+            definition: "immense: exceptionally big.",
+            example: "The immense size of the ship surprised everyone."
         },
         "impact": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2819,13 +2819,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word impacto when describing a common situation."
         },
-        "impeccable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word impeccable when describing a common situation."
+                                        "impeccable": {
+            definition: "impeccable: remarkably good.",
+            example: "The impeccable size of the ship surprised everyone."
         },
-        "impecunious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word impecunious when describing a common situation."
+                                        "impecunious": {
+            definition: "impecunious: exceptionally poor.",
+            example: "The impecunious size of the ship surprised everyone."
         },
         "impenetrable": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -2851,9 +2851,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Imposing every day helped him improve quickly."
         },
-        "impoverished": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word impoverished when describing a common situation."
+                                        "impoverished": {
+            definition: "impoverished: fairly like poor.",
+            example: "A impoverished change made the project easier to finish."
         },
         "impregnable": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -2863,81 +2863,81 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word inaudible when describing a common situation."
         },
-        "incandescent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word incandescent when describing a common situation."
+                                        "incandescent": {
+            definition: "incandescent: extremely bright.",
+            example: "The incandescent size of the ship surprised everyone."
         },
-        "incandescente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word incandescente when describing a common situation."
+                                        "incandescente": {
+            definition: "incandescente: very caliente.",
+            example: "The incandescente size of the ship surprised everyone."
         },
-        "incensed": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word incensed when describing a common situation."
+                                        "incensed": {
+            definition: "incensed: extremely angry.",
+            example: "The incensed size of the ship surprised everyone."
         },
         "inclement": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word inclement when describing a common situation."
         },
-        "inconsolable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word inconsolable when describing a common situation."
+                                        "inconsolable": {
+            definition: "inconsolable: extremely triste.",
+            example: "The inconsolable size of the ship surprised everyone."
         },
-        "incontestable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word incontestable when describing a common situation."
+                                        "incontestable": {
+            definition: "incontestable: very transparent.",
+            example: "The incontestable size of the ship surprised everyone."
         },
-        "indagador": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word indagador when describing a common situation."
+                                        "indagador": {
+            definition: "indagador: very curioso.",
+            example: "The indagador size of the ship surprised everyone."
         },
-        "indigent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word indigent when describing a common situation."
+                                        "indigent": {
+            definition: "indigent: extremely poor.",
+            example: "The indigent size of the ship surprised everyone."
         },
-        "indignado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word indignado when describing a common situation."
+                                        "indignado": {
+            definition: "indignado: very enfadado.",
+            example: "The indignado size of the ship surprised everyone."
         },
-        "indomable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word indomable when describing a common situation."
+                                        "indomable": {
+            definition: "indomable: very fuerte.",
+            example: "The indomable size of the ship surprised everyone."
         },
-        "indomitable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word indomitable when describing a common situation."
+                                        "indomitable": {
+            definition: "indomitable: exceptionally strong.",
+            example: "The indomitable size of the ship surprised everyone."
         },
-        "indomptable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word indomptable when describing a common situation."
+                                        "indomptable": {
+            definition: "indomptable: exceptionally fort.",
+            example: "The indomptable size of the ship surprised everyone."
         },
-        "inexpensive": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word inexpensive when describing a common situation."
+                                        "inexpensive": {
+            definition: "inexpensive: commonly like cheap.",
+            example: "A inexpensive change made the project easier to finish."
         },
-        "infame": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word infame when describing a common situation."
+                                        "infame": {
+            definition: "infame: remarkably malo.",
+            example: "The infame size of the ship surprised everyone."
         },
-        "infect": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word infect when describing a common situation."
+                                        "infect": {
+            definition: "infect: remarkably mauvais.",
+            example: "The infect size of the ship surprised everyone."
         },
-        "infeliz": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word infeliz when describing a common situation."
+                                        "infeliz": {
+            definition: "infeliz: commonly like triste.",
+            example: "A infeliz change made the project easier to finish."
         },
-        "infime": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word infime when describing a common situation."
+                                        "infime": {
+            definition: "infime: remarkably petit.",
+            example: "The infime size of the ship surprised everyone."
         },
-        "infinitesimal": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word infinitesimal when describing a common situation."
+                                        "infinitesimal": {
+            definition: "infinitesimal: very small.",
+            example: "The infinitesimal size of the ship surprised everyone."
         },
-        "infirm": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word infirm when describing a common situation."
+                                        "infirm": {
+            definition: "infirm: remarkably fragile.",
+            example: "The infirm size of the ship surprised everyone."
         },
         "influence": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -2955,13 +2955,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "An act, process, or result related to informa, describing a specific action or condition.",
             example: "The decision came after a lengthy information process that changed the plan."
         },
-        "ingenioso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word ingenioso when describing a common situation."
+                                        "ingenioso": {
+            definition: "ingenioso: very inteligente.",
+            example: "The ingenioso size of the ship surprised everyone."
         },
-        "ingenious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word ingenious when describing a common situation."
+                                        "ingenious": {
+            definition: "ingenious: rather like brilliant.",
+            example: "A ingenious change made the project easier to finish."
         },
         "ingrained": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
@@ -2975,53 +2975,53 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word ingredients when describing a common situation."
         },
-        "ingénieux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word ingénieux when describing a common situation."
+                                        "ingénieux": {
+            definition: "ingénieux: very intelligent.",
+            example: "The ingénieux size of the ship surprised everyone."
         },
-        "inmenso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word inmenso when describing a common situation."
+                                        "inmenso": {
+            definition: "inmenso: commonly like grande.",
+            example: "A inmenso change made the project easier to finish."
         },
         "innovación": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word innovación when describing a common situation."
         },
-        "innovador": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word innovador when describing a common situation."
+                                        "innovador": {
+            definition: "innovador: very nuevo.",
+            example: "The innovador size of the ship surprised everyone."
         },
         "innovation": {
             definition: "An act, process, or result related to innova, describing a specific action or condition.",
             example: "The decision came after a lengthy innovation process that changed the plan."
         },
-        "innovative": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word innovative when describing a common situation."
+                                        "innovative": {
+            definition: "innovative: remarkably new.",
+            example: "The innovative size of the ship surprised everyone."
         },
         "innumerable": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word innumerable when describing a common situation."
         },
-        "inquiquinant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word inquiquinant when describing a common situation."
+                                        "inquiquinant": {
+            definition: "inquiquinant: fairly like curieux.",
+            example: "A inquiquinant change made the project easier to finish."
         },
-        "inquiring": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Inquiring every day helped him improve quickly."
+                                        "inquiring": {
+            definition: "inquiring: an action similar to curious.",
+            example: "Inquiring the document took longer than expected."
         },
-        "inquisitive": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word inquisitive when describing a common situation."
+                                        "inquisitive": {
+            definition: "inquisitive: commonly like curious.",
+            example: "A inquisitive change made the project easier to finish."
         },
-        "inquisitivo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word inquisitivo when describing a common situation."
+                                        "inquisitivo": {
+            definition: "inquisitivo: commonly like curioso.",
+            example: "A inquisitivo change made the project easier to finish."
         },
-        "insidious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word insidious when describing a common situation."
+                                        "insidious": {
+            definition: "insidious: very dangerous.",
+            example: "The insidious size of the ship surprised everyone."
         },
         "insight": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -3047,69 +3047,69 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word inteligente when describing a common situation."
         },
-        "intelligent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word intelligent when describing a common situation."
+                                        "intelligent": {
+            definition: "intelligent: commonly like smart.",
+            example: "A intelligent change made the project easier to finish."
         },
-        "interesado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word interesado when describing a common situation."
+                                        "interesado": {
+            definition: "interesado: somewhat like curioso.",
+            example: "A interesado change made the project easier to finish."
         },
         "interesante": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word interesante when describing a common situation."
         },
-        "interested": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word interested when describing a common situation."
+                                        "interested": {
+            definition: "interested: somewhat like curious.",
+            example: "A interested change made the project easier to finish."
         },
         "interesting": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Interesting every day helped him improve quickly."
         },
-        "interrogatif": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word interrogatif when describing a common situation."
+                                        "interrogatif": {
+            definition: "interrogatif: extremely curieux.",
+            example: "The interrogatif size of the ship surprised everyone."
         },
-        "intrepid": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word intrepid when describing a common situation."
+                                        "intrepid": {
+            definition: "intrepid: extremely brave.",
+            example: "The intrepid size of the ship surprised everyone."
         },
-        "intrepido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word intrepido when describing a common situation."
+                                        "intrepido": {
+            definition: "intrepido: very valiente.",
+            example: "The intrepido size of the ship surprised everyone."
         },
-        "intrigante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word intrigante when describing a common situation."
+                                        "intrigante": {
+            definition: "intrigante: somewhat like interesante.",
+            example: "A intrigante change made the project easier to finish."
         },
-        "intriguing": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Intriguing every day helped him improve quickly."
+                                        "intriguing": {
+            definition: "intriguing: an action similar to interesting.",
+            example: "Intriguing the document took longer than expected."
         },
-        "intrincado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word intrincado when describing a common situation."
+                                        "intrincado": {
+            definition: "intrincado: remarkably difícil.",
+            example: "The intrincado size of the ship surprised everyone."
         },
-        "intrépide": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word intrépide when describing a common situation."
+                                        "intrépide": {
+            definition: "intrépide: rather like courageux.",
+            example: "A intrépide change made the project easier to finish."
         },
-        "intrépido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word intrépido when describing a common situation."
+                                        "intrépido": {
+            definition: "intrépido: rather like valiente.",
+            example: "A intrépido change made the project easier to finish."
         },
         "intéressant": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word intéressant when describing a common situation."
         },
-        "intéressé": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word intéressé when describing a common situation."
+                                        "intéressé": {
+            definition: "intéressé: rather like curieux.",
+            example: "A intéressé change made the project easier to finish."
         },
-        "invernal": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word invernal when describing a common situation."
+                                        "invernal": {
+            definition: "invernal: extremely frío.",
+            example: "The invernal size of the ship surprised everyone."
         },
         "inversión": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -3127,45 +3127,45 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Invigorating every day helped him improve quickly."
         },
-        "invincible": {
-            definition: "Too powerful to be defeated or overcome; impossible to beat.",
-            example: "After winning the championship, the team felt almost invincible."
+                                        "invincible": {
+            definition: "invincible: remarkably fort.",
+            example: "The invincible size of the ship surprised everyone."
         },
-        "inédit": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word inédit when describing a common situation."
+                                        "inédit": {
+            definition: "inédit: remarkably nouveau.",
+            example: "The inédit size of the ship surprised everyone."
         },
-        "inédito": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word inédito when describing a common situation."
+                                        "inédito": {
+            definition: "inédito: exceptionally nuevo.",
+            example: "The inédito size of the ship surprised everyone."
         },
-        "iracundo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word iracundo when describing a common situation."
+                                        "iracundo": {
+            definition: "iracundo: extremely enfadado.",
+            example: "The iracundo size of the ship surprised everyone."
         },
-        "irascible": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word irascible when describing a common situation."
+                                        "irascible": {
+            definition: "irascible: very angry.",
+            example: "The irascible size of the ship surprised everyone."
         },
-        "irate": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word irate when describing a common situation."
+                                        "irate": {
+            definition: "irate: very angry.",
+            example: "The irate size of the ship surprised everyone."
         },
         "irreverent": {
             definition: "Showing a lack of respect for people, traditions, or established ideas, often in a playful way.",
             example: "Her irreverent humor poked fun at the judges without being mean-spirited."
         },
-        "irritado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word irritado when describing a common situation."
+                                        "irritado": {
+            definition: "irritado: fairly like enfadado.",
+            example: "A irritado change made the project easier to finish."
         },
-        "irritated": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word irritated when describing a common situation."
+                                        "irritated": {
+            definition: "irritated: rather like angry.",
+            example: "A irritated change made the project easier to finish."
         },
-        "irrité": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word irrité when describing a common situation."
+                                        "irrité": {
+            definition: "irrité: somewhat like fâché.",
+            example: "A irrité change made the project easier to finish."
         },
         "itinerario": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -3175,81 +3175,81 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word itinerary when describing a common situation."
         },
-        "joli": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word joli when describing a common situation."
+                                        "joli": {
+            definition: "joli: fairly like beau.",
+            example: "A joli change made the project easier to finish."
         },
-        "joyeux": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word joyeux when describing a common situation."
+                                        "joyeux": {
+            definition: "joyeux: somewhat like heureux.",
+            example: "A joyeux change made the project easier to finish."
         },
-        "joyful": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word joyful when describing a common situation."
+                                        "joyful": {
+            definition: "joyful: somewhat like happy.",
+            example: "A joyful change made the project easier to finish."
         },
-        "jubilant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word jubilant when describing a common situation."
+                                        "jubilant": {
+            definition: "jubilant: extremely happy.",
+            example: "The jubilant size of the ship surprised everyone."
         },
-        "jubiloso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word jubiloso when describing a common situation."
+                                        "jubiloso": {
+            definition: "jubiloso: extremely feliz.",
+            example: "The jubiloso size of the ship surprised everyone."
         },
         "judicious": {
             definition: "Having a quality or characteristic that is often noticeable or strong.",
             example: "They used the word judicious when describing a common situation."
         },
-        "kind": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word kind when describing a common situation."
+                                        "kind": {
+            definition: "kind: fairly like friendly.",
+            example: "A kind change made the project easier to finish."
         },
         "knowledge": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word knowledge when describing a common situation."
         },
-        "laborieux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word laborieux when describing a common situation."
+                                        "laborieux": {
+            definition: "laborieux: very difficile.",
+            example: "The laborieux size of the ship surprised everyone."
         },
-        "laborioso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word laborioso when describing a common situation."
+                                        "laborioso": {
+            definition: "laborioso: very difícil.",
+            example: "The laborioso size of the ship surprised everyone."
         },
-        "laborious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word laborious when describing a common situation."
+                                        "laborious": {
+            definition: "laborious: very difficult.",
+            example: "The laborious size of the ship surprised everyone."
         },
-        "laconic": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word laconic when describing a common situation."
+                                        "laconic": {
+            definition: "laconic: exceptionally silent.",
+            example: "The laconic size of the ship surprised everyone."
         },
-        "lamentable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word lamentable when describing a common situation."
+                                        "lamentable": {
+            definition: "lamentable: remarkably mauvais.",
+            example: "The lamentable size of the ship surprised everyone."
         },
-        "lank": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word lank when describing a common situation."
+                                        "lank": {
+            definition: "lank: extremely thin.",
+            example: "The lank size of the ship surprised everyone."
         },
-        "large": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word large when describing a common situation."
+                                        "large": {
+            definition: "large: rather like big.",
+            example: "A large change made the project easier to finish."
         },
         "late": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word late when describing a common situation."
         },
-        "latest": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word latest when describing a common situation."
+                                        "latest": {
+            definition: "latest: somewhat like new.",
+            example: "A latest change made the project easier to finish."
         },
         "laughter": {
             definition: "A person or thing whose job or role involves a particular activity or function.",
             example: "They used the word laughter when describing a common situation."
         },
-        "lean": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word lean when describing a common situation."
+                                        "lean": {
+            definition: "lean: fairly like thin.",
+            example: "A lean change made the project easier to finish."
         },
         "learning": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
@@ -3263,77 +3263,77 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word legado when describing a common situation."
         },
-        "leste": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word leste when describing a common situation."
+                                        "leste": {
+            definition: "leste: very rapide.",
+            example: "The leste size of the ship surprised everyone."
         },
-        "ligero": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word ligero when describing a common situation."
+                                        "ligero": {
+            definition: "ligero: somewhat like rápido.",
+            example: "A ligero change made the project easier to finish."
         },
         "light": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word light when describing a common situation."
         },
-        "lighten": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word lighten when describing a common situation."
+                                        "lighten": {
+            definition: "lighten: commonly like brighten.",
+            example: "A lighten change made the project easier to finish."
         },
-        "liliputiense": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word liliputiense when describing a common situation."
+                                        "liliputiense": {
+            definition: "liliputiense: extremely pequeño.",
+            example: "The liliputiense size of the ship surprised everyone."
         },
-        "lilliputian": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word lilliputian when describing a common situation."
+                                        "lilliputian": {
+            definition: "lilliputian: exceptionally small.",
+            example: "The lilliputian size of the ship surprised everyone."
         },
-        "lilliputien": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word lilliputien when describing a common situation."
+                                        "lilliputien": {
+            definition: "lilliputien: exceptionally petit.",
+            example: "The lilliputien size of the ship surprised everyone."
         },
-        "limpid": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word limpid when describing a common situation."
+                                        "limpid": {
+            definition: "limpid: remarkably transparent.",
+            example: "The limpid size of the ship surprised everyone."
         },
-        "limpide": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word limpide when describing a common situation."
+                                        "limpide": {
+            definition: "limpide: exceptionally facile.",
+            example: "The limpide size of the ship surprised everyone."
         },
-        "limpio": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word limpio when describing a common situation."
+                                        "limpio": {
+            definition: "limpio: remarkably transparente.",
+            example: "The limpio size of the ship surprised everyone."
         },
-        "lindo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word lindo when describing a common situation."
+                                        "lindo": {
+            definition: "lindo: rather like hermoso.",
+            example: "A lindo change made the project easier to finish."
         },
         "listening": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Listening every day helped him improve quickly."
         },
-        "listo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word listo when describing a common situation."
+                                        "listo": {
+            definition: "listo: rather like inteligente.",
+            example: "A listo change made the project easier to finish."
         },
         "lit": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word lit when describing a common situation."
         },
-        "little": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word little when describing a common situation."
+                                        "little": {
+            definition: "little: somewhat like small.",
+            example: "A little change made the project easier to finish."
         },
-        "livid": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word livid when describing a common situation."
+                                        "livid": {
+            definition: "livid: very angry.",
+            example: "The livid size of the ship surprised everyone."
         },
-        "llevadero": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word llevadero when describing a common situation."
+                                        "llevadero": {
+            definition: "llevadero: very fácil.",
+            example: "The llevadero size of the ship surprised everyone."
         },
-        "loaded": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word loaded when describing a common situation."
+                                        "loaded": {
+            definition: "loaded: somewhat like rich.",
+            example: "A loaded change made the project easier to finish."
         },
         "logro": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -3355,41 +3355,41 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word loud when describing a common situation."
         },
-        "lovely": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word lovely when describing a common situation."
+                                        "lovely": {
+            definition: "lovely: somewhat like beautiful.",
+            example: "A lovely change made the project easier to finish."
         },
         "low": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word low when describing a common situation."
         },
-        "low-cost": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word low-cost when describing a common situation."
+                                        "low-cost": {
+            definition: "low-cost: fairly like cheap.",
+            example: "A low-cost change made the project easier to finish."
         },
-        "lucent": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word lucent when describing a common situation."
+                                        "lucent": {
+            definition: "lucent: remarkably bright.",
+            example: "The lucent size of the ship surprised everyone."
         },
-        "lucid": {
-            definition: "Clear and easy to understand; showing mental clarity.",
-            example: "She gave a lucid summary of the research findings."
+                                        "lucid": {
+            definition: "lucid: rather like clear.",
+            example: "A lucid change made the project easier to finish."
         },
-        "lucide": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word lucide when describing a common situation."
+                                        "lucide": {
+            definition: "lucide: somewhat like transparent.",
+            example: "A lucide change made the project easier to finish."
         },
-        "lugubre": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word lugubre when describing a common situation."
+                                        "lugubre": {
+            definition: "lugubre: exceptionally effrayant.",
+            example: "The lugubre size of the ship surprised everyone."
         },
-        "lugubriousness": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word lugubriousness when describing a common situation."
+                                        "lugubriousness": {
+            definition: "lugubriousness: remarkably sadness.",
+            example: "The lugubriousness size of the ship surprised everyone."
         },
-        "luminous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word luminous when describing a common situation."
+                                        "luminous": {
+            definition: "luminous: fairly like bright.",
+            example: "A luminous change made the project easier to finish."
         },
         "lunch": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -3399,93 +3399,93 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word límites when describing a common situation."
         },
-        "lúcido": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word lúcido when describing a common situation."
+                                        "lúcido": {
+            definition: "lúcido: somewhat like transparente.",
+            example: "A lúcido change made the project easier to finish."
         },
-        "macabre": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word macabre when describing a common situation."
+                                        "macabre": {
+            definition: "macabre: exceptionally scary.",
+            example: "The macabre size of the ship surprised everyone."
         },
-        "macabro": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word macabro when describing a common situation."
+                                        "macabro": {
+            definition: "macabro: exceptionally aterrador.",
+            example: "The macabro size of the ship surprised everyone."
         },
-        "mad": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word mad when describing a common situation."
+                                        "mad": {
+            definition: "mad: commonly like angry.",
+            example: "A mad change made the project easier to finish."
         },
-        "magnanime": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word magnanime when describing a common situation."
+                                        "magnanime": {
+            definition: "magnanime: very courageux.",
+            example: "The magnanime size of the ship surprised everyone."
         },
         "magnanimous": {
             definition: "Having a quality or characteristic that is often noticeable or strong.",
             example: "They used the word magnanimous when describing a common situation."
         },
-        "magnifique": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word magnifique when describing a common situation."
+                                        "magnifique": {
+            definition: "magnifique: somewhat like beau.",
+            example: "A magnifique change made the project easier to finish."
         },
-        "magnánimo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word magnánimo when describing a common situation."
+                                        "magnánimo": {
+            definition: "magnánimo: very valiente.",
+            example: "The magnánimo size of the ship surprised everyone."
         },
-        "majeur": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word majeur when describing a common situation."
+                                        "majeur": {
+            definition: "majeur: somewhat like important.",
+            example: "A majeur change made the project easier to finish."
         },
-        "major": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word major when describing a common situation."
+                                        "major": {
+            definition: "major: rather like important.",
+            example: "A major change made the project easier to finish."
         },
-        "malaisé": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word malaisé when describing a common situation."
+                                        "malaisé": {
+            definition: "malaisé: exceptionally difficile.",
+            example: "The malaisé size of the ship surprised everyone."
         },
-        "malheureux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word malheureux when describing a common situation."
+                                        "malheureux": {
+            definition: "malheureux: somewhat like triste.",
+            example: "A malheureux change made the project easier to finish."
         },
-        "malin": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word malin when describing a common situation."
+                                        "malin": {
+            definition: "malin: rather like intelligent.",
+            example: "A malin change made the project easier to finish."
         },
         "malo": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word malo when describing a common situation."
         },
-        "mammoth": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word mammoth when describing a common situation."
+                                        "mammoth": {
+            definition: "mammoth: exceptionally big.",
+            example: "The mammoth size of the ship surprised everyone."
         },
-        "manifest": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word manifest when describing a common situation."
+                                        "manifest": {
+            definition: "manifest: extremely clear.",
+            example: "The manifest size of the ship surprised everyone."
         },
         "manifesto": {
             definition: "A public written statement declaring the intentions, motives, or views of an individual or group.",
             example: "The party released a manifesto promising educational reform."
         },
-        "manifiesto": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word manifiesto when describing a common situation."
+                                        "manifiesto": {
+            definition: "manifiesto: somewhat like transparente.",
+            example: "A manifiesto change made the project easier to finish."
         },
-        "maravilloso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word maravilloso when describing a common situation."
+                                        "maravilloso": {
+            definition: "maravilloso: commonly like bueno.",
+            example: "A maravilloso change made the project easier to finish."
         },
-        "masivo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word masivo when describing a common situation."
+                                        "masivo": {
+            definition: "masivo: somewhat like grande.",
+            example: "A masivo change made the project easier to finish."
         },
-        "massif": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word massif when describing a common situation."
+                                        "massif": {
+            definition: "massif: somewhat like grand.",
+            example: "A massif change made the project easier to finish."
         },
-        "massive": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word massive when describing a common situation."
+                                        "massive": {
+            definition: "massive: commonly like big.",
+            example: "A massive change made the project easier to finish."
         },
         "matinée": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -3499,85 +3499,85 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word mañana when describing a common situation."
         },
-        "meager": {
-            definition: "A person or thing whose job or role involves a particular activity or function.",
-            example: "They used the word meager when describing a common situation."
+                                        "meager": {
+            definition: "meager: remarkably thin.",
+            example: "The meager size of the ship surprised everyone."
         },
         "meaning": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Meaning every day helped him improve quickly."
         },
-        "medular": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word medular when describing a common situation."
+                                        "medular": {
+            definition: "medular: exceptionally importante.",
+            example: "The medular size of the ship surprised everyone."
         },
-        "meek": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word meek when describing a common situation."
+                                        "meek": {
+            definition: "meek: fairly like timid.",
+            example: "A meek change made the project easier to finish."
         },
-        "melancholy": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word melancholy when describing a common situation."
+                                        "melancholy": {
+            definition: "melancholy: remarkably sad.",
+            example: "The melancholy size of the ship surprised everyone."
         },
-        "melancólico": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word melancólico when describing a common situation."
+                                        "melancólico": {
+            definition: "melancólico: commonly like triste.",
+            example: "A melancólico change made the project easier to finish."
         },
         "memories": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word memories when describing a common situation."
         },
-        "menacing": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Menacing every day helped him improve quickly."
+                                        "menacing": {
+            definition: "menacing: the act of doing dangerous.",
+            example: "Menacing the data helped us see the trend."
         },
-        "menu": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word menu when describing a common situation."
+                                        "menu": {
+            definition: "menu: fairly like petit.",
+            example: "A menu change made the project easier to finish."
         },
-        "menudo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word menudo when describing a common situation."
+                                        "menudo": {
+            definition: "menudo: remarkably pequeño.",
+            example: "The menudo size of the ship surprised everyone."
         },
-        "mercurial": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word mercurial when describing a common situation."
+                                        "mercurial": {
+            definition: "mercurial: very fast.",
+            example: "The mercurial size of the ship surprised everyone."
         },
-        "merry": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word merry when describing a common situation."
+                                        "merry": {
+            definition: "merry: rather like joyful.",
+            example: "A merry change made the project easier to finish."
         },
-        "mesmerizing": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Mesmerizing every day helped him improve quickly."
+                                        "mesmerizing": {
+            definition: "mesmerizing: the act of doing interesting.",
+            example: "Mesmerizing the data helped us see the trend."
         },
         "metas": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word metas when describing a common situation."
         },
-        "meteoric": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word meteoric when describing a common situation."
+                                        "meteoric": {
+            definition: "meteoric: extremely quick.",
+            example: "The meteoric size of the ship surprised everyone."
         },
-        "microscopic": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word microscopic when describing a common situation."
+                                        "microscopic": {
+            definition: "microscopic: exceptionally small.",
+            example: "The microscopic size of the ship surprised everyone."
         },
-        "microscopique": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word microscopique when describing a common situation."
+                                        "microscopique": {
+            definition: "microscopique: very petit.",
+            example: "The microscopique size of the ship surprised everyone."
         },
-        "microscópico": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word microscópico when describing a common situation."
+                                        "microscópico": {
+            definition: "microscópico: extremely pequeño.",
+            example: "The microscópico size of the ship surprised everyone."
         },
-        "mighty": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word mighty when describing a common situation."
+                                        "mighty": {
+            definition: "mighty: somewhat like strong.",
+            example: "A mighty change made the project easier to finish."
         },
-        "mignon": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word mignon when describing a common situation."
+                                        "mignon": {
+            definition: "mignon: somewhat like petit.",
+            example: "A mignon change made the project easier to finish."
         },
         "milestone": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -3587,9 +3587,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word mindfulness when describing a common situation."
         },
-        "mini": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word mini when describing a common situation."
+                                        "mini": {
+            definition: "mini: fairly like small.",
+            example: "A mini change made the project easier to finish."
         },
         "minimalist": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -3603,45 +3603,45 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word minor when describing a common situation."
         },
-        "minuscule": {
-            definition: "Extremely small in size or amount; tiny.",
-            example: "There was only a minuscule chance of rain during the picnic."
+                                        "minuscule": {
+            definition: "minuscule: very small.",
+            example: "The minuscule size of the ship surprised everyone."
         },
         "minute": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word minute when describing a common situation."
         },
-        "minúsculo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word minúsculo when describing a common situation."
+                                        "minúsculo": {
+            definition: "minúsculo: rather like pequeño.",
+            example: "A minúsculo change made the project easier to finish."
         },
-        "modern": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word modern when describing a common situation."
+                                        "modern": {
+            definition: "modern: somewhat like new.",
+            example: "A modern change made the project easier to finish."
         },
-        "moderne": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word moderne when describing a common situation."
+                                        "moderne": {
+            definition: "moderne: commonly like nouveau.",
+            example: "A moderne change made the project easier to finish."
         },
-        "moderno": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word moderno when describing a common situation."
+                                        "moderno": {
+            definition: "moderno: commonly like nuevo.",
+            example: "A moderno change made the project easier to finish."
         },
-        "molesto": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word molesto when describing a common situation."
+                                        "molesto": {
+            definition: "molesto: commonly like enfadado.",
+            example: "A molesto change made the project easier to finish."
         },
-        "mollifying": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Mollifying every day helped him improve quickly."
+                                        "mollifying": {
+            definition: "mollifying: the act of doing helpful.",
+            example: "Mollifying the data helped us see the trend."
         },
-        "momentous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word momentous when describing a common situation."
+                                        "momentous": {
+            definition: "momentous: very important.",
+            example: "The momentous size of the ship surprised everyone."
         },
-        "moneyed": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word moneyed when describing a common situation."
+                                        "moneyed": {
+            definition: "moneyed: exceptionally rich.",
+            example: "The moneyed size of the ship surprised everyone."
         },
         "monologue": {
             definition: "A long speech by a single person, especially in a play, film, or as part of a performance.",
@@ -3651,9 +3651,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Having a quality or characteristic that is often noticeable or strong.",
             example: "They used the word monstrous when describing a common situation."
         },
-        "monumental": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word monumental when describing a common situation."
+                                        "monumental": {
+            definition: "monumental: remarkably grand.",
+            example: "The monumental size of the ship surprised everyone."
         },
         "mood": {
             definition: "A temporary emotional state that affects how a person feels and behaves.",
@@ -3663,9 +3663,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Morning every day helped him improve quickly."
         },
-        "morose": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word morose when describing a common situation."
+                                        "morose": {
+            definition: "morose: remarkably triste.",
+            example: "The morose size of the ship surprised everyone."
         },
         "motivación": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -3683,9 +3683,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Having a quality or characteristic that is often noticeable or strong.",
             example: "They used the word multitudinous when describing a common situation."
         },
-        "mute": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word mute when describing a common situation."
+                                        "mute": {
+            definition: "mute: extremely quiet.",
+            example: "The mute size of the ship surprised everyone."
         },
         "myriad": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -3695,105 +3695,105 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word mythic when describing a common situation."
         },
-        "médiocre": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word médiocre when describing a common situation."
+                                        "médiocre": {
+            definition: "médiocre: fairly like mauvais.",
+            example: "A médiocre change made the project easier to finish."
         },
-        "mélancolique": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word mélancolique when describing a common situation."
+                                        "mélancolique": {
+            definition: "mélancolique: fairly like triste.",
+            example: "A mélancolique change made the project easier to finish."
         },
-        "naciente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word naciente when describing a common situation."
+                                        "naciente": {
+            definition: "naciente: extremely nuevo.",
+            example: "The naciente size of the ship surprised everyone."
         },
-        "naissant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word naissant when describing a common situation."
+                                        "naissant": {
+            definition: "naissant: extremely nouveau.",
+            example: "The naissant size of the ship surprised everyone."
         },
-        "narrow": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word narrow when describing a common situation."
+                                        "narrow": {
+            definition: "narrow: somewhat like thin.",
+            example: "A narrow change made the project easier to finish."
         },
-        "nascent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word nascent when describing a common situation."
+                                        "nascent": {
+            definition: "nascent: exceptionally new.",
+            example: "The nascent size of the ship surprised everyone."
         },
         "nasty": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word nasty when describing a common situation."
         },
-        "necessitous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word necessitous when describing a common situation."
+                                        "necessitous": {
+            definition: "necessitous: exceptionally poor.",
+            example: "The necessitous size of the ship surprised everyone."
         },
-        "needy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word needy when describing a common situation."
+                                        "needy": {
+            definition: "needy: rather like poor.",
+            example: "A needy change made the project easier to finish."
         },
-        "nefasto": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word nefasto when describing a common situation."
+                                        "nefasto": {
+            definition: "nefasto: exceptionally malo.",
+            example: "The nefasto size of the ship surprised everyone."
         },
         "negligible": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word negligible when describing a common situation."
         },
-        "neuf": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word neuf when describing a common situation."
+                                        "neuf": {
+            definition: "neuf: fairly like nouveau.",
+            example: "A neuf change made the project easier to finish."
         },
         "new": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word new when describing a common situation."
         },
-        "newfangled": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word newfangled when describing a common situation."
+                                        "newfangled": {
+            definition: "newfangled: remarkably new.",
+            example: "The newfangled size of the ship surprised everyone."
         },
-        "nice": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word nice when describing a common situation."
+                                        "nice": {
+            definition: "nice: fairly like good.",
+            example: "A nice change made the project easier to finish."
         },
-        "nimble": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word nimble when describing a common situation."
+                                        "nimble": {
+            definition: "nimble: remarkably quick.",
+            example: "The nimble size of the ship surprised everyone."
         },
-        "nippy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word nippy when describing a common situation."
+                                        "nippy": {
+            definition: "nippy: very cold.",
+            example: "The nippy size of the ship surprised everyone."
         },
-        "noisy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word noisy when describing a common situation."
+                                        "noisy": {
+            definition: "noisy: rather like loud.",
+            example: "A noisy change made the project easier to finish."
         },
         "nominal": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word nominal when describing a common situation."
         },
-        "nosy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word nosy when describing a common situation."
+                                        "nosy": {
+            definition: "nosy: fairly like curious.",
+            example: "A nosy change made the project easier to finish."
         },
         "nouveau": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word nouveau when describing a common situation."
         },
-        "novateur": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word novateur when describing a common situation."
+                                        "novateur": {
+            definition: "novateur: extremely nouveau.",
+            example: "The novateur size of the ship surprised everyone."
         },
-        "novel": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word novel when describing a common situation."
+                                        "novel": {
+            definition: "novel: very new.",
+            example: "The novel size of the ship surprised everyone."
         },
         "nuevo": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word nuevo when describing a common situation."
         },
-        "numinous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word numinous when describing a common situation."
+                                        "numinous": {
+            definition: "numinous: extremely brilliant.",
+            example: "The numinous size of the ship surprised everyone."
         },
         "nutrición": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -3803,29 +3803,29 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "An act, process, or result related to nutri, describing a specific action or condition.",
             example: "The decision came after a lengthy nutrition process that changed the plan."
         },
-        "obvious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word obvious when describing a common situation."
+                                        "obvious": {
+            definition: "obvious: commonly like clear.",
+            example: "A obvious change made the project easier to finish."
         },
         "okay": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word okay when describing a common situation."
         },
-        "old": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word old when describing a common situation."
+                                        "old": {
+            definition: "old: commonly like ancient.",
+            example: "A old change made the project easier to finish."
         },
-        "ominous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word ominous when describing a common situation."
+                                        "ominous": {
+            definition: "ominous: exceptionally dangerous.",
+            example: "The ominous size of the ship surprised everyone."
         },
-        "onerous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word onerous when describing a common situation."
+                                        "onerous": {
+            definition: "onerous: exceptionally difficult.",
+            example: "The onerous size of the ship surprised everyone."
         },
-        "open": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word open when describing a common situation."
+                                        "open": {
+            definition: "open: fairly like honest.",
+            example: "A open change made the project easier to finish."
         },
         "oportunidades": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -3839,17 +3839,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word opportunités when describing a common situation."
         },
-        "optimal": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word optimal when describing a common situation."
+                                        "optimal": {
+            definition: "optimal: commonly like efficace.",
+            example: "A optimal change made the project easier to finish."
         },
-        "optimizado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word optimizado when describing a common situation."
+                                        "optimizado": {
+            definition: "optimizado: somewhat like eficiente.",
+            example: "A optimizado change made the project easier to finish."
         },
-        "opulent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word opulent when describing a common situation."
+                                        "opulent": {
+            definition: "opulent: exceptionally rich.",
+            example: "The opulent size of the ship surprised everyone."
         },
         "organización": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -3863,53 +3863,53 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word outreach when describing a common situation."
         },
-        "outré": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word outré when describing a common situation."
+                                        "outré": {
+            definition: "outré: very fâché.",
+            example: "The outré size of the ship surprised everyone."
         },
         "paciencia": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word paciencia when describing a common situation."
         },
-        "painless": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word painless when describing a common situation."
+                                        "painless": {
+            definition: "painless: extremely easy.",
+            example: "The painless size of the ship surprised everyone."
         },
-        "palpitant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word palpitant when describing a common situation."
+                                        "palpitant": {
+            definition: "palpitant: very intéressant.",
+            example: "The palpitant size of the ship surprised everyone."
         },
-        "paltry": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word paltry when describing a common situation."
+                                        "paltry": {
+            definition: "paltry: remarkably cheap.",
+            example: "The paltry size of the ship surprised everyone."
         },
-        "pan comido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "She described the situation as pan comido in plain speech."
+                                        "pan comido": {
+            definition: "pan comido: remarkably fácil.",
+            example: "The pan comido size of the ship surprised everyone."
         },
-        "paramount": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word paramount when describing a common situation."
+                                        "paramount": {
+            definition: "paramount: very important.",
+            example: "The paramount size of the ship surprised everyone."
         },
-        "parcimonieux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word parcimonieux when describing a common situation."
+                                        "parcimonieux": {
+            definition: "parcimonieux: extremely efficace.",
+            example: "The parcimonieux size of the ship surprised everyone."
         },
-        "parco": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word parco when describing a common situation."
+                                        "parco": {
+            definition: "parco: very eficiente.",
+            example: "The parco size of the ship surprised everyone."
         },
-        "parsimonious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word parsimonious when describing a common situation."
+                                        "parsimonious": {
+            definition: "parsimonious: extremely cheap.",
+            example: "The parsimonious size of the ship surprised everyone."
         },
         "passionate": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word passionate when describing a common situation."
         },
-        "passionnant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word passionnant when describing a common situation."
+                                        "passionnant": {
+            definition: "passionnant: commonly like intéressant.",
+            example: "A passionnant change made the project easier to finish."
         },
         "passionné": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -3931,73 +3931,73 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A person who strongly supports and defends their country and its interests.",
             example: "Many patriots volunteered to help during the national crisis."
         },
-        "pavoroso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word pavoroso when describing a common situation."
+                                        "pavoroso": {
+            definition: "pavoroso: fairly like aterrador.",
+            example: "A pavoroso change made the project easier to finish."
         },
-        "peaceful": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word peaceful when describing a common situation."
+                                        "peaceful": {
+            definition: "peaceful: fairly like quiet.",
+            example: "A peaceful change made the project easier to finish."
         },
-        "pecunious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word pecunious when describing a common situation."
+                                        "pecunious": {
+            definition: "pecunious: very rich.",
+            example: "The pecunious size of the ship surprised everyone."
         },
         "peerless": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word peerless when describing a common situation."
         },
-        "peliagudo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word peliagudo when describing a common situation."
+                                        "peliagudo": {
+            definition: "peliagudo: very difícil.",
+            example: "The peliagudo size of the ship surprised everyone."
         },
-        "pellucid": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word pellucid when describing a common situation."
+                                        "pellucid": {
+            definition: "pellucid: extremely clear.",
+            example: "The pellucid size of the ship surprised everyone."
         },
-        "pellucide": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word pellucide when describing a common situation."
+                                        "pellucide": {
+            definition: "pellucide: very transparent.",
+            example: "The pellucide size of the ship surprised everyone."
         },
-        "pellucido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word pellucido when describing a common situation."
+                                        "pellucido": {
+            definition: "pellucido: very transparente.",
+            example: "The pellucido size of the ship surprised everyone."
         },
-        "penniless": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word penniless when describing a common situation."
+                                        "penniless": {
+            definition: "penniless: rather like poor.",
+            example: "A penniless change made the project easier to finish."
         },
-        "penurious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word penurious when describing a common situation."
+                                        "penurious": {
+            definition: "penurious: very poor.",
+            example: "The penurious size of the ship surprised everyone."
         },
         "pequeño": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word pequeño when describing a common situation."
         },
-        "perecedero": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word perecedero when describing a common situation."
+                                        "perecedero": {
+            definition: "perecedero: remarkably frágil.",
+            example: "The perecedero size of the ship surprised everyone."
         },
-        "perfidious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word perfidious when describing a common situation."
+                                        "perfidious": {
+            definition: "perfidious: remarkably dangerous.",
+            example: "The perfidious size of the ship surprised everyone."
         },
-        "performant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word performant when describing a common situation."
+                                        "performant": {
+            definition: "performant: somewhat like efficace.",
+            example: "A performant change made the project easier to finish."
         },
-        "perilous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word perilous when describing a common situation."
+                                        "perilous": {
+            definition: "perilous: fairly like dangerous.",
+            example: "A perilous change made the project easier to finish."
         },
-        "perishable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word perishable when describing a common situation."
+                                        "perishable": {
+            definition: "perishable: remarkably fragile.",
+            example: "The perishable size of the ship surprised everyone."
         },
-        "perk": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word perk when describing a common situation."
+                                        "perk": {
+            definition: "perk: fairly like brighten.",
+            example: "A perk change made the project easier to finish."
         },
         "personajes": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4015,25 +4015,25 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word perspectives when describing a common situation."
         },
-        "perspicace": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word perspicace when describing a common situation."
+                                        "perspicace": {
+            definition: "perspicace: somewhat like intelligent.",
+            example: "A perspicace change made the project easier to finish."
         },
-        "perspicacious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word perspicacious when describing a common situation."
+                                        "perspicacious": {
+            definition: "perspicacious: very smart.",
+            example: "The perspicacious size of the ship surprised everyone."
         },
-        "perspicaz": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word perspicaz when describing a common situation."
+                                        "perspicaz": {
+            definition: "perspicaz: rather like inteligente.",
+            example: "A perspicaz change made the project easier to finish."
         },
-        "perspicuo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word perspicuo when describing a common situation."
+                                        "perspicuo": {
+            definition: "perspicuo: very transparente.",
+            example: "The perspicuo size of the ship surprised everyone."
         },
-        "perspicuous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word perspicuous when describing a common situation."
+                                        "perspicuous": {
+            definition: "perspicuous: exceptionally clear.",
+            example: "The perspicuous size of the ship surprised everyone."
         },
         "petit": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -4043,9 +4043,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A person or thing whose job or role involves a particular activity or function.",
             example: "They used the word petit-déjeuner when describing a common situation."
         },
-        "petite": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word petite when describing a common situation."
+                                        "petite": {
+            definition: "petite: somewhat like small.",
+            example: "A petite change made the project easier to finish."
         },
         "picturesque": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4071,21 +4071,21 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word pittance when describing a common situation."
         },
-        "pivotal": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word pivotal when describing a common situation."
+                                        "pivotal": {
+            definition: "pivotal: exceptionally important.",
+            example: "The pivotal size of the ship surprised everyone."
         },
         "placate": {
             definition: "To calm someone by giving them what they want or by satisfying their demands.",
             example: "To placate the client, they offered a full refund and an apology."
         },
-        "placid": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word placid when describing a common situation."
+                                        "placid": {
+            definition: "placid: remarkably quiet.",
+            example: "The placid size of the ship surprised everyone."
         },
-        "plain": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word plain when describing a common situation."
+                                        "plain": {
+            definition: "plain: rather like clear.",
+            example: "A plain change made the project easier to finish."
         },
         "planificación": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4095,13 +4095,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Planning every day helped him improve quickly."
         },
-        "pleasant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word pleasant when describing a common situation."
+                                        "pleasant": {
+            definition: "pleasant: fairly like friendly.",
+            example: "A pleasant change made the project easier to finish."
         },
-        "pleased": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word pleased when describing a common situation."
+                                        "pleased": {
+            definition: "pleased: commonly like happy.",
+            example: "A pleased change made the project easier to finish."
         },
         "pliant": {
             definition: "Easily influenced or bent; adaptable to change or persuasion.",
@@ -4115,77 +4115,77 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word plush when describing a common situation."
         },
-        "plutocratic": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word plutocratic when describing a common situation."
+                                        "plutocratic": {
+            definition: "plutocratic: exceptionally rich.",
+            example: "The plutocratic size of the ship surprised everyone."
         },
-        "poderoso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word poderoso when describing a common situation."
+                                        "poderoso": {
+            definition: "poderoso: fairly like fuerte.",
+            example: "A poderoso change made the project easier to finish."
         },
-        "polaire": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word polaire when describing a common situation."
+                                        "polaire": {
+            definition: "polaire: exceptionally froid.",
+            example: "The polaire size of the ship surprised everyone."
         },
-        "polar": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word polar when describing a common situation."
+                                        "polar": {
+            definition: "polar: very frío.",
+            example: "The polar size of the ship surprised everyone."
         },
-        "polluted": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word polluted when describing a common situation."
+                                        "polluted": {
+            definition: "polluted: extremely dirty.",
+            example: "The polluted size of the ship surprised everyone."
         },
         "polyglot": {
             definition: "A person who knows and can use several languages.",
             example: "As a polyglot, she quickly switched between English, French, and Spanish."
         },
-        "poor": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word poor when describing a common situation."
+                                        "poor": {
+            definition: "poor: fairly like bad.",
+            example: "A poor change made the project easier to finish."
         },
         "positivity": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word positivity when describing a common situation."
         },
-        "potent": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word potent when describing a common situation."
+                                        "potent": {
+            definition: "potent: remarkably strong.",
+            example: "The potent size of the ship surprised everyone."
         },
-        "potente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word potente when describing a common situation."
+                                        "potente": {
+            definition: "potente: commonly like fuerte.",
+            example: "A potente change made the project easier to finish."
         },
         "potential": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word potential when describing a common situation."
         },
-        "powerful": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word powerful when describing a common situation."
+                                        "powerful": {
+            definition: "powerful: fairly like strong.",
+            example: "A powerful change made the project easier to finish."
         },
         "practice": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word practice when describing a common situation."
         },
-        "precario": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word precario when describing a common situation."
+                                        "precario": {
+            definition: "precario: extremely frágil.",
+            example: "The precario size of the ship surprised everyone."
         },
-        "precarious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word precarious when describing a common situation."
+                                        "precarious": {
+            definition: "precarious: remarkably dangerous.",
+            example: "The precarious size of the ship surprised everyone."
         },
-        "precioso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word precioso when describing a common situation."
+                                        "precioso": {
+            definition: "precioso: fairly like hermoso.",
+            example: "A precioso change made the project easier to finish."
         },
-        "precipitate": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word precipitate when describing a common situation."
+                                        "precipitate": {
+            definition: "precipitate: exceptionally fast.",
+            example: "The precipitate size of the ship surprised everyone."
         },
-        "precipitous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word precipitous when describing a common situation."
+                                        "precipitous": {
+            definition: "precipitous: exceptionally quick.",
+            example: "The precipitous size of the ship surprised everyone."
         },
         "precocious": {
             definition: "Having a quality or characteristic that is often noticeable or strong.",
@@ -4195,9 +4195,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word preguntas when describing a common situation."
         },
-        "preguntón": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word preguntón when describing a common situation."
+                                        "preguntón": {
+            definition: "preguntón: rather like curioso.",
+            example: "A preguntón change made the project easier to finish."
         },
         "preheated": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
@@ -4211,29 +4211,29 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "An act, process, or result related to presenta, describing a specific action or condition.",
             example: "The decision came after a lengthy presentation process that changed the plan."
         },
-        "pressé": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word pressé when describing a common situation."
+                                        "pressé": {
+            definition: "pressé: somewhat like rapide.",
+            example: "A pressé change made the project easier to finish."
         },
-        "preste": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word preste when describing a common situation."
+                                        "preste": {
+            definition: "preste: remarkably rapide.",
+            example: "The preste size of the ship surprised everyone."
         },
         "presupuesto": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word presupuesto when describing a common situation."
         },
-        "presuroso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word presuroso when describing a common situation."
+                                        "presuroso": {
+            definition: "presuroso: very rápido.",
+            example: "The presuroso size of the ship surprised everyone."
         },
-        "pretty": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word pretty when describing a common situation."
+                                        "pretty": {
+            definition: "pretty: somewhat like beautiful.",
+            example: "A pretty change made the project easier to finish."
         },
-        "primordial": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word primordial when describing a common situation."
+                                        "primordial": {
+            definition: "primordial: remarkably old.",
+            example: "The primordial size of the ship surprised everyone."
         },
         "prioridad": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4263,41 +4263,41 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word privacy when describing a common situation."
         },
-        "probant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word probant when describing a common situation."
+                                        "probant": {
+            definition: "probant: exceptionally efficace.",
+            example: "The probant size of the ship surprised everyone."
         },
-        "probity": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word probity when describing a common situation."
+                                        "probity": {
+            definition: "probity: exceptionally honest.",
+            example: "The probity size of the ship surprised everyone."
         },
-        "problemático": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word problemático when describing a common situation."
+                                        "problemático": {
+            definition: "problemático: fairly like difícil.",
+            example: "A problemático change made the project easier to finish."
         },
-        "probo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word probo when describing a common situation."
+                                        "probo": {
+            definition: "probo: very eficiente.",
+            example: "The probo size of the ship surprised everyone."
         },
         "proclaim": {
             definition: "To announce something publicly and officially, often with strong emphasis.",
             example: "The mayor will proclaim the new park open this weekend."
         },
-        "productif": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word productif when describing a common situation."
+                                        "productif": {
+            definition: "productif: rather like efficace.",
+            example: "A productif change made the project easier to finish."
         },
-        "productive": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word productive when describing a common situation."
+                                        "productive": {
+            definition: "productive: somewhat like efficient.",
+            example: "A productive change made the project easier to finish."
         },
         "productivity": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word productivity when describing a common situation."
         },
-        "productivo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word productivo when describing a common situation."
+                                        "productivo": {
+            definition: "productivo: somewhat like eficiente.",
+            example: "A productivo change made the project easier to finish."
         },
         "progress": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4311,21 +4311,21 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Promising every day helped him improve quickly."
         },
-        "prompt": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word prompt when describing a common situation."
+                                        "prompt": {
+            definition: "prompt: somewhat like rapide.",
+            example: "A prompt change made the project easier to finish."
         },
-        "pronto": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word pronto when describing a common situation."
+                                        "pronto": {
+            definition: "pronto: somewhat like rápido.",
+            example: "A pronto change made the project easier to finish."
         },
-        "propitious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word propitious when describing a common situation."
+                                        "propitious": {
+            definition: "propitious: remarkably helpful.",
+            example: "The propitious size of the ship surprised everyone."
         },
-        "prosperous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word prosperous when describing a common situation."
+                                        "prosperous": {
+            definition: "prosperous: somewhat like rich.",
+            example: "A prosperous change made the project easier to finish."
         },
         "protección": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4335,57 +4335,57 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "An act, process, or result related to protec, describing a specific action or condition.",
             example: "The decision came after a lengthy protection process that changed the plan."
         },
-        "prying": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Prying every day helped him improve quickly."
+                                        "prying": {
+            definition: "prying: the act of doing curious.",
+            example: "Prying the data helped us see the trend."
         },
         "práctica": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word práctica when describing a common situation."
         },
-        "précaire": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word précaire when describing a common situation."
+                                        "précaire": {
+            definition: "précaire: extremely fragile.",
+            example: "The précaire size of the ship surprised everyone."
         },
-        "prépondérant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word prépondérant when describing a common situation."
+                                        "prépondérant": {
+            definition: "prépondérant: extremely important.",
+            example: "The prépondérant size of the ship surprised everyone."
         },
         "psychology": {
             definition: "The scientific study of the mind, behavior, and mental processes.",
             example: "She studied psychology to better understand human behavior."
         },
-        "puissant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word puissant when describing a common situation."
+                                        "puissant": {
+            definition: "puissant: fairly like fort.",
+            example: "A puissant change made the project easier to finish."
         },
-        "pulchritudinous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word pulchritudinous when describing a common situation."
+                                        "pulchritudinous": {
+            definition: "pulchritudinous: exceptionally beautiful.",
+            example: "The pulchritudinous size of the ship surprised everyone."
         },
         "purpose": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word purpose when describing a common situation."
         },
-        "pusillanimous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word pusillanimous when describing a common situation."
+                                        "pusillanimous": {
+            definition: "pusillanimous: very timid.",
+            example: "The pusillanimous size of the ship surprised everyone."
         },
         "putrid": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word putrid when describing a common situation."
         },
-        "pénible": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word pénible when describing a common situation."
+                                        "pénible": {
+            definition: "pénible: commonly like difficile.",
+            example: "A pénible change made the project easier to finish."
         },
-        "périssable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word périssable when describing a common situation."
+                                        "périssable": {
+            definition: "périssable: remarkably fragile.",
+            example: "The périssable size of the ship surprised everyone."
         },
-        "pésimo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word pésimo when describing a common situation."
+                                        "pésimo": {
+            definition: "pésimo: somewhat like malo.",
+            example: "A pésimo change made the project easier to finish."
         },
         "quaint": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -4395,129 +4395,129 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word quality when describing a common situation."
         },
-        "quebradizo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word quebradizo when describing a common situation."
+                                        "quebradizo": {
+            definition: "quebradizo: somewhat like frágil.",
+            example: "A quebradizo change made the project easier to finish."
         },
-        "quebrantable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word quebrantable when describing a common situation."
+                                        "quebrantable": {
+            definition: "quebrantable: fairly like frágil.",
+            example: "A quebrantable change made the project easier to finish."
         },
-        "quebrantado": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word quebrantado when describing a common situation."
+                                        "quebrantado": {
+            definition: "quebrantado: exceptionally frágil.",
+            example: "The quebrantado size of the ship surprised everyone."
         },
-        "querulous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word querulous when describing a common situation."
+                                        "querulous": {
+            definition: "querulous: very curious.",
+            example: "The querulous size of the ship surprised everyone."
         },
-        "questioning": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Questioning every day helped him improve quickly."
+                                        "questioning": {
+            definition: "questioning: an action similar to curious.",
+            example: "Questioning the document took longer than expected."
         },
-        "questionneur": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word questionneur when describing a common situation."
+                                        "questionneur": {
+            definition: "questionneur: fairly like curieux.",
+            example: "A questionneur change made the project easier to finish."
         },
         "questions": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word questions when describing a common situation."
         },
-        "quick": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word quick when describing a common situation."
+                                        "quick": {
+            definition: "quick: rather like smart.",
+            example: "A quick change made the project easier to finish."
         },
-        "quiet": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word quiet when describing a common situation."
+                                        "quiet": {
+            definition: "quiet: rather like silent.",
+            example: "A quiet change made the project easier to finish."
         },
         "quixotic": {
             definition: "Unrealistic and impractical in pursuit of ideals; extravagantly chivalrous or romantic.",
             example: "His quixotic plans to change the world were admired but difficult to implement."
         },
-        "quémandeur": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word quémandeur when describing a common situation."
+                                        "quémandeur": {
+            definition: "quémandeur: remarkably curieux.",
+            example: "The quémandeur size of the ship surprised everyone."
         },
-        "radiant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word radiant when describing a common situation."
+                                        "radiant": {
+            definition: "radiant: commonly like bright.",
+            example: "A radiant change made the project easier to finish."
         },
-        "radiante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word radiante when describing a common situation."
+                                        "radiante": {
+            definition: "radiante: extremely feliz.",
+            example: "The radiante size of the ship surprised everyone."
         },
-        "radieux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word radieux when describing a common situation."
+                                        "radieux": {
+            definition: "radieux: exceptionally heureux.",
+            example: "The radieux size of the ship surprised everyone."
         },
         "ramshackle": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word ramshackle when describing a common situation."
         },
-        "rapid": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word rapid when describing a common situation."
+                                        "rapid": {
+            definition: "rapid: rather like fast.",
+            example: "A rapid change made the project easier to finish."
         },
         "rapide": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word rapide when describing a common situation."
         },
-        "ratiocinant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word ratiocinant when describing a common situation."
+                                        "ratiocinant": {
+            definition: "ratiocinant: exceptionally curieux.",
+            example: "The ratiocinant size of the ship surprised everyone."
         },
-        "ratiocinative": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word ratiocinative when describing a common situation."
+                                        "ratiocinative": {
+            definition: "ratiocinative: very curious.",
+            example: "The ratiocinative size of the ship surprised everyone."
         },
-        "rationnel": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word rationnel when describing a common situation."
+                                        "rationnel": {
+            definition: "rationnel: rather like efficace.",
+            example: "A rationnel change made the project easier to finish."
         },
-        "raucous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word raucous when describing a common situation."
+                                        "raucous": {
+            definition: "raucous: exceptionally loud.",
+            example: "The raucous size of the ship surprised everyone."
         },
-        "raudo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word raudo when describing a common situation."
+                                        "raudo": {
+            definition: "raudo: very rápido.",
+            example: "The raudo size of the ship surprised everyone."
         },
         "ravenous": {
             definition: "Extremely hungry; having a strong appetite after a period without food.",
             example: "After the hike he was ravenous and ate two sandwiches."
         },
-        "ravi": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word ravi when describing a common situation."
+                                        "ravi": {
+            definition: "ravi: fairly like heureux.",
+            example: "A ravi change made the project easier to finish."
         },
-        "ravishing": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Ravishing every day helped him improve quickly."
+                                        "ravishing": {
+            definition: "ravishing: the act of doing beautiful.",
+            example: "Ravishing the data helped us see the trend."
         },
-        "ravissant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word ravissant when describing a common situation."
+                                        "ravissant": {
+            definition: "ravissant: very beau.",
+            example: "The ravissant size of the ship surprised everyone."
         },
-        "razonador": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word razonador when describing a common situation."
+                                        "razonador": {
+            definition: "razonador: very curioso.",
+            example: "The razonador size of the ship surprised everyone."
         },
         "ready": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word ready when describing a common situation."
         },
-        "recent": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word recent when describing a common situation."
+                                        "recent": {
+            definition: "recent: somewhat like new.",
+            example: "A recent change made the project easier to finish."
         },
-        "reciente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word reciente when describing a common situation."
+                                        "reciente": {
+            definition: "reciente: fairly like nuevo.",
+            example: "A reciente change made the project easier to finish."
         },
-        "recio": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word recio when describing a common situation."
+                                        "recio": {
+            definition: "recio: very fuerte.",
+            example: "The recio size of the ship surprised everyone."
         },
         "recomendar": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4543,13 +4543,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word recursos when describing a common situation."
         },
-        "redoubtable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word redoubtable when describing a common situation."
+                                        "redoubtable": {
+            definition: "redoubtable: exceptionally strong.",
+            example: "The redoubtable size of the ship surprised everyone."
         },
-        "reducido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word reducido when describing a common situation."
+                                        "reducido": {
+            definition: "reducido: fairly like pequeño.",
+            example: "A reducido change made the project easier to finish."
         },
         "reflection": {
             definition: "An act, process, or result related to reflec, describing a specific action or condition.",
@@ -4563,9 +4563,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Refreshing every day helped him improve quickly."
         },
-        "refulgent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word refulgent when describing a common situation."
+                                        "refulgent": {
+            definition: "refulgent: very bright.",
+            example: "The refulgent size of the ship surprised everyone."
         },
         "relajación": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4607,9 +4607,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word research when describing a common situation."
         },
-        "reserved": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word reserved when describing a common situation."
+                                        "reserved": {
+            definition: "reserved: fairly like timid.",
+            example: "A reserved change made the project easier to finish."
         },
         "resilience": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4623,9 +4623,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word resistencia when describing a common situation."
         },
-        "resistente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word resistente when describing a common situation."
+                                        "resistente": {
+            definition: "resistente: somewhat like fuerte.",
+            example: "A resistente change made the project easier to finish."
         },
         "resolución": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4655,13 +4655,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word respeto when describing a common situation."
         },
-        "resplendent": {
-            definition: "Attractively bright and richly colorful in appearance.",
-            example: "The ballroom looked resplendent with chandeliers and roses."
+                                        "resplendent": {
+            definition: "resplendent: exceptionally beautiful.",
+            example: "The resplendent size of the ship surprised everyone."
         },
-        "resplendissant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word resplendissant when describing a common situation."
+                                        "resplendissant": {
+            definition: "resplendissant: remarkably beau.",
+            example: "The resplendissant size of the ship surprised everyone."
         },
         "responsabilidad": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4695,9 +4695,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word restorative when describing a common situation."
         },
-        "reticent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word reticent when describing a common situation."
+                                        "reticent": {
+            definition: "reticent: fairly like timid.",
+            example: "A reticent change made the project easier to finish."
         },
         "retroalimentación": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4719,33 +4719,33 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word rich when describing a common situation."
         },
-        "risible": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word risible when describing a common situation."
+                                        "risible": {
+            definition: "risible: exceptionally funny.",
+            example: "The risible size of the ship surprised everyone."
         },
-        "risky": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word risky when describing a common situation."
+                                        "risky": {
+            definition: "risky: rather like dangerous.",
+            example: "A risky change made the project easier to finish."
         },
         "ritual": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word ritual when describing a common situation."
         },
-        "riveting": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Riveting every day helped him improve quickly."
+                                        "riveting": {
+            definition: "riveting: the act of doing interesting.",
+            example: "Riveting the data helped us see the trend."
         },
-        "robust": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word robust when describing a common situation."
+                                        "robust": {
+            definition: "robust: somewhat like strong.",
+            example: "A robust change made the project easier to finish."
         },
-        "robuste": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word robuste when describing a common situation."
+                                        "robuste": {
+            definition: "robuste: commonly like fort.",
+            example: "A robuste change made the project easier to finish."
         },
-        "robusto": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word robusto when describing a common situation."
+                                        "robusto": {
+            definition: "robusto: commonly like fuerte.",
+            example: "A robusto change made the project easier to finish."
         },
         "roles": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -4759,9 +4759,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word routine when describing a common situation."
         },
-        "rudimentaire": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word rudimentaire when describing a common situation."
+                                        "rudimentaire": {
+            definition: "rudimentaire: extremely facile.",
+            example: "The rudimentaire size of the ship surprised everyone."
         },
         "rutina": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -4771,25 +4771,25 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word rápido when describing a common situation."
         },
-        "rébarbatif": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word rébarbatif when describing a common situation."
+                                        "rébarbatif": {
+            definition: "rébarbatif: remarkably difficile.",
+            example: "The rébarbatif size of the ship surprised everyone."
         },
-        "récent": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word récent when describing a common situation."
+                                        "récent": {
+            definition: "récent: somewhat like nouveau.",
+            example: "A récent change made the project easier to finish."
         },
-        "réduit": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word réduit when describing a common situation."
+                                        "réduit": {
+            definition: "réduit: somewhat like petit.",
+            example: "A réduit change made the project easier to finish."
         },
         "réussite": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word réussite when describing a common situation."
         },
-        "révolutionnaire": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word révolutionnaire when describing a common situation."
+                                        "révolutionnaire": {
+            definition: "révolutionnaire: exceptionally nouveau.",
+            example: "The révolutionnaire size of the ship surprised everyone."
         },
         "sabor": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -4803,49 +4803,49 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word sadness when describing a common situation."
         },
-        "sagace": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word sagace when describing a common situation."
+                                        "sagace": {
+            definition: "sagace: remarkably intelligent.",
+            example: "The sagace size of the ship surprised everyone."
         },
-        "sagacious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word sagacious when describing a common situation."
+                                        "sagacious": {
+            definition: "sagacious: very smart.",
+            example: "The sagacious size of the ship surprised everyone."
         },
-        "sagaz": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word sagaz when describing a common situation."
+                                        "sagaz": {
+            definition: "sagaz: very inteligente.",
+            example: "The sagaz size of the ship surprised everyone."
         },
-        "saludable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word saludable when describing a common situation."
+                                        "saludable": {
+            definition: "saludable: very eficiente.",
+            example: "The saludable size of the ship surprised everyone."
         },
-        "salutaire": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word salutaire when describing a common situation."
+                                        "salutaire": {
+            definition: "salutaire: very efficace.",
+            example: "The salutaire size of the ship surprised everyone."
         },
-        "salutary": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word salutary when describing a common situation."
+                                        "salutary": {
+            definition: "salutary: extremely helpful.",
+            example: "The salutary size of the ship surprised everyone."
         },
-        "satisfait": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word satisfait when describing a common situation."
+                                        "satisfait": {
+            definition: "satisfait: rather like heureux.",
+            example: "A satisfait change made the project easier to finish."
         },
-        "satisfecho": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word satisfecho when describing a common situation."
+                                        "satisfecho": {
+            definition: "satisfecho: somewhat like feliz.",
+            example: "A satisfecho change made the project easier to finish."
         },
         "saving": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Saving every day helped him improve quickly."
         },
-        "savoureux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word savoureux when describing a common situation."
+                                        "savoureux": {
+            definition: "savoureux: very bon.",
+            example: "The savoureux size of the ship surprised everyone."
         },
-        "scabreux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word scabreux when describing a common situation."
+                                        "scabreux": {
+            definition: "scabreux: extremely difficile.",
+            example: "The scabreux size of the ship surprised everyone."
         },
         "scale": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -4859,33 +4859,33 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word schedule when describing a common situation."
         },
-        "scorching": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Scorching every day helped him improve quickly."
+                                        "scorching": {
+            definition: "scorching: an action similar to hot.",
+            example: "Scorching the document took longer than expected."
         },
-        "scrawny": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word scrawny when describing a common situation."
+                                        "scrawny": {
+            definition: "scrawny: commonly like thin.",
+            example: "A scrawny change made the project easier to finish."
         },
-        "scrupulous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word scrupulous when describing a common situation."
+                                        "scrupulous": {
+            definition: "scrupulous: remarkably honest.",
+            example: "The scrupulous size of the ship surprised everyone."
         },
-        "secular": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word secular when describing a common situation."
+                                        "secular": {
+            definition: "secular: exceptionally viejo.",
+            example: "The secular size of the ship surprised everyone."
         },
         "security": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word security when describing a common situation."
         },
-        "sedate": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word sedate when describing a common situation."
+                                        "sedate": {
+            definition: "sedate: remarkably calm.",
+            example: "The sedate size of the ship surprised everyone."
         },
-        "seething": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Seething every day helped him improve quickly."
+                                        "seething": {
+            definition: "seething: the act of doing angry.",
+            example: "Seething the data helped us see the trend."
         },
         "seguimiento": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4895,13 +4895,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word self-care when describing a common situation."
         },
-        "self-evident": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word self-evident when describing a common situation."
+                                        "self-evident": {
+            definition: "self-evident: extremely clear.",
+            example: "The self-evident size of the ship surprised everyone."
         },
-        "sencillo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word sencillo when describing a common situation."
+                                        "sencillo": {
+            definition: "sencillo: fairly like fácil.",
+            example: "A sencillo change made the project easier to finish."
         },
         "sequestered": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
@@ -4911,9 +4911,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Occurring or discovered by chance in a happy or beneficial way.",
             example: "Their meeting was serendipitous and led to a successful collaboration."
         },
-        "serene": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word serene when describing a common situation."
+                                        "serene": {
+            definition: "serene: remarkably quiet.",
+            example: "The serene size of the ship surprised everyone."
         },
         "service": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -4927,45 +4927,45 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Describing a state that someone or something has experienced as a result of an action.",
             example: "They used the word shaded when describing a common situation."
         },
-        "sharp": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word sharp when describing a common situation."
+                                        "sharp": {
+            definition: "sharp: rather like smart.",
+            example: "A sharp change made the project easier to finish."
         },
-        "shining": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Shining every day helped him improve quickly."
+                                        "shining": {
+            definition: "shining: an action similar to bright.",
+            example: "Shining the document took longer than expected."
         },
         "shiny": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word shiny when describing a common situation."
         },
-        "shoddy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word shoddy when describing a common situation."
+                                        "shoddy": {
+            definition: "shoddy: remarkably cheap.",
+            example: "The shoddy size of the ship surprised everyone."
         },
         "short": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word short when describing a common situation."
         },
-        "shrewd": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word shrewd when describing a common situation."
+                                        "shrewd": {
+            definition: "shrewd: remarkably smart.",
+            example: "The shrewd size of the ship surprised everyone."
         },
-        "shy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word shy when describing a common situation."
+                                        "shy": {
+            definition: "shy: commonly like timid.",
+            example: "A shy change made the project easier to finish."
         },
-        "siberiano": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word siberiano when describing a common situation."
+                                        "siberiano": {
+            definition: "siberiano: very frío.",
+            example: "The siberiano size of the ship surprised everyone."
         },
-        "sibérien": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word sibérien when describing a common situation."
+                                        "sibérien": {
+            definition: "sibérien: extremely froid.",
+            example: "The sibérien size of the ship surprised everyone."
         },
-        "side-splitting": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Side-splitting every day helped him improve quickly."
+                                        "side-splitting": {
+            definition: "side-splitting: the act of doing funny.",
+            example: "Side-splitting the data helped us see the trend."
         },
         "sightseeing": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
@@ -4975,45 +4975,45 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word significado when describing a common situation."
         },
-        "significant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word significant when describing a common situation."
+                                        "significant": {
+            definition: "significant: commonly like important.",
+            example: "A significant change made the project easier to finish."
         },
-        "significativo": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word significativo when describing a common situation."
+                                        "significativo": {
+            definition: "significativo: rather like importante.",
+            example: "A significativo change made the project easier to finish."
         },
-        "silent": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word silent when describing a common situation."
+                                        "silent": {
+            definition: "silent: somewhat like quiet.",
+            example: "A silent change made the project easier to finish."
         },
         "silken": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word silken when describing a common situation."
         },
-        "simple": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word simple when describing a common situation."
+                                        "simple": {
+            definition: "simple: somewhat like easy.",
+            example: "A simple change made the project easier to finish."
         },
         "simplify": {
             definition: "To make something less complicated or easier to understand or do.",
             example: "We should simplify the instructions so new users can follow them easily."
         },
-        "sincere": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word sincere when describing a common situation."
+                                        "sincere": {
+            definition: "sincere: commonly like honest.",
+            example: "A sincere change made the project easier to finish."
         },
-        "siniestro": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word siniestro when describing a common situation."
+                                        "siniestro": {
+            definition: "siniestro: very aterrador.",
+            example: "The siniestro size of the ship surprised everyone."
         },
-        "sinistre": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word sinistre when describing a common situation."
+                                        "sinistre": {
+            definition: "sinistre: extremely effrayant.",
+            example: "The sinistre size of the ship surprised everyone."
         },
-        "sizzling": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Sizzling every day helped him improve quickly."
+                                        "sizzling": {
+            definition: "sizzling: the act of doing hot.",
+            example: "Sizzling the data helped us see the trend."
         },
         "skeptic": {
             definition: "A person inclined to question or doubt accepted opinions and claims until they are supported by evidence.",
@@ -5027,53 +5027,53 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word sleepy when describing a common situation."
         },
-        "slender": {
-            definition: "A person or thing whose job or role involves a particular activity or function.",
-            example: "They used the word slender when describing a common situation."
+                                        "slender": {
+            definition: "slender: commonly like thin.",
+            example: "A slender change made the project easier to finish."
         },
         "slick": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word slick when describing a common situation."
         },
-        "slim": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word slim when describing a common situation."
+                                        "slim": {
+            definition: "slim: fairly like thin.",
+            example: "A slim change made the project easier to finish."
         },
         "small": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word small when describing a common situation."
         },
-        "smart": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word smart when describing a common situation."
+                                        "smart": {
+            definition: "smart: rather like brilliant.",
+            example: "A smart change made the project easier to finish."
         },
-        "sobresaliente": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word sobresaliente when describing a common situation."
+                                        "sobresaliente": {
+            definition: "sobresaliente: very bueno.",
+            example: "The sobresaliente size of the ship surprised everyone."
         },
-        "sofocante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word sofocante when describing a common situation."
+                                        "sofocante": {
+            definition: "sofocante: rather like caliente.",
+            example: "A sofocante change made the project easier to finish."
         },
-        "soft": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word soft when describing a common situation."
+                                        "soft": {
+            definition: "soft: fairly like quiet.",
+            example: "A soft change made the project easier to finish."
         },
-        "soiled": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word soiled when describing a common situation."
+                                        "soiled": {
+            definition: "soiled: somewhat like dirty.",
+            example: "A soiled change made the project easier to finish."
         },
-        "solide": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word solide when describing a common situation."
+                                        "solide": {
+            definition: "solide: somewhat like fort.",
+            example: "A solide change made the project easier to finish."
         },
         "some": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word some when describing a common situation."
         },
-        "somptueux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word somptueux when describing a common situation."
+                                        "somptueux": {
+            definition: "somptueux: very beau.",
+            example: "The somptueux size of the ship surprised everyone."
         },
         "songbird": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5087,13 +5087,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Soothing every day helped him improve quickly."
         },
-        "sorrow": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word sorrow when describing a common situation."
+                                        "sorrow": {
+            definition: "sorrow: somewhat like sadness.",
+            example: "A sorrow change made the project easier to finish."
         },
-        "sorrowful": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word sorrowful when describing a common situation."
+                                        "sorrowful": {
+            definition: "sorrowful: rather like sad.",
+            example: "A sorrowful change made the project easier to finish."
         },
         "sostenibilidad": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5107,69 +5107,69 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word souvenirs when describing a common situation."
         },
-        "spare": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word spare when describing a common situation."
+                                        "spare": {
+            definition: "spare: very thin.",
+            example: "The spare size of the ship surprised everyone."
         },
-        "sparse": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word sparse when describing a common situation."
+                                        "sparse": {
+            definition: "sparse: somewhat like thin.",
+            example: "A sparse change made the project easier to finish."
         },
-        "speculative": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word speculative when describing a common situation."
+                                        "speculative": {
+            definition: "speculative: exceptionally curious.",
+            example: "The speculative size of the ship surprised everyone."
         },
-        "speechless": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word speechless when describing a common situation."
+                                        "speechless": {
+            definition: "speechless: somewhat like silent.",
+            example: "A speechless change made the project easier to finish."
         },
-        "speedy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word speedy when describing a common situation."
+                                        "speedy": {
+            definition: "speedy: somewhat like fast.",
+            example: "A speedy change made the project easier to finish."
         },
-        "spellbinding": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Spellbinding every day helped him improve quickly."
+                                        "spellbinding": {
+            definition: "spellbinding: the act of doing interesting.",
+            example: "Spellbinding the data helped us see the trend."
         },
         "spicy": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word spicy when describing a common situation."
         },
-        "spindly": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word spindly when describing a common situation."
+                                        "spindly": {
+            definition: "spindly: exceptionally thin.",
+            example: "The spindly size of the ship surprised everyone."
         },
-        "spine-chilling": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Spine-chilling every day helped him improve quickly."
+                                        "spine-chilling": {
+            definition: "spine-chilling: the act of doing scary.",
+            example: "Spine-chilling the data helped us see the trend."
         },
         "splendid": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word splendid when describing a common situation."
         },
-        "splendide": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word splendide when describing a common situation."
+                                        "splendide": {
+            definition: "splendide: rather like beau.",
+            example: "A splendide change made the project easier to finish."
         },
-        "splendiferous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word splendiferous when describing a common situation."
+                                        "splendiferous": {
+            definition: "splendiferous: very brilliant.",
+            example: "The splendiferous size of the ship surprised everyone."
         },
-        "spooky": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word spooky when describing a common situation."
+                                        "spooky": {
+            definition: "spooky: somewhat like scary.",
+            example: "A spooky change made the project easier to finish."
         },
-        "spéculatif": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word spéculatif when describing a common situation."
+                                        "spéculatif": {
+            definition: "spéculatif: remarkably curieux.",
+            example: "The spéculatif size of the ship surprised everyone."
         },
-        "stained": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word stained when describing a common situation."
+                                        "stained": {
+            definition: "stained: commonly like dirty.",
+            example: "A stained change made the project easier to finish."
         },
-        "stalwart": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word stalwart when describing a common situation."
+                                        "stalwart": {
+            definition: "stalwart: extremely strong.",
+            example: "The stalwart size of the ship surprised everyone."
         },
         "starlit": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5179,37 +5179,37 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Steaming every day helped him improve quickly."
         },
-        "stellar": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word stellar when describing a common situation."
+                                        "stellar": {
+            definition: "stellar: exceptionally good.",
+            example: "The stellar size of the ship surprised everyone."
         },
-        "stenotic": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word stenotic when describing a common situation."
+                                        "stenotic": {
+            definition: "stenotic: extremely silent.",
+            example: "The stenotic size of the ship surprised everyone."
         },
-        "stentorian": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word stentorian when describing a common situation."
+                                        "stentorian": {
+            definition: "stentorian: remarkably loud.",
+            example: "The stentorian size of the ship surprised everyone."
         },
         "stiff": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word stiff when describing a common situation."
         },
-        "still": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word still when describing a common situation."
+                                        "still": {
+            definition: "still: rather like quiet.",
+            example: "A still change made the project easier to finish."
         },
-        "straightforward": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word straightforward when describing a common situation."
+                                        "straightforward": {
+            definition: "straightforward: commonly like easy.",
+            example: "A straightforward change made the project easier to finish."
         },
-        "straitened": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word straitened when describing a common situation."
+                                        "straitened": {
+            definition: "straitened: remarkably poor.",
+            example: "The straitened size of the ship surprised everyone."
         },
-        "streamlined": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word streamlined when describing a common situation."
+                                        "streamlined": {
+            definition: "streamlined: commonly like efficient.",
+            example: "A streamlined change made the project easier to finish."
         },
         "strength": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5219,9 +5219,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word stress when describing a common situation."
         },
-        "strident": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word strident when describing a common situation."
+                                        "strident": {
+            definition: "strident: extremely loud.",
+            example: "The strident size of the ship surprised everyone."
         },
         "striking": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
@@ -5235,13 +5235,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Having a quality or characteristic that is often noticeable or strong.",
             example: "They used the word studious when describing a common situation."
         },
-        "stunning": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Stunning every day helped him improve quickly."
+                                        "stunning": {
+            definition: "stunning: an action similar to beautiful.",
+            example: "Stunning the document took longer than expected."
         },
-        "sturdy": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word sturdy when describing a common situation."
+                                        "sturdy": {
+            definition: "sturdy: somewhat like strong.",
+            example: "A sturdy change made the project easier to finish."
         },
         "stygian": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5251,65 +5251,65 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Describing a state that someone or something has experienced as a result of an action.",
             example: "They used the word subdued when describing a common situation."
         },
-        "subjuguant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word subjuguant when describing a common situation."
+                                        "subjuguant": {
+            definition: "subjuguant: remarkably intéressant.",
+            example: "The subjuguant size of the ship surprised everyone."
         },
-        "sublime": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word sublime when describing a common situation."
+                                        "sublime": {
+            definition: "sublime: exceptionally beautiful.",
+            example: "The sublime size of the ship surprised everyone."
         },
         "substantial": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word substantial when describing a common situation."
         },
-        "subyugante": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word subyugante when describing a common situation."
+                                        "subyugante": {
+            definition: "subyugante: remarkably interesante.",
+            example: "The subyugante size of the ship surprised everyone."
         },
-        "succulent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word succulent when describing a common situation."
+                                        "succulent": {
+            definition: "succulent: very bon.",
+            example: "The succulent size of the ship surprised everyone."
         },
-        "suffocant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word suffocant when describing a common situation."
+                                        "suffocant": {
+            definition: "suffocant: very chaud.",
+            example: "The suffocant size of the ship surprised everyone."
         },
-        "sullied": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word sullied when describing a common situation."
+                                        "sullied": {
+            definition: "sullied: exceptionally dirty.",
+            example: "The sullied size of the ship surprised everyone."
         },
-        "sultry": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word sultry when describing a common situation."
+                                        "sultry": {
+            definition: "sultry: remarkably hot.",
+            example: "The sultry size of the ship surprised everyone."
         },
-        "sunlit": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word sunlit when describing a common situation."
+                                        "sunlit": {
+            definition: "sunlit: remarkably warm.",
+            example: "The sunlit size of the ship surprised everyone."
         },
-        "super": {
-            definition: "A person or thing whose job or role involves a particular activity or function.",
-            example: "They used the word super when describing a common situation."
+                                        "super": {
+            definition: "super: rather like bon.",
+            example: "A super change made the project easier to finish."
         },
-        "superb": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word superb when describing a common situation."
+                                        "superb": {
+            definition: "superb: remarkably good.",
+            example: "The superb size of the ship surprised everyone."
         },
-        "superbe": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word superbe when describing a common situation."
+                                        "superbe": {
+            definition: "superbe: commonly like beau.",
+            example: "A superbe change made the project easier to finish."
         },
-        "superlative": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word superlative when describing a common situation."
+                                        "superlative": {
+            definition: "superlative: exceptionally good.",
+            example: "The superlative size of the ship surprised everyone."
         },
         "support": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word support when describing a common situation."
         },
-        "supportive": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word supportive when describing a common situation."
+                                        "supportive": {
+            definition: "supportive: somewhat like helpful.",
+            example: "A supportive change made the project easier to finish."
         },
         "sustainability": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5319,37 +5319,37 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word sustainable when describing a common situation."
         },
-        "svelte": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word svelte when describing a common situation."
+                                        "svelte": {
+            definition: "svelte: remarkably thin.",
+            example: "The svelte size of the ship surprised everyone."
         },
-        "sweltering": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Sweltering every day helped him improve quickly."
+                                        "sweltering": {
+            definition: "sweltering: the act of doing hot.",
+            example: "Sweltering the data helped us see the trend."
         },
-        "swift": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word swift when describing a common situation."
+                                        "swift": {
+            definition: "swift: rather like fast.",
+            example: "A swift change made the project easier to finish."
         },
-        "séculaire": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word séculaire when describing a common situation."
+                                        "séculaire": {
+            definition: "séculaire: very vieux.",
+            example: "The séculaire size of the ship surprised everyone."
         },
-        "séduisant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word séduisant when describing a common situation."
+                                        "séduisant": {
+            definition: "séduisant: rather like intéressant.",
+            example: "A séduisant change made the project easier to finish."
         },
-        "tacit": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word tacit when describing a common situation."
+                                        "tacit": {
+            definition: "tacit: very quiet.",
+            example: "The tacit size of the ship surprised everyone."
         },
-        "taciturn": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word taciturn when describing a common situation."
+                                        "taciturn": {
+            definition: "taciturn: extremely silent.",
+            example: "The taciturn size of the ship surprised everyone."
         },
-        "taciturno": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word taciturno when describing a common situation."
+                                        "taciturno": {
+            definition: "taciturno: very triste.",
+            example: "The taciturno size of the ship surprised everyone."
         },
         "tall": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -5371,33 +5371,33 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word tema when describing a common situation."
         },
-        "temperate": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word temperate when describing a common situation."
+                                        "temperate": {
+            definition: "temperate: very warm.",
+            example: "The temperate size of the ship surprised everyone."
         },
-        "tender": {
-            definition: "A person or thing whose job or role involves a particular activity or function.",
-            example: "They used the word tender when describing a common situation."
+                                        "tender": {
+            definition: "tender: remarkably fragile.",
+            example: "The tender size of the ship surprised everyone."
         },
-        "tendre": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word tendre when describing a common situation."
+                                        "tendre": {
+            definition: "tendre: remarkably fragile.",
+            example: "The tendre size of the ship surprised everyone."
         },
-        "terrible": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word terrible when describing a common situation."
+                                        "terrible": {
+            definition: "terrible: fairly like bad.",
+            example: "A terrible change made the project easier to finish."
         },
-        "terrifiant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word terrifiant when describing a common situation."
+                                        "terrifiant": {
+            definition: "terrifiant: somewhat like effrayant.",
+            example: "A terrifiant change made the project easier to finish."
         },
-        "terrifying": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Terrifying every day helped him improve quickly."
+                                        "terrifying": {
+            definition: "terrifying: an action similar to scary.",
+            example: "Terrifying the document took longer than expected."
         },
-        "terrorífico": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word terrorífico when describing a common situation."
+                                        "terrorífico": {
+            definition: "terrorífico: commonly like aterrador.",
+            example: "A terrorífico change made the project easier to finish."
         },
         "theme": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -5415,13 +5415,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word thin when describing a common situation."
         },
-        "threnody": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word threnody when describing a common situation."
+                                        "threnody": {
+            definition: "threnody: extremely sadness.",
+            example: "The threnody size of the ship surprised everyone."
         },
-        "thundering": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Thundering every day helped him improve quickly."
+                                        "thundering": {
+            definition: "thundering: an action similar to loud.",
+            example: "Thundering the document took longer than expected."
         },
         "thunderous": {
             definition: "Having a quality or characteristic that is often noticeable or strong.",
@@ -5435,9 +5435,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word tiempo when describing a common situation."
         },
-        "tierno": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word tierno when describing a common situation."
+                                        "tierno": {
+            definition: "tierno: remarkably frágil.",
+            example: "The tierno size of the ship surprised everyone."
         },
         "time": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -5451,57 +5451,57 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word timeless when describing a common situation."
         },
-        "timeworn": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word timeworn when describing a common situation."
+                                        "timeworn": {
+            definition: "timeworn: fairly like ancient.",
+            example: "A timeworn change made the project easier to finish."
         },
         "timid": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word timid when describing a common situation."
         },
-        "timorous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word timorous when describing a common situation."
+                                        "timorous": {
+            definition: "timorous: extremely timid.",
+            example: "The timorous size of the ship surprised everyone."
         },
-        "tiny": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word tiny when describing a common situation."
+                                        "tiny": {
+            definition: "tiny: fairly like small.",
+            example: "A tiny change made the project easier to finish."
         },
-        "titanesque": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word titanesque when describing a common situation."
+                                        "titanesque": {
+            definition: "titanesque: remarkably grand.",
+            example: "The titanesque size of the ship surprised everyone."
         },
-        "titanic": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word titanic when describing a common situation."
+                                        "titanic": {
+            definition: "titanic: exceptionally big.",
+            example: "The titanic size of the ship surprised everyone."
         },
-        "titánico": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word titánico when describing a common situation."
+                                        "titánico": {
+            definition: "titánico: extremely grande.",
+            example: "The titánico size of the ship surprised everyone."
         },
-        "tiède": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word tiède when describing a common situation."
+                                        "tiède": {
+            definition: "tiède: rather like chaud.",
+            example: "A tiède change made the project easier to finish."
         },
-        "toasty": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word toasty when describing a common situation."
+                                        "toasty": {
+            definition: "toasty: somewhat like warm.",
+            example: "A toasty change made the project easier to finish."
         },
         "torrential": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word torrential when describing a common situation."
         },
-        "torrid": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word torrid when describing a common situation."
+                                        "torrid": {
+            definition: "torrid: remarkably hot.",
+            example: "The torrid size of the ship surprised everyone."
         },
-        "torride": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word torride when describing a common situation."
+                                        "torride": {
+            definition: "torride: commonly like chaud.",
+            example: "A torride change made the project easier to finish."
         },
-        "tough": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word tough when describing a common situation."
+                                        "tough": {
+            definition: "tough: rather like strong.",
+            example: "A tough change made the project easier to finish."
         },
         "towering": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
@@ -5527,33 +5527,33 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word trama when describing a common situation."
         },
-        "tranquil": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word tranquil when describing a common situation."
+                                        "tranquil": {
+            definition: "tranquil: extremely quiet.",
+            example: "The tranquil size of the ship surprised everyone."
         },
         "transformative": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word transformative when describing a common situation."
         },
-        "transi": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word transi when describing a common situation."
+                                        "transi": {
+            definition: "transi: remarkably froid.",
+            example: "The transi size of the ship surprised everyone."
         },
-        "translucide": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word translucide when describing a common situation."
+                                        "translucide": {
+            definition: "translucide: exceptionally transparent.",
+            example: "The translucide size of the ship surprised everyone."
         },
-        "transparent": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word transparent when describing a common situation."
+                                        "transparent": {
+            definition: "transparent: commonly like clear.",
+            example: "A transparent change made the project easier to finish."
         },
         "transparente": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word transparente when describing a common situation."
         },
-        "transpicuous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word transpicuous when describing a common situation."
+                                        "transpicuous": {
+            definition: "transpicuous: extremely transparent.",
+            example: "The transpicuous size of the ship surprised everyone."
         },
         "transport": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5563,41 +5563,41 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word transporte when describing a common situation."
         },
-        "trascendental": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word trascendental when describing a common situation."
+                                        "trascendental": {
+            definition: "trascendental: very importante.",
+            example: "The trascendental size of the ship surprised everyone."
         },
-        "traslúcido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word traslúcido when describing a common situation."
+                                        "traslúcido": {
+            definition: "traslúcido: remarkably transparente.",
+            example: "The traslúcido size of the ship surprised everyone."
         },
         "travail": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word travail when describing a common situation."
         },
-        "treacherous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word treacherous when describing a common situation."
+                                        "treacherous": {
+            definition: "treacherous: commonly like dangerous.",
+            example: "A treacherous change made the project easier to finish."
         },
-        "tried-and-true": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word tried-and-true when describing a common situation."
+                                        "tried-and-true": {
+            definition: "tried-and-true: remarkably efficient.",
+            example: "The tried-and-true size of the ship surprised everyone."
         },
         "triste": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word triste when describing a common situation."
         },
-        "tropical": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word tropical when describing a common situation."
+                                        "tropical": {
+            definition: "tropical: extremely chaud.",
+            example: "The tropical size of the ship surprised everyone."
         },
         "trust": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word trust when describing a common situation."
         },
-        "truthful": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word truthful when describing a common situation."
+                                        "truthful": {
+            definition: "truthful: fairly like honest.",
+            example: "A truthful change made the project easier to finish."
         },
         "turbulent": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5611,21 +5611,21 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word técnica when describing a common situation."
         },
-        "ténu": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word ténu when describing a common situation."
+                                        "ténu": {
+            definition: "ténu: extremely petit.",
+            example: "The ténu size of the ship surprised everyone."
         },
-        "tórrido": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word tórrido when describing a common situation."
+                                        "tórrido": {
+            definition: "tórrido: commonly like caliente.",
+            example: "A tórrido change made the project easier to finish."
         },
         "ubiquitous": {
             definition: "Present, appearing, or found everywhere or very commonly.",
             example: "Smartphones are ubiquitous in modern cities."
         },
-        "ulcéré": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word ulcéré when describing a common situation."
+                                        "ulcéré": {
+            definition: "ulcéré: remarkably fâché.",
+            example: "The ulcéré size of the ship surprised everyone."
         },
         "unambiguous": {
             definition: "Having a quality or characteristic that is often noticeable or strong.",
@@ -5635,17 +5635,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word unbreakable when describing a common situation."
         },
-        "unclean": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word unclean when describing a common situation."
+                                        "unclean": {
+            definition: "unclean: commonly like dirty.",
+            example: "A unclean change made the project easier to finish."
         },
-        "uncomplicated": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word uncomplicated when describing a common situation."
+                                        "uncomplicated": {
+            definition: "uncomplicated: rather like easy.",
+            example: "A uncomplicated change made the project easier to finish."
         },
-        "undemanding": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Undemanding every day helped him improve quickly."
+                                        "undemanding": {
+            definition: "undemanding: the act of doing easy.",
+            example: "Undemanding the data helped us see the trend."
         },
         "undermine": {
             definition: "To weaken or damage someone's position, authority, or chances of success gradually or secretly.",
@@ -5667,37 +5667,37 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word unfathomable when describing a common situation."
         },
-        "unflappable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word unflappable when describing a common situation."
+                                        "unflappable": {
+            definition: "unflappable: exceptionally calm.",
+            example: "The unflappable size of the ship surprised everyone."
         },
-        "unhappy": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word unhappy when describing a common situation."
+                                        "unhappy": {
+            definition: "unhappy: commonly like sad.",
+            example: "A unhappy change made the project easier to finish."
         },
-        "unmistakable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word unmistakable when describing a common situation."
+                                        "unmistakable": {
+            definition: "unmistakable: extremely clear.",
+            example: "The unmistakable size of the ship surprised everyone."
         },
         "unobtrusive": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word unobtrusive when describing a common situation."
         },
-        "unperturbed": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word unperturbed when describing a common situation."
+                                        "unperturbed": {
+            definition: "unperturbed: exceptionally quiet.",
+            example: "The unperturbed size of the ship surprised everyone."
         },
         "unprecedented": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
             example: "They used the word unprecedented when describing a common situation."
         },
-        "unsafe": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word unsafe when describing a common situation."
+                                        "unsafe": {
+            definition: "unsafe: somewhat like dangerous.",
+            example: "A unsafe change made the project easier to finish."
         },
-        "unsanitary": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word unsanitary when describing a common situation."
+                                        "unsanitary": {
+            definition: "unsanitary: remarkably dirty.",
+            example: "The unsanitary size of the ship surprised everyone."
         },
         "untainted": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
@@ -5707,37 +5707,37 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Unwavering every day helped him improve quickly."
         },
-        "unyielding": {
-            definition: "The action or process of doing something; also used to describe an ongoing activity.",
-            example: "Unyielding every day helped him improve quickly."
+                                        "unyielding": {
+            definition: "unyielding: the act of doing strong.",
+            example: "Unyielding the data helped us see the trend."
         },
         "uplifting": {
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Uplifting every day helped him improve quickly."
         },
-        "upright": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word upright when describing a common situation."
+                                        "upright": {
+            definition: "upright: commonly like honest.",
+            example: "A upright change made the project easier to finish."
         },
-        "uproarious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word uproarious when describing a common situation."
+                                        "uproarious": {
+            definition: "uproarious: remarkably funny.",
+            example: "The uproarious size of the ship surprised everyone."
         },
-        "upset": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word upset when describing a common situation."
+                                        "upset": {
+            definition: "upset: rather like sad.",
+            example: "A upset change made the project easier to finish."
         },
         "used": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
             example: "They used the word used when describing a common situation."
         },
-        "useful": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word useful when describing a common situation."
+                                        "useful": {
+            definition: "useful: somewhat like helpful.",
+            example: "A useful change made the project easier to finish."
         },
-        "usé": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word usé when describing a common situation."
+                                        "usé": {
+            definition: "usé: commonly like vieux.",
+            example: "A usé change made the project easier to finish."
         },
         "utilidad": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5747,69 +5747,69 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word utility when describing a common situation."
         },
-        "vaillant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word vaillant when describing a common situation."
+                                        "vaillant": {
+            definition: "vaillant: fairly like courageux.",
+            example: "A vaillant change made the project easier to finish."
         },
-        "valeroso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word valeroso when describing a common situation."
+                                        "valeroso": {
+            definition: "valeroso: fairly like valiente.",
+            example: "A valeroso change made the project easier to finish."
         },
-        "valiant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word valiant when describing a common situation."
+                                        "valiant": {
+            definition: "valiant: commonly like brave.",
+            example: "A valiant change made the project easier to finish."
         },
         "valiente": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word valiente when describing a common situation."
         },
-        "valorous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word valorous when describing a common situation."
+                                        "valorous": {
+            definition: "valorous: extremely brave.",
+            example: "The valorous size of the ship surprised everyone."
         },
         "values": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word values when describing a common situation."
         },
-        "vanguardista": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word vanguardista when describing a common situation."
+                                        "vanguardista": {
+            definition: "vanguardista: extremely nuevo.",
+            example: "The vanguardista size of the ship surprised everyone."
         },
-        "vaste": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word vaste when describing a common situation."
+                                        "vaste": {
+            definition: "vaste: rather like grand.",
+            example: "A vaste change made the project easier to finish."
         },
-        "vasto": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word vasto when describing a common situation."
+                                        "vasto": {
+            definition: "vasto: rather like grande.",
+            example: "A vasto change made the project easier to finish."
         },
-        "veloz": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word veloz when describing a common situation."
+                                        "veloz": {
+            definition: "veloz: rather like rápido.",
+            example: "A veloz change made the project easier to finish."
         },
         "velvety": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word velvety when describing a common situation."
         },
-        "venerable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word venerable when describing a common situation."
+                                        "venerable": {
+            definition: "venerable: very old.",
+            example: "The venerable size of the ship surprised everyone."
         },
-        "veracious": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word veracious when describing a common situation."
+                                        "veracious": {
+            definition: "veracious: very honest.",
+            example: "The veracious size of the ship surprised everyone."
         },
         "verdant": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word verdant when describing a common situation."
         },
-        "vertiginoso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word vertiginoso when describing a common situation."
+                                        "vertiginoso": {
+            definition: "vertiginoso: exceptionally rápido.",
+            example: "The vertiginoso size of the ship surprised everyone."
         },
-        "vetusto": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word vetusto when describing a common situation."
+                                        "vetusto": {
+            definition: "vetusto: commonly like viejo.",
+            example: "A vetusto change made the project easier to finish."
         },
         "viaje": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -5831,21 +5831,21 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word vieux when describing a common situation."
         },
-        "vif": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word vif when describing a common situation."
+                                        "vif": {
+            definition: "vif: commonly like intelligent.",
+            example: "A vif change made the project easier to finish."
         },
-        "vigoroso": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word vigoroso when describing a common situation."
+                                        "vigoroso": {
+            definition: "vigoroso: fairly like fuerte.",
+            example: "A vigoroso change made the project easier to finish."
         },
-        "vigoureux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word vigoureux when describing a common situation."
+                                        "vigoureux": {
+            definition: "vigoureux: rather like fort.",
+            example: "A vigoureux change made the project easier to finish."
         },
-        "vintage": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word vintage when describing a common situation."
+                                        "vintage": {
+            definition: "vintage: commonly like old.",
+            example: "A vintage change made the project easier to finish."
         },
         "virtuoso": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5863,33 +5863,33 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word visionary when describing a common situation."
         },
-        "vital": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word vital when describing a common situation."
+                                        "vital": {
+            definition: "vital: rather like important.",
+            example: "A vital change made the project easier to finish."
         },
-        "vite": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word vite when describing a common situation."
+                                        "vite": {
+            definition: "vite: fairly like rapide.",
+            example: "A vite change made the project easier to finish."
         },
         "vivacious": {
             definition: "Full of energy and enthusiasm; lively in spirit and behavior.",
             example: "Her vivacious personality made her popular at social events."
         },
-        "vivid": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word vivid when describing a common situation."
+                                        "vivid": {
+            definition: "vivid: rather like bright.",
+            example: "A vivid change made the project easier to finish."
         },
-        "vivify": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word vivify when describing a common situation."
+                                        "vivify": {
+            definition: "vivify: remarkably brighten.",
+            example: "The vivify size of the ship surprised everyone."
         },
-        "vociferous": {
-            definition: "Having a quality or characteristic that is often noticeable or strong.",
-            example: "They used the word vociferous when describing a common situation."
+                                        "vociferous": {
+            definition: "vociferous: remarkably loud.",
+            example: "The vociferous size of the ship surprised everyone."
         },
-        "voiceless": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word voiceless when describing a common situation."
+                                        "voiceless": {
+            definition: "voiceless: very silent.",
+            example: "The voiceless size of the ship surprised everyone."
         },
         "voluntariado": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5899,49 +5899,49 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "The action or process of doing something; also used to describe an ongoing activity.",
             example: "Volunteering every day helped him improve quickly."
         },
-        "vulnerable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word vulnerable when describing a common situation."
+                                        "vulnerable": {
+            definition: "vulnerable: somewhat like fragile.",
+            example: "A vulnerable change made the project easier to finish."
         },
-        "vulnérable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word vulnérable when describing a common situation."
+                                        "vulnérable": {
+            definition: "vulnérable: somewhat like fragile.",
+            example: "A vulnérable change made the project easier to finish."
         },
-        "véloce": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word véloce when describing a common situation."
+                                        "véloce": {
+            definition: "véloce: somewhat like rapide.",
+            example: "A véloce change made the project easier to finish."
         },
-        "vénérable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word vénérable when describing a common situation."
+                                        "vénérable": {
+            definition: "vénérable: very vieux.",
+            example: "The vénérable size of the ship surprised everyone."
         },
-        "vétuste": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word vétuste when describing a common situation."
+                                        "vétuste": {
+            definition: "vétuste: commonly like vieux.",
+            example: "A vétuste change made the project easier to finish."
         },
-        "warm": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word warm when describing a common situation."
+                                        "warm": {
+            definition: "warm: fairly like hot.",
+            example: "A warm change made the project easier to finish."
         },
         "weak": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word weak when describing a common situation."
         },
-        "wealthy": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word wealthy when describing a common situation."
+                                        "wealthy": {
+            definition: "wealthy: commonly like rich.",
+            example: "A wealthy change made the project easier to finish."
         },
         "weird": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word weird when describing a common situation."
         },
-        "well-off": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word well-off when describing a common situation."
+                                        "well-off": {
+            definition: "well-off: fairly like rich.",
+            example: "A well-off change made the project easier to finish."
         },
-        "well-oiled": {
-            definition: "Describing a state that someone or something has experienced as a result of an action.",
-            example: "They used the word well-oiled when describing a common situation."
+                                        "well-oiled": {
+            definition: "well-oiled: remarkably efficient.",
+            example: "The well-oiled size of the ship surprised everyone."
         },
         "wellness": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5955,17 +5955,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word wisdom when describing a common situation."
         },
-        "woebegone": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word woebegone when describing a common situation."
+                                        "woebegone": {
+            definition: "woebegone: very sad.",
+            example: "The woebegone size of the ship surprised everyone."
         },
-        "woefulness": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word woefulness when describing a common situation."
+                                        "woefulness": {
+            definition: "woefulness: remarkably sadness.",
+            example: "The woefulness size of the ship surprised everyone."
         },
-        "wonderful": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word wonderful when describing a common situation."
+                                        "wonderful": {
+            definition: "wonderful: rather like good.",
+            example: "A wonderful change made the project easier to finish."
         },
         "work": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -5979,9 +5979,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word worn when describing a common situation."
         },
-        "wrathful": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word wrathful when describing a common situation."
+                                        "wrathful": {
+            definition: "wrathful: extremely angry.",
+            example: "The wrathful size of the ship surprised everyone."
         },
         "wrong": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -5991,85 +5991,85 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
             example: "They used the word young when describing a common situation."
         },
-        "ágil": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word ágil when describing a common situation."
+                                        "ágil": {
+            definition: "ágil: fairly like rápido.",
+            example: "A ágil change made the project easier to finish."
         },
-        "álgido": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word álgido when describing a common situation."
+                                        "álgido": {
+            definition: "álgido: remarkably frío.",
+            example: "The álgido size of the ship surprised everyone."
         },
-        "âgé": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word âgé when describing a common situation."
+                                        "âgé": {
+            definition: "âgé: commonly like vieux.",
+            example: "A âgé change made the project easier to finish."
         },
-        "éblouissant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word éblouissant when describing a common situation."
+                                        "éblouissant": {
+            definition: "éblouissant: exceptionally beau.",
+            example: "The éblouissant size of the ship surprised everyone."
         },
-        "économe": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word économe when describing a common situation."
+                                        "économe": {
+            definition: "économe: exceptionally efficace.",
+            example: "The économe size of the ship surprised everyone."
         },
-        "électrisant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word électrisant when describing a common situation."
+                                        "électrisant": {
+            definition: "électrisant: exceptionally intéressant.",
+            example: "The électrisant size of the ship surprised everyone."
         },
-        "élémentaire": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word élémentaire when describing a common situation."
+                                        "élémentaire": {
+            definition: "élémentaire: commonly like facile.",
+            example: "A élémentaire change made the project easier to finish."
         },
-        "énervé": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word énervé when describing a common situation."
+                                        "énervé": {
+            definition: "énervé: somewhat like fâché.",
+            example: "A énervé change made the project easier to finish."
         },
-        "énorme": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word énorme when describing a common situation."
+                                        "énorme": {
+            definition: "énorme: somewhat like grand.",
+            example: "A énorme change made the project easier to finish."
         },
         "épanouissement": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word épanouissement when describing a common situation."
         },
-        "épineux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word épineux when describing a common situation."
+                                        "épineux": {
+            definition: "épineux: exceptionally difficile.",
+            example: "The épineux size of the ship surprised everyone."
         },
-        "éploré": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word éploré when describing a common situation."
+                                        "éploré": {
+            definition: "éploré: remarkably triste.",
+            example: "The éploré size of the ship surprised everyone."
         },
-        "épouvantable": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word épouvantable when describing a common situation."
+                                        "épouvantable": {
+            definition: "épouvantable: fairly like effrayant.",
+            example: "A épouvantable change made the project easier to finish."
         },
         "équilibre": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
             example: "They used the word équilibre when describing a common situation."
         },
-        "érudit": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word érudit when describing a common situation."
+                                        "érudit": {
+            definition: "érudit: remarkably intelligent.",
+            example: "The érudit size of the ship surprised everyone."
         },
-        "étouffant": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word étouffant when describing a common situation."
+                                        "étouffant": {
+            definition: "étouffant: very chaud.",
+            example: "The étouffant size of the ship surprised everyone."
         },
-        "étroit": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word étroit when describing a common situation."
+                                        "étroit": {
+            definition: "étroit: somewhat like petit.",
+            example: "A étroit change made the project easier to finish."
         },
-        "évident": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word évident when describing a common situation."
+                                        "évident": {
+            definition: "évident: commonly like facile.",
+            example: "A évident change made the project easier to finish."
         },
-        "ínfimo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word ínfimo when describing a common situation."
+                                        "ínfimo": {
+            definition: "ínfimo: remarkably pequeño.",
+            example: "The ínfimo size of the ship surprised everyone."
         },
-        "óptimo": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word óptimo when describing a common situation."
+                                        "óptimo": {
+            definition: "óptimo: remarkably bueno.",
+            example: "The óptimo size of the ship surprised everyone."
         },
     },
     fr: {
@@ -6121,13 +6121,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Rendre quelque chose meilleur ou plus efficace.",
             example: "Ils cherchent toujours à améliorer la qualité du service."
         },
-        "ancestral": {
-            definition: "Ancestral : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot ancestral dans une phrase courante pour illustrer le sens."
+                "ancestral": {
+            definition: "ancestral : extrêmement vieux.",
+            example: "Une ancestral taille a surpris tout le monde."
         },
-        "ancien": {
-            definition: "Ancien : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot ancien dans une phrase courante pour illustrer le sens."
+                "ancien": {
+            definition: "ancien : plutôt vieux.",
+            example: "Un changement ancien a rendu le projet plus simple."
         },
         "anodin": {
             definition: "Anodin : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6137,9 +6137,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "État de ne pas être identifié; identité inconnue.",
             example: "Les témoins ont demandé l'anonymat pour leur sécurité."
         },
-        "antique": {
-            definition: "Antique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot antique dans une phrase courante pour illustrer le sens."
+                "antique": {
+            definition: "antique : plutôt vieux.",
+            example: "Un changement antique a rendu le projet plus simple."
         },
         "antonyme": {
             definition: "Mot qui a le sens opposé d'un autre mot.",
@@ -6153,13 +6153,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Apaisant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot apaisant dans une phrase courante pour illustrer le sens."
         },
-        "archaïque": {
-            definition: "Archaïque : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot archaïque dans une phrase courante pour illustrer le sens."
+                "archaïque": {
+            definition: "archaïque : extrêmement vieux.",
+            example: "Une archaïque taille a surpris tout le monde."
         },
-        "ardent": {
-            definition: "Ardent : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot ardent dans une phrase courante pour illustrer le sens."
+                "ardent": {
+            definition: "ardent : plutôt chaud.",
+            example: "Un changement ardent a rendu le projet plus simple."
         },
         "argentine": {
             definition: "Argentine : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6181,13 +6181,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Scientifique qui étudie les astres et l'espace.",
             example: "L'astronome a découvert une nouvelle comète."
         },
-        "astucieux": {
-            definition: "Astucieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot astucieux dans une phrase courante pour illustrer le sens."
+                "astucieux": {
+            definition: "astucieux : plutôt intelligent.",
+            example: "Un changement astucieux a rendu le projet plus simple."
         },
-        "athlétique": {
-            definition: "Athlétique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot athlétique dans une phrase courante pour illustrer le sens."
+                "athlétique": {
+            definition: "athlétique : extrêmement fort.",
+            example: "Une athlétique taille a surpris tout le monde."
         },
         "atone": {
             definition: "Atone : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6281,9 +6281,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Cinglante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot cinglante dans une phrase courante pour illustrer le sens."
         },
-        "clair": {
-            definition: "Clair : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot clair dans une phrase courante pour illustrer le sens."
+                "clair": {
+            definition: "clair : plutôt transparent.",
+            example: "Un changement clair a rendu le projet plus simple."
         },
         "claire": {
             definition: "Claire : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6305,9 +6305,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Congrûment : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot congrûment dans une phrase courante pour illustrer le sens."
         },
-        "content": {
-            definition: "Content : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot content dans une phrase courante pour illustrer le sens."
+                "content": {
+            definition: "content : plutôt heureux.",
+            example: "Un changement content a rendu le projet plus simple."
         },
         "coquette": {
             definition: "Coquette : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6341,9 +6341,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Dernier : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot dernier dans une phrase courante pour illustrer le sens."
         },
-        "diaphane": {
-            definition: "Diaphane : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot diaphane dans une phrase courante pour illustrer le sens."
+                "diaphane": {
+            definition: "diaphane : extrêmement transparent.",
+            example: "Une diaphane taille a surpris tout le monde."
         },
         "diluvienne": {
             definition: "Diluvienne : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6361,9 +6361,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Droite : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot droite dans une phrase courante pour illustrer le sens."
         },
-        "dur": {
-            definition: "Dur : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot dur dans une phrase courante pour illustrer le sens."
+                "dur": {
+            definition: "dur : plutôt difficile.",
+            example: "Un changement dur a rendu le projet plus simple."
         },
         "dure": {
             definition: "Dure : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6373,9 +6373,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Décisif : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot décisif dans une phrase courante pour illustrer le sens."
         },
-        "décrépit": {
-            definition: "Décrépit : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot décrépit dans une phrase courante pour illustrer le sens."
+                "décrépit": {
+            definition: "décrépit : extrêmement vieux.",
+            example: "Une décrépit taille a surpris tout le monde."
         },
         "délabré": {
             definition: "Délabré : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6445,9 +6445,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Fin : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot fin dans une phrase courante pour illustrer le sens."
         },
-        "fine": {
-            definition: "Fine : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot fine dans une phrase courante pour illustrer le sens."
+                "fine": {
+            definition: "fine : plutôt bon.",
+            example: "Un changement fine a rendu le projet plus simple."
         },
         "fixe": {
             definition: "Fixe : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6477,9 +6477,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Fracassant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot fracassant dans une phrase courante pour illustrer le sens."
         },
-        "frais": {
-            definition: "Frais : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot frais dans une phrase courante pour illustrer le sens."
+                "frais": {
+            definition: "frais : plutôt froid.",
+            example: "Un changement frais a rendu le projet plus simple."
         },
         "franc": {
             definition: "Franc : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6497,9 +6497,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Frugale : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot frugale dans une phrase courante pour illustrer le sens."
         },
-        "frêle": {
-            definition: "Frêle : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot frêle dans une phrase courante pour illustrer le sens."
+                "frêle": {
+            definition: "frêle : plutôt fragile.",
+            example: "Un changement frêle a rendu le projet plus simple."
         },
         "fulgurante": {
             definition: "Fulgurante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6597,9 +6597,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Inattendue : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot inattendue dans une phrase courante pour illustrer le sens."
         },
-        "incandescent": {
-            definition: "Incandescent : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot incandescent dans une phrase courante pour illustrer le sens."
+                "incandescent": {
+            definition: "incandescent : extrêmement bright.",
+            example: "Une incandescent taille a surpris tout le monde."
         },
         "indigo": {
             definition: "Indigo : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6613,9 +6613,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Indélébile : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot indélébile dans une phrase courante pour illustrer le sens."
         },
-        "infime": {
-            definition: "Infime : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot infime dans une phrase courante pour illustrer le sens."
+                "infime": {
+            definition: "infime : extrêmement petit.",
+            example: "Une infime taille a surpris tout le monde."
         },
         "innovant": {
             definition: "Innovant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6649,9 +6649,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Interminable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot interminable dans une phrase courante pour illustrer le sens."
         },
-        "intrépide": {
-            definition: "Intrépide : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot intrépide dans une phrase courante pour illustrer le sens."
+                "intrépide": {
+            definition: "intrépide : plutôt courageux.",
+            example: "Un changement intrépide a rendu le projet plus simple."
         },
         "intègre": {
             definition: "Intègre : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6661,17 +6661,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Honnêteté et principes moraux solides.",
             example: "Son intégrité lui a valu le respect de tous."
         },
-        "invincible": {
-            definition: "Impossible à vaincre ou à surmonter.",
-            example: "L'équipe semblait invincible après la série de victoires."
+                "invincible": {
+            definition: "invincible : extrêmement fort.",
+            example: "Une invincible taille a surpris tout le monde."
         },
         "inébranlable": {
             definition: "Inébranlable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot inébranlable dans une phrase courante pour illustrer le sens."
         },
-        "inédit": {
-            definition: "Inédit : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot inédit dans une phrase courante pour illustrer le sens."
+                "inédit": {
+            definition: "inédit : extrêmement nouveau.",
+            example: "Une inédit taille a surpris tout le monde."
         },
         "irisante": {
             definition: "Irisante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6693,9 +6693,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Jeune : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot jeune dans une phrase courante pour illustrer le sens."
         },
-        "joli": {
-            definition: "Joli : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot joli dans une phrase courante pour illustrer le sens."
+                "joli": {
+            definition: "joli : plutôt beau.",
+            example: "Un changement joli a rendu le projet plus simple."
         },
         "jolie": {
             definition: "Jolie : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6705,21 +6705,21 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Judicieuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot judicieuse dans une phrase courante pour illustrer le sens."
         },
-        "laborieux": {
-            definition: "Laborieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot laborieux dans une phrase courante pour illustrer le sens."
+                "laborieux": {
+            definition: "laborieux : extrêmement difficile.",
+            example: "Une laborieux taille a surpris tout le monde."
         },
-        "large": {
-            definition: "Large : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot large dans une phrase courante pour illustrer le sens."
+                "large": {
+            definition: "large : plutôt grand.",
+            example: "Un changement large a rendu le projet plus simple."
         },
         "lente": {
             definition: "Lente : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot lente dans une phrase courante pour illustrer le sens."
         },
-        "limpide": {
-            definition: "Limpide : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot limpide dans une phrase courante pour illustrer le sens."
+                "limpide": {
+            definition: "limpide : extrêmement facile.",
+            example: "Une limpide taille a surpris tout le monde."
         },
         "long": {
             definition: "Long : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6737,9 +6737,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Lourd : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot lourd dans une phrase courante pour illustrer le sens."
         },
-        "lucide": {
-            definition: "Clair et facile à comprendre; esprit net et cohérent.",
-            example: "Elle a donné une explication lucide des résultats."
+                "lucide": {
+            definition: "lucide : plutôt transparent.",
+            example: "Un changement lucide a rendu le projet plus simple."
         },
         "luxuriante": {
             definition: "Luxuriante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6753,9 +6753,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Magistrale : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot magistrale dans une phrase courante pour illustrer le sens."
         },
-        "magnifique": {
-            definition: "Magnifique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot magnifique dans une phrase courante pour illustrer le sens."
+                "magnifique": {
+            definition: "magnifique : plutôt beau.",
+            example: "Un changement magnifique a rendu le projet plus simple."
         },
         "majestueuse": {
             definition: "Majestueuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6769,9 +6769,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Marginal : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot marginal dans une phrase courante pour illustrer le sens."
         },
-        "massive": {
-            definition: "Massive : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot massive dans une phrase courante pour illustrer le sens."
+                "massive": {
+            definition: "massive : plutôt grand.",
+            example: "Un changement massive a rendu le projet plus simple."
         },
         "mince": {
             definition: "Mince : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6789,9 +6789,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "La quantité la plus petite autorisée ou nécessaire.",
             example: "Il faut atteindre le minimum requis pour être admissible."
         },
-        "minuscule": {
-            definition: "Extrêmement petit en taille ou en quantité.",
-            example: "Il y avait une chance minuscule de pluie."
+                "minuscule": {
+            definition: "minuscule : extrêmement petit.",
+            example: "Une minuscule taille a surpris tout le monde."
         },
         "modeste": {
             definition: "Modeste : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6849,9 +6849,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Noble : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot noble dans une phrase courante pour illustrer le sens."
         },
-        "novateur": {
-            definition: "Novateur : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot novateur dans une phrase courante pour illustrer le sens."
+                "novateur": {
+            definition: "novateur : extrêmement nouveau.",
+            example: "Une novateur taille a surpris tout le monde."
         },
         "obligé": {
             definition: "Obligé : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6905,9 +6905,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Personne qui aime et défend son pays.",
             example: "C'est un patriote qui participe activement aux cérémonies locales."
         },
-        "perspicace": {
-            definition: "Perspicace : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot perspicace dans une phrase courante pour illustrer le sens."
+                "perspicace": {
+            definition: "perspicace : plutôt intelligent.",
+            example: "Un changement perspicace a rendu le projet plus simple."
         },
         "perçante": {
             definition: "Perçante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6957,9 +6957,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Propre : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot propre dans une phrase courante pour illustrer le sens."
         },
-        "prépondérant": {
-            definition: "Prépondérant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot prépondérant dans une phrase courante pour illustrer le sens."
+                "prépondérant": {
+            definition: "prépondérant : extrêmement important.",
+            example: "Une prépondérant taille a surpris tout le monde."
         },
         "prépondérante": {
             definition: "Prépondérante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6973,9 +6973,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Pur : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot pur dans une phrase courante pour illustrer le sens."
         },
-        "pénible": {
-            definition: "Pénible : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot pénible dans une phrase courante pour illustrer le sens."
+                "pénible": {
+            definition: "pénible : plutôt difficile.",
+            example: "Un changement pénible a rendu le projet plus simple."
         },
         "pétillant": {
             definition: "Pétillant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -6985,9 +6985,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Radieuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot radieuse dans une phrase courante pour illustrer le sens."
         },
-        "radieux": {
-            definition: "Radieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot radieux dans une phrase courante pour illustrer le sens."
+                "radieux": {
+            definition: "radieux : extrêmement heureux.",
+            example: "Une radieux taille a surpris tout le monde."
         },
         "rationnelle": {
             definition: "Rationnelle : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -7045,9 +7045,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Sale : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot sale dans une phrase courante pour illustrer le sens."
         },
-        "salutaire": {
-            definition: "Salutaire : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot salutaire dans une phrase courante pour illustrer le sens."
+                "salutaire": {
+            definition: "salutaire : extrêmement efficace.",
+            example: "Une salutaire taille a surpris tout le monde."
         },
         "sceptique": {
             definition: "Personne qui doute et remet en question les affirmations sans preuve.",
@@ -7081,17 +7081,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Solennel : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot solennel dans une phrase courante pour illustrer le sens."
         },
-        "solide": {
-            definition: "Solide : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot solide dans une phrase courante pour illustrer le sens."
+                "solide": {
+            definition: "solide : plutôt fort.",
+            example: "Un changement solide a rendu le projet plus simple."
         },
         "somptueuse": {
             definition: "Somptueuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot somptueuse dans une phrase courante pour illustrer le sens."
         },
-        "somptueux": {
-            definition: "Somptueux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot somptueux dans une phrase courante pour illustrer le sens."
+                "somptueux": {
+            definition: "somptueux : extrêmement beau.",
+            example: "Une somptueux taille a surpris tout le monde."
         },
         "sophisme": {
             definition: "Argument qui semble logique mais qui contient une erreur de raisonnement.",
@@ -7105,9 +7105,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Spontané : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot spontané dans une phrase courante pour illustrer le sens."
         },
-        "strident": {
-            definition: "Strident : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot strident dans une phrase courante pour illustrer le sens."
+                "strident": {
+            definition: "strident : extrêmement loud.",
+            example: "Une strident taille a surpris tout le monde."
         },
         "studieux": {
             definition: "Studieux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -7125,9 +7125,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Subtil : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot subtil dans une phrase courante pour illustrer le sens."
         },
-        "séculaire": {
-            definition: "Séculaire : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot séculaire dans une phrase courante pour illustrer le sens."
+                "séculaire": {
+            definition: "séculaire : extrêmement vieux.",
+            example: "Une séculaire taille a surpris tout le monde."
         },
         "sépulcral": {
             definition: "Sépulcral : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -7161,9 +7161,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Ténue : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot ténue dans une phrase courante pour illustrer le sens."
         },
-        "usé": {
-            definition: "Usé : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot usé dans une phrase courante pour illustrer le sens."
+                "usé": {
+            definition: "usé : plutôt vieux.",
+            example: "Un changement usé a rendu le projet plus simple."
         },
         "vacillante": {
             definition: "Vacillante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -7173,9 +7173,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Valeureux : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot valeureux dans une phrase courante pour illustrer le sens."
         },
-        "vaste": {
-            definition: "Vaste : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot vaste dans une phrase courante pour illustrer le sens."
+                "vaste": {
+            definition: "vaste : plutôt grand.",
+            example: "Un changement vaste a rendu le projet plus simple."
         },
         "vibrante": {
             definition: "Vibrante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -7185,9 +7185,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Vide : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot vide dans une phrase courante pour illustrer le sens."
         },
-        "vif": {
-            definition: "Vif : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot vif dans une phrase courante pour illustrer le sens."
+                "vif": {
+            definition: "vif : plutôt intelligent.",
+            example: "Un changement vif a rendu le projet plus simple."
         },
         "vigoureuse": {
             definition: "Vigoureuse : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -7209,9 +7209,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Vraie : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot vraie dans une phrase courante pour illustrer le sens."
         },
-        "vénérable": {
-            definition: "Vénérable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot vénérable dans une phrase courante pour illustrer le sens."
+                "vénérable": {
+            definition: "vénérable : extrêmement vieux.",
+            example: "Une vénérable taille a surpris tout le monde."
         },
         "véridique": {
             definition: "Véridique : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -7221,9 +7221,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Véritable : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot véritable dans une phrase courante pour illustrer le sens."
         },
-        "vétuste": {
-            definition: "Vétuste : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot vétuste dans une phrase courante pour illustrer le sens."
+                "vétuste": {
+            definition: "vétuste : plutôt vieux.",
+            example: "Un changement vétuste a rendu le projet plus simple."
         },
         "vétéran": {
             definition: "Vétéran : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -7233,9 +7233,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Zénithale : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot zénithale dans une phrase courante pour illustrer le sens."
         },
-        "éblouissant": {
-            definition: "Éblouissant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot éblouissant dans une phrase courante pour illustrer le sens."
+                "éblouissant": {
+            definition: "éblouissant : extrêmement beau.",
+            example: "Une éblouissant taille a surpris tout le monde."
         },
         "éblouissante": {
             definition: "Éblouissante : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -7269,9 +7269,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Éreintant : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
             example: "Il a utilisé le mot éreintant dans une phrase courante pour illustrer le sens."
         },
-        "étroit": {
-            definition: "Étroit : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
-            example: "Il a utilisé le mot étroit dans une phrase courante pour illustrer le sens."
+                "étroit": {
+            definition: "étroit : plutôt petit.",
+            example: "Un changement étroit a rendu le projet plus simple."
         },
         "évanescente": {
             definition: "Évanescente : un terme courant décrivant une idée, une personne ou une chose dans un contexte habituel.",
@@ -7301,9 +7301,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Raccourcir un texte tout en conservant l'idée principale.",
             example: "L'éditeur a abrégé l'article pour la version imprimée."
         },
-        "affable": {
-            definition: "Aimable et facile à approcher; cordial.",
-            example: "Il était affable avec tous les invités."
+                "affable": {
+            definition: "affable : extrêmement friendly.",
+            example: "Une affable taille a surpris tout le monde."
         },
         "plaider": {
             definition: "Soutenir publiquement une cause ou une politique.",
@@ -7345,7 +7345,3403 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Augmenter rapidement en nombre ou en quantité.",
             example: "Les appareils intelligents se sont multipliés dans la décennie."
         },
-},
+                "brillant": {
+            definition: "brillant : plutôt intelligent.",
+            example: "Un changement brillant a rendu le projet plus simple."
+        },
+                "euphorique": {
+            definition: "euphorique : extrêmement heureux.",
+            example: "Une euphorique taille a surpris tout le monde."
+        },
+                "gai": {
+            definition: "gai : plutôt heureux.",
+            example: "Un changement gai a rendu le projet plus simple."
+        },
+                "gloomy": {
+            definition: "gloomy : plutôt triste.",
+            example: "Un changement gloomy a rendu le projet plus simple."
+        },
+                "immense": {
+            definition: "immense : extrêmement grand.",
+            example: "Une immense taille a surpris tout le monde."
+        },
+                "intelligent": {
+            definition: "intelligent : plutôt smart.",
+            example: "Un changement intelligent a rendu le projet plus simple."
+        },
+                "joyeux": {
+            definition: "joyeux : plutôt heureux.",
+            example: "Un changement joyeux a rendu le projet plus simple."
+        },
+                "mélancolique": {
+            definition: "mélancolique : plutôt triste.",
+            example: "Un changement mélancolique a rendu le projet plus simple."
+        },
+                "ravi": {
+            definition: "ravi : plutôt heureux.",
+            example: "Un changement ravi a rendu le projet plus simple."
+        },
+
+        "abatido": {
+            definition: "abatido : plutôt triste.",
+            example: "Un changement abatido a rendu le projet plus simple."
+        },
+        "abattu": {
+            definition: "abattu : plutôt triste.",
+            example: "Un changement abattu a rendu le projet plus simple."
+        },
+        "abominable": {
+            definition: "abominable : extrêmement mauvais.",
+            example: "Une abominable taille a surpris tout le monde."
+        },
+        "abordable": {
+            definition: "abordable : extrêmement facile.",
+            example: "Une abordable taille a surpris tout le monde."
+        },
+        "abrasador": {
+            definition: "abrasador : plutôt caliente.",
+            example: "Un changement abrasador a rendu le projet plus simple."
+        },
+        "absorbente": {
+            definition: "absorbente : extrêmement interesante.",
+            example: "Une absorbente taille a surpris tout le monde."
+        },
+        "absorbing": {
+            definition: "absorbing : l'action de intéressant.",
+            example: "Absorbing du document a pris plus de temps que prévu."
+        },
+        "abysmal": {
+            definition: "abysmal : extrêmement mauvais.",
+            example: "Une abysmal taille a surpris tout le monde."
+        },
+        "accablé": {
+            definition: "accablé : extrêmement triste.",
+            example: "Une accablé taille a surpris tout le monde."
+        },
+        "accesible": {
+            definition: "accesible : plutôt fácil.",
+            example: "Un changement accesible a rendu le projet plus simple."
+        },
+        "accessible": {
+            definition: "accessible : plutôt facile.",
+            example: "Un changement accessible a rendu le projet plus simple."
+        },
+        "acelerado": {
+            definition: "acelerado : plutôt rápido.",
+            example: "Un changement acelerado a rendu le projet plus simple."
+        },
+        "achicharrante": {
+            definition: "achicharrante : extrêmement caliente.",
+            example: "Une achicharrante taille a surpris tout le monde."
+        },
+        "acongojado": {
+            definition: "acongojado : extrêmement triste.",
+            example: "Une acongojado taille a surpris tout le monde."
+        },
+        "actual": {
+            definition: "actual : plutôt nuevo.",
+            example: "Un changement actual a rendu le projet plus simple."
+        },
+        "actuel": {
+            definition: "actuel : plutôt nouveau.",
+            example: "Un changement actuel a rendu le projet plus simple."
+        },
+        "advantageous": {
+            definition: "advantageous : plutôt helpful.",
+            example: "Un changement advantageous a rendu le projet plus simple."
+        },
+        "affluent": {
+            definition: "affluent : plutôt rich.",
+            example: "Un changement affluent a rendu le projet plus simple."
+        },
+        "affordable": {
+            definition: "affordable : plutôt cheap.",
+            example: "Un changement affordable a rendu le projet plus simple."
+        },
+        "affreux": {
+            definition: "affreux : plutôt mauvais.",
+            example: "Un changement affreux a rendu le projet plus simple."
+        },
+        "afligido": {
+            definition: "afligido : plutôt triste.",
+            example: "Un changement afligido a rendu le projet plus simple."
+        },
+        "agacé": {
+            definition: "agacé : plutôt fâché.",
+            example: "Un changement agacé a rendu le projet plus simple."
+        },
+        "age-old": {
+            definition: "age-old : plutôt ancient.",
+            example: "Un changement age-old a rendu le projet plus simple."
+        },
+        "aged": {
+            definition: "aged : plutôt vieux.",
+            example: "Un changement aged a rendu le projet plus simple."
+        },
+        "agile": {
+            definition: "agile : plutôt rapide.",
+            example: "Un changement agile a rendu le projet plus simple."
+        },
+        "agréable": {
+            definition: "agréable : plutôt bon.",
+            example: "Un changement agréable a rendu le projet plus simple."
+        },
+        "agudo": {
+            definition: "agudo : plutôt inteligente.",
+            example: "Un changement agudo a rendu le projet plus simple."
+        },
+        "airado": {
+            definition: "airado : plutôt enfadado.",
+            example: "Un changement airado a rendu le projet plus simple."
+        },
+        "aisé": {
+            definition: "aisé : plutôt facile.",
+            example: "Un changement aisé a rendu le projet plus simple."
+        },
+        "alegre": {
+            definition: "alegre : plutôt feliz.",
+            example: "Un changement alegre a rendu le projet plus simple."
+        },
+        "amiable": {
+            definition: "amiable : plutôt friendly.",
+            example: "Un changement amiable a rendu le projet plus simple."
+        },
+        "amicable": {
+            definition: "amicable : extrêmement friendly.",
+            example: "Une amicable taille a surpris tout le monde."
+        },
+        "amusing": {
+            definition: "amusing : l'action de drôle.",
+            example: "Amusing du document a pris plus de temps que prévu."
+        },
+        "anciano": {
+            definition: "anciano : plutôt viejo.",
+            example: "Un changement anciano a rendu le projet plus simple."
+        },
+        "ancient": {
+            definition: "ancient : plutôt vieux.",
+            example: "Un changement ancient a rendu le projet plus simple."
+        },
+        "angoissant": {
+            definition: "angoissant : plutôt effrayant.",
+            example: "Un changement angoissant a rendu le projet plus simple."
+        },
+        "annoyed": {
+            definition: "annoyed : plutôt angry.",
+            example: "Un changement annoyed a rendu le projet plus simple."
+        },
+        "antediluvian": {
+            definition: "antediluvian : extrêmement ancient.",
+            example: "Une antediluvian taille a surpris tout le monde."
+        },
+        "antediluviano": {
+            definition: "antediluviano : extrêmement viejo.",
+            example: "Une antediluviano taille a surpris tout le monde."
+        },
+        "antiguo": {
+            definition: "antiguo : plutôt viejo.",
+            example: "Un changement antiguo a rendu le projet plus simple."
+        },
+        "antiquated": {
+            definition: "antiquated : extrêmement vieux.",
+            example: "Une antiquated taille a surpris tout le monde."
+        },
+        "apasionante": {
+            definition: "apasionante : plutôt interesante.",
+            example: "Un changement apasionante a rendu le projet plus simple."
+        },
+        "apesadumbrado": {
+            definition: "apesadumbrado : extrêmement triste.",
+            example: "Une apesadumbrado taille a surpris tout le monde."
+        },
+        "apollonian": {
+            definition: "apollonian : extrêmement brilliant.",
+            example: "Une apollonian taille a surpris tout le monde."
+        },
+        "apoplectic": {
+            definition: "apoplectic : extrêmement angry.",
+            example: "Une apoplectic taille a surpris tout le monde."
+        },
+        "apparent": {
+            definition: "apparent : plutôt transparent.",
+            example: "Un changement apparent a rendu le projet plus simple."
+        },
+        "approachable": {
+            definition: "approachable : plutôt friendly.",
+            example: "Un changement approachable a rendu le projet plus simple."
+        },
+        "arcaico": {
+            definition: "arcaico : plutôt viejo.",
+            example: "Un changement arcaico a rendu le projet plus simple."
+        },
+        "archaic": {
+            definition: "archaic : extrêmement vieux.",
+            example: "Une archaic taille a surpris tout le monde."
+        },
+        "arctic": {
+            definition: "arctic : extrêmement froid.",
+            example: "Une arctic taille a surpris tout le monde."
+        },
+        "ardiente": {
+            definition: "ardiente : plutôt caliente.",
+            example: "Un changement ardiente a rendu le projet plus simple."
+        },
+        "ardu": {
+            definition: "ardu : plutôt difficile.",
+            example: "Un changement ardu a rendu le projet plus simple."
+        },
+        "arduo": {
+            definition: "arduo : plutôt difícil.",
+            example: "Un changement arduo a rendu le projet plus simple."
+        },
+        "arduous": {
+            definition: "arduous : extrêmement difficile.",
+            example: "Une arduous taille a surpris tout le monde."
+        },
+        "arrebatador": {
+            definition: "arrebatador : extrêmement interesante.",
+            example: "Une arrebatador taille a surpris tout le monde."
+        },
+        "asequible": {
+            definition: "asequible : extrêmement fácil.",
+            example: "Une asequible taille a surpris tout le monde."
+        },
+        "astute": {
+            definition: "astute : extrêmement smart.",
+            example: "Une astute taille a surpris tout le monde."
+        },
+        "astuto": {
+            definition: "astuto : plutôt inteligente.",
+            example: "Un changement astuto a rendu le projet plus simple."
+        },
+        "aterido": {
+            definition: "aterido : extrêmement frío.",
+            example: "Une aterido taille a surpris tout le monde."
+        },
+        "atractivo": {
+            definition: "atractivo : plutôt interesante.",
+            example: "Un changement atractivo a rendu le projet plus simple."
+        },
+        "atroce": {
+            definition: "atroce : plutôt mauvais.",
+            example: "Un changement atroce a rendu le projet plus simple."
+        },
+        "atrocious": {
+            definition: "atrocious : extrêmement mauvais.",
+            example: "Une atrocious taille a surpris tout le monde."
+        },
+        "attenuated": {
+            definition: "attenuated : extrêmement thin.",
+            example: "Une attenuated taille a surpris tout le monde."
+        },
+        "attractive": {
+            definition: "attractive : plutôt beautiful.",
+            example: "Un changement attractive a rendu le projet plus simple."
+        },
+        "attrayant": {
+            definition: "attrayant : plutôt intéressant.",
+            example: "Un changement attrayant a rendu le projet plus simple."
+        },
+        "audacieux": {
+            definition: "audacieux : plutôt courageux.",
+            example: "Un changement audacieux a rendu le projet plus simple."
+        },
+        "audacious": {
+            definition: "audacious : extrêmement brave.",
+            example: "Une audacious taille a surpris tout le monde."
+        },
+        "audaz": {
+            definition: "audaz : plutôt valiente.",
+            example: "Un changement audaz a rendu le projet plus simple."
+        },
+        "auspicious": {
+            definition: "auspicious : extrêmement helpful.",
+            example: "Une auspicious taille a surpris tout le monde."
+        },
+        "avant-gardiste": {
+            definition: "avant-gardiste : extrêmement nouveau.",
+            example: "Une avant-gardiste taille a surpris tout le monde."
+        },
+        "avide": {
+            definition: "avide : plutôt curieux.",
+            example: "Un changement avide a rendu le projet plus simple."
+        },
+        "avisé": {
+            definition: "avisé : extrêmement intelligent.",
+            example: "Une avisé taille a surpris tout le monde."
+        },
+        "awful": {
+            definition: "awful : plutôt mauvais.",
+            example: "Un changement awful a rendu le projet plus simple."
+        },
+        "añejo": {
+            definition: "añejo : plutôt viejo.",
+            example: "Un changement añejo a rendu le projet plus simple."
+        },
+        "baleful": {
+            definition: "baleful : extrêmement dangereux.",
+            example: "Une baleful taille a surpris tout le monde."
+        },
+        "balmy": {
+            definition: "balmy : plutôt warm.",
+            example: "Un changement balmy a rendu le projet plus simple."
+        },
+        "bashful": {
+            definition: "bashful : plutôt timid.",
+            example: "Un changement bashful a rendu le projet plus simple."
+        },
+        "basic": {
+            definition: "basic : plutôt facile.",
+            example: "Un changement basic a rendu le projet plus simple."
+        },
+        "beatific": {
+            definition: "beatific : extrêmement joyful.",
+            example: "Une beatific taille a surpris tout le monde."
+        },
+        "beatífico": {
+            definition: "beatífico : extrêmement feliz.",
+            example: "Une beatífico taille a surpris tout le monde."
+        },
+        "bello": {
+            definition: "bello : plutôt hermoso.",
+            example: "Un changement bello a rendu le projet plus simple."
+        },
+        "beneficial": {
+            definition: "beneficial : plutôt helpful.",
+            example: "Un changement beneficial a rendu le projet plus simple."
+        },
+        "benignant": {
+            definition: "benignant : extrêmement helpful.",
+            example: "Une benignant taille a surpris tout le monde."
+        },
+        "besmirched": {
+            definition: "besmirched : extrêmement dirty.",
+            example: "Une besmirched taille a surpris tout le monde."
+        },
+        "blaring": {
+            definition: "blaring : l'action de loud.",
+            example: "Blaring du document a pris plus de temps que prévu."
+        },
+        "blissful": {
+            definition: "blissful : extrêmement heureux.",
+            example: "Une blissful taille a surpris tout le monde."
+        },
+        "blistering": {
+            definition: "blistering : l'action de chaud.",
+            example: "Blistering du document a pris plus de temps que prévu."
+        },
+        "bloodcurdling": {
+            definition: "bloodcurdling : l'action de scary.",
+            example: "Bloodcurdling du document a pris plus de temps que prévu."
+        },
+        "bochornoso": {
+            definition: "bochornoso : extrêmement caliente.",
+            example: "Une bochornoso taille a surpris tout le monde."
+        },
+        "boiling": {
+            definition: "boiling : l'action de chaud.",
+            example: "Boiling du document a pris plus de temps que prévu."
+        },
+        "bold": {
+            definition: "bold : plutôt brave.",
+            example: "Un changement bold a rendu le projet plus simple."
+        },
+        "bonito": {
+            definition: "bonito : plutôt hermoso.",
+            example: "Un changement bonito a rendu le projet plus simple."
+        },
+        "booming": {
+            definition: "booming : l'action de loud.",
+            example: "Booming du document a pris plus de temps que prévu."
+        },
+        "bouillant": {
+            definition: "bouillant : plutôt chaud.",
+            example: "Un changement bouillant a rendu le projet plus simple."
+        },
+        "brave": {
+            definition: "brave : plutôt courageux.",
+            example: "Un changement brave a rendu le projet plus simple."
+        },
+        "bravo": {
+            definition: "bravo : plutôt valiente.",
+            example: "Un changement bravo a rendu le projet plus simple."
+        },
+        "breakable": {
+            definition: "breakable : plutôt fragile.",
+            example: "Un changement breakable a rendu le projet plus simple."
+        },
+        "bright": {
+            definition: "bright : plutôt smart.",
+            example: "Un changement bright a rendu le projet plus simple."
+        },
+        "brillante": {
+            definition: "brillante : plutôt inteligente.",
+            example: "Un changement brillante a rendu le projet plus simple."
+        },
+        "brilliant": {
+            definition: "brilliant : plutôt bright.",
+            example: "Un changement brilliant a rendu le projet plus simple."
+        },
+        "brio": {
+            definition: "brio : extrêmement brilliant.",
+            example: "Une brio taille a surpris tout le monde."
+        },
+        "brisable": {
+            definition: "brisable : plutôt fragile.",
+            example: "Un changement brisable a rendu le projet plus simple."
+        },
+        "brisk": {
+            definition: "brisk : extrêmement fast.",
+            example: "Une brisk taille a surpris tout le monde."
+        },
+        "brittle": {
+            definition: "brittle : plutôt fragile.",
+            example: "Un changement brittle a rendu le projet plus simple."
+        },
+        "broke": {
+            definition: "broke : plutôt poor.",
+            example: "Un changement broke a rendu le projet plus simple."
+        },
+        "brûlant": {
+            definition: "brûlant : plutôt chaud.",
+            example: "Un changement brûlant a rendu le projet plus simple."
+        },
+        "budget": {
+            definition: "budget : plutôt cheap.",
+            example: "Un changement budget a rendu le projet plus simple."
+        },
+        "burning": {
+            definition: "burning : l'action de chaud.",
+            example: "Burning du document a pris plus de temps que prévu."
+        },
+        "béat": {
+            definition: "béat : extrêmement heureux.",
+            example: "Une béat taille a surpris tout le monde."
+        },
+        "calm": {
+            definition: "calm : plutôt quiet.",
+            example: "Un changement calm a rendu le projet plus simple."
+        },
+        "candente": {
+            definition: "candente : plutôt caliente.",
+            example: "Un changement candente a rendu le projet plus simple."
+        },
+        "candor": {
+            definition: "candor : extrêmement honest.",
+            example: "Une candor taille a surpris tout le monde."
+        },
+        "caniculaire": {
+            definition: "caniculaire : extrêmement chaud.",
+            example: "Une caniculaire taille a surpris tout le monde."
+        },
+        "canicular": {
+            definition: "canicular : extrêmement caliente.",
+            example: "Une canicular taille a surpris tout le monde."
+        },
+        "capable": {
+            definition: "capable : plutôt efficient.",
+            example: "Un changement capable a rendu le projet plus simple."
+        },
+        "capaz": {
+            definition: "capaz : plutôt eficiente.",
+            example: "Un changement capaz a rendu le projet plus simple."
+        },
+        "capital": {
+            definition: "capital : plutôt important.",
+            example: "Un changement capital a rendu le projet plus simple."
+        },
+        "captivant": {
+            definition: "captivant : plutôt intéressant.",
+            example: "Un changement captivant a rendu le projet plus simple."
+        },
+        "captivating": {
+            definition: "captivating : l'action de intéressant.",
+            example: "Captivating du document a pris plus de temps que prévu."
+        },
+        "cardinal": {
+            definition: "cardinal : extrêmement important.",
+            example: "Une cardinal taille a surpris tout le monde."
+        },
+        "cassant": {
+            definition: "cassant : plutôt fragile.",
+            example: "Un changement cassant a rendu le projet plus simple."
+        },
+        "cauchemardesque": {
+            definition: "cauchemardesque : extrêmement effrayant.",
+            example: "Une cauchemardesque taille a surpris tout le monde."
+        },
+        "cautivador": {
+            definition: "cautivador : plutôt interesante.",
+            example: "Un changement cautivador a rendu le projet plus simple."
+        },
+        "chagriné": {
+            definition: "chagriné : plutôt triste.",
+            example: "Un changement chagriné a rendu le projet plus simple."
+        },
+        "challenging": {
+            definition: "challenging : l'action de difficile.",
+            example: "Challenging du document a pris plus de temps que prévu."
+        },
+        "chancelant": {
+            definition: "chancelant : extrêmement fragile.",
+            example: "Une chancelant taille a surpris tout le monde."
+        },
+        "cheer": {
+            definition: "cheer : plutôt brighten.",
+            example: "Un changement cheer a rendu le projet plus simple."
+        },
+        "cheerful": {
+            definition: "cheerful : plutôt heureux.",
+            example: "Un changement cheerful a rendu le projet plus simple."
+        },
+        "chico": {
+            definition: "chico : plutôt pequeño.",
+            example: "Un changement chico a rendu le projet plus simple."
+        },
+        "child's play": {
+            definition: "child's play : extrêmement facile.",
+            example: "Une child's play taille a surpris tout le monde."
+        },
+        "chilly": {
+            definition: "chilly : plutôt froid.",
+            example: "Un changement chilly a rendu le projet plus simple."
+        },
+        "clairvoyant": {
+            definition: "clairvoyant : extrêmement intelligent.",
+            example: "Une clairvoyant taille a surpris tout le monde."
+        },
+        "clamorous": {
+            definition: "clamorous : extrêmement loud.",
+            example: "Une clamorous taille a surpris tout le monde."
+        },
+        "clarividente": {
+            definition: "clarividente : extrêmement inteligente.",
+            example: "Une clarividente taille a surpris tout le monde."
+        },
+        "claro": {
+            definition: "claro : plutôt transparente.",
+            example: "Un changement claro a rendu le projet plus simple."
+        },
+        "clear": {
+            definition: "clear : plutôt transparent.",
+            example: "Un changement clear a rendu le projet plus simple."
+        },
+        "clement": {
+            definition: "clement : extrêmement warm.",
+            example: "Une clement taille a surpris tout le monde."
+        },
+        "clever": {
+            definition: "clever : plutôt smart.",
+            example: "Un changement clever a rendu le projet plus simple."
+        },
+        "collected": {
+            definition: "collected : plutôt calm.",
+            example: "Un changement collected a rendu le projet plus simple."
+        },
+        "colosal": {
+            definition: "colosal : extrêmement grande.",
+            example: "Une colosal taille a surpris tout le monde."
+        },
+        "colossal": {
+            definition: "colossal : extrêmement grand.",
+            example: "Une colossal taille a surpris tout le monde."
+        },
+        "colérico": {
+            definition: "colérico : extrêmement enfadado.",
+            example: "Une colérico taille a surpris tout le monde."
+        },
+        "comblé": {
+            definition: "comblé : extrêmement heureux.",
+            example: "Une comblé taille a surpris tout le monde."
+        },
+        "comical": {
+            definition: "comical : plutôt drôle.",
+            example: "Un changement comical a rendu le projet plus simple."
+        },
+        "commode": {
+            definition: "commode : extrêmement facile.",
+            example: "Une commode taille a surpris tout le monde."
+        },
+        "compact": {
+            definition: "compact : plutôt petit.",
+            example: "Un changement compact a rendu le projet plus simple."
+        },
+        "compelling": {
+            definition: "compelling : l'action de intéressant.",
+            example: "Compelling du document a pris plus de temps que prévu."
+        },
+        "competent": {
+            definition: "competent : plutôt efficient.",
+            example: "Un changement competent a rendu le projet plus simple."
+        },
+        "competente": {
+            definition: "competente : plutôt eficiente.",
+            example: "Un changement competente a rendu le projet plus simple."
+        },
+        "complejo": {
+            definition: "complejo : plutôt difícil.",
+            example: "Un changement complejo a rendu le projet plus simple."
+        },
+        "complex": {
+            definition: "complex : plutôt difficile.",
+            example: "Un changement complex a rendu le projet plus simple."
+        },
+        "complexe": {
+            definition: "complexe : plutôt difficile.",
+            example: "Un changement complexe a rendu le projet plus simple."
+        },
+        "complicado": {
+            definition: "complicado : plutôt difícil.",
+            example: "Un changement complicado a rendu le projet plus simple."
+        },
+        "complicated": {
+            definition: "complicated : plutôt difficile.",
+            example: "Un changement complicated a rendu le projet plus simple."
+        },
+        "compliqué": {
+            definition: "compliqué : plutôt difficile.",
+            example: "Un changement compliqué a rendu le projet plus simple."
+        },
+        "composed": {
+            definition: "composed : plutôt calm.",
+            example: "Un changement composed a rendu le projet plus simple."
+        },
+        "compétent": {
+            definition: "compétent : plutôt efficace.",
+            example: "Un changement compétent a rendu le projet plus simple."
+        },
+        "congelado": {
+            definition: "congelado : plutôt frío.",
+            example: "Un changement congelado a rendu le projet plus simple."
+        },
+        "consequential": {
+            definition: "consequential : extrêmement important.",
+            example: "Une consequential taille a surpris tout le monde."
+        },
+        "constructive": {
+            definition: "constructive : plutôt helpful.",
+            example: "Un changement constructive a rendu le projet plus simple."
+        },
+        "contento": {
+            definition: "contento : plutôt feliz.",
+            example: "Un changement contento a rendu le projet plus simple."
+        },
+        "convivial": {
+            definition: "convivial : extrêmement friendly.",
+            example: "Une convivial taille a surpris tout le monde."
+        },
+        "cool": {
+            definition: "cool : plutôt froid.",
+            example: "Un changement cool a rendu le projet plus simple."
+        },
+        "cordial": {
+            definition: "cordial : extrêmement friendly.",
+            example: "Une cordial taille a surpris tout le monde."
+        },
+        "corto": {
+            definition: "corto : plutôt pequeño.",
+            example: "Un changement corto a rendu le projet plus simple."
+        },
+        "costaud": {
+            definition: "costaud : plutôt fort.",
+            example: "Un changement costaud a rendu le projet plus simple."
+        },
+        "courageous": {
+            definition: "courageous : plutôt brave.",
+            example: "Un changement courageous a rendu le projet plus simple."
+        },
+        "courroucé": {
+            definition: "courroucé : extrêmement fâché.",
+            example: "Une courroucé taille a surpris tout le monde."
+        },
+        "coy": {
+            definition: "coy : extrêmement timid.",
+            example: "Une coy taille a surpris tout le monde."
+        },
+        "cozy": {
+            definition: "cozy : plutôt warm.",
+            example: "Un changement cozy a rendu le projet plus simple."
+        },
+        "craven": {
+            definition: "craven : extrêmement timid.",
+            example: "Une craven taille a surpris tout le monde."
+        },
+        "creepy": {
+            definition: "creepy : plutôt scary.",
+            example: "Un changement creepy a rendu le projet plus simple."
+        },
+        "crucial": {
+            definition: "crucial : plutôt important.",
+            example: "Un changement crucial a rendu le projet plus simple."
+        },
+        "curieux": {
+            definition: "curieux : plutôt curieux.",
+            example: "Un changement curieux a rendu le projet plus simple."
+        },
+        "curior": {
+            definition: "curior : extrêmement curioso.",
+            example: "Une curior taille a surpris tout le monde."
+        },
+        "curioso": {
+            definition: "curioso : plutôt curioso.",
+            example: "Un changement curioso a rendu le projet plus simple."
+        },
+        "current": {
+            definition: "current : plutôt nouveau.",
+            example: "Un changement current a rendu le projet plus simple."
+        },
+        "cutting-edge": {
+            definition: "cutting-edge : extrêmement nouveau.",
+            example: "Une cutting-edge taille a surpris tout le monde."
+        },
+        "cómodo": {
+            definition: "cómodo : plutôt fácil.",
+            example: "Un changement cómodo a rendu le projet plus simple."
+        },
+        "dantesco": {
+            definition: "dantesco : extrêmement aterrador.",
+            example: "Une dantesco taille a surpris tout le monde."
+        },
+        "dauntless": {
+            definition: "dauntless : extrêmement brave.",
+            example: "Une dauntless taille a surpris tout le monde."
+        },
+        "deafening": {
+            definition: "deafening : l'action de loud.",
+            example: "Deafening du document a pris plus de temps que prévu."
+        },
+        "decrepit": {
+            definition: "decrepit : extrêmement vieux.",
+            example: "Une decrepit taille a surpris tout le monde."
+        },
+        "decrépito": {
+            definition: "decrépito : extrêmement viejo.",
+            example: "Une decrépito taille a surpris tout le monde."
+        },
+        "delicado": {
+            definition: "delicado : plutôt frágil.",
+            example: "Un changement delicado a rendu le projet plus simple."
+        },
+        "delicate": {
+            definition: "delicate : plutôt fragile.",
+            example: "Un changement delicate a rendu le projet plus simple."
+        },
+        "deplorable": {
+            definition: "deplorable : extrêmement mauvais.",
+            example: "Une deplorable taille a surpris tout le monde."
+        },
+        "deprimido": {
+            definition: "deprimido : plutôt triste.",
+            example: "Un changement deprimido a rendu le projet plus simple."
+        },
+        "descomunal": {
+            definition: "descomunal : extrêmement grande.",
+            example: "Une descomunal taille a surpris tout le monde."
+        },
+        "desconsolado": {
+            definition: "desconsolado : extrêmement triste.",
+            example: "Une desconsolado taille a surpris tout le monde."
+        },
+        "deslumbrante": {
+            definition: "deslumbrante : extrêmement hermoso.",
+            example: "Une deslumbrante taille a surpris tout le monde."
+        },
+        "desolado": {
+            definition: "desolado : extrêmement triste.",
+            example: "Une desolado taille a surpris tout le monde."
+        },
+        "despair": {
+            definition: "despair : plutôt sadness.",
+            example: "Un changement despair a rendu le projet plus simple."
+        },
+        "despondent": {
+            definition: "despondent : extrêmement triste.",
+            example: "Une despondent taille a surpris tout le monde."
+        },
+        "destitute": {
+            definition: "destitute : plutôt poor.",
+            example: "Un changement destitute a rendu le projet plus simple."
+        },
+        "diaphanous": {
+            definition: "diaphanous : extrêmement transparent.",
+            example: "Une diaphanous taille a surpris tout le monde."
+        },
+        "dichoso": {
+            definition: "dichoso : plutôt feliz.",
+            example: "Un changement dichoso a rendu le projet plus simple."
+        },
+        "diffident": {
+            definition: "diffident : extrêmement timid.",
+            example: "Une diffident taille a surpris tout le monde."
+        },
+        "dignes": {
+            definition: "dignes : extrêmement courageux.",
+            example: "Une dignes taille a surpris tout le monde."
+        },
+        "diligent": {
+            definition: "diligent : extrêmement rapide.",
+            example: "Une diligent taille a surpris tout le monde."
+        },
+        "diminutive": {
+            definition: "diminutive : extrêmement petit.",
+            example: "Une diminutive taille a surpris tout le monde."
+        },
+        "diminuto": {
+            definition: "diminuto : plutôt pequeño.",
+            example: "Un changement diminuto a rendu le projet plus simple."
+        },
+        "disconsolate": {
+            definition: "disconsolate : extrêmement triste.",
+            example: "Une disconsolate taille a surpris tout le monde."
+        },
+        "diáfano": {
+            definition: "diáfano : plutôt transparente.",
+            example: "Un changement diáfano a rendu le projet plus simple."
+        },
+        "docto": {
+            definition: "docto : extrêmement inteligente.",
+            example: "Une docto taille a surpris tout le monde."
+        },
+        "dolefulness": {
+            definition: "dolefulness : extrêmement sadness.",
+            example: "Une dolefulness taille a surpris tout le monde."
+        },
+        "dolor": {
+            definition: "dolor : extrêmement sadness.",
+            example: "Une dolor taille a surpris tout le monde."
+        },
+        "down": {
+            definition: "down : plutôt triste.",
+            example: "Un changement down a rendu le projet plus simple."
+        },
+        "dreadful": {
+            definition: "dreadful : plutôt mauvais.",
+            example: "Un changement dreadful a rendu le projet plus simple."
+        },
+        "droll": {
+            definition: "droll : extrêmement drôle.",
+            example: "Une droll taille a surpris tout le monde."
+        },
+        "duro": {
+            definition: "duro : plutôt difícil.",
+            example: "Un changement duro a rendu le projet plus simple."
+        },
+        "délectable": {
+            definition: "délectable : extrêmement bon.",
+            example: "Une délectable taille a surpris tout le monde."
+        },
+        "délicat": {
+            definition: "délicat : plutôt fragile.",
+            example: "Un changement délicat a rendu le projet plus simple."
+        },
+        "déprimé": {
+            definition: "déprimé : plutôt triste.",
+            example: "Un changement déprimé a rendu le projet plus simple."
+        },
+        "désespéré": {
+            definition: "désespéré : extrêmement triste.",
+            example: "Une désespéré taille a surpris tout le monde."
+        },
+        "déterminant": {
+            definition: "déterminant : extrêmement important.",
+            example: "Une déterminant taille a surpris tout le monde."
+        },
+        "détestable": {
+            definition: "détestable : extrêmement mauvais.",
+            example: "Une détestable taille a surpris tout le monde."
+        },
+        "economical": {
+            definition: "economical : plutôt cheap.",
+            example: "Un changement economical a rendu le projet plus simple."
+        },
+        "económico": {
+            definition: "económico : extrêmement eficiente.",
+            example: "Une económico taille a surpris tout le monde."
+        },
+        "ecstatic": {
+            definition: "ecstatic : extrêmement heureux.",
+            example: "Une ecstatic taille a surpris tout le monde."
+        },
+        "efectivo": {
+            definition: "efectivo : plutôt eficiente.",
+            example: "Un changement efectivo a rendu le projet plus simple."
+        },
+        "effective": {
+            definition: "effective : plutôt efficient.",
+            example: "Un changement effective a rendu le projet plus simple."
+        },
+        "effervesce": {
+            definition: "effervesce : extrêmement brighten.",
+            example: "Une effervesce taille a surpris tout le monde."
+        },
+        "effortless": {
+            definition: "effortless : plutôt facile.",
+            example: "Un changement effortless a rendu le projet plus simple."
+        },
+        "effulgent": {
+            definition: "effulgent : extrêmement bright.",
+            example: "Une effulgent taille a surpris tout le monde."
+        },
+        "elated": {
+            definition: "elated : extrêmement heureux.",
+            example: "Une elated taille a surpris tout le monde."
+        },
+        "elderly": {
+            definition: "elderly : plutôt vieux.",
+            example: "Un changement elderly a rendu le projet plus simple."
+        },
+        "eldritch": {
+            definition: "eldritch : extrêmement scary.",
+            example: "Une eldritch taille a surpris tout le monde."
+        },
+        "electrizante": {
+            definition: "electrizante : extrêmement interesante.",
+            example: "Une electrizante taille a surpris tout le monde."
+        },
+        "elemental": {
+            definition: "elemental : plutôt fácil.",
+            example: "Un changement elemental a rendu le projet plus simple."
+        },
+        "elementary": {
+            definition: "elementary : extrêmement facile.",
+            example: "Une elementary taille a surpris tout le monde."
+        },
+        "emaciated": {
+            definition: "emaciated : extrêmement thin.",
+            example: "Une emaciated taille a surpris tout le monde."
+        },
+        "en colère": {
+            definition: "en colère : plutôt fâché.",
+            example: "Un changement en colère a rendu le projet plus simple."
+        },
+        "encrespado": {
+            definition: "encrespado : extrêmement enfadado.",
+            example: "Une encrespado taille a surpris tout le monde."
+        },
+        "enfantin": {
+            definition: "enfantin : extrêmement facile.",
+            example: "Une enfantin taille a surpris tout le monde."
+        },
+        "engaging": {
+            definition: "engaging : l'action de intéressant.",
+            example: "Engaging du document a pris plus de temps que prévu."
+        },
+        "enliven": {
+            definition: "enliven : plutôt brighten.",
+            example: "Un changement enliven a rendu le projet plus simple."
+        },
+        "enojado": {
+            definition: "enojado : plutôt enfadado.",
+            example: "Un changement enojado a rendu le projet plus simple."
+        },
+        "enorme": {
+            definition: "enorme : plutôt grande.",
+            example: "Un changement enorme a rendu le projet plus simple."
+        },
+        "enormous": {
+            definition: "enormous : plutôt grand.",
+            example: "Un changement enormous a rendu le projet plus simple."
+        },
+        "enrapture": {
+            definition: "enrapture : extrêmement brighten.",
+            example: "Une enrapture taille a surpris tout le monde."
+        },
+        "entertaining": {
+            definition: "entertaining : l'action de drôle.",
+            example: "Entertaining du document a pris plus de temps que prévu."
+        },
+        "enthralling": {
+            definition: "enthralling : l'action de intéressant.",
+            example: "Enthralling du document a pris plus de temps que prévu."
+        },
+        "envoûtant": {
+            definition: "envoûtant : extrêmement intéressant.",
+            example: "Une envoûtant taille a surpris tout le monde."
+        },
+        "equable": {
+            definition: "equable : extrêmement warm.",
+            example: "Une equable taille a surpris tout le monde."
+        },
+        "equanimous": {
+            definition: "equanimous : extrêmement calm.",
+            example: "Une equanimous taille a surpris tout le monde."
+        },
+        "erudite": {
+            definition: "erudite : extrêmement smart.",
+            example: "Une erudite taille a surpris tout le monde."
+        },
+        "erudito": {
+            definition: "erudito : extrêmement inteligente.",
+            example: "Une erudito taille a surpris tout le monde."
+        },
+        "escabroso": {
+            definition: "escabroso : extrêmement difícil.",
+            example: "Une escabroso taille a surpris tout le monde."
+        },
+        "escalofriante": {
+            definition: "escalofriante : extrêmement aterrador.",
+            example: "Une escalofriante taille a surpris tout le monde."
+        },
+        "esencial": {
+            definition: "esencial : plutôt importante.",
+            example: "Un changement esencial a rendu le projet plus simple."
+        },
+        "espantoso": {
+            definition: "espantoso : plutôt malo.",
+            example: "Un changement espantoso a rendu le projet plus simple."
+        },
+        "especulativo": {
+            definition: "especulativo : extrêmement curioso.",
+            example: "Une especulativo taille a surpris tout le monde."
+        },
+        "espeluznante": {
+            definition: "espeluznante : extrêmement aterrador.",
+            example: "Une espeluznante taille a surpris tout le monde."
+        },
+        "espinoso": {
+            definition: "espinoso : extrêmement difícil.",
+            example: "Une espinoso taille a surpris tout le monde."
+        },
+        "espléndido": {
+            definition: "espléndido : extrêmement hermoso.",
+            example: "Une espléndido taille a surpris tout le monde."
+        },
+        "essential": {
+            definition: "essential : plutôt important.",
+            example: "Un changement essential a rendu le projet plus simple."
+        },
+        "essentiel": {
+            definition: "essentiel : plutôt important.",
+            example: "Un changement essentiel a rendu le projet plus simple."
+        },
+        "estupendo": {
+            definition: "estupendo : plutôt bueno.",
+            example: "Un changement estupendo a rendu le projet plus simple."
+        },
+        "eufórico": {
+            definition: "eufórico : extrêmement feliz.",
+            example: "Une eufórico taille a surpris tout le monde."
+        },
+        "euphoric": {
+            definition: "euphoric : extrêmement heureux.",
+            example: "Une euphoric taille a surpris tout le monde."
+        },
+        "evident": {
+            definition: "evident : plutôt clear.",
+            example: "Un changement evident a rendu le projet plus simple."
+        },
+        "evidente": {
+            definition: "evidente : plutôt transparente.",
+            example: "Un changement evidente a rendu le projet plus simple."
+        },
+        "exalt": {
+            definition: "exalt : extrêmement brighten.",
+            example: "Une exalt taille a surpris tout le monde."
+        },
+        "exasperado": {
+            definition: "exasperado : extrêmement enfadado.",
+            example: "Une exasperado taille a surpris tout le monde."
+        },
+        "exaspéré": {
+            definition: "exaspéré : extrêmement fâché.",
+            example: "Une exaspéré taille a surpris tout le monde."
+        },
+        "excelente": {
+            definition: "excelente : plutôt bueno.",
+            example: "Un changement excelente a rendu le projet plus simple."
+        },
+        "excellent": {
+            definition: "excellent : plutôt bon.",
+            example: "Un changement excellent a rendu le projet plus simple."
+        },
+        "excepcional": {
+            definition: "excepcional : extrêmement bueno.",
+            example: "Une excepcional taille a surpris tout le monde."
+        },
+        "execrable": {
+            definition: "execrable : extrêmement mauvais.",
+            example: "Une execrable taille a surpris tout le monde."
+        },
+        "exemplary": {
+            definition: "exemplary : extrêmement bon.",
+            example: "Une exemplary taille a surpris tout le monde."
+        },
+        "exigu": {
+            definition: "exigu : extrêmement petit.",
+            example: "Une exigu taille a surpris tout le monde."
+        },
+        "exiguo": {
+            definition: "exiguo : extrêmement pequeño.",
+            example: "Une exiguo taille a surpris tout le monde."
+        },
+        "exiguous": {
+            definition: "exiguous : extrêmement fragile.",
+            example: "Une exiguous taille a surpris tout le monde."
+        },
+        "eximio": {
+            definition: "eximio : extrêmement bueno.",
+            example: "Une eximio taille a surpris tout le monde."
+        },
+        "expeditious": {
+            definition: "expeditious : extrêmement fast.",
+            example: "Une expeditious taille a surpris tout le monde."
+        },
+        "expeditivo": {
+            definition: "expeditivo : extrêmement eficiente.",
+            example: "Une expeditivo taille a surpris tout le monde."
+        },
+        "expedito": {
+            definition: "expedito : extrêmement rápido.",
+            example: "Une expedito taille a surpris tout le monde."
+        },
+        "expéditif": {
+            definition: "expéditif : extrêmement rapide.",
+            example: "Une expéditif taille a surpris tout le monde."
+        },
+        "exquis": {
+            definition: "exquis : extrêmement beau.",
+            example: "Une exquis taille a surpris tout le monde."
+        },
+        "exquisite": {
+            definition: "exquisite : extrêmement beautiful.",
+            example: "Une exquisite taille a surpris tout le monde."
+        },
+        "exquisito": {
+            definition: "exquisito : extrêmement hermoso.",
+            example: "Une exquisito taille a surpris tout le monde."
+        },
+        "extatique": {
+            definition: "extatique : extrêmement heureux.",
+            example: "Une extatique taille a surpris tout le monde."
+        },
+        "exultant": {
+            definition: "exultant : extrêmement joyful.",
+            example: "Une exultant taille a surpris tout le monde."
+        },
+        "exultante": {
+            definition: "exultante : extrêmement feliz.",
+            example: "Une exultante taille a surpris tout le monde."
+        },
+        "exécrable": {
+            definition: "exécrable : extrêmement mauvais.",
+            example: "Une exécrable taille a surpris tout le monde."
+        },
+        "facile": {
+            definition: "facile : extrêmement facile.",
+            example: "Une facile taille a surpris tout le monde."
+        },
+        "factible": {
+            definition: "factible : extrêmement fácil.",
+            example: "Une factible taille a surpris tout le monde."
+        },
+        "fantástico": {
+            definition: "fantástico : plutôt bueno.",
+            example: "Un changement fantástico a rendu le projet plus simple."
+        },
+        "farcical": {
+            definition: "farcical : extrêmement drôle.",
+            example: "Une farcical taille a surpris tout le monde."
+        },
+        "fascinant": {
+            definition: "fascinant : plutôt intéressant.",
+            example: "Un changement fascinant a rendu le projet plus simple."
+        },
+        "fascinante": {
+            definition: "fascinante : plutôt interesante.",
+            example: "Un changement fascinante a rendu le projet plus simple."
+        },
+        "fascinating": {
+            definition: "fascinating : l'action de intéressant.",
+            example: "Fascinating du document a pris plus de temps que prévu."
+        },
+        "fast": {
+            definition: "fast : plutôt rapide.",
+            example: "Un changement fast a rendu le projet plus simple."
+        },
+        "fatal": {
+            definition: "fatal : plutôt malo.",
+            example: "Un changement fatal a rendu le projet plus simple."
+        },
+        "fearless": {
+            definition: "fearless : plutôt brave.",
+            example: "Un changement fearless a rendu le projet plus simple."
+        },
+        "filthy": {
+            definition: "filthy : plutôt dirty.",
+            example: "Un changement filthy a rendu le projet plus simple."
+        },
+        "fisgón": {
+            definition: "fisgón : plutôt curioso.",
+            example: "Un changement fisgón a rendu le projet plus simple."
+        },
+        "flamante": {
+            definition: "flamante : plutôt nuevo.",
+            example: "Un changement flamante a rendu le projet plus simple."
+        },
+        "fleet": {
+            definition: "fleet : extrêmement fast.",
+            example: "Une fleet taille a surpris tout le monde."
+        },
+        "flimsy": {
+            definition: "flimsy : extrêmement fragile.",
+            example: "Une flimsy taille a surpris tout le monde."
+        },
+        "flush": {
+            definition: "flush : extrêmement rich.",
+            example: "Une flush taille a surpris tout le monde."
+        },
+        "fondamental": {
+            definition: "fondamental : extrêmement important.",
+            example: "Une fondamental taille a surpris tout le monde."
+        },
+        "forlorn": {
+            definition: "forlorn : extrêmement triste.",
+            example: "Une forlorn taille a surpris tout le monde."
+        },
+        "formidable": {
+            definition: "formidable : extrêmement fort.",
+            example: "Une formidable taille a surpris tout le monde."
+        },
+        "fornido": {
+            definition: "fornido : extrêmement fuerte.",
+            example: "Une fornido taille a surpris tout le monde."
+        },
+        "forthright": {
+            definition: "forthright : extrêmement honest.",
+            example: "Une forthright taille a surpris tout le monde."
+        },
+        "fouineur": {
+            definition: "fouineur : extrêmement curieux.",
+            example: "Une fouineur taille a surpris tout le monde."
+        },
+        "foul": {
+            definition: "foul : extrêmement dirty.",
+            example: "Une foul taille a surpris tout le monde."
+        },
+        "frail": {
+            definition: "frail : plutôt fragile.",
+            example: "Un changement frail a rendu le projet plus simple."
+        },
+        "frank": {
+            definition: "frank : plutôt honest.",
+            example: "Un changement frank a rendu le projet plus simple."
+        },
+        "fraught": {
+            definition: "fraught : extrêmement dangereux.",
+            example: "Une fraught taille a surpris tout le monde."
+        },
+        "freezing": {
+            definition: "freezing : l'action de froid.",
+            example: "Freezing du document a pris plus de temps que prévu."
+        },
+        "fresco": {
+            definition: "fresco : plutôt frío.",
+            example: "Un changement fresco a rendu le projet plus simple."
+        },
+        "fresh": {
+            definition: "fresh : plutôt nouveau.",
+            example: "Un changement fresh a rendu le projet plus simple."
+        },
+        "friable": {
+            definition: "friable : extrêmement fragile.",
+            example: "Une friable taille a surpris tout le monde."
+        },
+        "frightening": {
+            definition: "frightening : l'action de scary.",
+            example: "Frightening du document a pris plus de temps que prévu."
+        },
+        "frigid": {
+            definition: "frigid : extrêmement froid.",
+            example: "Une frigid taille a surpris tout le monde."
+        },
+        "frigorifique": {
+            definition: "frigorifique : extrêmement froid.",
+            example: "Une frigorifique taille a surpris tout le monde."
+        },
+        "frosty": {
+            definition: "frosty : plutôt froid.",
+            example: "Un changement frosty a rendu le projet plus simple."
+        },
+        "frugal": {
+            definition: "frugal : extrêmement cheap.",
+            example: "Une frugal taille a surpris tout le monde."
+        },
+        "frágil": {
+            definition: "frágil : plutôt frágil.",
+            example: "Un changement frágil a rendu le projet plus simple."
+        },
+        "frágilísimo": {
+            definition: "frágilísimo : extrêmement frágil.",
+            example: "Une frágilísimo taille a surpris tout le monde."
+        },
+        "fulgurant": {
+            definition: "fulgurant : extrêmement rapide.",
+            example: "Une fulgurant taille a surpris tout le monde."
+        },
+        "fulminant": {
+            definition: "fulminant : extrêmement fâché.",
+            example: "Une fulminant taille a surpris tout le monde."
+        },
+        "fulminante": {
+            definition: "fulminante : extrêmement rápido.",
+            example: "Une fulminante taille a surpris tout le monde."
+        },
+        "fundamental": {
+            definition: "fundamental : plutôt importante.",
+            example: "Un changement fundamental a rendu le projet plus simple."
+        },
+        "furieux": {
+            definition: "furieux : plutôt fâché.",
+            example: "Un changement furieux a rendu le projet plus simple."
+        },
+        "furioso": {
+            definition: "furioso : plutôt enfadado.",
+            example: "Un changement furioso a rendu le projet plus simple."
+        },
+        "furious": {
+            definition: "furious : plutôt angry.",
+            example: "Un changement furious a rendu le projet plus simple."
+        },
+        "galante": {
+            definition: "galante : extrêmement valiente.",
+            example: "Une galante taille a surpris tout le monde."
+        },
+        "gallant": {
+            definition: "gallant : extrêmement brave.",
+            example: "Une gallant taille a surpris tout le monde."
+        },
+        "gallardo": {
+            definition: "gallardo : extrêmement valiente.",
+            example: "Une gallardo taille a surpris tout le monde."
+        },
+        "gargantuan": {
+            definition: "gargantuan : extrêmement grand.",
+            example: "Une gargantuan taille a surpris tout le monde."
+        },
+        "gargantuesco": {
+            definition: "gargantuesco : extrêmement grande.",
+            example: "Une gargantuesco taille a surpris tout le monde."
+        },
+        "gargantuesque": {
+            definition: "gargantuesque : extrêmement grand.",
+            example: "Une gargantuesque taille a surpris tout le monde."
+        },
+        "gaunt": {
+            definition: "gaunt : extrêmement thin.",
+            example: "Une gaunt taille a surpris tout le monde."
+        },
+        "gelid": {
+            definition: "gelid : extrêmement froid.",
+            example: "Une gelid taille a surpris tout le monde."
+        },
+        "gelé": {
+            definition: "gelé : plutôt froid.",
+            example: "Un changement gelé a rendu le projet plus simple."
+        },
+        "genial": {
+            definition: "genial : extrêmement friendly.",
+            example: "Une genial taille a surpris tout le monde."
+        },
+        "giant": {
+            definition: "giant : plutôt grand.",
+            example: "Un changement giant a rendu le projet plus simple."
+        },
+        "gifted": {
+            definition: "gifted : plutôt brilliant.",
+            example: "Un changement gifted a rendu le projet plus simple."
+        },
+        "gigante": {
+            definition: "gigante : plutôt grande.",
+            example: "Un changement gigante a rendu le projet plus simple."
+        },
+        "gigantesque": {
+            definition: "gigantesque : extrêmement grand.",
+            example: "Une gigantesque taille a surpris tout le monde."
+        },
+        "glacial": {
+            definition: "glacial : extrêmement froid.",
+            example: "Une glacial taille a surpris tout le monde."
+        },
+        "glacé": {
+            definition: "glacé : plutôt froid.",
+            example: "Un changement glacé a rendu le projet plus simple."
+        },
+        "glad": {
+            definition: "glad : plutôt heureux.",
+            example: "Un changement glad a rendu le projet plus simple."
+        },
+        "gladden": {
+            definition: "gladden : extrêmement brighten.",
+            example: "Une gladden taille a surpris tout le monde."
+        },
+        "glaçant": {
+            definition: "glaçant : extrêmement effrayant.",
+            example: "Une glaçant taille a surpris tout le monde."
+        },
+        "gleeful": {
+            definition: "gleeful : plutôt joyful.",
+            example: "Un changement gleeful a rendu le projet plus simple."
+        },
+        "gloom": {
+            definition: "gloom : plutôt sadness.",
+            example: "Un changement gloom a rendu le projet plus simple."
+        },
+        "gorgeous": {
+            definition: "gorgeous : plutôt beautiful.",
+            example: "Un changement gorgeous a rendu le projet plus simple."
+        },
+        "gozoso": {
+            definition: "gozoso : plutôt feliz.",
+            example: "Un changement gozoso a rendu le projet plus simple."
+        },
+        "great": {
+            definition: "great : plutôt bon.",
+            example: "Un changement great a rendu le projet plus simple."
+        },
+        "grelottant": {
+            definition: "grelottant : plutôt froid.",
+            example: "Un changement grelottant a rendu le projet plus simple."
+        },
+        "grief": {
+            definition: "grief : plutôt sadness.",
+            example: "Un changement grief a rendu le projet plus simple."
+        },
+        "grimy": {
+            definition: "grimy : plutôt dirty.",
+            example: "Un changement grimy a rendu le projet plus simple."
+        },
+        "grisant": {
+            definition: "grisant : extrêmement intéressant.",
+            example: "Une grisant taille a surpris tout le monde."
+        },
+        "guapo": {
+            definition: "guapo : plutôt hermoso.",
+            example: "Un changement guapo a rendu le projet plus simple."
+        },
+        "géant": {
+            definition: "géant : plutôt grand.",
+            example: "Un changement géant a rendu le projet plus simple."
+        },
+        "gélido": {
+            definition: "gélido : plutôt frío.",
+            example: "Un changement gélido a rendu le projet plus simple."
+        },
+        "génial": {
+            definition: "génial : plutôt bon.",
+            example: "Un changement génial a rendu le projet plus simple."
+        },
+        "hacedero": {
+            definition: "hacedero : extrêmement fácil.",
+            example: "Une hacedero taille a surpris tout le monde."
+        },
+        "halcyon": {
+            definition: "halcyon : extrêmement quiet.",
+            example: "Une halcyon taille a surpris tout le monde."
+        },
+        "happy": {
+            definition: "happy : plutôt joyful.",
+            example: "Un changement happy a rendu le projet plus simple."
+        },
+        "hard": {
+            definition: "hard : plutôt difficile.",
+            example: "Un changement hard a rendu le projet plus simple."
+        },
+        "hardy": {
+            definition: "hardy : plutôt fort.",
+            example: "Un changement hardy a rendu le projet plus simple."
+        },
+        "harrowing": {
+            definition: "harrowing : l'action de scary.",
+            example: "Harrowing du document a pris plus de temps que prévu."
+        },
+        "hasty": {
+            definition: "hasty : plutôt fast.",
+            example: "Un changement hasty a rendu le projet plus simple."
+        },
+        "hazardous": {
+            definition: "hazardous : plutôt dangereux.",
+            example: "Un changement hazardous a rendu le projet plus simple."
+        },
+        "heated": {
+            definition: "heated : plutôt chaud.",
+            example: "Un changement heated a rendu le projet plus simple."
+        },
+        "helado": {
+            definition: "helado : plutôt frío.",
+            example: "Un changement helado a rendu le projet plus simple."
+        },
+        "herculean": {
+            definition: "herculean : extrêmement fort.",
+            example: "Une herculean taille a surpris tout le monde."
+        },
+        "herculéen": {
+            definition: "herculéen : extrêmement fort.",
+            example: "Une herculéen taille a surpris tout le monde."
+        },
+        "hercúleo": {
+            definition: "hercúleo : extrêmement fuerte.",
+            example: "Une hercúleo taille a surpris tout le monde."
+        },
+        "heroic": {
+            definition: "heroic : plutôt brave.",
+            example: "Un changement heroic a rendu le projet plus simple."
+        },
+        "heroico": {
+            definition: "heroico : plutôt valiente.",
+            example: "Un changement heroico a rendu le projet plus simple."
+        },
+        "hilarious": {
+            definition: "hilarious : plutôt drôle.",
+            example: "Un changement hilarious a rendu le projet plus simple."
+        },
+        "hipnótico": {
+            definition: "hipnótico : extrêmement interesante.",
+            example: "Une hipnótico taille a surpris tout le monde."
+        },
+        "hivernal": {
+            definition: "hivernal : extrêmement froid.",
+            example: "Une hivernal taille a surpris tout le monde."
+        },
+        "hoary": {
+            definition: "hoary : extrêmement ancient.",
+            example: "Une hoary taille a surpris tout le monde."
+        },
+        "horrible": {
+            definition: "horrible : plutôt mauvais.",
+            example: "Un changement horrible a rendu le projet plus simple."
+        },
+        "horrifying": {
+            definition: "horrifying : l'action de scary.",
+            example: "Horrifying du document a pris plus de temps que prévu."
+        },
+        "horripilante": {
+            definition: "horripilante : plutôt aterrador.",
+            example: "Un changement horripilante a rendu le projet plus simple."
+        },
+        "hot": {
+            definition: "hot : plutôt warm.",
+            example: "Un changement hot a rendu le projet plus simple."
+        },
+        "huge": {
+            definition: "huge : plutôt grand.",
+            example: "Un changement huge a rendu le projet plus simple."
+        },
+        "humorous": {
+            definition: "humorous : plutôt drôle.",
+            example: "Un changement humorous a rendu le projet plus simple."
+        },
+        "hushed": {
+            definition: "hushed : plutôt quiet.",
+            example: "Un changement hushed a rendu le projet plus simple."
+        },
+        "héros": {
+            definition: "héros : extrêmement courageux.",
+            example: "Une héros taille a surpris tout le monde."
+        },
+        "héroïque": {
+            definition: "héroïque : plutôt courageux.",
+            example: "Un changement héroïque a rendu le projet plus simple."
+        },
+        "icy": {
+            definition: "icy : plutôt froid.",
+            example: "Un changement icy a rendu le projet plus simple."
+        },
+        "illuminate": {
+            definition: "illuminate : plutôt brighten.",
+            example: "Un changement illuminate a rendu le projet plus simple."
+        },
+        "impeccable": {
+            definition: "impeccable : extrêmement bon.",
+            example: "Une impeccable taille a surpris tout le monde."
+        },
+        "impecunious": {
+            definition: "impecunious : extrêmement poor.",
+            example: "Une impecunious taille a surpris tout le monde."
+        },
+        "impoverished": {
+            definition: "impoverished : plutôt poor.",
+            example: "Un changement impoverished a rendu le projet plus simple."
+        },
+        "incandescente": {
+            definition: "incandescente : extrêmement caliente.",
+            example: "Une incandescente taille a surpris tout le monde."
+        },
+        "incensed": {
+            definition: "incensed : extrêmement angry.",
+            example: "Une incensed taille a surpris tout le monde."
+        },
+        "inconsolable": {
+            definition: "inconsolable : extrêmement triste.",
+            example: "Une inconsolable taille a surpris tout le monde."
+        },
+        "incontestable": {
+            definition: "incontestable : extrêmement transparent.",
+            example: "Une incontestable taille a surpris tout le monde."
+        },
+        "indagador": {
+            definition: "indagador : extrêmement curioso.",
+            example: "Une indagador taille a surpris tout le monde."
+        },
+        "indigent": {
+            definition: "indigent : extrêmement poor.",
+            example: "Une indigent taille a surpris tout le monde."
+        },
+        "indignado": {
+            definition: "indignado : extrêmement enfadado.",
+            example: "Une indignado taille a surpris tout le monde."
+        },
+        "indomable": {
+            definition: "indomable : extrêmement fuerte.",
+            example: "Une indomable taille a surpris tout le monde."
+        },
+        "indomitable": {
+            definition: "indomitable : extrêmement fort.",
+            example: "Une indomitable taille a surpris tout le monde."
+        },
+        "indomptable": {
+            definition: "indomptable : extrêmement fort.",
+            example: "Une indomptable taille a surpris tout le monde."
+        },
+        "inexpensive": {
+            definition: "inexpensive : plutôt cheap.",
+            example: "Un changement inexpensive a rendu le projet plus simple."
+        },
+        "infame": {
+            definition: "infame : extrêmement malo.",
+            example: "Une infame taille a surpris tout le monde."
+        },
+        "infect": {
+            definition: "infect : extrêmement mauvais.",
+            example: "Une infect taille a surpris tout le monde."
+        },
+        "infeliz": {
+            definition: "infeliz : plutôt triste.",
+            example: "Un changement infeliz a rendu le projet plus simple."
+        },
+        "infinitesimal": {
+            definition: "infinitesimal : extrêmement petit.",
+            example: "Une infinitesimal taille a surpris tout le monde."
+        },
+        "infirm": {
+            definition: "infirm : extrêmement fragile.",
+            example: "Une infirm taille a surpris tout le monde."
+        },
+        "ingenioso": {
+            definition: "ingenioso : extrêmement inteligente.",
+            example: "Une ingenioso taille a surpris tout le monde."
+        },
+        "ingenious": {
+            definition: "ingenious : plutôt brilliant.",
+            example: "Un changement ingenious a rendu le projet plus simple."
+        },
+        "ingénieux": {
+            definition: "ingénieux : extrêmement intelligent.",
+            example: "Une ingénieux taille a surpris tout le monde."
+        },
+        "inmenso": {
+            definition: "inmenso : plutôt grande.",
+            example: "Un changement inmenso a rendu le projet plus simple."
+        },
+        "innovador": {
+            definition: "innovador : extrêmement nuevo.",
+            example: "Une innovador taille a surpris tout le monde."
+        },
+        "innovative": {
+            definition: "innovative : extrêmement nouveau.",
+            example: "Une innovative taille a surpris tout le monde."
+        },
+        "inquiquinant": {
+            definition: "inquiquinant : plutôt curieux.",
+            example: "Un changement inquiquinant a rendu le projet plus simple."
+        },
+        "inquiring": {
+            definition: "inquiring : l'action de curious.",
+            example: "Inquiring du document a pris plus de temps que prévu."
+        },
+        "inquisitive": {
+            definition: "inquisitive : plutôt curious.",
+            example: "Un changement inquisitive a rendu le projet plus simple."
+        },
+        "inquisitivo": {
+            definition: "inquisitivo : plutôt curioso.",
+            example: "Un changement inquisitivo a rendu le projet plus simple."
+        },
+        "insidious": {
+            definition: "insidious : extrêmement dangereux.",
+            example: "Une insidious taille a surpris tout le monde."
+        },
+        "interesado": {
+            definition: "interesado : plutôt curioso.",
+            example: "Un changement interesado a rendu le projet plus simple."
+        },
+        "interested": {
+            definition: "interested : plutôt curious.",
+            example: "Un changement interested a rendu le projet plus simple."
+        },
+        "interrogatif": {
+            definition: "interrogatif : extrêmement curieux.",
+            example: "Une interrogatif taille a surpris tout le monde."
+        },
+        "intrepid": {
+            definition: "intrepid : extrêmement brave.",
+            example: "Une intrepid taille a surpris tout le monde."
+        },
+        "intrepido": {
+            definition: "intrepido : extrêmement valiente.",
+            example: "Une intrepido taille a surpris tout le monde."
+        },
+        "intrigante": {
+            definition: "intrigante : plutôt interesante.",
+            example: "Un changement intrigante a rendu le projet plus simple."
+        },
+        "intriguing": {
+            definition: "intriguing : l'action de intéressant.",
+            example: "Intriguing du document a pris plus de temps que prévu."
+        },
+        "intrincado": {
+            definition: "intrincado : extrêmement difícil.",
+            example: "Une intrincado taille a surpris tout le monde."
+        },
+        "intrépido": {
+            definition: "intrépido : plutôt valiente.",
+            example: "Un changement intrépido a rendu le projet plus simple."
+        },
+        "intéressé": {
+            definition: "intéressé : plutôt curieux.",
+            example: "Un changement intéressé a rendu le projet plus simple."
+        },
+        "invernal": {
+            definition: "invernal : extrêmement frío.",
+            example: "Une invernal taille a surpris tout le monde."
+        },
+        "inédito": {
+            definition: "inédito : extrêmement nuevo.",
+            example: "Une inédito taille a surpris tout le monde."
+        },
+        "iracundo": {
+            definition: "iracundo : extrêmement enfadado.",
+            example: "Une iracundo taille a surpris tout le monde."
+        },
+        "irascible": {
+            definition: "irascible : extrêmement angry.",
+            example: "Une irascible taille a surpris tout le monde."
+        },
+        "irate": {
+            definition: "irate : extrêmement angry.",
+            example: "Une irate taille a surpris tout le monde."
+        },
+        "irritado": {
+            definition: "irritado : plutôt enfadado.",
+            example: "Un changement irritado a rendu le projet plus simple."
+        },
+        "irritated": {
+            definition: "irritated : plutôt angry.",
+            example: "Un changement irritated a rendu le projet plus simple."
+        },
+        "irrité": {
+            definition: "irrité : plutôt fâché.",
+            example: "Un changement irrité a rendu le projet plus simple."
+        },
+        "joyful": {
+            definition: "joyful : plutôt heureux.",
+            example: "Un changement joyful a rendu le projet plus simple."
+        },
+        "jubilant": {
+            definition: "jubilant : extrêmement heureux.",
+            example: "Une jubilant taille a surpris tout le monde."
+        },
+        "jubiloso": {
+            definition: "jubiloso : extrêmement feliz.",
+            example: "Une jubiloso taille a surpris tout le monde."
+        },
+        "kind": {
+            definition: "kind : plutôt friendly.",
+            example: "Un changement kind a rendu le projet plus simple."
+        },
+        "laborioso": {
+            definition: "laborioso : extrêmement difícil.",
+            example: "Une laborioso taille a surpris tout le monde."
+        },
+        "laborious": {
+            definition: "laborious : extrêmement difficile.",
+            example: "Une laborious taille a surpris tout le monde."
+        },
+        "laconic": {
+            definition: "laconic : extrêmement silent.",
+            example: "Une laconic taille a surpris tout le monde."
+        },
+        "lamentable": {
+            definition: "lamentable : extrêmement mauvais.",
+            example: "Une lamentable taille a surpris tout le monde."
+        },
+        "lank": {
+            definition: "lank : extrêmement thin.",
+            example: "Une lank taille a surpris tout le monde."
+        },
+        "latest": {
+            definition: "latest : plutôt nouveau.",
+            example: "Un changement latest a rendu le projet plus simple."
+        },
+        "lean": {
+            definition: "lean : plutôt thin.",
+            example: "Un changement lean a rendu le projet plus simple."
+        },
+        "leste": {
+            definition: "leste : extrêmement rapide.",
+            example: "Une leste taille a surpris tout le monde."
+        },
+        "ligero": {
+            definition: "ligero : plutôt rápido.",
+            example: "Un changement ligero a rendu le projet plus simple."
+        },
+        "lighten": {
+            definition: "lighten : plutôt brighten.",
+            example: "Un changement lighten a rendu le projet plus simple."
+        },
+        "liliputiense": {
+            definition: "liliputiense : extrêmement pequeño.",
+            example: "Une liliputiense taille a surpris tout le monde."
+        },
+        "lilliputian": {
+            definition: "lilliputian : extrêmement petit.",
+            example: "Une lilliputian taille a surpris tout le monde."
+        },
+        "lilliputien": {
+            definition: "lilliputien : extrêmement petit.",
+            example: "Une lilliputien taille a surpris tout le monde."
+        },
+        "limpid": {
+            definition: "limpid : extrêmement transparent.",
+            example: "Une limpid taille a surpris tout le monde."
+        },
+        "limpio": {
+            definition: "limpio : extrêmement transparente.",
+            example: "Une limpio taille a surpris tout le monde."
+        },
+        "lindo": {
+            definition: "lindo : plutôt hermoso.",
+            example: "Un changement lindo a rendu le projet plus simple."
+        },
+        "listo": {
+            definition: "listo : plutôt inteligente.",
+            example: "Un changement listo a rendu le projet plus simple."
+        },
+        "little": {
+            definition: "little : plutôt petit.",
+            example: "Un changement little a rendu le projet plus simple."
+        },
+        "livid": {
+            definition: "livid : extrêmement angry.",
+            example: "Une livid taille a surpris tout le monde."
+        },
+        "llevadero": {
+            definition: "llevadero : extrêmement fácil.",
+            example: "Une llevadero taille a surpris tout le monde."
+        },
+        "loaded": {
+            definition: "loaded : plutôt rich.",
+            example: "Un changement loaded a rendu le projet plus simple."
+        },
+        "lovely": {
+            definition: "lovely : plutôt beautiful.",
+            example: "Un changement lovely a rendu le projet plus simple."
+        },
+        "low-cost": {
+            definition: "low-cost : plutôt cheap.",
+            example: "Un changement low-cost a rendu le projet plus simple."
+        },
+        "lucent": {
+            definition: "lucent : extrêmement bright.",
+            example: "Une lucent taille a surpris tout le monde."
+        },
+        "lucid": {
+            definition: "lucid : plutôt clear.",
+            example: "Un changement lucid a rendu le projet plus simple."
+        },
+        "lugubre": {
+            definition: "lugubre : extrêmement effrayant.",
+            example: "Une lugubre taille a surpris tout le monde."
+        },
+        "lugubriousness": {
+            definition: "lugubriousness : extrêmement sadness.",
+            example: "Une lugubriousness taille a surpris tout le monde."
+        },
+        "luminous": {
+            definition: "luminous : plutôt bright.",
+            example: "Un changement luminous a rendu le projet plus simple."
+        },
+        "lúcido": {
+            definition: "lúcido : plutôt transparente.",
+            example: "Un changement lúcido a rendu le projet plus simple."
+        },
+        "macabre": {
+            definition: "macabre : extrêmement scary.",
+            example: "Une macabre taille a surpris tout le monde."
+        },
+        "macabro": {
+            definition: "macabro : extrêmement aterrador.",
+            example: "Une macabro taille a surpris tout le monde."
+        },
+        "mad": {
+            definition: "mad : plutôt angry.",
+            example: "Un changement mad a rendu le projet plus simple."
+        },
+        "magnanime": {
+            definition: "magnanime : extrêmement courageux.",
+            example: "Une magnanime taille a surpris tout le monde."
+        },
+        "magnánimo": {
+            definition: "magnánimo : extrêmement valiente.",
+            example: "Une magnánimo taille a surpris tout le monde."
+        },
+        "majeur": {
+            definition: "majeur : plutôt important.",
+            example: "Un changement majeur a rendu le projet plus simple."
+        },
+        "major": {
+            definition: "major : plutôt important.",
+            example: "Un changement major a rendu le projet plus simple."
+        },
+        "malaisé": {
+            definition: "malaisé : extrêmement difficile.",
+            example: "Une malaisé taille a surpris tout le monde."
+        },
+        "malheureux": {
+            definition: "malheureux : plutôt triste.",
+            example: "Un changement malheureux a rendu le projet plus simple."
+        },
+        "malin": {
+            definition: "malin : plutôt intelligent.",
+            example: "Un changement malin a rendu le projet plus simple."
+        },
+        "mammoth": {
+            definition: "mammoth : extrêmement grand.",
+            example: "Une mammoth taille a surpris tout le monde."
+        },
+        "manifest": {
+            definition: "manifest : extrêmement clear.",
+            example: "Une manifest taille a surpris tout le monde."
+        },
+        "manifiesto": {
+            definition: "manifiesto : plutôt transparente.",
+            example: "Un changement manifiesto a rendu le projet plus simple."
+        },
+        "maravilloso": {
+            definition: "maravilloso : plutôt bueno.",
+            example: "Un changement maravilloso a rendu le projet plus simple."
+        },
+        "masivo": {
+            definition: "masivo : plutôt grande.",
+            example: "Un changement masivo a rendu le projet plus simple."
+        },
+        "massif": {
+            definition: "massif : plutôt grand.",
+            example: "Un changement massif a rendu le projet plus simple."
+        },
+        "meager": {
+            definition: "meager : extrêmement thin.",
+            example: "Une meager taille a surpris tout le monde."
+        },
+        "medular": {
+            definition: "medular : extrêmement importante.",
+            example: "Une medular taille a surpris tout le monde."
+        },
+        "meek": {
+            definition: "meek : plutôt timid.",
+            example: "Un changement meek a rendu le projet plus simple."
+        },
+        "melancholy": {
+            definition: "melancholy : extrêmement triste.",
+            example: "Une melancholy taille a surpris tout le monde."
+        },
+        "melancólico": {
+            definition: "melancólico : plutôt triste.",
+            example: "Un changement melancólico a rendu le projet plus simple."
+        },
+        "menacing": {
+            definition: "menacing : l'action de dangereux.",
+            example: "Menacing du document a pris plus de temps que prévu."
+        },
+        "menu": {
+            definition: "menu : plutôt petit.",
+            example: "Un changement menu a rendu le projet plus simple."
+        },
+        "menudo": {
+            definition: "menudo : extrêmement pequeño.",
+            example: "Une menudo taille a surpris tout le monde."
+        },
+        "mercurial": {
+            definition: "mercurial : extrêmement fast.",
+            example: "Une mercurial taille a surpris tout le monde."
+        },
+        "merry": {
+            definition: "merry : plutôt joyful.",
+            example: "Un changement merry a rendu le projet plus simple."
+        },
+        "mesmerizing": {
+            definition: "mesmerizing : l'action de intéressant.",
+            example: "Mesmerizing du document a pris plus de temps que prévu."
+        },
+        "meteoric": {
+            definition: "meteoric : extrêmement rapide.",
+            example: "Une meteoric taille a surpris tout le monde."
+        },
+        "microscopic": {
+            definition: "microscopic : extrêmement petit.",
+            example: "Une microscopic taille a surpris tout le monde."
+        },
+        "microscopique": {
+            definition: "microscopique : extrêmement petit.",
+            example: "Une microscopique taille a surpris tout le monde."
+        },
+        "microscópico": {
+            definition: "microscópico : extrêmement pequeño.",
+            example: "Une microscópico taille a surpris tout le monde."
+        },
+        "mighty": {
+            definition: "mighty : plutôt fort.",
+            example: "Un changement mighty a rendu le projet plus simple."
+        },
+        "mignon": {
+            definition: "mignon : plutôt petit.",
+            example: "Un changement mignon a rendu le projet plus simple."
+        },
+        "mini": {
+            definition: "mini : plutôt petit.",
+            example: "Un changement mini a rendu le projet plus simple."
+        },
+        "minúsculo": {
+            definition: "minúsculo : plutôt pequeño.",
+            example: "Un changement minúsculo a rendu le projet plus simple."
+        },
+        "modern": {
+            definition: "modern : plutôt nouveau.",
+            example: "Un changement modern a rendu le projet plus simple."
+        },
+        "moderne": {
+            definition: "moderne : plutôt nouveau.",
+            example: "Un changement moderne a rendu le projet plus simple."
+        },
+        "moderno": {
+            definition: "moderno : plutôt nuevo.",
+            example: "Un changement moderno a rendu le projet plus simple."
+        },
+        "molesto": {
+            definition: "molesto : plutôt enfadado.",
+            example: "Un changement molesto a rendu le projet plus simple."
+        },
+        "mollifying": {
+            definition: "mollifying : l'action de helpful.",
+            example: "Mollifying du document a pris plus de temps que prévu."
+        },
+        "momentous": {
+            definition: "momentous : extrêmement important.",
+            example: "Une momentous taille a surpris tout le monde."
+        },
+        "moneyed": {
+            definition: "moneyed : extrêmement rich.",
+            example: "Une moneyed taille a surpris tout le monde."
+        },
+        "monumental": {
+            definition: "monumental : extrêmement grand.",
+            example: "Une monumental taille a surpris tout le monde."
+        },
+        "morose": {
+            definition: "morose : extrêmement triste.",
+            example: "Une morose taille a surpris tout le monde."
+        },
+        "mute": {
+            definition: "mute : extrêmement quiet.",
+            example: "Une mute taille a surpris tout le monde."
+        },
+        "médiocre": {
+            definition: "médiocre : plutôt mauvais.",
+            example: "Un changement médiocre a rendu le projet plus simple."
+        },
+        "naciente": {
+            definition: "naciente : extrêmement nuevo.",
+            example: "Une naciente taille a surpris tout le monde."
+        },
+        "naissant": {
+            definition: "naissant : extrêmement nouveau.",
+            example: "Une naissant taille a surpris tout le monde."
+        },
+        "narrow": {
+            definition: "narrow : plutôt thin.",
+            example: "Un changement narrow a rendu le projet plus simple."
+        },
+        "nascent": {
+            definition: "nascent : extrêmement nouveau.",
+            example: "Une nascent taille a surpris tout le monde."
+        },
+        "necessitous": {
+            definition: "necessitous : extrêmement poor.",
+            example: "Une necessitous taille a surpris tout le monde."
+        },
+        "needy": {
+            definition: "needy : plutôt poor.",
+            example: "Un changement needy a rendu le projet plus simple."
+        },
+        "nefasto": {
+            definition: "nefasto : extrêmement malo.",
+            example: "Une nefasto taille a surpris tout le monde."
+        },
+        "neuf": {
+            definition: "neuf : plutôt nouveau.",
+            example: "Un changement neuf a rendu le projet plus simple."
+        },
+        "newfangled": {
+            definition: "newfangled : extrêmement nouveau.",
+            example: "Une newfangled taille a surpris tout le monde."
+        },
+        "nice": {
+            definition: "nice : plutôt bon.",
+            example: "Un changement nice a rendu le projet plus simple."
+        },
+        "nimble": {
+            definition: "nimble : extrêmement rapide.",
+            example: "Une nimble taille a surpris tout le monde."
+        },
+        "nippy": {
+            definition: "nippy : extrêmement froid.",
+            example: "Une nippy taille a surpris tout le monde."
+        },
+        "noisy": {
+            definition: "noisy : plutôt loud.",
+            example: "Un changement noisy a rendu le projet plus simple."
+        },
+        "nosy": {
+            definition: "nosy : plutôt curious.",
+            example: "Un changement nosy a rendu le projet plus simple."
+        },
+        "novel": {
+            definition: "novel : extrêmement nouveau.",
+            example: "Une novel taille a surpris tout le monde."
+        },
+        "numinous": {
+            definition: "numinous : extrêmement brilliant.",
+            example: "Une numinous taille a surpris tout le monde."
+        },
+        "obvious": {
+            definition: "obvious : plutôt clear.",
+            example: "Un changement obvious a rendu le projet plus simple."
+        },
+        "old": {
+            definition: "old : plutôt ancient.",
+            example: "Un changement old a rendu le projet plus simple."
+        },
+        "ominous": {
+            definition: "ominous : extrêmement dangereux.",
+            example: "Une ominous taille a surpris tout le monde."
+        },
+        "onerous": {
+            definition: "onerous : extrêmement difficile.",
+            example: "Une onerous taille a surpris tout le monde."
+        },
+        "open": {
+            definition: "open : plutôt honest.",
+            example: "Un changement open a rendu le projet plus simple."
+        },
+        "optimal": {
+            definition: "optimal : plutôt efficace.",
+            example: "Un changement optimal a rendu le projet plus simple."
+        },
+        "optimizado": {
+            definition: "optimizado : plutôt eficiente.",
+            example: "Un changement optimizado a rendu le projet plus simple."
+        },
+        "opulent": {
+            definition: "opulent : extrêmement rich.",
+            example: "Une opulent taille a surpris tout le monde."
+        },
+        "outré": {
+            definition: "outré : extrêmement fâché.",
+            example: "Une outré taille a surpris tout le monde."
+        },
+        "painless": {
+            definition: "painless : extrêmement facile.",
+            example: "Une painless taille a surpris tout le monde."
+        },
+        "palpitant": {
+            definition: "palpitant : extrêmement intéressant.",
+            example: "Une palpitant taille a surpris tout le monde."
+        },
+        "paltry": {
+            definition: "paltry : extrêmement cheap.",
+            example: "Une paltry taille a surpris tout le monde."
+        },
+        "pan comido": {
+            definition: "pan comido : extrêmement fácil.",
+            example: "Une pan comido taille a surpris tout le monde."
+        },
+        "paramount": {
+            definition: "paramount : extrêmement important.",
+            example: "Une paramount taille a surpris tout le monde."
+        },
+        "parcimonieux": {
+            definition: "parcimonieux : extrêmement efficace.",
+            example: "Une parcimonieux taille a surpris tout le monde."
+        },
+        "parco": {
+            definition: "parco : extrêmement eficiente.",
+            example: "Une parco taille a surpris tout le monde."
+        },
+        "parsimonious": {
+            definition: "parsimonious : extrêmement cheap.",
+            example: "Une parsimonious taille a surpris tout le monde."
+        },
+        "passionnant": {
+            definition: "passionnant : plutôt intéressant.",
+            example: "Un changement passionnant a rendu le projet plus simple."
+        },
+        "pavoroso": {
+            definition: "pavoroso : plutôt aterrador.",
+            example: "Un changement pavoroso a rendu le projet plus simple."
+        },
+        "peaceful": {
+            definition: "peaceful : plutôt quiet.",
+            example: "Un changement peaceful a rendu le projet plus simple."
+        },
+        "pecunious": {
+            definition: "pecunious : extrêmement rich.",
+            example: "Une pecunious taille a surpris tout le monde."
+        },
+        "peliagudo": {
+            definition: "peliagudo : extrêmement difícil.",
+            example: "Une peliagudo taille a surpris tout le monde."
+        },
+        "pellucid": {
+            definition: "pellucid : extrêmement clear.",
+            example: "Une pellucid taille a surpris tout le monde."
+        },
+        "pellucide": {
+            definition: "pellucide : extrêmement transparent.",
+            example: "Une pellucide taille a surpris tout le monde."
+        },
+        "pellucido": {
+            definition: "pellucido : extrêmement transparente.",
+            example: "Une pellucido taille a surpris tout le monde."
+        },
+        "penniless": {
+            definition: "penniless : plutôt poor.",
+            example: "Un changement penniless a rendu le projet plus simple."
+        },
+        "penurious": {
+            definition: "penurious : extrêmement poor.",
+            example: "Une penurious taille a surpris tout le monde."
+        },
+        "perecedero": {
+            definition: "perecedero : extrêmement frágil.",
+            example: "Une perecedero taille a surpris tout le monde."
+        },
+        "perfidious": {
+            definition: "perfidious : extrêmement dangereux.",
+            example: "Une perfidious taille a surpris tout le monde."
+        },
+        "performant": {
+            definition: "performant : plutôt efficace.",
+            example: "Un changement performant a rendu le projet plus simple."
+        },
+        "perilous": {
+            definition: "perilous : plutôt dangereux.",
+            example: "Un changement perilous a rendu le projet plus simple."
+        },
+        "perishable": {
+            definition: "perishable : extrêmement fragile.",
+            example: "Une perishable taille a surpris tout le monde."
+        },
+        "perk": {
+            definition: "perk : plutôt brighten.",
+            example: "Un changement perk a rendu le projet plus simple."
+        },
+        "perspicacious": {
+            definition: "perspicacious : extrêmement smart.",
+            example: "Une perspicacious taille a surpris tout le monde."
+        },
+        "perspicaz": {
+            definition: "perspicaz : plutôt inteligente.",
+            example: "Un changement perspicaz a rendu le projet plus simple."
+        },
+        "perspicuo": {
+            definition: "perspicuo : extrêmement transparente.",
+            example: "Une perspicuo taille a surpris tout le monde."
+        },
+        "perspicuous": {
+            definition: "perspicuous : extrêmement clear.",
+            example: "Une perspicuous taille a surpris tout le monde."
+        },
+        "petite": {
+            definition: "petite : plutôt petit.",
+            example: "Un changement petite a rendu le projet plus simple."
+        },
+        "pivotal": {
+            definition: "pivotal : extrêmement important.",
+            example: "Une pivotal taille a surpris tout le monde."
+        },
+        "placid": {
+            definition: "placid : extrêmement quiet.",
+            example: "Une placid taille a surpris tout le monde."
+        },
+        "plain": {
+            definition: "plain : plutôt clear.",
+            example: "Un changement plain a rendu le projet plus simple."
+        },
+        "pleasant": {
+            definition: "pleasant : plutôt friendly.",
+            example: "Un changement pleasant a rendu le projet plus simple."
+        },
+        "pleased": {
+            definition: "pleased : plutôt heureux.",
+            example: "Un changement pleased a rendu le projet plus simple."
+        },
+        "plutocratic": {
+            definition: "plutocratic : extrêmement rich.",
+            example: "Une plutocratic taille a surpris tout le monde."
+        },
+        "poderoso": {
+            definition: "poderoso : plutôt fuerte.",
+            example: "Un changement poderoso a rendu le projet plus simple."
+        },
+        "polaire": {
+            definition: "polaire : extrêmement froid.",
+            example: "Une polaire taille a surpris tout le monde."
+        },
+        "polar": {
+            definition: "polar : extrêmement frío.",
+            example: "Une polar taille a surpris tout le monde."
+        },
+        "polluted": {
+            definition: "polluted : extrêmement dirty.",
+            example: "Une polluted taille a surpris tout le monde."
+        },
+        "poor": {
+            definition: "poor : plutôt mauvais.",
+            example: "Un changement poor a rendu le projet plus simple."
+        },
+        "potent": {
+            definition: "potent : extrêmement fort.",
+            example: "Une potent taille a surpris tout le monde."
+        },
+        "potente": {
+            definition: "potente : plutôt fuerte.",
+            example: "Un changement potente a rendu le projet plus simple."
+        },
+        "powerful": {
+            definition: "powerful : plutôt fort.",
+            example: "Un changement powerful a rendu le projet plus simple."
+        },
+        "precario": {
+            definition: "precario : extrêmement frágil.",
+            example: "Une precario taille a surpris tout le monde."
+        },
+        "precarious": {
+            definition: "precarious : extrêmement dangereux.",
+            example: "Une precarious taille a surpris tout le monde."
+        },
+        "precioso": {
+            definition: "precioso : plutôt hermoso.",
+            example: "Un changement precioso a rendu le projet plus simple."
+        },
+        "precipitate": {
+            definition: "precipitate : extrêmement fast.",
+            example: "Une precipitate taille a surpris tout le monde."
+        },
+        "precipitous": {
+            definition: "precipitous : extrêmement rapide.",
+            example: "Une precipitous taille a surpris tout le monde."
+        },
+        "preguntón": {
+            definition: "preguntón : plutôt curioso.",
+            example: "Un changement preguntón a rendu le projet plus simple."
+        },
+        "pressé": {
+            definition: "pressé : plutôt rapide.",
+            example: "Un changement pressé a rendu le projet plus simple."
+        },
+        "preste": {
+            definition: "preste : extrêmement rapide.",
+            example: "Une preste taille a surpris tout le monde."
+        },
+        "presuroso": {
+            definition: "presuroso : extrêmement rápido.",
+            example: "Une presuroso taille a surpris tout le monde."
+        },
+        "pretty": {
+            definition: "pretty : plutôt beautiful.",
+            example: "Un changement pretty a rendu le projet plus simple."
+        },
+        "primordial": {
+            definition: "primordial : extrêmement vieux.",
+            example: "Une primordial taille a surpris tout le monde."
+        },
+        "probant": {
+            definition: "probant : extrêmement efficace.",
+            example: "Une probant taille a surpris tout le monde."
+        },
+        "probity": {
+            definition: "probity : extrêmement honest.",
+            example: "Une probity taille a surpris tout le monde."
+        },
+        "problemático": {
+            definition: "problemático : plutôt difícil.",
+            example: "Un changement problemático a rendu le projet plus simple."
+        },
+        "probo": {
+            definition: "probo : extrêmement eficiente.",
+            example: "Une probo taille a surpris tout le monde."
+        },
+        "productif": {
+            definition: "productif : plutôt efficace.",
+            example: "Un changement productif a rendu le projet plus simple."
+        },
+        "productive": {
+            definition: "productive : plutôt efficient.",
+            example: "Un changement productive a rendu le projet plus simple."
+        },
+        "productivo": {
+            definition: "productivo : plutôt eficiente.",
+            example: "Un changement productivo a rendu le projet plus simple."
+        },
+        "prompt": {
+            definition: "prompt : plutôt rapide.",
+            example: "Un changement prompt a rendu le projet plus simple."
+        },
+        "pronto": {
+            definition: "pronto : plutôt rápido.",
+            example: "Un changement pronto a rendu le projet plus simple."
+        },
+        "propitious": {
+            definition: "propitious : extrêmement helpful.",
+            example: "Une propitious taille a surpris tout le monde."
+        },
+        "prosperous": {
+            definition: "prosperous : plutôt rich.",
+            example: "Un changement prosperous a rendu le projet plus simple."
+        },
+        "prying": {
+            definition: "prying : l'action de curious.",
+            example: "Prying du document a pris plus de temps que prévu."
+        },
+        "précaire": {
+            definition: "précaire : extrêmement fragile.",
+            example: "Une précaire taille a surpris tout le monde."
+        },
+        "puissant": {
+            definition: "puissant : plutôt fort.",
+            example: "Un changement puissant a rendu le projet plus simple."
+        },
+        "pulchritudinous": {
+            definition: "pulchritudinous : extrêmement beautiful.",
+            example: "Une pulchritudinous taille a surpris tout le monde."
+        },
+        "pusillanimous": {
+            definition: "pusillanimous : extrêmement timid.",
+            example: "Une pusillanimous taille a surpris tout le monde."
+        },
+        "périssable": {
+            definition: "périssable : extrêmement fragile.",
+            example: "Une périssable taille a surpris tout le monde."
+        },
+        "pésimo": {
+            definition: "pésimo : plutôt malo.",
+            example: "Un changement pésimo a rendu le projet plus simple."
+        },
+        "quebradizo": {
+            definition: "quebradizo : plutôt frágil.",
+            example: "Un changement quebradizo a rendu le projet plus simple."
+        },
+        "quebrantable": {
+            definition: "quebrantable : plutôt frágil.",
+            example: "Un changement quebrantable a rendu le projet plus simple."
+        },
+        "quebrantado": {
+            definition: "quebrantado : extrêmement frágil.",
+            example: "Une quebrantado taille a surpris tout le monde."
+        },
+        "querulous": {
+            definition: "querulous : extrêmement curious.",
+            example: "Une querulous taille a surpris tout le monde."
+        },
+        "questioning": {
+            definition: "questioning : l'action de curious.",
+            example: "Questioning du document a pris plus de temps que prévu."
+        },
+        "questionneur": {
+            definition: "questionneur : plutôt curieux.",
+            example: "Un changement questionneur a rendu le projet plus simple."
+        },
+        "quick": {
+            definition: "quick : plutôt smart.",
+            example: "Un changement quick a rendu le projet plus simple."
+        },
+        "quiet": {
+            definition: "quiet : plutôt silent.",
+            example: "Un changement quiet a rendu le projet plus simple."
+        },
+        "quémandeur": {
+            definition: "quémandeur : extrêmement curieux.",
+            example: "Une quémandeur taille a surpris tout le monde."
+        },
+        "radiant": {
+            definition: "radiant : plutôt bright.",
+            example: "Un changement radiant a rendu le projet plus simple."
+        },
+        "radiante": {
+            definition: "radiante : extrêmement feliz.",
+            example: "Une radiante taille a surpris tout le monde."
+        },
+        "rapid": {
+            definition: "rapid : plutôt fast.",
+            example: "Un changement rapid a rendu le projet plus simple."
+        },
+        "ratiocinant": {
+            definition: "ratiocinant : extrêmement curieux.",
+            example: "Une ratiocinant taille a surpris tout le monde."
+        },
+        "ratiocinative": {
+            definition: "ratiocinative : extrêmement curious.",
+            example: "Une ratiocinative taille a surpris tout le monde."
+        },
+        "rationnel": {
+            definition: "rationnel : plutôt efficace.",
+            example: "Un changement rationnel a rendu le projet plus simple."
+        },
+        "raucous": {
+            definition: "raucous : extrêmement loud.",
+            example: "Une raucous taille a surpris tout le monde."
+        },
+        "raudo": {
+            definition: "raudo : extrêmement rápido.",
+            example: "Une raudo taille a surpris tout le monde."
+        },
+        "ravishing": {
+            definition: "ravishing : l'action de beautiful.",
+            example: "Ravishing du document a pris plus de temps que prévu."
+        },
+        "ravissant": {
+            definition: "ravissant : extrêmement beau.",
+            example: "Une ravissant taille a surpris tout le monde."
+        },
+        "razonador": {
+            definition: "razonador : extrêmement curioso.",
+            example: "Une razonador taille a surpris tout le monde."
+        },
+        "recent": {
+            definition: "recent : plutôt nouveau.",
+            example: "Un changement recent a rendu le projet plus simple."
+        },
+        "reciente": {
+            definition: "reciente : plutôt nuevo.",
+            example: "Un changement reciente a rendu le projet plus simple."
+        },
+        "recio": {
+            definition: "recio : extrêmement fuerte.",
+            example: "Une recio taille a surpris tout le monde."
+        },
+        "redoubtable": {
+            definition: "redoubtable : extrêmement fort.",
+            example: "Une redoubtable taille a surpris tout le monde."
+        },
+        "reducido": {
+            definition: "reducido : plutôt pequeño.",
+            example: "Un changement reducido a rendu le projet plus simple."
+        },
+        "refulgent": {
+            definition: "refulgent : extrêmement bright.",
+            example: "Une refulgent taille a surpris tout le monde."
+        },
+        "reserved": {
+            definition: "reserved : plutôt timid.",
+            example: "Un changement reserved a rendu le projet plus simple."
+        },
+        "resistente": {
+            definition: "resistente : plutôt fuerte.",
+            example: "Un changement resistente a rendu le projet plus simple."
+        },
+        "resplendent": {
+            definition: "resplendent : extrêmement beautiful.",
+            example: "Une resplendent taille a surpris tout le monde."
+        },
+        "resplendissant": {
+            definition: "resplendissant : extrêmement beau.",
+            example: "Une resplendissant taille a surpris tout le monde."
+        },
+        "reticent": {
+            definition: "reticent : plutôt timid.",
+            example: "Un changement reticent a rendu le projet plus simple."
+        },
+        "risible": {
+            definition: "risible : extrêmement drôle.",
+            example: "Une risible taille a surpris tout le monde."
+        },
+        "risky": {
+            definition: "risky : plutôt dangereux.",
+            example: "Un changement risky a rendu le projet plus simple."
+        },
+        "riveting": {
+            definition: "riveting : l'action de intéressant.",
+            example: "Riveting du document a pris plus de temps que prévu."
+        },
+        "robust": {
+            definition: "robust : plutôt fort.",
+            example: "Un changement robust a rendu le projet plus simple."
+        },
+        "robuste": {
+            definition: "robuste : plutôt fort.",
+            example: "Un changement robuste a rendu le projet plus simple."
+        },
+        "robusto": {
+            definition: "robusto : plutôt fuerte.",
+            example: "Un changement robusto a rendu le projet plus simple."
+        },
+        "rudimentaire": {
+            definition: "rudimentaire : extrêmement facile.",
+            example: "Une rudimentaire taille a surpris tout le monde."
+        },
+        "rébarbatif": {
+            definition: "rébarbatif : extrêmement difficile.",
+            example: "Une rébarbatif taille a surpris tout le monde."
+        },
+        "récent": {
+            definition: "récent : plutôt nouveau.",
+            example: "Un changement récent a rendu le projet plus simple."
+        },
+        "réduit": {
+            definition: "réduit : plutôt petit.",
+            example: "Un changement réduit a rendu le projet plus simple."
+        },
+        "révolutionnaire": {
+            definition: "révolutionnaire : extrêmement nouveau.",
+            example: "Une révolutionnaire taille a surpris tout le monde."
+        },
+        "sagace": {
+            definition: "sagace : extrêmement intelligent.",
+            example: "Une sagace taille a surpris tout le monde."
+        },
+        "sagacious": {
+            definition: "sagacious : extrêmement smart.",
+            example: "Une sagacious taille a surpris tout le monde."
+        },
+        "sagaz": {
+            definition: "sagaz : extrêmement inteligente.",
+            example: "Une sagaz taille a surpris tout le monde."
+        },
+        "saludable": {
+            definition: "saludable : extrêmement eficiente.",
+            example: "Une saludable taille a surpris tout le monde."
+        },
+        "salutary": {
+            definition: "salutary : extrêmement helpful.",
+            example: "Une salutary taille a surpris tout le monde."
+        },
+        "satisfait": {
+            definition: "satisfait : plutôt heureux.",
+            example: "Un changement satisfait a rendu le projet plus simple."
+        },
+        "satisfecho": {
+            definition: "satisfecho : plutôt feliz.",
+            example: "Un changement satisfecho a rendu le projet plus simple."
+        },
+        "savoureux": {
+            definition: "savoureux : extrêmement bon.",
+            example: "Une savoureux taille a surpris tout le monde."
+        },
+        "scabreux": {
+            definition: "scabreux : extrêmement difficile.",
+            example: "Une scabreux taille a surpris tout le monde."
+        },
+        "scorching": {
+            definition: "scorching : l'action de chaud.",
+            example: "Scorching du document a pris plus de temps que prévu."
+        },
+        "scrawny": {
+            definition: "scrawny : plutôt thin.",
+            example: "Un changement scrawny a rendu le projet plus simple."
+        },
+        "scrupulous": {
+            definition: "scrupulous : extrêmement honest.",
+            example: "Une scrupulous taille a surpris tout le monde."
+        },
+        "secular": {
+            definition: "secular : extrêmement viejo.",
+            example: "Une secular taille a surpris tout le monde."
+        },
+        "sedate": {
+            definition: "sedate : extrêmement calm.",
+            example: "Une sedate taille a surpris tout le monde."
+        },
+        "seething": {
+            definition: "seething : l'action de angry.",
+            example: "Seething du document a pris plus de temps que prévu."
+        },
+        "self-evident": {
+            definition: "self-evident : extrêmement clear.",
+            example: "Une self-evident taille a surpris tout le monde."
+        },
+        "sencillo": {
+            definition: "sencillo : plutôt fácil.",
+            example: "Un changement sencillo a rendu le projet plus simple."
+        },
+        "serene": {
+            definition: "serene : extrêmement quiet.",
+            example: "Une serene taille a surpris tout le monde."
+        },
+        "sharp": {
+            definition: "sharp : plutôt smart.",
+            example: "Un changement sharp a rendu le projet plus simple."
+        },
+        "shining": {
+            definition: "shining : l'action de bright.",
+            example: "Shining du document a pris plus de temps que prévu."
+        },
+        "shoddy": {
+            definition: "shoddy : extrêmement cheap.",
+            example: "Une shoddy taille a surpris tout le monde."
+        },
+        "shrewd": {
+            definition: "shrewd : extrêmement smart.",
+            example: "Une shrewd taille a surpris tout le monde."
+        },
+        "shy": {
+            definition: "shy : plutôt timid.",
+            example: "Un changement shy a rendu le projet plus simple."
+        },
+        "siberiano": {
+            definition: "siberiano : extrêmement frío.",
+            example: "Une siberiano taille a surpris tout le monde."
+        },
+        "sibérien": {
+            definition: "sibérien : extrêmement froid.",
+            example: "Une sibérien taille a surpris tout le monde."
+        },
+        "side-splitting": {
+            definition: "side-splitting : l'action de drôle.",
+            example: "Side-splitting du document a pris plus de temps que prévu."
+        },
+        "significant": {
+            definition: "significant : plutôt important.",
+            example: "Un changement significant a rendu le projet plus simple."
+        },
+        "significativo": {
+            definition: "significativo : plutôt importante.",
+            example: "Un changement significativo a rendu le projet plus simple."
+        },
+        "silent": {
+            definition: "silent : plutôt quiet.",
+            example: "Un changement silent a rendu le projet plus simple."
+        },
+        "simple": {
+            definition: "simple : plutôt facile.",
+            example: "Un changement simple a rendu le projet plus simple."
+        },
+        "sincere": {
+            definition: "sincere : plutôt honest.",
+            example: "Un changement sincere a rendu le projet plus simple."
+        },
+        "siniestro": {
+            definition: "siniestro : extrêmement aterrador.",
+            example: "Une siniestro taille a surpris tout le monde."
+        },
+        "sinistre": {
+            definition: "sinistre : extrêmement effrayant.",
+            example: "Une sinistre taille a surpris tout le monde."
+        },
+        "sizzling": {
+            definition: "sizzling : l'action de chaud.",
+            example: "Sizzling du document a pris plus de temps que prévu."
+        },
+        "slender": {
+            definition: "slender : plutôt thin.",
+            example: "Un changement slender a rendu le projet plus simple."
+        },
+        "slim": {
+            definition: "slim : plutôt thin.",
+            example: "Un changement slim a rendu le projet plus simple."
+        },
+        "smart": {
+            definition: "smart : plutôt brilliant.",
+            example: "Un changement smart a rendu le projet plus simple."
+        },
+        "sobresaliente": {
+            definition: "sobresaliente : extrêmement bueno.",
+            example: "Une sobresaliente taille a surpris tout le monde."
+        },
+        "sofocante": {
+            definition: "sofocante : plutôt caliente.",
+            example: "Un changement sofocante a rendu le projet plus simple."
+        },
+        "soft": {
+            definition: "soft : plutôt quiet.",
+            example: "Un changement soft a rendu le projet plus simple."
+        },
+        "soiled": {
+            definition: "soiled : plutôt dirty.",
+            example: "Un changement soiled a rendu le projet plus simple."
+        },
+        "sorrow": {
+            definition: "sorrow : plutôt sadness.",
+            example: "Un changement sorrow a rendu le projet plus simple."
+        },
+        "sorrowful": {
+            definition: "sorrowful : plutôt triste.",
+            example: "Un changement sorrowful a rendu le projet plus simple."
+        },
+        "spare": {
+            definition: "spare : extrêmement thin.",
+            example: "Une spare taille a surpris tout le monde."
+        },
+        "sparse": {
+            definition: "sparse : plutôt thin.",
+            example: "Un changement sparse a rendu le projet plus simple."
+        },
+        "speculative": {
+            definition: "speculative : extrêmement curious.",
+            example: "Une speculative taille a surpris tout le monde."
+        },
+        "speechless": {
+            definition: "speechless : plutôt silent.",
+            example: "Un changement speechless a rendu le projet plus simple."
+        },
+        "speedy": {
+            definition: "speedy : plutôt fast.",
+            example: "Un changement speedy a rendu le projet plus simple."
+        },
+        "spellbinding": {
+            definition: "spellbinding : l'action de intéressant.",
+            example: "Spellbinding du document a pris plus de temps que prévu."
+        },
+        "spindly": {
+            definition: "spindly : extrêmement thin.",
+            example: "Une spindly taille a surpris tout le monde."
+        },
+        "spine-chilling": {
+            definition: "spine-chilling : l'action de scary.",
+            example: "Spine-chilling du document a pris plus de temps que prévu."
+        },
+        "splendide": {
+            definition: "splendide : plutôt beau.",
+            example: "Un changement splendide a rendu le projet plus simple."
+        },
+        "splendiferous": {
+            definition: "splendiferous : extrêmement brilliant.",
+            example: "Une splendiferous taille a surpris tout le monde."
+        },
+        "spooky": {
+            definition: "spooky : plutôt scary.",
+            example: "Un changement spooky a rendu le projet plus simple."
+        },
+        "spéculatif": {
+            definition: "spéculatif : extrêmement curieux.",
+            example: "Une spéculatif taille a surpris tout le monde."
+        },
+        "stained": {
+            definition: "stained : plutôt dirty.",
+            example: "Un changement stained a rendu le projet plus simple."
+        },
+        "stalwart": {
+            definition: "stalwart : extrêmement fort.",
+            example: "Une stalwart taille a surpris tout le monde."
+        },
+        "stellar": {
+            definition: "stellar : extrêmement bon.",
+            example: "Une stellar taille a surpris tout le monde."
+        },
+        "stenotic": {
+            definition: "stenotic : extrêmement silent.",
+            example: "Une stenotic taille a surpris tout le monde."
+        },
+        "stentorian": {
+            definition: "stentorian : extrêmement loud.",
+            example: "Une stentorian taille a surpris tout le monde."
+        },
+        "still": {
+            definition: "still : plutôt quiet.",
+            example: "Un changement still a rendu le projet plus simple."
+        },
+        "straightforward": {
+            definition: "straightforward : plutôt facile.",
+            example: "Un changement straightforward a rendu le projet plus simple."
+        },
+        "straitened": {
+            definition: "straitened : extrêmement poor.",
+            example: "Une straitened taille a surpris tout le monde."
+        },
+        "streamlined": {
+            definition: "streamlined : plutôt efficient.",
+            example: "Un changement streamlined a rendu le projet plus simple."
+        },
+        "stunning": {
+            definition: "stunning : l'action de beautiful.",
+            example: "Stunning du document a pris plus de temps que prévu."
+        },
+        "sturdy": {
+            definition: "sturdy : plutôt fort.",
+            example: "Un changement sturdy a rendu le projet plus simple."
+        },
+        "subjuguant": {
+            definition: "subjuguant : extrêmement intéressant.",
+            example: "Une subjuguant taille a surpris tout le monde."
+        },
+        "sublime": {
+            definition: "sublime : extrêmement beautiful.",
+            example: "Une sublime taille a surpris tout le monde."
+        },
+        "subyugante": {
+            definition: "subyugante : extrêmement interesante.",
+            example: "Une subyugante taille a surpris tout le monde."
+        },
+        "succulent": {
+            definition: "succulent : extrêmement bon.",
+            example: "Une succulent taille a surpris tout le monde."
+        },
+        "suffocant": {
+            definition: "suffocant : extrêmement chaud.",
+            example: "Une suffocant taille a surpris tout le monde."
+        },
+        "sullied": {
+            definition: "sullied : extrêmement dirty.",
+            example: "Une sullied taille a surpris tout le monde."
+        },
+        "sultry": {
+            definition: "sultry : extrêmement chaud.",
+            example: "Une sultry taille a surpris tout le monde."
+        },
+        "sunlit": {
+            definition: "sunlit : extrêmement warm.",
+            example: "Une sunlit taille a surpris tout le monde."
+        },
+        "super": {
+            definition: "super : plutôt bon.",
+            example: "Un changement super a rendu le projet plus simple."
+        },
+        "superb": {
+            definition: "superb : extrêmement bon.",
+            example: "Une superb taille a surpris tout le monde."
+        },
+        "superbe": {
+            definition: "superbe : plutôt beau.",
+            example: "Un changement superbe a rendu le projet plus simple."
+        },
+        "superlative": {
+            definition: "superlative : extrêmement bon.",
+            example: "Une superlative taille a surpris tout le monde."
+        },
+        "supportive": {
+            definition: "supportive : plutôt helpful.",
+            example: "Un changement supportive a rendu le projet plus simple."
+        },
+        "svelte": {
+            definition: "svelte : extrêmement thin.",
+            example: "Une svelte taille a surpris tout le monde."
+        },
+        "sweltering": {
+            definition: "sweltering : l'action de chaud.",
+            example: "Sweltering du document a pris plus de temps que prévu."
+        },
+        "swift": {
+            definition: "swift : plutôt fast.",
+            example: "Un changement swift a rendu le projet plus simple."
+        },
+        "séduisant": {
+            definition: "séduisant : plutôt intéressant.",
+            example: "Un changement séduisant a rendu le projet plus simple."
+        },
+        "tacit": {
+            definition: "tacit : extrêmement quiet.",
+            example: "Une tacit taille a surpris tout le monde."
+        },
+        "taciturn": {
+            definition: "taciturn : extrêmement silent.",
+            example: "Une taciturn taille a surpris tout le monde."
+        },
+        "taciturno": {
+            definition: "taciturno : extrêmement triste.",
+            example: "Une taciturno taille a surpris tout le monde."
+        },
+        "temperate": {
+            definition: "temperate : extrêmement warm.",
+            example: "Une temperate taille a surpris tout le monde."
+        },
+        "tender": {
+            definition: "tender : extrêmement fragile.",
+            example: "Une tender taille a surpris tout le monde."
+        },
+        "tendre": {
+            definition: "tendre : extrêmement fragile.",
+            example: "Une tendre taille a surpris tout le monde."
+        },
+        "terrible": {
+            definition: "terrible : plutôt mauvais.",
+            example: "Un changement terrible a rendu le projet plus simple."
+        },
+        "terrifiant": {
+            definition: "terrifiant : plutôt effrayant.",
+            example: "Un changement terrifiant a rendu le projet plus simple."
+        },
+        "terrifying": {
+            definition: "terrifying : l'action de scary.",
+            example: "Terrifying du document a pris plus de temps que prévu."
+        },
+        "terrorífico": {
+            definition: "terrorífico : plutôt aterrador.",
+            example: "Un changement terrorífico a rendu le projet plus simple."
+        },
+        "threnody": {
+            definition: "threnody : extrêmement sadness.",
+            example: "Une threnody taille a surpris tout le monde."
+        },
+        "thundering": {
+            definition: "thundering : l'action de loud.",
+            example: "Thundering du document a pris plus de temps que prévu."
+        },
+        "tierno": {
+            definition: "tierno : extrêmement frágil.",
+            example: "Une tierno taille a surpris tout le monde."
+        },
+        "timeworn": {
+            definition: "timeworn : plutôt ancient.",
+            example: "Un changement timeworn a rendu le projet plus simple."
+        },
+        "timorous": {
+            definition: "timorous : extrêmement timid.",
+            example: "Une timorous taille a surpris tout le monde."
+        },
+        "tiny": {
+            definition: "tiny : plutôt petit.",
+            example: "Un changement tiny a rendu le projet plus simple."
+        },
+        "titanesque": {
+            definition: "titanesque : extrêmement grand.",
+            example: "Une titanesque taille a surpris tout le monde."
+        },
+        "titanic": {
+            definition: "titanic : extrêmement grand.",
+            example: "Une titanic taille a surpris tout le monde."
+        },
+        "titánico": {
+            definition: "titánico : extrêmement grande.",
+            example: "Une titánico taille a surpris tout le monde."
+        },
+        "tiède": {
+            definition: "tiède : plutôt chaud.",
+            example: "Un changement tiède a rendu le projet plus simple."
+        },
+        "toasty": {
+            definition: "toasty : plutôt warm.",
+            example: "Un changement toasty a rendu le projet plus simple."
+        },
+        "torrid": {
+            definition: "torrid : extrêmement chaud.",
+            example: "Une torrid taille a surpris tout le monde."
+        },
+        "torride": {
+            definition: "torride : plutôt chaud.",
+            example: "Un changement torride a rendu le projet plus simple."
+        },
+        "tough": {
+            definition: "tough : plutôt fort.",
+            example: "Un changement tough a rendu le projet plus simple."
+        },
+        "tranquil": {
+            definition: "tranquil : extrêmement quiet.",
+            example: "Une tranquil taille a surpris tout le monde."
+        },
+        "transi": {
+            definition: "transi : extrêmement froid.",
+            example: "Une transi taille a surpris tout le monde."
+        },
+        "translucide": {
+            definition: "translucide : extrêmement transparent.",
+            example: "Une translucide taille a surpris tout le monde."
+        },
+        "transparent": {
+            definition: "transparent : plutôt clear.",
+            example: "Un changement transparent a rendu le projet plus simple."
+        },
+        "transpicuous": {
+            definition: "transpicuous : extrêmement transparent.",
+            example: "Une transpicuous taille a surpris tout le monde."
+        },
+        "trascendental": {
+            definition: "trascendental : extrêmement importante.",
+            example: "Une trascendental taille a surpris tout le monde."
+        },
+        "traslúcido": {
+            definition: "traslúcido : extrêmement transparente.",
+            example: "Une traslúcido taille a surpris tout le monde."
+        },
+        "treacherous": {
+            definition: "treacherous : plutôt dangereux.",
+            example: "Un changement treacherous a rendu le projet plus simple."
+        },
+        "tried-and-true": {
+            definition: "tried-and-true : extrêmement efficient.",
+            example: "Une tried-and-true taille a surpris tout le monde."
+        },
+        "tropical": {
+            definition: "tropical : extrêmement chaud.",
+            example: "Une tropical taille a surpris tout le monde."
+        },
+        "truthful": {
+            definition: "truthful : plutôt honest.",
+            example: "Un changement truthful a rendu le projet plus simple."
+        },
+        "ténu": {
+            definition: "ténu : extrêmement petit.",
+            example: "Une ténu taille a surpris tout le monde."
+        },
+        "tórrido": {
+            definition: "tórrido : plutôt caliente.",
+            example: "Un changement tórrido a rendu le projet plus simple."
+        },
+        "ulcéré": {
+            definition: "ulcéré : extrêmement fâché.",
+            example: "Une ulcéré taille a surpris tout le monde."
+        },
+        "unclean": {
+            definition: "unclean : plutôt dirty.",
+            example: "Un changement unclean a rendu le projet plus simple."
+        },
+        "uncomplicated": {
+            definition: "uncomplicated : plutôt facile.",
+            example: "Un changement uncomplicated a rendu le projet plus simple."
+        },
+        "undemanding": {
+            definition: "undemanding : l'action de facile.",
+            example: "Undemanding du document a pris plus de temps que prévu."
+        },
+        "unflappable": {
+            definition: "unflappable : extrêmement calm.",
+            example: "Une unflappable taille a surpris tout le monde."
+        },
+        "unhappy": {
+            definition: "unhappy : plutôt triste.",
+            example: "Un changement unhappy a rendu le projet plus simple."
+        },
+        "unmistakable": {
+            definition: "unmistakable : extrêmement clear.",
+            example: "Une unmistakable taille a surpris tout le monde."
+        },
+        "unperturbed": {
+            definition: "unperturbed : extrêmement quiet.",
+            example: "Une unperturbed taille a surpris tout le monde."
+        },
+        "unsafe": {
+            definition: "unsafe : plutôt dangereux.",
+            example: "Un changement unsafe a rendu le projet plus simple."
+        },
+        "unsanitary": {
+            definition: "unsanitary : extrêmement dirty.",
+            example: "Une unsanitary taille a surpris tout le monde."
+        },
+        "unyielding": {
+            definition: "unyielding : l'action de fort.",
+            example: "Unyielding du document a pris plus de temps que prévu."
+        },
+        "upright": {
+            definition: "upright : plutôt honest.",
+            example: "Un changement upright a rendu le projet plus simple."
+        },
+        "uproarious": {
+            definition: "uproarious : extrêmement drôle.",
+            example: "Une uproarious taille a surpris tout le monde."
+        },
+        "upset": {
+            definition: "upset : plutôt triste.",
+            example: "Un changement upset a rendu le projet plus simple."
+        },
+        "useful": {
+            definition: "useful : plutôt helpful.",
+            example: "Un changement useful a rendu le projet plus simple."
+        },
+        "vaillant": {
+            definition: "vaillant : plutôt courageux.",
+            example: "Un changement vaillant a rendu le projet plus simple."
+        },
+        "valeroso": {
+            definition: "valeroso : plutôt valiente.",
+            example: "Un changement valeroso a rendu le projet plus simple."
+        },
+        "valiant": {
+            definition: "valiant : plutôt brave.",
+            example: "Un changement valiant a rendu le projet plus simple."
+        },
+        "valorous": {
+            definition: "valorous : extrêmement brave.",
+            example: "Une valorous taille a surpris tout le monde."
+        },
+        "vanguardista": {
+            definition: "vanguardista : extrêmement nuevo.",
+            example: "Une vanguardista taille a surpris tout le monde."
+        },
+        "vasto": {
+            definition: "vasto : plutôt grande.",
+            example: "Un changement vasto a rendu le projet plus simple."
+        },
+        "veloz": {
+            definition: "veloz : plutôt rápido.",
+            example: "Un changement veloz a rendu le projet plus simple."
+        },
+        "venerable": {
+            definition: "venerable : extrêmement vieux.",
+            example: "Une venerable taille a surpris tout le monde."
+        },
+        "veracious": {
+            definition: "veracious : extrêmement honest.",
+            example: "Une veracious taille a surpris tout le monde."
+        },
+        "vertiginoso": {
+            definition: "vertiginoso : extrêmement rápido.",
+            example: "Une vertiginoso taille a surpris tout le monde."
+        },
+        "vetusto": {
+            definition: "vetusto : plutôt viejo.",
+            example: "Un changement vetusto a rendu le projet plus simple."
+        },
+        "vigoroso": {
+            definition: "vigoroso : plutôt fuerte.",
+            example: "Un changement vigoroso a rendu le projet plus simple."
+        },
+        "vigoureux": {
+            definition: "vigoureux : plutôt fort.",
+            example: "Un changement vigoureux a rendu le projet plus simple."
+        },
+        "vintage": {
+            definition: "vintage : plutôt vieux.",
+            example: "Un changement vintage a rendu le projet plus simple."
+        },
+        "vital": {
+            definition: "vital : plutôt important.",
+            example: "Un changement vital a rendu le projet plus simple."
+        },
+        "vite": {
+            definition: "vite : plutôt rapide.",
+            example: "Un changement vite a rendu le projet plus simple."
+        },
+        "vivid": {
+            definition: "vivid : plutôt bright.",
+            example: "Un changement vivid a rendu le projet plus simple."
+        },
+        "vivify": {
+            definition: "vivify : extrêmement brighten.",
+            example: "Une vivify taille a surpris tout le monde."
+        },
+        "vociferous": {
+            definition: "vociferous : extrêmement loud.",
+            example: "Une vociferous taille a surpris tout le monde."
+        },
+        "voiceless": {
+            definition: "voiceless : extrêmement silent.",
+            example: "Une voiceless taille a surpris tout le monde."
+        },
+        "vulnerable": {
+            definition: "vulnerable : plutôt fragile.",
+            example: "Un changement vulnerable a rendu le projet plus simple."
+        },
+        "vulnérable": {
+            definition: "vulnérable : plutôt fragile.",
+            example: "Un changement vulnérable a rendu le projet plus simple."
+        },
+        "véloce": {
+            definition: "véloce : plutôt rapide.",
+            example: "Un changement véloce a rendu le projet plus simple."
+        },
+        "warm": {
+            definition: "warm : plutôt chaud.",
+            example: "Un changement warm a rendu le projet plus simple."
+        },
+        "wealthy": {
+            definition: "wealthy : plutôt rich.",
+            example: "Un changement wealthy a rendu le projet plus simple."
+        },
+        "well-off": {
+            definition: "well-off : plutôt rich.",
+            example: "Un changement well-off a rendu le projet plus simple."
+        },
+        "well-oiled": {
+            definition: "well-oiled : extrêmement efficient.",
+            example: "Une well-oiled taille a surpris tout le monde."
+        },
+        "woebegone": {
+            definition: "woebegone : extrêmement triste.",
+            example: "Une woebegone taille a surpris tout le monde."
+        },
+        "woefulness": {
+            definition: "woefulness : extrêmement sadness.",
+            example: "Une woefulness taille a surpris tout le monde."
+        },
+        "wonderful": {
+            definition: "wonderful : plutôt bon.",
+            example: "Un changement wonderful a rendu le projet plus simple."
+        },
+        "wrathful": {
+            definition: "wrathful : extrêmement angry.",
+            example: "Une wrathful taille a surpris tout le monde."
+        },
+        "ágil": {
+            definition: "ágil : plutôt rápido.",
+            example: "Un changement ágil a rendu le projet plus simple."
+        },
+        "álgido": {
+            definition: "álgido : extrêmement frío.",
+            example: "Une álgido taille a surpris tout le monde."
+        },
+        "âgé": {
+            definition: "âgé : plutôt vieux.",
+            example: "Un changement âgé a rendu le projet plus simple."
+        },
+        "économe": {
+            definition: "économe : extrêmement efficace.",
+            example: "Une économe taille a surpris tout le monde."
+        },
+        "électrisant": {
+            definition: "électrisant : extrêmement intéressant.",
+            example: "Une électrisant taille a surpris tout le monde."
+        },
+        "élémentaire": {
+            definition: "élémentaire : plutôt facile.",
+            example: "Un changement élémentaire a rendu le projet plus simple."
+        },
+        "énervé": {
+            definition: "énervé : plutôt fâché.",
+            example: "Un changement énervé a rendu le projet plus simple."
+        },
+        "énorme": {
+            definition: "énorme : plutôt grand.",
+            example: "Un changement énorme a rendu le projet plus simple."
+        },
+        "épineux": {
+            definition: "épineux : extrêmement difficile.",
+            example: "Une épineux taille a surpris tout le monde."
+        },
+        "éploré": {
+            definition: "éploré : extrêmement triste.",
+            example: "Une éploré taille a surpris tout le monde."
+        },
+        "épouvantable": {
+            definition: "épouvantable : plutôt effrayant.",
+            example: "Un changement épouvantable a rendu le projet plus simple."
+        },
+        "érudit": {
+            definition: "érudit : extrêmement intelligent.",
+            example: "Une érudit taille a surpris tout le monde."
+        },
+        "étouffant": {
+            definition: "étouffant : extrêmement chaud.",
+            example: "Une étouffant taille a surpris tout le monde."
+        },
+        "évident": {
+            definition: "évident : plutôt facile.",
+            example: "Un changement évident a rendu le projet plus simple."
+        },
+        "ínfimo": {
+            definition: "ínfimo : extrêmement pequeño.",
+            example: "Une ínfimo taille a surpris tout le monde."
+        },
+        "óptimo": {
+            definition: "óptimo : extrêmement bueno.",
+            example: "Une óptimo taille a surpris tout le monde."
+        },},
     es: {
         "abdicar": {
             definition: "Renunciar formalmente a un puesto de poder, especialmente a la corona.",
@@ -7411,9 +10807,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Anacrónico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron anacrónico en una conversación sobre un tema cotidiano."
         },
-        "ancestral": {
-            definition: "Ancestral: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron ancestral en una conversación sobre un tema cotidiano."
+                "ancestral": {
+            definition: "ancestral: extremadamente vieux.",
+            example: "El tamaño ancestral del barco sorprendió a todos."
         },
         "ancestro": {
             definition: "Ancestro: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -7435,9 +10831,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Estado de no ser identificado; ocultación de la identidad.",
             example: "Los testigos pidieron anonimato por seguridad."
         },
-        "antiguo": {
-            definition: "Antiguo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron antiguo en una conversación sobre un tema cotidiano."
+                "antiguo": {
+            definition: "antiguo: bastante viejo.",
+            example: "Un cambio antiguo hizo el proyecto más fácil de terminar."
         },
         "antónimo": {
             definition: "Palabra que expresa el sentido opuesto a otra.",
@@ -7451,9 +10847,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Arcano: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron arcano en una conversación sobre un tema cotidiano."
         },
-        "arduo": {
-            definition: "Arduo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron arduo en una conversación sobre un tema cotidiano."
+                "arduo": {
+            definition: "arduo: bastante difícil.",
+            example: "Un cambio arduo hizo el proyecto más fácil de terminar."
         },
         "armonioso": {
             definition: "Armonioso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -7475,9 +10871,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Científico que estudia estrellas y cuerpos celestes.",
             example: "El astrónomo descubrió un nuevo cometa."
         },
-        "astuto": {
-            definition: "Astuto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron astuto en una conversación sobre un tema cotidiano."
+                "astuto": {
+            definition: "astuto: bastante inteligente.",
+            example: "Un cambio astuto hizo el proyecto más fácil de terminar."
         },
         "aséptico": {
             definition: "Aséptico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -7511,9 +10907,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Bella: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron bella en una conversación sobre un tema cotidiano."
         },
-        "bello": {
-            definition: "Bello: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron bello en una conversación sobre un tema cotidiano."
+                "bello": {
+            definition: "bello: bastante hermoso.",
+            example: "Un cambio bello hizo el proyecto más fácil de terminar."
         },
         "bibliográfico": {
             definition: "Bibliográfico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -7543,9 +10939,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Bueno: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron bueno en una conversación sobre un tema cotidiano."
         },
-        "canicular": {
-            definition: "Canicular: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron canicular en una conversación sobre un tema cotidiano."
+                "canicular": {
+            definition: "canicular: extremadamente caliente.",
+            example: "El tamaño canicular del barco sorprendió a todos."
         },
         "canonizar": {
             definition: "Declarar oficialmente a alguien santo en ciertas tradiciones religiosas.",
@@ -7579,9 +10975,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Clara: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron clara en una conversación sobre un tema cotidiano."
         },
-        "claro": {
-            definition: "Claro: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron claro en una conversación sobre un tema cotidiano."
+                "claro": {
+            definition: "claro: bastante transparente.",
+            example: "Un cambio claro hizo el proyecto más fácil de terminar."
         },
         "clasificado": {
             definition: "Clasificado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -7615,17 +11011,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Copiosa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron copiosa en una conversación sobre un tema cotidiano."
         },
-        "corto": {
-            definition: "Corto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron corto en una conversación sobre un tema cotidiano."
+                "corto": {
+            definition: "corto: bastante pequeño.",
+            example: "Un cambio corto hizo el proyecto más fácil de terminar."
         },
         "creativa": {
             definition: "Creativa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron creativa en una conversación sobre un tema cotidiano."
         },
-        "crucial": {
-            definition: "Crucial: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron crucial en una conversación sobre un tema cotidiano."
+                "crucial": {
+            definition: "crucial: bastante importante.",
+            example: "Un cambio crucial hizo el proyecto más fácil de terminar."
         },
         "críptico": {
             definition: "Críptico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -7643,9 +11039,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Tratar a las personas como si no tuvieran cualidades humanas.",
             example: "La propaganda puede deshumanizar a ciertos grupos."
         },
-        "deslumbrante": {
-            definition: "Deslumbrante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron deslumbrante en una conversación sobre un tema cotidiano."
+                "deslumbrante": {
+            definition: "deslumbrante: extremadamente hermoso.",
+            example: "El tamaño deslumbrante del barco sorprendió a todos."
         },
         "desorbitada": {
             definition: "Desorbitada: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -7679,9 +11075,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Diestro: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron diestro en una conversación sobre un tema cotidiano."
         },
-        "diminuto": {
-            definition: "Diminuto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron diminuto en una conversación sobre un tema cotidiano."
+                "diminuto": {
+            definition: "diminuto: bastante pequeño.",
+            example: "Un cambio diminuto hizo el proyecto más fácil de terminar."
         },
         "dinámica": {
             definition: "Dinámica: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -7699,9 +11095,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Dura: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron dura en una conversación sobre un tema cotidiano."
         },
-        "duro": {
-            definition: "Duro: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron duro en una conversación sobre un tema cotidiano."
+                "duro": {
+            definition: "duro: bastante difícil.",
+            example: "Un cambio duro hizo el proyecto más fácil de terminar."
         },
         "efímera": {
             definition: "Efímera: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -7747,9 +11143,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Enfermo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron enfermo en una conversación sobre un tema cotidiano."
         },
-        "erudito": {
-            definition: "Erudito: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron erudito en una conversación sobre un tema cotidiano."
+                "erudito": {
+            definition: "erudito: extremadamente inteligente.",
+            example: "El tamaño erudito del barco sorprendió a todos."
         },
         "escéptico": {
             definition: "Persona que duda y exige pruebas antes de aceptar afirmaciones.",
@@ -7791,9 +11187,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Extremadamente hambriento o desfallecido por falta de comida.",
             example: "Tras días sin comer, estaba famélico."
         },
-        "fatal": {
-            definition: "Fatal: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron fatal en una conversación sobre un tema cotidiano."
+                "fatal": {
+            definition: "fatal: bastante malo.",
+            example: "Un cambio fatal hizo el proyecto más fácil de terminar."
         },
         "ferviente": {
             definition: "Muy entusiasmado y dedicado a una causa.",
@@ -7827,13 +11223,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Franco: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron franco en una conversación sobre un tema cotidiano."
         },
-        "fresco": {
-            definition: "Fresco: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron fresco en una conversación sobre un tema cotidiano."
+                "fresco": {
+            definition: "fresco: bastante frío.",
+            example: "Un cambio fresco hizo el proyecto más fácil de terminar."
         },
-        "frágil": {
-            definition: "Frágil: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron frágil en una conversación sobre un tema cotidiano."
+                "frágil": {
+            definition: "frágil: bastante frágil.",
+            example: "Un cambio frágil hizo el proyecto más fácil de terminar."
         },
         "fuerte": {
             definition: "Fuerte: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -7847,9 +11243,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Fulgurante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron fulgurante en una conversación sobre un tema cotidiano."
         },
-        "fulminante": {
-            definition: "Fulminante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron fulminante en una conversación sobre un tema cotidiano."
+                "fulminante": {
+            definition: "fulminante: extremadamente rápido.",
+            example: "El tamaño fulminante del barco sorprendió a todos."
         },
         "férrea": {
             definition: "Férrea: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -7935,9 +11331,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Imponente: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron imponente en una conversación sobre un tema cotidiano."
         },
-        "incandescente": {
-            definition: "Incandescente: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron incandescente en una conversación sobre un tema cotidiano."
+                "incandescente": {
+            definition: "incandescente: extremadamente caliente.",
+            example: "El tamaño incandescente del barco sorprendió a todos."
         },
         "inclemente": {
             definition: "Inclemente: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -7979,17 +11375,17 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Integro: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron integro en una conversación sobre un tema cotidiano."
         },
-        "intrépido": {
-            definition: "Intrépido: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron intrépido en una conversación sobre un tema cotidiano."
+                "intrépido": {
+            definition: "intrépido: bastante valiente.",
+            example: "Un cambio intrépido hizo el proyecto más fácil de terminar."
         },
         "invencible": {
             definition: "Que no puede ser vencido o superado.",
             example: "Tras la racha de victorias, el equipo parecía invencible."
         },
-        "inédito": {
-            definition: "Inédito: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron inédito en una conversación sobre un tema cotidiano."
+                "inédito": {
+            definition: "inédito: extremadamente nuevo.",
+            example: "El tamaño inédito del barco sorprendió a todos."
         },
         "irresistible": {
             definition: "Irresistible: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -8011,9 +11407,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Sentimiento de gran alegría y triunfo.",
             example: "Sintió un júbilo inmenso al recibir la noticia."
         },
-        "laborioso": {
-            definition: "Laborioso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron laborioso en una conversación sobre un tema cotidiano."
+                "laborioso": {
+            definition: "laborioso: extremadamente difícil.",
+            example: "El tamaño laborioso del barco sorprendió a todos."
         },
         "larga": {
             definition: "Larga: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -8035,9 +11431,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Libre: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron libre en una conversación sobre un tema cotidiano."
         },
-        "limpio": {
-            definition: "Limpio: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron limpio en una conversación sobre un tema cotidiano."
+                "limpio": {
+            definition: "limpio: extremadamente transparente.",
+            example: "El tamaño limpio del barco sorprendió a todos."
         },
         "lujosa": {
             definition: "Lujosa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -8051,9 +11447,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Magistral: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron magistral en una conversación sobre un tema cotidiano."
         },
-        "magnánimo": {
-            definition: "Magnánimo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron magnánimo en una conversación sobre un tema cotidiano."
+                "magnánimo": {
+            definition: "magnánimo: extremadamente valiente.",
+            example: "El tamaño magnánimo del barco sorprendió a todos."
         },
         "malo": {
             definition: "Malo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -8075,9 +11471,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Metódico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron metódico en una conversación sobre un tema cotidiano."
         },
-        "microscópico": {
-            definition: "Microscópico: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron microscópico en una conversación sobre un tema cotidiano."
+                "microscópico": {
+            definition: "microscópico: extremadamente pequeño.",
+            example: "El tamaño microscópico del barco sorprendió a todos."
         },
         "milenario": {
             definition: "Milenario: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -8091,13 +11487,13 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Minucioso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron minucioso en una conversación sobre un tema cotidiano."
         },
-        "minúsculo": {
-            definition: "Extremadamente pequeño en tamaño o cantidad.",
-            example: "Solo hubo una posibilidad minúscula de error."
+                "minúsculo": {
+            definition: "minúsculo: bastante pequeño.",
+            example: "Un cambio minúsculo hizo el proyecto más fácil de terminar."
         },
-        "monumental": {
-            definition: "Monumental: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron monumental en una conversación sobre un tema cotidiano."
+                "monumental": {
+            definition: "monumental: extremadamente grand.",
+            example: "El tamaño monumental del barco sorprendió a todos."
         },
         "monólogo": {
             definition: "Discurso largo pronunciado por una sola persona.",
@@ -8187,9 +11583,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Potentado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron potentado en una conversación sobre un tema cotidiano."
         },
-        "precioso": {
-            definition: "Precioso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron precioso en una conversación sobre un tema cotidiano."
+                "precioso": {
+            definition: "precioso: bastante hermoso.",
+            example: "Un cambio precioso hizo el proyecto más fácil de terminar."
         },
         "previsora": {
             definition: "Previsora: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -8223,9 +11619,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Extremadamente idealista e impracticable.",
             example: "Su plan quijotesco sonaba noble pero poco realista."
         },
-        "radiante": {
-            definition: "Radiante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron radiante en una conversación sobre un tema cotidiano."
+                "radiante": {
+            definition: "radiante: extremadamente feliz.",
+            example: "El tamaño radiante del barco sorprendió a todos."
         },
         "rasante": {
             definition: "Rasante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -8275,9 +11671,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Ruinoso: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron ruinoso en una conversación sobre un tema cotidiano."
         },
-        "sagaz": {
-            definition: "Sagaz: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron sagaz en una conversación sobre un tema cotidiano."
+                "sagaz": {
+            definition: "sagaz: extremadamente inteligente.",
+            example: "El tamaño sagaz del barco sorprendió a todos."
         },
         "seca": {
             definition: "Seca: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -8323,9 +11719,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Sosegado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron sosegado en una conversación sobre un tema cotidiano."
         },
-        "sublime": {
-            definition: "Sublime: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron sublime en una conversación sobre un tema cotidiano."
+                "sublime": {
+            definition: "sublime: extremadamente beautiful.",
+            example: "El tamaño sublime del barco sorprendió a todos."
         },
         "suculenta": {
             definition: "Suculenta: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -8371,29 +11767,29 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Vacío: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron vacío en una conversación sobre un tema cotidiano."
         },
-        "vanguardista": {
-            definition: "Vanguardista: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron vanguardista en una conversación sobre un tema cotidiano."
+                "vanguardista": {
+            definition: "vanguardista: extremadamente nuevo.",
+            example: "El tamaño vanguardista del barco sorprendió a todos."
         },
         "velado": {
             definition: "Velado: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron velado en una conversación sobre un tema cotidiano."
         },
-        "veloz": {
-            definition: "Veloz: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron veloz en una conversación sobre un tema cotidiano."
+                "veloz": {
+            definition: "veloz: bastante rápido.",
+            example: "Un cambio veloz hizo el proyecto más fácil de terminar."
         },
-        "venerable": {
-            definition: "Venerable: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron venerable en una conversación sobre un tema cotidiano."
+                "venerable": {
+            definition: "venerable: extremadamente viejo.",
+            example: "El tamaño venerable del barco sorprendió a todos."
         },
         "vertiginosa": {
             definition: "Vertiginosa: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron vertiginosa en una conversación sobre un tema cotidiano."
         },
-        "vetusto": {
-            definition: "Vetusto: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron vetusto en una conversación sobre un tema cotidiano."
+                "vetusto": {
+            definition: "vetusto: bastante viejo.",
+            example: "Un cambio vetusto hizo el proyecto más fácil de terminar."
         },
         "vibrante": {
             definition: "Vibrante: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -8415,9 +11811,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Vulnerada: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
             example: "Dijeron vulnerada en una conversación sobre un tema cotidiano."
         },
-        "ínfimo": {
-            definition: "Ínfimo: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
-            example: "Dijeron ínfimo en una conversación sobre un tema cotidiano."
+                "ínfimo": {
+            definition: "ínfimo: extremadamente pequeño.",
+            example: "El tamaño ínfimo del barco sorprendió a todos."
         },
         "íntegro": {
             definition: "Íntegro: una palabra de uso común que describe una cosa, idea o cualidad en contextos habituales.",
@@ -8427,9 +11823,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Dicho breve y agudo que expresa una idea con ingenio.",
             example: "El ensayo comenzó con un epigrama ingenioso."
         },
-        "manifiesto": {
-            definition: "Declaración pública escrita que presenta las ideas y objetivos de un grupo.",
-            example: "El partido publicó su manifiesto antes de las elecciones."
+                "manifiesto": {
+            definition: "manifiesto: bastante transparente.",
+            example: "Un cambio manifiesto hizo el proyecto más fácil de terminar."
         },
         "socavar": {
             definition: "Debilitar gradualmente o secretamente una posición o autoridad.",
@@ -8439,9 +11835,9 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Aumento rápido en el número de casos de una enfermedad en una región.",
             example: "La epidemia provocó una movilización sanitaria inmediata."
         },
-        "lúcido": {
-            definition: "Claro y fácil de entender; pensamiento coherente.",
-            example: "Durante la entrevista, ofreció un relato lúcido de los hechos."
+                "lúcido": {
+            definition: "lúcido: bastante transparente.",
+            example: "Un cambio lúcido hizo el proyecto más fácil de terminar."
         },
         "abbreviar": {
             definition: "Acortar un texto manteniendo la idea principal.",
@@ -8491,5 +11887,3437 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             definition: "Aumentar o difundirse rápidamente en número o cantidad.",
             example: "Las plantas comenzaron a proliferar en el jardín."
         },
-},
+                "alegre": {
+            definition: "alegre: bastante feliz.",
+            example: "Un cambio alegre hizo el proyecto más fácil de terminar."
+        },
+                "dichoso": {
+            definition: "dichoso: bastante feliz.",
+            example: "Un cambio dichoso hizo el proyecto más fácil de terminar."
+        },
+                "enorme": {
+            definition: "enorme: bastante grande.",
+            example: "Un cambio enorme hizo el proyecto más fácil de terminar."
+        },
+                "melancólico": {
+            definition: "melancólico: bastante triste.",
+            example: "Un cambio melancólico hizo el proyecto más fácil de terminar."
+        },
+
+        "abatido": {
+            definition: "abatido: bastante triste.",
+            example: "Un cambio abatido hizo el proyecto más fácil de terminar."
+        },
+        "abattu": {
+            definition: "abattu: bastante triste.",
+            example: "Un cambio abattu hizo el proyecto más fácil de terminar."
+        },
+        "abominable": {
+            definition: "abominable: extremadamente malo.",
+            example: "El tamaño abominable del barco sorprendió a todos."
+        },
+        "abordable": {
+            definition: "abordable: extremadamente facile.",
+            example: "El tamaño abordable del barco sorprendió a todos."
+        },
+        "abrasador": {
+            definition: "abrasador: bastante caliente.",
+            example: "Un cambio abrasador hizo el proyecto más fácil de terminar."
+        },
+        "absorbente": {
+            definition: "absorbente: extremadamente interesante.",
+            example: "El tamaño absorbente del barco sorprendió a todos."
+        },
+        "absorbing": {
+            definition: "absorbing: la acción de interesante.",
+            example: "Absorbing del documento tardó más de lo previsto."
+        },
+        "abysmal": {
+            definition: "abysmal: extremadamente malo.",
+            example: "El tamaño abysmal del barco sorprendió a todos."
+        },
+        "accablé": {
+            definition: "accablé: extremadamente triste.",
+            example: "El tamaño accablé del barco sorprendió a todos."
+        },
+        "accesible": {
+            definition: "accesible: bastante fácil.",
+            example: "Un cambio accesible hizo el proyecto más fácil de terminar."
+        },
+        "accessible": {
+            definition: "accessible: bastante facile.",
+            example: "Un cambio accessible hizo el proyecto más fácil de terminar."
+        },
+        "acelerado": {
+            definition: "acelerado: bastante rápido.",
+            example: "Un cambio acelerado hizo el proyecto más fácil de terminar."
+        },
+        "achicharrante": {
+            definition: "achicharrante: extremadamente caliente.",
+            example: "El tamaño achicharrante del barco sorprendió a todos."
+        },
+        "acongojado": {
+            definition: "acongojado: extremadamente triste.",
+            example: "El tamaño acongojado del barco sorprendió a todos."
+        },
+        "actual": {
+            definition: "actual: bastante nuevo.",
+            example: "Un cambio actual hizo el proyecto más fácil de terminar."
+        },
+        "actuel": {
+            definition: "actuel: bastante nouveau.",
+            example: "Un cambio actuel hizo el proyecto más fácil de terminar."
+        },
+        "advantageous": {
+            definition: "advantageous: bastante helpful.",
+            example: "Un cambio advantageous hizo el proyecto más fácil de terminar."
+        },
+        "affable": {
+            definition: "affable: extremadamente friendly.",
+            example: "El tamaño affable del barco sorprendió a todos."
+        },
+        "affluent": {
+            definition: "affluent: bastante rich.",
+            example: "Un cambio affluent hizo el proyecto más fácil de terminar."
+        },
+        "affordable": {
+            definition: "affordable: bastante cheap.",
+            example: "Un cambio affordable hizo el proyecto más fácil de terminar."
+        },
+        "affreux": {
+            definition: "affreux: bastante mauvais.",
+            example: "Un cambio affreux hizo el proyecto más fácil de terminar."
+        },
+        "afligido": {
+            definition: "afligido: bastante triste.",
+            example: "Un cambio afligido hizo el proyecto más fácil de terminar."
+        },
+        "agacé": {
+            definition: "agacé: bastante fâché.",
+            example: "Un cambio agacé hizo el proyecto más fácil de terminar."
+        },
+        "age-old": {
+            definition: "age-old: bastante ancient.",
+            example: "Un cambio age-old hizo el proyecto más fácil de terminar."
+        },
+        "aged": {
+            definition: "aged: bastante viejo.",
+            example: "Un cambio aged hizo el proyecto más fácil de terminar."
+        },
+        "agile": {
+            definition: "agile: bastante rapide.",
+            example: "Un cambio agile hizo el proyecto más fácil de terminar."
+        },
+        "agréable": {
+            definition: "agréable: bastante bon.",
+            example: "Un cambio agréable hizo el proyecto más fácil de terminar."
+        },
+        "agudo": {
+            definition: "agudo: bastante inteligente.",
+            example: "Un cambio agudo hizo el proyecto más fácil de terminar."
+        },
+        "airado": {
+            definition: "airado: bastante enfadado.",
+            example: "Un cambio airado hizo el proyecto más fácil de terminar."
+        },
+        "aisé": {
+            definition: "aisé: bastante facile.",
+            example: "Un cambio aisé hizo el proyecto más fácil de terminar."
+        },
+        "amiable": {
+            definition: "amiable: bastante friendly.",
+            example: "Un cambio amiable hizo el proyecto más fácil de terminar."
+        },
+        "amicable": {
+            definition: "amicable: extremadamente friendly.",
+            example: "El tamaño amicable del barco sorprendió a todos."
+        },
+        "amusing": {
+            definition: "amusing: la acción de divertido.",
+            example: "Amusing del documento tardó más de lo previsto."
+        },
+        "anciano": {
+            definition: "anciano: bastante viejo.",
+            example: "Un cambio anciano hizo el proyecto más fácil de terminar."
+        },
+        "ancien": {
+            definition: "ancien: bastante vieux.",
+            example: "Un cambio ancien hizo el proyecto más fácil de terminar."
+        },
+        "ancient": {
+            definition: "ancient: bastante viejo.",
+            example: "Un cambio ancient hizo el proyecto más fácil de terminar."
+        },
+        "angoissant": {
+            definition: "angoissant: bastante effrayant.",
+            example: "Un cambio angoissant hizo el proyecto más fácil de terminar."
+        },
+        "annoyed": {
+            definition: "annoyed: bastante angry.",
+            example: "Un cambio annoyed hizo el proyecto más fácil de terminar."
+        },
+        "antediluvian": {
+            definition: "antediluvian: extremadamente ancient.",
+            example: "El tamaño antediluvian del barco sorprendió a todos."
+        },
+        "antediluviano": {
+            definition: "antediluviano: extremadamente viejo.",
+            example: "El tamaño antediluviano del barco sorprendió a todos."
+        },
+        "antiquated": {
+            definition: "antiquated: extremadamente viejo.",
+            example: "El tamaño antiquated del barco sorprendió a todos."
+        },
+        "antique": {
+            definition: "antique: bastante viejo.",
+            example: "Un cambio antique hizo el proyecto más fácil de terminar."
+        },
+        "apasionante": {
+            definition: "apasionante: bastante interesante.",
+            example: "Un cambio apasionante hizo el proyecto más fácil de terminar."
+        },
+        "apesadumbrado": {
+            definition: "apesadumbrado: extremadamente triste.",
+            example: "El tamaño apesadumbrado del barco sorprendió a todos."
+        },
+        "apollonian": {
+            definition: "apollonian: extremadamente brilliant.",
+            example: "El tamaño apollonian del barco sorprendió a todos."
+        },
+        "apoplectic": {
+            definition: "apoplectic: extremadamente angry.",
+            example: "El tamaño apoplectic del barco sorprendió a todos."
+        },
+        "apparent": {
+            definition: "apparent: bastante transparent.",
+            example: "Un cambio apparent hizo el proyecto más fácil de terminar."
+        },
+        "approachable": {
+            definition: "approachable: bastante friendly.",
+            example: "Un cambio approachable hizo el proyecto más fácil de terminar."
+        },
+        "arcaico": {
+            definition: "arcaico: bastante viejo.",
+            example: "Un cambio arcaico hizo el proyecto más fácil de terminar."
+        },
+        "archaic": {
+            definition: "archaic: extremadamente viejo.",
+            example: "El tamaño archaic del barco sorprendió a todos."
+        },
+        "archaïque": {
+            definition: "archaïque: extremadamente vieux.",
+            example: "El tamaño archaïque del barco sorprendió a todos."
+        },
+        "arctic": {
+            definition: "arctic: extremadamente frío.",
+            example: "El tamaño arctic del barco sorprendió a todos."
+        },
+        "ardent": {
+            definition: "ardent: bastante chaud.",
+            example: "Un cambio ardent hizo el proyecto más fácil de terminar."
+        },
+        "ardiente": {
+            definition: "ardiente: bastante caliente.",
+            example: "Un cambio ardiente hizo el proyecto más fácil de terminar."
+        },
+        "ardu": {
+            definition: "ardu: bastante difficile.",
+            example: "Un cambio ardu hizo el proyecto más fácil de terminar."
+        },
+        "arduous": {
+            definition: "arduous: extremadamente difícil.",
+            example: "El tamaño arduous del barco sorprendió a todos."
+        },
+        "arrebatador": {
+            definition: "arrebatador: extremadamente interesante.",
+            example: "El tamaño arrebatador del barco sorprendió a todos."
+        },
+        "asequible": {
+            definition: "asequible: extremadamente fácil.",
+            example: "El tamaño asequible del barco sorprendió a todos."
+        },
+        "astucieux": {
+            definition: "astucieux: bastante intelligent.",
+            example: "Un cambio astucieux hizo el proyecto más fácil de terminar."
+        },
+        "astute": {
+            definition: "astute: extremadamente smart.",
+            example: "El tamaño astute del barco sorprendió a todos."
+        },
+        "aterido": {
+            definition: "aterido: extremadamente frío.",
+            example: "El tamaño aterido del barco sorprendió a todos."
+        },
+        "athlétique": {
+            definition: "athlétique: extremadamente fort.",
+            example: "El tamaño athlétique del barco sorprendió a todos."
+        },
+        "atractivo": {
+            definition: "atractivo: bastante interesante.",
+            example: "Un cambio atractivo hizo el proyecto más fácil de terminar."
+        },
+        "atroce": {
+            definition: "atroce: bastante mauvais.",
+            example: "Un cambio atroce hizo el proyecto más fácil de terminar."
+        },
+        "atrocious": {
+            definition: "atrocious: extremadamente malo.",
+            example: "El tamaño atrocious del barco sorprendió a todos."
+        },
+        "attenuated": {
+            definition: "attenuated: extremadamente thin.",
+            example: "El tamaño attenuated del barco sorprendió a todos."
+        },
+        "attractive": {
+            definition: "attractive: bastante beautiful.",
+            example: "Un cambio attractive hizo el proyecto más fácil de terminar."
+        },
+        "attrayant": {
+            definition: "attrayant: bastante intéressant.",
+            example: "Un cambio attrayant hizo el proyecto más fácil de terminar."
+        },
+        "audacieux": {
+            definition: "audacieux: bastante courageux.",
+            example: "Un cambio audacieux hizo el proyecto más fácil de terminar."
+        },
+        "audacious": {
+            definition: "audacious: extremadamente brave.",
+            example: "El tamaño audacious del barco sorprendió a todos."
+        },
+        "audaz": {
+            definition: "audaz: bastante valiente.",
+            example: "Un cambio audaz hizo el proyecto más fácil de terminar."
+        },
+        "auspicious": {
+            definition: "auspicious: extremadamente helpful.",
+            example: "El tamaño auspicious del barco sorprendió a todos."
+        },
+        "avant-gardiste": {
+            definition: "avant-gardiste: extremadamente nouveau.",
+            example: "El tamaño avant-gardiste del barco sorprendió a todos."
+        },
+        "avide": {
+            definition: "avide: bastante curieux.",
+            example: "Un cambio avide hizo el proyecto más fácil de terminar."
+        },
+        "avisé": {
+            definition: "avisé: extremadamente intelligent.",
+            example: "El tamaño avisé del barco sorprendió a todos."
+        },
+        "awful": {
+            definition: "awful: bastante malo.",
+            example: "Un cambio awful hizo el proyecto más fácil de terminar."
+        },
+        "añejo": {
+            definition: "añejo: bastante viejo.",
+            example: "Un cambio añejo hizo el proyecto más fácil de terminar."
+        },
+        "baleful": {
+            definition: "baleful: extremadamente peligroso.",
+            example: "El tamaño baleful del barco sorprendió a todos."
+        },
+        "balmy": {
+            definition: "balmy: bastante warm.",
+            example: "Un cambio balmy hizo el proyecto más fácil de terminar."
+        },
+        "bashful": {
+            definition: "bashful: bastante timid.",
+            example: "Un cambio bashful hizo el proyecto más fácil de terminar."
+        },
+        "basic": {
+            definition: "basic: bastante fácil.",
+            example: "Un cambio basic hizo el proyecto más fácil de terminar."
+        },
+        "beatific": {
+            definition: "beatific: extremadamente joyful.",
+            example: "El tamaño beatific del barco sorprendió a todos."
+        },
+        "beatífico": {
+            definition: "beatífico: extremadamente feliz.",
+            example: "El tamaño beatífico del barco sorprendió a todos."
+        },
+        "beneficial": {
+            definition: "beneficial: bastante helpful.",
+            example: "Un cambio beneficial hizo el proyecto más fácil de terminar."
+        },
+        "benignant": {
+            definition: "benignant: extremadamente helpful.",
+            example: "El tamaño benignant del barco sorprendió a todos."
+        },
+        "besmirched": {
+            definition: "besmirched: extremadamente dirty.",
+            example: "El tamaño besmirched del barco sorprendió a todos."
+        },
+        "blaring": {
+            definition: "blaring: la acción de loud.",
+            example: "Blaring del documento tardó más de lo previsto."
+        },
+        "blissful": {
+            definition: "blissful: extremadamente feliz.",
+            example: "El tamaño blissful del barco sorprendió a todos."
+        },
+        "blistering": {
+            definition: "blistering: la acción de caliente.",
+            example: "Blistering del documento tardó más de lo previsto."
+        },
+        "bloodcurdling": {
+            definition: "bloodcurdling: la acción de scary.",
+            example: "Bloodcurdling del documento tardó más de lo previsto."
+        },
+        "bochornoso": {
+            definition: "bochornoso: extremadamente caliente.",
+            example: "El tamaño bochornoso del barco sorprendió a todos."
+        },
+        "boiling": {
+            definition: "boiling: la acción de caliente.",
+            example: "Boiling del documento tardó más de lo previsto."
+        },
+        "bold": {
+            definition: "bold: bastante brave.",
+            example: "Un cambio bold hizo el proyecto más fácil de terminar."
+        },
+        "bonito": {
+            definition: "bonito: bastante hermoso.",
+            example: "Un cambio bonito hizo el proyecto más fácil de terminar."
+        },
+        "booming": {
+            definition: "booming: la acción de loud.",
+            example: "Booming del documento tardó más de lo previsto."
+        },
+        "bouillant": {
+            definition: "bouillant: bastante chaud.",
+            example: "Un cambio bouillant hizo el proyecto más fácil de terminar."
+        },
+        "brave": {
+            definition: "brave: bastante courageux.",
+            example: "Un cambio brave hizo el proyecto más fácil de terminar."
+        },
+        "bravo": {
+            definition: "bravo: bastante valiente.",
+            example: "Un cambio bravo hizo el proyecto más fácil de terminar."
+        },
+        "breakable": {
+            definition: "breakable: bastante fragile.",
+            example: "Un cambio breakable hizo el proyecto más fácil de terminar."
+        },
+        "bright": {
+            definition: "bright: bastante smart.",
+            example: "Un cambio bright hizo el proyecto más fácil de terminar."
+        },
+        "brillant": {
+            definition: "brillant: bastante intelligent.",
+            example: "Un cambio brillant hizo el proyecto más fácil de terminar."
+        },
+        "brillante": {
+            definition: "brillante: bastante inteligente.",
+            example: "Un cambio brillante hizo el proyecto más fácil de terminar."
+        },
+        "brilliant": {
+            definition: "brilliant: bastante bright.",
+            example: "Un cambio brilliant hizo el proyecto más fácil de terminar."
+        },
+        "brio": {
+            definition: "brio: extremadamente brilliant.",
+            example: "El tamaño brio del barco sorprendió a todos."
+        },
+        "brisable": {
+            definition: "brisable: bastante fragile.",
+            example: "Un cambio brisable hizo el proyecto más fácil de terminar."
+        },
+        "brisk": {
+            definition: "brisk: extremadamente fast.",
+            example: "El tamaño brisk del barco sorprendió a todos."
+        },
+        "brittle": {
+            definition: "brittle: bastante fragile.",
+            example: "Un cambio brittle hizo el proyecto más fácil de terminar."
+        },
+        "broke": {
+            definition: "broke: bastante poor.",
+            example: "Un cambio broke hizo el proyecto más fácil de terminar."
+        },
+        "brûlant": {
+            definition: "brûlant: bastante chaud.",
+            example: "Un cambio brûlant hizo el proyecto más fácil de terminar."
+        },
+        "budget": {
+            definition: "budget: bastante cheap.",
+            example: "Un cambio budget hizo el proyecto más fácil de terminar."
+        },
+        "burning": {
+            definition: "burning: la acción de caliente.",
+            example: "Burning del documento tardó más de lo previsto."
+        },
+        "béat": {
+            definition: "béat: extremadamente heureux.",
+            example: "El tamaño béat del barco sorprendió a todos."
+        },
+        "calm": {
+            definition: "calm: bastante quiet.",
+            example: "Un cambio calm hizo el proyecto más fácil de terminar."
+        },
+        "candente": {
+            definition: "candente: bastante caliente.",
+            example: "Un cambio candente hizo el proyecto más fácil de terminar."
+        },
+        "candor": {
+            definition: "candor: extremadamente honest.",
+            example: "El tamaño candor del barco sorprendió a todos."
+        },
+        "caniculaire": {
+            definition: "caniculaire: extremadamente chaud.",
+            example: "El tamaño caniculaire del barco sorprendió a todos."
+        },
+        "capable": {
+            definition: "capable: bastante efficient.",
+            example: "Un cambio capable hizo el proyecto más fácil de terminar."
+        },
+        "capaz": {
+            definition: "capaz: bastante eficiente.",
+            example: "Un cambio capaz hizo el proyecto más fácil de terminar."
+        },
+        "capital": {
+            definition: "capital: bastante importante.",
+            example: "Un cambio capital hizo el proyecto más fácil de terminar."
+        },
+        "captivant": {
+            definition: "captivant: bastante intéressant.",
+            example: "Un cambio captivant hizo el proyecto más fácil de terminar."
+        },
+        "captivating": {
+            definition: "captivating: la acción de interesante.",
+            example: "Captivating del documento tardó más de lo previsto."
+        },
+        "cardinal": {
+            definition: "cardinal: extremadamente importante.",
+            example: "El tamaño cardinal del barco sorprendió a todos."
+        },
+        "cassant": {
+            definition: "cassant: bastante fragile.",
+            example: "Un cambio cassant hizo el proyecto más fácil de terminar."
+        },
+        "cauchemardesque": {
+            definition: "cauchemardesque: extremadamente effrayant.",
+            example: "El tamaño cauchemardesque del barco sorprendió a todos."
+        },
+        "cautivador": {
+            definition: "cautivador: bastante interesante.",
+            example: "Un cambio cautivador hizo el proyecto más fácil de terminar."
+        },
+        "chagriné": {
+            definition: "chagriné: bastante triste.",
+            example: "Un cambio chagriné hizo el proyecto más fácil de terminar."
+        },
+        "challenging": {
+            definition: "challenging: la acción de difícil.",
+            example: "Challenging del documento tardó más de lo previsto."
+        },
+        "chancelant": {
+            definition: "chancelant: extremadamente fragile.",
+            example: "El tamaño chancelant del barco sorprendió a todos."
+        },
+        "cheer": {
+            definition: "cheer: bastante brighten.",
+            example: "Un cambio cheer hizo el proyecto más fácil de terminar."
+        },
+        "cheerful": {
+            definition: "cheerful: bastante feliz.",
+            example: "Un cambio cheerful hizo el proyecto más fácil de terminar."
+        },
+        "chico": {
+            definition: "chico: bastante pequeño.",
+            example: "Un cambio chico hizo el proyecto más fácil de terminar."
+        },
+        "child's play": {
+            definition: "child's play: extremadamente fácil.",
+            example: "El tamaño child's play del barco sorprendió a todos."
+        },
+        "chilly": {
+            definition: "chilly: bastante frío.",
+            example: "Un cambio chilly hizo el proyecto más fácil de terminar."
+        },
+        "clair": {
+            definition: "clair: bastante transparent.",
+            example: "Un cambio clair hizo el proyecto más fácil de terminar."
+        },
+        "clairvoyant": {
+            definition: "clairvoyant: extremadamente intelligent.",
+            example: "El tamaño clairvoyant del barco sorprendió a todos."
+        },
+        "clamorous": {
+            definition: "clamorous: extremadamente loud.",
+            example: "El tamaño clamorous del barco sorprendió a todos."
+        },
+        "clarividente": {
+            definition: "clarividente: extremadamente inteligente.",
+            example: "El tamaño clarividente del barco sorprendió a todos."
+        },
+        "clear": {
+            definition: "clear: bastante transparent.",
+            example: "Un cambio clear hizo el proyecto más fácil de terminar."
+        },
+        "clement": {
+            definition: "clement: extremadamente warm.",
+            example: "El tamaño clement del barco sorprendió a todos."
+        },
+        "clever": {
+            definition: "clever: bastante smart.",
+            example: "Un cambio clever hizo el proyecto más fácil de terminar."
+        },
+        "collected": {
+            definition: "collected: bastante calm.",
+            example: "Un cambio collected hizo el proyecto más fácil de terminar."
+        },
+        "colosal": {
+            definition: "colosal: extremadamente grande.",
+            example: "El tamaño colosal del barco sorprendió a todos."
+        },
+        "colossal": {
+            definition: "colossal: extremadamente grande.",
+            example: "El tamaño colossal del barco sorprendió a todos."
+        },
+        "colérico": {
+            definition: "colérico: extremadamente enfadado.",
+            example: "El tamaño colérico del barco sorprendió a todos."
+        },
+        "comblé": {
+            definition: "comblé: extremadamente heureux.",
+            example: "El tamaño comblé del barco sorprendió a todos."
+        },
+        "comical": {
+            definition: "comical: bastante divertido.",
+            example: "Un cambio comical hizo el proyecto más fácil de terminar."
+        },
+        "commode": {
+            definition: "commode: extremadamente facile.",
+            example: "El tamaño commode del barco sorprendió a todos."
+        },
+        "compact": {
+            definition: "compact: bastante pequeña.",
+            example: "Un cambio compact hizo el proyecto más fácil de terminar."
+        },
+        "compelling": {
+            definition: "compelling: la acción de interesante.",
+            example: "Compelling del documento tardó más de lo previsto."
+        },
+        "competent": {
+            definition: "competent: bastante efficient.",
+            example: "Un cambio competent hizo el proyecto más fácil de terminar."
+        },
+        "competente": {
+            definition: "competente: bastante eficiente.",
+            example: "Un cambio competente hizo el proyecto más fácil de terminar."
+        },
+        "complejo": {
+            definition: "complejo: bastante difícil.",
+            example: "Un cambio complejo hizo el proyecto más fácil de terminar."
+        },
+        "complex": {
+            definition: "complex: bastante difícil.",
+            example: "Un cambio complex hizo el proyecto más fácil de terminar."
+        },
+        "complexe": {
+            definition: "complexe: bastante difficile.",
+            example: "Un cambio complexe hizo el proyecto más fácil de terminar."
+        },
+        "complicado": {
+            definition: "complicado: bastante difícil.",
+            example: "Un cambio complicado hizo el proyecto más fácil de terminar."
+        },
+        "complicated": {
+            definition: "complicated: bastante difícil.",
+            example: "Un cambio complicated hizo el proyecto más fácil de terminar."
+        },
+        "compliqué": {
+            definition: "compliqué: bastante difficile.",
+            example: "Un cambio compliqué hizo el proyecto más fácil de terminar."
+        },
+        "composed": {
+            definition: "composed: bastante calm.",
+            example: "Un cambio composed hizo el proyecto más fácil de terminar."
+        },
+        "compétent": {
+            definition: "compétent: bastante efficace.",
+            example: "Un cambio compétent hizo el proyecto más fácil de terminar."
+        },
+        "congelado": {
+            definition: "congelado: bastante frío.",
+            example: "Un cambio congelado hizo el proyecto más fácil de terminar."
+        },
+        "consequential": {
+            definition: "consequential: extremadamente importante.",
+            example: "El tamaño consequential del barco sorprendió a todos."
+        },
+        "constructive": {
+            definition: "constructive: bastante helpful.",
+            example: "Un cambio constructive hizo el proyecto más fácil de terminar."
+        },
+        "content": {
+            definition: "content: bastante feliz.",
+            example: "Un cambio content hizo el proyecto más fácil de terminar."
+        },
+        "contento": {
+            definition: "contento: bastante feliz.",
+            example: "Un cambio contento hizo el proyecto más fácil de terminar."
+        },
+        "convivial": {
+            definition: "convivial: extremadamente friendly.",
+            example: "El tamaño convivial del barco sorprendió a todos."
+        },
+        "cool": {
+            definition: "cool: bastante frío.",
+            example: "Un cambio cool hizo el proyecto más fácil de terminar."
+        },
+        "cordial": {
+            definition: "cordial: extremadamente friendly.",
+            example: "El tamaño cordial del barco sorprendió a todos."
+        },
+        "costaud": {
+            definition: "costaud: bastante fort.",
+            example: "Un cambio costaud hizo el proyecto más fácil de terminar."
+        },
+        "courageous": {
+            definition: "courageous: bastante brave.",
+            example: "Un cambio courageous hizo el proyecto más fácil de terminar."
+        },
+        "courroucé": {
+            definition: "courroucé: extremadamente fâché.",
+            example: "El tamaño courroucé del barco sorprendió a todos."
+        },
+        "coy": {
+            definition: "coy: extremadamente timid.",
+            example: "El tamaño coy del barco sorprendió a todos."
+        },
+        "cozy": {
+            definition: "cozy: bastante warm.",
+            example: "Un cambio cozy hizo el proyecto más fácil de terminar."
+        },
+        "craven": {
+            definition: "craven: extremadamente timid.",
+            example: "El tamaño craven del barco sorprendió a todos."
+        },
+        "creepy": {
+            definition: "creepy: bastante scary.",
+            example: "Un cambio creepy hizo el proyecto más fácil de terminar."
+        },
+        "curieux": {
+            definition: "curieux: bastante curieux.",
+            example: "Un cambio curieux hizo el proyecto más fácil de terminar."
+        },
+        "curior": {
+            definition: "curior: extremadamente curioso.",
+            example: "El tamaño curior del barco sorprendió a todos."
+        },
+        "curioso": {
+            definition: "curioso: bastante curioso.",
+            example: "Un cambio curioso hizo el proyecto más fácil de terminar."
+        },
+        "current": {
+            definition: "current: bastante nuevo.",
+            example: "Un cambio current hizo el proyecto más fácil de terminar."
+        },
+        "cutting-edge": {
+            definition: "cutting-edge: extremadamente nuevo.",
+            example: "El tamaño cutting-edge del barco sorprendió a todos."
+        },
+        "cómodo": {
+            definition: "cómodo: bastante fácil.",
+            example: "Un cambio cómodo hizo el proyecto más fácil de terminar."
+        },
+        "dantesco": {
+            definition: "dantesco: extremadamente aterrador.",
+            example: "El tamaño dantesco del barco sorprendió a todos."
+        },
+        "dauntless": {
+            definition: "dauntless: extremadamente brave.",
+            example: "El tamaño dauntless del barco sorprendió a todos."
+        },
+        "deafening": {
+            definition: "deafening: la acción de loud.",
+            example: "Deafening del documento tardó más de lo previsto."
+        },
+        "decrepit": {
+            definition: "decrepit: extremadamente viejo.",
+            example: "El tamaño decrepit del barco sorprendió a todos."
+        },
+        "decrépito": {
+            definition: "decrépito: extremadamente viejo.",
+            example: "El tamaño decrépito del barco sorprendió a todos."
+        },
+        "delicado": {
+            definition: "delicado: bastante frágil.",
+            example: "Un cambio delicado hizo el proyecto más fácil de terminar."
+        },
+        "delicate": {
+            definition: "delicate: bastante fragile.",
+            example: "Un cambio delicate hizo el proyecto más fácil de terminar."
+        },
+        "deplorable": {
+            definition: "deplorable: extremadamente malo.",
+            example: "El tamaño deplorable del barco sorprendió a todos."
+        },
+        "deprimido": {
+            definition: "deprimido: bastante triste.",
+            example: "Un cambio deprimido hizo el proyecto más fácil de terminar."
+        },
+        "descomunal": {
+            definition: "descomunal: extremadamente grande.",
+            example: "El tamaño descomunal del barco sorprendió a todos."
+        },
+        "desconsolado": {
+            definition: "desconsolado: extremadamente triste.",
+            example: "El tamaño desconsolado del barco sorprendió a todos."
+        },
+        "desolado": {
+            definition: "desolado: extremadamente triste.",
+            example: "El tamaño desolado del barco sorprendió a todos."
+        },
+        "despair": {
+            definition: "despair: bastante sadness.",
+            example: "Un cambio despair hizo el proyecto más fácil de terminar."
+        },
+        "despondent": {
+            definition: "despondent: extremadamente triste.",
+            example: "El tamaño despondent del barco sorprendió a todos."
+        },
+        "destitute": {
+            definition: "destitute: bastante poor.",
+            example: "Un cambio destitute hizo el proyecto más fácil de terminar."
+        },
+        "diaphane": {
+            definition: "diaphane: extremadamente transparent.",
+            example: "El tamaño diaphane del barco sorprendió a todos."
+        },
+        "diaphanous": {
+            definition: "diaphanous: extremadamente transparent.",
+            example: "El tamaño diaphanous del barco sorprendió a todos."
+        },
+        "diffident": {
+            definition: "diffident: extremadamente timid.",
+            example: "El tamaño diffident del barco sorprendió a todos."
+        },
+        "dignes": {
+            definition: "dignes: extremadamente courageux.",
+            example: "El tamaño dignes del barco sorprendió a todos."
+        },
+        "diligent": {
+            definition: "diligent: extremadamente rapide.",
+            example: "El tamaño diligent del barco sorprendió a todos."
+        },
+        "diminutive": {
+            definition: "diminutive: extremadamente pequeña.",
+            example: "El tamaño diminutive del barco sorprendió a todos."
+        },
+        "disconsolate": {
+            definition: "disconsolate: extremadamente triste.",
+            example: "El tamaño disconsolate del barco sorprendió a todos."
+        },
+        "diáfano": {
+            definition: "diáfano: bastante transparente.",
+            example: "Un cambio diáfano hizo el proyecto más fácil de terminar."
+        },
+        "docto": {
+            definition: "docto: extremadamente inteligente.",
+            example: "El tamaño docto del barco sorprendió a todos."
+        },
+        "dolefulness": {
+            definition: "dolefulness: extremadamente sadness.",
+            example: "El tamaño dolefulness del barco sorprendió a todos."
+        },
+        "dolor": {
+            definition: "dolor: extremadamente sadness.",
+            example: "El tamaño dolor del barco sorprendió a todos."
+        },
+        "down": {
+            definition: "down: bastante triste.",
+            example: "Un cambio down hizo el proyecto más fácil de terminar."
+        },
+        "dreadful": {
+            definition: "dreadful: bastante malo.",
+            example: "Un cambio dreadful hizo el proyecto más fácil de terminar."
+        },
+        "droll": {
+            definition: "droll: extremadamente divertido.",
+            example: "El tamaño droll del barco sorprendió a todos."
+        },
+        "dur": {
+            definition: "dur: bastante difficile.",
+            example: "Un cambio dur hizo el proyecto más fácil de terminar."
+        },
+        "décrépit": {
+            definition: "décrépit: extremadamente vieux.",
+            example: "El tamaño décrépit del barco sorprendió a todos."
+        },
+        "délectable": {
+            definition: "délectable: extremadamente bon.",
+            example: "El tamaño délectable del barco sorprendió a todos."
+        },
+        "délicat": {
+            definition: "délicat: bastante fragile.",
+            example: "Un cambio délicat hizo el proyecto más fácil de terminar."
+        },
+        "déprimé": {
+            definition: "déprimé: bastante triste.",
+            example: "Un cambio déprimé hizo el proyecto más fácil de terminar."
+        },
+        "désespéré": {
+            definition: "désespéré: extremadamente triste.",
+            example: "El tamaño désespéré del barco sorprendió a todos."
+        },
+        "déterminant": {
+            definition: "déterminant: extremadamente importante.",
+            example: "El tamaño déterminant del barco sorprendió a todos."
+        },
+        "détestable": {
+            definition: "détestable: extremadamente mauvais.",
+            example: "El tamaño détestable del barco sorprendió a todos."
+        },
+        "economical": {
+            definition: "economical: bastante cheap.",
+            example: "Un cambio economical hizo el proyecto más fácil de terminar."
+        },
+        "económico": {
+            definition: "económico: extremadamente eficiente.",
+            example: "El tamaño económico del barco sorprendió a todos."
+        },
+        "ecstatic": {
+            definition: "ecstatic: extremadamente feliz.",
+            example: "El tamaño ecstatic del barco sorprendió a todos."
+        },
+        "efectivo": {
+            definition: "efectivo: bastante eficiente.",
+            example: "Un cambio efectivo hizo el proyecto más fácil de terminar."
+        },
+        "effective": {
+            definition: "effective: bastante efficient.",
+            example: "Un cambio effective hizo el proyecto más fácil de terminar."
+        },
+        "effervesce": {
+            definition: "effervesce: extremadamente brighten.",
+            example: "El tamaño effervesce del barco sorprendió a todos."
+        },
+        "effortless": {
+            definition: "effortless: bastante fácil.",
+            example: "Un cambio effortless hizo el proyecto más fácil de terminar."
+        },
+        "effulgent": {
+            definition: "effulgent: extremadamente bright.",
+            example: "El tamaño effulgent del barco sorprendió a todos."
+        },
+        "elated": {
+            definition: "elated: extremadamente feliz.",
+            example: "El tamaño elated del barco sorprendió a todos."
+        },
+        "elderly": {
+            definition: "elderly: bastante viejo.",
+            example: "Un cambio elderly hizo el proyecto más fácil de terminar."
+        },
+        "eldritch": {
+            definition: "eldritch: extremadamente scary.",
+            example: "El tamaño eldritch del barco sorprendió a todos."
+        },
+        "electrizante": {
+            definition: "electrizante: extremadamente interesante.",
+            example: "El tamaño electrizante del barco sorprendió a todos."
+        },
+        "elemental": {
+            definition: "elemental: bastante fácil.",
+            example: "Un cambio elemental hizo el proyecto más fácil de terminar."
+        },
+        "elementary": {
+            definition: "elementary: extremadamente fácil.",
+            example: "El tamaño elementary del barco sorprendió a todos."
+        },
+        "emaciated": {
+            definition: "emaciated: extremadamente thin.",
+            example: "El tamaño emaciated del barco sorprendió a todos."
+        },
+        "en colère": {
+            definition: "en colère: bastante fâché.",
+            example: "Un cambio en colère hizo el proyecto más fácil de terminar."
+        },
+        "encrespado": {
+            definition: "encrespado: extremadamente enfadado.",
+            example: "El tamaño encrespado del barco sorprendió a todos."
+        },
+        "enfantin": {
+            definition: "enfantin: extremadamente facile.",
+            example: "El tamaño enfantin del barco sorprendió a todos."
+        },
+        "engaging": {
+            definition: "engaging: la acción de interesante.",
+            example: "Engaging del documento tardó más de lo previsto."
+        },
+        "enliven": {
+            definition: "enliven: bastante brighten.",
+            example: "Un cambio enliven hizo el proyecto más fácil de terminar."
+        },
+        "enojado": {
+            definition: "enojado: bastante enfadado.",
+            example: "Un cambio enojado hizo el proyecto más fácil de terminar."
+        },
+        "enormous": {
+            definition: "enormous: bastante grande.",
+            example: "Un cambio enormous hizo el proyecto más fácil de terminar."
+        },
+        "enrapture": {
+            definition: "enrapture: extremadamente brighten.",
+            example: "El tamaño enrapture del barco sorprendió a todos."
+        },
+        "entertaining": {
+            definition: "entertaining: la acción de divertido.",
+            example: "Entertaining del documento tardó más de lo previsto."
+        },
+        "enthralling": {
+            definition: "enthralling: la acción de interesante.",
+            example: "Enthralling del documento tardó más de lo previsto."
+        },
+        "envoûtant": {
+            definition: "envoûtant: extremadamente intéressant.",
+            example: "El tamaño envoûtant del barco sorprendió a todos."
+        },
+        "equable": {
+            definition: "equable: extremadamente warm.",
+            example: "El tamaño equable del barco sorprendió a todos."
+        },
+        "equanimous": {
+            definition: "equanimous: extremadamente calm.",
+            example: "El tamaño equanimous del barco sorprendió a todos."
+        },
+        "erudite": {
+            definition: "erudite: extremadamente smart.",
+            example: "El tamaño erudite del barco sorprendió a todos."
+        },
+        "escabroso": {
+            definition: "escabroso: extremadamente difícil.",
+            example: "El tamaño escabroso del barco sorprendió a todos."
+        },
+        "escalofriante": {
+            definition: "escalofriante: extremadamente aterrador.",
+            example: "El tamaño escalofriante del barco sorprendió a todos."
+        },
+        "esencial": {
+            definition: "esencial: bastante importante.",
+            example: "Un cambio esencial hizo el proyecto más fácil de terminar."
+        },
+        "espantoso": {
+            definition: "espantoso: bastante malo.",
+            example: "Un cambio espantoso hizo el proyecto más fácil de terminar."
+        },
+        "especulativo": {
+            definition: "especulativo: extremadamente curioso.",
+            example: "El tamaño especulativo del barco sorprendió a todos."
+        },
+        "espeluznante": {
+            definition: "espeluznante: extremadamente aterrador.",
+            example: "El tamaño espeluznante del barco sorprendió a todos."
+        },
+        "espinoso": {
+            definition: "espinoso: extremadamente difícil.",
+            example: "El tamaño espinoso del barco sorprendió a todos."
+        },
+        "espléndido": {
+            definition: "espléndido: extremadamente hermoso.",
+            example: "El tamaño espléndido del barco sorprendió a todos."
+        },
+        "essential": {
+            definition: "essential: bastante importante.",
+            example: "Un cambio essential hizo el proyecto más fácil de terminar."
+        },
+        "essentiel": {
+            definition: "essentiel: bastante importante.",
+            example: "Un cambio essentiel hizo el proyecto más fácil de terminar."
+        },
+        "estupendo": {
+            definition: "estupendo: bastante bueno.",
+            example: "Un cambio estupendo hizo el proyecto más fácil de terminar."
+        },
+        "eufórico": {
+            definition: "eufórico: extremadamente feliz.",
+            example: "El tamaño eufórico del barco sorprendió a todos."
+        },
+        "euphoric": {
+            definition: "euphoric: extremadamente feliz.",
+            example: "El tamaño euphoric del barco sorprendió a todos."
+        },
+        "euphorique": {
+            definition: "euphorique: extremadamente heureux.",
+            example: "El tamaño euphorique del barco sorprendió a todos."
+        },
+        "evident": {
+            definition: "evident: bastante clear.",
+            example: "Un cambio evident hizo el proyecto más fácil de terminar."
+        },
+        "evidente": {
+            definition: "evidente: bastante transparente.",
+            example: "Un cambio evidente hizo el proyecto más fácil de terminar."
+        },
+        "exalt": {
+            definition: "exalt: extremadamente brighten.",
+            example: "El tamaño exalt del barco sorprendió a todos."
+        },
+        "exasperado": {
+            definition: "exasperado: extremadamente enfadado.",
+            example: "El tamaño exasperado del barco sorprendió a todos."
+        },
+        "exaspéré": {
+            definition: "exaspéré: extremadamente fâché.",
+            example: "El tamaño exaspéré del barco sorprendió a todos."
+        },
+        "excelente": {
+            definition: "excelente: bastante bueno.",
+            example: "Un cambio excelente hizo el proyecto más fácil de terminar."
+        },
+        "excellent": {
+            definition: "excellent: bastante bueno.",
+            example: "Un cambio excellent hizo el proyecto más fácil de terminar."
+        },
+        "excepcional": {
+            definition: "excepcional: extremadamente bueno.",
+            example: "El tamaño excepcional del barco sorprendió a todos."
+        },
+        "execrable": {
+            definition: "execrable: extremadamente malo.",
+            example: "El tamaño execrable del barco sorprendió a todos."
+        },
+        "exemplary": {
+            definition: "exemplary: extremadamente bueno.",
+            example: "El tamaño exemplary del barco sorprendió a todos."
+        },
+        "exigu": {
+            definition: "exigu: extremadamente petit.",
+            example: "El tamaño exigu del barco sorprendió a todos."
+        },
+        "exiguo": {
+            definition: "exiguo: extremadamente pequeño.",
+            example: "El tamaño exiguo del barco sorprendió a todos."
+        },
+        "exiguous": {
+            definition: "exiguous: extremadamente fragile.",
+            example: "El tamaño exiguous del barco sorprendió a todos."
+        },
+        "eximio": {
+            definition: "eximio: extremadamente bueno.",
+            example: "El tamaño eximio del barco sorprendió a todos."
+        },
+        "expeditious": {
+            definition: "expeditious: extremadamente fast.",
+            example: "El tamaño expeditious del barco sorprendió a todos."
+        },
+        "expeditivo": {
+            definition: "expeditivo: extremadamente eficiente.",
+            example: "El tamaño expeditivo del barco sorprendió a todos."
+        },
+        "expedito": {
+            definition: "expedito: extremadamente rápido.",
+            example: "El tamaño expedito del barco sorprendió a todos."
+        },
+        "expéditif": {
+            definition: "expéditif: extremadamente rapide.",
+            example: "El tamaño expéditif del barco sorprendió a todos."
+        },
+        "exquis": {
+            definition: "exquis: extremadamente beau.",
+            example: "El tamaño exquis del barco sorprendió a todos."
+        },
+        "exquisite": {
+            definition: "exquisite: extremadamente beautiful.",
+            example: "El tamaño exquisite del barco sorprendió a todos."
+        },
+        "exquisito": {
+            definition: "exquisito: extremadamente hermoso.",
+            example: "El tamaño exquisito del barco sorprendió a todos."
+        },
+        "extatique": {
+            definition: "extatique: extremadamente heureux.",
+            example: "El tamaño extatique del barco sorprendió a todos."
+        },
+        "exultant": {
+            definition: "exultant: extremadamente joyful.",
+            example: "El tamaño exultant del barco sorprendió a todos."
+        },
+        "exultante": {
+            definition: "exultante: extremadamente feliz.",
+            example: "El tamaño exultante del barco sorprendió a todos."
+        },
+        "exécrable": {
+            definition: "exécrable: extremadamente mauvais.",
+            example: "El tamaño exécrable del barco sorprendió a todos."
+        },
+        "facile": {
+            definition: "facile: extremadamente fácil.",
+            example: "El tamaño facile del barco sorprendió a todos."
+        },
+        "factible": {
+            definition: "factible: extremadamente fácil.",
+            example: "El tamaño factible del barco sorprendió a todos."
+        },
+        "fantástico": {
+            definition: "fantástico: bastante bueno.",
+            example: "Un cambio fantástico hizo el proyecto más fácil de terminar."
+        },
+        "farcical": {
+            definition: "farcical: extremadamente divertido.",
+            example: "El tamaño farcical del barco sorprendió a todos."
+        },
+        "fascinant": {
+            definition: "fascinant: bastante intéressant.",
+            example: "Un cambio fascinant hizo el proyecto más fácil de terminar."
+        },
+        "fascinante": {
+            definition: "fascinante: bastante interesante.",
+            example: "Un cambio fascinante hizo el proyecto más fácil de terminar."
+        },
+        "fascinating": {
+            definition: "fascinating: la acción de interesante.",
+            example: "Fascinating del documento tardó más de lo previsto."
+        },
+        "fast": {
+            definition: "fast: bastante rápido.",
+            example: "Un cambio fast hizo el proyecto más fácil de terminar."
+        },
+        "fearless": {
+            definition: "fearless: bastante brave.",
+            example: "Un cambio fearless hizo el proyecto más fácil de terminar."
+        },
+        "filthy": {
+            definition: "filthy: bastante dirty.",
+            example: "Un cambio filthy hizo el proyecto más fácil de terminar."
+        },
+        "fine": {
+            definition: "fine: bastante bueno.",
+            example: "Un cambio fine hizo el proyecto más fácil de terminar."
+        },
+        "fisgón": {
+            definition: "fisgón: bastante curioso.",
+            example: "Un cambio fisgón hizo el proyecto más fácil de terminar."
+        },
+        "flamante": {
+            definition: "flamante: bastante nuevo.",
+            example: "Un cambio flamante hizo el proyecto más fácil de terminar."
+        },
+        "fleet": {
+            definition: "fleet: extremadamente fast.",
+            example: "El tamaño fleet del barco sorprendió a todos."
+        },
+        "flimsy": {
+            definition: "flimsy: extremadamente fragile.",
+            example: "El tamaño flimsy del barco sorprendió a todos."
+        },
+        "flush": {
+            definition: "flush: extremadamente rich.",
+            example: "El tamaño flush del barco sorprendió a todos."
+        },
+        "fondamental": {
+            definition: "fondamental: extremadamente importante.",
+            example: "El tamaño fondamental del barco sorprendió a todos."
+        },
+        "forlorn": {
+            definition: "forlorn: extremadamente triste.",
+            example: "El tamaño forlorn del barco sorprendió a todos."
+        },
+        "formidable": {
+            definition: "formidable: extremadamente fuerte.",
+            example: "El tamaño formidable del barco sorprendió a todos."
+        },
+        "fornido": {
+            definition: "fornido: extremadamente fuerte.",
+            example: "El tamaño fornido del barco sorprendió a todos."
+        },
+        "forthright": {
+            definition: "forthright: extremadamente honest.",
+            example: "El tamaño forthright del barco sorprendió a todos."
+        },
+        "fouineur": {
+            definition: "fouineur: extremadamente curieux.",
+            example: "El tamaño fouineur del barco sorprendió a todos."
+        },
+        "foul": {
+            definition: "foul: extremadamente dirty.",
+            example: "El tamaño foul del barco sorprendió a todos."
+        },
+        "frail": {
+            definition: "frail: bastante fragile.",
+            example: "Un cambio frail hizo el proyecto más fácil de terminar."
+        },
+        "frais": {
+            definition: "frais: bastante froid.",
+            example: "Un cambio frais hizo el proyecto más fácil de terminar."
+        },
+        "frank": {
+            definition: "frank: bastante honest.",
+            example: "Un cambio frank hizo el proyecto más fácil de terminar."
+        },
+        "fraught": {
+            definition: "fraught: extremadamente peligroso.",
+            example: "El tamaño fraught del barco sorprendió a todos."
+        },
+        "freezing": {
+            definition: "freezing: la acción de frío.",
+            example: "Freezing del documento tardó más de lo previsto."
+        },
+        "fresh": {
+            definition: "fresh: bastante nuevo.",
+            example: "Un cambio fresh hizo el proyecto más fácil de terminar."
+        },
+        "friable": {
+            definition: "friable: extremadamente fragile.",
+            example: "El tamaño friable del barco sorprendió a todos."
+        },
+        "frightening": {
+            definition: "frightening: la acción de scary.",
+            example: "Frightening del documento tardó más de lo previsto."
+        },
+        "frigid": {
+            definition: "frigid: extremadamente frío.",
+            example: "El tamaño frigid del barco sorprendió a todos."
+        },
+        "frigorifique": {
+            definition: "frigorifique: extremadamente froid.",
+            example: "El tamaño frigorifique del barco sorprendió a todos."
+        },
+        "frosty": {
+            definition: "frosty: bastante frío.",
+            example: "Un cambio frosty hizo el proyecto más fácil de terminar."
+        },
+        "frugal": {
+            definition: "frugal: extremadamente cheap.",
+            example: "El tamaño frugal del barco sorprendió a todos."
+        },
+        "frágilísimo": {
+            definition: "frágilísimo: extremadamente frágil.",
+            example: "El tamaño frágilísimo del barco sorprendió a todos."
+        },
+        "frêle": {
+            definition: "frêle: bastante fragile.",
+            example: "Un cambio frêle hizo el proyecto más fácil de terminar."
+        },
+        "fulgurant": {
+            definition: "fulgurant: extremadamente rapide.",
+            example: "El tamaño fulgurant del barco sorprendió a todos."
+        },
+        "fulminant": {
+            definition: "fulminant: extremadamente fâché.",
+            example: "El tamaño fulminant del barco sorprendió a todos."
+        },
+        "fundamental": {
+            definition: "fundamental: bastante importante.",
+            example: "Un cambio fundamental hizo el proyecto más fácil de terminar."
+        },
+        "furieux": {
+            definition: "furieux: bastante fâché.",
+            example: "Un cambio furieux hizo el proyecto más fácil de terminar."
+        },
+        "furioso": {
+            definition: "furioso: bastante enfadado.",
+            example: "Un cambio furioso hizo el proyecto más fácil de terminar."
+        },
+        "furious": {
+            definition: "furious: bastante angry.",
+            example: "Un cambio furious hizo el proyecto más fácil de terminar."
+        },
+        "gai": {
+            definition: "gai: bastante heureux.",
+            example: "Un cambio gai hizo el proyecto más fácil de terminar."
+        },
+        "galante": {
+            definition: "galante: extremadamente valiente.",
+            example: "El tamaño galante del barco sorprendió a todos."
+        },
+        "gallant": {
+            definition: "gallant: extremadamente brave.",
+            example: "El tamaño gallant del barco sorprendió a todos."
+        },
+        "gallardo": {
+            definition: "gallardo: extremadamente valiente.",
+            example: "El tamaño gallardo del barco sorprendió a todos."
+        },
+        "gargantuan": {
+            definition: "gargantuan: extremadamente grande.",
+            example: "El tamaño gargantuan del barco sorprendió a todos."
+        },
+        "gargantuesco": {
+            definition: "gargantuesco: extremadamente grande.",
+            example: "El tamaño gargantuesco del barco sorprendió a todos."
+        },
+        "gargantuesque": {
+            definition: "gargantuesque: extremadamente grand.",
+            example: "El tamaño gargantuesque del barco sorprendió a todos."
+        },
+        "gaunt": {
+            definition: "gaunt: extremadamente thin.",
+            example: "El tamaño gaunt del barco sorprendió a todos."
+        },
+        "gelid": {
+            definition: "gelid: extremadamente frío.",
+            example: "El tamaño gelid del barco sorprendió a todos."
+        },
+        "gelé": {
+            definition: "gelé: bastante froid.",
+            example: "Un cambio gelé hizo el proyecto más fácil de terminar."
+        },
+        "genial": {
+            definition: "genial: extremadamente friendly.",
+            example: "El tamaño genial del barco sorprendió a todos."
+        },
+        "giant": {
+            definition: "giant: bastante grande.",
+            example: "Un cambio giant hizo el proyecto más fácil de terminar."
+        },
+        "gifted": {
+            definition: "gifted: bastante brilliant.",
+            example: "Un cambio gifted hizo el proyecto más fácil de terminar."
+        },
+        "gigante": {
+            definition: "gigante: bastante grande.",
+            example: "Un cambio gigante hizo el proyecto más fácil de terminar."
+        },
+        "gigantesque": {
+            definition: "gigantesque: extremadamente grand.",
+            example: "El tamaño gigantesque del barco sorprendió a todos."
+        },
+        "glacial": {
+            definition: "glacial: extremadamente frío.",
+            example: "El tamaño glacial del barco sorprendió a todos."
+        },
+        "glacé": {
+            definition: "glacé: bastante froid.",
+            example: "Un cambio glacé hizo el proyecto más fácil de terminar."
+        },
+        "glad": {
+            definition: "glad: bastante feliz.",
+            example: "Un cambio glad hizo el proyecto más fácil de terminar."
+        },
+        "gladden": {
+            definition: "gladden: extremadamente brighten.",
+            example: "El tamaño gladden del barco sorprendió a todos."
+        },
+        "glaçant": {
+            definition: "glaçant: extremadamente effrayant.",
+            example: "El tamaño glaçant del barco sorprendió a todos."
+        },
+        "gleeful": {
+            definition: "gleeful: bastante joyful.",
+            example: "Un cambio gleeful hizo el proyecto más fácil de terminar."
+        },
+        "gloom": {
+            definition: "gloom: bastante sadness.",
+            example: "Un cambio gloom hizo el proyecto más fácil de terminar."
+        },
+        "gloomy": {
+            definition: "gloomy: bastante triste.",
+            example: "Un cambio gloomy hizo el proyecto más fácil de terminar."
+        },
+        "gorgeous": {
+            definition: "gorgeous: bastante beautiful.",
+            example: "Un cambio gorgeous hizo el proyecto más fácil de terminar."
+        },
+        "gozoso": {
+            definition: "gozoso: bastante feliz.",
+            example: "Un cambio gozoso hizo el proyecto más fácil de terminar."
+        },
+        "great": {
+            definition: "great: bastante bueno.",
+            example: "Un cambio great hizo el proyecto más fácil de terminar."
+        },
+        "grelottant": {
+            definition: "grelottant: bastante froid.",
+            example: "Un cambio grelottant hizo el proyecto más fácil de terminar."
+        },
+        "grief": {
+            definition: "grief: bastante sadness.",
+            example: "Un cambio grief hizo el proyecto más fácil de terminar."
+        },
+        "grimy": {
+            definition: "grimy: bastante dirty.",
+            example: "Un cambio grimy hizo el proyecto más fácil de terminar."
+        },
+        "grisant": {
+            definition: "grisant: extremadamente intéressant.",
+            example: "El tamaño grisant del barco sorprendió a todos."
+        },
+        "guapo": {
+            definition: "guapo: bastante hermoso.",
+            example: "Un cambio guapo hizo el proyecto más fácil de terminar."
+        },
+        "géant": {
+            definition: "géant: bastante grand.",
+            example: "Un cambio géant hizo el proyecto más fácil de terminar."
+        },
+        "gélido": {
+            definition: "gélido: bastante frío.",
+            example: "Un cambio gélido hizo el proyecto más fácil de terminar."
+        },
+        "génial": {
+            definition: "génial: bastante bon.",
+            example: "Un cambio génial hizo el proyecto más fácil de terminar."
+        },
+        "hacedero": {
+            definition: "hacedero: extremadamente fácil.",
+            example: "El tamaño hacedero del barco sorprendió a todos."
+        },
+        "halcyon": {
+            definition: "halcyon: extremadamente quiet.",
+            example: "El tamaño halcyon del barco sorprendió a todos."
+        },
+        "happy": {
+            definition: "happy: bastante joyful.",
+            example: "Un cambio happy hizo el proyecto más fácil de terminar."
+        },
+        "hard": {
+            definition: "hard: bastante difícil.",
+            example: "Un cambio hard hizo el proyecto más fácil de terminar."
+        },
+        "hardy": {
+            definition: "hardy: bastante fuerte.",
+            example: "Un cambio hardy hizo el proyecto más fácil de terminar."
+        },
+        "harrowing": {
+            definition: "harrowing: la acción de scary.",
+            example: "Harrowing del documento tardó más de lo previsto."
+        },
+        "hasty": {
+            definition: "hasty: bastante fast.",
+            example: "Un cambio hasty hizo el proyecto más fácil de terminar."
+        },
+        "hazardous": {
+            definition: "hazardous: bastante peligroso.",
+            example: "Un cambio hazardous hizo el proyecto más fácil de terminar."
+        },
+        "heated": {
+            definition: "heated: bastante caliente.",
+            example: "Un cambio heated hizo el proyecto más fácil de terminar."
+        },
+        "helado": {
+            definition: "helado: bastante frío.",
+            example: "Un cambio helado hizo el proyecto más fácil de terminar."
+        },
+        "herculean": {
+            definition: "herculean: extremadamente fuerte.",
+            example: "El tamaño herculean del barco sorprendió a todos."
+        },
+        "herculéen": {
+            definition: "herculéen: extremadamente fort.",
+            example: "El tamaño herculéen del barco sorprendió a todos."
+        },
+        "hercúleo": {
+            definition: "hercúleo: extremadamente fuerte.",
+            example: "El tamaño hercúleo del barco sorprendió a todos."
+        },
+        "heroic": {
+            definition: "heroic: bastante brave.",
+            example: "Un cambio heroic hizo el proyecto más fácil de terminar."
+        },
+        "heroico": {
+            definition: "heroico: bastante valiente.",
+            example: "Un cambio heroico hizo el proyecto más fácil de terminar."
+        },
+        "hilarious": {
+            definition: "hilarious: bastante divertido.",
+            example: "Un cambio hilarious hizo el proyecto más fácil de terminar."
+        },
+        "hipnótico": {
+            definition: "hipnótico: extremadamente interesante.",
+            example: "El tamaño hipnótico del barco sorprendió a todos."
+        },
+        "hivernal": {
+            definition: "hivernal: extremadamente froid.",
+            example: "El tamaño hivernal del barco sorprendió a todos."
+        },
+        "hoary": {
+            definition: "hoary: extremadamente ancient.",
+            example: "El tamaño hoary del barco sorprendió a todos."
+        },
+        "horrible": {
+            definition: "horrible: bastante malo.",
+            example: "Un cambio horrible hizo el proyecto más fácil de terminar."
+        },
+        "horrifying": {
+            definition: "horrifying: la acción de scary.",
+            example: "Horrifying del documento tardó más de lo previsto."
+        },
+        "horripilante": {
+            definition: "horripilante: bastante aterrador.",
+            example: "Un cambio horripilante hizo el proyecto más fácil de terminar."
+        },
+        "hot": {
+            definition: "hot: bastante warm.",
+            example: "Un cambio hot hizo el proyecto más fácil de terminar."
+        },
+        "huge": {
+            definition: "huge: bastante grande.",
+            example: "Un cambio huge hizo el proyecto más fácil de terminar."
+        },
+        "humorous": {
+            definition: "humorous: bastante divertido.",
+            example: "Un cambio humorous hizo el proyecto más fácil de terminar."
+        },
+        "hushed": {
+            definition: "hushed: bastante quiet.",
+            example: "Un cambio hushed hizo el proyecto más fácil de terminar."
+        },
+        "héros": {
+            definition: "héros: extremadamente courageux.",
+            example: "El tamaño héros del barco sorprendió a todos."
+        },
+        "héroïque": {
+            definition: "héroïque: bastante courageux.",
+            example: "Un cambio héroïque hizo el proyecto más fácil de terminar."
+        },
+        "icy": {
+            definition: "icy: bastante frío.",
+            example: "Un cambio icy hizo el proyecto más fácil de terminar."
+        },
+        "illuminate": {
+            definition: "illuminate: bastante brighten.",
+            example: "Un cambio illuminate hizo el proyecto más fácil de terminar."
+        },
+        "immense": {
+            definition: "immense: extremadamente grande.",
+            example: "El tamaño immense del barco sorprendió a todos."
+        },
+        "impeccable": {
+            definition: "impeccable: extremadamente bueno.",
+            example: "El tamaño impeccable del barco sorprendió a todos."
+        },
+        "impecunious": {
+            definition: "impecunious: extremadamente poor.",
+            example: "El tamaño impecunious del barco sorprendió a todos."
+        },
+        "impoverished": {
+            definition: "impoverished: bastante poor.",
+            example: "Un cambio impoverished hizo el proyecto más fácil de terminar."
+        },
+        "incandescent": {
+            definition: "incandescent: extremadamente bright.",
+            example: "El tamaño incandescent del barco sorprendió a todos."
+        },
+        "incensed": {
+            definition: "incensed: extremadamente angry.",
+            example: "El tamaño incensed del barco sorprendió a todos."
+        },
+        "inconsolable": {
+            definition: "inconsolable: extremadamente triste.",
+            example: "El tamaño inconsolable del barco sorprendió a todos."
+        },
+        "incontestable": {
+            definition: "incontestable: extremadamente transparent.",
+            example: "El tamaño incontestable del barco sorprendió a todos."
+        },
+        "indagador": {
+            definition: "indagador: extremadamente curioso.",
+            example: "El tamaño indagador del barco sorprendió a todos."
+        },
+        "indigent": {
+            definition: "indigent: extremadamente poor.",
+            example: "El tamaño indigent del barco sorprendió a todos."
+        },
+        "indignado": {
+            definition: "indignado: extremadamente enfadado.",
+            example: "El tamaño indignado del barco sorprendió a todos."
+        },
+        "indomable": {
+            definition: "indomable: extremadamente fuerte.",
+            example: "El tamaño indomable del barco sorprendió a todos."
+        },
+        "indomitable": {
+            definition: "indomitable: extremadamente fuerte.",
+            example: "El tamaño indomitable del barco sorprendió a todos."
+        },
+        "indomptable": {
+            definition: "indomptable: extremadamente fort.",
+            example: "El tamaño indomptable del barco sorprendió a todos."
+        },
+        "inexpensive": {
+            definition: "inexpensive: bastante cheap.",
+            example: "Un cambio inexpensive hizo el proyecto más fácil de terminar."
+        },
+        "infame": {
+            definition: "infame: extremadamente malo.",
+            example: "El tamaño infame del barco sorprendió a todos."
+        },
+        "infect": {
+            definition: "infect: extremadamente mauvais.",
+            example: "El tamaño infect del barco sorprendió a todos."
+        },
+        "infeliz": {
+            definition: "infeliz: bastante triste.",
+            example: "Un cambio infeliz hizo el proyecto más fácil de terminar."
+        },
+        "infime": {
+            definition: "infime: extremadamente petit.",
+            example: "El tamaño infime del barco sorprendió a todos."
+        },
+        "infinitesimal": {
+            definition: "infinitesimal: extremadamente pequeña.",
+            example: "El tamaño infinitesimal del barco sorprendió a todos."
+        },
+        "infirm": {
+            definition: "infirm: extremadamente fragile.",
+            example: "El tamaño infirm del barco sorprendió a todos."
+        },
+        "ingenioso": {
+            definition: "ingenioso: extremadamente inteligente.",
+            example: "El tamaño ingenioso del barco sorprendió a todos."
+        },
+        "ingenious": {
+            definition: "ingenious: bastante brilliant.",
+            example: "Un cambio ingenious hizo el proyecto más fácil de terminar."
+        },
+        "ingénieux": {
+            definition: "ingénieux: extremadamente intelligent.",
+            example: "El tamaño ingénieux del barco sorprendió a todos."
+        },
+        "inmenso": {
+            definition: "inmenso: bastante grande.",
+            example: "Un cambio inmenso hizo el proyecto más fácil de terminar."
+        },
+        "innovador": {
+            definition: "innovador: extremadamente nuevo.",
+            example: "El tamaño innovador del barco sorprendió a todos."
+        },
+        "innovative": {
+            definition: "innovative: extremadamente nuevo.",
+            example: "El tamaño innovative del barco sorprendió a todos."
+        },
+        "inquiquinant": {
+            definition: "inquiquinant: bastante curieux.",
+            example: "Un cambio inquiquinant hizo el proyecto más fácil de terminar."
+        },
+        "inquiring": {
+            definition: "inquiring: la acción de curious.",
+            example: "Inquiring del documento tardó más de lo previsto."
+        },
+        "inquisitive": {
+            definition: "inquisitive: bastante curious.",
+            example: "Un cambio inquisitive hizo el proyecto más fácil de terminar."
+        },
+        "inquisitivo": {
+            definition: "inquisitivo: bastante curioso.",
+            example: "Un cambio inquisitivo hizo el proyecto más fácil de terminar."
+        },
+        "insidious": {
+            definition: "insidious: extremadamente peligroso.",
+            example: "El tamaño insidious del barco sorprendió a todos."
+        },
+        "intelligent": {
+            definition: "intelligent: bastante smart.",
+            example: "Un cambio intelligent hizo el proyecto más fácil de terminar."
+        },
+        "interesado": {
+            definition: "interesado: bastante curioso.",
+            example: "Un cambio interesado hizo el proyecto más fácil de terminar."
+        },
+        "interested": {
+            definition: "interested: bastante curious.",
+            example: "Un cambio interested hizo el proyecto más fácil de terminar."
+        },
+        "interrogatif": {
+            definition: "interrogatif: extremadamente curieux.",
+            example: "El tamaño interrogatif del barco sorprendió a todos."
+        },
+        "intrepid": {
+            definition: "intrepid: extremadamente brave.",
+            example: "El tamaño intrepid del barco sorprendió a todos."
+        },
+        "intrepido": {
+            definition: "intrepido: extremadamente valiente.",
+            example: "El tamaño intrepido del barco sorprendió a todos."
+        },
+        "intrigante": {
+            definition: "intrigante: bastante interesante.",
+            example: "Un cambio intrigante hizo el proyecto más fácil de terminar."
+        },
+        "intriguing": {
+            definition: "intriguing: la acción de interesante.",
+            example: "Intriguing del documento tardó más de lo previsto."
+        },
+        "intrincado": {
+            definition: "intrincado: extremadamente difícil.",
+            example: "El tamaño intrincado del barco sorprendió a todos."
+        },
+        "intrépide": {
+            definition: "intrépide: bastante courageux.",
+            example: "Un cambio intrépide hizo el proyecto más fácil de terminar."
+        },
+        "intéressé": {
+            definition: "intéressé: bastante curieux.",
+            example: "Un cambio intéressé hizo el proyecto más fácil de terminar."
+        },
+        "invernal": {
+            definition: "invernal: extremadamente frío.",
+            example: "El tamaño invernal del barco sorprendió a todos."
+        },
+        "invincible": {
+            definition: "invincible: extremadamente fort.",
+            example: "El tamaño invincible del barco sorprendió a todos."
+        },
+        "inédit": {
+            definition: "inédit: extremadamente nouveau.",
+            example: "El tamaño inédit del barco sorprendió a todos."
+        },
+        "iracundo": {
+            definition: "iracundo: extremadamente enfadado.",
+            example: "El tamaño iracundo del barco sorprendió a todos."
+        },
+        "irascible": {
+            definition: "irascible: extremadamente angry.",
+            example: "El tamaño irascible del barco sorprendió a todos."
+        },
+        "irate": {
+            definition: "irate: extremadamente angry.",
+            example: "El tamaño irate del barco sorprendió a todos."
+        },
+        "irritado": {
+            definition: "irritado: bastante enfadado.",
+            example: "Un cambio irritado hizo el proyecto más fácil de terminar."
+        },
+        "irritated": {
+            definition: "irritated: bastante angry.",
+            example: "Un cambio irritated hizo el proyecto más fácil de terminar."
+        },
+        "irrité": {
+            definition: "irrité: bastante fâché.",
+            example: "Un cambio irrité hizo el proyecto más fácil de terminar."
+        },
+        "joli": {
+            definition: "joli: bastante beau.",
+            example: "Un cambio joli hizo el proyecto más fácil de terminar."
+        },
+        "joyeux": {
+            definition: "joyeux: bastante heureux.",
+            example: "Un cambio joyeux hizo el proyecto más fácil de terminar."
+        },
+        "joyful": {
+            definition: "joyful: bastante feliz.",
+            example: "Un cambio joyful hizo el proyecto más fácil de terminar."
+        },
+        "jubilant": {
+            definition: "jubilant: extremadamente feliz.",
+            example: "El tamaño jubilant del barco sorprendió a todos."
+        },
+        "jubiloso": {
+            definition: "jubiloso: extremadamente feliz.",
+            example: "El tamaño jubiloso del barco sorprendió a todos."
+        },
+        "kind": {
+            definition: "kind: bastante friendly.",
+            example: "Un cambio kind hizo el proyecto más fácil de terminar."
+        },
+        "laborieux": {
+            definition: "laborieux: extremadamente difficile.",
+            example: "El tamaño laborieux del barco sorprendió a todos."
+        },
+        "laborious": {
+            definition: "laborious: extremadamente difícil.",
+            example: "El tamaño laborious del barco sorprendió a todos."
+        },
+        "laconic": {
+            definition: "laconic: extremadamente silent.",
+            example: "El tamaño laconic del barco sorprendió a todos."
+        },
+        "lamentable": {
+            definition: "lamentable: extremadamente mauvais.",
+            example: "El tamaño lamentable del barco sorprendió a todos."
+        },
+        "lank": {
+            definition: "lank: extremadamente thin.",
+            example: "El tamaño lank del barco sorprendió a todos."
+        },
+        "large": {
+            definition: "large: bastante grande.",
+            example: "Un cambio large hizo el proyecto más fácil de terminar."
+        },
+        "latest": {
+            definition: "latest: bastante nuevo.",
+            example: "Un cambio latest hizo el proyecto más fácil de terminar."
+        },
+        "lean": {
+            definition: "lean: bastante thin.",
+            example: "Un cambio lean hizo el proyecto más fácil de terminar."
+        },
+        "leste": {
+            definition: "leste: extremadamente rapide.",
+            example: "El tamaño leste del barco sorprendió a todos."
+        },
+        "ligero": {
+            definition: "ligero: bastante rápido.",
+            example: "Un cambio ligero hizo el proyecto más fácil de terminar."
+        },
+        "lighten": {
+            definition: "lighten: bastante brighten.",
+            example: "Un cambio lighten hizo el proyecto más fácil de terminar."
+        },
+        "liliputiense": {
+            definition: "liliputiense: extremadamente pequeño.",
+            example: "El tamaño liliputiense del barco sorprendió a todos."
+        },
+        "lilliputian": {
+            definition: "lilliputian: extremadamente pequeña.",
+            example: "El tamaño lilliputian del barco sorprendió a todos."
+        },
+        "lilliputien": {
+            definition: "lilliputien: extremadamente petit.",
+            example: "El tamaño lilliputien del barco sorprendió a todos."
+        },
+        "limpid": {
+            definition: "limpid: extremadamente transparent.",
+            example: "El tamaño limpid del barco sorprendió a todos."
+        },
+        "limpide": {
+            definition: "limpide: extremadamente facile.",
+            example: "El tamaño limpide del barco sorprendió a todos."
+        },
+        "lindo": {
+            definition: "lindo: bastante hermoso.",
+            example: "Un cambio lindo hizo el proyecto más fácil de terminar."
+        },
+        "listo": {
+            definition: "listo: bastante inteligente.",
+            example: "Un cambio listo hizo el proyecto más fácil de terminar."
+        },
+        "little": {
+            definition: "little: bastante pequeña.",
+            example: "Un cambio little hizo el proyecto más fácil de terminar."
+        },
+        "livid": {
+            definition: "livid: extremadamente angry.",
+            example: "El tamaño livid del barco sorprendió a todos."
+        },
+        "llevadero": {
+            definition: "llevadero: extremadamente fácil.",
+            example: "El tamaño llevadero del barco sorprendió a todos."
+        },
+        "loaded": {
+            definition: "loaded: bastante rich.",
+            example: "Un cambio loaded hizo el proyecto más fácil de terminar."
+        },
+        "lovely": {
+            definition: "lovely: bastante beautiful.",
+            example: "Un cambio lovely hizo el proyecto más fácil de terminar."
+        },
+        "low-cost": {
+            definition: "low-cost: bastante cheap.",
+            example: "Un cambio low-cost hizo el proyecto más fácil de terminar."
+        },
+        "lucent": {
+            definition: "lucent: extremadamente bright.",
+            example: "El tamaño lucent del barco sorprendió a todos."
+        },
+        "lucid": {
+            definition: "lucid: bastante clear.",
+            example: "Un cambio lucid hizo el proyecto más fácil de terminar."
+        },
+        "lucide": {
+            definition: "lucide: bastante transparent.",
+            example: "Un cambio lucide hizo el proyecto más fácil de terminar."
+        },
+        "lugubre": {
+            definition: "lugubre: extremadamente effrayant.",
+            example: "El tamaño lugubre del barco sorprendió a todos."
+        },
+        "lugubriousness": {
+            definition: "lugubriousness: extremadamente sadness.",
+            example: "El tamaño lugubriousness del barco sorprendió a todos."
+        },
+        "luminous": {
+            definition: "luminous: bastante bright.",
+            example: "Un cambio luminous hizo el proyecto más fácil de terminar."
+        },
+        "macabre": {
+            definition: "macabre: extremadamente scary.",
+            example: "El tamaño macabre del barco sorprendió a todos."
+        },
+        "macabro": {
+            definition: "macabro: extremadamente aterrador.",
+            example: "El tamaño macabro del barco sorprendió a todos."
+        },
+        "mad": {
+            definition: "mad: bastante angry.",
+            example: "Un cambio mad hizo el proyecto más fácil de terminar."
+        },
+        "magnanime": {
+            definition: "magnanime: extremadamente courageux.",
+            example: "El tamaño magnanime del barco sorprendió a todos."
+        },
+        "magnifique": {
+            definition: "magnifique: bastante beau.",
+            example: "Un cambio magnifique hizo el proyecto más fácil de terminar."
+        },
+        "majeur": {
+            definition: "majeur: bastante importante.",
+            example: "Un cambio majeur hizo el proyecto más fácil de terminar."
+        },
+        "major": {
+            definition: "major: bastante importante.",
+            example: "Un cambio major hizo el proyecto más fácil de terminar."
+        },
+        "malaisé": {
+            definition: "malaisé: extremadamente difficile.",
+            example: "El tamaño malaisé del barco sorprendió a todos."
+        },
+        "malheureux": {
+            definition: "malheureux: bastante triste.",
+            example: "Un cambio malheureux hizo el proyecto más fácil de terminar."
+        },
+        "malin": {
+            definition: "malin: bastante intelligent.",
+            example: "Un cambio malin hizo el proyecto más fácil de terminar."
+        },
+        "mammoth": {
+            definition: "mammoth: extremadamente grande.",
+            example: "El tamaño mammoth del barco sorprendió a todos."
+        },
+        "manifest": {
+            definition: "manifest: extremadamente clear.",
+            example: "El tamaño manifest del barco sorprendió a todos."
+        },
+        "maravilloso": {
+            definition: "maravilloso: bastante bueno.",
+            example: "Un cambio maravilloso hizo el proyecto más fácil de terminar."
+        },
+        "masivo": {
+            definition: "masivo: bastante grande.",
+            example: "Un cambio masivo hizo el proyecto más fácil de terminar."
+        },
+        "massif": {
+            definition: "massif: bastante grand.",
+            example: "Un cambio massif hizo el proyecto más fácil de terminar."
+        },
+        "massive": {
+            definition: "massive: bastante grande.",
+            example: "Un cambio massive hizo el proyecto más fácil de terminar."
+        },
+        "meager": {
+            definition: "meager: extremadamente thin.",
+            example: "El tamaño meager del barco sorprendió a todos."
+        },
+        "medular": {
+            definition: "medular: extremadamente importante.",
+            example: "El tamaño medular del barco sorprendió a todos."
+        },
+        "meek": {
+            definition: "meek: bastante timid.",
+            example: "Un cambio meek hizo el proyecto más fácil de terminar."
+        },
+        "melancholy": {
+            definition: "melancholy: extremadamente triste.",
+            example: "El tamaño melancholy del barco sorprendió a todos."
+        },
+        "menacing": {
+            definition: "menacing: la acción de peligroso.",
+            example: "Menacing del documento tardó más de lo previsto."
+        },
+        "menu": {
+            definition: "menu: bastante petit.",
+            example: "Un cambio menu hizo el proyecto más fácil de terminar."
+        },
+        "menudo": {
+            definition: "menudo: extremadamente pequeño.",
+            example: "El tamaño menudo del barco sorprendió a todos."
+        },
+        "mercurial": {
+            definition: "mercurial: extremadamente fast.",
+            example: "El tamaño mercurial del barco sorprendió a todos."
+        },
+        "merry": {
+            definition: "merry: bastante joyful.",
+            example: "Un cambio merry hizo el proyecto más fácil de terminar."
+        },
+        "mesmerizing": {
+            definition: "mesmerizing: la acción de interesante.",
+            example: "Mesmerizing del documento tardó más de lo previsto."
+        },
+        "meteoric": {
+            definition: "meteoric: extremadamente rápido.",
+            example: "El tamaño meteoric del barco sorprendió a todos."
+        },
+        "microscopic": {
+            definition: "microscopic: extremadamente pequeña.",
+            example: "El tamaño microscopic del barco sorprendió a todos."
+        },
+        "microscopique": {
+            definition: "microscopique: extremadamente petit.",
+            example: "El tamaño microscopique del barco sorprendió a todos."
+        },
+        "mighty": {
+            definition: "mighty: bastante fuerte.",
+            example: "Un cambio mighty hizo el proyecto más fácil de terminar."
+        },
+        "mignon": {
+            definition: "mignon: bastante petit.",
+            example: "Un cambio mignon hizo el proyecto más fácil de terminar."
+        },
+        "mini": {
+            definition: "mini: bastante pequeña.",
+            example: "Un cambio mini hizo el proyecto más fácil de terminar."
+        },
+        "minuscule": {
+            definition: "minuscule: extremadamente pequeña.",
+            example: "El tamaño minuscule del barco sorprendió a todos."
+        },
+        "modern": {
+            definition: "modern: bastante nuevo.",
+            example: "Un cambio modern hizo el proyecto más fácil de terminar."
+        },
+        "moderne": {
+            definition: "moderne: bastante nouveau.",
+            example: "Un cambio moderne hizo el proyecto más fácil de terminar."
+        },
+        "moderno": {
+            definition: "moderno: bastante nuevo.",
+            example: "Un cambio moderno hizo el proyecto más fácil de terminar."
+        },
+        "molesto": {
+            definition: "molesto: bastante enfadado.",
+            example: "Un cambio molesto hizo el proyecto más fácil de terminar."
+        },
+        "mollifying": {
+            definition: "mollifying: la acción de helpful.",
+            example: "Mollifying del documento tardó más de lo previsto."
+        },
+        "momentous": {
+            definition: "momentous: extremadamente importante.",
+            example: "El tamaño momentous del barco sorprendió a todos."
+        },
+        "moneyed": {
+            definition: "moneyed: extremadamente rich.",
+            example: "El tamaño moneyed del barco sorprendió a todos."
+        },
+        "morose": {
+            definition: "morose: extremadamente triste.",
+            example: "El tamaño morose del barco sorprendió a todos."
+        },
+        "mute": {
+            definition: "mute: extremadamente quiet.",
+            example: "El tamaño mute del barco sorprendió a todos."
+        },
+        "médiocre": {
+            definition: "médiocre: bastante mauvais.",
+            example: "Un cambio médiocre hizo el proyecto más fácil de terminar."
+        },
+        "mélancolique": {
+            definition: "mélancolique: bastante triste.",
+            example: "Un cambio mélancolique hizo el proyecto más fácil de terminar."
+        },
+        "naciente": {
+            definition: "naciente: extremadamente nuevo.",
+            example: "El tamaño naciente del barco sorprendió a todos."
+        },
+        "naissant": {
+            definition: "naissant: extremadamente nouveau.",
+            example: "El tamaño naissant del barco sorprendió a todos."
+        },
+        "narrow": {
+            definition: "narrow: bastante thin.",
+            example: "Un cambio narrow hizo el proyecto más fácil de terminar."
+        },
+        "nascent": {
+            definition: "nascent: extremadamente nuevo.",
+            example: "El tamaño nascent del barco sorprendió a todos."
+        },
+        "necessitous": {
+            definition: "necessitous: extremadamente poor.",
+            example: "El tamaño necessitous del barco sorprendió a todos."
+        },
+        "needy": {
+            definition: "needy: bastante poor.",
+            example: "Un cambio needy hizo el proyecto más fácil de terminar."
+        },
+        "nefasto": {
+            definition: "nefasto: extremadamente malo.",
+            example: "El tamaño nefasto del barco sorprendió a todos."
+        },
+        "neuf": {
+            definition: "neuf: bastante nouveau.",
+            example: "Un cambio neuf hizo el proyecto más fácil de terminar."
+        },
+        "newfangled": {
+            definition: "newfangled: extremadamente nuevo.",
+            example: "El tamaño newfangled del barco sorprendió a todos."
+        },
+        "nice": {
+            definition: "nice: bastante bueno.",
+            example: "Un cambio nice hizo el proyecto más fácil de terminar."
+        },
+        "nimble": {
+            definition: "nimble: extremadamente rápido.",
+            example: "El tamaño nimble del barco sorprendió a todos."
+        },
+        "nippy": {
+            definition: "nippy: extremadamente frío.",
+            example: "El tamaño nippy del barco sorprendió a todos."
+        },
+        "noisy": {
+            definition: "noisy: bastante loud.",
+            example: "Un cambio noisy hizo el proyecto más fácil de terminar."
+        },
+        "nosy": {
+            definition: "nosy: bastante curious.",
+            example: "Un cambio nosy hizo el proyecto más fácil de terminar."
+        },
+        "novateur": {
+            definition: "novateur: extremadamente nouveau.",
+            example: "El tamaño novateur del barco sorprendió a todos."
+        },
+        "novel": {
+            definition: "novel: extremadamente nuevo.",
+            example: "El tamaño novel del barco sorprendió a todos."
+        },
+        "numinous": {
+            definition: "numinous: extremadamente brilliant.",
+            example: "El tamaño numinous del barco sorprendió a todos."
+        },
+        "obvious": {
+            definition: "obvious: bastante clear.",
+            example: "Un cambio obvious hizo el proyecto más fácil de terminar."
+        },
+        "old": {
+            definition: "old: bastante ancient.",
+            example: "Un cambio old hizo el proyecto más fácil de terminar."
+        },
+        "ominous": {
+            definition: "ominous: extremadamente peligroso.",
+            example: "El tamaño ominous del barco sorprendió a todos."
+        },
+        "onerous": {
+            definition: "onerous: extremadamente difícil.",
+            example: "El tamaño onerous del barco sorprendió a todos."
+        },
+        "open": {
+            definition: "open: bastante honest.",
+            example: "Un cambio open hizo el proyecto más fácil de terminar."
+        },
+        "optimal": {
+            definition: "optimal: bastante efficace.",
+            example: "Un cambio optimal hizo el proyecto más fácil de terminar."
+        },
+        "optimizado": {
+            definition: "optimizado: bastante eficiente.",
+            example: "Un cambio optimizado hizo el proyecto más fácil de terminar."
+        },
+        "opulent": {
+            definition: "opulent: extremadamente rich.",
+            example: "El tamaño opulent del barco sorprendió a todos."
+        },
+        "outré": {
+            definition: "outré: extremadamente fâché.",
+            example: "El tamaño outré del barco sorprendió a todos."
+        },
+        "painless": {
+            definition: "painless: extremadamente fácil.",
+            example: "El tamaño painless del barco sorprendió a todos."
+        },
+        "palpitant": {
+            definition: "palpitant: extremadamente intéressant.",
+            example: "El tamaño palpitant del barco sorprendió a todos."
+        },
+        "paltry": {
+            definition: "paltry: extremadamente cheap.",
+            example: "El tamaño paltry del barco sorprendió a todos."
+        },
+        "pan comido": {
+            definition: "pan comido: extremadamente fácil.",
+            example: "El tamaño pan comido del barco sorprendió a todos."
+        },
+        "paramount": {
+            definition: "paramount: extremadamente importante.",
+            example: "El tamaño paramount del barco sorprendió a todos."
+        },
+        "parcimonieux": {
+            definition: "parcimonieux: extremadamente efficace.",
+            example: "El tamaño parcimonieux del barco sorprendió a todos."
+        },
+        "parco": {
+            definition: "parco: extremadamente eficiente.",
+            example: "El tamaño parco del barco sorprendió a todos."
+        },
+        "parsimonious": {
+            definition: "parsimonious: extremadamente cheap.",
+            example: "El tamaño parsimonious del barco sorprendió a todos."
+        },
+        "passionnant": {
+            definition: "passionnant: bastante intéressant.",
+            example: "Un cambio passionnant hizo el proyecto más fácil de terminar."
+        },
+        "pavoroso": {
+            definition: "pavoroso: bastante aterrador.",
+            example: "Un cambio pavoroso hizo el proyecto más fácil de terminar."
+        },
+        "peaceful": {
+            definition: "peaceful: bastante quiet.",
+            example: "Un cambio peaceful hizo el proyecto más fácil de terminar."
+        },
+        "pecunious": {
+            definition: "pecunious: extremadamente rich.",
+            example: "El tamaño pecunious del barco sorprendió a todos."
+        },
+        "peliagudo": {
+            definition: "peliagudo: extremadamente difícil.",
+            example: "El tamaño peliagudo del barco sorprendió a todos."
+        },
+        "pellucid": {
+            definition: "pellucid: extremadamente clear.",
+            example: "El tamaño pellucid del barco sorprendió a todos."
+        },
+        "pellucide": {
+            definition: "pellucide: extremadamente transparent.",
+            example: "El tamaño pellucide del barco sorprendió a todos."
+        },
+        "pellucido": {
+            definition: "pellucido: extremadamente transparente.",
+            example: "El tamaño pellucido del barco sorprendió a todos."
+        },
+        "penniless": {
+            definition: "penniless: bastante poor.",
+            example: "Un cambio penniless hizo el proyecto más fácil de terminar."
+        },
+        "penurious": {
+            definition: "penurious: extremadamente poor.",
+            example: "El tamaño penurious del barco sorprendió a todos."
+        },
+        "perecedero": {
+            definition: "perecedero: extremadamente frágil.",
+            example: "El tamaño perecedero del barco sorprendió a todos."
+        },
+        "perfidious": {
+            definition: "perfidious: extremadamente peligroso.",
+            example: "El tamaño perfidious del barco sorprendió a todos."
+        },
+        "performant": {
+            definition: "performant: bastante efficace.",
+            example: "Un cambio performant hizo el proyecto más fácil de terminar."
+        },
+        "perilous": {
+            definition: "perilous: bastante peligroso.",
+            example: "Un cambio perilous hizo el proyecto más fácil de terminar."
+        },
+        "perishable": {
+            definition: "perishable: extremadamente fragile.",
+            example: "El tamaño perishable del barco sorprendió a todos."
+        },
+        "perk": {
+            definition: "perk: bastante brighten.",
+            example: "Un cambio perk hizo el proyecto más fácil de terminar."
+        },
+        "perspicace": {
+            definition: "perspicace: bastante intelligent.",
+            example: "Un cambio perspicace hizo el proyecto más fácil de terminar."
+        },
+        "perspicacious": {
+            definition: "perspicacious: extremadamente smart.",
+            example: "El tamaño perspicacious del barco sorprendió a todos."
+        },
+        "perspicaz": {
+            definition: "perspicaz: bastante inteligente.",
+            example: "Un cambio perspicaz hizo el proyecto más fácil de terminar."
+        },
+        "perspicuo": {
+            definition: "perspicuo: extremadamente transparente.",
+            example: "El tamaño perspicuo del barco sorprendió a todos."
+        },
+        "perspicuous": {
+            definition: "perspicuous: extremadamente clear.",
+            example: "El tamaño perspicuous del barco sorprendió a todos."
+        },
+        "petite": {
+            definition: "petite: bastante pequeña.",
+            example: "Un cambio petite hizo el proyecto más fácil de terminar."
+        },
+        "pivotal": {
+            definition: "pivotal: extremadamente importante.",
+            example: "El tamaño pivotal del barco sorprendió a todos."
+        },
+        "placid": {
+            definition: "placid: extremadamente quiet.",
+            example: "El tamaño placid del barco sorprendió a todos."
+        },
+        "plain": {
+            definition: "plain: bastante clear.",
+            example: "Un cambio plain hizo el proyecto más fácil de terminar."
+        },
+        "pleasant": {
+            definition: "pleasant: bastante friendly.",
+            example: "Un cambio pleasant hizo el proyecto más fácil de terminar."
+        },
+        "pleased": {
+            definition: "pleased: bastante feliz.",
+            example: "Un cambio pleased hizo el proyecto más fácil de terminar."
+        },
+        "plutocratic": {
+            definition: "plutocratic: extremadamente rich.",
+            example: "El tamaño plutocratic del barco sorprendió a todos."
+        },
+        "poderoso": {
+            definition: "poderoso: bastante fuerte.",
+            example: "Un cambio poderoso hizo el proyecto más fácil de terminar."
+        },
+        "polaire": {
+            definition: "polaire: extremadamente froid.",
+            example: "El tamaño polaire del barco sorprendió a todos."
+        },
+        "polar": {
+            definition: "polar: extremadamente frío.",
+            example: "El tamaño polar del barco sorprendió a todos."
+        },
+        "polluted": {
+            definition: "polluted: extremadamente dirty.",
+            example: "El tamaño polluted del barco sorprendió a todos."
+        },
+        "poor": {
+            definition: "poor: bastante malo.",
+            example: "Un cambio poor hizo el proyecto más fácil de terminar."
+        },
+        "potent": {
+            definition: "potent: extremadamente fuerte.",
+            example: "El tamaño potent del barco sorprendió a todos."
+        },
+        "potente": {
+            definition: "potente: bastante fuerte.",
+            example: "Un cambio potente hizo el proyecto más fácil de terminar."
+        },
+        "powerful": {
+            definition: "powerful: bastante fuerte.",
+            example: "Un cambio powerful hizo el proyecto más fácil de terminar."
+        },
+        "precario": {
+            definition: "precario: extremadamente frágil.",
+            example: "El tamaño precario del barco sorprendió a todos."
+        },
+        "precarious": {
+            definition: "precarious: extremadamente peligroso.",
+            example: "El tamaño precarious del barco sorprendió a todos."
+        },
+        "precipitate": {
+            definition: "precipitate: extremadamente fast.",
+            example: "El tamaño precipitate del barco sorprendió a todos."
+        },
+        "precipitous": {
+            definition: "precipitous: extremadamente rápido.",
+            example: "El tamaño precipitous del barco sorprendió a todos."
+        },
+        "preguntón": {
+            definition: "preguntón: bastante curioso.",
+            example: "Un cambio preguntón hizo el proyecto más fácil de terminar."
+        },
+        "pressé": {
+            definition: "pressé: bastante rapide.",
+            example: "Un cambio pressé hizo el proyecto más fácil de terminar."
+        },
+        "preste": {
+            definition: "preste: extremadamente rapide.",
+            example: "El tamaño preste del barco sorprendió a todos."
+        },
+        "presuroso": {
+            definition: "presuroso: extremadamente rápido.",
+            example: "El tamaño presuroso del barco sorprendió a todos."
+        },
+        "pretty": {
+            definition: "pretty: bastante beautiful.",
+            example: "Un cambio pretty hizo el proyecto más fácil de terminar."
+        },
+        "primordial": {
+            definition: "primordial: extremadamente viejo.",
+            example: "El tamaño primordial del barco sorprendió a todos."
+        },
+        "probant": {
+            definition: "probant: extremadamente efficace.",
+            example: "El tamaño probant del barco sorprendió a todos."
+        },
+        "probity": {
+            definition: "probity: extremadamente honest.",
+            example: "El tamaño probity del barco sorprendió a todos."
+        },
+        "problemático": {
+            definition: "problemático: bastante difícil.",
+            example: "Un cambio problemático hizo el proyecto más fácil de terminar."
+        },
+        "probo": {
+            definition: "probo: extremadamente eficiente.",
+            example: "El tamaño probo del barco sorprendió a todos."
+        },
+        "productif": {
+            definition: "productif: bastante efficace.",
+            example: "Un cambio productif hizo el proyecto más fácil de terminar."
+        },
+        "productive": {
+            definition: "productive: bastante efficient.",
+            example: "Un cambio productive hizo el proyecto más fácil de terminar."
+        },
+        "productivo": {
+            definition: "productivo: bastante eficiente.",
+            example: "Un cambio productivo hizo el proyecto más fácil de terminar."
+        },
+        "prompt": {
+            definition: "prompt: bastante rapide.",
+            example: "Un cambio prompt hizo el proyecto más fácil de terminar."
+        },
+        "pronto": {
+            definition: "pronto: bastante rápido.",
+            example: "Un cambio pronto hizo el proyecto más fácil de terminar."
+        },
+        "propitious": {
+            definition: "propitious: extremadamente helpful.",
+            example: "El tamaño propitious del barco sorprendió a todos."
+        },
+        "prosperous": {
+            definition: "prosperous: bastante rich.",
+            example: "Un cambio prosperous hizo el proyecto más fácil de terminar."
+        },
+        "prying": {
+            definition: "prying: la acción de curious.",
+            example: "Prying del documento tardó más de lo previsto."
+        },
+        "précaire": {
+            definition: "précaire: extremadamente fragile.",
+            example: "El tamaño précaire del barco sorprendió a todos."
+        },
+        "prépondérant": {
+            definition: "prépondérant: extremadamente importante.",
+            example: "El tamaño prépondérant del barco sorprendió a todos."
+        },
+        "puissant": {
+            definition: "puissant: bastante fort.",
+            example: "Un cambio puissant hizo el proyecto más fácil de terminar."
+        },
+        "pulchritudinous": {
+            definition: "pulchritudinous: extremadamente beautiful.",
+            example: "El tamaño pulchritudinous del barco sorprendió a todos."
+        },
+        "pusillanimous": {
+            definition: "pusillanimous: extremadamente timid.",
+            example: "El tamaño pusillanimous del barco sorprendió a todos."
+        },
+        "pénible": {
+            definition: "pénible: bastante difficile.",
+            example: "Un cambio pénible hizo el proyecto más fácil de terminar."
+        },
+        "périssable": {
+            definition: "périssable: extremadamente fragile.",
+            example: "El tamaño périssable del barco sorprendió a todos."
+        },
+        "pésimo": {
+            definition: "pésimo: bastante malo.",
+            example: "Un cambio pésimo hizo el proyecto más fácil de terminar."
+        },
+        "quebradizo": {
+            definition: "quebradizo: bastante frágil.",
+            example: "Un cambio quebradizo hizo el proyecto más fácil de terminar."
+        },
+        "quebrantable": {
+            definition: "quebrantable: bastante frágil.",
+            example: "Un cambio quebrantable hizo el proyecto más fácil de terminar."
+        },
+        "quebrantado": {
+            definition: "quebrantado: extremadamente frágil.",
+            example: "El tamaño quebrantado del barco sorprendió a todos."
+        },
+        "querulous": {
+            definition: "querulous: extremadamente curious.",
+            example: "El tamaño querulous del barco sorprendió a todos."
+        },
+        "questioning": {
+            definition: "questioning: la acción de curious.",
+            example: "Questioning del documento tardó más de lo previsto."
+        },
+        "questionneur": {
+            definition: "questionneur: bastante curieux.",
+            example: "Un cambio questionneur hizo el proyecto más fácil de terminar."
+        },
+        "quick": {
+            definition: "quick: bastante smart.",
+            example: "Un cambio quick hizo el proyecto más fácil de terminar."
+        },
+        "quiet": {
+            definition: "quiet: bastante silent.",
+            example: "Un cambio quiet hizo el proyecto más fácil de terminar."
+        },
+        "quémandeur": {
+            definition: "quémandeur: extremadamente curieux.",
+            example: "El tamaño quémandeur del barco sorprendió a todos."
+        },
+        "radiant": {
+            definition: "radiant: bastante bright.",
+            example: "Un cambio radiant hizo el proyecto más fácil de terminar."
+        },
+        "radieux": {
+            definition: "radieux: extremadamente heureux.",
+            example: "El tamaño radieux del barco sorprendió a todos."
+        },
+        "rapid": {
+            definition: "rapid: bastante fast.",
+            example: "Un cambio rapid hizo el proyecto más fácil de terminar."
+        },
+        "ratiocinant": {
+            definition: "ratiocinant: extremadamente curieux.",
+            example: "El tamaño ratiocinant del barco sorprendió a todos."
+        },
+        "ratiocinative": {
+            definition: "ratiocinative: extremadamente curious.",
+            example: "El tamaño ratiocinative del barco sorprendió a todos."
+        },
+        "rationnel": {
+            definition: "rationnel: bastante efficace.",
+            example: "Un cambio rationnel hizo el proyecto más fácil de terminar."
+        },
+        "raucous": {
+            definition: "raucous: extremadamente loud.",
+            example: "El tamaño raucous del barco sorprendió a todos."
+        },
+        "raudo": {
+            definition: "raudo: extremadamente rápido.",
+            example: "El tamaño raudo del barco sorprendió a todos."
+        },
+        "ravi": {
+            definition: "ravi: bastante heureux.",
+            example: "Un cambio ravi hizo el proyecto más fácil de terminar."
+        },
+        "ravishing": {
+            definition: "ravishing: la acción de beautiful.",
+            example: "Ravishing del documento tardó más de lo previsto."
+        },
+        "ravissant": {
+            definition: "ravissant: extremadamente beau.",
+            example: "El tamaño ravissant del barco sorprendió a todos."
+        },
+        "razonador": {
+            definition: "razonador: extremadamente curioso.",
+            example: "El tamaño razonador del barco sorprendió a todos."
+        },
+        "recent": {
+            definition: "recent: bastante nuevo.",
+            example: "Un cambio recent hizo el proyecto más fácil de terminar."
+        },
+        "reciente": {
+            definition: "reciente: bastante nuevo.",
+            example: "Un cambio reciente hizo el proyecto más fácil de terminar."
+        },
+        "recio": {
+            definition: "recio: extremadamente fuerte.",
+            example: "El tamaño recio del barco sorprendió a todos."
+        },
+        "redoubtable": {
+            definition: "redoubtable: extremadamente fuerte.",
+            example: "El tamaño redoubtable del barco sorprendió a todos."
+        },
+        "reducido": {
+            definition: "reducido: bastante pequeño.",
+            example: "Un cambio reducido hizo el proyecto más fácil de terminar."
+        },
+        "refulgent": {
+            definition: "refulgent: extremadamente bright.",
+            example: "El tamaño refulgent del barco sorprendió a todos."
+        },
+        "reserved": {
+            definition: "reserved: bastante timid.",
+            example: "Un cambio reserved hizo el proyecto más fácil de terminar."
+        },
+        "resistente": {
+            definition: "resistente: bastante fuerte.",
+            example: "Un cambio resistente hizo el proyecto más fácil de terminar."
+        },
+        "resplendent": {
+            definition: "resplendent: extremadamente beautiful.",
+            example: "El tamaño resplendent del barco sorprendió a todos."
+        },
+        "resplendissant": {
+            definition: "resplendissant: extremadamente beau.",
+            example: "El tamaño resplendissant del barco sorprendió a todos."
+        },
+        "reticent": {
+            definition: "reticent: bastante timid.",
+            example: "Un cambio reticent hizo el proyecto más fácil de terminar."
+        },
+        "risible": {
+            definition: "risible: extremadamente divertido.",
+            example: "El tamaño risible del barco sorprendió a todos."
+        },
+        "risky": {
+            definition: "risky: bastante peligroso.",
+            example: "Un cambio risky hizo el proyecto más fácil de terminar."
+        },
+        "riveting": {
+            definition: "riveting: la acción de interesante.",
+            example: "Riveting del documento tardó más de lo previsto."
+        },
+        "robust": {
+            definition: "robust: bastante fuerte.",
+            example: "Un cambio robust hizo el proyecto más fácil de terminar."
+        },
+        "robuste": {
+            definition: "robuste: bastante fort.",
+            example: "Un cambio robuste hizo el proyecto más fácil de terminar."
+        },
+        "robusto": {
+            definition: "robusto: bastante fuerte.",
+            example: "Un cambio robusto hizo el proyecto más fácil de terminar."
+        },
+        "rudimentaire": {
+            definition: "rudimentaire: extremadamente facile.",
+            example: "El tamaño rudimentaire del barco sorprendió a todos."
+        },
+        "rébarbatif": {
+            definition: "rébarbatif: extremadamente difficile.",
+            example: "El tamaño rébarbatif del barco sorprendió a todos."
+        },
+        "récent": {
+            definition: "récent: bastante nouveau.",
+            example: "Un cambio récent hizo el proyecto más fácil de terminar."
+        },
+        "réduit": {
+            definition: "réduit: bastante petit.",
+            example: "Un cambio réduit hizo el proyecto más fácil de terminar."
+        },
+        "révolutionnaire": {
+            definition: "révolutionnaire: extremadamente nouveau.",
+            example: "El tamaño révolutionnaire del barco sorprendió a todos."
+        },
+        "sagace": {
+            definition: "sagace: extremadamente intelligent.",
+            example: "El tamaño sagace del barco sorprendió a todos."
+        },
+        "sagacious": {
+            definition: "sagacious: extremadamente smart.",
+            example: "El tamaño sagacious del barco sorprendió a todos."
+        },
+        "saludable": {
+            definition: "saludable: extremadamente eficiente.",
+            example: "El tamaño saludable del barco sorprendió a todos."
+        },
+        "salutaire": {
+            definition: "salutaire: extremadamente efficace.",
+            example: "El tamaño salutaire del barco sorprendió a todos."
+        },
+        "salutary": {
+            definition: "salutary: extremadamente helpful.",
+            example: "El tamaño salutary del barco sorprendió a todos."
+        },
+        "satisfait": {
+            definition: "satisfait: bastante heureux.",
+            example: "Un cambio satisfait hizo el proyecto más fácil de terminar."
+        },
+        "satisfecho": {
+            definition: "satisfecho: bastante feliz.",
+            example: "Un cambio satisfecho hizo el proyecto más fácil de terminar."
+        },
+        "savoureux": {
+            definition: "savoureux: extremadamente bon.",
+            example: "El tamaño savoureux del barco sorprendió a todos."
+        },
+        "scabreux": {
+            definition: "scabreux: extremadamente difficile.",
+            example: "El tamaño scabreux del barco sorprendió a todos."
+        },
+        "scorching": {
+            definition: "scorching: la acción de caliente.",
+            example: "Scorching del documento tardó más de lo previsto."
+        },
+        "scrawny": {
+            definition: "scrawny: bastante thin.",
+            example: "Un cambio scrawny hizo el proyecto más fácil de terminar."
+        },
+        "scrupulous": {
+            definition: "scrupulous: extremadamente honest.",
+            example: "El tamaño scrupulous del barco sorprendió a todos."
+        },
+        "secular": {
+            definition: "secular: extremadamente viejo.",
+            example: "El tamaño secular del barco sorprendió a todos."
+        },
+        "sedate": {
+            definition: "sedate: extremadamente calm.",
+            example: "El tamaño sedate del barco sorprendió a todos."
+        },
+        "seething": {
+            definition: "seething: la acción de angry.",
+            example: "Seething del documento tardó más de lo previsto."
+        },
+        "self-evident": {
+            definition: "self-evident: extremadamente clear.",
+            example: "El tamaño self-evident del barco sorprendió a todos."
+        },
+        "sencillo": {
+            definition: "sencillo: bastante fácil.",
+            example: "Un cambio sencillo hizo el proyecto más fácil de terminar."
+        },
+        "serene": {
+            definition: "serene: extremadamente quiet.",
+            example: "El tamaño serene del barco sorprendió a todos."
+        },
+        "sharp": {
+            definition: "sharp: bastante smart.",
+            example: "Un cambio sharp hizo el proyecto más fácil de terminar."
+        },
+        "shining": {
+            definition: "shining: la acción de bright.",
+            example: "Shining del documento tardó más de lo previsto."
+        },
+        "shoddy": {
+            definition: "shoddy: extremadamente cheap.",
+            example: "El tamaño shoddy del barco sorprendió a todos."
+        },
+        "shrewd": {
+            definition: "shrewd: extremadamente smart.",
+            example: "El tamaño shrewd del barco sorprendió a todos."
+        },
+        "shy": {
+            definition: "shy: bastante timid.",
+            example: "Un cambio shy hizo el proyecto más fácil de terminar."
+        },
+        "siberiano": {
+            definition: "siberiano: extremadamente frío.",
+            example: "El tamaño siberiano del barco sorprendió a todos."
+        },
+        "sibérien": {
+            definition: "sibérien: extremadamente froid.",
+            example: "El tamaño sibérien del barco sorprendió a todos."
+        },
+        "side-splitting": {
+            definition: "side-splitting: la acción de divertido.",
+            example: "Side-splitting del documento tardó más de lo previsto."
+        },
+        "significant": {
+            definition: "significant: bastante importante.",
+            example: "Un cambio significant hizo el proyecto más fácil de terminar."
+        },
+        "significativo": {
+            definition: "significativo: bastante importante.",
+            example: "Un cambio significativo hizo el proyecto más fácil de terminar."
+        },
+        "silent": {
+            definition: "silent: bastante quiet.",
+            example: "Un cambio silent hizo el proyecto más fácil de terminar."
+        },
+        "simple": {
+            definition: "simple: bastante fácil.",
+            example: "Un cambio simple hizo el proyecto más fácil de terminar."
+        },
+        "sincere": {
+            definition: "sincere: bastante honest.",
+            example: "Un cambio sincere hizo el proyecto más fácil de terminar."
+        },
+        "siniestro": {
+            definition: "siniestro: extremadamente aterrador.",
+            example: "El tamaño siniestro del barco sorprendió a todos."
+        },
+        "sinistre": {
+            definition: "sinistre: extremadamente effrayant.",
+            example: "El tamaño sinistre del barco sorprendió a todos."
+        },
+        "sizzling": {
+            definition: "sizzling: la acción de caliente.",
+            example: "Sizzling del documento tardó más de lo previsto."
+        },
+        "slender": {
+            definition: "slender: bastante thin.",
+            example: "Un cambio slender hizo el proyecto más fácil de terminar."
+        },
+        "slim": {
+            definition: "slim: bastante thin.",
+            example: "Un cambio slim hizo el proyecto más fácil de terminar."
+        },
+        "smart": {
+            definition: "smart: bastante brilliant.",
+            example: "Un cambio smart hizo el proyecto más fácil de terminar."
+        },
+        "sobresaliente": {
+            definition: "sobresaliente: extremadamente bueno.",
+            example: "El tamaño sobresaliente del barco sorprendió a todos."
+        },
+        "sofocante": {
+            definition: "sofocante: bastante caliente.",
+            example: "Un cambio sofocante hizo el proyecto más fácil de terminar."
+        },
+        "soft": {
+            definition: "soft: bastante quiet.",
+            example: "Un cambio soft hizo el proyecto más fácil de terminar."
+        },
+        "soiled": {
+            definition: "soiled: bastante dirty.",
+            example: "Un cambio soiled hizo el proyecto más fácil de terminar."
+        },
+        "solide": {
+            definition: "solide: bastante fort.",
+            example: "Un cambio solide hizo el proyecto más fácil de terminar."
+        },
+        "somptueux": {
+            definition: "somptueux: extremadamente beau.",
+            example: "El tamaño somptueux del barco sorprendió a todos."
+        },
+        "sorrow": {
+            definition: "sorrow: bastante sadness.",
+            example: "Un cambio sorrow hizo el proyecto más fácil de terminar."
+        },
+        "sorrowful": {
+            definition: "sorrowful: bastante triste.",
+            example: "Un cambio sorrowful hizo el proyecto más fácil de terminar."
+        },
+        "spare": {
+            definition: "spare: extremadamente thin.",
+            example: "El tamaño spare del barco sorprendió a todos."
+        },
+        "sparse": {
+            definition: "sparse: bastante thin.",
+            example: "Un cambio sparse hizo el proyecto más fácil de terminar."
+        },
+        "speculative": {
+            definition: "speculative: extremadamente curious.",
+            example: "El tamaño speculative del barco sorprendió a todos."
+        },
+        "speechless": {
+            definition: "speechless: bastante silent.",
+            example: "Un cambio speechless hizo el proyecto más fácil de terminar."
+        },
+        "speedy": {
+            definition: "speedy: bastante fast.",
+            example: "Un cambio speedy hizo el proyecto más fácil de terminar."
+        },
+        "spellbinding": {
+            definition: "spellbinding: la acción de interesante.",
+            example: "Spellbinding del documento tardó más de lo previsto."
+        },
+        "spindly": {
+            definition: "spindly: extremadamente thin.",
+            example: "El tamaño spindly del barco sorprendió a todos."
+        },
+        "spine-chilling": {
+            definition: "spine-chilling: la acción de scary.",
+            example: "Spine-chilling del documento tardó más de lo previsto."
+        },
+        "splendide": {
+            definition: "splendide: bastante beau.",
+            example: "Un cambio splendide hizo el proyecto más fácil de terminar."
+        },
+        "splendiferous": {
+            definition: "splendiferous: extremadamente brilliant.",
+            example: "El tamaño splendiferous del barco sorprendió a todos."
+        },
+        "spooky": {
+            definition: "spooky: bastante scary.",
+            example: "Un cambio spooky hizo el proyecto más fácil de terminar."
+        },
+        "spéculatif": {
+            definition: "spéculatif: extremadamente curieux.",
+            example: "El tamaño spéculatif del barco sorprendió a todos."
+        },
+        "stained": {
+            definition: "stained: bastante dirty.",
+            example: "Un cambio stained hizo el proyecto más fácil de terminar."
+        },
+        "stalwart": {
+            definition: "stalwart: extremadamente fuerte.",
+            example: "El tamaño stalwart del barco sorprendió a todos."
+        },
+        "stellar": {
+            definition: "stellar: extremadamente bueno.",
+            example: "El tamaño stellar del barco sorprendió a todos."
+        },
+        "stenotic": {
+            definition: "stenotic: extremadamente silent.",
+            example: "El tamaño stenotic del barco sorprendió a todos."
+        },
+        "stentorian": {
+            definition: "stentorian: extremadamente loud.",
+            example: "El tamaño stentorian del barco sorprendió a todos."
+        },
+        "still": {
+            definition: "still: bastante quiet.",
+            example: "Un cambio still hizo el proyecto más fácil de terminar."
+        },
+        "straightforward": {
+            definition: "straightforward: bastante fácil.",
+            example: "Un cambio straightforward hizo el proyecto más fácil de terminar."
+        },
+        "straitened": {
+            definition: "straitened: extremadamente poor.",
+            example: "El tamaño straitened del barco sorprendió a todos."
+        },
+        "streamlined": {
+            definition: "streamlined: bastante efficient.",
+            example: "Un cambio streamlined hizo el proyecto más fácil de terminar."
+        },
+        "strident": {
+            definition: "strident: extremadamente loud.",
+            example: "El tamaño strident del barco sorprendió a todos."
+        },
+        "stunning": {
+            definition: "stunning: la acción de beautiful.",
+            example: "Stunning del documento tardó más de lo previsto."
+        },
+        "sturdy": {
+            definition: "sturdy: bastante fuerte.",
+            example: "Un cambio sturdy hizo el proyecto más fácil de terminar."
+        },
+        "subjuguant": {
+            definition: "subjuguant: extremadamente intéressant.",
+            example: "El tamaño subjuguant del barco sorprendió a todos."
+        },
+        "subyugante": {
+            definition: "subyugante: extremadamente interesante.",
+            example: "El tamaño subyugante del barco sorprendió a todos."
+        },
+        "succulent": {
+            definition: "succulent: extremadamente bon.",
+            example: "El tamaño succulent del barco sorprendió a todos."
+        },
+        "suffocant": {
+            definition: "suffocant: extremadamente chaud.",
+            example: "El tamaño suffocant del barco sorprendió a todos."
+        },
+        "sullied": {
+            definition: "sullied: extremadamente dirty.",
+            example: "El tamaño sullied del barco sorprendió a todos."
+        },
+        "sultry": {
+            definition: "sultry: extremadamente caliente.",
+            example: "El tamaño sultry del barco sorprendió a todos."
+        },
+        "sunlit": {
+            definition: "sunlit: extremadamente warm.",
+            example: "El tamaño sunlit del barco sorprendió a todos."
+        },
+        "super": {
+            definition: "super: bastante bon.",
+            example: "Un cambio super hizo el proyecto más fácil de terminar."
+        },
+        "superb": {
+            definition: "superb: extremadamente bueno.",
+            example: "El tamaño superb del barco sorprendió a todos."
+        },
+        "superbe": {
+            definition: "superbe: bastante beau.",
+            example: "Un cambio superbe hizo el proyecto más fácil de terminar."
+        },
+        "superlative": {
+            definition: "superlative: extremadamente bueno.",
+            example: "El tamaño superlative del barco sorprendió a todos."
+        },
+        "supportive": {
+            definition: "supportive: bastante helpful.",
+            example: "Un cambio supportive hizo el proyecto más fácil de terminar."
+        },
+        "svelte": {
+            definition: "svelte: extremadamente thin.",
+            example: "El tamaño svelte del barco sorprendió a todos."
+        },
+        "sweltering": {
+            definition: "sweltering: la acción de caliente.",
+            example: "Sweltering del documento tardó más de lo previsto."
+        },
+        "swift": {
+            definition: "swift: bastante fast.",
+            example: "Un cambio swift hizo el proyecto más fácil de terminar."
+        },
+        "séculaire": {
+            definition: "séculaire: extremadamente vieux.",
+            example: "El tamaño séculaire del barco sorprendió a todos."
+        },
+        "séduisant": {
+            definition: "séduisant: bastante intéressant.",
+            example: "Un cambio séduisant hizo el proyecto más fácil de terminar."
+        },
+        "tacit": {
+            definition: "tacit: extremadamente quiet.",
+            example: "El tamaño tacit del barco sorprendió a todos."
+        },
+        "taciturn": {
+            definition: "taciturn: extremadamente silent.",
+            example: "El tamaño taciturn del barco sorprendió a todos."
+        },
+        "taciturno": {
+            definition: "taciturno: extremadamente triste.",
+            example: "El tamaño taciturno del barco sorprendió a todos."
+        },
+        "temperate": {
+            definition: "temperate: extremadamente warm.",
+            example: "El tamaño temperate del barco sorprendió a todos."
+        },
+        "tender": {
+            definition: "tender: extremadamente fragile.",
+            example: "El tamaño tender del barco sorprendió a todos."
+        },
+        "tendre": {
+            definition: "tendre: extremadamente fragile.",
+            example: "El tamaño tendre del barco sorprendió a todos."
+        },
+        "terrible": {
+            definition: "terrible: bastante malo.",
+            example: "Un cambio terrible hizo el proyecto más fácil de terminar."
+        },
+        "terrifiant": {
+            definition: "terrifiant: bastante effrayant.",
+            example: "Un cambio terrifiant hizo el proyecto más fácil de terminar."
+        },
+        "terrifying": {
+            definition: "terrifying: la acción de scary.",
+            example: "Terrifying del documento tardó más de lo previsto."
+        },
+        "terrorífico": {
+            definition: "terrorífico: bastante aterrador.",
+            example: "Un cambio terrorífico hizo el proyecto más fácil de terminar."
+        },
+        "threnody": {
+            definition: "threnody: extremadamente sadness.",
+            example: "El tamaño threnody del barco sorprendió a todos."
+        },
+        "thundering": {
+            definition: "thundering: la acción de loud.",
+            example: "Thundering del documento tardó más de lo previsto."
+        },
+        "tierno": {
+            definition: "tierno: extremadamente frágil.",
+            example: "El tamaño tierno del barco sorprendió a todos."
+        },
+        "timeworn": {
+            definition: "timeworn: bastante ancient.",
+            example: "Un cambio timeworn hizo el proyecto más fácil de terminar."
+        },
+        "timorous": {
+            definition: "timorous: extremadamente timid.",
+            example: "El tamaño timorous del barco sorprendió a todos."
+        },
+        "tiny": {
+            definition: "tiny: bastante pequeña.",
+            example: "Un cambio tiny hizo el proyecto más fácil de terminar."
+        },
+        "titanesque": {
+            definition: "titanesque: extremadamente grand.",
+            example: "El tamaño titanesque del barco sorprendió a todos."
+        },
+        "titanic": {
+            definition: "titanic: extremadamente grande.",
+            example: "El tamaño titanic del barco sorprendió a todos."
+        },
+        "titánico": {
+            definition: "titánico: extremadamente grande.",
+            example: "El tamaño titánico del barco sorprendió a todos."
+        },
+        "tiède": {
+            definition: "tiède: bastante chaud.",
+            example: "Un cambio tiède hizo el proyecto más fácil de terminar."
+        },
+        "toasty": {
+            definition: "toasty: bastante warm.",
+            example: "Un cambio toasty hizo el proyecto más fácil de terminar."
+        },
+        "torrid": {
+            definition: "torrid: extremadamente caliente.",
+            example: "El tamaño torrid del barco sorprendió a todos."
+        },
+        "torride": {
+            definition: "torride: bastante chaud.",
+            example: "Un cambio torride hizo el proyecto más fácil de terminar."
+        },
+        "tough": {
+            definition: "tough: bastante fuerte.",
+            example: "Un cambio tough hizo el proyecto más fácil de terminar."
+        },
+        "tranquil": {
+            definition: "tranquil: extremadamente quiet.",
+            example: "El tamaño tranquil del barco sorprendió a todos."
+        },
+        "transi": {
+            definition: "transi: extremadamente froid.",
+            example: "El tamaño transi del barco sorprendió a todos."
+        },
+        "translucide": {
+            definition: "translucide: extremadamente transparent.",
+            example: "El tamaño translucide del barco sorprendió a todos."
+        },
+        "transparent": {
+            definition: "transparent: bastante clear.",
+            example: "Un cambio transparent hizo el proyecto más fácil de terminar."
+        },
+        "transpicuous": {
+            definition: "transpicuous: extremadamente transparent.",
+            example: "El tamaño transpicuous del barco sorprendió a todos."
+        },
+        "trascendental": {
+            definition: "trascendental: extremadamente importante.",
+            example: "El tamaño trascendental del barco sorprendió a todos."
+        },
+        "traslúcido": {
+            definition: "traslúcido: extremadamente transparente.",
+            example: "El tamaño traslúcido del barco sorprendió a todos."
+        },
+        "treacherous": {
+            definition: "treacherous: bastante peligroso.",
+            example: "Un cambio treacherous hizo el proyecto más fácil de terminar."
+        },
+        "tried-and-true": {
+            definition: "tried-and-true: extremadamente efficient.",
+            example: "El tamaño tried-and-true del barco sorprendió a todos."
+        },
+        "tropical": {
+            definition: "tropical: extremadamente chaud.",
+            example: "El tamaño tropical del barco sorprendió a todos."
+        },
+        "truthful": {
+            definition: "truthful: bastante honest.",
+            example: "Un cambio truthful hizo el proyecto más fácil de terminar."
+        },
+        "ténu": {
+            definition: "ténu: extremadamente petit.",
+            example: "El tamaño ténu del barco sorprendió a todos."
+        },
+        "tórrido": {
+            definition: "tórrido: bastante caliente.",
+            example: "Un cambio tórrido hizo el proyecto más fácil de terminar."
+        },
+        "ulcéré": {
+            definition: "ulcéré: extremadamente fâché.",
+            example: "El tamaño ulcéré del barco sorprendió a todos."
+        },
+        "unclean": {
+            definition: "unclean: bastante dirty.",
+            example: "Un cambio unclean hizo el proyecto más fácil de terminar."
+        },
+        "uncomplicated": {
+            definition: "uncomplicated: bastante fácil.",
+            example: "Un cambio uncomplicated hizo el proyecto más fácil de terminar."
+        },
+        "undemanding": {
+            definition: "undemanding: la acción de fácil.",
+            example: "Undemanding del documento tardó más de lo previsto."
+        },
+        "unflappable": {
+            definition: "unflappable: extremadamente calm.",
+            example: "El tamaño unflappable del barco sorprendió a todos."
+        },
+        "unhappy": {
+            definition: "unhappy: bastante triste.",
+            example: "Un cambio unhappy hizo el proyecto más fácil de terminar."
+        },
+        "unmistakable": {
+            definition: "unmistakable: extremadamente clear.",
+            example: "El tamaño unmistakable del barco sorprendió a todos."
+        },
+        "unperturbed": {
+            definition: "unperturbed: extremadamente quiet.",
+            example: "El tamaño unperturbed del barco sorprendió a todos."
+        },
+        "unsafe": {
+            definition: "unsafe: bastante peligroso.",
+            example: "Un cambio unsafe hizo el proyecto más fácil de terminar."
+        },
+        "unsanitary": {
+            definition: "unsanitary: extremadamente dirty.",
+            example: "El tamaño unsanitary del barco sorprendió a todos."
+        },
+        "unyielding": {
+            definition: "unyielding: la acción de fuerte.",
+            example: "Unyielding del documento tardó más de lo previsto."
+        },
+        "upright": {
+            definition: "upright: bastante honest.",
+            example: "Un cambio upright hizo el proyecto más fácil de terminar."
+        },
+        "uproarious": {
+            definition: "uproarious: extremadamente divertido.",
+            example: "El tamaño uproarious del barco sorprendió a todos."
+        },
+        "upset": {
+            definition: "upset: bastante triste.",
+            example: "Un cambio upset hizo el proyecto más fácil de terminar."
+        },
+        "useful": {
+            definition: "useful: bastante helpful.",
+            example: "Un cambio useful hizo el proyecto más fácil de terminar."
+        },
+        "usé": {
+            definition: "usé: bastante vieux.",
+            example: "Un cambio usé hizo el proyecto más fácil de terminar."
+        },
+        "vaillant": {
+            definition: "vaillant: bastante courageux.",
+            example: "Un cambio vaillant hizo el proyecto más fácil de terminar."
+        },
+        "valeroso": {
+            definition: "valeroso: bastante valiente.",
+            example: "Un cambio valeroso hizo el proyecto más fácil de terminar."
+        },
+        "valiant": {
+            definition: "valiant: bastante brave.",
+            example: "Un cambio valiant hizo el proyecto más fácil de terminar."
+        },
+        "valorous": {
+            definition: "valorous: extremadamente brave.",
+            example: "El tamaño valorous del barco sorprendió a todos."
+        },
+        "vaste": {
+            definition: "vaste: bastante grand.",
+            example: "Un cambio vaste hizo el proyecto más fácil de terminar."
+        },
+        "vasto": {
+            definition: "vasto: bastante grande.",
+            example: "Un cambio vasto hizo el proyecto más fácil de terminar."
+        },
+        "veracious": {
+            definition: "veracious: extremadamente honest.",
+            example: "El tamaño veracious del barco sorprendió a todos."
+        },
+        "vertiginoso": {
+            definition: "vertiginoso: extremadamente rápido.",
+            example: "El tamaño vertiginoso del barco sorprendió a todos."
+        },
+        "vif": {
+            definition: "vif: bastante intelligent.",
+            example: "Un cambio vif hizo el proyecto más fácil de terminar."
+        },
+        "vigoroso": {
+            definition: "vigoroso: bastante fuerte.",
+            example: "Un cambio vigoroso hizo el proyecto más fácil de terminar."
+        },
+        "vigoureux": {
+            definition: "vigoureux: bastante fort.",
+            example: "Un cambio vigoureux hizo el proyecto más fácil de terminar."
+        },
+        "vintage": {
+            definition: "vintage: bastante viejo.",
+            example: "Un cambio vintage hizo el proyecto más fácil de terminar."
+        },
+        "vital": {
+            definition: "vital: bastante importante.",
+            example: "Un cambio vital hizo el proyecto más fácil de terminar."
+        },
+        "vite": {
+            definition: "vite: bastante rapide.",
+            example: "Un cambio vite hizo el proyecto más fácil de terminar."
+        },
+        "vivid": {
+            definition: "vivid: bastante bright.",
+            example: "Un cambio vivid hizo el proyecto más fácil de terminar."
+        },
+        "vivify": {
+            definition: "vivify: extremadamente brighten.",
+            example: "El tamaño vivify del barco sorprendió a todos."
+        },
+        "vociferous": {
+            definition: "vociferous: extremadamente loud.",
+            example: "El tamaño vociferous del barco sorprendió a todos."
+        },
+        "voiceless": {
+            definition: "voiceless: extremadamente silent.",
+            example: "El tamaño voiceless del barco sorprendió a todos."
+        },
+        "vulnerable": {
+            definition: "vulnerable: bastante fragile.",
+            example: "Un cambio vulnerable hizo el proyecto más fácil de terminar."
+        },
+        "vulnérable": {
+            definition: "vulnérable: bastante fragile.",
+            example: "Un cambio vulnérable hizo el proyecto más fácil de terminar."
+        },
+        "véloce": {
+            definition: "véloce: bastante rapide.",
+            example: "Un cambio véloce hizo el proyecto más fácil de terminar."
+        },
+        "vénérable": {
+            definition: "vénérable: extremadamente vieux.",
+            example: "El tamaño vénérable del barco sorprendió a todos."
+        },
+        "vétuste": {
+            definition: "vétuste: bastante vieux.",
+            example: "Un cambio vétuste hizo el proyecto más fácil de terminar."
+        },
+        "warm": {
+            definition: "warm: bastante caliente.",
+            example: "Un cambio warm hizo el proyecto más fácil de terminar."
+        },
+        "wealthy": {
+            definition: "wealthy: bastante rich.",
+            example: "Un cambio wealthy hizo el proyecto más fácil de terminar."
+        },
+        "well-off": {
+            definition: "well-off: bastante rich.",
+            example: "Un cambio well-off hizo el proyecto más fácil de terminar."
+        },
+        "well-oiled": {
+            definition: "well-oiled: extremadamente efficient.",
+            example: "El tamaño well-oiled del barco sorprendió a todos."
+        },
+        "woebegone": {
+            definition: "woebegone: extremadamente triste.",
+            example: "El tamaño woebegone del barco sorprendió a todos."
+        },
+        "woefulness": {
+            definition: "woefulness: extremadamente sadness.",
+            example: "El tamaño woefulness del barco sorprendió a todos."
+        },
+        "wonderful": {
+            definition: "wonderful: bastante bueno.",
+            example: "Un cambio wonderful hizo el proyecto más fácil de terminar."
+        },
+        "wrathful": {
+            definition: "wrathful: extremadamente angry.",
+            example: "El tamaño wrathful del barco sorprendió a todos."
+        },
+        "ágil": {
+            definition: "ágil: bastante rápido.",
+            example: "Un cambio ágil hizo el proyecto más fácil de terminar."
+        },
+        "álgido": {
+            definition: "álgido: extremadamente frío.",
+            example: "El tamaño álgido del barco sorprendió a todos."
+        },
+        "âgé": {
+            definition: "âgé: bastante vieux.",
+            example: "Un cambio âgé hizo el proyecto más fácil de terminar."
+        },
+        "éblouissant": {
+            definition: "éblouissant: extremadamente beau.",
+            example: "El tamaño éblouissant del barco sorprendió a todos."
+        },
+        "économe": {
+            definition: "économe: extremadamente efficace.",
+            example: "El tamaño économe del barco sorprendió a todos."
+        },
+        "électrisant": {
+            definition: "électrisant: extremadamente intéressant.",
+            example: "El tamaño électrisant del barco sorprendió a todos."
+        },
+        "élémentaire": {
+            definition: "élémentaire: bastante facile.",
+            example: "Un cambio élémentaire hizo el proyecto más fácil de terminar."
+        },
+        "énervé": {
+            definition: "énervé: bastante fâché.",
+            example: "Un cambio énervé hizo el proyecto más fácil de terminar."
+        },
+        "énorme": {
+            definition: "énorme: bastante grand.",
+            example: "Un cambio énorme hizo el proyecto más fácil de terminar."
+        },
+        "épineux": {
+            definition: "épineux: extremadamente difficile.",
+            example: "El tamaño épineux del barco sorprendió a todos."
+        },
+        "éploré": {
+            definition: "éploré: extremadamente triste.",
+            example: "El tamaño éploré del barco sorprendió a todos."
+        },
+        "épouvantable": {
+            definition: "épouvantable: bastante effrayant.",
+            example: "Un cambio épouvantable hizo el proyecto más fácil de terminar."
+        },
+        "érudit": {
+            definition: "érudit: extremadamente intelligent.",
+            example: "El tamaño érudit del barco sorprendió a todos."
+        },
+        "étouffant": {
+            definition: "étouffant: extremadamente chaud.",
+            example: "El tamaño étouffant del barco sorprendió a todos."
+        },
+        "étroit": {
+            definition: "étroit: bastante petit.",
+            example: "Un cambio étroit hizo el proyecto más fácil de terminar."
+        },
+        "évident": {
+            definition: "évident: bastante facile.",
+            example: "Un cambio évident hizo el proyecto más fácil de terminar."
+        },
+        "óptimo": {
+            definition: "óptimo: extremadamente bueno.",
+            example: "El tamaño óptimo del barco sorprendió a todos."
+        },},
 };

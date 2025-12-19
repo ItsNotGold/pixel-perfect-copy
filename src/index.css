@@ -268,7 +268,7 @@
 
   /* Stronger glass variant for key surfaces */
   .glass-strong {
-    @apply bg-white/80 dark:bg-black/60 border border-white/10 dark:border-white/6 backdrop-blur-lg shadow-glow;
+    @apply bg-white/80 dark:bg-black/60 border border-white/10 dark:border-white/10 backdrop-blur-lg shadow-glow;
   }
 
   /* Headline parentheses accent */

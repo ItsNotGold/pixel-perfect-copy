@@ -224,8 +224,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word alcance when describing a common situation."
         },
                                                                                 "alegre": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a alegre tone when dealing with customers."
+            definition: "Con una actitud vivaz y optimista que busca animar a los demás en contextos informales.",
+            example: "Su saludo alegre iluminó la mañana gris en la oficina."
         },
         "almuerzo": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -640,8 +640,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "Blazing every day helped him improve quickly."
         },
                                                                                 "blissful": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a blissful tone when dealing with customers."
+            definition: "Marked by serene, untroubled happiness, often in private or restful circumstances.",
+            example: "They had a blissful morning on the porch with coffee and no plans."
         },
                                                                                 "blistering": {
             definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
@@ -908,8 +908,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They adopted a cheer tone when dealing with customers."
         },
                                                                                 "cheerful": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a cheerful tone when dealing with customers."
+            definition: "Displaying an upbeat, buoyant manner intended to lift the mood of others in informal settings.",
+            example: "Her cheerful greeting brightened the gray office morning for everyone passing the door."
         },
                                                                                 "chico": {
             definition: "Neutral and widely applicable description used in casual conversation.",
@@ -988,12 +988,12 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The collected approach proved useful during the meeting."
         },
                                                                                 "colosal": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The colosal approach proved useful during the meeting."
+            definition: "De una escala que sugiere relevancia arquitectónica o histórica, provocando asombro más que problemas de manipulación cotidiana.",
+            example: "Hallaron una estructura colosal que cambió la comprensión del asentamiento antiguo."
         },
                                                                         "colossal": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a colossal tone when dealing with customers."
+            definition: "Suggests a scale that is architecturally or historically significant, often provoking awe rather than routine handling concerns.",
+            example: "Archaeologists uncovered a colossal foundation that pointed to an ancient public complex."
         },
                                                                                 "colérico": {
             definition: "Neutral and widely applicable description used in casual conversation.",
@@ -1196,12 +1196,12 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word contemporary when describing a common situation."
         },
                                                                                 "content": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The content approach proved useful during the meeting."
+            definition: "In a calm state of satisfaction where needs are met and there is no desire for change.",
+            example: "After a long walk and a simple dinner, he felt content and ready to read."
         },
                                                                 "contento": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The contento approach proved useful during the meeting."
+            definition: "En un estado de satisfacción serena donde las necesidades están cubiertas y no se desea cambiar la situación.",
+            example: "Después de cenar y caminar, se quedó contento y se puso a leer."
         },
         "contribución": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1468,8 +1468,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The despair approach proved useful during the meeting."
         },
                                                                         "despondent": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The despondent approach proved useful during the meeting."
+            definition: "Deeply discouraged with a sense of hopelessness that undermines motivation and optimism.",
+            example: "After months without leads, the applicant became despondent and paused his search."
         },
                                                                                 "destitute": {
             definition: "Neutral and widely applicable description used in casual conversation.",
@@ -1556,8 +1556,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word discipline when describing a common situation."
         },
                                                                                 "disconsolate": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a disconsolate tone when dealing with customers."
+            definition: "Overcome by profound sorrow to the point that comfort and consolation seem ineffective.",
+            example: "After the farewell, she was disconsolate and refused all offers of company or distraction."
         },
         "dispositivo": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -1600,8 +1600,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The dolor approach proved useful during the meeting."
         },
                                                                                 "down": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a down tone when dealing with customers."
+            definition: "In a temporarily low or subdued mood characterized by low energy and muted enthusiasm.",
+            example: "He was feeling down and politely declined the weekend invitation."
         },
                                                                                 "dreadful": {
             definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
@@ -1680,8 +1680,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They adopted a económico tone when dealing with customers."
         },
                                                                                 "ecstatic": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The ecstatic approach proved useful during the meeting."
+            definition: "Overcome by an intense, spontaneous surge of joy that often results in exuberant outward expression.",
+            example: "She was ecstatic at the news and hugged each colleague in sudden, joyful disbelief."
         },
                                                                                 "efectivo": {
             definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
@@ -1744,8 +1744,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word ejercicio when describing a common situation."
         },
                                                                                 "elated": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a elated tone when dealing with customers."
+            definition: "Experiencing a marked uplift in spirits caused by notable personal success or fortunate news.",
+            example: "He was elated when the long-delayed grant for his research was finally approved."
         },
         "elation": {
             definition: "A feeling of triumphant joy or intense happiness, often following a success or good news.",
@@ -1840,12 +1840,12 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They adopted a enojado tone when dealing with customers."
         },
                                                                                 "enorme": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The enorme approach proved useful during the meeting."
+            definition: "D'une ampleur qui entraîne des conséquences concrètes sur les budgets ou les calendriers et nécessite des mesures correctives.",
+            example: "Le déficit énorme a obligé l'association à lancer une campagne de secours."
         },
                                                                         "enormous": {
-            definition: "Noticeably of notable scaleger than average; often used in practical descriptions.",
-            example: "The enormous box barely fit through the door."
+            definition: "Of a magnitude that produces measurable consequences, especially affecting budgets, schedules, or the resources required to address it.",
+            example: "The nonprofit reported an enormous shortfall that prompted an urgent fundraising drive."
         },
                                                                                 "enrapture": {
             definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
@@ -1984,8 +1984,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word euphonious when describing a common situation."
         },
                                                                         "euphoric": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The euphoric approach proved useful during the meeting."
+            definition: "Experiencing an intense, sometimes intoxicating sense of elation frequently following a major achievement.",
+            example: "The researchers felt euphoric when the experiment produced replicable, positive results."
         },
                                                                                 "euphorique": {
             definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
@@ -2184,8 +2184,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word feedback when describing a common situation."
         },
         "feliz": {
-            definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
-            example: "They used the word feliz when describing a common situation."
+            definition: "Que muestra alegría y bienestar, a menudo expresado con una sonrisa o entusiasmo genuino.",
+            example: "Su risa feliz llenó la sala cuando recogió el premio."
         },
         "few": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2252,8 +2252,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They adopted a fondamental tone when dealing with customers."
         },
                                                                                 "forlorn": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a forlorn tone when dealing with customers."
+            definition: "Appearing abandoned or hopeless, often isolated in posture or context and visibly distant from others.",
+            example: "A forlorn figure sat on the empty bench beneath the streetlight, staring at the pavement."
         },
         "formative": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -2456,8 +2456,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The gallardo approach proved useful during the meeting."
         },
                                                                                 "gargantuan": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a gargantuan tone when dealing with customers."
+            definition: "Used with rhetorical force to indicate a scale so excessive it borders on the spectacular or hyperbolic.",
+            example: "The festival mounted a gargantuan fireworks show that could be seen from the opposite shore."
         },
                                                                                 "gargantuesco": {
             definition: "Neutral and widely applicable description used in casual conversation.",
@@ -2484,8 +2484,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They adopted a genial tone when dealing with customers."
         },
                                                                                 "giant": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The giant approach proved useful during the meeting."
+            definition: "Distinguished by stature or size that makes the object a clear landmark or point of reference within its surroundings.",
+            example: "A giant sequoia towered above the rest of the grove and served as a navigational marker."
         },
                                                                                 "gifted": {
             definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
@@ -2508,8 +2508,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The glacé approach proved useful during the meeting."
         },
                                                                                 "glad": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The glad approach proved useful during the meeting."
+            definition: "Relieved or satisfied about a particular outcome, often with a practical or personal sense of ease.",
+            example: "I was glad you could drive my mother to her appointment when my car failed."
         },
                                                                                 "gladden": {
             definition: "Neutral and widely applicable description used in casual conversation.",
@@ -2528,8 +2528,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The gloom approach proved useful during the meeting."
         },
                                                                                 "gloomy": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The gloomy approach proved useful during the meeting."
+            definition: "Marked by a pervasive somberness or pessimistic outlook that shades perception and conversation.",
+            example: "A gloomy forecast for the project caused everyone to reconsider their timelines."
         },
         "goals": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2692,8 +2692,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They adopted a heroico tone when dealing with customers."
         },
         "heureux": {
-            definition: "A term used to describe a particular idea, object, or quality in everyday language.",
-            example: "They used the word heureux when describing a common situation."
+            definition: "Qui éprouve une satisfaction profonde et stable, souvent liée à la réussite personnelle ou familiale.",
+            example: "Ils étaient heureux d'accueillir le nouveau-né parmi eux."
         },
         "high": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -2756,8 +2756,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The hot approach proved useful during the meeting."
         },
                                                                         "huge": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a huge tone when dealing with customers."
+            definition: "So substantial that its placement or movement requires planning, specialized equipment, or logistical coordination.",
+            example: "Installing the huge aquarium into the conservatory required two specialists and a reinforced platform."
         },
                                                                                 "humorous": {
             definition: "Neutral and widely applicable description used in casual conversation.",
@@ -2804,8 +2804,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word immaculate when describing a common situation."
         },
                                                                                 "immense": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The immense approach proved useful during the meeting."
+            definition: "Emphasizes vast breadth or depth, applicable to both physical expanses and profound emotional or quantitative scope.",
+            example: "After the verdict she felt an immense relief that altered her perspective for weeks."
         },
         "impact": {
             definition: "A common term used to refer to a specific person, thing, or idea in everyday contexts.",
@@ -3180,16 +3180,16 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The joli approach proved useful during the meeting."
         },
                                                                         "joyeux": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The joyeux approach proved useful during the meeting."
+            definition: "Qui manifeste une gaieté vive et communicative, souvent visible par le rire ou l'enthousiasme.",
+            example: "Son rire joyeux a rempli la salle lorsque son nom a été annoncé."
         },
                                                                                 "joyful": {
-            definition: "A general feeling of happiness or pleasure in ordinary situations.",
-            example: "She felt joyful at the surprise party put together by friends."
+            definition: "Showing lively, outward delight, typically expressed through animated laughter or celebratory gestures.",
+            example: "Her joyful laugh rose above the murmurs as she accepted the award on stage."
         },
                                                                                 "jubilant": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a jubilant tone when dealing with customers."
+            definition: "Showing triumphant public celebration, typically after a collective victory or achievement.",
+            example: "The fans were jubilant when the final goal sealed their team's promotion."
         },
                                                                                 "jubiloso": {
             definition: "Neutral and widely applicable description used in casual conversation.",
@@ -3456,8 +3456,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word malo when describing a common situation."
         },
                                                                                 "mammoth": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a mammoth tone when dealing with customers."
+            definition: "Exceptionally bulky or heavy in a way that creates significant logistical challenges for transport or installation.",
+            example: "Transporting the mammoth boiler to the plant required road closures and a heavy-lift crew."
         },
                                                                                 "manifest": {
             definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
@@ -3516,8 +3516,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They adopted a meek tone when dealing with customers."
         },
                                                                                 "melancholy": {
-            definition: "A light, pleasant emotion showing contentment or satisfaction.",
-            example: "He was melancholy with the steady progress of his studies."
+            definition: "A persistent, contemplative sadness marked by wistful thought or reflective longing rather than acute despair.",
+            example: "An air of melancholy lingered in the abandoned station long after the trains stopped running."
         },
                                                                                 "melancólico": {
             definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
@@ -4100,8 +4100,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They adopted a pleasant tone when dealing with customers."
         },
                                                                                 "pleased": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a pleased tone when dealing with customers."
+            definition: "Expressing measured satisfaction with a result or behavior, typically in formal or professional settings.",
+            example: "The director sounded pleased when the project finished under budget and ahead of schedule."
         },
         "pliant": {
             definition: "Easily influenced or bent; adaptable to change or persuasion.",
@@ -4488,8 +4488,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "After the hike he was ravenous and ate two sandwiches."
         },
                                                                                 "ravi": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The ravi approach proved useful during the meeting."
+            definition: "Qui ressent un plaisir vif et immédiat, souvent accompagné d'un enthousiasme marqué.",
+            example: "Elle était ravie d'apprendre que son article serait publié."
         },
                                                                                 "ravishing": {
             definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
@@ -5092,8 +5092,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The sorrow approach proved useful during the meeting."
         },
                                                                                 "sorrowful": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a sorrowful tone when dealing with customers."
+            definition: "Showing deep regret or grief related to loss or misfortune, often expressed in a quiet, reflective manner.",
+            example: "Her letter was sorrowful as she described the final days with her grandfather."
         },
         "sostenibilidad": {
             definition: "A term used to describe a particular idea, object, or quality in everyday language.",
@@ -5472,8 +5472,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They adopted a titanesque tone when dealing with customers."
         },
                                                                                 "titanic": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The titanic approach proved useful during the meeting."
+            definition: "Carries metaphorical weight, implying an effort, conflict, or achievement characterized by monumental intensity or challenge.",
+            example: "The merger triggered titanic negotiations that consumed both companies' leadership teams for months."
         },
                                                                                 "titánico": {
             definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
@@ -5672,8 +5672,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The unflappable approach proved useful during the meeting."
         },
                                                                                 "unhappy": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The unhappy approach proved useful during the meeting."
+            definition: "Feeling dissatisfied or distressed as a result of disappointment, loss, or discomfort.",
+            example: "He seemed unhappy after the meeting and left the room without speaking."
         },
                                                                                 "unmistakable": {
             definition: "Neutral and widely applicable description used in casual conversation.",
@@ -5724,8 +5724,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "The uproarious approach proved useful during the meeting."
         },
                                                                                 "upset": {
-            definition: "A commonly used descriptor conveying this general quality in everyday contexts.",
-            example: "The upset approach proved useful during the meeting."
+            definition: "Emotionally agitated or disturbed in response to an adverse event, often with visible signs of distress.",
+            example: "She was upset by the abrupt cancellation and asked to speak with the manager immediately."
         },
         "used": {
             definition: "Describing a state that someone or something has experienced as a result of an action.",
@@ -5956,8 +5956,8 @@ export const WORD_DEFINITIONS: Record<string, Record<string, WordDefinition>> = 
             example: "They used the word wisdom when describing a common situation."
         },
                                                                                 "woebegone": {
-            definition: "Neutral and widely applicable description used in casual conversation.",
-            example: "They adopted a woebegone tone when dealing with customers."
+            definition: "Having a distressed, pitiable appearance as if long exposed to misfortune or fatigue.",
+            example: "The puppy's woebegone expression prompted the passerby to stop and offer a comforting treat."
         },
                                                                                 "woefulness": {
             definition: "A commonly used descriptor conveying this general quality in everyday contexts.",

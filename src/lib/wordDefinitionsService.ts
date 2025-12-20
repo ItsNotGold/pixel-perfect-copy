@@ -5,13 +5,36 @@ export interface DefinitionResult {
 
 export type SupportedLanguage = 'english' | 'french' | 'spanish';
 
-const FREE_DICT_API_BASE = 'https://api.dictionaryapi.dev/api/v2/entries';
+const API_BASE = 'https://freedictionaryapi.com/api/v1/entries';
 
-// Supported language codes for FreeDictionaryAPI
 const LANG_CODES: Record<SupportedLanguage, string> = {
   english: 'en',
   french: 'fr',
   spanish: 'es',
+};
+
+// Response Type Definitions based on Prompt
+interface ApiEntry {
+    language: { code: string };
+    partOfSpeech: string;
+    senses: ApiSense[];
+}
+
+interface ApiSense {
+    definition: string;
+    examples?: string[];
+}
+
+interface ApiResponse {
+    word: string;
+    entries: ApiEntry[];
+}
+
+const POS_PRIORITY: Record<string, number> = {
+    'noun': 1,
+    'verb': 2,
+    'adjective': 3,
+    'adverb': 4
 };
 
 export async function getWordDefinition(
@@ -19,8 +42,9 @@ export async function getWordDefinition(
   language: SupportedLanguage
 ): Promise<DefinitionResult> {
   const normalizedWord = word.toLowerCase().trim();
-  
-  // 1. Check Local Cache (via Middleware)
+  const langCode = LANG_CODES[language];
+
+  // 1. Check Local Cache
   let storedDefinitions: any = {};
   try {
     const res = await fetch('/__api/definitions');
@@ -31,8 +55,6 @@ export async function getWordDefinition(
     console.warn('Failed to fetch local definitions cache', e);
   }
 
-  // Check if exists in cache
-  // Structure: { [word]: { [language]: { definition: string, example: string } } }
   if (
     storedDefinitions[normalizedWord] &&
     storedDefinitions[normalizedWord][language] &&
@@ -43,41 +65,48 @@ export async function getWordDefinition(
   }
 
   // 2. Fetch from API
-  console.log(`[Cache Miss] Fetching API for ${normalizedWord} (${language})`);
-  const langCode = LANG_CODES[language];
-  const url = `${FREE_DICT_API_BASE}/${langCode}/${encodeURIComponent(normalizedWord)}`;
-  
+  console.log(`[Cache Miss] Fetching API for ${normalizedWord} (${langCode})`);
+  const url = `${API_BASE}/${langCode}/${encodeURIComponent(normalizedWord)}`;
+
   try {
     const apiRes = await fetch(url);
     
+    // Handle 404 gracefully
     if (apiRes.status === 404) {
-        // 404 Not Found - Store empty result to prevent re-fetch
-        console.warn(`[Word Not Found] ${normalizedWord}`);
-        const emptyResult: DefinitionResult = { definition: "", example: "" };
-        await persistToCache(normalizedWord, language, emptyResult, storedDefinitions);
-        return emptyResult;
+         console.warn(`[Word Not Found] ${normalizedWord}`);
+         const emptyResult: DefinitionResult = { definition: "", example: "" };
+         await persistToCache(normalizedWord, language, emptyResult, storedDefinitions);
+         return emptyResult;
     }
 
     if (!apiRes.ok) {
         throw new Error(`API Error: ${apiRes.statusText}`);
     }
 
-    const data = await apiRes.json();
-    
-    // Parse logic: First entry -> First meaning -> First definition
-    // Expected structure: [ { "meanings": [ { "definitions": [ { "definition": "...", "example": "..." } ] } ] } ]
-    
+    const data: ApiResponse | ApiResponse[] = await apiRes.json();
+    const responseObj = Array.isArray(data) ? data[0] : data; // API might return array or object, handling both to be safe, though prompt implies object structure
+
     let definition = "";
     let example = "";
 
-    if (Array.isArray(data) && data.length > 0) {
-        const firstEntry = data[0];
-        if (firstEntry.meanings && firstEntry.meanings.length > 0) {
-            const firstMeaning = firstEntry.meanings[0];
-            if (firstMeaning.definitions && firstMeaning.definitions.length > 0) {
-                const firstDef = firstMeaning.definitions[0];
-                definition = firstDef.definition || "";
-                example = firstDef.example || "";
+    if (responseObj && Array.isArray(responseObj.entries)) {
+        // Filter by language code (just in case) and Sort by POS
+        const validEntries = responseObj.entries.filter(e => e.language && e.language.code === langCode);
+        
+        validEntries.sort((a, b) => {
+             const pA = POS_PRIORITY[a.partOfSpeech?.toLowerCase()] || 99;
+             const pB = POS_PRIORITY[b.partOfSpeech?.toLowerCase()] || 99;
+             return pA - pB;
+        });
+
+        // Pick first entry
+        const bestEntry = validEntries[0];
+
+        if (bestEntry && bestEntry.senses && bestEntry.senses.length > 0) {
+            const bestSense = bestEntry.senses[0];
+            definition = bestSense.definition || "";
+            if (bestSense.examples && bestSense.examples.length > 0) {
+                example = bestSense.examples[0];
             }
         }
     }
@@ -87,16 +116,12 @@ export async function getWordDefinition(
       example
     };
 
-    // 3. Persist to Cache
+    // 3. Persist
     await persistToCache(normalizedWord, language, result, storedDefinitions);
-
     return result;
 
   } catch (e) {
     console.error(`Failed to fetch definition for ${word}`, e);
-    // Return empty on failure/network error, but maybe don't cache network errors?
-    // User said: "If network error: Show graceful UI error. Do NOT fallback."
-    // We will return empty strings which the UI handles as "No definition available".
     return { definition: "", example: "" };
   }
 }
@@ -107,10 +132,9 @@ async function persistToCache(
     result: DefinitionResult, 
     currentCache: any
 ) {
-    // Merge into the structure: { [word]: { [language]: { definition, example } } }
     const newEntry = {
         [word]: {
-            ...currentCache[word], // Keep other languages for this word
+            ...currentCache[word],
             [language]: result
         }
     };
@@ -118,9 +142,7 @@ async function persistToCache(
     try {
         await fetch('/__api/definitions', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newEntry)
         });
     } catch (e) {

@@ -4,7 +4,8 @@ export interface DefinitionResult {
 
 export type SupportedLanguage = 'english' | 'french' | 'spanish';
 
-const API_BASE = 'https://api.dictionaryapi.dev/api/v2/entries';
+const DICT_DEV_BASE = 'https://api.dictionaryapi.dev/api/v2/entries';
+const RELYC_BASE = 'https://dictionary.relycapp.com/api/v1/dictionary/lookup';
 
 const LANG_CODES: Record<SupportedLanguage, string> = {
   english: 'en',
@@ -12,31 +13,40 @@ const LANG_CODES: Record<SupportedLanguage, string> = {
   spanish: 'es',
 };
 
-// Response Type Definitions based on api.dictionaryapi.dev
-interface ApiDefinition {
+// --- Type Definitions ---
+
+// DictionaryAPI.dev (English)
+interface DictDevDefinition {
     definition: string;
-    example?: string;
-    synonyms?: string[];
-    antonyms?: string[];
 }
-
-interface ApiMeaning {
-    partOfSpeech: string;
-    definitions: ApiDefinition[];
+interface DictDevMeaning {
+    definitions: DictDevDefinition[];
 }
-
-interface ApiEntry {
+interface DictDevEntry {
     word: string;
-    phonetic?: string;
-    meanings: ApiMeaning[];
+    meanings: DictDevMeaning[];
 }
+
+// Relyc (French/Spanish)
+interface RelycDefItem {
+    definitions: string[];
+}
+interface RelycEntry {
+    lang: string; // 'fr', 'es', etc.
+    definitions: RelycDefItem[];
+}
+interface RelycResponse {
+    entries: RelycEntry[];
+}
+
+
+// --- Main Service Function ---
 
 export async function getWordDefinition(
   word: string,
   language: SupportedLanguage
 ): Promise<DefinitionResult> {
   const normalizedWord = word.toLowerCase().trim();
-  const langCode = LANG_CODES[language];
 
   // 1. Check Local Cache
   let storedDefinitions: any = {};
@@ -49,7 +59,7 @@ export async function getWordDefinition(
     console.warn('Failed to fetch local definitions cache', e);
   }
 
-  // Check cache for array of definitions
+  // Check cache
   if (
     storedDefinitions[normalizedWord] &&
     storedDefinitions[normalizedWord][language] &&
@@ -60,26 +70,38 @@ export async function getWordDefinition(
     return { definitions: storedDefinitions[normalizedWord][language].definitions };
   }
 
-  // 2. Fetch from API
-  console.log(`[Cache Miss] Fetching API for ${normalizedWord} (${langCode})`);
-  const url = `${API_BASE}/${langCode}/${encodeURIComponent(normalizedWord)}`;
+  // 2. Fetch from API (Dispatcher)
+  console.log(`[Cache Miss] Fetching API for ${normalizedWord} (${language})`);
+  let result: DefinitionResult = { definitions: [] };
 
   try {
+      if (language === 'english') {
+          result = await fetchEnglishDefinition(normalizedWord);
+      } else {
+          result = await fetchRelycDefinition(normalizedWord, language);
+      }
+      
+      // 3. Persist (even if empty, to avoid refetching 404s)
+      await persistToCache(normalizedWord, language, result, storedDefinitions);
+      return result;
+
+  } catch (e) {
+    console.error(`Failed to fetch definition for ${word}`, e);
+    return { definitions: [] };
+  }
+}
+
+
+// --- Helper Functions ---
+
+async function fetchEnglishDefinition(word: string): Promise<DefinitionResult> {
+    const url = `${DICT_DEV_BASE}/en/${encodeURIComponent(word)}`;
     const apiRes = await fetch(url);
-    
-    // Handle 404 gracefully
-    if (apiRes.status === 404) {
-         console.warn(`[Word Not Found] ${normalizedWord}`);
-         const emptyResult: DefinitionResult = { definitions: [] };
-         await persistToCache(normalizedWord, language, emptyResult, storedDefinitions);
-         return emptyResult;
-    }
 
-    if (!apiRes.ok) {
-        throw new Error(`API Error: ${apiRes.statusText}`);
-    }
+    if (apiRes.status === 404) return { definitions: [] };
+    if (!apiRes.ok) throw new Error(`DictionaryAPI Error: ${apiRes.statusText}`);
 
-    const data: ApiEntry[] = await apiRes.json();
+    const data: DictDevEntry[] = await apiRes.json();
     let definitions: string[] = [];
 
     if (Array.isArray(data)) {
@@ -97,20 +119,35 @@ export async function getWordDefinition(
             }
         }
     }
-
-    const result: DefinitionResult = {
-      definitions
-    };
-
-    // 3. Persist
-    await persistToCache(normalizedWord, language, result, storedDefinitions);
-    return result;
-
-  } catch (e) {
-    console.error(`Failed to fetch definition for ${word}`, e);
-    return { definitions: [] };
-  }
+    return { definitions };
 }
+
+async function fetchRelycDefinition(word: string, language: SupportedLanguage): Promise<DefinitionResult> {
+    const langCode = LANG_CODES[language]; // 'fr' or 'es'
+    const url = `${RELYC_BASE}?word=${encodeURIComponent(word)}`;
+    const apiRes = await fetch(url);
+
+    if (apiRes.status === 404) return { definitions: [] };
+    if (!apiRes.ok) throw new Error(`Relyc API Error: ${apiRes.statusText}`);
+
+    const data: RelycResponse = await apiRes.json();
+    let definitions: string[] = [];
+
+    if (data.entries && Array.isArray(data.entries)) {
+        // Find matching entry for language
+        const entry = data.entries.find(e => e.lang === langCode);
+        
+        if (entry && entry.definitions && Array.isArray(entry.definitions)) {
+             for (const defItem of entry.definitions) {
+                 if (defItem.definitions && Array.isArray(defItem.definitions)) {
+                     definitions.push(...defItem.definitions);
+                 }
+             }
+        }
+    }
+    return { definitions };
+}
+
 
 async function persistToCache(
     word: string, 

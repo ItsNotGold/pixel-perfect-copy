@@ -170,7 +170,6 @@ export function useLibrary() {
 
             const resp = await getWordDefinition(lowerWord, serviceLang);
             const def = resp.definition;
-            const ex = resp.example;
 
             if (def) {
                 return {
@@ -178,8 +177,7 @@ export function useLibrary() {
                     word: lowerWord,
                     language: lowerLang,
                     definition: def,
-                    example: ex || `No example available.`,
-                    // Provide empty extras as we strictly take one definition now
+                    example: "", // Explicitly empty as requested
                     // @ts-ignore add optional fields for compatibility
                     otherDefinitions: [],
                     // @ts-ignore

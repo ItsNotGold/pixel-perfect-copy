@@ -1,6 +1,5 @@
 export interface DefinitionResult {
   definition: string;
-  example: string;
 }
 
 export type SupportedLanguage = 'english' | 'french' | 'spanish';
@@ -13,29 +12,19 @@ const LANG_CODES: Record<SupportedLanguage, string> = {
   spanish: 'es',
 };
 
-// Response Type Definitions based on Prompt
+// Response Type Definitions
 interface ApiEntry {
     language: { code: string };
-    partOfSpeech: string;
     senses: ApiSense[];
 }
 
 interface ApiSense {
     definition: string;
-    examples?: string[];
 }
 
 interface ApiResponse {
-    word: string;
     entries: ApiEntry[];
 }
-
-const POS_PRIORITY: Record<string, number> = {
-    'noun': 1,
-    'verb': 2,
-    'adjective': 3,
-    'adverb': 4
-};
 
 export async function getWordDefinition(
   word: string,
@@ -61,7 +50,7 @@ export async function getWordDefinition(
     storedDefinitions[normalizedWord][language].definition
   ) {
     console.log(`[Cache Hit] ${normalizedWord} (${language})`);
-    return storedDefinitions[normalizedWord][language];
+    return { definition: storedDefinitions[normalizedWord][language].definition };
   }
 
   // 2. Fetch from API
@@ -74,7 +63,7 @@ export async function getWordDefinition(
     // Handle 404 gracefully
     if (apiRes.status === 404) {
          console.warn(`[Word Not Found] ${normalizedWord}`);
-         const emptyResult: DefinitionResult = { definition: "", example: "" };
+         const emptyResult: DefinitionResult = { definition: "" };
          await persistToCache(normalizedWord, language, emptyResult, storedDefinitions);
          return emptyResult;
     }
@@ -84,36 +73,20 @@ export async function getWordDefinition(
     }
 
     const data: ApiResponse | ApiResponse[] = await apiRes.json();
-    const responseObj = Array.isArray(data) ? data[0] : data; // API might return array or object, handling both to be safe, though prompt implies object structure
+    const responseObj = Array.isArray(data) ? data[0] : data;
 
     let definition = "";
-    let example = "";
 
-    if (responseObj && Array.isArray(responseObj.entries)) {
-        // Filter by language code (just in case) and Sort by POS
-        const validEntries = responseObj.entries.filter(e => e.language && e.language.code === langCode);
-        
-        validEntries.sort((a, b) => {
-             const pA = POS_PRIORITY[a.partOfSpeech?.toLowerCase()] || 99;
-             const pB = POS_PRIORITY[b.partOfSpeech?.toLowerCase()] || 99;
-             return pA - pB;
-        });
-
-        // Pick first entry
-        const bestEntry = validEntries[0];
-
-        if (bestEntry && bestEntry.senses && bestEntry.senses.length > 0) {
-            const bestSense = bestEntry.senses[0];
-            definition = bestSense.definition || "";
-            if (bestSense.examples && bestSense.examples.length > 0) {
-                example = bestSense.examples[0];
-            }
+    if (responseObj && Array.isArray(responseObj.entries) && responseObj.entries.length > 0) {
+        // Strict Rule: First Entry -> First Sense -> Definition
+        const firstEntry = responseObj.entries[0];
+        if (firstEntry.senses && firstEntry.senses.length > 0) {
+            definition = firstEntry.senses[0].definition || "";
         }
     }
 
     const result: DefinitionResult = {
-      definition,
-      example
+      definition
     };
 
     // 3. Persist
@@ -122,7 +95,7 @@ export async function getWordDefinition(
 
   } catch (e) {
     console.error(`Failed to fetch definition for ${word}`, e);
-    return { definition: "", example: "" };
+    return { definition: "" };
   }
 }
 

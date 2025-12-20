@@ -10,7 +10,7 @@ import { useLibrary } from "@/hooks/useLibrary";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, Quote } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 interface WordDefinitionModalProps {
     word: string | null;
@@ -89,30 +89,7 @@ export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps)
                         )}
                     </section>
 
-                    <section className="space-y-3 p-4 bg-muted/50 rounded-2xl border border-muted-foreground/10">
-                        <div className="flex items-center gap-2 text-sm font-bold text-primary/80 uppercase tracking-wider">
-                            <Quote className="w-4 h-4" /> Example
-                        </div>
-                        {loading ? (
-                            <Skeleton className="h-6 w-full" />
-                        ) : details ? (
-                            <div>
-                                <p className="text-base italic leading-relaxed text-muted-foreground">"{details.example}"</p>
 
-                                {details?.otherExamples?.length > 0 && (
-                                    <ul className="mt-2 list-disc pl-5 text-sm text-muted-foreground">
-                                        {details.otherExamples.map((d: string, idx: number) => (
-                                            <li key={idx}>{d}</li>
-                                        ))}
-                                    </ul>
-                                )}
-                            </div>
-                        ) : (
-                            <p className="text-muted-foreground italic text-sm">
-                                No example available.
-                            </p>
-                        )}
-                    </section>
                 </div>
             </DialogContent>
         </Dialog>

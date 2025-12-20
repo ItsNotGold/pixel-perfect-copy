@@ -68,15 +68,17 @@ export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps)
                             <Skeleton className="h-6 w-full" />
                         ) : details ? (
                             <div>
-                                <ol className="list-decimal pl-5 text-lg leading-relaxed text-foreground/90 font-medium space-y-2">
-                                    {/* Primary Definition */}
-                                    <li>{details.definition}</li>
+                                <div className="max-h-[60vh] overflow-y-auto pr-2 scrollbar-thin">
+                                    <ol className="list-decimal pl-5 text-lg leading-relaxed text-foreground/90 font-medium space-y-2">
+                                        {/* Primary Definition */}
+                                        <li>{details.definition}</li>
 
-                                    {/* Other Definitions */}
-                                    {details.otherDefinitions?.map((d: string, idx: number) => (
-                                        <li key={idx}>{d}</li>
-                                    ))}
-                                </ol>
+                                        {/* Other Definitions */}
+                                        {details.otherDefinitions?.map((d: string, idx: number) => (
+                                            <li key={idx}>{d}</li>
+                                        ))}
+                                    </ol>
+                                </div>
                             </div>
                         ) : (
                             <p className="text-muted-foreground italic">

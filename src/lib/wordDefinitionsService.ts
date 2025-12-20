@@ -4,7 +4,7 @@ export interface DefinitionResult {
 
 export type SupportedLanguage = 'english' | 'french' | 'spanish';
 
-const API_BASE = 'https://freedictionaryapi.com/api/v1/entries';
+const API_BASE = 'https://api.dictionaryapi.dev/api/v2/entries';
 
 const LANG_CODES: Record<SupportedLanguage, string> = {
   english: 'en',
@@ -12,19 +12,23 @@ const LANG_CODES: Record<SupportedLanguage, string> = {
   spanish: 'es',
 };
 
-// Response Type Definitions
-interface ApiEntry {
-    language: { code: string };
-    senses: ApiSense[];
-}
-
-interface ApiSense {
+// Response Type Definitions based on api.dictionaryapi.dev
+interface ApiDefinition {
     definition: string;
-    subsenses?: ApiSense[];
+    example?: string;
+    synonyms?: string[];
+    antonyms?: string[];
 }
 
-interface ApiResponse {
-    entries: ApiEntry[];
+interface ApiMeaning {
+    partOfSpeech: string;
+    definitions: ApiDefinition[];
+}
+
+interface ApiEntry {
+    word: string;
+    phonetic?: string;
+    meanings: ApiMeaning[];
 }
 
 export async function getWordDefinition(
@@ -75,18 +79,20 @@ export async function getWordDefinition(
         throw new Error(`API Error: ${apiRes.statusText}`);
     }
 
-    const data: ApiResponse | ApiResponse[] = await apiRes.json();
-    const responseObj = Array.isArray(data) ? data[0] : data;
-
+    const data: ApiEntry[] = await apiRes.json();
     let definitions: string[] = [];
 
-    if (responseObj && Array.isArray(responseObj.entries)) {
-        // Iterate ALL entries
-        for (const entry of responseObj.entries) {
-            if (entry.senses && Array.isArray(entry.senses)) {
-                // Iterate ALL senses
-                for (const sense of entry.senses) {
-                     extractDefinitionsRecursive(sense, definitions);
+    if (Array.isArray(data)) {
+        for (const entry of data) {
+            if (entry.meanings && Array.isArray(entry.meanings)) {
+                for (const meaning of entry.meanings) {
+                    if (meaning.definitions && Array.isArray(meaning.definitions)) {
+                        for (const defObj of meaning.definitions) {
+                            if (defObj.definition) {
+                                definitions.push(defObj.definition);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -104,20 +110,6 @@ export async function getWordDefinition(
     console.error(`Failed to fetch definition for ${word}`, e);
     return { definitions: [] };
   }
-}
-
-function extractDefinitionsRecursive(sense: ApiSense, list: string[]) {
-    // 1. Add current definition
-    if (sense.definition) {
-        list.push(sense.definition);
-    }
-
-    // 2. Recurse into subsenses
-    if (sense.subsenses && Array.isArray(sense.subsenses)) {
-        for (const sub of sense.subsenses) {
-            extractDefinitionsRecursive(sub, list);
-        }
-    }
 }
 
 async function persistToCache(

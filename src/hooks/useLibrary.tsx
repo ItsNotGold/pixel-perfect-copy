@@ -14,7 +14,7 @@ import { fillerWordEliminatorMaster } from "@/data/exercises/fillerWordEliminato
 import { reverseDefinitionsMaster } from "@/data/exercises/reverseDefinitions.master";
 import { synonymSpeedChainMaster } from "@/data/exercises/synonymSpeedChain.master";
 import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";
-import { WORD_DEFINITIONS } from "@/data/wordDefinitions";
+import { fetchWordDefinitions } from "@/lib/wordDefinitionsService";
 
 const MASTER_DATA: Record<string, ExerciseMaster<any>> = {
     "precision-swap": precisionSwapMaster,
@@ -152,55 +152,57 @@ export function useLibrary() {
         }
     };
 
-    const getWordDetails = useCallback((word: string, language: string): WordDetails | null => {
+    // Async: Fetch definitions from DB or Wiktionary via Supabase Edge Function.
+    const getWordDetails = useCallback(async (word: string, language: string): Promise<WordDetails | null> => {
         const lowerWord = word.toLowerCase().trim();
         const lowerLang = language.toLowerCase();
 
-        const localEntry = (WORD_DEFINITIONS as any)[lowerLang]?.[lowerWord];
-        if (localEntry) {
+        try {
+            const resp = await fetchWordDefinitions(lowerWord);
+            const langKey = lowerLang === 'fr' ? 'french' : lowerLang === 'es' ? 'spanish' : 'english';
+            const block = resp.definitions?.[langKey];
+            const defs = block?.definitions || [];
+            const exs = block?.examples || [];
+
+            if (defs.length > 0 || exs.length > 0) {
+                return {
+                    id: `remote-${lowerWord}-${lowerLang}`,
+                    word: lowerWord,
+                    language: lowerLang,
+                    definition: defs[0] ?? `No definition found for "${word}".`,
+                    example: exs[0] ?? `No example found for "${word}".`,
+                    // Provide extras for UI listing
+                    // @ts-ignore add optional fields to keep compatibility with WordDetails type
+                    otherDefinitions: defs.slice(1),
+                    // @ts-ignore
+                    otherExamples: exs.slice(1),
+                    created_at: new Date().toISOString(),
+                    updated_at: new Date().toISOString()
+                } as any;
+            }
+
+            // No remote content, fall back to a safe message (keeps behaviour similar to previous fallback)
             return {
-                id: `local-${lowerWord}-${lowerLang}`,
+                id: `fallback-${lowerWord}-${lowerLang}`,
                 word: lowerWord,
                 language: lowerLang,
-                definition: localEntry.definition,
-                example: localEntry.example,
+                definition: `No curated definition available for "${word}" in ${language.toUpperCase()}.`,
+                example: `No example available for "${word}" in ${language.toUpperCase()}.`,
+                created_at: new Date().toISOString(),
+                updated_at: new Date().toISOString()
+            } as WordDetails;
+        } catch (e) {
+            console.error('[Library] fetchWordDefinitions failed', e);
+            return {
+                id: `fallback-${lowerWord}-${lowerLang}`,
+                word: lowerWord,
+                language: lowerLang,
+                definition: `No curated definition available for "${word}" in ${language.toUpperCase()}.`,
+                example: `No example available for "${word}" in ${language.toUpperCase()}.`,
                 created_at: new Date().toISOString(),
                 updated_at: new Date().toISOString()
             } as WordDetails;
         }
-
-        // Safety assertion: Log missing definitions and return a friendly fallback so UI never renders empty popups
-        if (word && word.length > 0) {
-            console.error(`[Library] Missing definition for: "${lowerWord}" in language: "${lowerLang}"`);
-        }
-
-        // Return a non-empty fallback definition and example to ensure popups always show content
-        const fallbackText = {
-            en: {
-                definition: `No curated definition available for "${word}". In general, "${word}" can be described briefly as '${word}'.`,
-                example: `Example: "${word}" is used in this simple sentence to illustrate the term.`
-            },
-            fr: {
-                definition: `Pas de définition manuelle disponible pour "${word}". En général, «${word}» peut se décrire brièvement comme '${word}'.`,
-                example: `Exemple : «${word}» est utilisé dans cette phrase simple pour illustrer le terme.`
-            },
-            es: {
-                definition: `No hay una definición curada para "${word}". En general, "${word}" puede describirse brevemente como '${word}'.`,
-                example: `Ejemplo: "${word}" se utiliza en esta oración simple para ilustrar el término.`
-            }
-        } as any;
-
-        const fb = fallbackText[lowerLang] || fallbackText.en;
-
-        return {
-            id: `fallback-${lowerWord}-${lowerLang}`,
-            word: lowerWord,
-            language: lowerLang,
-            definition: fb.definition,
-            example: fb.example,
-            created_at: new Date().toISOString(),
-            updated_at: new Date().toISOString()
-        } as WordDetails;
     }, []);
 
     const saveWordDetails = async (wordDetails: Partial<WordDetails>) => {

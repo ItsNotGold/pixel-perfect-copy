@@ -21,8 +21,31 @@ export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps)
     const { language } = useLanguage();
     const { getWordDetails } = useLibrary();
 
-    // Pure, synchronous O(1) lookup
-    const details = word ? getWordDetails(word, language) : null;
+    const [details, setDetails] = useState<any | null>(null);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        let mounted = true;
+        if (!word) {
+            setDetails(null);
+            return;
+        }
+
+        setLoading(true);
+        (async () => {
+            try {
+                const d = await getWordDetails(word, language);
+                if (mounted) setDetails(d);
+            } catch (e) {
+                console.error('WordDefinitionModal: failed to fetch details', e);
+                if (mounted) setDetails(null);
+            } finally {
+                if (mounted) setLoading(false);
+            }
+        })();
+
+        return () => { mounted = false; };
+    }, [word, language, getWordDetails]);
 
     return (
         <Dialog open={!!word} onOpenChange={(open) => !open && onClear()}>
@@ -41,10 +64,24 @@ export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps)
                         <div className="flex items-center gap-2 text-sm font-bold text-primary/80 uppercase tracking-wider">
                             <BookOpen className="w-4 h-4" /> Meaning
                         </div>
-                        {details ? (
-                            <p className="text-lg leading-relaxed text-foreground/90 font-medium">
-                                {details.definition}
-                            </p>
+                        {loading ? (
+                            <Skeleton className="h-6 w-full" />
+                        ) : details ? (
+                            <div>
+                                {/* Show first definition */}
+                                <p className="text-lg leading-relaxed text-foreground/90 font-medium">
+                                    {details.definition}
+                                </p>
+
+                                {/* If there are other definitions, show a short list */}
+                                {!!(details && details.otherDefinitions) && (
+                                    <ul className="mt-2 list-disc pl-5 text-sm text-muted-foreground">
+                                        {details.otherDefinitions.map((d: string, idx: number) => (
+                                            <li key={idx}>{d}</li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </div>
                         ) : (
                             <p className="text-muted-foreground italic">
                                 Definition not available yet for "{word}" in {language.toUpperCase()}.
@@ -56,10 +93,20 @@ export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps)
                         <div className="flex items-center gap-2 text-sm font-bold text-primary/80 uppercase tracking-wider">
                             <Quote className="w-4 h-4" /> Example
                         </div>
-                        {details ? (
-                            <p className="text-base italic leading-relaxed text-muted-foreground">
-                                "{details.example}"
-                            </p>
+                        {loading ? (
+                            <Skeleton className="h-6 w-full" />
+                        ) : details ? (
+                            <div>
+                                <p className="text-base italic leading-relaxed text-muted-foreground">"{details.example}"</p>
+
+                                {!!(details && details.otherExamples) && (
+                                    <ul className="mt-2 list-disc pl-5 text-sm text-muted-foreground">
+                                        {details.otherExamples.map((d: string, idx: number) => (
+                                            <li key={idx}>{d}</li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </div>
                         ) : (
                             <p className="text-muted-foreground italic text-sm">
                                 No example available.

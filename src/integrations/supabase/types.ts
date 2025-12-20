@@ -257,6 +257,33 @@ export type Database = {
         }
         Relationships: []
       }
+      word_definitions: {
+        Row: {
+          word: string
+          language: string
+          definitions: Json
+          examples: Json
+          created_at: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          word: string
+          language: string
+          definitions: Json
+          examples: Json
+          created_at?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          word?: string
+          language?: string
+          definitions?: Json
+          examples?: Json
+          created_at?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

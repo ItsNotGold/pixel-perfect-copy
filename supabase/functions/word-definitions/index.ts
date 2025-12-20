@@ -114,8 +114,8 @@ serve(async (req) => {
           {
             word: word,
             language: lang.code,
-            definitions: JSON.stringify([]),
-            examples: JSON.stringify([]),
+            definitions: [],
+            examples: [],
             updated_at: new Date().toISOString()
           }
         ], { onConflict: 'word,language' });

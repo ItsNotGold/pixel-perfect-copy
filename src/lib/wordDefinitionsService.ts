@@ -5,38 +5,30 @@ export interface DefinitionResult {
 export type SupportedLanguage = 'english' | 'french' | 'spanish';
 
 const DICT_DEV_BASE = 'https://api.dictionaryapi.dev/api/v2/entries';
-const RELYC_BASE = 'https://dictionary.relycapp.com/api/v1/dictionary/lookup';
+const FRENCH_LEMONDE_BASE = 'https://api-definition.fgainza.fr';
+const SPANISH_RAE_BASE = 'https://rae-api.com/api/words';
 
-const LANG_CODES: Record<SupportedLanguage, string> = {
-  english: 'en',
-  french: 'fr',
-  spanish: 'es',
-};
 
 // --- Type Definitions ---
 
-// DictionaryAPI.dev (English)
-interface DictDevDefinition {
-    definition: string;
-}
-interface DictDevMeaning {
-    definitions: DictDevDefinition[];
-}
+// English (DictionaryAPI.dev)
 interface DictDevEntry {
     word: string;
-    meanings: DictDevMeaning[];
+    meanings: {
+        definitions: { definition: string }[];
+    }[];
 }
 
-// Relyc (French/Spanish)
-interface RelycDefItem {
-    definitions: string[];
+// French (Fgainza / Wiktionnaire)
+interface FrenchResponse {
+    motWiki: string;
+    natureDef: Record<string, string>[][]; // Array of arrays of objects like { "1": "def..." }
 }
-interface RelycEntry {
-    lang: string; // 'fr', 'es', etc.
-    definitions: RelycDefItem[];
-}
-interface RelycResponse {
-    entries: RelycEntry[];
+
+// Spanish (RAE)
+interface SpanishResponse {
+    word: string;
+    entries: { definition: string }[];
 }
 
 
@@ -59,7 +51,6 @@ export async function getWordDefinition(
     console.warn('Failed to fetch local definitions cache', e);
   }
 
-  // Check cache
   if (
     storedDefinitions[normalizedWord] &&
     storedDefinitions[normalizedWord][language] &&
@@ -77,11 +68,13 @@ export async function getWordDefinition(
   try {
       if (language === 'english') {
           result = await fetchEnglishDefinition(normalizedWord);
-      } else {
-          result = await fetchRelycDefinition(normalizedWord, language);
+      } else if (language === 'french') {
+          result = await fetchFrenchDefinition(normalizedWord);
+      } else if (language === 'spanish') {
+          result = await fetchSpanishDefinition(normalizedWord);
       }
       
-      // 3. Persist (even if empty, to avoid refetching 404s)
+      // 3. Persist (even if empty)
       await persistToCache(normalizedWord, language, result, storedDefinitions);
       return result;
 
@@ -109,10 +102,8 @@ async function fetchEnglishDefinition(word: string): Promise<DefinitionResult> {
             if (entry.meanings && Array.isArray(entry.meanings)) {
                 for (const meaning of entry.meanings) {
                     if (meaning.definitions && Array.isArray(meaning.definitions)) {
-                        for (const defObj of meaning.definitions) {
-                            if (defObj.definition) {
-                                definitions.push(defObj.definition);
-                            }
+                        for (const def of meaning.definitions) {
+                            if (def.definition) definitions.push(def.definition);
                         }
                     }
                 }
@@ -122,27 +113,53 @@ async function fetchEnglishDefinition(word: string): Promise<DefinitionResult> {
     return { definitions };
 }
 
-async function fetchRelycDefinition(word: string, language: SupportedLanguage): Promise<DefinitionResult> {
-    const langCode = LANG_CODES[language]; // 'fr' or 'es'
-    const url = `${RELYC_BASE}?word=${encodeURIComponent(word)}`;
+async function fetchFrenchDefinition(word: string): Promise<DefinitionResult> {
+     const url = `${FRENCH_LEMONDE_BASE}/${encodeURIComponent(word)}`;
+     const apiRes = await fetch(url);
+     // Note: This API might return JSON directly or error. Wrap in try/catch safely.
+     
+     if (!apiRes.ok) {
+        // API might return 404 or just empty
+         if (apiRes.status === 404) return { definitions: [] };
+         throw new Error(`French API Error: ${apiRes.statusText}`);
+     }
+
+    const data: FrenchResponse = await apiRes.json();
+    let definitions: string[] = [];
+
+    // Parse natureDef: [[ { "1": "...", "2": "..." } ], [ ... ]]
+    if (data.natureDef && Array.isArray(data.natureDef)) {
+        for (const group of data.natureDef) {
+            if (Array.isArray(group)) {
+                 for (const defObj of group) {
+                      // Keys are dynamic numbers "1", "2" ... extract all string values
+                      Object.values(defObj).forEach(val => {
+                          if (typeof val === 'string' && val.trim().length > 0) {
+                              definitions.push(val.trim());
+                          }
+                      });
+                 }
+            }
+        }
+    }
+    return { definitions };
+}
+
+async function fetchSpanishDefinition(word: string): Promise<DefinitionResult> {
+    const url = `${SPANISH_RAE_BASE}/${encodeURIComponent(word)}`;
     const apiRes = await fetch(url);
 
     if (apiRes.status === 404) return { definitions: [] };
-    if (!apiRes.ok) throw new Error(`Relyc API Error: ${apiRes.statusText}`);
+    if (!apiRes.ok) throw new Error(`RAE API Error: ${apiRes.statusText}`);
 
-    const data: RelycResponse = await apiRes.json();
+    const data: SpanishResponse = await apiRes.json();
     let definitions: string[] = [];
 
     if (data.entries && Array.isArray(data.entries)) {
-        // Find matching entry for language
-        const entry = data.entries.find(e => e.lang === langCode);
-        
-        if (entry && entry.definitions && Array.isArray(entry.definitions)) {
-             for (const defItem of entry.definitions) {
-                 if (defItem.definitions && Array.isArray(defItem.definitions)) {
-                     definitions.push(...defItem.definitions);
-                 }
-             }
+        for (const entry of data.entries) {
+            if (entry.definition) {
+                definitions.push(entry.definition);
+            }
         }
     }
     return { definitions };
@@ -169,6 +186,6 @@ async function persistToCache(
             body: JSON.stringify(newEntry)
         });
     } catch (e) {
-        console.error('Failed to persist definition to cache', e);
+        // console.error('Failed to persist definition to cache', e);
     }
 }

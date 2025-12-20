@@ -1,7 +1,6 @@
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/hooks/useAuth";
 import { LanguageProvider } from "@/contexts/LanguageContext";
@@ -30,47 +29,43 @@ import LibraryPage from "./pages/library/LibraryPage";
 import ExerciseContentPage from "./pages/library/ExerciseContentPage";
 import QuestionDetailPage from "./pages/library/QuestionDetailPage";
 
-const queryClient = new QueryClient();
-
 const App = () => {
   const { ActiveAnimation } = useBadges();
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <AuthProvider>
-        <SubscriptionProvider>
-          <LanguageProvider>
-            <TooltipProvider>
-              <Toaster />
-              <Sonner position="top-center" />
-              {ActiveAnimation}
-              <SettingsReminders />
-              <BrowserRouter>
-                <Routes>
-                  <Route path="/" element={<Index />} />
-                  <Route path="/auth" element={<Auth />} />
-                  <Route path="/exercise/precision-swap" element={<PrecisionSwap />} />
-                  <Route path="/exercise/filler-word-eliminator" element={<FillerWordEliminator />} />
-                  <Route path="/exercise/reverse-definitions" element={<ReverseDefinitions />} />
-                  <Route path="/exercise/synonym-speed-chain" element={<SynonymSpeedChain />} />
-                  <Route path="/exercise/word-incorporation" element={<WordIncorporation />} />
-                  <Route path="/exercise/:id/stats" element={<ExerciseStats />} />
-                  <Route path="/progress" element={<Progress />} />
-                  <Route path="/achievements" element={<Achievements />} />
-                  <Route path="/settings" element={<Settings />} />
-                  <Route path="/account" element={<ManageAccount />} />
-                  <Route path="/subscription" element={<Subscription />} />
-                  <Route path="/library" element={<LibraryPage />} />
-                  <Route path="/library/:exerciseId" element={<ExerciseContentPage />} />
-                  <Route path="/library/:exerciseId/:questionId" element={<QuestionDetailPage />} />
-                  <Route path="*" element={<NotFound />} />
-                </Routes>
-              </BrowserRouter>
-            </TooltipProvider>
-          </LanguageProvider>
-        </SubscriptionProvider>
-      </AuthProvider>
-    </QueryClientProvider>
+    <AuthProvider>
+      <SubscriptionProvider>
+        <LanguageProvider>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner position="top-center" />
+            {ActiveAnimation}
+            <SettingsReminders />
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/auth" element={<Auth />} />
+                <Route path="/exercise/precision-swap" element={<PrecisionSwap />} />
+                <Route path="/exercise/filler-word-eliminator" element={<FillerWordEliminator />} />
+                <Route path="/exercise/reverse-definitions" element={<ReverseDefinitions />} />
+                <Route path="/exercise/synonym-speed-chain" element={<SynonymSpeedChain />} />
+                <Route path="/exercise/word-incorporation" element={<WordIncorporation />} />
+                <Route path="/exercise/:id/stats" element={<ExerciseStats />} />
+                <Route path="/progress" element={<Progress />} />
+                <Route path="/achievements" element={<Achievements />} />
+                <Route path="/settings" element={<Settings />} />
+                <Route path="/account" element={<ManageAccount />} />
+                <Route path="/subscription" element={<Subscription />} />
+                <Route path="/library" element={<LibraryPage />} />
+                <Route path="/library/:exerciseId" element={<ExerciseContentPage />} />
+                <Route path="/library/:exerciseId/:questionId" element={<QuestionDetailPage />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </BrowserRouter>
+          </TooltipProvider>
+        </LanguageProvider>
+      </SubscriptionProvider>
+    </AuthProvider>
   );
 };
 function SettingsReminders() {

@@ -26,11 +26,15 @@ export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps)
     const langKey = language === 'fr' ? 'french' : language === 'es' ? 'spanish' : 'english';
     const block = data?.definitions?.[langKey];
 
-    const details = block ? {
-        definition: block.definitions?.[0] ?? null,
-        otherDefinitions: block.definitions?.slice(1) ?? [],
-        example: block.examples?.[0] ?? null,
-        otherExamples: block.examples?.slice(1) ?? []
+    // If there are no definitions/examples in the block, treat it as absent so
+    // the UI shows the helpful fallback copy instead of empty/blank fields.
+    const hasContent = !!block && ((block.definitions && block.definitions.length > 0) || (block.examples && block.examples.length > 0));
+
+    const details = hasContent ? {
+        definition: block!.definitions?.[0] ?? null,
+        otherDefinitions: block!.definitions?.slice(1) ?? [],
+        example: block!.examples?.[0] ?? null,
+        otherExamples: block!.examples?.slice(1) ?? []
     } : null;
 
     const loading = isLoading;

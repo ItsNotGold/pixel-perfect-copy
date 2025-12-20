@@ -35,7 +35,18 @@ export async function fetchWordDefinitions(word: string): Promise<WordDefinition
     throw new Error(error.message || 'Failed to fetch word definitions');
   }
 
-  return (data || {
+  // Supabase Functions may return a parsed object or a JSON string depending on environment.
+  // Ensure we always return a proper object shape for the rest of the app.
+  let parsed: any = data;
+  if (typeof data === 'string') {
+    try {
+      parsed = JSON.parse(data);
+    } catch (e) {
+      throw new Error('Invalid response from word-definitions function');
+    }
+  }
+
+  return (parsed || {
     word,
     definitions: {
       english: { definitions: [], examples: [] },

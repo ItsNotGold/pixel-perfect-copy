@@ -46,12 +46,29 @@ export async function fetchWordDefinitions(word: string): Promise<WordDefinition
     }
   }
 
-  return (parsed || {
-    word,
-    definitions: {
-      english: { definitions: [], examples: [] },
-      french: { definitions: [], examples: [] },
-      spanish: { definitions: [], examples: [] },
-    },
-  }) as WordDefinitionsResponse;
+  // If the function returned an error shape, throw so callers can see it
+  if (parsed && typeof parsed === 'object' && parsed.error) {
+    throw new Error(parsed.error);
+  }
+
+  // Validate expected shape - if it's not present, surface a helpful console
+  // message and return an empty-but-valid fallback so UI shows its fallback copy.
+  const isValid = parsed && parsed.definitions && (
+    parsed.definitions.english || parsed.definitions.french || parsed.definitions.spanish
+  );
+
+  if (!isValid) {
+    // eslint-disable-next-line no-console
+    console.warn('[word-definitions] unexpected response:', parsed);
+    return {
+      word,
+      definitions: {
+        english: { definitions: [], examples: [] },
+        french: { definitions: [], examples: [] },
+        spanish: { definitions: [], examples: [] },
+      },
+    } as WordDefinitionsResponse;
+  }
+
+  return parsed as WordDefinitionsResponse;
 }

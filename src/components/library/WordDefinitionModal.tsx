@@ -1,4 +1,4 @@
-import { } from "react";
+
 import {
     Dialog,
     DialogContent,
@@ -19,7 +19,6 @@ interface WordDefinitionModalProps {
 
 export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps) {
     const { language } = useLanguage();
-    const { getWordDetails } = useLibrary();
 
     const { data, isLoading, error } = useWordDefinitions(word);
 

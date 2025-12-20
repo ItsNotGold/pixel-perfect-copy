@@ -20,6 +20,7 @@ interface ApiEntry {
 
 interface ApiSense {
     definition: string;
+    subsenses?: ApiSense[];
 }
 
 interface ApiResponse {
@@ -79,13 +80,15 @@ export async function getWordDefinition(
 
     let definitions: string[] = [];
 
-    if (responseObj && Array.isArray(responseObj.entries) && responseObj.entries.length > 0) {
-        // Rule: First Entry -> All Senses -> definitions
-        const firstEntry = responseObj.entries[0];
-        if (firstEntry.senses && firstEntry.senses.length > 0) {
-            definitions = firstEntry.senses
-                .map(s => s.definition)
-                .filter(d => !!d); // Ensure no empty definitions
+    if (responseObj && Array.isArray(responseObj.entries)) {
+        // Iterate ALL entries
+        for (const entry of responseObj.entries) {
+            if (entry.senses && Array.isArray(entry.senses)) {
+                // Iterate ALL senses
+                for (const sense of entry.senses) {
+                     extractDefinitionsRecursive(sense, definitions);
+                }
+            }
         }
     }
 
@@ -101,6 +104,20 @@ export async function getWordDefinition(
     console.error(`Failed to fetch definition for ${word}`, e);
     return { definitions: [] };
   }
+}
+
+function extractDefinitionsRecursive(sense: ApiSense, list: string[]) {
+    // 1. Add current definition
+    if (sense.definition) {
+        list.push(sense.definition);
+    }
+
+    // 2. Recurse into subsenses
+    if (sense.subsenses && Array.isArray(sense.subsenses)) {
+        for (const sub of sense.subsenses) {
+            extractDefinitionsRecursive(sub, list);
+        }
+    }
 }
 
 async function persistToCache(

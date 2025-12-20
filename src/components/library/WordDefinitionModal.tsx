@@ -69,7 +69,7 @@ export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps)
                         ) : details ? (
                             <div>
                                 <div className="max-h-[60vh] overflow-y-auto pr-2 scrollbar-thin">
-                                    <ol className="list-decimal pl-5 text-lg leading-relaxed text-foreground/90 font-medium space-y-2">
+                                    <ol className="list-decimal pl-10 text-lg leading-relaxed text-foreground/90 font-medium space-y-2">
                                         {/* Primary Definition */}
                                         <li>{details.definition}</li>
 

@@ -4,41 +4,35 @@ export interface DefinitionResult {
 
 export type SupportedLanguage = 'english' | 'french' | 'spanish';
 
-const DICT_DEV_BASE = 'https://api.dictionaryapi.dev/api/v2/entries';
-const FRENCH_LEMONDE_BASE = 'https://api-definition.fgainza.fr';
-const SPANISH_RAE_BASE = 'https://rae-api.com/api/words';
+const API_BASE = 'https://api.dictionaryapi.dev/api/v2/entries';
 
+const LANG_CODES: Record<SupportedLanguage, string> = {
+  english: 'en',
+  french: 'fr',
+  spanish: 'es',
+};
 
-// --- Type Definitions ---
+// Response Type Definitions (Common for all dictionaryapi.dev calls)
+interface ApiDefinition {
+    definition: string;
+}
 
-// English (DictionaryAPI.dev)
-interface DictDevEntry {
+interface ApiMeaning {
+    definitions: ApiDefinition[];
+}
+
+interface ApiEntry {
     word: string;
-    meanings: {
-        definitions: { definition: string }[];
-    }[];
+    meanings: ApiMeaning[];
 }
-
-// French (Fgainza / Wiktionnaire)
-interface FrenchResponse {
-    motWiki: string;
-    natureDef: Record<string, string>[][]; // Array of arrays of objects like { "1": "def..." }
-}
-
-// Spanish (RAE)
-interface SpanishResponse {
-    word: string;
-    entries: { definition: string }[];
-}
-
-
-// --- Main Service Function ---
 
 export async function getWordDefinition(
   word: string,
   language: SupportedLanguage
 ): Promise<DefinitionResult> {
   const normalizedWord = word.toLowerCase().trim();
+  const langCode = LANG_CODES[language];
+  const cacheKey = `${langCode}:${normalizedWord}`; // MANDATORY: cache key format
 
   // 1. Check Local Cache
   let storedDefinitions: any = {};
@@ -51,50 +45,36 @@ export async function getWordDefinition(
     console.warn('Failed to fetch local definitions cache', e);
   }
 
+  // Check cache (using new flat key)
   if (
-    storedDefinitions[normalizedWord] &&
-    storedDefinitions[normalizedWord][language] &&
-    Array.isArray(storedDefinitions[normalizedWord][language].definitions) &&
-    storedDefinitions[normalizedWord][language].definitions.length > 0
+    storedDefinitions[cacheKey] &&
+    Array.isArray(storedDefinitions[cacheKey].definitions) &&
+    storedDefinitions[cacheKey].definitions.length > 0
   ) {
-    console.log(`[Cache Hit] ${normalizedWord} (${language})`);
-    return { definitions: storedDefinitions[normalizedWord][language].definitions };
+    console.log(`[Cache Hit] ${cacheKey}`);
+    return { definitions: storedDefinitions[cacheKey].definitions };
   }
 
-  // 2. Fetch from API (Dispatcher)
-  console.log(`[Cache Miss] Fetching API for ${normalizedWord} (${language})`);
-  let result: DefinitionResult = { definitions: [] };
+  // 2. Fetch from API
+  console.log(`[Cache Miss] Fetching API for ${cacheKey}`);
+  const url = `${API_BASE}/${langCode}/${encodeURIComponent(normalizedWord)}`;
 
   try {
-      if (language === 'english') {
-          result = await fetchEnglishDefinition(normalizedWord);
-      } else if (language === 'french') {
-          result = await fetchFrenchDefinition(normalizedWord);
-      } else if (language === 'spanish') {
-          result = await fetchSpanishDefinition(normalizedWord);
-      }
-      
-      // 3. Persist (even if empty)
-      await persistToCache(normalizedWord, language, result, storedDefinitions);
-      return result;
-
-  } catch (e) {
-    console.error(`Failed to fetch definition for ${word}`, e);
-    return { definitions: [] };
-  }
-}
-
-
-// --- Helper Functions ---
-
-async function fetchEnglishDefinition(word: string): Promise<DefinitionResult> {
-    const url = `${DICT_DEV_BASE}/en/${encodeURIComponent(word)}`;
     const apiRes = await fetch(url);
+    
+    // Handle 404 gracefully
+    if (apiRes.status === 404) {
+         console.warn(`[Word Not Found] ${normalizedWord}`);
+         const emptyResult: DefinitionResult = { definitions: [] };
+         await persistToCache(cacheKey, emptyResult, storedDefinitions);
+         return emptyResult;
+    }
 
-    if (apiRes.status === 404) return { definitions: [] };
-    if (!apiRes.ok) throw new Error(`DictionaryAPI Error: ${apiRes.statusText}`);
+    if (!apiRes.ok) {
+        throw new Error(`API Error: ${apiRes.statusText}`);
+    }
 
-    const data: DictDevEntry[] = await apiRes.json();
+    const data: ApiEntry[] = await apiRes.json();
     let definitions: string[] = [];
 
     if (Array.isArray(data)) {
@@ -102,81 +82,38 @@ async function fetchEnglishDefinition(word: string): Promise<DefinitionResult> {
             if (entry.meanings && Array.isArray(entry.meanings)) {
                 for (const meaning of entry.meanings) {
                     if (meaning.definitions && Array.isArray(meaning.definitions)) {
-                        for (const def of meaning.definitions) {
-                            if (def.definition) definitions.push(def.definition);
+                        for (const defObj of meaning.definitions) {
+                            if (defObj.definition) {
+                                definitions.push(defObj.definition);
+                            }
                         }
                     }
                 }
             }
         }
     }
-    return { definitions };
+
+    const result: DefinitionResult = {
+      definitions
+    };
+
+    // 3. Persist
+    await persistToCache(cacheKey, result, storedDefinitions);
+    return result;
+
+  } catch (e) {
+    console.error(`Failed to fetch definition for ${word}`, e);
+    return { definitions: [] };
+  }
 }
-
-async function fetchFrenchDefinition(word: string): Promise<DefinitionResult> {
-     const url = `${FRENCH_LEMONDE_BASE}/${encodeURIComponent(word)}`;
-     const apiRes = await fetch(url);
-     // Note: This API might return JSON directly or error. Wrap in try/catch safely.
-     
-     if (!apiRes.ok) {
-        // API might return 404 or just empty
-         if (apiRes.status === 404) return { definitions: [] };
-         throw new Error(`French API Error: ${apiRes.statusText}`);
-     }
-
-    const data: FrenchResponse = await apiRes.json();
-    let definitions: string[] = [];
-
-    // Parse natureDef: [[ { "1": "...", "2": "..." } ], [ ... ]]
-    if (data.natureDef && Array.isArray(data.natureDef)) {
-        for (const group of data.natureDef) {
-            if (Array.isArray(group)) {
-                 for (const defObj of group) {
-                      // Keys are dynamic numbers "1", "2" ... extract all string values
-                      Object.values(defObj).forEach(val => {
-                          if (typeof val === 'string' && val.trim().length > 0) {
-                              definitions.push(val.trim());
-                          }
-                      });
-                 }
-            }
-        }
-    }
-    return { definitions };
-}
-
-async function fetchSpanishDefinition(word: string): Promise<DefinitionResult> {
-    const url = `${SPANISH_RAE_BASE}/${encodeURIComponent(word)}`;
-    const apiRes = await fetch(url);
-
-    if (apiRes.status === 404) return { definitions: [] };
-    if (!apiRes.ok) throw new Error(`RAE API Error: ${apiRes.statusText}`);
-
-    const data: SpanishResponse = await apiRes.json();
-    let definitions: string[] = [];
-
-    if (data.entries && Array.isArray(data.entries)) {
-        for (const entry of data.entries) {
-            if (entry.definition) {
-                definitions.push(entry.definition);
-            }
-        }
-    }
-    return { definitions };
-}
-
 
 async function persistToCache(
-    word: string, 
-    language: SupportedLanguage, 
+    cacheKey: string,
     result: DefinitionResult, 
     currentCache: any
 ) {
     const newEntry = {
-        [word]: {
-            ...currentCache[word],
-            [language]: result
-        }
+        [cacheKey]: result
     };
 
     try {
@@ -186,6 +123,6 @@ async function persistToCache(
             body: JSON.stringify(newEntry)
         });
     } catch (e) {
-        // console.error('Failed to persist definition to cache', e);
+        console.error('Failed to persist definition to cache', e);
     }
 }

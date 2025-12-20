@@ -14,7 +14,7 @@ import { fillerWordEliminatorMaster } from "@/data/exercises/fillerWordEliminato
 import { reverseDefinitionsMaster } from "@/data/exercises/reverseDefinitions.master";
 import { synonymSpeedChainMaster } from "@/data/exercises/synonymSpeedChain.master";
 import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";
-import { fetchWordDefinitions } from "@/lib/wordDefinitionsService";
+import { getWordDefinition } from "@/lib/wordDefinitionsService";
 
 const MASTER_DATA: Record<string, ExerciseMaster<any>> = {
     "precision-swap": precisionSwapMaster,
@@ -152,25 +152,33 @@ export function useLibrary() {
         }
     };
 
-    // Async: Fetch definitions from DB or Wiktionary via Supabase Edge Function.
+    // Async: Fetch definitions from local cache or Wiktionary via new service.
     const getWordDetails = useCallback(async (word: string, language: string): Promise<WordDetails | null> => {
         const lowerWord = word.toLowerCase().trim();
         const lowerLang = language.toLowerCase();
 
         try {
-            const resp = await fetchWordDefinitions(lowerWord);
-            const langKey = lowerLang === 'fr' ? 'french' : lowerLang === 'es' ? 'spanish' : 'english';
-            const block = resp.definitions?.[langKey];
-            const defs = block?.definitions || [];
-            const exs = block?.examples || [];
+            // Map 'en'/'fr'/'es' code to 'english'/'french'/'spanish' for the service
+            const langMap: Record<string, 'english' | 'french' | 'spanish'> = {
+                'en': 'english',
+                'fr': 'french',
+                'es': 'spanish',
+                // fallback for de or others if needed, though service only supports 3 specific ones
+                'de': 'english' 
+            };
+            const serviceLang = langMap[lowerLang] || 'english';
 
-            if (defs.length > 0 || exs.length > 0) {
+            const resp = await getWordDefinition(lowerWord, serviceLang);
+            const defs = resp.definitions || [];
+            const exs = resp.examples || [];
+
+            if (defs.length > 0) {
                 return {
                     id: `remote-${lowerWord}-${lowerLang}`,
                     word: lowerWord,
                     language: lowerLang,
-                    definition: defs[0] ?? `No definition found for "${word}".`,
-                    example: exs[0] ?? `No example found for "${word}".`,
+                    definition: defs[0],
+                    example: exs[0] || `No example available for "${word}".`,
                     // Provide extras for UI listing
                     // @ts-ignore add optional fields to keep compatibility with WordDetails type
                     otherDefinitions: defs.slice(1),
@@ -181,24 +189,24 @@ export function useLibrary() {
                 } as any;
             }
 
-            // No remote content, fall back to a safe message (keeps behaviour similar to previous fallback)
+            // No content found after API call
             return {
                 id: `fallback-${lowerWord}-${lowerLang}`,
                 word: lowerWord,
                 language: lowerLang,
-                definition: `No curated definition available for "${word}" in ${language.toUpperCase()}.`,
-                example: `No example available for "${word}" in ${language.toUpperCase()}.`,
+                definition: `No definition available for "${word}" in ${language.toUpperCase()}.`,
+                example: `No example available.`,
                 created_at: new Date().toISOString(),
                 updated_at: new Date().toISOString()
             } as WordDetails;
         } catch (e) {
-            console.error('[Library] fetchWordDefinitions failed', e);
+            console.error('[Library] getWordDefinition failed', e);
             return {
                 id: `fallback-${lowerWord}-${lowerLang}`,
                 word: lowerWord,
                 language: lowerLang,
-                definition: `No curated definition available for "${word}" in ${language.toUpperCase()}.`,
-                example: `No example available for "${word}" in ${language.toUpperCase()}.`,
+                definition: `Error fetching definition for "${word}".`,
+                example: `Error fetching example.`,
                 created_at: new Date().toISOString(),
                 updated_at: new Date().toISOString()
             } as WordDetails;

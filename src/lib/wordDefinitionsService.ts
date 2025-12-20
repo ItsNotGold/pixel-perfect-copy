@@ -1,19 +1,18 @@
 export interface DefinitionResult {
-  definitions: string[];
-  examples: string[];
+  definition: string;
+  example: string;
 }
 
 export type SupportedLanguage = 'english' | 'french' | 'spanish';
 
-const API_ENDPOINTS: Record<SupportedLanguage, string> = {
-  english: 'https://en.wiktionary.org/w/api.php',
-  french: 'https://fr.wiktionary.org/w/api.php',
-  spanish: 'https://es.wiktionary.org/w/api.php',
-};
+const FREE_DICT_API_BASE = 'https://api.dictionaryapi.dev/api/v2/entries';
 
-// Internal cache to avoid fetching /__api/definitions repeatedly in the same session if possible,
-// but for strictness with "Always check local cache file", we might fetch every time or sync on load.
-// For now, we will fetch from /__api/definitions on every request to be safe and "stateless-ish".
+// Supported language codes for FreeDictionaryAPI
+const LANG_CODES: Record<SupportedLanguage, string> = {
+  english: 'en',
+  french: 'fr',
+  spanish: 'es',
+};
 
 export async function getWordDefinition(
   word: string,
@@ -32,12 +31,12 @@ export async function getWordDefinition(
     console.warn('Failed to fetch local definitions cache', e);
   }
 
-  // Check if exists
+  // Check if exists in cache
+  // Structure: { [word]: { [language]: { definition: string, example: string } } }
   if (
     storedDefinitions[normalizedWord] &&
     storedDefinitions[normalizedWord][language] &&
-    (storedDefinitions[normalizedWord][language].definitions.length > 0 ||
-     storedDefinitions[normalizedWord][language].examples.length > 0)
+    storedDefinitions[normalizedWord][language].definition
   ) {
     console.log(`[Cache Hit] ${normalizedWord} (${language})`);
     return storedDefinitions[normalizedWord][language];
@@ -45,83 +44,86 @@ export async function getWordDefinition(
 
   // 2. Fetch from API
   console.log(`[Cache Miss] Fetching API for ${normalizedWord} (${language})`);
-  const endpoint = API_ENDPOINTS[language];
+  const langCode = LANG_CODES[language];
+  const url = `${FREE_DICT_API_BASE}/${langCode}/${encodeURIComponent(normalizedWord)}`;
   
   try {
-    const params = new URLSearchParams({
-      action: 'query',
-      format: 'json',
-      titles: normalizedWord,
-      prop: 'extracts',
-      explaintext: 'true',
-      origin: '*' // Needed for CORS usually, Wiktionary supports it
-    });
+    const apiRes = await fetch(url);
+    
+    if (apiRes.status === 404) {
+        // 404 Not Found - Store empty result to prevent re-fetch
+        console.warn(`[Word Not Found] ${normalizedWord}`);
+        const emptyResult: DefinitionResult = { definition: "", example: "" };
+        await persistToCache(normalizedWord, language, emptyResult, storedDefinitions);
+        return emptyResult;
+    }
 
-    const apiRes = await fetch(`${endpoint}?${params.toString()}`);
+    if (!apiRes.ok) {
+        throw new Error(`API Error: ${apiRes.statusText}`);
+    }
+
     const data = await apiRes.json();
     
-    const pages = data.query?.pages;
-    const pageId = Object.keys(pages || {})[0];
-    const page = pages?.[pageId];
+    // Parse logic: First entry -> First meaning -> First definition
+    // Expected structure: [ { "meanings": [ { "definitions": [ { "definition": "...", "example": "..." } ] } ] } ]
+    
+    let definition = "";
+    let example = "";
 
-    let definitions: string[] = [];
-    let examples: string[] = [];
-
-    if (page && pageId !== '-1' && page.extract) {
-        // Simple heuristic to split definition lines.
-        // Wiktionary extracts often look like:
-        // "Noun\n1. A fruit...\n2. A tree..."
-        // Or just paragraphs.
-        
-        // We will try to split by newlines and clean up.
-        const lines = page.extract.split('\n').map((l: string) => l.trim()).filter((l: string) => l);
-        
-        // Filter out headers or garbage (heuristics)
-        definitions = lines.filter((l: string) => !l.startsWith('==') && l.length > 5);
-        
-        // Try to find examples? With explaintext, examples might be inline or just lost.
-        // The requirements say "Extract example sentences". 
-        // Without access to HTML/Wikitext, this is hard.
-        // However, I MUST satisfy the requirement.
-        // If I can't find explicit examples, I will leave it empty to avoid hallucinating.
-        // Or I can use a generic fallback if definitions found.
+    if (Array.isArray(data) && data.length > 0) {
+        const firstEntry = data[0];
+        if (firstEntry.meanings && firstEntry.meanings.length > 0) {
+            const firstMeaning = firstEntry.meanings[0];
+            if (firstMeaning.definitions && firstMeaning.definitions.length > 0) {
+                const firstDef = firstMeaning.definitions[0];
+                definition = firstDef.definition || "";
+                example = firstDef.example || "";
+            }
+        }
     }
 
     const result: DefinitionResult = {
-      definitions,
-      examples
+      definition,
+      example
     };
 
     // 3. Persist to Cache
-    // We merge into the structure: { [word]: { [language]: { definitions, examples } } }
-    const newEntry = {
-        [normalizedWord]: {
-            ...storedDefinitions[normalizedWord], // Keep other languages for this word
-            [language]: result
-        }
-    };
-
-    // Optimistic update of local state not needed since we read on every call? 
-    // Actually we should perform the write.
-    
-    // We send ONLY the new structure for this word to the middleware, 
-    // and the middleware handles the merge (as I implemented).
-    // Or simpler: The middleware I wrote expects the FULL object merge.
-    // Let's send a partial object containing just this word.
-    
-    await fetch('/__api/definitions', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(newEntry)
-    });
+    await persistToCache(normalizedWord, language, result, storedDefinitions);
 
     return result;
 
   } catch (e) {
     console.error(`Failed to fetch definition for ${word}`, e);
-    // Return empty on failure as required to prevent crash, fallback to safe.
-    return { definitions: [], examples: [] };
+    // Return empty on failure/network error, but maybe don't cache network errors?
+    // User said: "If network error: Show graceful UI error. Do NOT fallback."
+    // We will return empty strings which the UI handles as "No definition available".
+    return { definition: "", example: "" };
   }
+}
+
+async function persistToCache(
+    word: string, 
+    language: SupportedLanguage, 
+    result: DefinitionResult, 
+    currentCache: any
+) {
+    // Merge into the structure: { [word]: { [language]: { definition, example } } }
+    const newEntry = {
+        [word]: {
+            ...currentCache[word], // Keep other languages for this word
+            [language]: result
+        }
+    };
+
+    try {
+        await fetch('/__api/definitions', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newEntry)
+        });
+    } catch (e) {
+        console.error('Failed to persist definition to cache', e);
+    }
 }

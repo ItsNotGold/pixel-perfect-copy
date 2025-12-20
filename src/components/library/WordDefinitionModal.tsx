@@ -74,7 +74,7 @@ export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps)
                                 </p>
 
                                 {/* If there are other definitions, show a short list */}
-                                {!!(details && details.otherDefinitions) && (
+                                {details?.otherDefinitions?.length > 0 && (
                                     <ul className="mt-2 list-disc pl-5 text-sm text-muted-foreground">
                                         {details.otherDefinitions.map((d: string, idx: number) => (
                                             <li key={idx}>{d}</li>
@@ -99,7 +99,7 @@ export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps)
                             <div>
                                 <p className="text-base italic leading-relaxed text-muted-foreground">"{details.example}"</p>
 
-                                {!!(details && details.otherExamples) && (
+                                {details?.otherExamples?.length > 0 && (
                                     <ul className="mt-2 list-disc pl-5 text-sm text-muted-foreground">
                                         {details.otherExamples.map((d: string, idx: number) => (
                                             <li key={idx}>{d}</li>

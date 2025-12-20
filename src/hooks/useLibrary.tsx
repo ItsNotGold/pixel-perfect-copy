@@ -152,7 +152,7 @@ export function useLibrary() {
         }
     };
 
-    // Async: Fetch definitions from local cache or Wiktionary via new service.
+    // Async: Fetch definitions from local cache or FreeDictionaryAPI via new service.
     const getWordDetails = useCallback(async (word: string, language: string): Promise<WordDetails | null> => {
         const lowerWord = word.toLowerCase().trim();
         const lowerLang = language.toLowerCase();
@@ -163,39 +163,39 @@ export function useLibrary() {
                 'en': 'english',
                 'fr': 'french',
                 'es': 'spanish',
-                // fallback for de or others if needed, though service only supports 3 specific ones
+                // fallback for de or others if needed
                 'de': 'english' 
             };
             const serviceLang = langMap[lowerLang] || 'english';
 
             const resp = await getWordDefinition(lowerWord, serviceLang);
-            const defs = resp.definitions || [];
-            const exs = resp.examples || [];
+            const def = resp.definition;
+            const ex = resp.example;
 
-            if (defs.length > 0) {
+            if (def) {
                 return {
                     id: `remote-${lowerWord}-${lowerLang}`,
                     word: lowerWord,
                     language: lowerLang,
-                    definition: defs[0],
-                    example: exs[0] || `No example available for "${word}".`,
-                    // Provide extras for UI listing
-                    // @ts-ignore add optional fields to keep compatibility with WordDetails type
-                    otherDefinitions: defs.slice(1),
+                    definition: def,
+                    example: ex || `No example available.`,
+                    // Provide empty extras as we strictly take one definition now
+                    // @ts-ignore add optional fields for compatibility
+                    otherDefinitions: [],
                     // @ts-ignore
-                    otherExamples: exs.slice(1),
+                    otherExamples: [],
                     created_at: new Date().toISOString(),
                     updated_at: new Date().toISOString()
                 } as any;
             }
 
-            // No content found after API call
+            // No content found or 404
             return {
                 id: `fallback-${lowerWord}-${lowerLang}`,
                 word: lowerWord,
                 language: lowerLang,
                 definition: `No definition available for "${word}" in ${language.toUpperCase()}.`,
-                example: `No example available.`,
+                example: ``,
                 created_at: new Date().toISOString(),
                 updated_at: new Date().toISOString()
             } as WordDetails;
@@ -206,7 +206,7 @@ export function useLibrary() {
                 word: lowerWord,
                 language: lowerLang,
                 definition: `Error fetching definition for "${word}".`,
-                example: `Error fetching example.`,
+                example: ``,
                 created_at: new Date().toISOString(),
                 updated_at: new Date().toISOString()
             } as WordDetails;

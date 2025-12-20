@@ -17,8 +17,9 @@ serve(async (req) => {
   try {
     const authHeader = req.headers.get("Authorization") || "";
     const token = authHeader.replace("Bearer ", "");
-    const { data: userData } = await supabaseClient.auth.getUser(token);
-    const user = userData.user;
+    const { data: userData, error: authError } = await supabaseClient.auth.getUser(token);
+    if (authError) throw authError;
+    const user = userData?.user;
     if (!user || !user.id) throw new Error("Not authenticated");
 
     const body = await req.json();
@@ -50,9 +51,23 @@ serve(async (req) => {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
       status: 200,
     });
-  } catch (error) {
-    const message = error instanceof Error ? error.message : String(error);
-    console.error("[UNLOCK-BADGE] ERROR", message);
+  } catch (err) {
+    // Log full error object for debugging
+    console.error("[UNLOCK-BADGE] ERROR", err);
+
+    let message: string;
+    if (err instanceof Error) {
+      message = err.message;
+    } else if (err && typeof err === "object") {
+      try {
+        message = JSON.stringify(err);
+      } catch (e) {
+        message = String(err);
+      }
+    } else {
+      message = String(err);
+    }
+
     return new Response(JSON.stringify({ error: message }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
       status: 400,

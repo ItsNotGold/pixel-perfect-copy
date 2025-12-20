@@ -169,19 +169,16 @@ export function useLibrary() {
             const serviceLang = langMap[lowerLang] || 'english';
 
             const resp = await getWordDefinition(lowerWord, serviceLang);
-            const def = resp.definition;
+            const defs = resp.definitions || [];
 
-            if (def) {
+            if (defs.length > 0) {
                 return {
                     id: `remote-${lowerWord}-${lowerLang}`,
                     word: lowerWord,
                     language: lowerLang,
-                    definition: def,
+                    definition: defs[0],
+                    otherDefinitions: defs.slice(1),
                     example: "", // Explicitly empty as requested
-                    // @ts-ignore add optional fields for compatibility
-                    otherDefinitions: [],
-                    // @ts-ignore
-                    otherExamples: [],
                     created_at: new Date().toISOString(),
                     updated_at: new Date().toISOString()
                 } as any;

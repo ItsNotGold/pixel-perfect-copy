@@ -1,5 +1,5 @@
 export interface DefinitionResult {
-  definition: string;
+  definitions: string[];
 }
 
 export type SupportedLanguage = 'english' | 'french' | 'spanish';
@@ -44,13 +44,15 @@ export async function getWordDefinition(
     console.warn('Failed to fetch local definitions cache', e);
   }
 
+  // Check cache for array of definitions
   if (
     storedDefinitions[normalizedWord] &&
     storedDefinitions[normalizedWord][language] &&
-    storedDefinitions[normalizedWord][language].definition
+    Array.isArray(storedDefinitions[normalizedWord][language].definitions) &&
+    storedDefinitions[normalizedWord][language].definitions.length > 0
   ) {
     console.log(`[Cache Hit] ${normalizedWord} (${language})`);
-    return { definition: storedDefinitions[normalizedWord][language].definition };
+    return { definitions: storedDefinitions[normalizedWord][language].definitions };
   }
 
   // 2. Fetch from API
@@ -63,7 +65,7 @@ export async function getWordDefinition(
     // Handle 404 gracefully
     if (apiRes.status === 404) {
          console.warn(`[Word Not Found] ${normalizedWord}`);
-         const emptyResult: DefinitionResult = { definition: "" };
+         const emptyResult: DefinitionResult = { definitions: [] };
          await persistToCache(normalizedWord, language, emptyResult, storedDefinitions);
          return emptyResult;
     }
@@ -75,18 +77,20 @@ export async function getWordDefinition(
     const data: ApiResponse | ApiResponse[] = await apiRes.json();
     const responseObj = Array.isArray(data) ? data[0] : data;
 
-    let definition = "";
+    let definitions: string[] = [];
 
     if (responseObj && Array.isArray(responseObj.entries) && responseObj.entries.length > 0) {
-        // Strict Rule: First Entry -> First Sense -> Definition
+        // Rule: First Entry -> All Senses -> definitions
         const firstEntry = responseObj.entries[0];
         if (firstEntry.senses && firstEntry.senses.length > 0) {
-            definition = firstEntry.senses[0].definition || "";
+            definitions = firstEntry.senses
+                .map(s => s.definition)
+                .filter(d => !!d); // Ensure no empty definitions
         }
     }
 
     const result: DefinitionResult = {
-      definition
+      definitions
     };
 
     // 3. Persist
@@ -95,7 +99,7 @@ export async function getWordDefinition(
 
   } catch (e) {
     console.error(`Failed to fetch definition for ${word}`, e);
-    return { definition: "" };
+    return { definitions: [] };
   }
 }
 

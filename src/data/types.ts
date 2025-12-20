@@ -145,6 +145,7 @@ export interface WordDetails {
     word: string;
     language: string;
     definition: string;
+    otherDefinitions?: string[]; // Added for multiple definitions support
     example: string;
     created_at: string;
     updated_at: string;

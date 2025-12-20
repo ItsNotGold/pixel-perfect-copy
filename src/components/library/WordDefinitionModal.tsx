@@ -62,25 +62,21 @@ export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps)
                 <div className="space-y-6">
                     <section className="space-y-3">
                         <div className="flex items-center gap-2 text-sm font-bold text-primary/80 uppercase tracking-wider">
-                            <BookOpen className="w-4 h-4" /> Meaning
+                            <BookOpen className="w-4 h-4" /> Definitions
                         </div>
                         {loading ? (
                             <Skeleton className="h-6 w-full" />
                         ) : details ? (
                             <div>
-                                {/* Show first definition */}
-                                <p className="text-lg leading-relaxed text-foreground/90 font-medium">
-                                    {details.definition}
-                                </p>
+                                <ol className="list-decimal pl-5 text-lg leading-relaxed text-foreground/90 font-medium space-y-2">
+                                    {/* Primary Definition */}
+                                    <li>{details.definition}</li>
 
-                                {/* If there are other definitions, show a short list */}
-                                {details?.otherDefinitions?.length > 0 && (
-                                    <ul className="mt-2 list-disc pl-5 text-sm text-muted-foreground">
-                                        {details.otherDefinitions.map((d: string, idx: number) => (
-                                            <li key={idx}>{d}</li>
-                                        ))}
-                                    </ul>
-                                )}
+                                    {/* Other Definitions */}
+                                    {details.otherDefinitions?.map((d: string, idx: number) => (
+                                        <li key={idx}>{d}</li>
+                                    ))}
+                                </ol>
                             </div>
                         ) : (
                             <p className="text-muted-foreground italic">

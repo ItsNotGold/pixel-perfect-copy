@@ -1,4 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
+import { WORD_DEFINITIONS } from "@/data/wordDefinitions";
 
 export interface LanguageBlock {
   definitions: string[];
@@ -14,61 +15,76 @@ export interface WordDefinitionsResponse {
   };
 }
 
+function localFallback(word: string): WordDefinitionsResponse {
+  const key = word.toLowerCase().trim();
+  const en = WORD_DEFINITIONS.en?.[key];
+  const fr = (WORD_DEFINITIONS as any).fr?.[key];
+  const es = (WORD_DEFINITIONS as any).es?.[key];
+
+  return {
+    word: key,
+    definitions: {
+      english: en ? { definitions: [en.definition], examples: [en.example] } : { definitions: [], examples: [] },
+      french: fr ? { definitions: [fr.definition], examples: [fr.example] } : { definitions: [], examples: [] },
+      spanish: es ? { definitions: [es.definition], examples: [es.example] } : { definitions: [], examples: [] }
+    }
+  };
+}
+
 export async function fetchWordDefinitions(word: string): Promise<WordDefinitionsResponse> {
   if (!word || word.trim().length === 0) {
-    return {
-      word: word,
-      definitions: {
-        english: { definitions: [], examples: [] },
-        french: { definitions: [], examples: [] },
-        spanish: { definitions: [], examples: [] }
-      }
-    };
+    return localFallback(word);
   }
 
   const body = { word };
-  const { data, error } = await supabase.functions.invoke('word-definitions', {
-    body: JSON.stringify(body),
-  });
 
-  if (error) {
-    throw new Error(error.message || 'Failed to fetch word definitions');
-  }
+  try {
+    const { data, error } = await supabase.functions.invoke('word-definitions', {
+      body: JSON.stringify(body),
+    });
 
-  // Supabase Functions may return a parsed object or a JSON string depending on environment.
-  // Ensure we always return a proper object shape for the rest of the app.
-  let parsed: any = data;
-  if (typeof data === 'string') {
-    try {
-      parsed = JSON.parse(data);
-    } catch (e) {
-      throw new Error('Invalid response from word-definitions function');
+    if (error) {
+      // eslint-disable-next-line no-console
+      console.warn('[word-definitions] supabase invoke error:', error);
+      return localFallback(word);
     }
-  }
 
-  // If the function returned an error shape, throw so callers can see it
-  if (parsed && typeof parsed === 'object' && parsed.error) {
-    throw new Error(parsed.error);
-  }
+    // Supabase Functions may return a parsed object or a JSON string depending on environment.
+    // Ensure we always return a proper object shape for the rest of the app.
+    let parsed: any = data;
+    if (typeof data === 'string') {
+      try {
+        parsed = JSON.parse(data);
+      } catch (e) {
+        // eslint-disable-next-line no-console
+        console.warn('[word-definitions] invalid JSON response:', data);
+        return localFallback(word);
+      }
+    }
 
-  // Validate expected shape - if it's not present, surface a helpful console
-  // message and return an empty-but-valid fallback so UI shows its fallback copy.
-  const isValid = parsed && parsed.definitions && (
-    parsed.definitions.english || parsed.definitions.french || parsed.definitions.spanish
-  );
+    // If the function returned an error shape, fallback to local
+    if (parsed && typeof parsed === 'object' && parsed.error) {
+      // eslint-disable-next-line no-console
+      console.warn('[word-definitions] function returned error:', parsed.error);
+      return localFallback(word);
+    }
 
-  if (!isValid) {
+    // Validate expected shape
+    const isValid = parsed && parsed.definitions && (
+      parsed.definitions.english || parsed.definitions.french || parsed.definitions.spanish
+    );
+
+    if (!isValid) {
+      // eslint-disable-next-line no-console
+      console.warn('[word-definitions] unexpected response shape, falling back to local:', parsed);
+      return localFallback(word);
+    }
+
+    return parsed as WordDefinitionsResponse;
+  } catch (e) {
+    // Network / unexpected error - fallback
     // eslint-disable-next-line no-console
-    console.warn('[word-definitions] unexpected response:', parsed);
-    return {
-      word,
-      definitions: {
-        english: { definitions: [], examples: [] },
-        french: { definitions: [], examples: [] },
-        spanish: { definitions: [], examples: [] },
-      },
-    } as WordDefinitionsResponse;
+    console.warn('[word-definitions] fetch failed, falling back to local:', e);
+    return localFallback(word);
   }
-
-  return parsed as WordDefinitionsResponse;
 }

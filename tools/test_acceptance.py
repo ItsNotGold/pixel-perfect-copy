@@ -2,8 +2,7 @@
 Acceptance test: synthesize silence -> ~400ms "mmmm" -> silence
 and verify the detector returns exactly one nasal_hum around 400ms.
 """
-import pytest
-np = pytest.importorskip("numpy")
+import numpy as np
 from scipy.io import wavfile
 import os
 from filler_detector import detect_file

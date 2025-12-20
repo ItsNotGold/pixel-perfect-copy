@@ -1,4 +1,4 @@
-
+import { useState, useEffect } from "react";
 import {
     Dialog,
     DialogContent,
@@ -6,7 +6,7 @@ import {
     DialogTitle,
     DialogDescription,
 } from "@/components/ui/dialog";
-import { useWordDefinitions } from "@/hooks/useWordDefinitions";
+import { useLibrary } from "@/hooks/useLibrary";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Badge } from "@/components/ui/badge";
@@ -19,25 +19,33 @@ interface WordDefinitionModalProps {
 
 export function WordDefinitionModal({ word, onClear }: WordDefinitionModalProps) {
     const { language } = useLanguage();
+    const { getWordDetails } = useLibrary();
 
-    const { data, isLoading, error } = useWordDefinitions(word);
+    const [details, setDetails] = useState<any | null>(null);
+    const [loading, setLoading] = useState(false);
 
-    // Map fetched data to the shape UI expects
-    const langKey = language === 'fr' ? 'french' : language === 'es' ? 'spanish' : 'english';
-    const block = data?.definitions?.[langKey];
+    useEffect(() => {
+        let mounted = true;
+        if (!word) {
+            setDetails(null);
+            return;
+        }
 
-    // If there are no definitions/examples in the block, treat it as absent so
-    // the UI shows the helpful fallback copy instead of empty/blank fields.
-    const hasContent = !!block && ((block.definitions && block.definitions.length > 0) || (block.examples && block.examples.length > 0));
+        setLoading(true);
+        (async () => {
+            try {
+                const d = await getWordDetails(word, language);
+                if (mounted) setDetails(d);
+            } catch (e) {
+                console.error('WordDefinitionModal: failed to fetch details', e);
+                if (mounted) setDetails(null);
+            } finally {
+                if (mounted) setLoading(false);
+            }
+        })();
 
-    const details = hasContent ? {
-        definition: block!.definitions?.[0] ?? null,
-        otherDefinitions: block!.definitions?.slice(1) ?? [],
-        example: block!.examples?.[0] ?? null,
-        otherExamples: block!.examples?.slice(1) ?? []
-    } : null;
-
-    const loading = isLoading;
+        return () => { mounted = false; };
+    }, [word, language, getWordDetails]);
 
     return (
         <Dialog open={!!word} onOpenChange={(open) => !open && onClear()}>

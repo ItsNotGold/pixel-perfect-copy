@@ -6,7 +6,49 @@ const corsHeaders = {
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
 };
 
-import { parseExtractToDefsAndExamples } from "./parseExtract.ts";
+function parseExtractToDefsAndExamples(extract: string) {
+  const lines = extract.split(/\r?\n/);
+  const definitions: string[] = [];
+  const examples: string[] = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+
+    // Definition lines in Wiktionary extracts often start with '# ' (one hash)
+    const defMatch = line.match(/^#\s+(.*)$/);
+    if (defMatch) {
+      const clean = defMatch[1].replace(/^[:\d\.\)\s]+/, "").trim();
+      if (clean.length > 0) definitions.push(clean);
+
+      // collect immediate example lines that follow and start with '#:' or '# ' with a leading ':'
+      let j = i + 1;
+      while (j < lines.length) {
+        const next = lines[j].trim();
+        const exMatch = next.match(/^#:\s+(.*)$/);
+        if (exMatch) {
+          const e = exMatch[1].trim();
+          if (e.length > 0) examples.push(e);
+          j++;
+          continue;
+        }
+        // break on next definition or header
+        if (/^#\s+/.test(next) || /^==+/.test(next) || next === "") break;
+        j++;
+      }
+    }
+
+    // Sometimes examples are present as lines starting with '#:\s' separated from defs
+    const exLine = line.match(/^#:\s+(.*)$/);
+    if (exLine) {
+      const e = exLine[1].trim();
+      if (e.length > 0) examples.push(e);
+    }
+  }
+
+  // Dedupe and trim
+  const dedup = (arr: string[]) => Array.from(new Set(arr.map(s => s.trim())).values());
+  return { definitions: dedup(definitions), examples: dedup(examples) };
+}
 
 serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders });
@@ -40,15 +82,7 @@ serve(async (req) => {
         .eq('language', lang.code)
         .maybeSingle();
 
-      // Treat cached entries with no definitions/examples as absent so we can
-      // re-attempt fetching from Wiktionary (they may have been empty due to
-      // a previous transient failure).
-      const hasExistingContent = !!existing && (
-        (Array.isArray(existing.definitions) && existing.definitions.length > 0) ||
-        (Array.isArray(existing.examples) && existing.examples.length > 0)
-      );
-
-      if (hasExistingContent) {
+      if (existing) {
         result.definitions[lang.key] = {
           definitions: existing.definitions || [],
           examples: existing.examples || []
@@ -58,13 +92,7 @@ serve(async (req) => {
 
       // Fetch from Wiktionary
       const url = `${lang.api}?action=query&format=json&titles=${encodeURIComponent(rawWord)}&prop=extracts&explaintext=true`;
-      const resp = await fetch(url, {
-        method: 'GET',
-        headers: {
-          'User-Agent': 'PixelPerfect/1.0 (+https://github.com/ItsNotGold/pixel-perfect-copy)',
-          'Accept': 'application/json'
-        }
-      });
+      const resp = await fetch(url, { method: 'GET' });
       if (!resp.ok) {
         result.definitions[lang.key] = { definitions: [], examples: [] };
         continue;
@@ -81,20 +109,16 @@ serve(async (req) => {
 
       if (!extract || extract.length === 0) {
         result.definitions[lang.key] = { definitions: [], examples: [] };
-        // Store an empty placeholder to avoid re-fetching repeatedly, only if there
-        // wasn't an existing row. This allows us to re-check Wiktionary later if
-        // a previous fetch resulted in an empty record.
-        if (!existing) {
-          await supabaseClient.from('word_definitions').upsert([
-            {
-              word: word,
-              language: lang.code,
-              definitions: [],
-              examples: [],
-              updated_at: new Date().toISOString()
-            }
-          ], { onConflict: 'word,language' });
-        }
+        // Store an empty placeholder to avoid re-fetching repeatedly
+        await supabaseClient.from('word_definitions').upsert([
+          {
+            word: word,
+            language: lang.code,
+            definitions: JSON.stringify([]),
+            examples: JSON.stringify([]),
+            updated_at: new Date().toISOString()
+          }
+        ], { onConflict: 'word,language' });
         continue;
       }
 

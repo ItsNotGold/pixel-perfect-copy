@@ -1,6 +1,5 @@
 import tempfile
-import pytest
-np = pytest.importorskip("numpy")
+import numpy as np
 import soundfile as sf
 from app import detect_phonetic_fillers_frame_based
 

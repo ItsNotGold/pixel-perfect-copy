@@ -3,8 +3,7 @@ import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), "audio_analyzer"))
 
-import pytest
-np = pytest.importorskip("numpy")
+import numpy as np
 from scipy.io import wavfile
 from phonetic_detector import detect_phonetic_fillers_frame_based
 

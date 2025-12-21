@@ -1,6 +1,6 @@
 import { useState, useRef, useCallback } from "react";
 import { toast } from "sonner";
-import { AssemblyAI } from 'assemblyai';
+import { AssemblyAI, RealtimeTranscriber } from 'assemblyai';
 import { supabase } from "@/integrations/supabase/client";
 
 // Type definitions for Web Speech API
@@ -58,17 +58,24 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
   const [rawTranscript, setRawTranscript] = useState("");
   const [wordTimestamps, setWordTimestamps] = useState<WordTimestamp[]>([]);
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
+  const sessionBegunRef = useRef(false);
+  const startTimeRef = useRef<number | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
   const recognitionRef = useRef<SpeechRecognitionType | null>(null);
-  const rtRef = useRef<any>(null);
+  const rtRef = useRef<RealtimeTranscriber | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
   const processorRef = useRef<ScriptProcessorNode | null>(null);
 
   const startRecording = useCallback(async (languageCode: string = "en-US") => {
     try {
+      startTimeRef.current = Date.now();
+      setWordTimestamps([]);
+      setTranscript("");
+      setRawTranscript("");
+      sessionBegunRef.current = false;
       // Check for browser support
       const SpeechRecognitionConstructor = window.SpeechRecognition || window.webkitSpeechRecognition || null;
 
@@ -86,16 +93,17 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
       let stream: MediaStream;
       try {
         stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      } catch (err: any) {
+      } catch (err) {
+        const error = err as Error;
         // Show a clearer error message based on the error
-        if (err && (err.name === "NotAllowedError" || err.name === "SecurityError")) {
+        if (error.name === "NotAllowedError" || error.name === "SecurityError") {
           toast.error("Microphone access denied. Please allow microphone permissions in your browser.");
-        } else if (err && (err.name === "NotFoundError" || err.name === "DevicesNotFoundError")) {
+        } else if (error.name === "NotFoundError" || error.name === "DevicesNotFoundError") {
           toast.error("No microphone found. Please connect a microphone and try again.");
         } else {
           toast.error("Unable to access microphone. Check device settings and try again.");
         }
-        console.error("getUserMedia error:", err);
+        console.error("getUserMedia error:", error);
         return;
       }
 
@@ -134,18 +142,28 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
           for (let i = event.resultIndex; i < event.results.length; i++) {
             const result = event.results[i];
             if (result.isFinal) {
-              // Only use Web Speech final results if AssemblyAI is NOT active
-              if (!import.meta.env.VITE_ASSEMBLYAI_API_KEY) {
-                setTranscript((prev) => (prev + " " + result[0].transcript).trim());
+              const text = result[0].transcript;
+              // If AssemblyAI is NOT active or NOT begun, use Web Speech for basic transcription and dummy timestamps
+              if (!import.meta.env.VITE_ASSEMBLYAI_API_KEY || !sessionBegunRef.current) {
+                setTranscript((prev) => (prev + " " + text).trim());
+                
+                const words = text.split(/\s+/).filter(Boolean);
+                const now = Date.now();
+                const recordingElapsed = now - (startTimeRef.current || now);
+                
+                const dummyWords: WordTimestamp[] = words.map((w, idx) => ({
+                   text: w,
+                   start: recordingElapsed - (words.length - idx) * 300, 
+                   end: recordingElapsed - (words.length - idx - 1) * 300
+                }));
+                setWordTimestamps(prev => [...prev, ...dummyWords]);
               }
             } else {
               interim += result[0].transcript;
             }
           }
-          // Keep raw/interim transcript for better detection of disfluencies
           const raw = interim.trim();
           setRawTranscript(raw);
-          // If no API key, transcript is the same as raw
           if (!import.meta.env.VITE_ASSEMBLYAI_API_KEY) {
             setTranscript(raw); 
           }
@@ -166,56 +184,73 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
       // --- AssemblyAI Realtime Setup ---
       const apiKey = import.meta.env.VITE_ASSEMBLYAI_API_KEY;
       if (apiKey) {
-        const client = new AssemblyAI({ apiKey });
-        const rt = client.realtime.transcriber({
-           sampleRate: 16000
-        });
+        console.log("🔗 AssemblyAI Realtime: Initializing transcriber...");
+        try {
+          const rt = new RealtimeTranscriber({
+            apiKey: apiKey,
+            sampleRate: 16000
+          });
 
-        rt.on('open', () => console.log('AssemblyAI RT connection opened'));
-        rt.on('error', (err: any) => console.error('AssemblyAI RT error:', err));
-        rt.on('close', () => console.log('AssemblyAI RT connection closed'));
-        
-        rt.on('transcript', (data: any) => {
-          if (data.message_type === 'FinalTranscript') {
-            // Add words with timestamps
-            const newWords = data.words.map((w: any) => ({
-              text: w.text,
-              start: w.start,
-              end: w.end
-            }));
+          rt.on('open', ({ sessionId }) => {
+            console.log('✅ AssemblyAI Realtime: Connection opened', sessionId);
+            sessionBegunRef.current = true;
+          });
+
+          rt.on('error', (err) => {
+            console.error('❌ AssemblyAI Realtime error:', err);
+            // If we get an auth error, we'll know
+            if (err.message?.includes('4001') || err.message?.includes('authorized')) {
+               console.warn("AssemblyAI Auth failed. Using Web Speech fallback.");
+               toast.error("AssemblyAI Auth failed. WPM will use browser fallback (less accurate).");
+            }
+          });
+
+          rt.on('transcript', (data) => {
+            if (data.message_type === 'FinalTranscript') {
+              const newWords = (data.words || []).map((w) => ({
+                text: w.text,
+                start: w.start,
+                end: w.end
+              }));
+              
+              setWordTimestamps(prev => [...prev, ...newWords]);
+              setTranscript(prev => (prev + " " + (data.text || "")).trim());
+            }
+          });
+
+          rt.on('close', (code, reason) => {
+            console.log('ℹ️ AssemblyAI Realtime: Connection closed', code, reason);
+            sessionBegunRef.current = false;
+          });
+
+          await rt.connect();
+          rtRef.current = rt;
+
+          // Set up Audio Context for capture
+          const audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 16000 });
+          audioContextRef.current = audioCtx;
+          
+          const source = audioCtx.createMediaStreamSource(stream);
+          const processor = audioCtx.createScriptProcessor(4096, 1, 1);
+          processorRef.current = processor;
+
+          processor.onaudioprocess = (e) => {
+            const inputData = e.inputBuffer.getChannelData(0);
+            const pcmData = new Int16Array(inputData.length);
+            for (let i = 0; i < inputData.length; i++) {
+              pcmData[i] = Math.max(-1, Math.min(1, inputData[i])) * 0x7FFF;
+            }
             
-            setWordTimestamps(prev => [...prev, ...newWords]);
-            
-            // Also update standard transcript
-            setTranscript(prev => (prev + " " + data.text).trim());
-          }
-        });
+            if (rtRef.current && sessionBegunRef.current) {
+              rtRef.current.sendAudio(pcmData.buffer);
+            }
+          };
 
-        await rt.connect();
-        rtRef.current = rt;
-
-        // Set up Audio Worklet / Context for RT capture
-        const audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 16000 });
-        audioContextRef.current = audioCtx;
-        
-        const source = audioCtx.createMediaStreamSource(stream);
-        const processor = audioCtx.createScriptProcessor(4096, 1, 1);
-        processorRef.current = processor;
-
-        processor.onaudioprocess = (e) => {
-          const inputData = e.inputBuffer.getChannelData(0);
-          // Convert Float32 to Int16 PCM
-          const pcmData = new Int16Array(inputData.length);
-          for (let i = 0; i < inputData.length; i++) {
-            pcmData[i] = Math.max(-1, Math.min(1, inputData[i])) * 0x7FFF;
-          }
-          if (rtRef.current) {
-            rtRef.current.sendAudio(pcmData.buffer);
-          }
-        };
-
-        source.connect(processor);
-        processor.connect(audioCtx.destination);
+          source.connect(processor);
+          processor.connect(audioCtx.destination);
+        } catch (asaiError) {
+          console.error("AssemblyAI initialization failed:", asaiError);
+        }
       }
 
       // Start the recorder and recognition (if available)
@@ -226,12 +261,13 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
       setIsRecording(true);
       setTranscript("");
 
-    } catch (error) {
+    } catch (err) {
+      const error = err as Error;
       console.error("Error starting recording:", error);
       // Provide more actionable messages for common failure modes
-      if (error && (error as any).name === "NotAllowedError") {
+      if (error.name === "NotAllowedError") {
         toast.error("Microphone access denied. Please enable microphone permissions in your browser and reload the page.");
-      } else if (error && (error as any).name === "NotFoundError") {
+      } else if (error.name === "NotFoundError") {
         toast.error("No microphone found. Connect a microphone and try again.");
       } else {
         toast.error("Failed to start recording. Check microphone permissions and try again.");
@@ -386,6 +422,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     setWordTimestamps([]);
     setAudioBlob(null);
     setAudioUrl(null);
+    sessionBegunRef.current = false;
   }, []);
 
   return {

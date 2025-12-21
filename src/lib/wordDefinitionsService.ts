@@ -4,7 +4,7 @@ export interface DefinitionResult {
 
 export type SupportedLanguage = 'english' | 'french' | 'spanish';
 
-const API_BASE = 'https://api.dictionaryapi.dev/api/v2/entries';
+const API_BASE = 'https://freedictionaryapi.com/api/v1/entries';
 
 const LANG_CODES: Record<SupportedLanguage, string> = {
   english: 'en',
@@ -12,18 +12,19 @@ const LANG_CODES: Record<SupportedLanguage, string> = {
   spanish: 'es',
 };
 
-// Response Type Definitions (Common for all dictionaryapi.dev calls)
-interface ApiDefinition {
-    definition: string;
-}
-
-interface ApiMeaning {
-    definitions: ApiDefinition[];
-}
-
+// Response Type Definitions
 interface ApiEntry {
-    word: string;
-    meanings: ApiMeaning[];
+    language: { code: string };
+    senses: ApiSense[];
+}
+
+interface ApiSense {
+    definition: string;
+    subsenses?: ApiSense[];
+}
+
+interface ApiResponse {
+    entries: ApiEntry[];
 }
 
 export async function getWordDefinition(
@@ -32,10 +33,9 @@ export async function getWordDefinition(
 ): Promise<DefinitionResult> {
   const normalizedWord = word.toLowerCase().trim();
   const langCode = LANG_CODES[language];
-  const cacheKey = `${langCode}:${normalizedWord}`; // MANDATORY: cache key format
 
   // 1. Check Local Cache
-  let storedDefinitions: Record<string, DefinitionResult> = {};
+  let storedDefinitions: any = {};
   try {
     const res = await fetch('/__api/definitions');
     if (res.ok) {
@@ -45,18 +45,19 @@ export async function getWordDefinition(
     console.warn('Failed to fetch local definitions cache', e);
   }
 
-  // Check cache (using new flat key)
+  // Check cache for array of definitions
   if (
-    storedDefinitions[cacheKey] &&
-    Array.isArray(storedDefinitions[cacheKey].definitions) &&
-    storedDefinitions[cacheKey].definitions.length > 0
+    storedDefinitions[normalizedWord] &&
+    storedDefinitions[normalizedWord][language] &&
+    Array.isArray(storedDefinitions[normalizedWord][language].definitions) &&
+    storedDefinitions[normalizedWord][language].definitions.length > 0
   ) {
-    console.log(`[Cache Hit] ${cacheKey}`);
-    return { definitions: storedDefinitions[cacheKey].definitions };
+    console.log(`[Cache Hit] ${normalizedWord} (${language})`);
+    return { definitions: storedDefinitions[normalizedWord][language].definitions };
   }
 
   // 2. Fetch from API
-  console.log(`[Cache Miss] Fetching API for ${cacheKey}`);
+  console.log(`[Cache Miss] Fetching API for ${normalizedWord} (${langCode})`);
   const url = `${API_BASE}/${langCode}/${encodeURIComponent(normalizedWord)}`;
 
   try {
@@ -66,7 +67,7 @@ export async function getWordDefinition(
     if (apiRes.status === 404) {
          console.warn(`[Word Not Found] ${normalizedWord}`);
          const emptyResult: DefinitionResult = { definitions: [] };
-         await persistToCache(cacheKey, emptyResult, storedDefinitions);
+         await persistToCache(normalizedWord, language, emptyResult, storedDefinitions);
          return emptyResult;
     }
 
@@ -74,20 +75,18 @@ export async function getWordDefinition(
         throw new Error(`API Error: ${apiRes.statusText}`);
     }
 
-    const data: ApiEntry[] = await apiRes.json();
-    const definitions: string[] = [];
+    const data: ApiResponse | ApiResponse[] = await apiRes.json();
+    const responseObj = Array.isArray(data) ? data[0] : data;
 
-    if (Array.isArray(data)) {
-        for (const entry of data) {
-            if (entry.meanings && Array.isArray(entry.meanings)) {
-                for (const meaning of entry.meanings) {
-                    if (meaning.definitions && Array.isArray(meaning.definitions)) {
-                        for (const defObj of meaning.definitions) {
-                            if (defObj.definition) {
-                                definitions.push(defObj.definition);
-                            }
-                        }
-                    }
+    let definitions: string[] = [];
+
+    if (responseObj && Array.isArray(responseObj.entries)) {
+        // Iterate ALL entries
+        for (const entry of responseObj.entries) {
+            if (entry.senses && Array.isArray(entry.senses)) {
+                // Iterate ALL senses
+                for (const sense of entry.senses) {
+                     extractDefinitionsRecursive(sense, definitions);
                 }
             }
         }
@@ -98,7 +97,7 @@ export async function getWordDefinition(
     };
 
     // 3. Persist
-    await persistToCache(cacheKey, result, storedDefinitions);
+    await persistToCache(normalizedWord, language, result, storedDefinitions);
     return result;
 
   } catch (e) {
@@ -107,13 +106,31 @@ export async function getWordDefinition(
   }
 }
 
+function extractDefinitionsRecursive(sense: ApiSense, list: string[]) {
+    // 1. Add current definition
+    if (sense.definition) {
+        list.push(sense.definition);
+    }
+
+    // 2. Recurse into subsenses
+    if (sense.subsenses && Array.isArray(sense.subsenses)) {
+        for (const sub of sense.subsenses) {
+            extractDefinitionsRecursive(sub, list);
+        }
+    }
+}
+
 async function persistToCache(
-    cacheKey: string,
+    word: string, 
+    language: SupportedLanguage, 
     result: DefinitionResult, 
-    currentCache: Record<string, DefinitionResult>
+    currentCache: any
 ) {
     const newEntry = {
-        [cacheKey]: result
+        [word]: {
+            ...currentCache[word],
+            [language]: result
+        }
     };
 
     try {

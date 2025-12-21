@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Manrope:wght@200..800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -73,36 +71,33 @@
 
   .dark {
     /* Base: Deep rich gray (not blue-black, not charcoal-black) */
-    /* Nature & Glass Theme Palette */
-    --background: 140 30% 10%; /* Dark Forest Green base */
-    --foreground: 60 20% 96%; /* Soft Cream text */
+    --background: 220 15% 10%;
+    --foreground: 220 10% 95%;
 
-    --card: 140 30% 10%;
-    --card-foreground: 60 20% 96%;
+    --card: 220 15% 13%;
+    --card-foreground: 220 10% 95%;
 
-    --popover: 140 30% 12%;
-    --popover-foreground: 60 20% 96%;
+    --popover: 220 15% 13%;
+    --popover-foreground: 220 10% 95%;
 
-    --primary: 150 40% 45%; /* Muted Nature Green */
-    --primary-foreground: 140 30% 10%;
+    --primary: 174 50% 50%;
+    --primary-foreground: 220 15% 10%;
 
-    --secondary: 140 20% 20%; /* Darker moss */
-    --secondary-foreground: 60 20% 96%;
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 220 10% 80%;
 
-    --muted: 140 20% 25%;
-    --muted-foreground: 140 10% 70%;
+    --muted: 220 15% 16%;
+    --muted-foreground: 220 10% 60%;
 
-    --accent: 45 40% 50%; /* Golden sunlight accent */
-    --accent-foreground: 140 30% 10%;
+    --accent: 25 70% 55%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 60 20% 96%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 140 20% 20%;
-    --input: 140 20% 20%;
-    --ring: 150 40% 45%;
-
-    --radius: 0.75rem;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 174 50% 50%;
 
     --gradient-hero: linear-gradient(135deg, hsl(174 50% 35%) 0%, hsl(190 50% 40%) 50%, hsl(174 50% 45%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(220 15% 15% / 0.9) 0%, hsl(220 15% 12% / 0.7) 100%);
@@ -138,7 +133,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-wide uppercase;
+    @apply font-display tracking-tight text-foreground;
   }
 
   /* Smooth scrolling */

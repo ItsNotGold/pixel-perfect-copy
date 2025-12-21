@@ -12,7 +12,6 @@ import { useSettings } from "@/hooks/useSettings";
 import { useProgress } from "@/hooks/useProgress";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "sonner";
-import { MainLayout } from "@/components/layout/MainLayout";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Auth from "./pages/Auth";
@@ -47,27 +46,25 @@ const App = () => {
               {ActiveAnimation}
               <SettingsReminders />
               <BrowserRouter>
-                <MainLayout>
-                  <Routes>
-                    <Route path="/" element={<Index />} />
-                    <Route path="/auth" element={<Auth />} />
-                    <Route path="/exercise/precision-swap" element={<PrecisionSwap />} />
-                    <Route path="/exercise/filler-word-eliminator" element={<FillerWordEliminator />} />
-                    <Route path="/exercise/reverse-definitions" element={<ReverseDefinitions />} />
-                    <Route path="/exercise/synonym-speed-chain" element={<SynonymSpeedChain />} />
-                    <Route path="/exercise/word-incorporation" element={<WordIncorporation />} />
-                    <Route path="/exercise/:id/stats" element={<ExerciseStats />} />
-                    <Route path="/progress" element={<Progress />} />
-                    <Route path="/achievements" element={<Achievements />} />
-                    <Route path="/settings" element={<Settings />} />
-                    <Route path="/account" element={<ManageAccount />} />
-                    <Route path="/subscription" element={<Subscription />} />
-                    <Route path="/library" element={<LibraryPage />} />
-                    <Route path="/library/:exerciseId" element={<ExerciseContentPage />} />
-                    <Route path="/library/:exerciseId/:questionId" element={<QuestionDetailPage />} />
-                    <Route path="*" element={<NotFound />} />
-                  </Routes>
-                </MainLayout>
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  <Route path="/auth" element={<Auth />} />
+                  <Route path="/exercise/precision-swap" element={<PrecisionSwap />} />
+                  <Route path="/exercise/filler-word-eliminator" element={<FillerWordEliminator />} />
+                  <Route path="/exercise/reverse-definitions" element={<ReverseDefinitions />} />
+                  <Route path="/exercise/synonym-speed-chain" element={<SynonymSpeedChain />} />
+                  <Route path="/exercise/word-incorporation" element={<WordIncorporation />} />
+                  <Route path="/exercise/:id/stats" element={<ExerciseStats />} />
+                  <Route path="/progress" element={<Progress />} />
+                  <Route path="/achievements" element={<Achievements />} />
+                  <Route path="/settings" element={<Settings />} />
+                  <Route path="/account" element={<ManageAccount />} />
+                  <Route path="/subscription" element={<Subscription />} />
+                  <Route path="/library" element={<LibraryPage />} />
+                  <Route path="/library/:exerciseId" element={<ExerciseContentPage />} />
+                  <Route path="/library/:exerciseId/:questionId" element={<QuestionDetailPage />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
               </BrowserRouter>
             </TooltipProvider>
           </LanguageProvider>

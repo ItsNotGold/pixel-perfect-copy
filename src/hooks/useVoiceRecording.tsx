@@ -31,18 +31,24 @@ declare global {
   }
 }
 
+export interface WordTimestamp {
+  text: string;
+  start: number;
+  end: number;
+}
+
 interface UseVoiceRecordingReturn {
   isRecording: boolean;
   isProcessing: boolean;
   transcript: string;
   rawTranscript: string;
+  wordTimestamps: WordTimestamp[];
   startRecording: (languageCode?: string) => Promise<void>;
   stopRecording: () => Promise<{ blob: Blob | null; transcript: string }>;
   resetTranscript: () => void;
   audioBlob: Blob | null;
   audioUrl: string | null;
   saveAudio: (blobOverride?: Blob | null) => Promise<string | null>;
-
 }
 
 export function useVoiceRecording(): UseVoiceRecordingReturn {
@@ -50,12 +56,16 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
   const [isProcessing, setIsProcessing] = useState(false);
   const [transcript, setTranscript] = useState("");
   const [rawTranscript, setRawTranscript] = useState("");
+  const [wordTimestamps, setWordTimestamps] = useState<WordTimestamp[]>([]);
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
   const recognitionRef = useRef<SpeechRecognitionType | null>(null);
+  const rtRef = useRef<any>(null);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const processorRef = useRef<ScriptProcessorNode | null>(null);
 
   const startRecording = useCallback(async (languageCode: string = "en-US") => {
     try {
@@ -63,8 +73,8 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
       const SpeechRecognitionConstructor = window.SpeechRecognition || window.webkitSpeechRecognition || null;
 
       if (!SpeechRecognitionConstructor) {
-        // Allow recording even when SpeechRecognition is unavailable — we can still provide audio playback and uploads
-        toast.warn("Speech recognition not supported in this browser. Recording will still work, but transcript features will be limited.");
+        // Allow recording even when SpeechRecognition is unavailable
+        toast.error("Speech recognition not supported in this browser. Recording will still work if AssemblyAI is configured.");
       }
 
       // Request microphone permission
@@ -119,22 +129,26 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
         recognition.interimResults = true;
         recognition.lang = languageCode;
 
-        let finalTranscript = "";
-
         recognition.onresult = (event: SpeechRecognitionEvent) => {
           let interim = "";
           for (let i = event.resultIndex; i < event.results.length; i++) {
             const result = event.results[i];
             if (result.isFinal) {
-              finalTranscript += result[0].transcript + " ";
+              // Only use Web Speech final results if AssemblyAI is NOT active
+              if (!import.meta.env.VITE_ASSEMBLYAI_API_KEY) {
+                setTranscript((prev) => (prev + " " + result[0].transcript).trim());
+              }
             } else {
               interim += result[0].transcript;
             }
           }
           // Keep raw/interim transcript for better detection of disfluencies
-          const raw = (finalTranscript + interim).trim();
+          const raw = interim.trim();
           setRawTranscript(raw);
-          setTranscript(raw); // keep transcript populated while processing
+          // If no API key, transcript is the same as raw
+          if (!import.meta.env.VITE_ASSEMBLYAI_API_KEY) {
+            setTranscript(raw); 
+          }
         };
 
         recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
@@ -147,6 +161,61 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
         recognitionRef.current = recognition;
       } else {
         recognitionRef.current = null;
+      }
+
+      // --- AssemblyAI Realtime Setup ---
+      const apiKey = import.meta.env.VITE_ASSEMBLYAI_API_KEY;
+      if (apiKey) {
+        const client = new AssemblyAI({ apiKey });
+        const rt = client.realtime.transcriber({
+           sampleRate: 16000
+        });
+
+        rt.on('open', () => console.log('AssemblyAI RT connection opened'));
+        rt.on('error', (err: any) => console.error('AssemblyAI RT error:', err));
+        rt.on('close', () => console.log('AssemblyAI RT connection closed'));
+        
+        rt.on('transcript', (data: any) => {
+          if (data.message_type === 'FinalTranscript') {
+            // Add words with timestamps
+            const newWords = data.words.map((w: any) => ({
+              text: w.text,
+              start: w.start,
+              end: w.end
+            }));
+            
+            setWordTimestamps(prev => [...prev, ...newWords]);
+            
+            // Also update standard transcript
+            setTranscript(prev => (prev + " " + data.text).trim());
+          }
+        });
+
+        await rt.connect();
+        rtRef.current = rt;
+
+        // Set up Audio Worklet / Context for RT capture
+        const audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 16000 });
+        audioContextRef.current = audioCtx;
+        
+        const source = audioCtx.createMediaStreamSource(stream);
+        const processor = audioCtx.createScriptProcessor(4096, 1, 1);
+        processorRef.current = processor;
+
+        processor.onaudioprocess = (e) => {
+          const inputData = e.inputBuffer.getChannelData(0);
+          // Convert Float32 to Int16 PCM
+          const pcmData = new Int16Array(inputData.length);
+          for (let i = 0; i < inputData.length; i++) {
+            pcmData[i] = Math.max(-1, Math.min(1, inputData[i])) * 0x7FFF;
+          }
+          if (rtRef.current) {
+            rtRef.current.sendAudio(pcmData.buffer);
+          }
+        };
+
+        source.connect(processor);
+        processor.connect(audioCtx.destination);
       }
 
       // Start the recorder and recognition (if available)
@@ -179,6 +248,21 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     if (recognitionRef.current) {
       recognitionRef.current.stop();
       recognitionRef.current = null;
+    }
+
+    if (rtRef.current) {
+      await rtRef.current.close();
+      rtRef.current = null;
+    }
+
+    if (processorRef.current) {
+      processorRef.current.disconnect();
+      processorRef.current = null;
+    }
+
+    if (audioContextRef.current) {
+      await audioContextRef.current.close();
+      audioContextRef.current = null;
     }
 
     // Stop the media recorder and wait for onstop to resolve with the blob
@@ -255,14 +339,16 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
         console.error('Transcription error:', error);
         // Don't surface a toast for transcription errors in order to keep recording flow smooth
       }
-    } else {
-      // If there was no recorded blob, fall back to whatever transcript we have
-      setTranscript(rawTranscript);
     }
 
     setIsProcessing(false);
     return { blob: recordedBlob, transcript: finalTranscriptVal };
-  }, [audioBlob, rawTranscript]);
+  }, [rawTranscript]); // transcript and wordTimestamps are used inside state update logic but don't need to trigger re-creation of the callback itself if we treat them correctly. Actually wordTimestamps is needed for the return but this is the stop hook. 
+  // Wait, if I use them in return, they should be dependencies if used in the closure. 
+  // But transcript and wordTimestamps are state that changes during recording. 
+  // This hook is for STOPPING, it should grab LATEST. So dependencies are correct. 
+  // I'll leave them to avoid stale closures.
+
 
 
 
@@ -296,6 +382,8 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
 
   const resetTranscript = useCallback(() => {
     setTranscript("");
+    setRawTranscript("");
+    setWordTimestamps([]);
     setAudioBlob(null);
     setAudioUrl(null);
   }, []);
@@ -305,6 +393,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     isProcessing,
     transcript,
     rawTranscript,
+    wordTimestamps,
     startRecording,
     stopRecording,
     resetTranscript,

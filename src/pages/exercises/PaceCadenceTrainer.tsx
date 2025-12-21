@@ -1,5 +1,5 @@
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { paceCadenceMaster, PaceType } from "@/data/exercises/paceCadence.master";
@@ -10,6 +10,34 @@ import { Mic, Square, Gauge, RotateCcw } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
 import { cn } from "@/lib/utils";
+
+// Inject required silky smooth CSS
+const WPM_METER_STYLES = `
+  @property --wpm-progress {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%;
+  }
+  .wpm-meter {
+    height: 12px;
+    width: 300px;
+    background: #e0e0e0;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .wpm-meter-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--wpm-progress);
+    background: linear-gradient(90deg, #4caf50, #8bc34a);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 6px;
+  }
+`;
 
 // Helper for rolling WPM
 interface WpmSample {
@@ -87,98 +115,119 @@ export default function PaceCadenceTrainer() {
   
   const targetRange = content.paceDefinitions[currentPaceType];
 
-  // Advanced WPM Logic
-  // 1. We track every word arrival with a timestamp
-  // 2. We calculate raw WPM from a 5s sliding window
-  // 3. We smooth the display WPM using a low-pass filter (lerp)
-  
-  const wpmQueueRef = useRef<{time: number}[]>([]); 
-  const lastProcessedLengthRef = useRef(0);
-  const displayWpmRef = useRef(0); // For smooth lerping
+  // --- MANDATORY WPM ARCHITECTURE (REWORKED FROM SCRATCH) ---
+  const { wordTimestamps } = useVoiceRecording();
+  const sessionStartRef = useRef<number | null>(null);
 
-  // Track incoming words from transcript
+  // Core Data Structure
+  const wpmState = useRef({
+    wordTimestamps: [] as { start: number; end: number }[], // Absolute timestamps
+    windowStartMs: 0,
+    rawWpm: 0,
+    smoothedWpm: 60,
+    lastUpdate: 0
+  });
+
+  // Track session start for absolute time conversion
   useEffect(() => {
-     if (!isActive) {
-        lastProcessedLengthRef.current = 0;
-        return;
-     }
+    if (isRecording && !sessionStartRef.current) {
+      sessionStartRef.current = Date.now();
+      wpmState.current.smoothedWpm = 0; // Start at 0
+    } else if (!isRecording) {
+      sessionStartRef.current = null;
+    }
+  }, [isRecording]);
 
-     const currentText = (transcript + " " + (rawTranscript || "")).trim();
-     if (!currentText) return;
+  // Rolling Window Calculator
+  const updateWpmMetrics = useCallback((nowMs: number) => {
+    // Exactly 4s rolling window (industry standard)
+    wpmState.current.windowStartMs = nowMs - 4000;
 
-     const words = currentText.split(/\s+/).filter(w => w.length > 0);
-     const count = words.length;
-     const newWords = count - lastProcessedLengthRef.current;
-     
-     if (newWords > 0) {
-        const now = Date.now();
-        // Push timestamp for every new word
-        for (let i = 0; i < newWords; i++) {
-           wpmQueueRef.current.push({ time: now });
-        }
-        lastProcessedLengthRef.current = count;
-     } else if (newWords < 0) {
-        // Reset if transcript was cleared or vastly changed
-        lastProcessedLengthRef.current = count;
-     }
-  }, [transcript, rawTranscript, isActive]);
+    // Count words whose ENTIRE duration falls in window
+    const wordsInWindow = wpmState.current.wordTimestamps.filter(word => 
+      word.start >= wpmState.current.windowStartMs &&
+      word.end <= nowMs
+    ).length;
 
-  // High-frequency update loop (animation frame style)
+    // Raw WPM = (words / 4 seconds) * 60
+    wpmState.current.rawWpm = (wordsInWindow / 4) * 60;
+  }, []);
+
+  // Exponential Smoothing Loop
+  const smoothWpm = useCallback(() => {
+    const alpha = 0.25; // α=0.25 constant
+    const nowMs = Date.now();
+
+    // Limit update frequency to 250ms+ for stability
+    if (nowMs - wpmState.current.lastUpdate < 300) return;
+
+    // Exponential moving average: smoothed = α*raw + (1-α)*old
+    const nextSmoothed = alpha * wpmState.current.rawWpm + (1 - alpha) * wpmState.current.smoothedWpm;
+    
+    // "No Jumps" logic: Limit change per update to ≤ 3 WPM
+    const diff = nextSmoothed - wpmState.current.smoothedWpm;
+    const clampedDiff = Math.max(-3, Math.min(3, diff));
+    wpmState.current.smoothedWpm = wpmState.current.smoothedWpm + clampedDiff;
+
+    // Trigger high-frequency UI updates
+    const rounded = Math.round(wpmState.current.smoothedWpm);
+    setRealtimeWpm(rounded);
+    renderWpmProgress(rounded);
+    
+    // Record Metrics for scoring
+    if (isActive && !isComplete) {
+       if (rounded >= targetRange.min && rounded <= targetRange.max) {
+           currentPaceMetrics.current.inZoneSeconds += 0.3; // 300ms chunks
+       }
+       currentPaceMetrics.current.totalSeconds += 0.3;
+       
+       if (currentPaceType === 'fast') {
+          currentPaceMetrics.current.fastAvg = 
+            (currentPaceMetrics.current.fastAvg * currentPaceMetrics.current.fastCount + rounded) / (currentPaceMetrics.current.fastCount + 1);
+          currentPaceMetrics.current.fastCount++;
+       } else if (currentPaceType === 'slow') {
+          currentPaceMetrics.current.slowAvg = 
+            (currentPaceMetrics.current.slowAvg * currentPaceMetrics.current.slowCount + rounded) / (currentPaceMetrics.current.slowCount + 1);
+          currentPaceMetrics.current.slowCount++;
+       }
+    }
+  }, [isActive, isComplete, currentPaceType, targetRange]);
+
+  // Process incoming finalized words from AssemblyAI
+  useEffect(() => {
+    if (!isRecording || !sessionStartRef.current) return;
+    
+    // Map relative timestamps to absolute
+    const absoluteWords = wordTimestamps.map(w => ({
+      start: sessionStartRef.current! + w.start,
+      end: sessionStartRef.current! + w.end
+    }));
+
+    const nowMs = Date.now();
+    // Buffer last 10s to prevent memory leaks as per requirements
+    wpmState.current.wordTimestamps = absoluteWords.filter(w => nowMs - w.end <= 10000);
+    
+    updateWpmMetrics(nowMs);
+    smoothWpm();
+    wpmState.current.lastUpdate = nowMs;
+  }, [wordTimestamps, isRecording, smoothWpm, updateWpmMetrics]);
+
+  // 300ms Interval for continuous window updates (even during silence)
   useEffect(() => {
     if (!isActive) return;
+    const interval = setInterval(() => {
+       const nowMs = Date.now();
+       updateWpmMetrics(nowMs);
+       smoothWpm();
+    }, 300);
+    return () => clearInterval(interval);
+  }, [isActive, isComplete, targetRange, currentPaceType, smoothWpm, updateWpmMetrics]);
 
-    wpmIntervalRef.current = setInterval(() => {
-      const now = Date.now();
-      const WINDOW_MS = 5000; // 5 seconds
+  const renderWpmProgress = (wpm: number) => {
+    const progress = Math.min(100, (wpm / 300) * 100); // Scale to 300WPM max
+    document.documentElement.style.setProperty('--wpm-progress', `${progress}%`);
+  };
 
-      // 1. Prune old words
-      wpmQueueRef.current = wpmQueueRef.current.filter(t => t.time > now - WINDOW_MS);
-
-      // 2. Calculate Raw WPM
-      // (Words in window / WindowSeconds) * 60
-      // We use Math.min((now - firstWordTime) / 1000, 5) to handle "ramp up" accurately
-      // preventing "infinite" WPM at second 0.1
-      let rawWpm = 0;
-      if (wpmQueueRef.current.length > 0) {
-          const wordsInWindow = wpmQueueRef.current.length;
-          // Standard: 60 * words / 5 = 12 * words
-          rawWpm = wordsInWindow * 12; 
-      }
-
-      // 3. Smooth it!
-      // Alpha determines "lag". 0.1 = very smooth/laggy. 0.3 = responsive.
-      const alpha = 0.15; 
-      displayWpmRef.current = displayWpmRef.current * (1 - alpha) + rawWpm * alpha;
-      
-      const rounded = Math.round(displayWpmRef.current);
-      setRealtimeWpm(rounded);
-
-      // Metrics Logic (Moved here for sync)
-      if (!isComplete && isActive) {
-         // Maintenance
-         if (rounded >= targetRange.min && rounded <= targetRange.max) {
-             currentPaceMetrics.current.inZoneSeconds += 0.25; // 250ms interval
-         }
-         currentPaceMetrics.current.totalSeconds += 0.25;
-
-         // Contrast - Sampling
-        if (currentPaceType === 'fast') {
-            currentPaceMetrics.current.fastAvg = 
-              (currentPaceMetrics.current.fastAvg * currentPaceMetrics.current.fastCount + rounded) / (currentPaceMetrics.current.fastCount + 1);
-            currentPaceMetrics.current.fastCount++;
-         } else if (currentPaceType === 'slow') {
-            currentPaceMetrics.current.slowAvg = 
-              (currentPaceMetrics.current.slowAvg * currentPaceMetrics.current.slowCount + rounded) / (currentPaceMetrics.current.slowCount + 1);
-            currentPaceMetrics.current.slowCount++;
-         }
-      }
-
-    }, 250); // 4Hz update for fluidity
-
-    return () => {
-      if (wpmIntervalRef.current) clearInterval(wpmIntervalRef.current);
-    };
-  }, [isActive, isComplete, targetRange, currentPaceType]);
 
 
   const startSession = async () => {
@@ -186,9 +235,11 @@ export default function PaceCadenceTrainer() {
     setIsComplete(false);
     setTimeLeft(60);
     setRealtimeWpm(0);
-    wpmQueueRef.current = [];
-    lastProcessedLengthRef.current = 0;
-    displayWpmRef.current = 0;
+    renderWpmProgress(0);
+    wpmState.current.wordTimestamps = [];
+    wpmState.current.smoothedWpm = 0;
+    wpmState.current.rawWpm = 0;
+    wpmState.current.lastUpdate = 0;
     
     currentPaceMetrics.current = { inZoneSeconds: 0, totalSeconds: 0, fastAvg: 0, slowAvg: 0, fastCount: 0, slowCount: 0 };
     
@@ -279,6 +330,7 @@ export default function PaceCadenceTrainer() {
 
   return (
     <MainLayout>
+      <style>{WPM_METER_STYLES}</style>
       <ExerciseGate exerciseId={meta.id}>
         <div className={cn("min-h-screen transition-colors duration-1000", getBgColor())}>
           <div className="mx-auto max-w-3xl px-6 py-12">
@@ -335,13 +387,19 @@ export default function PaceCadenceTrainer() {
                           {currentSegment?.instruction}
                        </div>
                       
-                      {/* WPM Feedback */}
-                      <div className="flex flex-col items-center gap-2">
-                         <div className="text-4xl font-mono font-medium">
-                            {realtimeWpm} <span className="text-lg text-muted-foreground">WPM</span>
+                      {/* WPM Feedback (Re-engineered Meter) */}
+                      <div className="flex flex-col items-center gap-4">
+                         <div className="text-6xl font-mono font-bold tracking-tight">
+                            <span className="wpm-value">{realtimeWpm}</span>
+                            <span className="text-2xl text-muted-foreground ml-2">WPM</span>
                          </div>
-                         <div className="text-sm px-3 py-1 rounded-full bg-muted text-muted-foreground">
-                            Target: {targetRange.min}-{targetRange.max} WPM
+                         
+                         <div className="wpm-meter">
+                            <div className="wpm-meter-fill" />
+                         </div>
+
+                         <div className="text-sm font-medium px-4 py-1.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+                            TARGET: {targetRange.min}-{targetRange.max} WPM
                          </div>
                       </div>
                     </>

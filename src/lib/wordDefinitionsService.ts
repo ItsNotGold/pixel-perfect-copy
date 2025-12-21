@@ -35,7 +35,7 @@ export async function getWordDefinition(
   const cacheKey = `${langCode}:${normalizedWord}`; // MANDATORY: cache key format
 
   // 1. Check Local Cache
-  let storedDefinitions: any = {};
+  let storedDefinitions: Record<string, DefinitionResult> = {};
   try {
     const res = await fetch('/__api/definitions');
     if (res.ok) {
@@ -75,7 +75,7 @@ export async function getWordDefinition(
     }
 
     const data: ApiEntry[] = await apiRes.json();
-    let definitions: string[] = [];
+    const definitions: string[] = [];
 
     if (Array.isArray(data)) {
         for (const entry of data) {
@@ -110,7 +110,7 @@ export async function getWordDefinition(
 async function persistToCache(
     cacheKey: string,
     result: DefinitionResult, 
-    currentCache: any
+    currentCache: Record<string, DefinitionResult>
 ) {
     const newEntry = {
         [cacheKey]: result

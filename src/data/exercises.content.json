@@ -59,6 +59,18 @@
       "icon": "Feather",
       "color": "from-purple-500 to-blue-500",
       "path": "/exercise/word-incorporation"
+    },
+    {
+      "id": "pace-cadence-trainer",
+      "number": 6,
+      "title": "Pace & Cadence Trainer",
+      "shortTitle": "Pace Trainer",
+      "goal": "Master speech velocity control",
+      "mechanic": "Dynamic Pace Switching",
+      "description": "Learn to vary your speaking Speed on command to create engagement and authority. Follow specific visual cues to switch between fast, slow, and natural pacing while speaking on impromptu topics.",
+      "icon": "Gauge",
+      "color": "from-cyan-500 to-blue-500",
+      "path": "/exercise/pace-cadence-trainer"
     }
   ],
 

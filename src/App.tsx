@@ -20,6 +20,7 @@ import FillerWordEliminator from "./pages/exercises/FillerWordEliminator";
 import ReverseDefinitions from "./pages/exercises/ReverseDefinitions";
 import SynonymSpeedChain from "./pages/exercises/SynonymSpeedChain";
 import WordIncorporation from "./pages/exercises/WordIncorporation";
+import PaceCadenceTrainer from "./pages/exercises/PaceCadenceTrainer";
 import Progress from "./pages/Progress";
 import ExerciseStats from "./pages/ExerciseStats";
 import Settings from "./pages/Settings";
@@ -54,6 +55,7 @@ const App = () => {
                   <Route path="/exercise/reverse-definitions" element={<ReverseDefinitions />} />
                   <Route path="/exercise/synonym-speed-chain" element={<SynonymSpeedChain />} />
                   <Route path="/exercise/word-incorporation" element={<WordIncorporation />} />
+                  <Route path="/exercise/pace-cadence-trainer" element={<PaceCadenceTrainer />} />
                   <Route path="/exercise/:id/stats" element={<ExerciseStats />} />
                   <Route path="/progress" element={<Progress />} />
                   <Route path="/achievements" element={<Achievements />} />

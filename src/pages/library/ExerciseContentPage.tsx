@@ -33,6 +33,7 @@ const EXERCISE_TITLES: Record<string, string> = {
     "reverse-definitions": "Reverse Definitions",
     "synonym-speed-chain": "Synonym Speed Chain",
     "word-incorporation": "Word Incorporation",
+    "pace-cadence-trainer": "Pace & Cadence Trainer",
 };
 
 export default function ExerciseContentPage() {
@@ -78,6 +79,7 @@ export default function ExerciseContentPage() {
         if (exerciseId === "reverse-definitions") return content.questions?.map((q: any) => ({ id: q.id, preview: q.definition })) || [];
         if (exerciseId === "synonym-speed-chain") return content.challenges?.map((c: any) => ({ id: c.id, preview: c.word })) || [];
         if (exerciseId === "word-incorporation") return content.prompts?.map((p: any, i: number) => ({ id: `prompt-${i}`, preview: p.prompt })) || [];
+        if (exerciseId === "pace-cadence-trainer") return content.topics?.find((t:any) => t.language === language)?.list.map((l: string, i: number) => ({ id: `topic-${i}`, preview: l })) || [];
         return [];
     };
 

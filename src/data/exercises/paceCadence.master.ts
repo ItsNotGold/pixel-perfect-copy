@@ -1,10 +1,21 @@
 
+export interface PaceRange {
+  min: number;
+  max: number;
+}
+
+export type PaceType = 'slow' | 'fast' | 'free';
+
 export interface PaceSegment {
-  type: 'slow' | 'fast' | 'free';
+  type: PaceType;
   duration: number; // seconds
   start: number; // seconds from start
   end: number; // seconds from start
-  instruction: string;
+  instruction: {
+    en: string;
+    es: string;
+    fr: string;
+  };
 }
 
 export interface PaceContent {
@@ -15,6 +26,13 @@ export interface PaceContent {
     language: 'en' | 'es' | 'fr';
     list: string[];
   }[];
+  paceDefinitions: {
+     [key in 'en' | 'es' | 'fr']: {
+        slow: PaceRange;
+        fast: PaceRange;
+        free: PaceRange; // usually wide open
+     }
+  };
   segments: PaceSegment[];
 }
 
@@ -63,10 +81,67 @@ export const paceCadenceMaster: PaceContent = {
       ]
     }
   ],
+  paceDefinitions: {
+    en: {
+      slow: { min: 90, max: 120 },
+      fast: { min: 160, max: 210 },
+      free: { min: 100, max: 180 }
+    },
+    es: {
+      slow: { min: 100, max: 130 }, // Spanish syllables often faster, but word count meaningful
+      fast: { min: 170, max: 220 },
+      free: { min: 110, max: 190 }
+    },
+    fr: {
+      slow: { min: 90, max: 120 },
+      fast: { min: 160, max: 210 },
+      free: { min: 100, max: 180 }
+    }
+  },
   segments: [
-    { type: 'slow', duration: 15, start: 0, end: 15, instruction: "Speak slowly and deliberately..." },
-    { type: 'fast', duration: 15, start: 15, end: 30, instruction: "Now speed up! Add energy!" },
-    { type: 'slow', duration: 15, start: 30, end: 45, instruction: "Slow it down. Calm and controlled." },
-    { type: 'free', duration: 15, start: 45, end: 60, instruction: "Finish at your own natural pace." },
+    { 
+      type: 'slow', 
+      duration: 15, 
+      start: 0, 
+      end: 15, 
+      instruction: {
+        en: "Speak slowly and deliberately...",
+        es: "Habla despacio y deliberadamente...",
+        fr: "Parlez lentement et délibérètement..."
+      }
+    },
+    { 
+      type: 'fast', 
+      duration: 15, 
+      start: 15, 
+      end: 30, 
+      instruction: {
+        en: "Now speed up! Add energy!",
+        es: "¡Ahora acelera! ¡Añade energía!",
+        fr: "Accélérez maintenant ! Mettez de l'énergie !"
+      }
+    },
+    { 
+      type: 'slow', 
+      duration: 15, 
+      start: 30, 
+      end: 45, 
+      instruction: {
+        en: "Slow it down. Calm and controlled.",
+        es: "Ralentiza. Calma y control.",
+        fr: "Ralentissez. Calme et contrôle."
+      }
+    },
+    { 
+      type: 'free', 
+      duration: 15, 
+      start: 45, 
+      end: 60, 
+      instruction: {
+        en: "Finish at your own natural pace.",
+        es: "Termina a tu propio ritmo natural.",
+        fr: "Terminez à votre rythme naturel."
+      }
+    },
   ]
 };

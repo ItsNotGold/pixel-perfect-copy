@@ -1,17 +1,34 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.57.2";
 
+function formatError(err: unknown): string {
+  if (err instanceof Error) return err.message;
+  if (typeof err === "object" && err !== null) {
+    try { return JSON.stringify(err); } catch { return String(err); }
+  }
+  return String(err);
+}
+export { formatError };
+
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+  "Access-Control-Allow-Methods": "POST,OPTIONS",
 };
 
-serve(async (req) => {
+export const handler = async (req: Request) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders });
 
+  const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
+  const SUPABASE_ANON_KEY = Deno.env.get("SUPABASE_ANON_KEY");
+
+  if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+    throw new Error("Supabase environment variables not set");
+  }
+
   const supabaseClient = createClient(
-    Deno.env.get("SUPABASE_URL") ?? "",
-    Deno.env.get("SUPABASE_ANON_KEY") ?? ""
+    SUPABASE_URL,
+    SUPABASE_ANON_KEY
   );
 
   try {
@@ -54,23 +71,10 @@ serve(async (req) => {
   } catch (err) {
     // Log full error object for debugging
     console.error("[UNLOCK-BADGE] ERROR", err);
-
-    let message: string;
-    if (err instanceof Error) {
-      message = err.message;
-    } else if (err && typeof err === "object") {
-      try {
-        message = JSON.stringify(err);
-      } catch (e) {
-        message = String(err);
-      }
-    } else {
-      message = String(err);
-    }
-
+    const message = formatError(err);
     return new Response(JSON.stringify({ error: message }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
       status: 400,
     });
   }
-});
+serve(handler);

@@ -2,10 +2,31 @@ import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.57.2";
 
 function formatError(err: unknown): string {
+  // Direct Error instance
   if (err instanceof Error) return err.message;
+  // Objects that may contain a message property
   if (typeof err === "object" && err !== null) {
-    try { return JSON.stringify(err); } catch { return String(err); }
+    if ("message" in err && typeof (err as any).message === "string") {
+      return (err as any).message;
+    }
+    // Some Supabase errors use `error` field
+    if ("error" in err && typeof (err as any).error === "string") {
+      return (err as any).error;
+    }
+    // Fallback to JSON stringify; if fails, use inspect
+    try {
+      return JSON.stringify(err);
+    } catch {
+      // Deno.inspect provides a readable representation
+      try {
+        // @ts-ignore Deno global
+        return Deno.inspect(err);
+      } catch {
+        return String(err);
+      }
+    }
   }
+  // Primitive values
   return String(err);
 }
 export { formatError };
@@ -77,4 +98,4 @@ export const handler = async (req: Request) => {
       status: 400,
     });
   }
-serve(handler);
+export default serve(handler);

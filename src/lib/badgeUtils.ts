@@ -11,25 +11,36 @@ export type UserBadgeRow = {
 
 export async function unlockBadge(badgeId: string): Promise<{ success: boolean; row?: UserBadgeRow; error?: any; alreadyUnlocked?: boolean }> {
   try {
-    // Prefer edge function for server-side validation and consistency
-    const { data, error } = await supabase.functions.invoke("unlock-badge", {
-      body: JSON.stringify({ badge_id: badgeId }),
-    });
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) throw new Error("Not authenticated");
 
-    if (error) return { success: false, error };
+    // Check if already unlocked
+    const { data: existing, error: fetchError } = await supabase
+      .from("user_badges")
+      .select("*")
+      .eq("user_id", user.id)
+      .eq("badge_id", badgeId)
+      .maybeSingle();
 
-    // data may be a JSON string; attempt to parse
-    let parsed;
-    try {
-      parsed = typeof data === "string" ? JSON.parse(data) : data;
-    } catch (err) {
-      parsed = data;
+    if (fetchError) throw fetchError;
+
+    if (existing) {
+      return { success: true, row: existing as UserBadgeRow, alreadyUnlocked: true };
     }
 
-    // If newly unlocked, broadcast an event so UI can react (play animation, toast, etc.)
-    if (parsed && parsed.alreadyUnlocked === false && parsed.row) {
+    // Insert new badge row
+    const { data: inserted, error: insertError } = await supabase
+      .from("user_badges")
+      .insert([{ user_id: user.id, badge_id: badgeId }])
+      .select()
+      .single();
+
+    if (insertError) throw insertError;
+
+    // Broadcast event for UI
+    if (inserted) {
       try {
-        const evt = new CustomEvent("badge-unlocked", { detail: { badgeId, row: parsed.row } });
+        const evt = new CustomEvent("badge-unlocked", { detail: { badgeId, row: inserted } });
         window.dispatchEvent(evt);
       } catch (_) {
         // ignore if window not available
@@ -38,15 +49,16 @@ export async function unlockBadge(badgeId: string): Promise<{ success: boolean; 
 
     return {
       success: true,
-      row: parsed?.row ?? undefined,
-      alreadyUnlocked: parsed?.alreadyUnlocked ?? false,
+      row: inserted as UserBadgeRow,
+      alreadyUnlocked: false,
     };
   } catch (error) {
+    console.error("Error unlocking badge:", error);
     return { success: false, error };
   }
 }
 
 export async function fetchUserBadges(userId: string): Promise<UserBadgeRow[]> {
-  const { data } = await supabase.from<UserBadgeRow>("user_badges").select("*").eq("user_id", userId);
-  return (data as UserBadgeRow[]) || [];
+  const { data } = await supabase.from("user_badges").select("*").eq("user_id", userId);
+  return (data as any[] as UserBadgeRow[]) || [];
 }

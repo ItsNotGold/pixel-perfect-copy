@@ -4,7 +4,7 @@ const steps = [
   {
     icon: Target,
     title: "Choose an Exercise",
-    description: "Pick from 6 carefully designed exercises targeting different communication skills.",
+    description: "Pick from 5 carefully designed exercises targeting different communication skills.",
   },
   {
     icon: Lightbulb,

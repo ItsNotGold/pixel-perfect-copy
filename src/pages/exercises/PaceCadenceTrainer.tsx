@@ -6,7 +6,7 @@ import { paceCadenceMaster, PaceType } from "@/data/exercises/paceCadence.master
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useVoiceRecording } from "@/hooks/useVoiceRecording";
 import { ExerciseGate } from "@/components/ExerciseGate";
-import { Mic, Square, Gauge } from "lucide-react";
+import { Mic, Square, Gauge, RotateCcw } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
 import { cn } from "@/lib/utils";
@@ -27,6 +27,7 @@ export default function PaceCadenceTrainer() {
     startRecording, 
     stopRecording, 
     transcript,
+    rawTranscript,
     audioBlob,
     saveAudio 
   } = useVoiceRecording();
@@ -40,6 +41,8 @@ export default function PaceCadenceTrainer() {
   const [timeLeft, setTimeLeft] = useState(60);
   const [currentTopic, setCurrentTopic] = useState("");
   const [realtimeWpm, setRealtimeWpm] = useState(0);
+  // Separate score state for display
+  const [displayScore, setDisplayScore] = useState<number | null>(null);
   
   // Refs
   const timerRef = useRef<NodeJS.Timeout | null>(null);
@@ -61,7 +64,7 @@ export default function PaceCadenceTrainer() {
   // Initialize topic on mount or language change
   useEffect(() => {
     pickNewTopic();
-  }, [currentLang]); // pickNewTopic depends on currentLang and content, which are stable or derived from currentLang
+  }, [currentLang]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const pickNewTopic = () => {
     const langTopics = content.topics.find(t => t.language === currentLang)?.list 
@@ -91,8 +94,9 @@ export default function PaceCadenceTrainer() {
       
       // Count total words in current transcript
       // This is cumulative.
-      const currentText = transcript; 
-      const words = currentText.trim().split(/\s+/).filter(w => w.length > 0);
+      // Count total words in current transcript (Finalized + Interim)
+      const currentText = (transcriptRef.current + " " + (rawTranscriptRef.current || "")).trim();
+      const words = currentText.split(/\s+/).filter(w => w.length > 0);
       const totalCount = words.length; // accumulated count
 
       // Add to samples
@@ -116,7 +120,11 @@ export default function PaceCadenceTrainer() {
         }
       }
 
-      setRealtimeWpm(calculatedWpm);
+      // Smooth weighting for display (30% new, 70% old) to avoid jumps
+      setRealtimeWpm(prev => {
+          if (calculatedWpm === 0 && prev < 5) return 0; // Quick drop to 0 if silence
+          return Math.round(prev * 0.7 + calculatedWpm * 0.3);
+      });
 
       // --- Metric Tracking for Scoring ---
       if (isActive && !isComplete) {
@@ -163,7 +171,9 @@ export default function PaceCadenceTrainer() {
   
   // Ref-based transcript access for Interval
   const transcriptRef = useRef("");
+  const rawTranscriptRef = useRef("");
   useEffect(() => { transcriptRef.current = transcript; }, [transcript]);
+  useEffect(() => { rawTranscriptRef.current = rawTranscript; }, [rawTranscript]);
 
 
   const startSession = async () => {
@@ -204,8 +214,9 @@ export default function PaceCadenceTrainer() {
     const diff = currentPaceMetrics.current.fastAvg - currentPaceMetrics.current.slowAvg;
     const contrastScore = Math.min(100, Math.max(0, (diff / 50) * 100)); // 50 WPM diff = 100%
 
-     // Weighted: 60% Maintenance, 40% Contrast (Simple for now)
+     // Weighted: 60% Maintenance, 40% Contrast
     const finalScore = Math.round((maintenanceScore * 0.6) + (contrastScore * 0.4));
+    setDisplayScore(finalScore);
 
     if (user) {
       const url = await saveAudio(blob);
@@ -232,7 +243,7 @@ export default function PaceCadenceTrainer() {
       if (completed) {
          if (currentLang === 'es') return "Intentar de nuevo";
          if (currentLang === 'fr') return "Réessayer";
-         return "Try Another Topic";
+         return "Try Again";
       } else {
          if (currentLang === 'es') return "Comenzar";
          if (currentLang === 'fr') return "Commencer";
@@ -273,6 +284,17 @@ export default function PaceCadenceTrainer() {
               <p className="text-muted-foreground">{content.description}</p>
             </div>
 
+             {/* Score Cards */}
+             <div className="mb-8 flex items-center justify-center gap-6">
+               <div className="rounded-xl glass p-4 text-center min-w-[100px]">
+                  <div className="text-2xl font-bold text-primary">{displayScore !== null ? displayScore : "--"}</div>
+                  <div className="text-xs text-muted-foreground">Pace Score</div>
+               </div>
+                <div className="rounded-xl glass p-4 text-center min-w-[100px]">
+                  <div className="text-2xl font-bold text-foreground">{realtimeWpm}</div>
+                  <div className="text-xs text-muted-foreground">Current WPM</div>
+               </div>
+             </div>
             {/* Main Interactive Area */}
             <div className="rounded-2xl glass p-8 shadow-card relative overflow-hidden">
                {/* Progress Bar */}
@@ -326,12 +348,19 @@ export default function PaceCadenceTrainer() {
 
                {/* Controls */}
                <div className="flex justify-center gap-4">
-                  {!isActive && (
-                    <Button size="lg" className="w-full max-w-xs text-lg h-12" onClick={startSession}>
-                       <Mic className="mr-2 h-5 w-5" />
-                       {isComplete ? getButtonText(true) : getButtonText(false)}
-                    </Button>
-                  )}
+                   {!isActive && (
+                     <div className="flex flex-col gap-4 w-full max-w-xs">
+                        <Button size="lg" className="w-full text-lg h-12" onClick={startSession}>
+                           <Mic className="mr-2 h-5 w-5" />
+                           {getButtonText(isComplete)}
+                        </Button>
+                        
+                        <Button variant="outline" size="sm" onClick={pickNewTopic} className="w-full">
+                           <RotateCcw className="mr-2 h-4 w-4" />
+                           {currentLang === 'es' ? "Cambiar tema" : currentLang === 'fr' ? "Changer de sujet" : "Shuffle Topic"}
+                        </Button>
+                     </div>
+                   )}
 
                   {isActive && (
                     <Button variant="destructive" size="lg" className="w-full max-w-xs text-lg h-12" onClick={stopEarly}>

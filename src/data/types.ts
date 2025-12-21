@@ -28,7 +28,8 @@ export type ExerciseContent =
     | PrecisionSwapContent
     | ReverseDefinitionsContent
     | SynonymSpeedChainContent
-    | WordIncorporationContent;
+    | WordIncorporationContent
+    | PaceCadenceContent;
 
 // 1. Filler Word Eliminator
 export interface FillerWordEliminatorContent {
@@ -119,6 +120,31 @@ export interface WordIncorporationContent {
             prompts: {
                 prompt: string;
                 words: string[];
+            }[];
+        }
+    }
+}
+
+// 6. Pace & Cadence Trainer
+export interface PaceCadenceContent {
+    type: 'pace-cadence-trainer';
+    config: BaseExerciseConfig;
+    multilingual: {
+        [key in SupportedLanguage]?: {
+            name: string;
+            description: string;
+            topics: string[];
+            paceDefinitions: {
+                slow: { min: number; max: number };
+                fast: { min: number; max: number };
+                free: { min: number; max: number };
+            };
+            segments: {
+                type: 'slow' | 'fast' | 'free';
+                duration: number;
+                start: number;
+                end: number;
+                instruction: string;
             }[];
         }
     }

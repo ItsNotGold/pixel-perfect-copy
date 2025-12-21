@@ -47,7 +47,6 @@ export default function PaceCadenceTrainer() {
   // Refs
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const wpmIntervalRef = useRef<NodeJS.Timeout | null>(null);
-  const wpmSamplesRef = useRef<WpmSample[]>([]);
   
   // Scoring Refs
   const currentPaceMetrics = useRef({
@@ -59,7 +58,11 @@ export default function PaceCadenceTrainer() {
     slowCount: 0,
   });
 
-  const content = paceCadenceMaster;
+  // Load content from master for usage in ExerciseGate/logic
+  // In a real app we might use useLibrary().getMergerExerciseContent, but direct import is fine for now
+  // as long as we respect the structure.
+  const content = paceCadenceMaster.content.multilingual[currentLang] || paceCadenceMaster.content.multilingual['en'];
+  const meta = paceCadenceMaster.metadata;
   
   // Initialize topic on mount or language change
   useEffect(() => {
@@ -67,12 +70,11 @@ export default function PaceCadenceTrainer() {
   }, [currentLang]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const pickNewTopic = () => {
-    const langTopics = content.topics.find(t => t.language === currentLang)?.list 
-      || content.topics[0].list;
+    const langTopics = content.topics;
     const random = langTopics[Math.floor(Math.random() * langTopics.length)];
     setCurrentTopic(random);
   };
-
+  
   const getTargetPaceType = (secondsPassed: number): PaceType => {
     const segments = content.segments;
     const segment = segments.find(s => s.start <= secondsPassed && s.end > secondsPassed);
@@ -83,97 +85,100 @@ export default function PaceCadenceTrainer() {
   const currentPaceType = getTargetPaceType(secondsPassed);
   const currentSegment = content.segments.find(s => s.type === currentPaceType && s.start <= secondsPassed && s.end > secondsPassed);
   
-  const targetRange = content.paceDefinitions[currentLang][currentPaceType];
+  const targetRange = content.paceDefinitions[currentPaceType];
 
-  // WPM Calculation Logic (Rolling Window)
+  // Advanced WPM Logic
+  // 1. We track every word arrival with a timestamp
+  // 2. We calculate raw WPM from a 5s sliding window
+  // 3. We smooth the display WPM using a low-pass filter (lerp)
+  
+  const wpmQueueRef = useRef<{time: number}[]>([]); 
+  const lastProcessedLengthRef = useRef(0);
+  const displayWpmRef = useRef(0); // For smooth lerping
+
+  // Track incoming words from transcript
+  useEffect(() => {
+     if (!isActive) {
+        lastProcessedLengthRef.current = 0;
+        return;
+     }
+
+     const currentText = (transcript + " " + (rawTranscript || "")).trim();
+     if (!currentText) return;
+
+     const words = currentText.split(/\s+/).filter(w => w.length > 0);
+     const count = words.length;
+     const newWords = count - lastProcessedLengthRef.current;
+     
+     if (newWords > 0) {
+        const now = Date.now();
+        // Push timestamp for every new word
+        for (let i = 0; i < newWords; i++) {
+           wpmQueueRef.current.push({ time: now });
+        }
+        lastProcessedLengthRef.current = count;
+     } else if (newWords < 0) {
+        // Reset if transcript was cleared or vastly changed
+        lastProcessedLengthRef.current = count;
+     }
+  }, [transcript, rawTranscript, isActive]);
+
+  // High-frequency update loop (animation frame style)
   useEffect(() => {
     if (!isActive) return;
 
     wpmIntervalRef.current = setInterval(() => {
       const now = Date.now();
-      
-      // Count total words in current transcript
-      // This is cumulative.
-      // Count total words in current transcript (Finalized + Interim)
-      const currentText = (transcriptRef.current + " " + (rawTranscriptRef.current || "")).trim();
-      const words = currentText.split(/\s+/).filter(w => w.length > 0);
-      const totalCount = words.length; // accumulated count
+      const WINDOW_MS = 5000; // 5 seconds
 
-      // Add to samples
-      wpmSamplesRef.current.push({ timestamp: now, wordCount: totalCount });
+      // 1. Prune old words
+      wpmQueueRef.current = wpmQueueRef.current.filter(t => t.time > now - WINDOW_MS);
 
-      // Keep only last 5 seconds
-      const WINDOW_MS = 5000;
-      wpmSamplesRef.current = wpmSamplesRef.current.filter(s => s.timestamp > now - WINDOW_MS);
-
-      // Calculate WPM
-      let calculatedWpm = 0;
-      if (wpmSamplesRef.current.length > 1) {
-        const oldest = wpmSamplesRef.current[0];
-        const newest = wpmSamplesRef.current[wpmSamplesRef.current.length - 1];
-        
-        const deltaWords = newest.wordCount - oldest.wordCount;
-        const deltaTimeMinutes = (newest.timestamp - oldest.timestamp) / 60000;
-        
-        if (deltaTimeMinutes > 0) {
-           calculatedWpm = Math.round(deltaWords / deltaTimeMinutes);
-        }
+      // 2. Calculate Raw WPM
+      // (Words in window / WindowSeconds) * 60
+      // We use Math.min((now - firstWordTime) / 1000, 5) to handle "ramp up" accurately
+      // preventing "infinite" WPM at second 0.1
+      let rawWpm = 0;
+      if (wpmQueueRef.current.length > 0) {
+          const wordsInWindow = wpmQueueRef.current.length;
+          // Standard: 60 * words / 5 = 12 * words
+          rawWpm = wordsInWindow * 12; 
       }
 
-      // Smooth weighting for display (30% new, 70% old) to avoid jumps
-      setRealtimeWpm(prev => {
-          if (calculatedWpm === 0 && prev < 5) return 0; // Quick drop to 0 if silence
-          return Math.round(prev * 0.7 + calculatedWpm * 0.3);
-      });
+      // 3. Smooth it!
+      // Alpha determines "lag". 0.1 = very smooth/laggy. 0.3 = responsive.
+      const alpha = 0.15; 
+      displayWpmRef.current = displayWpmRef.current * (1 - alpha) + rawWpm * alpha;
+      
+      const rounded = Math.round(displayWpmRef.current);
+      setRealtimeWpm(rounded);
 
-      // --- Metric Tracking for Scoring ---
-      if (isActive && !isComplete) {
+      // Metrics Logic (Moved here for sync)
+      if (!isComplete && isActive) {
          // Maintenance
-         if (calculatedWpm >= targetRange.min && calculatedWpm <= targetRange.max) {
-             currentPaceMetrics.current.inZoneSeconds += 0.5; // running every 500ms? No, 1000ms is the interval below?
-             // Wait, interval is set below. Let's assume 500ms or 1000ms.
+         if (rounded >= targetRange.min && rounded <= targetRange.max) {
+             currentPaceMetrics.current.inZoneSeconds += 0.25; // 250ms interval
          }
-         currentPaceMetrics.current.totalSeconds += 0.5; // adjust based on interval
+         currentPaceMetrics.current.totalSeconds += 0.25;
 
-         // Contrast
-         if (currentPaceType === 'fast') {
+         // Contrast - Sampling
+        if (currentPaceType === 'fast') {
             currentPaceMetrics.current.fastAvg = 
-              (currentPaceMetrics.current.fastAvg * currentPaceMetrics.current.fastCount + calculatedWpm) / (currentPaceMetrics.current.fastCount + 1);
+              (currentPaceMetrics.current.fastAvg * currentPaceMetrics.current.fastCount + rounded) / (currentPaceMetrics.current.fastCount + 1);
             currentPaceMetrics.current.fastCount++;
          } else if (currentPaceType === 'slow') {
             currentPaceMetrics.current.slowAvg = 
-              (currentPaceMetrics.current.slowAvg * currentPaceMetrics.current.slowCount + calculatedWpm) / (currentPaceMetrics.current.slowCount + 1);
+              (currentPaceMetrics.current.slowAvg * currentPaceMetrics.current.slowCount + rounded) / (currentPaceMetrics.current.slowCount + 1);
             currentPaceMetrics.current.slowCount++;
          }
       }
 
-    }, 500); // 500ms update rate
+    }, 250); // 4Hz update for fluidity
 
     return () => {
       if (wpmIntervalRef.current) clearInterval(wpmIntervalRef.current);
     };
-  }, [isActive, transcript, currentPaceType, isComplete, targetRange]); 
-  // removed `rawTranscript` dependency to avoid erratic updates, rely on `transcript` which usually streams well enough or use `useVoiceRecording` better if available.
-  // Actually, `transcript` from hook might be stable finalized text. `rawTranscript` is interim.
-  // For 'real-time', rawTranscript is better for responsiveness.
-  // But USER demanded "sync to finalized SpeechRecognition results" OR "AssemblyAI".
-  // `transcript` in `useVoiceRecording` is usually finalized. `rawTranscript` is interim.
-  // If we ONLY use finalized, WPM will drop to 0 while speaking a long sentence.
-  // We MUST use rawTranscript for the "count" to keep it alive.
-  // Let's use `rawTranscript || transcript` inside the effect, but depend on `rawTranscript`.
-
-  // Fix: Re-add rawTranscript to dependency and use it for valid count.
-  useEffect(() => {
-     // ... logic above ...
-  }, [isActive, transcript, isComplete]); // Actually we need a ref or access to latest state for transcript. 
-  // Inside interval, we can't reliably read state if proper dependencies aren't set, but setting dependencies restarts interval.
-  // Better use Ref for transcript.
-  
-  // Ref-based transcript access for Interval
-  const transcriptRef = useRef("");
-  const rawTranscriptRef = useRef("");
-  useEffect(() => { transcriptRef.current = transcript; }, [transcript]);
-  useEffect(() => { rawTranscriptRef.current = rawTranscript; }, [rawTranscript]);
+  }, [isActive, isComplete, targetRange, currentPaceType]);
 
 
   const startSession = async () => {
@@ -181,7 +186,10 @@ export default function PaceCadenceTrainer() {
     setIsComplete(false);
     setTimeLeft(60);
     setRealtimeWpm(0);
-    wpmSamplesRef.current = [];
+    wpmQueueRef.current = [];
+    lastProcessedLengthRef.current = 0;
+    displayWpmRef.current = 0;
+    
     currentPaceMetrics.current = { inZoneSeconds: 0, totalSeconds: 0, fastAvg: 0, slowAvg: 0, fastCount: 0, slowCount: 0 };
     
     await startRecording(speechLanguageCode);
@@ -221,7 +229,7 @@ export default function PaceCadenceTrainer() {
     if (user) {
       const url = await saveAudio(blob);
       await saveAttempt({
-          exerciseId: content.exerciseId,
+          exerciseId: meta.id,
           score: finalScore,
           maxScore: 100,
           answers: { 
@@ -271,7 +279,7 @@ export default function PaceCadenceTrainer() {
 
   return (
     <MainLayout>
-      <ExerciseGate exerciseId={content.exerciseId}>
+      <ExerciseGate exerciseId={meta.id}>
         <div className={cn("min-h-screen transition-colors duration-1000", getBgColor())}>
           <div className="mx-auto max-w-3xl px-6 py-12">
             
@@ -323,9 +331,9 @@ export default function PaceCadenceTrainer() {
                          {currentPaceType === 'slow' && (currentLang === 'es' ? "LENTO" : currentLang === 'fr' ? "LENT" : "SLOW")}
                          {currentPaceType === 'free' && (currentLang === 'es' ? "NATURAL" : currentLang === 'fr' ? "NATUREL" : "NATURAL")}
                       </div>
-                      <div className="text-xl text-foreground/80 mb-6">
-                         {currentSegment?.instruction[currentLang]}
-                      </div>
+                       <div className="text-xl text-foreground/80 mb-6">
+                          {currentSegment?.instruction}
+                       </div>
                       
                       {/* WPM Feedback */}
                       <div className="flex flex-col items-center gap-2">

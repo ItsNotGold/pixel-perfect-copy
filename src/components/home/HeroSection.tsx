@@ -15,7 +15,7 @@ export function HeroSection() {
         {/* Badge */}
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary animate-fade-in">
           <Sparkles className="h-4 w-4" />
-          <span>5 exercises to master communication</span>
+          <span>6 exercises to master communication</span>
         </div>
 
         {/* Headline */}

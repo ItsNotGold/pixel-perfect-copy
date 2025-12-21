@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import tailwindAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -15,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"League Gothic"', 'sans-serif'],
-        body: ['"Manrope"', 'sans-serif'],
+        display: ['DM Serif Display', 'serif'],
+        body: ['Inter', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -93,10 +92,6 @@ export default {
           from: { opacity: "0", transform: "translateY(10px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
-        "fade-in": {
-          from: { opacity: "0" },
-          to: { opacity: "1" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -104,8 +99,8 @@ export default {
         "float": "float 6s ease-in-out infinite",
         "pulse-soft": "pulse-soft 3s ease-in-out infinite",
         "scale-in": "scale-in 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
-        "fade-up": "fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1)",
-        "in": "fade-in 0.3s ease-out forwards",
+        "fade-up": "fade-up 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
+        "in": "fade-in 0.2s ease-out 0s 1 normal forwards",
       },
     },
   },

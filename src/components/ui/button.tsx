@@ -9,22 +9,24 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground shadow-md hover:shadow-lg hover:bg-primary/95 hover:-translate-y-0.5",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-sm hover:shadow-md",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground shadow-sm hover:shadow-md",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+        default:
+          "bg-primary text-primary-foreground shadow hover:bg-primary/90 hover:scale-[1.02] transition-transform duration-200 border border-primary/20",
+        destructive:
+          "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90 border border-destructive/20",
+        outline:
+          "border border-white/10 bg-transparent shadow-sm hover:bg-white/10 hover:text-accent-foreground backdrop-blur-sm",
+        secondary:
+          "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 border border-secondary/20",
+        ghost: "hover:bg-white/10 hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "gradient-hero text-primary-foreground font-semibold shadow-glow hover:shadow-lg hover:-translate-y-1 active:translate-y-0 active:scale-[0.97]",
-        accent: "gradient-accent text-accent-foreground font-semibold shadow-accent hover:shadow-lg hover:-translate-y-1 active:translate-y-0",
-        glass: "glass text-foreground hover:bg-card/80 border border-border/50 hover:border-border/80 shadow-sm",
+        premium: "bg-gradient-to-r from-primary to-emerald-400 text-white shadow-lg shadow-emerald-900/20 hover:shadow-emerald-900/40 hover:scale-[1.02] transition-all duration-300 border border-white/10",
       },
       size: {
-        default: "h-10 px-5 py-2",
-        sm: "h-9 rounded-md px-3",
+        default: "h-11 px-6 py-2 rounded-lg text-sm font-medium",
+        sm: "h-9 rounded-md px-3 text-xs",
         lg: "h-12 rounded-xl px-8 text-base",
         xl: "h-14 rounded-2xl px-10 text-lg",
-        icon: "h-10 w-10",
+        icon: "h-10 w-10 rounded-lg",
       },
     },
     defaultVariants: {

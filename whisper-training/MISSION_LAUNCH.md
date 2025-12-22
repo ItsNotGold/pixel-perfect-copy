@@ -1,36 +1,36 @@
-# 🚀 Mission: Self-Training Distil-Whisper (LAUNCH GUIDE)
+# 🚀 Mission: Self-Training Distil-Whisper PHASE 2 (LAUNCH GUIDE)
 
-Everything is armed and ready. Follow these steps to execute the training on your provisioned GPU instance (Runpod, Lambda, or Local RTX).
+Phase 1 confirmed the pipeline. Phase 2 crushes WER below 2.0% with aggressive parameters.
 
 ## 🛠️ PREREQUISITES
 
-- NVIDIA GPU (24GB+ VRAM recommended: A100, 3090, 4090)
+- NVIDIA GPU x2 (multi-GPU recommended: A100, H100)
 - CUDA 12.1+
 
-## 🚢 DISPATCH INSTRUCTIONS
+## 🚢 DISPATCH INSTRUCTIONS (Phase 2)
 
-1. **Upload the `whisper-training/` folder** to your GPU instance.
-2. **Execute the Dispatcher**:
+1. **Upload the updated `whisper-training/` folder**.
+2. **Execute Phase 2 Multi-GPU Dispatcher**:
    ```bash
    cd whisper-training
    chmod +x deploy.sh
-   ./deploy.sh
+   # Step 2.1: Prepare full multilingual dataset (EN/FR/ES)
+   python prepare_multilingual.py
+   # Step 2.2: Launch distributed Phase 2 fine-tuning (6hr)
+   accelerate launch --num_processes=2 train.py
    ```
 
-## 📦 MISSION CONTENT
+## 📦 MISSION CONTENT (Phase 2)
 
-- **`extract_vocab.py`**: Already ran. Extracts app-specific phrases into `exercise_vocab.json`.
-- **`train.py`**: LoRA-optimized fine-tuning script using Unsloth (6x faster training).
-- **`benchmark.py`**: Automated WER (Word Error Rate) report generator.
-- **`exercise_vocab.json`**: 688 unique phrases extracted from your app to tilt the model's accuracy in your favor.
+- **`prepare_multilingual.py`**: Interleaves full EN/FR/ES CommonVoice datasets for balanced training.
+- **`train.py`**: Updated for **Phase 2 Aggression** (r=32, alpha=64, context=4096, bfloat16).
+- **`benchmark.py`**: Multilingual WER report for EN, FR, and ES.
 
-## 📊 EXPECTED OUTPUT
+## 📊 PHASE 2 TARGETS
 
-- A new folder `distil-whisper-v1-fine-tuned/` containing your custom weights.
-- A terminal report showing the **WER drop** (e.g., 5.2% → 3.1%).
+- **WER English**: < 2.0% (Pushing from 3.14%)
+- **WER French/Spanish**: < 2.5%
+- **Exercise Vocab**: > 99% accuracy
+- **Production**: Live v2 endpoint replacement.
 
-## 🛑 FAIL-SAFE
-
-If the script fails with "OOM" (Out of Memory), edit `train.py` and set `per_device_train_batch_size=2`.
-
-**AGENT NOTE**: I prepared this payload to be "One-Command" ready. Once you run `deploy.sh`, the model will be trained, validated, and ready for deployment to our new Whisper server.
+**AGENT NOTE**: Phase 2 is optimized for multi-GPU clusters. It uses BF16 precision and fused AdamW for maximum throughput. Once green, deploy to your `whisper-v2` container.

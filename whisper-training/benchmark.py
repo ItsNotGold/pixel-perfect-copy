@@ -7,7 +7,7 @@ import time
 def evaluate_model(model_id, dataset_name, language="en"):
     print(f"📊 Benchmarking {model_id} on {dataset_name} ({language})...")
     
-    device = "cuda:0" if torch.cuda.is_available() else "cpu"
+    device = "cuda" if torch.cuda.is_available() else "cpu"
     torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
 
     model = AutoModelForSpeechSeq2Seq.from_pretrained(
@@ -39,24 +39,30 @@ def evaluate_model(model_id, dataset_name, language="en"):
         sample_rate = data["audio"]["sampling_rate"]
         
         result = pipe({"sampling_rate": sample_rate, "raw": audio})
-        predictions.append(result["text"].lower())
-        references.append(data["sentence"].lower())
+        predictions.append(result["text"].lower().strip())
+        references.append(data["sentence"].lower().strip())
         
-        if (i+1) % 10 == 0:
-            print(f"Processed {i+1}/100...")
+        if (i+1) % 20 == 0:
+            print(f"[{language}] Processed {i+1}/100...")
 
     end_time = time.time()
     wer = wer_metric.compute(predictions=predictions, references=references)
     
-    print(f"✅ Results for {model_id}:")
+    print(f"✅ Results for {model_id} [{language}]:")
     print(f"   WER: {wer*100:.2f}%")
     print(f"   Avg Latency: {(end_time - start_time)/100:.2f}s per sample")
     
     return wer
 
 if __name__ == "__main__":
-    # Compare base vs fine-tuned
-    base_wer = evaluate_model("distil-whisper/distil-large-v3", "mozilla-foundation/common_voice_13_0", "en")
-    # tuned_wer = evaluate_model("./distil-whisper-v1-fine-tuned", "mozilla-foundation/common_voice_13_0", "en")
+    langs = ["en", "fr", "es"]
+    results = {}
     
-    # print(f"\n📈 OVERALL IMPROVEMENT: {(base_wer - tuned_wer)*100:.2f}%")
+    for lang in langs:
+        wer = evaluate_model("distil-whisper-v2-fine-tuned", "mozilla-foundation/common_voice_13_0", lang)
+        results[lang] = wer
+    
+    print("\n🚀 PHASE 2 FINAL REPORT:")
+    for lang, wer in results.items():
+        status = "✅ PASS" if (lang == "en" and wer < 0.02) or (lang != "en" and wer < 0.025) else "❌ FAIL"
+        print(f"   {lang.upper()}: {wer*100:.2f}% | {status}")

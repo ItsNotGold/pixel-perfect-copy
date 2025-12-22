@@ -55,48 +55,20 @@ export default function WordIncorporation() {
     pickNewPrompt();
   }, [language, pickNewPrompt]);
 
-  const startSession = async () => {
-    setIsActive(true);
-    setTimeLeft(30);
-    setCurrentWordIndex(-1);
-    setWordDisplayTime(0);
-    resetTranscript();
-    setIsComplete(false);
-    setAiFeedback(null);
-
-    await startVoice(speechLanguageCode);
-
-    // Start main timer
-    timerRef.current = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          stopSession();
-          return 0;
-        }
-        const next = prev - 1;
-        if (settings?.practice?.timerSounds && next <= 5) {
-          try { playTick(); } catch { }
-        }
-        return next;
-      });
-    }, 1000);
-
-    // Start word progression
-    setTimeout(() => showNextWord(), 3000); // Show first word after 3 seconds
-  };
-
-  const showNextWord = () => {
+  const showNextWord = useCallback(() => {
     if (!currentPrompt) return;
 
     setCurrentWordIndex((prev) => {
       const nextIndex = prev + 1;
+      
       if (nextIndex < currentPrompt.words.length) {
         setWordDisplayTime(6); // 6 seconds per word
+        if (wordTimerRef.current) clearInterval(wordTimerRef.current);
         wordTimerRef.current = setInterval(() => {
           setWordDisplayTime((time) => {
             if (time <= 1) {
-              clearInterval(wordTimerRef.current!);
-              setTimeout(() => showNextWord(), 100); // Brief pause before next word
+              if (wordTimerRef.current) clearInterval(wordTimerRef.current);
+              setTimeout(() => showNextWord(), 100); 
               return 0;
             }
             return time - 1;
@@ -107,53 +79,37 @@ export default function WordIncorporation() {
         return prev;
       }
     });
+  }, [currentPrompt]);
+
+  const startSession = async () => {
+    setIsActive(true);
+    setTimeLeft(30);
+    setCurrentWordIndex(-1);
+    setWordDisplayTime(0);
+    resetTranscript();
+    setIsComplete(false);
+    setAiFeedback(null);
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = null;
+
+    await startVoice(speechLanguageCode);
+    setTimeout(() => showNextWord(), 3000);
   };
 
-  const stopSession = async () => {
-    setIsActive(false);
-    if (timerRef.current) {
-      clearInterval(timerRef.current);
-    }
-    if (wordTimerRef.current) {
-      clearInterval(wordTimerRef.current);
-    }
-    const { blob, transcript } = await stopVoice();
-
-    // upload immediately for analysis
-    let url: string | null = null;
-    if (blob) {
-      url = await saveAudio(blob);
-    }
-
-    await analyzeTranscript(transcript, url);
-    if (settings?.audio?.soundEffects) playDing();
-
-    if (settings?.audio?.voiceFeedback) speak("Exercise complete. Check your results.");
-  };
-
-  const analyzeTranscript = async (transcriptOverride?: string, audioUrlOverride?: string | null) => {
+  const analyzeTranscript = useCallback(async (transcriptOverride?: string, audioUrlOverride?: string | null) => {
     const processedText = (transcriptOverride || transcript).toLowerCase();
-
-
     const rawText = (rawVoiceTranscript || "").toLowerCase();
     const text = `${processedText} ${rawText}`.trim();
 
-    // We will update this if backend provides a better one
     let effectiveTranscript = text;
-
-
     if (!currentPrompt) return;
 
-    // Check which words were used
     const wordsUsed: string[] = [];
     const wordsMissed: string[] = [];
 
-    // Helper to escape regex special chars
     const escapeRegex = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-    // Function to re-calculate words based on a new transcript
     const recalculateWords = (newTranscript: string) => {
-      // clear existing arrays (mutation for this scope references, though we should ideally use new arrays but logic below relies on these variables)
       wordsUsed.length = 0;
       wordsMissed.length = 0;
       currentPrompt.words.forEach((word) => {
@@ -170,15 +126,10 @@ export default function WordIncorporation() {
       });
     };
 
-    // Initial calculation based on the current effective transcript
     recalculateWords(effectiveTranscript);
-
-    const score = Math.round((wordsUsed.length / currentPrompt.words.length) * 100);
-
     setIsComplete(true);
     setTotalAttempts((prev) => prev + 1);
 
-    // Get AI analysis if there's content
     if (text.trim().length >= 20) {
       setIsAnalyzing(true);
       try {
@@ -190,42 +141,31 @@ export default function WordIncorporation() {
           },
         });
 
-
         if (!error && data) {
           const result = data as AIFeedback;
           setAiFeedback(result);
-          // If AI provides word-level results, prefer those for accuracy
           if (result.wordsUsed && result.wordsUsed.length > 0) {
-            // override local detection
             wordsUsed.splice(0, wordsUsed.length, ...result.wordsUsed);
             wordsMissed.splice(0, wordsMissed.length, ...result.wordsMissed);
           } else if ((data as any)?._raw) {
             const raw = (data as any)._raw;
-            // CHECK 1: If backend transcript is better, use it!
             if (raw.transcript && raw.transcript.length > effectiveTranscript.length) {
               effectiveTranscript = raw.transcript;
-              // Re-run detection on the BETTER transcript
               recalculateWords(effectiveTranscript);
             }
-
-            // CHECK 2: If we have explicit word tokens, use those too
             if (raw.words && Array.isArray(raw.words) && raw.words.length > 0) {
-              // build a simple set of tokens from the analyzer
               const tokenTexts = raw.words.map((w: any) => (w.word || "").toLowerCase());
-              const used: string[] = [];
-              const missed: string[] = [];
               currentPrompt.words.forEach((word) => {
                 const w = word.toLowerCase();
-                // exact or substring match against tokens
                 const found = tokenTexts.some((t: string) => t === w || t.includes(w) || w.includes(t));
-                if (found) used.push(word); else missed.push(word);
+                if (found && !wordsUsed.includes(word)) {
+                   wordsUsed.push(word);
+                   const mIdx = wordsMissed.indexOf(word);
+                   if (mIdx > -1) wordsMissed.splice(mIdx, 1);
+                }
               });
-              // merge results (union of local detection on better transcript AND token detection)
-              // actually safe to just take the union of 'found'
-              used.forEach(u => { if (!wordsUsed.includes(u)) { wordsUsed.push(u); wordsMissed.splice(wordsMissed.indexOf(u), 1); } });
             }
           }
-
         }
       } catch (err) {
         console.error("AI evaluation error:", err);
@@ -235,34 +175,67 @@ export default function WordIncorporation() {
     }
 
     if (user) {
-      // Audio likely already uploaded in stopSession. Use the override URL if present.
       const finalUrl = audioUrlOverride ?? (await saveAudio());
-
       const res = await saveAttempt({
         exerciseId: "word-incorporation",
-        score: aiFeedback?.score || Math.round((wordsUsed.length / currentPrompt.words.length) * 100),
+        score: Math.round((wordsUsed.length / currentPrompt.words.length) * 100),
         maxScore: 100,
         answers: {
           transcript: effectiveTranscript,
-
           targetWords: currentPrompt.words,
           wordsUsed,
           wordsMissed,
           audioUrl: finalUrl,
         },
-
       });
-      if (!res || !res.success) toast.error("Failed to save progress");
+      if (!res?.success) toast.error("Failed to save progress");
     }
 
     if (wordsUsed.length === currentPrompt.words.length) {
       toast.success("Perfect! You incorporated all words!");
-    } else if (wordsUsed.length >= currentPrompt.words.length * 0.8) {
-      toast.success(`Great job! You used ${wordsUsed.length}/${currentPrompt.words.length} words.`);
     } else {
-      toast.info(`You used ${wordsUsed.length}/${currentPrompt.words.length} words. Keep practicing!`);
+      toast.info(`You used ${wordsUsed.length}/${currentPrompt.words.length} words.`);
     }
-  };
+  }, [transcript, rawVoiceTranscript, currentPrompt, language, user, saveAudio, saveAttempt]);
+
+  const stopSession = useCallback(async () => {
+    setIsActive(false);
+    if (timerRef.current) clearInterval(timerRef.current);
+    if (wordTimerRef.current) clearInterval(wordTimerRef.current);
+    
+    const { blob, transcript: finalTranscript } = await stopVoice();
+    let url: string | null = null;
+    if (blob) {
+      url = await saveAudio(blob);
+    }
+
+    await analyzeTranscript(finalTranscript, url);
+    if (settings?.audio?.soundEffects) playDing();
+  }, [stopVoice, saveAudio, analyzeTranscript, settings]);
+
+  const startMainTimer = useCallback(() => {
+    if (timerRef.current) return;
+    timerRef.current = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 1) {
+          stopSession();
+          return 0;
+        }
+        const next = prev - 1;
+        if (settings?.practice?.timerSounds && next <= 5) {
+          try { playTick(); } catch (e) { console.warn(e); }
+        }
+        return next;
+      });
+    }, 1000);
+  }, [stopSession, settings]);
+
+  useEffect(() => {
+    if (isActive && currentWordIndex === 0) {
+      startMainTimer();
+    }
+  }, [isActive, currentWordIndex, startMainTimer]);
+
 
 
   const handleRestart = () => {
@@ -318,29 +291,40 @@ export default function WordIncorporation() {
               </div>
             )}
 
-            {/* Initial prompt */}
-            {currentPrompt && !isComplete && (!isActive || (isActive && currentWordIndex < 0)) && (
-              <div className="mb-6 text-center">
-                <h3 className="text-xl font-semibold mb-4">{currentPrompt.prompt}</h3>
-                <p className="text-muted-foreground">
-                  You will have 30 seconds to speak. Words will appear one by one - incorporate them naturally into your speech.
-                  This exercise also uses audio-based detection (phonetic and token-level) when available to more accurately detect whether you used a target word.
-                </p>
+            {/* Initial prompt - Persistent at the top */}
+            {currentPrompt && !isComplete && (
+              <div className="mb-6 text-center border-b border-white/10 pb-6">
+                <h3 className="text-xl font-bold text-foreground mb-3">{currentPrompt.prompt}</h3>
+                {!isActive && (
+                  <p className="text-muted-foreground text-sm max-w-md mx-auto">
+                    You will have 30 seconds to speak. Words will appear one by one — incorporate them naturally into your speech.
+                  </p>
+                )}
               </div>
             )}
 
             {/* Word display during exercise */}
             {isActive && currentWordIndex >= 0 && currentWordIndex < (currentPrompt?.words.length || 0) && (
-              <div className="mb-6 text-center">
-                <div className="text-3xl font-bold text-primary mb-2">
+              <div className="mb-8 text-center animate-in fade-in zoom-in duration-300">
+                <div className="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-2 opacity-70">Target Word</div>
+                <div className="text-5xl font-extrabold text-foreground mb-4 drop-shadow-sm">
                   {currentPrompt?.words[currentWordIndex]}
                 </div>
-                <div className="text-sm text-muted-foreground">
-                  Time left for this word: {wordDisplayTime}s
+                <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground bg-white/5 w-fit mx-auto px-4 py-1.5 rounded-full">
+                  <Clock className="h-3.5 w-3.5" />
+                  Next word in: <span className="font-mono font-bold text-primary">{wordDisplayTime}s</span>
                 </div>
-                <div className="text-xs text-muted-foreground mt-2">
+                <div className="text-[10px] text-muted-foreground/50 mt-4 uppercase tracking-widest font-medium">
                   Word {currentWordIndex + 1} of {currentPrompt?.words.length}
                 </div>
+              </div>
+            )}
+
+            {/* Lead-in countdown */}
+            {isActive && currentWordIndex < 0 && (
+              <div className="mb-12 text-center py-8">
+                <div className="text-sm text-muted-foreground uppercase tracking-widest mb-2">Get ready...</div>
+                <div className="text-4xl font-bold text-primary animate-pulse italic">Starting soon</div>
               </div>
             )}
 

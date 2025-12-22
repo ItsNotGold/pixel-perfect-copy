@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -76,15 +76,15 @@ export default function FillerWordEliminator() {
   const content = fillerWordEliminatorMaster.content.multilingual[language] || fillerWordEliminatorMaster.content.multilingual.en;
   const fillerWords = content.targetFillerWords;
 
-  useEffect(() => {
-    pickNewTopic();
-  }, [language]);
-
-  const pickNewTopic = () => {
+  const pickNewTopic = useCallback(() => {
     const topics = content.topics;
     const randomTopic = topics[Math.floor(Math.random() * topics.length)];
-    setCurrentTopic(randomTopic.topic);
-  };
+    setCurrentTopic(randomTopic);
+  }, [content.topics]);
+
+  useEffect(() => {
+    pickNewTopic();
+  }, [language, pickNewTopic]);
 
   const startSession = async () => {
     setIsActive(true);

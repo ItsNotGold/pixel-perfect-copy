@@ -372,14 +372,26 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
           // Actually, let's look at how startRecording was called.
           // I will store the language in a ref during startRecording.
 
+          const asaiLang = asaiLangMap[activeLanguageRef.current] || 'en';
+          console.log(`📡 AssemblyAI Batch: Requesting transcription [Language: ${activeLanguageRef.current} -> ${asaiLang}]`);
+          
           // Ask ASR to preserve disfluencies where possible and punctuate
-          const transcriptResponse = await client.transcripts.transcribe({
+          const transcriptParams: any = {
             audio: uploadUrl,
-            language_code: asaiLangMap[activeLanguageRef.current] || 'en',
             punctuate: true,
             format_text: true,
             disfluencies: true,
-          });
+          };
+          
+          // Use explicit language code or fallback to detection if mapping failed (though mapping should be exhaustive for EN/FR/ES)
+          if (asaiLangMap[activeLanguageRef.current]) {
+            transcriptParams.language_code = asaiLang;
+          } else {
+            console.log("🔍 AssemblyAI Batch: No explicit mapping found, enabling language_detection as fallback.");
+            transcriptParams.language_detection = true;
+          }
+
+          const transcriptResponse = await client.transcripts.transcribe(transcriptParams);
 
           if (transcriptResponse.status === 'completed') {
             // Merge processed transcript with raw interim transcript to preserve filler detections

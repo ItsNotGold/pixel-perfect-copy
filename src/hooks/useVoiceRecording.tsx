@@ -66,12 +66,14 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
   const recognitionRef = useRef<SpeechRecognitionType | null>(null);
-  const rtRef = useRef<RealtimeTranscriber | null>(null);
+  const rtRef = useRef<any>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
   const processorRef = useRef<ScriptProcessorNode | null>(null);
+  const activeLanguageRef = useRef<string>("en-US");
 
   const startRecording = useCallback(async (languageCode: string = "en-US") => {
     try {
+      activeLanguageRef.current = languageCode;
       startTimeRef.current = Date.now();
       setWordTimestamps([]);
       setTranscript("");
@@ -199,10 +201,19 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
       if (apiKey) {
         (async () => {
           try {
-             console.log("🔗 AssemblyAI Realtime: Connecting via Raw WebSocket...");
-             // Use the correct v2 realtime URL
-             const socket = new WebSocket(`wss://api.assemblyai.com/v2/realtime/ws?sample_rate=16000&auth_key=${apiKey}`);
-             rtRef.current = socket; // Cast as any for compatibility with existing code
+             console.log(`🔗 AssemblyAI Realtime: Connecting via Raw WebSocket [Language: ${languageCode}]...`);
+             
+             // Map app speech language code to AssemblyAI codes (e.g. 'en-US' -> 'en', 'fr-FR' -> 'fr', 'es-ES' -> 'es')
+             const asaiLangMap: Record<string, string> = {
+               'en-US': 'en',
+               'fr-FR': 'fr',
+               'es-ES': 'es'
+             };
+             const asaiLang = asaiLangMap[languageCode] || 'en';
+             
+             // Use the correct v2 realtime URL with language_code
+             const socket = new WebSocket(`wss://api.assemblyai.com/v2/realtime/ws?sample_rate=16000&auth_key=${apiKey}&language_code=${asaiLang}`);
+             rtRef.current = socket as any; 
 
              socket.onopen = () => {
                console.log("🔓 AssemblyAI Realtime: Socket opened");
@@ -347,9 +358,24 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
           const audioFile = new File([recordedBlob], 'recording.webm', { type: 'audio/webm' });
           const uploadUrl = await client.files.upload(audioFile);
 
+          // Map language code for REST as well
+          const asaiLangMap: Record<string, string> = {
+            'en-US': 'en',
+            'fr-FR': 'fr',
+            'es-ES': 'es'
+          };
+          // We don't have languageCode in scope directly from state easy, but startRecording received it.
+          // However, stopRecording is called later. The language of the app might have changed? 
+          // Usually not during a session. We'll use the one from the recognitionRef if available, 
+          // or derive from speechLanguageCode if we could access context.
+          // Since this is a hook, we can just grab the language from window or a more reliable source.
+          // Actually, let's look at how startRecording was called.
+          // I will store the language in a ref during startRecording.
+
           // Ask ASR to preserve disfluencies where possible and punctuate
           const transcriptResponse = await client.transcripts.transcribe({
             audio: uploadUrl,
+            language_code: asaiLangMap[activeLanguageRef.current] || 'en',
             punctuate: true,
             format_text: true,
             disfluencies: true,

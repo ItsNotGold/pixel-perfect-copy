@@ -15,7 +15,6 @@ import { reverseDefinitionsMaster } from "@/data/exercises/reverseDefinitions.ma
 import { synonymSpeedChainMaster } from "@/data/exercises/synonymSpeedChain.master";
 import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";
 import { getWordDefinition } from "@/lib/wordDefinitionsService";
-import { paceCadenceMaster } from "@/data/exercises/paceCadence.master";
 
 const MASTER_DATA: Record<string, ExerciseMaster<any>> = {
     "precision-swap": precisionSwapMaster,
@@ -23,7 +22,6 @@ const MASTER_DATA: Record<string, ExerciseMaster<any>> = {
     "reverse-definitions": reverseDefinitionsMaster,
     "synonym-speed-chain": synonymSpeedChainMaster,
     "word-incorporation": wordIncorporationMaster,
-    "pace-cadence-trainer": paceCadenceMaster,
 };
 
 export function useLibrary() {

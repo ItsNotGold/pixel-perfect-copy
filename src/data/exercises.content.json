@@ -59,18 +59,6 @@
       "icon": "Feather",
       "color": "from-purple-500 to-blue-500",
       "path": "/exercise/word-incorporation"
-    },
-    {
-      "id": "pace-cadence-trainer",
-      "number": 6,
-      "title": "Pace & Cadence Trainer",
-      "shortTitle": "Pace Trainer",
-      "goal": "Master speech velocity control",
-      "mechanic": "Dynamic Pace Switching",
-      "description": "Learn to vary your speaking Speed on command to create engagement and authority. Follow specific visual cues to switch between fast, slow, and natural pacing while speaking on impromptu topics.",
-      "icon": "Gauge",
-      "color": "from-cyan-500 to-blue-500",
-      "path": "/exercise/pace-cadence-trainer"
     }
   ],
 
@@ -330,17 +318,6 @@
     "es": [
       { "id": "es-1", "word": "feliz", "commonSynonyms": ["contento", "alegre", "dichoso", "satisfecho", "gozoso"], "rareSynonyms": ["eufórico", "exultante", "radiante", "jubiloso", "beatífico"], "timeLimit": 30 },
       { "id": "es-2", "word": "triste", "commonSynonyms": ["infeliz", "deprimido", "melancólico", "afligido", "abatido"], "rareSynonyms": ["acongojado", "desconsolado", "apesadumbrado", "desolado", "taciturno"], "timeLimit": 30 }
-    ]
-  },
-  "pace-cadence-trainer": {
-    "en": [
-        { "language": "en", "list": ["Explain your favorite hobby", "Describe your dream vacation", "Coffee vs Tea", "A time you got lost", "Perfect sandwich recipe", "Favorite movie plot", "Best season", "Why sleep matters"] }
-    ],
-    "es": [
-        { "language": "es", "list": ["Pasatiempo favorito", "Vacaciones soñadas", "Café o Té", "Una vez que te perdiste", "Sándwich perfecto", "Trama de película favorita", "Mejor estación", "Importancia de dormir"] }
-    ],
-    "fr": [
-        { "language": "fr", "list": ["Passe-temps favori", "Vacances de rêve", "Café ou Thé", "Une fois perdu", "Sandwich parfait", "Film préféré", "Meilleure saison", "Importance du sommeil"] }
     ]
   }
 }

@@ -128,13 +128,11 @@ export default function PaceCadenceTrainer() {
     lastUpdate: 0
   });
 
-  // Track session start for absolute time conversion
+  // Track session status
   useEffect(() => {
-    if (isRecording && !sessionStartRef.current) {
-      sessionStartRef.current = Date.now();
-      wpmState.current.smoothedWpm = 0; // Start at 0
-    } else if (!isRecording) {
-      sessionStartRef.current = null;
+    if (!isRecording) {
+      // Clear timestamps when recording stops to reset for next try
+      wpmState.current.wordTimestamps = [];
     }
   }, [isRecording]);
 
@@ -158,15 +156,13 @@ export default function PaceCadenceTrainer() {
     const alpha = 0.25; // α=0.25 constant
     const nowMs = Date.now();
 
-    // Limit update frequency to 250ms+ for stability
-    if (nowMs - wpmState.current.lastUpdate < 300) return;
-
     // Exponential moving average: smoothed = α*raw + (1-α)*old
     const nextSmoothed = alpha * wpmState.current.rawWpm + (1 - alpha) * wpmState.current.smoothedWpm;
     
-    // "No Jumps" logic: Limit change per update to ≤ 3 WPM
+    // "Responsive Smoothing" logic: Limit change per 300ms update to ≤ 15 WPM
+    // This allows reaching 150WPM from zero in ~3 seconds (industry standard feel)
     const diff = nextSmoothed - wpmState.current.smoothedWpm;
-    const clampedDiff = Math.max(-3, Math.min(3, diff));
+    const clampedDiff = Math.max(-15, Math.min(15, diff));
     wpmState.current.smoothedWpm = wpmState.current.smoothedWpm + clampedDiff;
 
     // Trigger high-frequency UI updates
@@ -193,24 +189,17 @@ export default function PaceCadenceTrainer() {
     }
   }, [isActive, isComplete, currentPaceType, targetRange]);
 
-  // Process incoming finalized words from AssemblyAI
+  // Process incoming finalized words from AssemblyAI (already absolute)
   useEffect(() => {
-    if (!isRecording || !sessionStartRef.current) return;
+    if (!isRecording) return;
     
-    // Map relative timestamps to absolute
-    const absoluteWords = wordTimestamps.map(w => ({
-      start: sessionStartRef.current! + w.start,
-      end: sessionStartRef.current! + w.end
-    }));
-
     const nowMs = Date.now();
-    // Buffer last 10s to prevent memory leaks as per requirements
-    wpmState.current.wordTimestamps = absoluteWords.filter(w => nowMs - w.end <= 10000);
+    // Buffer last 10s to prevent memory leaks
+    wpmState.current.wordTimestamps = wordTimestamps.filter(w => nowMs - w.end <= 10000);
     
     updateWpmMetrics(nowMs);
-    smoothWpm();
-    wpmState.current.lastUpdate = nowMs;
-  }, [wordTimestamps, isRecording, smoothWpm, updateWpmMetrics]);
+    // Visual updates are handled by the interval
+  }, [wordTimestamps, isRecording, updateWpmMetrics]);
 
   // 300ms Interval for continuous window updates (even during silence)
   useEffect(() => {
@@ -219,6 +208,7 @@ export default function PaceCadenceTrainer() {
        const nowMs = Date.now();
        updateWpmMetrics(nowMs);
        smoothWpm();
+       wpmState.current.lastUpdate = nowMs;
     }, 300);
     return () => clearInterval(interval);
   }, [isActive, isComplete, targetRange, currentPaceType, smoothWpm, updateWpmMetrics]);

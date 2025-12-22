@@ -60,6 +60,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
   const sessionBegunRef = useRef(false);
   const startTimeRef = useRef<number | null>(null);
+
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
@@ -149,12 +150,11 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
                 
                 const words = text.split(/\s+/).filter(Boolean);
                 const now = Date.now();
-                const recordingElapsed = now - (startTimeRef.current || now);
                 
                 const dummyWords: WordTimestamp[] = words.map((w, idx) => ({
                    text: w,
-                   start: recordingElapsed - (words.length - idx) * 300, 
-                   end: recordingElapsed - (words.length - idx - 1) * 300
+                   start: now - (words.length - idx) * 300, 
+                   end: now - (words.length - idx - 1) * 300
                 }));
                 setWordTimestamps(prev => [...prev, ...dummyWords]);
               }
@@ -181,97 +181,93 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
         recognitionRef.current = null;
       }
 
-      // --- AssemblyAI Realtime Setup ---
-      const apiKey = import.meta.env.VITE_ASSEMBLYAI_API_KEY;
-      if (apiKey) {
-        console.log("🔗 AssemblyAI Realtime: Initializing transcriber...");
-        try {
-          const rt = new RealtimeTranscriber({
-            apiKey: apiKey,
-            sampleRate: 16000
-          });
-
-          rt.on('open', ({ sessionId }) => {
-            console.log('✅ AssemblyAI Realtime: Connection opened', sessionId);
-            sessionBegunRef.current = true;
-          });
-
-          rt.on('error', (err) => {
-            console.error('❌ AssemblyAI Realtime error:', err);
-            // If we get an auth error, we'll know
-            if (err.message?.includes('4001') || err.message?.includes('authorized')) {
-               console.warn("AssemblyAI Auth failed. Using Web Speech fallback.");
-               toast.error("AssemblyAI Auth failed. WPM will use browser fallback (less accurate).");
-            }
-          });
-
-          rt.on('transcript', (data) => {
-            if (data.message_type === 'FinalTranscript') {
-              const newWords = (data.words || []).map((w) => ({
-                text: w.text,
-                start: w.start,
-                end: w.end
-              }));
-              
-              setWordTimestamps(prev => [...prev, ...newWords]);
-              setTranscript(prev => (prev + " " + (data.text || "")).trim());
-            }
-          });
-
-          rt.on('close', (code, reason) => {
-            console.log('ℹ️ AssemblyAI Realtime: Connection closed', code, reason);
-            sessionBegunRef.current = false;
-          });
-
-          await rt.connect();
-          rtRef.current = rt;
-
-          // Set up Audio Context for capture
-          const audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 16000 });
-          audioContextRef.current = audioCtx;
-          
-          const source = audioCtx.createMediaStreamSource(stream);
-          const processor = audioCtx.createScriptProcessor(4096, 1, 1);
-          processorRef.current = processor;
-
-          processor.onaudioprocess = (e) => {
-            const inputData = e.inputBuffer.getChannelData(0);
-            const pcmData = new Int16Array(inputData.length);
-            for (let i = 0; i < inputData.length; i++) {
-              pcmData[i] = Math.max(-1, Math.min(1, inputData[i])) * 0x7FFF;
-            }
-            
-            if (rtRef.current && sessionBegunRef.current) {
-              rtRef.current.sendAudio(pcmData.buffer);
-            }
-          };
-
-          source.connect(processor);
-          processor.connect(audioCtx.destination);
-        } catch (asaiError) {
-          console.error("AssemblyAI initialization failed:", asaiError);
+      // Start Web Speech ASAP as fallback
+      if (recognitionRef.current) {
+        try { 
+          recognitionRef.current.start(); 
+        } catch (e) { 
+          console.warn('Speech recognition start failed', e); 
         }
       }
 
-      // Start the recorder and recognition (if available)
-      mediaRecorder.start();
-      if (recognitionRef.current) {
-        try { recognitionRef.current.start(); } catch (e) { console.warn('Speech recognition start failed', e); }
-      }
+      // Start MediaRecorder
+      mediaRecorderRef.current.start();
       setIsRecording(true);
-      setTranscript("");
 
+      // --- AssemblyAI Realtime Setup (Isolated) ---
+      const apiKey = import.meta.env.VITE_ASSEMBLYAI_API_KEY;
+      if (apiKey) {
+        (async () => {
+          try {
+             console.log("🔗 AssemblyAI Realtime: Connecting via Raw WebSocket...");
+             // Use the correct v2 realtime URL
+             const socket = new WebSocket(`wss://api.assemblyai.com/v2/realtime/ws?sample_rate=16000&auth_key=${apiKey}`);
+             rtRef.current = socket; // Cast as any for compatibility with existing code
+
+             socket.onopen = () => {
+               console.log("🔓 AssemblyAI Realtime: Socket opened");
+               // No need to send auth_key if passed in query param, but some versions need it.
+               // We'll wait for SessionBegun.
+             };
+
+             socket.onmessage = (event) => {
+               const data = JSON.parse(event.data);
+               if (data.message_type === 'SessionBegun') {
+                  console.log('✅ AssemblyAI Realtime: Session Begun', data.session_id);
+                  sessionBegunRef.current = true;
+               }
+               if (data.message_type === 'FinalTranscript' && data.words) {
+                 const sessionStart = startTimeRef.current || Date.now();
+                 const newWords = data.words.map((w: any) => ({
+                   text: w.text,
+                   start: sessionStart + w.start,
+                   end: sessionStart + w.end
+                 }));
+                 setWordTimestamps(prev => [...prev, ...newWords]);
+                 setTranscript(prev => (prev + " " + data.text).trim());
+               }
+               if (data.error) {
+                 console.error('❌ AssemblyAI Realtime error:', data.error);
+                 // Don't toast here to avoid spamming the user if it's just a transition error
+               }
+             };
+
+             socket.onerror = (err) => console.error('❌ AssemblyAI WebSocket error:', err);
+             socket.onclose = (event) => {
+               console.log('ℹ️ AssemblyAI Realtime: Connection closed', event.code, event.reason);
+               sessionBegunRef.current = false;
+             };
+
+             // Link Audio Context to WebSocket
+             const audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 16000 });
+             audioContextRef.current = audioCtx;
+             const source = audioCtx.createMediaStreamSource(stream);
+             const processor = audioCtx.createScriptProcessor(4096, 1, 1);
+             processorRef.current = processor;
+
+             processor.onaudioprocess = (e) => {
+               if (socket.readyState !== WebSocket.OPEN || !sessionBegunRef.current) return;
+               const inputData = e.inputBuffer.getChannelData(0);
+               const pcmData = new Int16Array(inputData.length);
+               for (let i = 0; i < inputData.length; i++) {
+                 pcmData[i] = Math.max(-1, Math.min(1, inputData[i])) * 0x7FFF;
+               }
+               // Base64 encode for WebSocket transport
+               const b64 = window.btoa(String.fromCharCode(...new Uint8Array(pcmData.buffer)));
+               socket.send(JSON.stringify({ audio_data: b64 }));
+             };
+
+             source.connect(processor);
+             processor.connect(audioCtx.destination);
+          } catch (asaiErr) {
+             console.error("AssemblyAI Realtime background setup failed:", asaiErr);
+          }
+        })();
+      }
     } catch (err) {
       const error = err as Error;
-      console.error("Error starting recording:", error);
-      // Provide more actionable messages for common failure modes
-      if (error.name === "NotAllowedError") {
-        toast.error("Microphone access denied. Please enable microphone permissions in your browser and reload the page.");
-      } else if (error.name === "NotFoundError") {
-        toast.error("No microphone found. Connect a microphone and try again.");
-      } else {
-        toast.error("Failed to start recording. Check microphone permissions and try again.");
-      }
+      console.error("Error starting voice system:", error);
+      toast.error("Failed to start voice system. Please check microphone permissions.");
     }
   }, []);
 
@@ -287,7 +283,11 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
     }
 
     if (rtRef.current) {
-      await rtRef.current.close();
+      const socket = rtRef.current as any as WebSocket;
+      if (socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({ terminate_session: true }));
+      }
+      socket.close();
       rtRef.current = null;
     }
 

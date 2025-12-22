@@ -227,20 +227,4 @@
   .animate-pulse-slow {
     animation: pulse-slow 4s ease-in-out infinite;
   }
-
-  .transcript-reveal {
-    animation: slideInUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-  }
-
-  .transcript-reveal.open {
-    max-height: 2000px;
-  }
-
-  @keyframes slideInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
 }

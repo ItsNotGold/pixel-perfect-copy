@@ -12,6 +12,7 @@ import { useSettings } from "@/hooks/useSettings";
 import { useProgress } from "@/hooks/useProgress";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "sonner";
+import { TranscriptionProvider } from "@/contexts/TranscriptionContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Auth from "./pages/Auth";
@@ -40,7 +41,8 @@ const App = () => {
       <AuthProvider>
         <SubscriptionProvider>
           <LanguageProvider>
-            <TooltipProvider>
+            <TranscriptionProvider>
+              <TooltipProvider>
               <Toaster />
               <Sonner position="top-center" />
               {ActiveAnimation}
@@ -67,7 +69,8 @@ const App = () => {
                 </Routes>
               </BrowserRouter>
             </TooltipProvider>
-          </LanguageProvider>
+          </TranscriptionProvider>
+        </LanguageProvider>
         </SubscriptionProvider>
       </AuthProvider>
     </QueryClientProvider>

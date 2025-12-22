@@ -1,48 +1,27 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
-import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useVoiceRecording } from "@/hooks/useVoiceRecording";
+import { useInvisibleTranscription } from "@/hooks/useInvisibleTranscription";
 import { ExerciseGate } from "@/components/ExerciseGate";
-import { Mic, MicOff, Play, Square, RotateCcw, Trophy, Clock, Feather, Sparkles, Loader2, CheckCircle, XCircle } from "lucide-react";
-import { toast } from "sonner";
+import { Feather, Mic, Square, RotateCcw, Trophy, Sparkles, Loader2, CheckCircle, XCircle, Clock } from "lucide-react";
+import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
-import { supabase } from "@/integrations/supabase/client";
-import { useSettings } from "@/hooks/useSettings";
-import { playTick, playDing } from "@/lib/audio";
-import { speak } from "@/lib/tts";
-
-interface AIFeedback {
-  score: number;
-  wordsUsed: string[];
-  wordsMissed: string[];
-  feedback: string;
-}
+import { Progress } from "@/components/ui/progress";
 
 export default function WordIncorporation() {
   const { language, speechLanguageCode } = useLanguage();
-  const { isRecording: isVoiceRecording, transcript: voiceTranscript, rawTranscript: rawVoiceTranscript, startRecording: startVoice, stopRecording: stopVoice, resetTranscript, saveAudio, audioUrl, audioBlob } = useVoiceRecording();
-
+  const { transcript, words, isRecording, startRecording, stopRecording } = useInvisibleTranscription();
+  
   const [currentPrompt, setCurrentPrompt] = useState<{ prompt: string; words: string[] } | null>(null);
-  const [isActive, setIsActive] = useState(false);
-  const [useVoice, setUseVoice] = useState(true); // Force voice for this exercise
-  const [timeLeft, setTimeLeft] = useState(30);
-  const [isComplete, setIsComplete] = useState(false);
+  const [showResults, setShowResults] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState(-1);
   const [wordDisplayTime, setWordDisplayTime] = useState(0);
-  const [totalAttempts, setTotalAttempts] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(30);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [aiFeedback, setAiFeedback] = useState<AIFeedback | null>(null);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
-  const wordTimerRef = useRef<NodeJS.Timeout | null>(null);
   const { user } = useAuth();
   const { saveAttempt } = useProgress();
-  const { settings } = useSettings();
-
-  const transcript = voiceTranscript;
 
   const pickNewPrompt = useCallback(() => {
     const content = wordIncorporationMaster.content.multilingual[language] || wordIncorporationMaster.content.multilingual.en;
@@ -57,201 +36,91 @@ export default function WordIncorporation() {
 
   const showNextWord = useCallback(() => {
     if (!currentPrompt) return;
-
     setCurrentWordIndex((prev) => {
       const nextIndex = prev + 1;
-      
       if (nextIndex < currentPrompt.words.length) {
-        setWordDisplayTime(6); // 6 seconds per word
-        if (wordTimerRef.current) clearInterval(wordTimerRef.current);
-        wordTimerRef.current = setInterval(() => {
-          setWordDisplayTime((time) => {
-            if (time <= 1) {
-              if (wordTimerRef.current) clearInterval(wordTimerRef.current);
-              setTimeout(() => showNextWord(), 100); 
-              return 0;
-            }
-            return time - 1;
-          });
-        }, 1000);
+        setWordDisplayTime(6);
         return nextIndex;
-      } else {
-        return prev;
       }
+      return prev;
     });
   }, [currentPrompt]);
 
-  const startSession = async () => {
-    setIsActive(true);
+  const handleStart = async () => {
+    setShowResults(false);
     setTimeLeft(30);
     setCurrentWordIndex(-1);
-    setWordDisplayTime(0);
-    resetTranscript();
-    setIsComplete(false);
-    setAiFeedback(null);
-    if (timerRef.current) clearInterval(timerRef.current);
-    timerRef.current = null;
-
-    await startVoice(speechLanguageCode);
-    setTimeout(() => showNextWord(), 3000);
+    await startRecording(speechLanguageCode);
+    setTimeout(() => {
+      setCurrentWordIndex(0);
+      setWordDisplayTime(6);
+    }, 2000); // 2s lead-in
   };
 
-  const analyzeTranscript = useCallback(async (transcriptOverride?: string, audioUrlOverride?: string | null) => {
-    const processedText = (transcriptOverride || transcript).toLowerCase();
-    const rawText = (rawVoiceTranscript || "").toLowerCase();
-    const text = `${processedText} ${rawText}`.trim();
+  const handleStop = useCallback(() => {
+    stopRecording();
+    setIsAnalyzing(true);
+    setTimeout(() => setIsAnalyzing(false), 1500);
+  }, [stopRecording]);
 
-    let effectiveTranscript = text;
-    if (!currentPrompt) return;
+  const checkWordUsage = useCallback((transcript: string, targets: string[]) => {
+    const lowerTranscript = transcript.toLowerCase();
+    return targets.map(word => {
+      const regex = new RegExp(`\\b${word.toLowerCase()}(s|ing|ed|ly)?\\b`, 'i');
+      return {
+        word,
+        used: regex.test(lowerTranscript)
+      };
+    });
+  }, []);
 
-    const wordsUsed: string[] = [];
-    const wordsMissed: string[] = [];
-
-    const escapeRegex = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-
-    const recalculateWords = (newTranscript: string) => {
-      wordsUsed.length = 0;
-      wordsMissed.length = 0;
-      currentPrompt.words.forEach((word) => {
-        const w = word.toLowerCase();
-        const patterns = [
-          new RegExp(`\\b${escapeRegex(w)}\\b`, "i"),
-          new RegExp(`\\b${escapeRegex(w)}s?\\b`, "i"),
-          new RegExp(`\\b${escapeRegex(w)}(ing|ed|ly|'s)?\\b`, "i"),
-          new RegExp(`${escapeRegex(w)}`, "i"),
-        ];
-        let found = false;
-        patterns.forEach((pattern) => { if (pattern.test(newTranscript.toLowerCase())) found = true; });
-        if (found) wordsUsed.push(word); else wordsMissed.push(word);
-      });
-    };
-
-    recalculateWords(effectiveTranscript);
-    setIsComplete(true);
-    setTotalAttempts((prev) => prev + 1);
-
-    if (text.trim().length >= 20) {
-      setIsAnalyzing(true);
-      try {
-        const { data, error } = await supabase.functions.invoke("evaluate-exercise", {
-          body: {
-            type: "word-incorporation",
-            language,
-            data: { transcript: text, targetWords: currentPrompt.words, audioUrl: audioUrlOverride },
-          },
-        });
-
-        if (!error && data) {
-          const result = data as AIFeedback;
-          setAiFeedback(result);
-          if (result.wordsUsed && result.wordsUsed.length > 0) {
-            wordsUsed.splice(0, wordsUsed.length, ...result.wordsUsed);
-            wordsMissed.splice(0, wordsMissed.length, ...result.wordsMissed);
-          } else if ((data as any)?._raw) {
-            const raw = (data as any)._raw;
-            if (raw.transcript && raw.transcript.length > effectiveTranscript.length) {
-              effectiveTranscript = raw.transcript;
-              recalculateWords(effectiveTranscript);
-            }
-            if (raw.words && Array.isArray(raw.words) && raw.words.length > 0) {
-              const tokenTexts = raw.words.map((w: any) => (w.word || "").toLowerCase());
-              currentPrompt.words.forEach((word) => {
-                const w = word.toLowerCase();
-                const found = tokenTexts.some((t: string) => t === w || t.includes(w) || w.includes(t));
-                if (found && !wordsUsed.includes(word)) {
-                   wordsUsed.push(word);
-                   const mIdx = wordsMissed.indexOf(word);
-                   if (mIdx > -1) wordsMissed.splice(mIdx, 1);
-                }
-              });
-            }
-          }
-        }
-      } catch (err) {
-        console.error("AI evaluation error:", err);
-      } finally {
-        setIsAnalyzing(false);
-      }
-    }
-
-    if (user) {
-      const finalUrl = audioUrlOverride ?? (await saveAudio());
-      const res = await saveAttempt({
+  const handleSave = useCallback(async () => {
+    if (user && transcript && currentPrompt) {
+      const results = checkWordUsage(transcript, currentPrompt.words);
+      const usedCount = results.filter(r => r.used).length;
+      const score = Math.round((usedCount / currentPrompt.words.length) * 100);
+      
+      await saveAttempt({
         exerciseId: "word-incorporation",
-        score: Math.round((wordsUsed.length / currentPrompt.words.length) * 100),
+        score,
         maxScore: 100,
-        answers: {
-          transcript: effectiveTranscript,
+        answers: { 
+          transcript, 
           targetWords: currentPrompt.words,
-          wordsUsed,
-          wordsMissed,
-          audioUrl: finalUrl,
-        },
-      });
-      if (!res?.success) toast.error("Failed to save progress");
-    }
-
-    if (wordsUsed.length === currentPrompt.words.length) {
-      toast.success("Perfect! You incorporated all words!");
-    } else {
-      toast.info(`You used ${wordsUsed.length}/${currentPrompt.words.length} words.`);
-    }
-  }, [transcript, rawVoiceTranscript, currentPrompt, language, user, saveAudio, saveAttempt]);
-
-  const stopSession = useCallback(async () => {
-    setIsActive(false);
-    if (timerRef.current) clearInterval(timerRef.current);
-    if (wordTimerRef.current) clearInterval(wordTimerRef.current);
-    
-    const { blob, transcript: finalTranscript } = await stopVoice();
-    let url: string | null = null;
-    if (blob) {
-      url = await saveAudio(blob);
-    }
-
-    await analyzeTranscript(finalTranscript, url);
-    if (settings?.audio?.soundEffects) playDing();
-  }, [stopVoice, saveAudio, analyzeTranscript, settings]);
-
-  const startMainTimer = useCallback(() => {
-    if (timerRef.current) return;
-    timerRef.current = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          stopSession();
-          return 0;
+          wordsUsed: results.filter(r => r.used).map(r => r.word),
+          wordsMissed: results.filter(r => !r.used).map(r => r.word)
         }
-        const next = prev - 1;
-        if (settings?.practice?.timerSounds && next <= 5) {
-          try { playTick(); } catch (e) { console.warn(e); }
-        }
-        return next;
       });
-    }, 1000);
-  }, [stopSession, settings]);
+    }
+  }, [user, transcript, currentPrompt, checkWordUsage, saveAttempt]);
 
   useEffect(() => {
-    if (isActive && currentWordIndex === 0) {
-      startMainTimer();
+    let timer: NodeJS.Timeout;
+    if (isRecording && timeLeft > 0) {
+      timer = setInterval(() => {
+        setTimeLeft(prev => prev - 1);
+        setWordDisplayTime(prev => {
+           if (prev <= 1 && currentWordIndex < (currentPrompt?.words.length || 0) - 1) {
+              showNextWord();
+              return 6;
+           }
+           return Math.max(0, prev - 1);
+        });
+      }, 1000);
+    } else if (timeLeft === 0 && isRecording) {
+      handleStop();
     }
-  }, [isActive, currentWordIndex, startMainTimer]);
+    return () => clearInterval(timer);
+  }, [isRecording, timeLeft, currentWordIndex, currentPrompt, showNextWord, handleStop]);
 
+  useEffect(() => {
+    if (!isRecording && transcript && !isAnalyzing) {
+       handleSave();
+    }
+  }, [isRecording, transcript, isAnalyzing, handleSave]);
 
-
-  const handleRestart = () => {
-    pickNewPrompt();
-    resetTranscript();
-    setIsComplete(false);
-    setTimeLeft(30);
-    setCurrentWordIndex(-1);
-    setWordDisplayTime(0);
-    setAiFeedback(null);
-  };
-
-  const progress = ((30 - timeLeft) / 30) * 100;
-  const wordsUsed = aiFeedback?.wordsUsed || [];
-  const wordsMissed = aiFeedback?.wordsMissed || [];
-  const score = aiFeedback?.score || Math.round((wordsUsed.length / (currentPrompt?.words.length || 1)) * 100);
+  const usageResults = currentPrompt ? checkWordUsage(transcript, currentPrompt.words) : [];
+  const score = currentPrompt ? Math.round((usageResults.filter(r => r.used).length / currentPrompt.words.length) * 100) : 0;
 
   return (
     <MainLayout>
@@ -262,178 +131,147 @@ export default function WordIncorporation() {
               <Feather className="h-7 w-7 text-primary-foreground" />
             </div>
             <h1 className="mb-2 font-display text-3xl text-foreground">Word Incorporation</h1>
-            <p className="text-muted-foreground">Incorporate specific words into your speech</p>
+            <p className="text-muted-foreground">"Master the art of lexical precision."</p>
           </div>
 
-          <div className="mb-8 flex items-center justify-center gap-6 animate-slide-up">
-            <div className="rounded-xl glass p-4 text-center">
-              <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
-                <Trophy className="h-5 w-5" />
-                {isComplete ? score : "--"}
-              </div>
-              <div className="text-xs text-muted-foreground">Score</div>
-            </div>
-            <div className="rounded-xl glass p-4 text-center">
-              <div className="text-2xl font-bold text-foreground">{totalAttempts}</div>
-              <div className="text-xs text-muted-foreground">Attempts</div>
-            </div>
-          </div>
-
-          <div className="rounded-2xl glass p-8 shadow-card animate-scale-in">
-            {/* Progress bar */}
-            {isActive && (
-              <div className="mb-6">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-medium">Time Remaining</span>
-                  <span className="text-sm text-muted-foreground">{timeLeft}s</span>
-                </div>
-                <Progress value={progress} className="h-2" />
-              </div>
-            )}
-
-            {/* Initial prompt - Persistent at the top */}
-            {currentPrompt && !isComplete && (
-              <div className="mb-6 text-center border-b border-white/10 pb-6">
-                <h3 className="text-xl font-bold text-foreground mb-3">{currentPrompt.prompt}</h3>
-                {!isActive && (
-                  <p className="text-muted-foreground text-sm max-w-md mx-auto">
-                    You will have 30 seconds to speak. Words will appear one by one — incorporate them naturally into your speech.
-                  </p>
+          <div className="rounded-2xl glass p-8 shadow-card overflow-hidden">
+            {/* CLEAN RECORDING UI */}
+            {(!showResults || isRecording) && (
+              <div className="space-y-8 animate-in fade-in duration-500">
+                {currentPrompt && (
+                   <div className="text-center p-6 bg-primary/5 rounded-2xl border border-primary/10">
+                      <span className="text-xs font-bold text-primary uppercase tracking-widest mb-2 block">Prompt</span>
+                      <h3 className="text-xl font-medium text-foreground">{currentPrompt.prompt}</h3>
+                   </div>
                 )}
-              </div>
-            )}
 
-            {/* Word display during exercise */}
-            {isActive && currentWordIndex >= 0 && currentWordIndex < (currentPrompt?.words.length || 0) && (
-              <div className="mb-8 text-center animate-in fade-in zoom-in duration-300">
-                <div className="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-2 opacity-70">Target Word</div>
-                <div className="text-5xl font-extrabold text-foreground mb-4 drop-shadow-sm">
-                  {currentPrompt?.words[currentWordIndex]}
+                <div className="flex flex-wrap justify-center gap-3">
+                   {currentPrompt?.words.map((word, i) => (
+                     <div 
+                        key={word} 
+                        className={`px-4 py-2 rounded-full border text-sm font-semibold transition-all duration-300 ${
+                          currentWordIndex === i 
+                          ? "bg-primary text-primary-foreground border-primary scale-110 shadow-glow" 
+                          : "bg-muted/50 text-muted-foreground border-border/50"
+                        }`}
+                      >
+                        {word}
+                      </div>
+                   ))}
                 </div>
-                <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground bg-white/5 w-fit mx-auto px-4 py-1.5 rounded-full">
-                  <Clock className="h-3.5 w-3.5" />
-                  Next word in: <span className="font-mono font-bold text-primary">{wordDisplayTime}s</span>
-                </div>
-                <div className="text-[10px] text-muted-foreground/50 mt-4 uppercase tracking-widest font-medium">
-                  Word {currentWordIndex + 1} of {currentPrompt?.words.length}
-                </div>
-              </div>
-            )}
 
-            {/* Lead-in countdown */}
-            {isActive && currentWordIndex < 0 && (
-              <div className="mb-12 text-center py-8">
-                <div className="text-sm text-muted-foreground uppercase tracking-widest mb-2">Get ready...</div>
-                <div className="text-4xl font-bold text-primary animate-pulse italic">Starting soon</div>
-              </div>
-            )}
-
-            {/* Results */}
-            {isComplete && currentPrompt && (
-              <div className="mb-6">
-                <h3 className="text-xl font-semibold mb-4 text-center">Results</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <h4 className="font-medium text-green-600 flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4" />
-                      Words Used ({wordsUsed.length})
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {wordsUsed.map((word, index) => (
-                        <span key={index} className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
-                          {word}
-                        </span>
-                      ))}
+                <div className="text-center">
+                  <div className="max-w-xs mx-auto mb-6">
+                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest mb-2">
+                       <span className={timeLeft <= 5 ? "text-destructive" : "text-muted-foreground"}>Session Time</span>
+                       <span className="text-primary">{timeLeft}s</span>
                     </div>
+                    <Progress value={(timeLeft / 30) * 100} className="h-2" />
                   </div>
-                  <div className="space-y-2">
-                    <h4 className="font-medium text-red-600 flex items-center gap-2">
-                      <XCircle className="h-4 w-4" />
-                      Words Missed ({wordsMissed.length})
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {wordsMissed.map((word, index) => (
-                        <span key={index} className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">
-                          {word}
-                        </span>
-                      ))}
+
+                  {isRecording && currentWordIndex >= 0 && (
+                    <div className="animate-in fade-in zoom-in duration-500 text-center mb-8">
+                      <div className="text-[10px] font-black text-primary uppercase tracking-[0.3em] mb-2">Active Word</div>
+                      <div className="text-5xl font-black text-foreground mb-4 drop-shadow-xl">
+                        {currentPrompt?.words[currentWordIndex]}
+                      </div>
+                      <div className="flex items-center justify-center gap-2 text-xs font-bold bg-white/5 py-2 px-4 rounded-full mx-auto w-fit">
+                        <Clock className="h-4 w-4 text-primary" />
+                        Next in: <span className="text-primary tabular-nums">{wordDisplayTime}s</span>
+                      </div>
                     </div>
-                  </div>
+                  )}
+
+                  {!isRecording && !isAnalyzing && !transcript && (
+                    <Button onClick={handleStart} size="xl" variant="hero" className="shadow-glow group px-10">
+                      <Mic className="mr-3 h-5 w-5 group-hover:scale-125 transition-transform" />
+                      Begin Exercise
+                    </Button>
+                  )}
+
+                  {isRecording && (
+                    <div className="space-y-4">
+                      <Button onClick={handleStop} size="xl" variant="destructive" className="shadow-lg px-10">
+                        <Square className="mr-3 h-5 w-5" />
+                        Finish Early
+                      </Button>
+                      <p className="text-xs font-bold text-destructive uppercase tracking-widest animate-pulse">
+                        Invisible STT Listening...
+                      </p>
+                    </div>
+                  )}
+
+                  {isAnalyzing && (
+                    <div className="py-10">
+                      <Loader2 className="h-10 w-10 text-primary animate-spin mx-auto mb-4" />
+                      <p className="font-medium">Validating word incorporation...</p>
+                    </div>
+                  )}
                 </div>
-                {aiFeedback?.feedback && (
-                  <div className="mt-4 p-4 bg-muted rounded-lg">
-                    <p className="text-sm">{aiFeedback.feedback}</p>
+              </div>
+            )}
+
+            {/* REVEAL + ANALYSIS */}
+            {!isRecording && !isAnalyzing && transcript && (
+              <div className="animate-in slide-in-from-bottom-5 duration-500">
+                {!showResults ? (
+                  <div className="text-center py-10">
+                    <div className="mb-6 p-8 rounded-full bg-primary/10 w-fit mx-auto border-2 border-primary/20 animate-pulse">
+                      <Sparkles className="h-12 w-12 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">Recording Captured</h3>
+                    <p className="text-muted-foreground mb-8">Click below to check your lexical accuracy.</p>
+                    <Button onClick={() => setShowResults(true)} size="xl" variant="accent" className="shadow-glow px-12 py-8 rounded-2xl group">
+                       <CheckCircle className="mr-3 h-6 w-6 group-hover:scale-110 transition-all" />
+                       View Results
+                    </Button>
+                  </div>
+                ) : (
+                  <div className="transcript-reveal open space-y-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                       <div className="bg-primary/10 p-6 rounded-2xl text-center border border-primary/20">
+                          <Trophy className="h-8 w-8 text-primary mx-auto mb-2" />
+                          <div className="text-3xl font-black">{score}%</div>
+                          <div className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Final Score</div>
+                       </div>
+                       <div className="bg-emerald-500/10 p-6 rounded-2xl text-center border border-emerald-500/20 md:col-span-2 flex flex-col justify-center">
+                          <div className="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-2">Words Incorporated</div>
+                          <div className="flex flex-wrap justify-center gap-2">
+                             {usageResults.map(({word, used}) => (
+                               <div key={word} className={`px-3 py-1 rounded-full text-xs font-bold border transition-colors ${
+                                  used ? "bg-emerald-500 text-white border-emerald-400" : "bg-muted text-muted-foreground border-border/50 opacity-40"
+                               }`}>
+                                 {used ? "✅" : "❌"} {word}
+                               </div>
+                             ))}
+                          </div>
+                       </div>
+                    </div>
+
+                    <div className="p-6 bg-muted/30 rounded-2xl border border-border/50">
+                       <h4 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-4">Speech Transcript</h4>
+                       <p className="text-lg leading-relaxed text-foreground">
+                         {transcript.split(' ').map((word, i) => {
+                           const cleanWord = word.toLowerCase().replace(/[^a-z]/g, '');
+                           const isTarget = currentPrompt?.words.some(t => {
+                             const lowerT = t.toLowerCase();
+                             return cleanWord === lowerT || cleanWord.includes(lowerT);
+                           });
+                           return (
+                             <span key={i} className={isTarget ? "bg-primary/20 px-1 rounded font-bold text-primary" : ""}>
+                               {word}{' '}
+                             </span>
+                           );
+                         })}
+                       </p>
+                    </div>
+
+                    <Button onClick={handleStart} variant="hero" className="w-full py-8 text-lg rounded-2xl shadow-lg">
+                      <RotateCcw className="mr-3 h-5 w-5" />
+                      Try New Words
+                    </Button>
                   </div>
                 )}
-                {audioUrl && (
-                  <div className="mt-4 p-4 bg-muted/50 rounded-lg">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Play className="h-5 w-5 text-primary" />
-                      <span className="font-medium text-foreground">Listen to Your Recording</span>
-                    </div>
-                    <audio controls className="w-full">
-                      <source src={audioUrl} type="audio/webm" />
-                      Your browser does not support the audio element.
-                    </audio>
-                  </div>
-                )}
-              </div>
-            )}
-
-            {/* Controls */}
-            <div className="flex justify-center gap-4">
-              {!isActive && !isComplete && (
-                <Button onClick={startSession} size="xl" variant="hero" className="gap-2 shadow-glow">
-                  <Play className="h-5 w-5" />
-                  Start Exercise
-                </Button>
-              )}
-
-              {isActive && (
-                <Button onClick={stopSession} variant="destructive" size="lg" className="gap-2 shadow-lg hover:shadow-xl transition-all">
-                  <Square className="h-5 w-5 fill-current" />
-                  Stop Early
-                </Button>
-              )}
-
-              {isComplete && (
-                <Button onClick={handleRestart} size="lg" variant="outline" className="gap-2">
-                  <RotateCcw className="h-5 w-5" />
-                  Try Again
-                </Button>
-              )}
-            </div>
-
-            {/* Recording indicator */}
-            {isVoiceRecording && (
-              <div className="mt-8 flex flex-col items-center justify-center gap-3 animate-fade-in">
-                <div className="relative flex h-16 w-16 items-center justify-center">
-                  <div className="absolute inset-0 animate-ping rounded-full bg-destructive/20" />
-                  <div className="absolute inset-0 animate-pulse rounded-full bg-destructive/10" />
-                  <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-destructive text-destructive-foreground shadow-lg">
-                    <Mic className="h-6 w-6" />
-                  </div>
-                </div>
-                <span className="text-sm font-medium text-destructive animate-pulse">Recording active...</span>
-              </div>
-            )}
-
-            {/* Local playback so user can listen to their recording */}
-            {audioBlob && (
-              <div className="mt-4 p-4 rounded-lg bg-muted/10">
-                <div className="mb-2 text-sm font-medium">Play your recording</div>
-                <audio controls className="w-full">
-                  <source src={URL.createObjectURL(audioBlob)} type={audioBlob.type || "audio/webm"} />
-                  Your browser does not support audio playback.
-                </audio>
-              </div>
-            )}
-
-            {/* Analyzing indicator */}
-            {isAnalyzing && (
-              <div className="mt-4 flex items-center justify-center gap-2 text-blue-500">
-                <Loader2 className="h-5 w-5 animate-spin" />
-                <span className="text-sm font-medium">Analyzing your speech...</span>
               </div>
             )}
           </div>

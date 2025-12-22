@@ -10,6 +10,8 @@ export interface WordTimestamp {
 declare global {
   interface Window {
     webkitAudioContext: typeof AudioContext;
+    SpeechRecognition: any;
+    webkitSpeechRecognition: any;
   }
 }
 
@@ -48,6 +50,7 @@ export function useInvisibleTranscription(): UseInvisibleTranscriptionReturn {
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
   const socketRef = useRef<WebSocket | null>(null);
+  const recognitionRef = useRef<any>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
   const processorRef = useRef<ScriptProcessorNode | null>(null);
   const startTimeRef = useRef<number | null>(null);
@@ -61,6 +64,9 @@ export function useInvisibleTranscription(): UseInvisibleTranscriptionReturn {
       setAudioBlob(null);
       startTimeRef.current = Date.now();
       sessionBegunRef.current = false;
+
+      // Check for browser support
+      const SpeechRecognitionConstructor = window.SpeechRecognition || window.webkitSpeechRecognition || null;
 
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
         toast.error("Microphone capture is not supported in this browser.");
@@ -138,6 +144,50 @@ export function useInvisibleTranscription(): UseInvisibleTranscriptionReturn {
         processor.connect(audioCtx.destination);
       }
 
+      // Setup Web Speech API as fallback
+      if (SpeechRecognitionConstructor) {
+        const recognition = new SpeechRecognitionConstructor();
+        recognition.continuous = true;
+        recognition.interimResults = true;
+        recognition.lang = languageCode;
+
+        recognition.onresult = (event: any) => {
+          for (let i = event.resultIndex; i < event.results.length; i++) {
+            const result = event.results[i];
+            if (result.isFinal) {
+              const text = result[0].transcript;
+              // If Whisper is NOT active or NOT begun, use Web Speech for accumulation
+              if (!socketRef.current || !sessionBegunRef.current) {
+                const now = Date.now();
+                const sessionStart = startTimeRef.current || now;
+                const offset = now - sessionStart;
+                
+                const words = text.split(/\s+/).filter(Boolean);
+                const dummyWords: WordTimestamp[] = words.map((w, idx) => ({
+                   text: w,
+                   start: offset - (words.length - idx) * 300, 
+                   end: offset - (words.length - idx - 1) * 300
+                }));
+                
+                wordTimestampsRef.current.push(...dummyWords);
+                transcriptRef.current = (transcriptRef.current + " " + text).trim();
+              }
+            }
+          }
+        };
+
+        recognition.onerror = (event: any) => {
+          console.error("Speech recognition error:", event.error);
+        };
+
+        recognitionRef.current = recognition;
+        try {
+          recognition.start();
+        } catch (e) {
+          console.warn('Speech recognition start failed', e);
+        }
+      }
+
       mediaRecorder.start();
       setIsRecording(true);
     } catch (err) {
@@ -148,6 +198,16 @@ export function useInvisibleTranscription(): UseInvisibleTranscriptionReturn {
 
   const stopRecording = useCallback(async () => {
     setIsProcessing(true);
+
+    // Stop Web Speech
+    if (recognitionRef.current) {
+      try {
+        recognitionRef.current.stop();
+      } catch (e) {
+        console.warn('Speech recognition stop failed', e);
+      }
+      recognitionRef.current = null;
+    }
 
     // Stop WebSocket
     if (socketRef.current) {

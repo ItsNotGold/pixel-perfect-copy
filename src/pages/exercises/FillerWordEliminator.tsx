@@ -80,28 +80,28 @@ export default function FillerWordEliminator() {
   };
 
   const analyzeFillers = (text: string, words: WordTimestamp[]) => {
-    const fillerPatterns = [
-      { word: "um", regex: /\bum\b/gi },
-      { word: "uh", regex: /\buh\b/gi },
-      { word: "like", regex: /\blike\b/gi },
-      { word: "you know", regex: /\byou know\b/gi },
-      { word: "so", regex: /\bso\b/gi },
-      { word: "you know what", regex: /\byou know what\b/gi }
-    ];
+    const content = fillerWordEliminatorMaster.content.multilingual[language] || fillerWordEliminatorMaster.content.multilingual.en;
+    const targets = content.targetFillerWords;
+    
+    // Sort by length descending to match longer phrases first
+    const sortedTargets = [...targets].sort((a, b) => b.length - a.length);
 
     const detections: FillerDetection[] = [];
     let totalCount = 0;
 
-    fillerPatterns.forEach(p => {
-      const matches = text.match(p.regex);
+    sortedTargets.forEach(filler => {
+      const escaped = filler.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`(?<=^|[^a-zA-Z0-9À-ÿ])(${escaped})(?=[^a-zA-Z0-9À-ÿ]|$)`, 'gi');
+      
+      const matches = text.match(regex);
       if (matches) {
         // Find positions from word timestamps if possible
         const positions = words
-          .filter(w => w.text.toLowerCase().includes(p.word.toLowerCase()))
+          .filter(w => w.text.toLowerCase().includes(filler.toLowerCase()))
           .map(w => w.start / 1000);
           
         detections.push({
-          word: p.word,
+          word: filler,
           count: matches.length,
           positions: positions.length > 0 ? positions : []
         });

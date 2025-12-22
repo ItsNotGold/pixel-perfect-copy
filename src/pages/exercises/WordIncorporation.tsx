@@ -196,15 +196,19 @@ export default function WordIncorporation() {
               )}
 
               {currentPrompt && !isActive && !isComplete && (
-                <div className="mb-10 text-center animate-fade-in">
-                   <h3 className="text-2xl font-bold text-foreground mb-4">{currentPrompt.prompt}</h3>
-                   <div className="flex flex-wrap justify-center gap-2 mb-6">
-                      {currentPrompt.words.map(w => (
-                        <span key={w} className="px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-sm font-medium text-muted-foreground italic">
-                          "{w}"
-                        </span>
-                      ))}
-                   </div>
+                <div className="flex flex-col gap-8">
+                  {/* Instructions/Prompt - Always visible initially */}
+                  <div className="text-center animate-fade-in">
+                    <h3 className="text-2xl font-bold text-foreground mb-4">{currentPrompt.prompt}</h3>
+                    <p className="text-muted-foreground max-w-md mx-auto italic">
+                      "Speak for 30 seconds. Incorporate the words that appear on screen naturally into your speech."
+                    </p>
+                  </div>
+
+                  <Button onClick={startSession} size="xl" variant="hero" className="w-full shadow-glow max-w-xs mx-auto">
+                    <Play className="h-5 w-5 mr-2" />
+                    Begin Exercise
+                  </Button>
                 </div>
               )}
 
@@ -227,26 +231,20 @@ export default function WordIncorporation() {
                 </div>
               )}
 
-              <div className="flex flex-col gap-4 max-w-xs mx-auto">
-                {!isActive && !isComplete && (
-                  <Button onClick={startSession} size="xl" variant="hero" className="w-full shadow-glow">
-                    <Play className="h-5 w-5 mr-2" />
-                    Begin Exercise
-                  </Button>
-                )}
-                {isActive && (
-                  <Button onClick={stopSession} variant="destructive" size="xl" className="w-full shadow-lg">
-                    <Square className="h-5 w-5 mr-2 fill-current" />
-                    Finish Early
-                  </Button>
-                )}
-                {isComplete && !showResults && (
-                  <Button variant="accent" size="xl" className="w-full shadow-glow animate-bounce" onClick={() => setShowResults(true)}>
-                    <Sparkles className="h-5 w-5 mr-2" />
-                    Check Results
-                  </Button>
-                )}
-              </div>
+                <div className="flex flex-col gap-4 max-w-xs mx-auto">
+                  {isActive && (
+                    <Button onClick={stopSession} variant="destructive" size="xl" className="w-full shadow-lg">
+                      <Square className="h-5 w-5 mr-2 fill-current" />
+                      Finish Early
+                    </Button>
+                  )}
+                  {isComplete && !showResults && (
+                    <Button variant="accent" size="xl" className="w-full shadow-glow animate-bounce" onClick={() => setShowResults(true)}>
+                      <Sparkles className="h-5 w-5 mr-2" />
+                      Check Results
+                    </Button>
+                  )}
+                </div>
             </div>
 
             {/* Post-Analysis Verification Table */}

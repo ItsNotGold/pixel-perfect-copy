@@ -227,7 +227,7 @@ export const wordIncorporationMaster: ExerciseMaster<WordIncorporationContent> =
                 prompts: [
                     {
                         prompt: "Parlez de votre routine quotidienne",
-                        words: ["matinée", "petit déjeuner", "trajet", "travail", "déjeuner"]
+                        words: ["matinée", "petit-déjeuner", "trajet", "travail", "déjeuner"]
                     },
                     {
                         prompt: "Décrivez votre passe-temps préféré",

@@ -1,6 +1,5 @@
 import { useState, useRef, useCallback } from "react";
 import { toast } from "sonner";
-import { AssemblyAI, RealtimeTranscriber } from 'assemblyai';
 import { supabase } from "@/integrations/supabase/client";
 
 // Type definitions for Web Speech API
@@ -146,8 +145,8 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
             const result = event.results[i];
             if (result.isFinal) {
               const text = result[0].transcript;
-              // If AssemblyAI is NOT active or NOT begun, use Web Speech for basic transcription and dummy timestamps
-              if (!import.meta.env.VITE_ASSEMBLYAI_API_KEY || !sessionBegunRef.current) {
+              // If Whisper is NOT active or NOT begun, use Web Speech for basic transcription and dummy timestamps
+              if (!import.meta.env.VITE_WHISPER_URL || !sessionBegunRef.current) {
                 setTranscript((prev) => (prev + " " + text).trim());
                 
                 const words = text.split(/\s+/).filter(Boolean);
@@ -166,7 +165,7 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
           }
           const raw = interim.trim();
           setRawTranscript(raw);
-          if (!import.meta.env.VITE_ASSEMBLYAI_API_KEY) {
+          if (!import.meta.env.VITE_WHISPER_URL) {
             setTranscript(raw); 
           }
         };
@@ -201,19 +200,24 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
       if (apiKey) {
         (async () => {
           try {
-             console.log(`🔗 AssemblyAI Realtime: Connecting via Raw WebSocket [Language: ${languageCode}]...`);
-             
-             // Map app speech language code to AssemblyAI codes (e.g. 'en-US' -> 'en', 'fr-FR' -> 'fr', 'es-ES' -> 'es')
-             const asaiLangMap: Record<string, string> = {
+             // Map app speech language code to internal codes (e.g. 'en-US' -> 'en', 'fr-FR' -> 'fr', 'es-ES' -> 'es')
+             const langMap: Record<string, string> = {
                'en-US': 'en',
                'fr-FR': 'fr',
                'es-ES': 'es'
              };
-             const asaiLang = asaiLangMap[languageCode] || 'en';
+             const targetLang = langMap[languageCode] || 'en';
              
-             // Use the correct v2 realtime URL with language_code
-             const socket = new WebSocket(`wss://api.assemblyai.com/v2/realtime/ws?sample_rate=16000&auth_key=${apiKey}&language_code=${asaiLang}`);
-             rtRef.current = socket as any; 
+             // Use Distil-Whisper server if configured, otherwise this section is skipped
+             const whisperUrl = import.meta.env.VITE_WHISPER_URL;
+             if (!whisperUrl) {
+               console.warn("⚠️ Distil-Whisper URL not configured (VITE_WHISPER_URL). Realtime transcription disabled.");
+               return;
+             }
+
+             console.log(`🔗 Connecting to Distil-Whisper: ${whisperUrl} [Language: ${languageCode}]...`);
+             const socket = new WebSocket(whisperUrl);
+             rtRef.current = socket; 
 
              socket.onopen = () => {
                console.log("🔓 AssemblyAI Realtime: Socket opened");
@@ -347,71 +351,23 @@ export function useVoiceRecording(): UseVoiceRecordingReturn {
 
     // If we have a recorded blob (from the recorder), try to transcribe it using the configured service
     // Use the local recorded blob variable instead of referencing the possibly-stale state value
+    // If we have a recorded blob, try to transcribe it 
     let finalTranscriptVal = rawTranscript;
     if (recordedBlob) {
       try {
-
-        // Only attempt AssemblyAI if an API key is configured
-        const apiKey = import.meta.env.VITE_ASSEMBLYAI_API_KEY;
-        if (apiKey) {
-          const client = new AssemblyAI({ apiKey });
-          const audioFile = new File([recordedBlob], 'recording.webm', { type: 'audio/webm' });
-          const uploadUrl = await client.files.upload(audioFile);
-
-          // Map language code for REST as well
-          const asaiLangMap: Record<string, string> = {
-            'en-US': 'en',
-            'fr-FR': 'fr',
-            'es-ES': 'es'
-          };
-          // We don't have languageCode in scope directly from state easy, but startRecording received it.
-          // However, stopRecording is called later. The language of the app might have changed? 
-          // Usually not during a session. We'll use the one from the recognitionRef if available, 
-          // or derive from speechLanguageCode if we could access context.
-          // Since this is a hook, we can just grab the language from window or a more reliable source.
-          // Actually, let's look at how startRecording was called.
-          // I will store the language in a ref during startRecording.
-
-          const asaiLang = asaiLangMap[activeLanguageRef.current] || 'en';
-          console.log(`📡 AssemblyAI Batch: Requesting transcription [Language: ${activeLanguageRef.current} -> ${asaiLang}]`);
-          
-          // Ask ASR to preserve disfluencies where possible and punctuate
-          const transcriptParams: any = {
-            audio: uploadUrl,
-            punctuate: true,
-            format_text: true,
-            disfluencies: true,
-          };
-          
-          // Use explicit language code or fallback to detection if mapping failed (though mapping should be exhaustive for EN/FR/ES)
-          if (asaiLangMap[activeLanguageRef.current]) {
-            transcriptParams.language_code = asaiLang;
-          } else {
-            console.log("🔍 AssemblyAI Batch: No explicit mapping found, enabling language_detection as fallback.");
-            transcriptParams.language_detection = true;
-          }
-
-          const transcriptResponse = await client.transcripts.transcribe(transcriptParams);
-
-          if (transcriptResponse.status === 'completed') {
-            // Merge processed transcript with raw interim transcript to preserve filler detections
-            const processed = transcriptResponse.text || '';
-            const merged = [processed, rawTranscript].filter(Boolean).join(' ');
-            setTranscript(merged);
-            finalTranscriptVal = merged;
-          } else {
-
-            toast.error('Transcription failed');
-          }
-        } else {
-          // No remote ASR configured — keep the raw transcript captured by the Web Speech API
+        const whisperUrl = import.meta.env.VITE_WHISPER_URL;
+        if (whisperUrl) {
+          // Attempt final transcription via the Distil-Whisper REST endpoint (to be implemented in server.py)
+          // For now, we reuse the raw transcript to maintain flow if REST is unavailable
           setTranscript(rawTranscript);
           finalTranscriptVal = rawTranscript;
-
+          console.log("📝 Using raw real-time transcript as final result.");
+        } else {
+          setTranscript(rawTranscript);
+          finalTranscriptVal = rawTranscript;
         }
       } catch (error) {
-        console.error('Transcription error:', error);
-        // Don't surface a toast for transcription errors in order to keep recording flow smooth
+        console.error('Final transcription error:', error);
       }
     }
 

@@ -247,7 +247,7 @@ export const wordIncorporationMaster: ExerciseMaster<WordIncorporationContent> =
                     },
                     {
                         prompt: "Discutez des choix de vie saine",
-                        words: ["nutrition", "exercice", "bien être", "équilibre", "discipline"]
+                        words: ["nutrition", "exercice", "bien-être", "équilibre", "discipline"]
                     },
                     {
                         prompt: "Parlez de vos objectifs de carrière",

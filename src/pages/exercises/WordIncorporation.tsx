@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useInvisibleTranscription } from "@/hooks/useInvisibleTranscription";
+import { useInvisibleTranscription } from "@/contexts/TranscriptionContext";
 import { ExerciseGate } from "@/components/ExerciseGate";
 import { Feather, Mic, Square, RotateCcw, Trophy, Sparkles, Loader2, CheckCircle, XCircle, Clock } from "lucide-react";
 import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";

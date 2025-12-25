@@ -7,13 +7,21 @@ export interface WordTimestamp {
   end: number;
 }
 
-// Define the structure of the output from the Whisper worker
-interface WhisperOutput {
+// This is the raw output from the transformers.js pipeline
+interface RawWhisperOutput {
   text: string;
-  chunks: WordTimestamp[];
+  chunks: {
+    text: string;
+    timestamp: [number, number];
+  }[];
 }
 
-// Define the new return type for the hook, including loading status and state-driven transcript
+// Message sent from the worker to the UI
+type WorkerMessage =
+  | { status: 'loading' } | { status: 'ready' } | { status: 'transcribing' }
+  | { status: 'complete', output: RawWhisperOutput } | { status: 'error', message: string, error?: string }
+  | { status: 'progress', progress: number, file: string, loaded: number, total: number };
+
 interface UseWhisperTranscriptionReturn {
   isRecording: boolean;
   isProcessing: boolean;
@@ -52,33 +60,43 @@ export function useWhisperTranscription(): UseWhisperTranscriptionReturn {
         type: 'module'
     });
 
-    worker.onmessage = (event) => {
-      const { status, output, message, error, progress } = event.data;
+    worker.onmessage = (event: MessageEvent<WorkerMessage>) => {
+      const data = event.data;
 
-      switch (status) {
+      switch (data.status) {
         case 'loading':
             setIsModelLoading(true);
             setLoadingProgress(0);
             break;
         case 'progress':
             setIsModelLoading(true);
-            setLoadingProgress(progress || 0);
+            setLoadingProgress(data.progress || 0);
+            break;
+        case 'ready':
+            setIsModelLoading(false);
+            toast.success("Speech model loaded successfully!");
             break;
         case 'transcribing':
             setIsProcessing(true);
             setIsModelLoading(false);
             break;
         case 'complete':
-            setTranscript(output.text);
-            setWordTimestamps(output.chunks);
+            setTranscript(data.output.text);
+            // Transform the chunks to match the WordTimestamp interface
+            const transformedChunks: WordTimestamp[] = data.output.chunks.map(chunk => ({
+              text: chunk.text,
+              start: chunk.timestamp[0],
+              end: chunk.timestamp[1],
+            }));
+            setWordTimestamps(transformedChunks);
             setIsProcessing(false);
             toast.success("Transcription complete!");
             break;
         case 'error':
             setIsProcessing(false);
             setIsModelLoading(false);
-            toast.error(message || "An unknown error occurred", {
-              description: error,
+            toast.error(data.message || "An unknown error occurred", {
+              description: data.error,
             });
             break;
       }

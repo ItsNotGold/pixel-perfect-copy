@@ -1,10 +1,32 @@
 // src/workers/whisper.worker.ts
-import { pipeline, AutomaticSpeechRecognitionPipeline, env } from '@huggingface/transformers';
+import {
+    pipeline,
+    AutomaticSpeechRecognitionPipeline,
+    env,
+    AutomaticSpeechRecognitionOutput,
+    PipelineType
+} from '@huggingface/transformers';
 
 // Disable local models to ensure we use the remote quantized model
 env.allowLocalModels = false;
 // Use a proxy for the WASM backend if you are running this in a cross-origin environment
 // env.backends.onnx.wasm.proxy = true;
+
+// Define interfaces for message passing
+interface WorkerMessage {
+    action: 'loadModel' | 'transcribe';
+    audio?: Blob;
+    language?: string;
+    task?: 'transcribe' | 'translate';
+}
+
+interface ProgressUpdate {
+    status: string;
+    file: string;
+    progress: number;
+    loaded: number;
+    total: number;
+}
 
 /**
  * This class holds the state of the single Whisper pipeline instance.
@@ -13,15 +35,15 @@ class WhisperPipelineSingleton {
     static instance: AutomaticSpeechRecognitionPipeline | null = null;
     static loading = false;
 
-    static async getInstance(progress_callback?: (progress: { status: string; file: string; progress: number; loaded: number; total: number; }) => void) {
+    static async getInstance(progress_callback?: (progress: ProgressUpdate) => void) {
         if (this.instance === null && !this.loading) {
             this.loading = true;
             try {
-                this.instance = await pipeline('automatic-speech-recognition', 'onnx-community/whisper-large-v3-turbo', {
-                    device: 'webgpu',
+                this.instance = await pipeline('automatic-speech-recognition' as PipelineType, 'onnx-community/whisper-large-v3-turbo', {
+                    device: 'webgpu' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
                     dtype: {
-                        encoder: 'fp16',
-                        decoder: 'q4',
+                        encoder: 'fp16' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+                        decoder: 'q4' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
                     },
                     progress_callback,
                 });
@@ -42,47 +64,45 @@ class WhisperPipelineSingleton {
 }
 
 // Listener for messages from the main thread
-self.onmessage = async (event) => {
+self.onmessage = async (event: MessageEvent<WorkerMessage>) => {
     const { action, audio, language, task } = event.data;
 
-    // Handle the initial model loading trigger
+    const postProgress = (progress: ProgressUpdate) => self.postMessage(progress);
+
     if (action === 'loadModel') {
         self.postMessage({ status: 'loading' });
-        await WhisperPipelineSingleton.getInstance((progress) => {
-            self.postMessage(progress);
-        });
-        // Model is either loaded or failed, no further action here
+        try {
+            const instance = await WhisperPipelineSingleton.getInstance(postProgress);
+            if (instance) {
+                self.postMessage({ status: 'ready' });
+            }
+        } catch (error) {
+            // Error is already posted by getInstance
+        }
         return;
     }
 
-    // Handle transcription requests
     if (!audio) return;
 
     try {
-        // Since loading might not have been triggered yet, or might still be in progress,
-        // we always get the instance here. The singleton pattern handles the state.
-        const transcriber = await WhisperPipelineSingleton.getInstance((progress) => {
-            self.postMessage(progress);
-        });
+        const transcriber = await WhisperPipelineSingleton.getInstance(postProgress);
 
         if (!transcriber) {
-            // Error was already posted during initialization
-            return;
+            return; // Error already posted
         }
 
         self.postMessage({ status: 'transcribing' });
-
         const resampledAudio = await resampleAudio(audio);
 
-        const output = await transcriber(resampledAudio, {
-            language: language, // `null` or `undefined` triggers auto-detection
-            task: task || 'transcribe',
+        const output: AutomaticSpeechRecognitionOutput = await transcriber(resampledAudio, {
+            language: language,
+            task: (task || 'transcribe') as 'transcribe' | 'translate',
             return_timestamps: true,
         });
 
         self.postMessage({
             status: 'complete',
-            output: output,
+            output,
         });
 
     } catch (error) {

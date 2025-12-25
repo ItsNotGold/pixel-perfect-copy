@@ -30,36 +30,60 @@ interface ProgressUpdate {
 
 /**
  * This class holds the state of the single Whisper pipeline instance.
+ * It is designed to be robust against concurrent calls.
  */
 class WhisperPipelineSingleton {
     static instance: AutomaticSpeechRecognitionPipeline | null = null;
-    static loading = false;
+    // A promise that resolves with the pipeline instance once it's loaded.
+    // This prevents race conditions where multiple components try to load the model simultaneously.
+    static loadingPromise: Promise<AutomaticSpeechRecognitionPipeline | null> | null = null;
 
-    static async getInstance(progress_callback?: (progress: ProgressUpdate) => void) {
-        if (this.instance === null && !this.loading) {
-            this.loading = true;
-            try {
-                this.instance = await pipeline('automatic-speech-recognition' as PipelineType, 'onnx-community/whisper-large-v3-turbo', {
-                    device: 'webgpu' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
-                    dtype: {
-                        encoder: 'fp16' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
-                        decoder: 'q4' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
-                    },
-                    progress_callback,
-                });
-            } catch (error) {
-                console.error("Pipeline initialization failed:", error);
-                self.postMessage({
-                    status: 'error',
-                    message: 'Failed to load the model. Your device may not have enough memory or WebGPU support. Please try closing other tabs or refreshing.',
-                    error: error instanceof Error ? error.message : String(error),
-                });
-                this.instance = null;
-            } finally {
-                this.loading = false;
-            }
+    static getInstance(progress_callback?: (progress: ProgressUpdate) => void): Promise<AutomaticSpeechRecognitionPipeline | null> {
+        // If the instance is already loaded, return it immediately.
+        if (this.instance) {
+            return Promise.resolve(this.instance);
         }
-        return this.instance;
+
+        // If the model is already being loaded, wait for the existing promise to resolve.
+        if (this.loadingPromise) {
+            return this.loadingPromise;
+        }
+
+        // This is the first call, so start the loading process.
+        this.loadingPromise = new Promise((resolve, reject) => {
+            // Use an IIFE to allow async/await inside the promise executor
+            // without making the executor itself async.
+            (async () => {
+                try {
+                    const model = await pipeline('automatic-speech-recognition' as PipelineType, 'onnx-community/whisper-large-v3-turbo', {
+                        device: 'webgpu' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+                        dtype: {
+                            encoder: 'fp16' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+                            decoder: 'q4' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+                        },
+                        progress_callback,
+                    });
+                    this.instance = model;
+                    resolve(this.instance);
+                } catch (error) {
+                    console.error("Pipeline initialization failed:", error);
+                    self.postMessage({
+                        status: 'error',
+                        message: 'Failed to load the model. Your device may not have enough memory or WebGPU support. Please try closing other tabs or refreshing.',
+                        error: error instanceof Error ? error.message : String(error),
+                    });
+                    this.instance = null; // Ensure instance is null on failure
+                    reject(error);
+                } finally {
+                    // The loading process is complete (either success or failure),
+                    // so reset the promise. Future calls will either get the instance
+                    // or try to load again if it failed.
+                    this.loadingPromise = null;
+                }
+            })();
+        });
+
+        return this.loadingPromise;
     }
 }
 

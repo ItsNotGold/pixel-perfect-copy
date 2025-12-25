@@ -36,15 +36,15 @@ interface UseWhisperTranscriptionReturn {
 }
 
 export function useWhisperTranscription(): UseWhisperTranscriptionReturn {
-  const [isRecording, setIsRecording] = useState(false);
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [isModelLoading, setIsModelLoading] = useState(false);
-  const [loadingProgress, setLoadingProgress] = useState(0);
-  const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
+  const [isRecording, setIsRecording] = new useState(false);
+  const [isProcessing, setIsProcessing] = new useState(false);
+  const [isModelLoading, setIsModelLoading] = new useState(false);
+  const [loadingProgress, setLoadingProgress] = new useState(0);
+  const [audioBlob, setAudioBlob] = new useState<Blob | null>(null);
 
   // State for the transcription results
-  const [transcript, setTranscript] = useState("");
-  const [wordTimestamps, setWordTimestamps] = useState<WordTimestamp[]>([]);
+  const [transcript, setTranscript] = new useState("");
+  const [wordTimestamps, setWordTimestamps] = new useState<WordTimestamp[]>([]);
 
   // Refs for the worker and MediaRecorder
   const workerRef = useRef<Worker | null>(null);

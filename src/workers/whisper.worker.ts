@@ -13,7 +13,7 @@ class WhisperPipelineSingleton {
     static instance: AutomaticSpeechRecognitionPipeline | null = null;
     static loading = false;
 
-    static async getInstance(progress_callback?: (progress: any) => void) {
+    static async getInstance(progress_callback?: (progress: { status: string; file: string; progress: number; loaded: number; total: number; }) => void) {
         if (this.instance === null && !this.loading) {
             this.loading = true;
             try {

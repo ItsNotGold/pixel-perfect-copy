@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useInvisibleTranscription, WordTimestamp } from "@/hooks/useInvisibleTranscription";
+import { useWhisperTranscription, WordTimestamp } from "@/hooks/useWhisperTranscription";
 import { ExerciseGate } from "@/components/ExerciseGate";
 import { Mic, Play, Square, RotateCcw, Trophy, Clock, Feather, Sparkles, CheckCircle2, XCircle, ChevronDown, ChevronUp } from "lucide-react";
 import { toast } from "sonner";
@@ -20,7 +20,14 @@ interface WordAnalysis {
 
 export default function WordIncorporation() {
   const { language, speechLanguageCode } = useLanguage();
-  const { isRecording, startRecording, stopRecording, reset, getTranscript, getWordTimestamps } = useInvisibleTranscription();
+  const {
+    isRecording,
+    transcript,
+    wordTimestamps,
+    startRecording,
+    stopRecording,
+    reset,
+  } = useWhisperTranscription();
 
   const [currentPrompt, setCurrentPrompt] = useState<{ prompt: string; words: string[] } | null>(null);
   const [isActive, setIsActive] = useState(false);
@@ -101,17 +108,22 @@ export default function WordIncorporation() {
     }, 1000);
   };
 
-  const stopSession = async () => {
+  const stopSession = () => {
     setIsActive(false);
     if (timerRef.current) clearInterval(timerRef.current);
     if (wordTimerRef.current) clearInterval(wordTimerRef.current);
     
-    const result = await stopRecording();
-    setFinalTranscript(result.transcript);
-    verifyWords(result.words, currentPrompt?.words || []);
-    setIsComplete(true);
+    stopRecording();
     setTotalAttempts(prev => prev + 1);
   };
+
+  useEffect(() => {
+    if (transcript && !isRecording) {
+      setFinalTranscript(transcript);
+      verifyWords(wordTimestamps, currentPrompt?.words || []);
+      setIsComplete(true);
+    }
+  }, [transcript, wordTimestamps, isRecording, currentPrompt]);
 
   const verifyWords = (detectedWords: WordTimestamp[], targets: string[]) => {
     const results: WordAnalysis[] = targets.map(target => {

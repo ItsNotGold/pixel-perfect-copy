@@ -6,7 +6,7 @@ import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.mast
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useWhisperTranscription, WordTimestamp } from "@/hooks/useWhisperTranscription";
 import { ExerciseGate } from "@/components/ExerciseGate";
-import { Mic, Play, Square, RotateCcw, Trophy, Clock, Feather, Sparkles, CheckCircle2, XCircle, ChevronDown, ChevronUp } from "lucide-react";
+import { Mic, Play, Square, RotateCcw, Trophy, Clock, Feather, Sparkles, CheckCircle2, XCircle, ChevronDown, ChevronUp, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
@@ -22,6 +22,9 @@ export default function WordIncorporation() {
   const { language, speechLanguageCode } = useLanguage();
   const {
     isRecording,
+    isProcessing,
+    isModelLoading,
+    loadingProgress,
     transcript,
     wordTimestamps,
     startRecording,
@@ -119,11 +122,17 @@ export default function WordIncorporation() {
 
   useEffect(() => {
     if (transcript && !isRecording) {
-      setFinalTranscript(transcript);
-      verifyWords(wordTimestamps, currentPrompt?.words || []);
       setIsComplete(true);
     }
-  }, [transcript, wordTimestamps, isRecording, currentPrompt]);
+  }, [transcript, isRecording]);
+
+  useEffect(() => {
+    if (transcript && !isProcessing && isComplete) {
+      setFinalTranscript(transcript);
+      verifyWords(wordTimestamps, currentPrompt?.words || []);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [transcript, isProcessing, isComplete]);
 
   const verifyWords = (detectedWords: WordTimestamp[], targets: string[]) => {
     const results: WordAnalysis[] = targets.map(target => {
@@ -194,6 +203,19 @@ export default function WordIncorporation() {
           </div>
 
           <div className="relative overflow-hidden rounded-3xl glass p-8 shadow-2xl border border-white/10">
+            {/* Model Loading UI */}
+            {isModelLoading && (
+              <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-slate-900/80 backdrop-blur-lg rounded-3xl">
+                <Loader2 className="h-12 w-12 animate-spin text-primary mb-4" />
+                <p className="text-lg font-semibold text-foreground">Loading Speech Model...</p>
+                <p className="text-muted-foreground mb-4">This may take a moment. Please wait.</p>
+                <div className="w-64 rounded-full bg-white/10 h-2.5">
+                  <div className="bg-primary h-2.5 rounded-full" style={{ width: `${loadingProgress}%` }}></div>
+                </div>
+                <p className="mt-2 text-sm font-mono text-muted-foreground">{loadingProgress}%</p>
+              </div>
+            )}
+
             {/* Minimalist Recording UI */}
             <div className={`transition-all duration-500 ease-in-out ${showResults ? 'opacity-0 scale-95 pointer-events-none absolute' : 'opacity-100 scale-100'}`}>
               
@@ -217,7 +239,7 @@ export default function WordIncorporation() {
                     </p>
                   </div>
 
-                  <Button onClick={startSession} size="xl" variant="hero" className="w-full shadow-glow max-w-xs mx-auto">
+                  <Button onClick={startSession} size="xl" variant="hero" className="w-full shadow-glow max-w-xs mx-auto" disabled={isModelLoading}>
                     <Play className="h-5 w-5 mr-2" />
                     Begin Exercise
                   </Button>
@@ -251,9 +273,8 @@ export default function WordIncorporation() {
                     </Button>
                   )}
                   {isComplete && !showResults && (
-                    <Button variant="accent" size="xl" className="w-full shadow-glow animate-bounce" onClick={() => setShowResults(true)}>
-                      <Sparkles className="h-5 w-5 mr-2" />
-                      Check Results
+                    <Button variant="accent" size="xl" className="w-full shadow-glow animate-bounce" onClick={() => setShowResults(true)} disabled={isProcessing}>
+                       {isProcessing ? <><Loader2 className="mr-2 h-5 w-5 animate-spin" /> Processing...</> : <><Sparkles className="h-5 w-5 mr-2" />Check Results</>}
                     </Button>
                   )}
                 </div>

@@ -1,0 +1,13 @@
+
+> app@1.0.0 web
+> expo start --web
+
+Starting project at /app
+Starting Metro Bundler
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+Web ./index.js ░░░░░░░░░░░░░░░░  0.0% (0/1)
+ WARN  Attempted to import the module "/app/node_modules/whisper.rn" which is not listed in the "exports" of "/app/node_modules/whisper.rn" under the requested subpath ".". Falling back to file-based resolution. Consider updating the call site or asking the package maintainer(s) to expose this API.
+Web ./index.js ▓▓▓▓▓▓▓▓▓░░░░░░░ 61.4% (148/189)
+Web Bundled 6876ms index.js (385 modules)
+ LOG  [web] Logs will appear in the browser console

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Streak Starter Badge">
-  <title>Streak Starter</title>
-  <circle cx="60" cy="60" r="54" fill="#FDE68A" />
-  <g transform="translate(22,30)" fill="#923A00">
-    <rect x="0" y="48" width="76" height="10" rx="5"/>
-    <path d="M10 20 L36 4 L62 20" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
-  </g>
-</svg>

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Filler Scholar Badge">
-  <title>Filler Scholar</title>
-  <circle cx="60" cy="60" r="54" fill="#FF8DA1" />
-  <g transform="translate(26,26)" fill="#fff">
-    <rect x="0" y="36" width="44" height="10" rx="4"/>
-    <path d="M54 6 L70 22 L54 38"/>
-  </g>
-</svg>

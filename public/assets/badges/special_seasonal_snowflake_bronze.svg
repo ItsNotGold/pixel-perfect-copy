@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Seasonal Snowflake Badge">
-  <title>Seasonal Snowflake</title>
-  <circle cx="60" cy="60" r="54" fill="#E0F2FE" />
-  <g transform="translate(26,26)" fill="#89CFF0">
-    <path d="M28 4 L28 44 M4 24 L52 24 M10 10 L46 38 M46 10 L10 38" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  </g>
-</svg>

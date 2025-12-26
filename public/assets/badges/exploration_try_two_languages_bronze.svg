@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Bilingual Explorer Badge">
-  <title>Bilingual Explorer</title>
-  <circle cx="60" cy="60" r="54" fill="#7DD3FC"/>
-  <g transform="translate(20,28)">
-    <rect x="0" y="0" width="36" height="20" rx="2" fill="#fff"/>
-    <rect x="44" y="0" width="36" height="20" rx="2" fill="#fff"/>
-  </g>
-</svg>

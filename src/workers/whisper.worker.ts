@@ -39,48 +39,61 @@ class WhisperPipelineSingleton {
     static loadingPromise: Promise<AutomaticSpeechRecognitionPipeline | null> | null = null;
 
     static getInstance(progress_callback?: (progress: ProgressUpdate) => void): Promise<AutomaticSpeechRecognitionPipeline | null> {
-        // If the instance is already loaded, return it immediately.
         if (this.instance) {
             return Promise.resolve(this.instance);
         }
 
-        // If the model is already being loaded, wait for the existing promise to resolve.
         if (this.loadingPromise) {
             return this.loadingPromise;
         }
 
-        // This is the first call, so start the loading process.
-        this.loadingPromise = new Promise((resolve, reject) => {
-            // Use an IIFE to allow async/await inside the promise executor
-            // without making the executor itself async.
-            (async () => {
-                try {
-                    const model = await pipeline('automatic-speech-recognition' as PipelineType, 'onnx-community/whisper-large-v3-turbo', {
-                        device: 'webgpu' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
-                        dtype: {
-                            encoder: 'fp16' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
-                            decoder: 'q4' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
-                        },
-                        progress_callback,
-                    });
-                    this.instance = model;
-                    resolve(this.instance);
-                } catch (error) {
-                    console.error("Pipeline initialization failed:", error);
-                    self.postMessage({
-                        status: 'error',
-                        message: 'Failed to load the model. Your device may not have enough memory or WebGPU support. Please try closing other tabs or refreshing.',
-                        error: error instanceof Error ? error.message : String(error),
-                    });
-                    this.instance = null; // Ensure instance is null on failure
-                    reject(error);
-                } finally {
-                    // The loading process is complete (either success or failure),
-                    // so reset the promise. Future calls will either get the instance
-                    // or try to load again if it failed.
-                    this.loadingPromise = null;
+        this.loadingPromise = new Promise(async (resolve, reject) => {
+            try {
+                // Check for WebGPU support
+                const hasWebGPU = typeof navigator !== 'undefined' && 'gpu' in navigator;
+                let config: Record<string, any> = {}; // eslint-disable-line @typescript-eslint/no-explicit-any
+
+                if (hasWebGPU) {
+                    try {
+                        const adapter = await navigator.gpu.requestAdapter();
+                        if (adapter) {
+                            console.log('[Worker] WebGPU is supported. Using WebGPU backend.');
+                            config = {
+                                device: 'webgpu',
+                                dtype: { encoder: 'fp16', decoder: 'q4' },
+                            };
+                        } else {
+                            throw new Error('WebGPU adapter not found.');
+                        }
+                    } catch (e) {
+                         console.warn('[Worker] WebGPU adapter request failed, falling back to WASM.', e);
+                         config = { device: 'wasm', quantized: true };
+                    }
+                } else {
+                    console.log('[Worker] WebGPU not supported. Falling back to WASM backend.');
+                    config = { device: 'wasm', quantized: true };
                 }
-            })();
+
+                const model = await pipeline('automatic-speech-recognition' as PipelineType, 'onnx-community/whisper-large-v3-turbo', {
+                    ...config,
+                    progress_callback,
+                });
+
+                this.instance = model;
+                resolve(this.instance);
+
+            } catch (error) {
+                console.error("[Worker] Pipeline initialization failed:", error);
+                self.postMessage({
+                    status: 'error',
+                    message: 'Failed to load the model. Your device may not have enough memory or the required features. Please try closing other tabs or refreshing.',
+                    error: error instanceof Error ? error.message : String(error),
+                });
+                this.instance = null;
+                reject(error);
+            } finally {
+                this.loadingPromise = null;
+            }
         });
 
         return this.loadingPromise;
@@ -130,7 +143,7 @@ self.onmessage = async (event: MessageEvent<WorkerMessage>) => {
         });
 
     } catch (error) {
-        console.error("Transcription failed:", error);
+        console.error("[Worker] Transcription failed:", error);
         self.postMessage({
             status: 'error',
             message: 'An error occurred during transcription.',

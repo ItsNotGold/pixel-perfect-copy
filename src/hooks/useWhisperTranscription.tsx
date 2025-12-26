@@ -1,185 +1,60 @@
-import { useState, useRef, useCallback, useEffect } from "react";
-import { toast } from "sonner";
+// src/hooks/useWhisperTranscription.tsx
+import { useState, useEffect, useCallback } from 'react';
+import workerClient from '../workers/workerClient';
+import { WorkerMessage } from '../workers/types';
 
-export interface WordTimestamp {
-  text: string;
-  start: number;
-  end: number;
-}
+/**
+ * A React hook to interact with the shared Whisper transcription worker.
+ * It handles the component's state based on messages from the WorkerClient singleton.
+ */
+export const useWhisperTranscription = () => {
+    // State to hold the latest message from the worker.
+    const [workerState, setWorkerState] = useState<WorkerMessage>({ status: 'unloaded' });
+    // State to store the final transcription output.
+    const [transcription, setTranscription] = useState<string | null>(null);
 
-// This is the raw output from the transformers.js pipeline
-interface RawWhisperOutput {
-  text: string;
-  chunks: {
-    text: string;
-    timestamp: [number, number];
-  }[];
-}
+    useEffect(() => {
+        // Subscribe to the worker client on component mount.
+        // The client immediately provides the current status, preventing race conditions.
+        const unsubscribe = workerClient.subscribe(message => {
+            setWorkerState(message);
+            if (message.status === 'complete') {
+                setTranscription(message.output);
+            }
+        });
 
-// Message sent from the worker to the UI
-type WorkerMessage =
-  | { status: 'loading' } | { status: 'ready' } | { status: 'transcribing' }
-  | { status: 'complete', output: RawWhisperOutput } | { status: 'error', message: string, error?: string }
-  | { status: 'progress', progress: number, file: string, loaded: number, total: number };
+        // The component might mount after the model is already loaded.
+        // The workerClient's subscribe method handles this by immediately
+        // sending the current status. We don't need to manually load the model here.
 
-interface UseWhisperTranscriptionReturn {
-  isRecording: boolean;
-  isProcessing: boolean;
-  isModelLoading: boolean;
-  loadingProgress: number;
-  transcript: string; // Now a state variable
-  wordTimestamps: WordTimestamp[]; // Now a state variable
-  startRecording: (languageCode?: string) => Promise<void>;
-  stopRecording: () => void; // No longer returns a promise with the result
-  reset: () => void;
-  audioBlob: Blob | null;
-}
+        // Unsubscribe when the component unmounts to prevent memory leaks.
+        return () => {
+            unsubscribe();
+        };
+    }, []);
 
-export function useWhisperTranscription(): UseWhisperTranscriptionReturn {
-  const [isRecording, setIsRecording] = new useState(false);
-  const [isProcessing, setIsProcessing] = new useState(false);
-  const [isModelLoading, setIsModelLoading] = new useState(false);
-  const [loadingProgress, setLoadingProgress] = new useState(0);
-  const [audioBlob, setAudioBlob] = new useState<Blob | null>(null);
-
-  // State for the transcription results
-  const [transcript, setTranscript] = new useState("");
-  const [wordTimestamps, setWordTimestamps] = new useState<WordTimestamp[]>([]);
-
-  // Refs for the worker and MediaRecorder
-  const workerRef = useRef<Worker | null>(null);
-  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
-  const chunksRef = useRef<Blob[]>([]);
-
-  // Language code for the current session
-  const languageRef = useRef<string | undefined>("en");
-
-  // Effect to initialize and terminate the worker
-  useEffect(() => {
-    const worker = new Worker(new URL('../workers/whisper.worker.ts', import.meta.url), {
-        type: 'module'
-    });
-
-    worker.onmessage = (event: MessageEvent<WorkerMessage>) => {
-      const data = event.data;
-
-      switch (data.status) {
-        case 'loading':
-            setIsModelLoading(true);
-            setLoadingProgress(0);
-            break;
-        case 'progress':
-            setIsModelLoading(true);
-            setLoadingProgress(data.progress || 0);
-            break;
-        case 'ready':
-            setIsModelLoading(false);
-            toast.success("Speech model loaded successfully!");
-            break;
-        case 'transcribing':
-            setIsProcessing(true);
-            setIsModelLoading(false);
-            break;
-        case 'complete':
-            setTranscript(data.output.text);
-            // Transform the chunks to match the WordTimestamp interface
-            const transformedChunks: WordTimestamp[] = data.output.chunks.map(chunk => ({
-              text: chunk.text,
-              start: chunk.timestamp[0],
-              end: chunk.timestamp[1],
-            }));
-            setWordTimestamps(transformedChunks);
-            setIsProcessing(false);
-            toast.success("Transcription complete!");
-            break;
-        case 'error':
-            setIsProcessing(false);
-            setIsModelLoading(false);
-            toast.error(data.message || "An unknown error occurred", {
-              description: data.error,
+    /**
+     * Sends an audio blob to the worker for transcription.
+     * The hook must be in a 'ready' state to accept transcription tasks.
+     * @param audioBlob The audio data to be transcribed.
+     */
+    const startTranscription = useCallback((audioBlob: Blob) => {
+        if (workerState.status === 'ready') {
+            const worker = workerClient.getWorker();
+            worker.postMessage({
+                action: 'transcribe',
+                audio: audioBlob,
             });
-            break;
-      }
-    };
-
-    workerRef.current = worker;
-
-    // Immediately ask the worker to start loading the model
-    worker.postMessage({ action: 'loadModel' });
-
-    return () => {
-      worker.terminate();
-    };
-  }, []);
-
-  const startRecording = useCallback(async (languageCode: string = "en-US") => {
-    setTranscript("");
-    setWordTimestamps([]);
-    setAudioBlob(null);
-    languageRef.current = languageCode;
-
-    try {
-      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-        toast.error("Microphone capture is not supported in this browser.");
-        return;
-      }
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-
-      const mediaRecorder = new MediaRecorder(stream);
-      mediaRecorderRef.current = mediaRecorder;
-      chunksRef.current = [];
-
-      mediaRecorder.ondataavailable = (e) => {
-        if (e.data.size > 0) chunksRef.current.push(e.data);
-      };
-
-      mediaRecorder.onstop = () => {
-        const blob = new Blob(chunksRef.current, { type: "audio/webm" });
-        setAudioBlob(blob);
-        if (workerRef.current) {
-          workerRef.current.postMessage({
-            audio: blob,
-            language: languageRef.current,
-            task: 'transcribe',
-          });
+            // Set state to 'transcribing' immediately for responsive UI.
+            setWorkerState({ status: 'transcribing' });
+        } else {
+            console.error('Whisper model is not ready. Current state:', workerState.status);
         }
-        stream.getTracks().forEach(track => track.stop());
-      };
+    }, [workerState.status]);
 
-      mediaRecorder.start();
-      setIsRecording(true);
-
-    } catch (err) {
-      console.error("Error starting recording:", err);
-      toast.error("Failed to start recording. Please check microphone permissions.");
-    }
-  }, []);
-
-  const stopRecording = useCallback(() => {
-    setIsRecording(false);
-    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") {
-      mediaRecorderRef.current.stop();
-    }
-  }, []);
-
-  const reset = useCallback(() => {
-    setTranscript("");
-    setWordTimestamps([]);
-    setAudioBlob(null);
-    setIsProcessing(false);
-    setIsRecording(false);
-  }, []);
-
-  return {
-    isRecording,
-    isProcessing,
-    isModelLoading,
-    loadingProgress,
-    transcript,
-    wordTimestamps,
-    startRecording,
-    stopRecording,
-    reset,
-    audioBlob,
-  };
-}
+    return {
+        workerState,
+        transcription,
+        startTranscription,
+    };
+};

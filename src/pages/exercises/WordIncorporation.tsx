@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useWhisperTranscription, WordTimestamp } from "@/hooks/useWhisperTranscription";
+import { useVoskTranscription, WordTimestamp } from "@/hooks/useVoskTranscription";
 import { ExerciseGate } from "@/components/ExerciseGate";
 import { Mic, Play, Square, RotateCcw, Trophy, Clock, Feather, Sparkles, CheckCircle2, XCircle, ChevronDown, ChevronUp, Loader2 } from "lucide-react";
 import { toast } from "sonner";
@@ -22,15 +22,13 @@ export default function WordIncorporation() {
   const { language, speechLanguageCode } = useLanguage();
   const {
     isRecording,
-    isProcessing,
     isModelLoading,
-    loadingProgress,
     transcript,
     wordTimestamps,
     startRecording,
     stopRecording,
     reset,
-  } = useWhisperTranscription();
+  } = useVoskTranscription();
 
   const [currentPrompt, setCurrentPrompt] = useState<{ prompt: string; words: string[] } | null>(null);
   const [isActive, setIsActive] = useState(false);
@@ -127,23 +125,22 @@ export default function WordIncorporation() {
   }, [transcript, isRecording]);
 
   useEffect(() => {
-    if (transcript && !isProcessing && isComplete) {
+    if (transcript && wordTimestamps.length > 0 && isComplete) {
       setFinalTranscript(transcript);
       verifyWords(wordTimestamps, currentPrompt?.words || []);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [transcript, isProcessing, isComplete]);
+  }, [transcript, wordTimestamps, isComplete]);
 
   const verifyWords = (detectedWords: WordTimestamp[], targets: string[]) => {
     const results: WordAnalysis[] = targets.map(target => {
-      const matches = detectedWords.filter(w => 
-        w.text.toLowerCase().replace(/[.,/#!$%^&*;:{}=\-_`~()]/g,"") === target.toLowerCase()
-      );
+      const targetLower = target.toLowerCase();
+      const matches = detectedWords.filter(w => w.text === targetLower);
       return {
         word: target,
         found: matches.length > 0,
         count: matches.length,
-        timestamps: matches.map(m => m.start / 1000)
+        timestamps: matches.map(m => m.start)
       };
     });
 
@@ -209,10 +206,6 @@ export default function WordIncorporation() {
                 <Loader2 className="h-12 w-12 animate-spin text-primary mb-4" />
                 <p className="text-lg font-semibold text-foreground">Loading Speech Model...</p>
                 <p className="text-muted-foreground mb-4">This may take a moment. Please wait.</p>
-                <div className="w-64 rounded-full bg-white/10 h-2.5">
-                  <div className="bg-primary h-2.5 rounded-full" style={{ width: `${loadingProgress}%` }}></div>
-                </div>
-                <p className="mt-2 text-sm font-mono text-muted-foreground">{loadingProgress}%</p>
               </div>
             )}
 
@@ -273,8 +266,8 @@ export default function WordIncorporation() {
                     </Button>
                   )}
                   {isComplete && !showResults && (
-                    <Button variant="accent" size="xl" className="w-full shadow-glow animate-bounce" onClick={() => setShowResults(true)} disabled={isProcessing}>
-                       {isProcessing ? <><Loader2 className="mr-2 h-5 w-5 animate-spin" /> Processing...</> : <><Sparkles className="h-5 w-5 mr-2" />Check Results</>}
+                    <Button variant="accent" size="xl" className="w-full shadow-glow animate-bounce" onClick={() => setShowResults(true)}>
+                       <Sparkles className="h-5 w-5 mr-2" />Check Results
                     </Button>
                   )}
                 </div>

@@ -121,16 +121,12 @@ export default function WordIncorporation() {
   useEffect(() => {
     if (transcript && !isRecording) {
       setIsComplete(true);
-    }
-  }, [transcript, isRecording]);
-
-  useEffect(() => {
-    if (transcript && wordTimestamps.length > 0 && isComplete) {
       setFinalTranscript(transcript);
-      verifyWords(wordTimestamps, currentPrompt?.words || []);
+      if (wordTimestamps.length > 0) {
+        verifyWords(wordTimestamps, currentPrompt?.words || []);
+      }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [transcript, wordTimestamps, isComplete]);
+  }, [transcript, isRecording, wordTimestamps, currentPrompt]);
 
   const verifyWords = (detectedWords: WordTimestamp[], targets: string[]) => {
     const results: WordAnalysis[] = targets.map(target => {

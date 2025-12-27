@@ -19,15 +19,13 @@ export default function FillerWordEliminator() {
   const { language, speechLanguageCode } = useLanguage();
   const {
     isRecording,
-    isProcessing,
     isModelLoading,
-    loadingProgress,
     transcript,
     wordTimestamps,
     startRecording,
     stopRecording,
     reset,
-  } = useWhisperTranscription();
+  } = useVoskTranscription();
 
   const [currentTopic, setCurrentTopic] = useState("");
   const [isActive, setIsActive] = useState(false);
@@ -55,11 +53,11 @@ export default function FillerWordEliminator() {
 
   // Effect to analyze the transcript when it's finalized
   useEffect(() => {
-    if (transcript && !isProcessing) {
+    if (transcript && wordTimestamps.length > 0 && !isRecording) {
       analyzeFillers(transcript, wordTimestamps);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [transcript, isProcessing]);
+  }, [transcript, wordTimestamps, isRecording]);
 
 
   const startSession = async () => {
@@ -155,7 +153,7 @@ export default function FillerWordEliminator() {
             <div className="rounded-xl glass p-4 text-center min-w-[100px]">
               <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
                 <Trophy className="h-5 w-5" />
-                {transcript ? score : "--"}
+                {wordTimestamps.length > 0 ? score : "--"}
               </div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider">Score</div>
             </div>

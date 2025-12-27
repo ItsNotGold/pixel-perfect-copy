@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useVoskTranscription, WordTimestamp } from "@/hooks/useVoskTranscription";
+import { useInvisibleTranscription, WordTimestamp } from "@/hooks/useInvisibleTranscription";
 import { ExerciseGate } from "@/components/ExerciseGate";
-import { Mic, Play, Square, RotateCcw, Trophy, Clock, Feather, Sparkles, CheckCircle2, XCircle, ChevronDown, ChevronUp, Loader2 } from "lucide-react";
+import { Mic, Play, Square, RotateCcw, Trophy, Clock, Feather, Sparkles, CheckCircle2, XCircle, ChevronDown, ChevronUp } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
@@ -20,15 +20,7 @@ interface WordAnalysis {
 
 export default function WordIncorporation() {
   const { language, speechLanguageCode } = useLanguage();
-  const {
-    isRecording,
-    isModelLoading,
-    transcript,
-    wordTimestamps,
-    startRecording,
-    stopRecording,
-    reset,
-  } = useVoskTranscription();
+  const { isRecording, startRecording, stopRecording, reset, getTranscript, getWordTimestamps } = useInvisibleTranscription();
 
   const [currentPrompt, setCurrentPrompt] = useState<{ prompt: string; words: string[] } | null>(null);
   const [isActive, setIsActive] = useState(false);
@@ -109,38 +101,28 @@ export default function WordIncorporation() {
     }, 1000);
   };
 
-  const stopSession = () => {
+  const stopSession = async () => {
     setIsActive(false);
     if (timerRef.current) clearInterval(timerRef.current);
     if (wordTimerRef.current) clearInterval(wordTimerRef.current);
     
-    stopRecording();
+    const result = await stopRecording();
+    setFinalTranscript(result.transcript);
+    verifyWords(result.words, currentPrompt?.words || []);
+    setIsComplete(true);
     setTotalAttempts(prev => prev + 1);
   };
 
-  useEffect(() => {
-    if (transcript && !isRecording) {
-      setIsComplete(true);
-    }
-  }, [transcript, isRecording]);
-
-  useEffect(() => {
-    if (transcript && wordTimestamps.length > 0 && isComplete) {
-      setFinalTranscript(transcript);
-      verifyWords(wordTimestamps, currentPrompt?.words || []);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [transcript, wordTimestamps, isComplete]);
-
   const verifyWords = (detectedWords: WordTimestamp[], targets: string[]) => {
     const results: WordAnalysis[] = targets.map(target => {
-      const targetLower = target.toLowerCase();
-      const matches = detectedWords.filter(w => w.text === targetLower);
+      const matches = detectedWords.filter(w => 
+        w.text.toLowerCase().replace(/[.,/#!$%^&*;:{}=\-_`~()]/g,"") === target.toLowerCase()
+      );
       return {
         word: target,
         found: matches.length > 0,
         count: matches.length,
-        timestamps: matches.map(m => m.start)
+        timestamps: matches.map(m => m.start / 1000)
       };
     });
 
@@ -200,15 +182,6 @@ export default function WordIncorporation() {
           </div>
 
           <div className="relative overflow-hidden rounded-3xl glass p-8 shadow-2xl border border-white/10">
-            {/* Model Loading UI */}
-            {isModelLoading && (
-              <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-slate-900/80 backdrop-blur-lg rounded-3xl">
-                <Loader2 className="h-12 w-12 animate-spin text-primary mb-4" />
-                <p className="text-lg font-semibold text-foreground">Loading Speech Model...</p>
-                <p className="text-muted-foreground mb-4">This may take a moment. Please wait.</p>
-              </div>
-            )}
-
             {/* Minimalist Recording UI */}
             <div className={`transition-all duration-500 ease-in-out ${showResults ? 'opacity-0 scale-95 pointer-events-none absolute' : 'opacity-100 scale-100'}`}>
               
@@ -232,7 +205,7 @@ export default function WordIncorporation() {
                     </p>
                   </div>
 
-                  <Button onClick={startSession} size="xl" variant="hero" className="w-full shadow-glow max-w-xs mx-auto" disabled={isModelLoading}>
+                  <Button onClick={startSession} size="xl" variant="hero" className="w-full shadow-glow max-w-xs mx-auto">
                     <Play className="h-5 w-5 mr-2" />
                     Begin Exercise
                   </Button>
@@ -267,7 +240,8 @@ export default function WordIncorporation() {
                   )}
                   {isComplete && !showResults && (
                     <Button variant="accent" size="xl" className="w-full shadow-glow animate-bounce" onClick={() => setShowResults(true)}>
-                       <Sparkles className="h-5 w-5 mr-2" />Check Results
+                      <Sparkles className="h-5 w-5 mr-2" />
+                      Check Results
                     </Button>
                   )}
                 </div>

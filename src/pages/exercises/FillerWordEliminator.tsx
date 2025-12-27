@@ -3,9 +3,10 @@ import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { fillerWordEliminatorMaster } from "@/data/exercises/fillerWordEliminator.master";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useVoskTranscription, WordTimestamp } from "@/hooks/useVoskTranscription";
+import { useInvisibleTranscription, WordTimestamp } from "@/hooks/useInvisibleTranscription";
 import { ExerciseGate } from "@/components/ExerciseGate";
-import { MessageCircle, Mic, Square, RotateCcw, Trophy, AlertTriangle, Loader2, Sparkles, ChevronUp } from "lucide-react";
+import { MessageCircle, Mic, Play, Square, RotateCcw, Trophy, AlertTriangle, Loader2, Sparkles, ChevronUp } from "lucide-react";
+import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
 
@@ -17,24 +18,16 @@ interface FillerDetection {
 
 export default function FillerWordEliminator() {
   const { language, speechLanguageCode } = useLanguage();
-  const {
-    isRecording,
-    isProcessing,
-    isModelLoading,
-    loadingProgress,
-    transcript,
-    wordTimestamps,
-    startRecording,
-    stopRecording,
-    reset,
-  } = useWhisperTranscription();
+  const { isRecording, isProcessing, startRecording, stopRecording, reset, getTranscript, getWordTimestamps, audioBlob } = useInvisibleTranscription();
 
   const [currentTopic, setCurrentTopic] = useState("");
   const [isActive, setIsActive] = useState(false);
   const [timeLeft, setTimeLeft] = useState(60);
+  const [isComplete, setIsComplete] = useState(false);
   const [showAnalysis, setShowAnalysis] = useState(false);
   const [totalAttempts, setTotalAttempts] = useState(0);
   const [fillers, setFillers] = useState<FillerDetection[]>([]);
+  const [finalTranscript, setFinalTranscript] = useState("");
   const [score, setScore] = useState(0);
   
   const timerRef = useRef<NodeJS.Timeout | null>(null);
@@ -53,22 +46,14 @@ export default function FillerWordEliminator() {
     pickNewTopic();
   }, [language, pickNewTopic]);
 
-  // Effect to analyze the transcript when it's finalized
-  useEffect(() => {
-    if (transcript && !isProcessing) {
-      analyzeFillers(transcript, wordTimestamps);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [transcript, isProcessing]);
-
-
   const startSession = async () => {
     setIsActive(true);
     setTimeLeft(60);
     reset();
+    setIsComplete(false);
     setShowAnalysis(false);
+    setFinalTranscript("");
     setFillers([]);
-    setScore(0);
 
     await startRecording(speechLanguageCode);
 
@@ -83,30 +68,42 @@ export default function FillerWordEliminator() {
     }, 1000);
   };
 
-  const stopSession = () => {
+  const stopSession = async () => {
     setIsActive(false);
     if (timerRef.current) clearInterval(timerRef.current);
     
-    stopRecording();
+    const result = await stopRecording();
+    setFinalTranscript(result.transcript);
+    analyzeFillers(result.transcript, result.words);
+    setIsComplete(true);
     setTotalAttempts(prev => prev + 1);
   };
 
   const analyzeFillers = (text: string, words: WordTimestamp[]) => {
     const content = fillerWordEliminatorMaster.content.multilingual[language] || fillerWordEliminatorMaster.content.multilingual.en;
     const targets = content.targetFillerWords;
+    
+    // Sort by length descending to match longer phrases first
+    const sortedTargets = [...targets].sort((a, b) => b.length - a.length);
 
     const detections: FillerDetection[] = [];
     let totalCount = 0;
 
-    targets.forEach(filler => {
-      const fillerLower = filler.toLowerCase();
-      const matches = words.filter(w => w.text === fillerLower);
+    sortedTargets.forEach(filler => {
+      const escaped = filler.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`(?<=^|[^a-zA-Z0-9À-ÿ])(${escaped})(?=[^a-zA-Z0-9À-ÿ]|$)`, 'gi');
       
-      if (matches.length > 0) {
+      const matches = text.match(regex);
+      if (matches) {
+        // Find positions from word timestamps if possible
+        const positions = words
+          .filter(w => w.text.toLowerCase().includes(filler.toLowerCase()))
+          .map(w => w.start / 1000);
+          
         detections.push({
           word: filler,
           count: matches.length,
-          positions: matches.map(m => m.start)
+          positions: positions.length > 0 ? positions : []
         });
         totalCount += matches.length;
       }
@@ -116,6 +113,7 @@ export default function FillerWordEliminator() {
     const calculatedScore = Math.max(0, 100 - totalCount * 10);
     setScore(calculatedScore);
 
+    // Save to progress
     if (user) {
       saveAttempt({
         exerciseId: "filler-word-eliminator",
@@ -133,6 +131,7 @@ export default function FillerWordEliminator() {
   const handleRestart = () => {
     pickNewTopic();
     reset();
+    setIsComplete(false);
     setShowAnalysis(false);
     setTimeLeft(60);
   };
@@ -155,7 +154,7 @@ export default function FillerWordEliminator() {
             <div className="rounded-xl glass p-4 text-center min-w-[100px]">
               <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
                 <Trophy className="h-5 w-5" />
-                {transcript ? score : "--"}
+                {isComplete ? score : "--"}
               </div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider">Score</div>
             </div>
@@ -166,15 +165,6 @@ export default function FillerWordEliminator() {
           </div>
 
           <div className="relative overflow-hidden rounded-3xl glass p-8 shadow-2xl border border-white/10">
-            {/* Model Loading UI */}
-            {isModelLoading && (
-              <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-slate-900/80 backdrop-blur-lg rounded-3xl">
-                <Loader2 className="h-12 w-12 animate-spin text-primary mb-4" />
-                <p className="text-lg font-semibold text-foreground">Loading Speech Model...</p>
-                <p className="text-muted-foreground mb-4">This may take a moment. Please wait.</p>
-              </div>
-            )}
-
             {/* Minimalist Recording UI */}
             <div className={`transition-all duration-500 ease-in-out ${showAnalysis ? 'opacity-0 scale-95 pointer-events-none absolute' : 'opacity-100 scale-100'}`}>
               <div className="mb-8 text-center">
@@ -192,19 +182,17 @@ export default function FillerWordEliminator() {
                   {isRecording && (
                     <>
                       <div className="h-2 w-2 rounded-full bg-rose-500 animate-ping" />
-                      <span className="text-sm font-semibold uppercase tracking-widest text-rose-500">
-                        Live Recording
-                      </span>
+                      <span className="text-sm font-semibold text-rose-500 uppercase tracking-widest">Live Recording</span>
                     </>
                   )}
-                  {!isRecording && !transcript && <span className="text-sm text-muted-foreground font-medium">Ready to record</span>}
-                  {transcript && !isRecording && <span className="text-sm text-emerald-500 font-medium">Analysis ready</span>}
+                  {!isRecording && !isComplete && <span className="text-sm text-muted-foreground font-medium">Ready to record</span>}
+                  {isComplete && !showAnalysis && <span className="text-sm text-emerald-500 font-medium">Recording captured</span>}
                 </div>
               </div>
 
               <div className="flex flex-col gap-4 max-w-xs mx-auto">
-                {!isActive && !transcript && (
-                  <Button variant="hero" size="xl" className="w-full shadow-glow" onClick={startSession} disabled={isModelLoading}>
+                {!isActive && !isComplete && (
+                  <Button variant="hero" size="xl" className="w-full shadow-glow" onClick={startSession}>
                     <Mic className="mr-2 h-5 w-5" />
                     Start Speaking
                   </Button>
@@ -215,14 +203,15 @@ export default function FillerWordEliminator() {
                     Stop Recording
                   </Button>
                 )}
-                {transcript && !isRecording && !showAnalysis && (
+                {isComplete && !showAnalysis && (
                   <Button 
                     variant="accent" 
                     size="xl" 
-                    className="w-full shadow-glow"
+                    className="w-full shadow-glow animate-bounce" 
                     onClick={() => setShowAnalysis(true)}
                   >
-                    <Sparkles className="mr-2 h-5 w-5" />Reveal Analysis
+                    <Sparkles className="mr-2 h-5 w-5" />
+                    Reveal Analysis
                   </Button>
                 )}
               </div>
@@ -233,6 +222,10 @@ export default function FillerWordEliminator() {
               className={`transition-all duration-300 ${
                 showAnalysis ? 'translate-y-0 opacity-100 relative' : 'translate-y-full opacity-0 absolute inset-0 pointer-events-none'
               }`}
+              style={{ 
+                maxHeight: showAnalysis ? '2000px' : '0px',
+                transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)'
+              }}
             >
               <div className="space-y-8 py-4">
                 <div className="flex items-center justify-between border-b border-white/10 pb-4">
@@ -290,7 +283,7 @@ export default function FillerWordEliminator() {
                    </div>
                    <div className="p-6 max-h-[300px] overflow-y-auto custom-scrollbar">
                      <p className="text-lg leading-relaxed text-foreground/90 whitespace-pre-wrap">
-                        {transcript || "No speech captured."}
+                        {finalTranscript || "No speech captured."}
                      </p>
                    </div>
                 </div>
@@ -312,8 +305,8 @@ export default function FillerWordEliminator() {
                 Target Filler Words
               </h3>
               <div className="flex flex-wrap gap-2">
-                {(content.targetFillerWords).map((word) => (
-                  <span key={word} className="rounded-xl bg-white/5 border border-white/10 px-4 py-2 text-sm text-muted-foreground font-medium capitalize">
+                {["um", "uh", "like", "you know", "so"].map((word) => (
+                  <span key={word} className="rounded-xl bg-white/5 border border-white/10 px-4 py-2 text-sm text-muted-foreground font-medium">
                     {word}
                   </span>
                 ))}

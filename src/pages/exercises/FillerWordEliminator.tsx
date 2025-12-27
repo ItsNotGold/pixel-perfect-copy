@@ -3,7 +3,7 @@ import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { fillerWordEliminatorMaster } from "@/data/exercises/fillerWordEliminator.master";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useWhisperTranscription, WordTimestamp } from "@/hooks/useWhisperTranscription";
+import { useVoskTranscription, WordTimestamp } from "@/hooks/useVoskTranscription";
 import { ExerciseGate } from "@/components/ExerciseGate";
 import { MessageCircle, Mic, Square, RotateCcw, Trophy, AlertTriangle, Loader2, Sparkles, ChevronUp } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
@@ -155,7 +155,7 @@ export default function FillerWordEliminator() {
             <div className="rounded-xl glass p-4 text-center min-w-[100px]">
               <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
                 <Trophy className="h-5 w-5" />
-                {isComplete ? score : "--"}
+                {transcript ? score : "--"}
               </div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider">Score</div>
             </div>

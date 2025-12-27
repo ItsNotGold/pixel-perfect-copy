@@ -94,26 +94,19 @@ export default function FillerWordEliminator() {
   const analyzeFillers = (text: string, words: WordTimestamp[]) => {
     const content = fillerWordEliminatorMaster.content.multilingual[language] || fillerWordEliminatorMaster.content.multilingual.en;
     const targets = content.targetFillerWords;
-    
-    const sortedTargets = [...targets].sort((a, b) => b.length - a.length);
 
     const detections: FillerDetection[] = [];
     let totalCount = 0;
 
-    sortedTargets.forEach(filler => {
-      const escaped = filler.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const regex = new RegExp(`(?<=^|[^a-zA-Z0-9À-ÿ])(${escaped})(?=[^a-zA-Z0-9À-ÿ]|$)`, 'gi');
+    targets.forEach(filler => {
+      const fillerLower = filler.toLowerCase();
+      const matches = words.filter(w => w.text === fillerLower);
       
-      const matches = text.match(regex);
-      if (matches) {
-        const positions = words
-          .filter(w => w.text.toLowerCase().includes(filler.toLowerCase()))
-          .map(w => w.start);
-          
+      if (matches.length > 0) {
         detections.push({
           word: filler,
           count: matches.length,
-          positions: positions.length > 0 ? positions : []
+          positions: matches.map(m => m.start)
         });
         totalCount += matches.length;
       }
@@ -143,8 +136,6 @@ export default function FillerWordEliminator() {
     setShowAnalysis(false);
     setTimeLeft(60);
   };
-
-  const isComplete = transcript && !isProcessing;
 
   return (
     <MainLayout>
@@ -181,10 +172,6 @@ export default function FillerWordEliminator() {
                 <Loader2 className="h-12 w-12 animate-spin text-primary mb-4" />
                 <p className="text-lg font-semibold text-foreground">Loading Speech Model...</p>
                 <p className="text-muted-foreground mb-4">This may take a moment. Please wait.</p>
-                <div className="w-64 rounded-full bg-white/10 h-2.5">
-                  <div className="bg-primary h-2.5 rounded-full" style={{ width: `${loadingProgress}%` }}></div>
-                </div>
-                <p className="mt-2 text-sm font-mono text-muted-foreground">{loadingProgress}%</p>
               </div>
             )}
 
@@ -202,21 +189,21 @@ export default function FillerWordEliminator() {
                   {Math.floor(timeLeft / 60)}:{(timeLeft % 60).toString().padStart(2, "0")}
                 </div>
                 <div className="mt-4 flex items-center justify-center gap-2">
-                  {(isRecording || isProcessing) && (
+                  {isRecording && (
                     <>
-                      <div className={`h-2 w-2 rounded-full ${isProcessing ? 'bg-amber-500 animate-pulse' : 'bg-rose-500 animate-ping'}`} />
-                      <span className={`text-sm font-semibold uppercase tracking-widest ${isProcessing ? 'text-amber-500' : 'text-rose-500'}`}>
-                        {isProcessing ? "Analyzing..." : "Live Recording"}
+                      <div className="h-2 w-2 rounded-full bg-rose-500 animate-ping" />
+                      <span className="text-sm font-semibold uppercase tracking-widest text-rose-500">
+                        Live Recording
                       </span>
                     </>
                   )}
-                  {!isRecording && !isProcessing && !isComplete && <span className="text-sm text-muted-foreground font-medium">Ready to record</span>}
-                  {isComplete && !showAnalysis && !isProcessing && <span className="text-sm text-emerald-500 font-medium">Analysis ready</span>}
+                  {!isRecording && !transcript && <span className="text-sm text-muted-foreground font-medium">Ready to record</span>}
+                  {transcript && !isRecording && <span className="text-sm text-emerald-500 font-medium">Analysis ready</span>}
                 </div>
               </div>
 
               <div className="flex flex-col gap-4 max-w-xs mx-auto">
-                {!isActive && !isComplete && (
+                {!isActive && !transcript && (
                   <Button variant="hero" size="xl" className="w-full shadow-glow" onClick={startSession} disabled={isModelLoading}>
                     <Mic className="mr-2 h-5 w-5" />
                     Start Speaking
@@ -228,15 +215,14 @@ export default function FillerWordEliminator() {
                     Stop Recording
                   </Button>
                 )}
-                {isComplete && !showAnalysis && (
+                {transcript && !isRecording && !showAnalysis && (
                   <Button 
                     variant="accent" 
                     size="xl" 
                     className="w-full shadow-glow"
                     onClick={() => setShowAnalysis(true)}
-                    disabled={isProcessing}
                   >
-                    {isProcessing ? <><Loader2 className="mr-2 h-5 w-5 animate-spin" /> Please Wait</> : <><Sparkles className="mr-2 h-5 w-5" />Reveal Analysis</>}
+                    <Sparkles className="mr-2 h-5 w-5" />Reveal Analysis
                   </Button>
                 )}
               </div>

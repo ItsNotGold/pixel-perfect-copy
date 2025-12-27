@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useInvisibleTranscription, WordTimestamp } from "@/hooks/useInvisibleTranscription";
+import { useVoskTranscription, WordTimestamp } from "@/hooks/useVoskTranscription";
 import { ExerciseGate } from "@/components/ExerciseGate";
 import { Mic, Play, Square, RotateCcw, Trophy, Clock, Feather, Sparkles, CheckCircle2, XCircle, ChevronDown, ChevronUp } from "lucide-react";
 import { toast } from "sonner";
@@ -20,7 +20,7 @@ interface WordAnalysis {
 
 export default function WordIncorporation() {
   const { language, speechLanguageCode } = useLanguage();
-  const { isRecording, startRecording, stopRecording, reset, getTranscript, getWordTimestamps } = useInvisibleTranscription();
+  const { isRecording, isModelLoading, startRecording, stopRecording, reset, getTranscript, getWordTimestamps } = useVoskTranscription();
 
   const [currentPrompt, setCurrentPrompt] = useState<{ prompt: string; words: string[] } | null>(null);
   const [isActive, setIsActive] = useState(false);
@@ -205,9 +205,11 @@ export default function WordIncorporation() {
                     </p>
                   </div>
 
-                  <Button onClick={startSession} size="xl" variant="hero" className="w-full shadow-glow max-w-xs mx-auto">
-                    <Play className="h-5 w-5 mr-2" />
-                    Begin Exercise
+                  <Button onClick={startSession} size="xl" variant="hero" className="w-full shadow-glow max-w-xs mx-auto" disabled={isModelLoading}>
+                    {isModelLoading ? "Loading Model..." : <>
+                      <Play className="h-5 w-5 mr-2" />
+                      Begin Exercise
+                    </>}
                   </Button>
                 </div>
               )}

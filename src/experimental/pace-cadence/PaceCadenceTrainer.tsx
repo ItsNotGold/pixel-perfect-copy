@@ -4,7 +4,7 @@ import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { paceCadenceMaster, PaceType } from "@/data/exercises/paceCadence.master";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useVoiceRecording } from "@/hooks/useVoiceRecording";
+import { useVoskVoiceRecording } from "@/hooks/useVoskVoiceRecording";
 import { ExerciseGate } from "@/components/ExerciseGate";
 import { Mic, Square, Gauge, RotateCcw } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
@@ -52,13 +52,14 @@ export default function PaceCadenceTrainer() {
 
   const { 
     isRecording, 
+    isModelLoading,
     startRecording, 
     stopRecording, 
     transcript,
-    rawTranscript,
+    wordTimestamps,
     audioBlob,
     saveAudio 
-  } = useVoiceRecording();
+  } = useVoskVoiceRecording();
   
   const { user } = useAuth();
   const { saveAttempt } = useProgress();
@@ -116,7 +117,6 @@ export default function PaceCadenceTrainer() {
   const targetRange = content.paceDefinitions[currentPaceType];
 
   // --- MANDATORY WPM ARCHITECTURE (REWORKED FROM SCRATCH) ---
-  const { wordTimestamps } = useVoiceRecording();
   const sessionStartRef = useRef<number | null>(null);
 
   // Core Data Structure

@@ -1,6 +1,7 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 import { toast } from "sonner";
 import { createModel, KaldiRecognizer, Model } from "vosk-browser";
+import { supabase } from "@/integrations/supabase/client";
 
 export interface WordTimestamp {
   text: string;
@@ -8,7 +9,6 @@ export interface WordTimestamp {
   end: number;
 }
 
-// A map of supported languages and their corresponding Vosk model URLs.
 const VOSK_MODELS: Record<string, { url: string; name: string }> = {
   "en-US": { url: "https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip", name: "English (US)" },
   "fr-FR": { url: "https://alphacephei.com/vosk/models/vosk-model-small-fr-0.22.zip", name: "French" },
@@ -24,19 +24,21 @@ declare global {
   }
 }
 
-interface UseVoskTranscriptionReturn {
+interface UseVoskVoiceRecordingReturn {
   isRecording: boolean;
   isProcessing: boolean;
   isModelLoading: boolean;
-  getTranscript: () => string;
-  getWordTimestamps: () => WordTimestamp[];
+  transcript: string;
+  wordTimestamps: WordTimestamp[];
   startRecording: (languageCode?: string) => Promise<void>;
   stopRecording: () => Promise<{ blob: Blob | null; transcript: string; words: WordTimestamp[] }>;
-  reset: () => void;
+  resetTranscript: () => void;
   audioBlob: Blob | null;
+  audioUrl: string | null;
+  saveAudio: (blobOverride?: Blob | null) => Promise<string | null>;
 }
 
-export function useVoskTranscription(): UseVoskTranscriptionReturn {
+export function useVoskVoiceRecording(): UseVoskVoiceRecordingReturn {
   const [isRecording, setIsRecording] = useState(false);
   const isRecordingRef = useRef(isRecording);
   useEffect(() => {
@@ -45,13 +47,11 @@ export function useVoskTranscription(): UseVoskTranscriptionReturn {
 
   const [isProcessing, setIsProcessing] = useState(false);
   const [isModelLoading, setIsModelLoading] = useState(false);
+  const [transcript, setTranscript] = useState("");
+  const [wordTimestamps, setWordTimestamps] = useState<WordTimestamp[]>([]);
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
+  const [audioUrl, setAudioUrl] = useState<string | null>(null);
 
-  // Refs for transcription data
-  const transcriptRef = useRef("");
-  const wordTimestampsRef = useRef<WordTimestamp[]>([]);
-
-  // Refs for Vosk and audio processing
   const modelsRef = useRef<Map<string, Model>>(new Map());
   const recognizerRef = useRef<KaldiRecognizer | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
@@ -59,21 +59,17 @@ export function useVoskTranscription(): UseVoskTranscriptionReturn {
   const mediaStreamSourceRef = useRef<MediaStreamAudioSourceNode | null>(null);
   const mediaStreamRef = useRef<MediaStream | null>(null);
 
-  // Refs for MediaRecorder
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
 
-  // Fetches and caches the Vosk model for a given language.
   const getModelForLanguage = useCallback(async (languageCode: string) => {
     if (!VOSK_MODELS[languageCode]) {
       toast.error(`Language "${languageCode}" is not supported.`);
       return null;
     }
-
     if (modelsRef.current.has(languageCode)) {
       return modelsRef.current.get(languageCode);
     }
-
     setIsModelLoading(true);
     const modelPath = `vosk-model-${languageCode}`;
     try {
@@ -92,25 +88,21 @@ export function useVoskTranscription(): UseVoskTranscriptionReturn {
   }, []);
 
   const startRecording = useCallback(async (languageCode: string = "en-US") => {
-    // Reset previous recording state
-    transcriptRef.current = "";
-    wordTimestampsRef.current = [];
+    setTranscript("");
+    setWordTimestamps([]);
     setAudioBlob(null);
 
     try {
       const model = await getModelForLanguage(languageCode);
-      if (!model) {
-        throw new Error("Vosk model is not available for the selected language.");
-      }
+      if (!model) throw new Error("Vosk model is not available.");
 
-      // Create a new recognizer
       const recognizer = new model.KaldiRecognizer(16000);
       recognizer.setWords(true);
 
       recognizer.on("result", (message) => {
         const result = message.result;
         if (result.text) {
-          transcriptRef.current = (transcriptRef.current + " " + result.text).trim();
+          setTranscript(prev => (prev + " " + result.text).trim());
         }
         if (result.result) {
           const newWords: WordTimestamp[] = result.result.map(w => ({
@@ -118,16 +110,14 @@ export function useVoskTranscription(): UseVoskTranscriptionReturn {
             start: w.start,
             end: w.end,
           }));
-          wordTimestampsRef.current.push(...newWords);
+          setWordTimestamps(prev => [...prev, ...newWords]);
         }
       });
       recognizerRef.current = recognizer;
 
-      // Get user's microphone stream
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
       mediaStreamRef.current = stream;
 
-      // Setup MediaRecorder to capture audio for blob creation
       const mediaRecorder = new MediaRecorder(stream);
       mediaRecorderRef.current = mediaRecorder;
       chunksRef.current = [];
@@ -135,7 +125,6 @@ export function useVoskTranscription(): UseVoskTranscriptionReturn {
         if (e.data.size > 0) chunksRef.current.push(e.data);
       };
 
-      // Pipe audio stream to Vosk
       const AudioContextClass = window.AudioContext || window.webkitAudioContext;
       const audioContext = new AudioContextClass({ sampleRate: 16000 });
       audioContextRef.current = audioContext;
@@ -166,18 +155,16 @@ export function useVoskTranscription(): UseVoskTranscriptionReturn {
 
   const stopRecording = useCallback(async () => {
     if (!isRecording) {
-      return { blob: audioBlob, transcript: transcriptRef.current, words: wordTimestampsRef.current };
+      return { blob: audioBlob, transcript, words: wordTimestamps };
     }
 
     setIsProcessing(true);
 
-    // Stop piping audio to Vosk
     if (processorRef.current && mediaStreamSourceRef.current) {
       mediaStreamSourceRef.current.disconnect();
       processorRef.current.disconnect();
     }
 
-    // Stop MediaRecorder and get the audio blob
     let recordedBlob: Blob | null = null;
     if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") {
       recordedBlob = await new Promise<Blob>((resolve) => {
@@ -190,17 +177,14 @@ export function useVoskTranscription(): UseVoskTranscriptionReturn {
       });
     }
 
-    // Stop microphone track
     if (mediaStreamRef.current) {
       mediaStreamRef.current.getTracks().forEach(track => track.stop());
     }
 
-    // Close audio context
     if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
       await audioContextRef.current.close();
     }
 
-    // Clean up recognizer
     if (recognizerRef.current) {
       recognizerRef.current.remove();
       recognizerRef.current = null;
@@ -211,29 +195,56 @@ export function useVoskTranscription(): UseVoskTranscriptionReturn {
 
     return {
       blob: recordedBlob,
-      transcript: transcriptRef.current,
-      words: wordTimestampsRef.current
+      transcript: transcript,
+      words: wordTimestamps
     };
-  }, [isRecording, audioBlob]);
+  }, [isRecording, audioBlob, transcript, wordTimestamps]);
 
-  const reset = useCallback(() => {
-    transcriptRef.current = "";
-    wordTimestampsRef.current = [];
+  const saveAudio = useCallback(async (blobOverride?: Blob | null): Promise<string | null> => {
+    const blobToSave = blobOverride || audioBlob;
+    if (!blobToSave) return null;
+
+    try {
+      const fileName = `recording-${Date.now()}.webm`;
+      const { data, error } = await supabase.storage
+        .from('audio-recordings')
+        .upload(fileName, blobToSave, {
+          contentType: 'audio/webm',
+        });
+
+      if (error) throw error;
+
+      const { data: urlData } = supabase.storage
+        .from('audio-recordings')
+        .getPublicUrl(fileName);
+
+      setAudioUrl(urlData.publicUrl);
+      return urlData.publicUrl;
+    } catch (error) {
+      console.error('Error saving audio:', error);
+      toast.error('Failed to save audio recording');
+      return null;
+    }
+  }, [audioBlob]);
+
+  const resetTranscript = useCallback(() => {
+    setTranscript("");
+    setWordTimestamps([]);
     setAudioBlob(null);
+    setAudioUrl(null);
   }, []);
-
-  const getTranscript = () => transcriptRef.current;
-  const getWordTimestamps = () => wordTimestampsRef.current;
 
   return {
     isRecording,
     isProcessing,
     isModelLoading,
-    getTranscript,
-    getWordTimestamps,
+    transcript,
+    wordTimestamps,
     startRecording,
     stopRecording,
-    reset,
-    audioBlob
+    resetTranscript,
+    audioBlob,
+    audioUrl,
+    saveAudio,
   };
 }

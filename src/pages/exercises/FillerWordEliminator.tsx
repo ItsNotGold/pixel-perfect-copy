@@ -3,7 +3,7 @@ import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { fillerWordEliminatorMaster } from "@/data/exercises/fillerWordEliminator.master";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useVoskTranscription, WordTimestamp } from "@/hooks/useVoskTranscription";
+import { useInvisibleTranscription, WordTimestamp } from "@/hooks/useInvisibleTranscription";
 import { ExerciseGate } from "@/components/ExerciseGate";
 import { MessageCircle, Mic, Play, Square, RotateCcw, Trophy, AlertTriangle, Loader2, Sparkles, ChevronUp } from "lucide-react";
 import { toast } from "sonner";
@@ -18,7 +18,7 @@ interface FillerDetection {
 
 export default function FillerWordEliminator() {
   const { language, speechLanguageCode } = useLanguage();
-  const { isRecording, isProcessing, isModelLoading, startRecording, stopRecording, reset, getTranscript, getWordTimestamps, audioBlob } = useVoskTranscription();
+  const { isRecording, isProcessing, startRecording, stopRecording, reset, getTranscript, getWordTimestamps, audioBlob } = useInvisibleTranscription();
 
   const [currentTopic, setCurrentTopic] = useState("");
   const [isActive, setIsActive] = useState(false);
@@ -192,11 +192,9 @@ export default function FillerWordEliminator() {
 
               <div className="flex flex-col gap-4 max-w-xs mx-auto">
                 {!isActive && !isComplete && (
-                  <Button variant="hero" size="xl" className="w-full shadow-glow" onClick={startSession} disabled={isModelLoading}>
-                    {isModelLoading ? "Loading Model..." : <>
-                      <Mic className="mr-2 h-5 w-5" />
-                      Start Speaking
-                    </>}
+                  <Button variant="hero" size="xl" className="w-full shadow-glow" onClick={startSession}>
+                    <Mic className="mr-2 h-5 w-5" />
+                    Start Speaking
                   </Button>
                 )}
                 {isActive && (

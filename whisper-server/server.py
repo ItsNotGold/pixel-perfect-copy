@@ -48,6 +48,11 @@ print("Model loaded successfully.")
 
 app = FastAPI()
 
+if __name__ == "__main__":
+    import uvicorn
+    # Listen on all interfaces so the host can access it
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+
 @app.websocket("/transcribe")
 async def transcribe(websocket: WebSocket):
     await websocket.accept()

@@ -24,6 +24,8 @@ except ImportError:
 
 print(f"Using attention implementation: {attn_implementation}")
 
+# Load model directly as requested
+processor = AutoProcessor.from_pretrained(model_id)
 model = AutoModelForSpeechSeq2Seq.from_pretrained(
     model_id, 
     torch_dtype=torch_dtype, 
@@ -32,8 +34,6 @@ model = AutoModelForSpeechSeq2Seq.from_pretrained(
     attn_implementation=attn_implementation
 )
 model.to(device)
-
-processor = AutoProcessor.from_pretrained(model_id)
 
 pipe = pipeline(
     "automatic-speech-recognition",

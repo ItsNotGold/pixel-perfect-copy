@@ -3,8 +3,8 @@ import { toast } from "sonner";
 
 export interface WordTimestamp {
   text: string;
-  start: number;
-  end: number;
+  start: number; // milliseconds
+  end: number;   // milliseconds
 }
 
 interface WhisperOutput {
@@ -15,8 +15,8 @@ interface WhisperOutput {
 interface UseWhisperTranscriptionReturn {
   isRecording: boolean;
   isProcessing: boolean;
-  isModelLoading: boolean;
-  loadingProgress: number;
+  isModelLoading: boolean; // Always false for Websocket
+  loadingProgress: number; // Always 100 for Websocket
   transcript: string;
   wordTimestamps: WordTimestamp[];
   startRecording: (languageCode?: string) => Promise<void>;
@@ -32,82 +32,37 @@ interface UseWhisperTranscriptionProps {
 export function useWhisperTranscription({ onTranscribeComplete }: UseWhisperTranscriptionProps = {}): UseWhisperTranscriptionReturn {
   const [isRecording, setIsRecording] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
-  const [isModelLoading, setIsModelLoading] = useState(false);
-  const [loadingProgress, setLoadingProgress] = useState(0);
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
 
   const [transcript, setTranscript] = useState("");
   const [wordTimestamps, setWordTimestamps] = useState<WordTimestamp[]>([]);
 
-  const workerRef = useRef<Worker | null>(null);
+  const websocketRef = useRef<WebSocket | null>(null);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
-  const languageRef = useRef<string | undefined>("en");
   
-  // Ref for callback to avoid useEffect re-runs
+  // Ref for callback
   const onCompleteRef = useRef(onTranscribeComplete);
   useEffect(() => {
     onCompleteRef.current = onTranscribeComplete;
   }, [onTranscribeComplete]);
 
-  useEffect(() => {
-    // Create worker
-    const worker = new Worker(new URL('../workers/whisper.worker.ts', import.meta.url), {
-        type: 'module'
-    });
-
-    worker.onmessage = (event) => {
-      const { status, output, message, error, progress } = event.data;
-
-      switch (status) {
-        case 'loading':
-            setIsModelLoading(true);
-            setLoadingProgress(0);
-            break;
-        case 'progress':
-            setIsModelLoading(true);
-            setLoadingProgress(progress || 0);
-            break;
-        case 'ready':
-            setIsModelLoading(false);
-            break;
-        case 'transcribing':
-            setIsProcessing(true);
-            setIsModelLoading(false);
-            break;
-        case 'complete':
-            setTranscript(output.text);
-            setWordTimestamps(output.chunks);
-            if (onCompleteRef.current) {
-                onCompleteRef.current(output);
-            }
-            setIsProcessing(false);
-            toast.success("Transcription complete!");
-            break;
-        case 'error':
-            setIsProcessing(false);
-            setIsModelLoading(false);
-            console.error("Worker error:", error);
-            toast.error(message || "An error occurred", {
-              description: typeof error === 'string' ? error : error?.message
-            });
-            break;
-      }
-    };
-
-    workerRef.current = worker;
-    worker.postMessage({ action: 'loadModel' });
-
-    return () => {
-      worker.terminate();
-    };
+  const cleanupWebSocket = useCallback(() => {
+     if (websocketRef.current) {
+         try {
+             websocketRef.current.close();
+         } catch (e) {
+             console.error("Error closing socket", e);
+         }
+         websocketRef.current = null;
+     }
   }, []);
 
   const startRecording = useCallback(async (languageCode: string = "en") => {
     setTranscript("");
     setWordTimestamps([]);
     setAudioBlob(null);
-    languageRef.current = languageCode;
+    cleanupWebSocket();
 
     try {
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
@@ -116,54 +71,104 @@ export function useWhisperTranscription({ onTranscribeComplete }: UseWhisperTran
       }
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
 
-      const mediaRecorder = new MediaRecorder(stream);
-      mediaRecorderRef.current = mediaRecorder;
-      chunksRef.current = [];
+      // Connect to WebSocket
+      // Defaulting to localhost:8000 if not env var
+      const wsUrl = import.meta.env.VITE_WHISPER_URL || "ws://localhost:8000/transcribe";
+      console.log(`Connecting to Whisper server at ${wsUrl}`);
+      
+      const socket = new WebSocket(wsUrl);
+      websocketRef.current = socket;
 
-      mediaRecorder.ondataavailable = (e) => {
-        if (e.data.size > 0) chunksRef.current.push(e.data);
+      socket.onopen = () => {
+          console.log("WebSocket connected");
+          setIsRecording(true);
+          
+          const mediaRecorder = new MediaRecorder(stream);
+          mediaRecorderRef.current = mediaRecorder;
+          chunksRef.current = [];
+
+          mediaRecorder.ondataavailable = async (e) => {
+            if (e.data.size > 0 && socket.readyState === WebSocket.OPEN) {
+                chunksRef.current.push(e.data);
+                // Convert blob to base64 to send over websocket
+                const reader = new FileReader();
+                reader.onloadend = () => {
+                   const base64Audio = (reader.result as string).split(',')[1];
+                   socket.send(JSON.stringify({
+                       audio_data: base64Audio
+                   }));
+                };
+                reader.readAsDataURL(e.data);
+            }
+          };
+
+          mediaRecorder.start(500); // 500ms chunks for streaming
+          
+          toast.success("Recording started - Server Connected");
       };
-
-      mediaRecorder.onstop = async () => {
-        const blob = new Blob(chunksRef.current, { type: "audio/webm" });
-        setAudioBlob(blob);
-        
-        if (workerRef.current) {
+      
+      socket.onmessage = (event) => {
           try {
-             const arrayBuffer = await blob.arrayBuffer();
-             const audioContext = new AudioContext({ sampleRate: 16000 });
-             const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
-             const audioData = audioBuffer.getChannelData(0);
-             
-             // Send Float32Array to worker
-             workerRef.current.postMessage({
-               audio: audioData,
-               language: languageRef.current,
-               task: 'transcribe',
-             }, [audioData.buffer]); // Transferable
-             
-          } catch (err) {
-             console.error("Error decoding audio:", err);
-             toast.error("Failed to process audio recording.");
+              const data = JSON.parse(event.data);
+              if (data.message_type === "FinalTranscript") {
+                  const resultText = data.text || "";
+                  const resultChunks = data.words || [];
+                  
+                  setTranscript(resultText);
+                  setWordTimestamps(resultChunks);
+                  
+                  if (onCompleteRef.current) {
+                      onCompleteRef.current({ text: resultText, chunks: resultChunks });
+                  }
+                  
+                  // If final, we can assume processing is done for that segment
+                  setIsProcessing(false);
+              }
+          } catch (e) {
+              console.error("Error parsing websocket message", e);
           }
-        }
-        stream.getTracks().forEach(track => track.stop());
       };
 
-      mediaRecorder.start();
-      setIsRecording(true);
+      socket.onerror = (error) => {
+          console.error("WebSocket error:", error);
+          toast.error("Connection to transcription server failed.");
+          setIsRecording(false);
+      };
+      
+      socket.onclose = () => {
+          console.log("WebSocket disconnected");
+          setIsRecording(false);
+      };
 
     } catch (err) {
       console.error("Error starting recording:", err);
-      toast.error("Failed to start recording. Please check microphone permissions.");
+      toast.error("Failed to start recording.");
     }
-  }, []);
+  }, [cleanupWebSocket]);
 
   const stopRecording = useCallback(() => {
-    setIsRecording(false);
     if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") {
       mediaRecorderRef.current.stop();
+      mediaRecorderRef.current.stream.getTracks().forEach(track => track.stop());
     }
+    
+    // Create final blob
+    const blob = new Blob(chunksRef.current, { type: "audio/webm" });
+    setAudioBlob(blob);
+
+    if (websocketRef.current && websocketRef.current.readyState === WebSocket.OPEN) {
+        setIsProcessing(true);
+        // Send termination signal potentially, or just close after short delay
+        // The server.py loop breaks on 'terminate_session' or close
+        websocketRef.current.send(JSON.stringify({ terminate_session: true }));
+        // Note: The server might send one last "FinalTranscript" before closing
+        // We defer closing slightly to receive it? 
+        // Actually server.py sends transcript *as it goes*. 
+        // If we want a summary, server.py logic might need to ensure it flushes buffer.
+        // Current server.py flushes on terminate.
+    }
+    
+    setIsRecording(false);
   }, []);
 
   const reset = useCallback(() => {
@@ -172,13 +177,14 @@ export function useWhisperTranscription({ onTranscribeComplete }: UseWhisperTran
     setAudioBlob(null);
     setIsProcessing(false);
     setIsRecording(false);
-  }, []);
+    cleanupWebSocket();
+  }, [cleanupWebSocket]);
 
   return {
     isRecording,
     isProcessing,
-    isModelLoading,
-    loadingProgress,
+    isModelLoading: false, // Legacy compatibility
+    loadingProgress: 100, // Legacy compatibility
     transcript,
     wordTimestamps,
     startRecording,

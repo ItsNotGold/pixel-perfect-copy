@@ -3,7 +3,7 @@ import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
 import { fillerWordEliminatorMaster } from "@/data/exercises/fillerWordEliminator.master";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useInvisibleTranscription, WordTimestamp } from "@/hooks/useInvisibleTranscription";
+import { useWhisperTranscription, WordTimestamp } from "@/hooks/useWhisperTranscription";
 import { ExerciseGate } from "@/components/ExerciseGate";
 import { MessageCircle, Mic, Play, Square, RotateCcw, Trophy, AlertTriangle, Loader2, Sparkles, ChevronUp } from "lucide-react";
 import { toast } from "sonner";
@@ -18,8 +18,8 @@ interface FillerDetection {
 
 export default function FillerWordEliminator() {
   const { language, speechLanguageCode } = useLanguage();
-  const { isRecording, isProcessing, startRecording, stopRecording, reset, getTranscript, getWordTimestamps, audioBlob } = useInvisibleTranscription();
-
+  
+  // State definitions
   const [currentTopic, setCurrentTopic] = useState("");
   const [isActive, setIsActive] = useState(false);
   const [timeLeft, setTimeLeft] = useState(60);
@@ -46,40 +46,8 @@ export default function FillerWordEliminator() {
     pickNewTopic();
   }, [language, pickNewTopic]);
 
-  const startSession = async () => {
-    setIsActive(true);
-    setTimeLeft(60);
-    reset();
-    setIsComplete(false);
-    setShowAnalysis(false);
-    setFinalTranscript("");
-    setFillers([]);
-
-    await startRecording(speechLanguageCode);
-
-    timerRef.current = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          stopSession();
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
-  };
-
-  const stopSession = async () => {
-    setIsActive(false);
-    if (timerRef.current) clearInterval(timerRef.current);
-    
-    const result = await stopRecording();
-    setFinalTranscript(result.transcript);
-    analyzeFillers(result.transcript, result.words);
-    setIsComplete(true);
-    setTotalAttempts(prev => prev + 1);
-  };
-
-  const analyzeFillers = (text: string, words: WordTimestamp[]) => {
+  // analyzeFillers function
+  const analyzeFillers = useCallback((text: string, words: WordTimestamp[]) => {
     const content = fillerWordEliminatorMaster.content.multilingual[language] || fillerWordEliminatorMaster.content.multilingual.en;
     const targets = content.targetFillerWords;
     
@@ -126,6 +94,50 @@ export default function FillerWordEliminator() {
         },
       });
     }
+  }, [language, user, saveAttempt]);
+
+  // handleTranscriptionComplete function
+  const handleTranscriptionComplete = useCallback((data: { text: string; chunks: WordTimestamp[] }) => {
+      setFinalTranscript(data.text);
+      analyzeFillers(data.text, data.chunks);
+      setIsComplete(true);
+      setTotalAttempts(prev => prev + 1);
+  }, [analyzeFillers]);
+
+  // useWhisperTranscription hook call
+  const { isRecording, isProcessing, startRecording, stopRecording, reset, audioBlob, loadingProgress, isModelLoading } = useWhisperTranscription({ 
+      onTranscribeComplete: handleTranscriptionComplete 
+  });
+
+  // Session control functions
+  const startSession = async () => {
+    setIsActive(true);
+    setTimeLeft(60);
+    reset();
+    setIsComplete(false);
+    setShowAnalysis(false);
+    setFinalTranscript("");
+    setFillers([]);
+
+    await startRecording(speechLanguageCode);
+
+    timerRef.current = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 1) {
+          stopSession();
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+  };
+
+  const stopSession = () => {
+    setIsActive(false);
+    if (timerRef.current) clearInterval(timerRef.current);
+    
+    stopRecording();
+    // Results will be handled by handleTranscriptionComplete
   };
 
   const handleRestart = () => {

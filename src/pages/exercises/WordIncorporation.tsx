@@ -161,7 +161,7 @@ export default function WordIncorporation() {
       const formData = new FormData();
       formData.append("file", audioBlob, "recording.webm");
 
-      const response = await fetch("http://localhost:8000/transcribe_file", {
+      const response = await fetch("http://localhost:8000/transcribe", {
         method: "POST",
         body: formData,
       });
@@ -174,20 +174,6 @@ export default function WordIncorporation() {
       setFinalTranscript(result.text);
       verifyWords(result.words, currentPrompt?.words || []);
       
-      // Auto show results only after analysis is ready
-      // But we need user to click "Check Results" usually? 
-      // The original code had "Check Results" button appearing after finish.
-      // Now we have analysis running async. 
-      // Let's assume we maintain the "Check Results" button flow but enable it when analysis is done, 
-      // OR just show it immediately if the user clicks it.
-      // Actually, let's keep the manual "Check Results" button but make sure analysis populates.
-      // The original code called verifyWords synchronously after stop.
-      // Now it's async. We should probably show a loading state on the "Check Results" button if they click it too early,
-      // or just auto-show results when ready if that's preferred.
-      // The user prompt says "analyses the outputted transcription for the score". 
-      // Let's stick to the previous UX: stop -> complete -> user clicks check results.
-      // Implication: IsAnalyzing should probably block "Check Results".
-
     } catch (error) {
       console.error("Transcription failed:", error);
       toast.error("Failed to analyze audio.");

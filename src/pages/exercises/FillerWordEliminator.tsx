@@ -98,13 +98,10 @@ export default function FillerWordEliminator() {
     setIsAnalyzing(true);
     try {
       const formData = new FormData();
-      // Ensure specific filename for server processing if needed, though UUID handles it there
       formData.append("file", audioBlob, "recording.webm");
 
       // Use the newly created endpoint
-      // Assuming server runs on localhost:8000 based on standard setup. 
-      // In production this should be an env var.
-      const response = await fetch("http://localhost:8000/transcribe_file", {
+      const response = await fetch("http://localhost:8000/transcribe", {
         method: "POST",
         body: formData,
       });
@@ -114,7 +111,6 @@ export default function FillerWordEliminator() {
       }
 
       const result = await response.json();
-      // result = { text: string, words: { text, start, end, confidence }[] }
       
       setFinalTranscript(result.text);
       analyzeFillers(result.text, result.words);

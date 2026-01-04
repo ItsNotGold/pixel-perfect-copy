@@ -131,3 +131,60 @@ async def transcribe(websocket: WebSocket):
         print(f"Error during transcription: {e}")
     finally:
         await websocket.close()
+
+from fastapi import UploadFile, File, HTTPException
+import shutil
+import os
+import uuid
+
+@app.post("/transcribe_file")
+async def transcribe_file(file: UploadFile = File(...)):
+    # Create temp file
+    temp_filename = f"temp_{uuid.uuid4()}_{file.filename}"
+    try:
+        with open(temp_filename, "wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+            
+        # Transcribe
+        result = pipe(
+            temp_filename, 
+            return_timestamps="word"
+        )
+        
+        # Format output similar to WebSocket
+        output_words = []
+        chunks = result.get("chunks", [])
+        full_text = result.get("text", "").strip()
+
+        for chunk in chunks:
+            text = chunk.get("text", "").strip()
+            timestamp = chunk.get("timestamp")
+            
+            start_ms = 0
+            end_ms = 0
+            
+            if timestamp:
+                start_sec = timestamp[0] if timestamp[0] is not None else 0
+                end_sec = timestamp[1] if timestamp[1] is not None else start_sec + 0.5
+                start_ms = int(start_sec * 1000)
+                end_ms = int(end_sec * 1000)
+            
+            output_words.append({
+                "text": text,
+                "start": start_ms,
+                "end": end_ms,
+                "confidence": 1.0 
+            })
+            
+        return {
+            "text": full_text,
+            "words": output_words
+        }
+
+    except Exception as e:
+        print(f"Error processing file: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        # Cleanup
+        if os.path.exists(temp_filename):
+            os.remove(temp_filename)

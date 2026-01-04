@@ -24,8 +24,6 @@ except ImportError:
 
 print(f"Using attention implementation: {attn_implementation}")
 
-# Load model directly as requested
-processor = AutoProcessor.from_pretrained(model_id)
 model = AutoModelForSpeechSeq2Seq.from_pretrained(
     model_id, 
     torch_dtype=torch_dtype, 
@@ -34,6 +32,8 @@ model = AutoModelForSpeechSeq2Seq.from_pretrained(
     attn_implementation=attn_implementation
 )
 model.to(device)
+
+processor = AutoProcessor.from_pretrained(model_id)
 
 pipe = pipeline(
     "automatic-speech-recognition",
@@ -47,11 +47,6 @@ pipe = pipeline(
 print("Model loaded successfully.")
 
 app = FastAPI()
-
-if __name__ == "__main__":
-    import uvicorn
-    # Listen on all interfaces so the host can access it
-    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 @app.websocket("/transcribe")
 async def transcribe(websocket: WebSocket):

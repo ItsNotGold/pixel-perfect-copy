@@ -4,8 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { wordIncorporationMaster } from "@/data/exercises/wordIncorporation.master";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useInvisibleTranscription, WordTimestamp } from "@/hooks/useInvisibleTranscription";
 import { ExerciseGate } from "@/components/ExerciseGate";
-import { Mic, Play, Square, RotateCcw, Trophy, Clock, Feather, Sparkles, CheckCircle2, XCircle, ChevronDown, ChevronUp, Loader2 } from "lucide-react";
+import { Mic, Play, Square, RotateCcw, Trophy, Clock, Feather, Sparkles, CheckCircle2, XCircle, ChevronDown, ChevronUp } from "lucide-react";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { useProgress } from "@/hooks/useProgress";
@@ -17,15 +18,9 @@ interface WordAnalysis {
   timestamps: number[];
 }
 
-interface TranscriptWord {
-  text: string;
-  start: number;
-  end: number;
-  confidence: number;
-}
-
 export default function WordIncorporation() {
-  const { language } = useLanguage();
+  const { language, speechLanguageCode } = useLanguage();
+  const { isRecording, startRecording, stopRecording, reset, getTranscript, getWordTimestamps } = useInvisibleTranscription();
 
   const [currentPrompt, setCurrentPrompt] = useState<{ prompt: string; words: string[] } | null>(null);
   const [isActive, setIsActive] = useState(false);
@@ -39,13 +34,6 @@ export default function WordIncorporation() {
   const [finalTranscript, setFinalTranscript] = useState("");
   const [showTranscript, setShowTranscript] = useState(false);
   
-  // Recording state
-  const [isRecording, setIsRecording] = useState(false);
-  const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [audioUrl, setAudioUrl] = useState<string | null>(null);
-  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
-  const chunksRef = useRef<Blob[]>([]);
-
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const wordTimerRef = useRef<NodeJS.Timeout | null>(null);
   const { user } = useAuth();
@@ -89,100 +77,43 @@ export default function WordIncorporation() {
   }, [currentPrompt]);
 
   const startSession = async () => {
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const mediaRecorder = new MediaRecorder(stream);
-      mediaRecorderRef.current = mediaRecorder;
-      chunksRef.current = [];
+    setIsActive(true);
+    setTimeLeft(30);
+    setCurrentWordIndex(-1);
+    setWordDisplayTime(0);
+    reset();
+    setIsComplete(false);
+    setShowResults(false);
+    setShowTranscript(false);
+    setAnalysis([]);
 
-      mediaRecorder.ondataavailable = (e) => {
-        if (e.data.size > 0) {
-          chunksRef.current.push(e.data);
+    await startRecording(speechLanguageCode);
+    setTimeout(() => showNextWord(), 2000);
+
+    timerRef.current = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 1) {
+          stopSession();
+          return 0;
         }
-      };
-
-      mediaRecorder.onstop = () => {
-        const blob = new Blob(chunksRef.current, { type: 'audio/webm' });
-        const url = URL.createObjectURL(blob);
-        setAudioUrl(url);
-        uploadAndAnalyze(blob);
-      };
-
-      mediaRecorder.start();
-      
-      setIsActive(true);
-      setIsRecording(true);
-      setTimeLeft(30);
-      setCurrentWordIndex(-1);
-      setWordDisplayTime(0);
-      setIsComplete(false);
-      setShowResults(false);
-      setShowTranscript(false);
-      setAnalysis([]);
-      setAudioUrl(null);
-
-      // Start word logic
-      setTimeout(() => showNextWord(), 2000);
-
-      timerRef.current = setInterval(() => {
-        setTimeLeft((prev) => {
-          if (prev <= 1) {
-            stopSession();
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-
-    } catch (err) {
-      console.error("Error accessing microphone:", err);
-      toast.error("Could not access microphone");
-    }
+        return prev - 1;
+      });
+    }, 1000);
   };
 
-  const stopSession = () => {
+  const stopSession = async () => {
+    setIsActive(false);
     if (timerRef.current) clearInterval(timerRef.current);
     if (wordTimerRef.current) clearInterval(wordTimerRef.current);
     
-    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") {
-      mediaRecorderRef.current.stop();
-      setIsRecording(false);
-      mediaRecorderRef.current.stream.getTracks().forEach(track => track.stop());
-    }
-    
-    setIsActive(false);
+    const result = await stopRecording();
+    setFinalTranscript(result.transcript);
+    verifyWords(result.words, currentPrompt?.words || []);
     setIsComplete(true);
     setTotalAttempts(prev => prev + 1);
   };
 
-  const uploadAndAnalyze = async (audioBlob: Blob) => {
-    setIsAnalyzing(true);
-    try {
-      const formData = new FormData();
-      formData.append("file", audioBlob, "recording.webm");
-
-      const response = await fetch("http://localhost:8000/transcribe", {
-        method: "POST",
-        body: formData,
-      });
-
-      if (!response.ok) {
-        throw new Error(`Server error: ${response.statusText}`);
-      }
-
-      const result = await response.json();
-      setFinalTranscript(result.text);
-      verifyWords(result.words, currentPrompt?.words || []);
-      
-    } catch (error) {
-      console.error("Transcription failed:", error);
-      toast.error("Failed to analyze audio.");
-    } finally {
-      setIsAnalyzing(false);
-    }
-  };
-
-  const verifyWords = (detectedWords: TranscriptWord[], targets: string[]) => {
+  const verifyWords = (detectedWords: WordTimestamp[], targets: string[]) => {
     const results: WordAnalysis[] = targets.map(target => {
       const matches = detectedWords.filter(w => 
         w.text.toLowerCase().replace(/[.,/#!$%^&*;:{}=\-_`~()]/g,"") === target.toLowerCase()
@@ -213,11 +144,11 @@ export default function WordIncorporation() {
 
   const handleRestart = () => {
     pickNewPrompt();
+    reset();
     setIsComplete(false);
     setShowResults(false);
     setTimeLeft(30);
     setCurrentWordIndex(-1);
-    setAudioUrl(null);
   };
 
   const score = Math.round((analysis.filter(r => r.found).length / (currentPrompt?.words.length || 1)) * 100);
@@ -240,7 +171,7 @@ export default function WordIncorporation() {
             <div className="rounded-xl glass p-4 text-center min-w-[100px]">
               <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
                 <Trophy className="h-5 w-5" />
-                {isComplete && !isAnalyzing ? score : "--"}
+                {isComplete ? score : "--"}
               </div>
               <div className="text-xs text-muted-foreground uppercase tracking-widest">Score</div>
             </div>
@@ -254,7 +185,7 @@ export default function WordIncorporation() {
             {/* Minimalist Recording UI */}
             <div className={`transition-all duration-500 ease-in-out ${showResults ? 'opacity-0 scale-95 pointer-events-none absolute' : 'opacity-100 scale-100'}`}>
               
-              {(isActive || isRecording) && (
+              {isActive && (
                 <div className="mb-8">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Session Progress</span>
@@ -264,7 +195,7 @@ export default function WordIncorporation() {
                 </div>
               )}
 
-              {currentPrompt && !isActive && !isRecording && !isComplete && (
+              {currentPrompt && !isActive && !isComplete && (
                 <div className="flex flex-col gap-8">
                   {/* Instructions/Prompt - Always visible initially */}
                   <div className="text-center animate-fade-in">
@@ -273,13 +204,11 @@ export default function WordIncorporation() {
                       "Speak for 30 seconds. Incorporate the words that appear on screen naturally into your speech."
                     </p>
                   </div>
-                  
-                  {!isAnalyzing && (
-                    <Button onClick={startSession} size="xl" variant="hero" className="w-full shadow-glow max-w-xs mx-auto">
-                      <Play className="h-5 w-5 mr-2" />
-                      Begin Exercise
-                    </Button>
-                  )}
+
+                  <Button onClick={startSession} size="xl" variant="hero" className="w-full shadow-glow max-w-xs mx-auto">
+                    <Play className="h-5 w-5 mr-2" />
+                    Begin Exercise
+                  </Button>
                 </div>
               )}
 
@@ -302,15 +231,6 @@ export default function WordIncorporation() {
                 </div>
               )}
 
-              {isAnalyzing && (
-                  <div className="mb-12 text-center py-8">
-                    <div className="flex flex-col items-center gap-4">
-                       <Loader2 className="h-8 w-8 animate-spin text-primary" />
-                       <div className="text-lg font-medium text-muted-foreground">Analyzing recording...</div>
-                    </div>
-                  </div>
-              )}
-
                 <div className="flex flex-col gap-4 max-w-xs mx-auto">
                   {isActive && (
                     <Button onClick={stopSession} variant="destructive" size="xl" className="w-full shadow-lg">
@@ -318,7 +238,7 @@ export default function WordIncorporation() {
                       Finish Early
                     </Button>
                   )}
-                  {isComplete && !showResults && !isAnalyzing && (
+                  {isComplete && !showResults && (
                     <Button variant="accent" size="xl" className="w-full shadow-glow animate-bounce" onClick={() => setShowResults(true)}>
                       <Sparkles className="h-5 w-5 mr-2" />
                       Check Results
@@ -348,13 +268,6 @@ export default function WordIncorporation() {
                     Reset
                   </Button>
                 </div>
-                
-                 {/* Audio Player */}
-                {audioUrl && (
-                  <div className="rounded-xl bg-white/5 p-4 border border-white/10 flex justify-center">
-                    <audio controls src={audioUrl} className="w-full max-w-md h-10" />
-                  </div>
-                )}
 
                 <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
                   <table className="w-full text-left">
@@ -383,7 +296,7 @@ export default function WordIncorporation() {
                           </td>
                           <td className="px-6 py-4 text-foreground font-medium">{row.count}x</td>
                           <td className="px-6 py-4 text-muted-foreground font-mono text-sm">
-                            {row.found && row.timestamps.length > 0 ? `${row.timestamps[0].toFixed(1)}s` : "--"}
+                            {row.found ? `${row.timestamps[0].toFixed(1)}s` : "--"}
                           </td>
                         </tr>
                       ))}

@@ -100,7 +100,6 @@ export default function FillerWordEliminator() {
       const formData = new FormData();
       formData.append("file", audioBlob, "recording.webm");
 
-      // Use the newly created endpoint
       const response = await fetch("http://localhost:8000/transcribe", {
         method: "POST",
         body: formData,

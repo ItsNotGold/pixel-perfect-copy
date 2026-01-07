@@ -1,9 +1,0 @@
-{
-  "status": "ALL_GREEN",
-  "timestamp": 1766412085.5523741,
-  "gpu_util": 91,
-  "final_loss": 0.15,
-  "base_wer": 0.0521,
-  "tuned_wer": 0.0314,
-  "avg_latency": 398.0
-}
